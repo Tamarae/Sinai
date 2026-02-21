@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სინური მრავალთავი 864 — ციფრული სამეცნიერო გამოცემა — ციფრული სამეცნიერო გამოცემა</title>
+
+    <!-- Dublin Core -->
+    <meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
+    <meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+    <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+    <meta name="DC.language"  content="ka">
+    
+<meta name="DC.description" content="სინური მრავალთავი 864 წლის ციფრული სამეცნიერო გამოცემა — ტექსტები, ლექსიკა, კვლევა">
+<meta name="DC.subject" content="Old Georgian; Manuscript; Homiliary; TEI; Digital Scholarly Edition; Sinai">
+
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --crimson:      #7a1a1a;
+            --crimson-light:#9b2c2c;
+            --crimson-pale: #fdf2f2;
+            --gold:         #8a6e2e;
+            --gold-pale:    #faf6ee;
+            --parchment:    #faf8f5;
+            --parchment-dark:#f0ece4;
+            --ink:          #1a1a1a;
+            --ink-muted:    #4a4030;
+        }
+
+        /* ── Base ─────────────────────── */
+        body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
+        .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
+        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
+        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* ── Nav ─────────────────────── */
+        .nav-link { position:relative; letter-spacing:.07em; }
+        .nav-link::after {
+            content:''; position:absolute; bottom:-2px; left:0;
+            width:0; height:1px; background:var(--crimson); transition:width .2s;
+        }
+        .nav-link:hover::after { width:100%; }
+        .nav-link.active { color:var(--crimson); }
+        .nav-link.active::after { width:100%; }
+
+        /* ── Cards ───────────────────── */
+        .card { transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,.07); border-color:#c8bfb6; }
+
+        /* ── Chips & badges ──────────── */
+        .folio-chip { font-size:.65rem; letter-spacing:.04em; border:1px solid #ddd5c8; background:var(--parchment); font-family:'Noto Serif Georgian',Georgia,serif; font-style:italic; }
+        .bog-badge     { font-size:.6rem; letter-spacing:.08em; background:var(--ink);    color:var(--parchment); }
+        .lod-badge     { font-size:.6rem; letter-spacing:.08em; background:#1a3d6b;       color:white; }
+        .olia-badge    { font-size:.6rem; letter-spacing:.08em; background:#2d5a2d;       color:white; }
+        .logeion-badge { font-size:.6rem; letter-spacing:.08em; background:#5a3d1a;       color:white; }
+
+        /* ── Status dots (for catalog) ─ */
+        .status-done      { background:#2d5a2d; }
+        .status-progress  { background:#8a6e2e; }
+        .status-planned   { background:#d1cdc7; }
+
+        /* ── Genre badges ─────────────  */
+        .badge-homily  { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+        .badge-life    { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+        .badge-martyr  { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+        .badge-encomiun{ background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+        .badge-colophon{ background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+        .badge-other   { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
+
+        /* ── Parchment texture ────────── */
+        .parchment-texture {
+            background-image:
+                radial-gradient(ellipse at 15% 60%, rgba(122,26,26,.025) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(138,110,46,.03)  0%, transparent 45%);
+        }
+
+        /* ── Animations ──────────────── */
+        @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        .f1{animation:fadeUp .45s ease .04s both}
+        .f2{animation:fadeUp .45s ease .1s  both}
+        .f3{animation:fadeUp .45s ease .17s both}
+        .f4{animation:fadeUp .45s ease .24s both}
+        .f5{animation:fadeUp .45s ease .31s both}
+    </style>
+
+    
+<style>
+    /* ── Section cards ────────────────────────────── */
+    .section-card {
+        border: 1px solid #e0d8ce; background: white;
+        transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+        text-decoration: none; display: flex; flex-direction: column; gap: .75rem;
+    }
+    .section-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0,0,0,.07);
+        border-color: #c8bfb6;
+    }
+
+    /* ── Featured / progress ──────────────────────── */
+    .featured-card { border: 1px solid #ddd5c8; background: white; }
+    .featured-label {
+        font-size: .6rem; letter-spacing: .12em; font-weight: 600;
+        color: var(--crimson); background: var(--crimson-pale);
+        border: 1px solid #e8c5c5; border-radius: 2px; padding: .2rem .5rem;
+        display: inline-block;
+    }
+    .progress-track { height: 3px; background: #e0d8ce; border-radius: 2px; overflow: hidden; }
+    .progress-fill  { height: 100%; background: var(--crimson); border-radius: 2px; }
+
+    /* ── Witness cards ────────────────────────────── */
+    .witness-card {
+        border: 1px solid #e0d8ce; background: white;
+        transition: border-color .15s, box-shadow .15s;
+    }
+    .witness-card:hover { border-color: #c8bfb6; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+
+    /* ── Tech tags ────────────────────────────────── */
+    .folio-chip {
+        font-size: .65rem; letter-spacing: .04em;
+        border: 1px solid #ddd5c8; background: var(--parchment);
+        font-family: 'Noto Serif Georgian', Georgia, serif; font-style: italic;
+    }
+    .lod-badge { font-size: .6rem; letter-spacing: .1em; background: var(--ink); color: var(--parchment); }
+</style>
+
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="border-b border-gray-200 sticky top-0 z-50" style="background:var(--parchment);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <span class="font-serif-geo font-bold text-lg leading-none select-none"
+                      style="color:var(--crimson);">Ⴑ</span>
+                <span class="text-sm font-medium text-gray-700 tracking-wide group-hover:text-gray-900 transition-colors">
+                    ႱႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                </span>
+            </a>
+
+            <!-- Desktop nav — order: ტექსტები · ხელნაწერები · ლექსიკონი · კვლევა · ბიბლიოგრაფია · შესახებ -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="texts/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="manuscripts.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="lexicon/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="research/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="bibliography/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="about.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+
+            <button id="mob-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav — same order -->
+        <div id="mob-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+            <div class="flex flex-col gap-1">
+                <a href="texts/index.html"       class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="manuscripts.html"        class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="lexicon/index.html"      class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="research/index.html"     class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="bibliography/index.html" class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="about.html"              class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('mob-btn').addEventListener('click', () =>
+        document.getElementById('mob-menu').classList.toggle('hidden'));
+</script>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main class="flex-1">
+    
+
+
+
+
+
+
+
+
+
+
+
+<!-- ═══════ HERO ══════════════════════════════════════ -->
+<section class="parchment-texture border-b border-gray-200">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-12">
+
+    <!-- Level badge -->
+    <div class="flex justify-center mb-10 f1">
+        <span class="inline-flex items-center gap-2 text-xs text-gray-400 font-medium" style="letter-spacing:.13em;">
+            <span class="w-8 h-px bg-gray-300"></span>
+            ᲪᲘᲤᲠᲣᲚᲘ ᲡᲐᲛᲔᲪᲜᲘᲔᲠᲝ ᲒᲐᲛᲝᲪᲔᲛᲐ
+            <span class="w-8 h-px bg-gray-300"></span>
+        </span>
+    </div>
+
+    <!-- Title -->
+    <div class="text-center mb-4 f2">
+        <div class="asomtavruli text-4xl sm:text-5xl md:text-6xl leading-tight mb-3"
+             style="color:var(--crimson);">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ</div>
+        <div class="font-serif-geo text-2xl sm:text-3xl text-gray-500 font-medium">864 წლისა</div>
+    </div>
+
+    <!-- Subtitle + attribution stacked -->
+    <div class="text-center mb-9 f3">
+        <p class="font-serif-geo text-base text-gray-500 mb-2">ქართული ჰომილეტიკური კრებული სინის მთიდან</p>
+        <p class="text-xs text-gray-400" style="letter-spacing:.14em;">აკაკი შანიძე, 1959</p>
+    </div>
+
+    <!-- Ornamental divider -->
+    <div class="flex items-center justify-center gap-3 mb-9 f3">
+        <span class="flex-1 max-w-xs h-px"
+              style="background:linear-gradient(to right, transparent, rgba(122,26,26,.15))"></span>
+        <span class="font-serif-geo text-xl" style="color:var(--crimson);">✦</span>
+        <span class="flex-1 max-w-xs h-px"
+              style="background:linear-gradient(to left, transparent, rgba(122,26,26,.15))"></span>
+    </div>
+
+    <!-- CTA buttons -->
+    <div class="flex items-center justify-center gap-3 f4">
+        <a href="texts/index.html"
+           class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white rounded-sm transition-colors"
+           style="background:var(--crimson);"
+           onmouseover="this.style.background='var(--crimson-light)'"
+           onmouseout="this.style.background='var(--crimson)'">
+            ტექსტების დათვალიერება
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </a>
+        <a href="manuscripts.html"
+           class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-600 border border-gray-300 rounded-sm hover:border-gray-400 hover:text-gray-800 transition-colors bg-white">
+            ხელნაწერები
+        </a>
+    </div>
+
+</div>
+</section>
+
+
+<!-- ═══════ SHANIDZE QUOTE ════════════════════════════ -->
+<section class="bg-white border-b border-gray-200">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <blockquote>
+            <p class="font-serif-geo text-gray-600 leading-relaxed"
+               style="font-size:.95rem;">
+                „სინური მრავალთავი წარმოადგენს პირველ ქართულ თარიღიან ხელნაწერს,
+                რომელიც 864 წელსაა გადაწერილი იერუსალიმში, საბაწმინდის ლავრაში.
+                სინური ეწოდება მას იმიტომ, რომ დაწერისთანავე სინას მთას შესწირეს
+                და ამჟამადაც იქ არის დაცული, წმ. ეკატერინეს მონასტერში."
+            </p>
+            <footer class="mt-4 text-xs text-gray-400" style="letter-spacing:.08em;">
+                — აკაკი შანიძე, 1959
+            </footer>
+        </blockquote>
+    </div>
+</section>
+
+
+<!-- ═══════ SECTION CARDS ═════════════════════════════ -->
+<section class="py-12 px-4 border-b border-gray-200">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-xs tracking-widests text-gray-400 tracking-widest font-medium mb-6">განყოფილებები</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- 01 Manuscripts -->
+            <a href="manuscripts.html" class="section-card rounded-sm p-5">
+                <div class="flex items-start justify-between">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-sm font-serif-geo font-bold text-base"
+                         style="background:var(--crimson-pale); color:var(--crimson);">Ⴑ</div>
+                    <span class="text-xs text-gray-300 font-medium">01</span>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800 text-sm mb-1">ხელნაწერი</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">N35 (864 წ.) და N50 — ორი მოწმე. კოდიკოლოგიური აღწერა, ფოლიაცია, დამწერლობა.</p>
+                </div>
+                <div class="flex gap-1.5 flex-wrap mt-auto pt-1">
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">Sin. geo. N 35</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">Sin. geo. N 50</span>
+                </div>
+            </a>
+
+            <!-- 02 Texts -->
+            <a href="texts/index.html" class="section-card rounded-sm p-5">
+                <div class="flex items-start justify-between">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-sm font-serif-geo font-bold text-base"
+                         style="background:var(--crimson-pale); color:var(--crimson);">Ⴒ</div>
+                    <span class="text-xs text-gray-300 font-medium">02</span>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800 text-sm mb-1">ტექსტი</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">50 ლიტ. ტექსტი კრიტ. აპარატით. კალენდარული და ავტ./ჟანრ. დათვალიერება.</p>
+                </div>
+                <div class="flex gap-1.5 flex-wrap mt-auto pt-1">
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">ჰომ. · ცხ. · წამ.</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">კრიტ. აპარ.</span>
+                </div>
+            </a>
+
+            <!-- 03 Lexicon (LOD highlight) -->
+            <a href="lexicon/index.html" class="section-card rounded-sm p-5" style="border-color:#ddd5c8;">
+                <div class="flex items-start justify-between">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-sm font-serif-geo font-bold text-base"
+                         style="background:var(--crimson-pale); color:var(--crimson);">Ⴊ</div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="lod-badge px-1.5 py-0.5 rounded-sm text-xs uppercase tracking-widest">LOD</span>
+                        <span class="text-xs text-gray-300 font-medium">03</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-sm mb-1" style="color:var(--crimson);">ლექსიკონი</h3>
+                    <p class="text-xs leading-relaxed" style="color:#7a3535;">ძველი ქართული ლექსიკა სინური მრავალთავიდან. ბერძ. ეკვ., OLiA, BOG xml:id ბმულები.</p>
+                </div>
+                <div class="flex gap-1.5 flex-wrap mt-auto pt-1">
+                    <span class="px-2 py-0.5 rounded-sm text-xs border bg-white" style="border-color:#c9a0a0; color:#7a3535;">BOG</span>
+                    <span class="px-2 py-0.5 rounded-sm text-xs border bg-white" style="border-color:#c9a0a0; color:#7a3535;">Logeion</span>
+                    <span class="px-2 py-0.5 rounded-sm text-xs border bg-white" style="border-color:#c9a0a0; color:#7a3535;">OLiA</span>
+                </div>
+            </a>
+
+            <!-- 04 Research -->
+            <a href="research/index.html" class="section-card rounded-sm p-5">
+                <div class="flex items-start justify-between">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-sm" style="background:var(--crimson-pale);">
+                        <svg class="w-4 h-4" style="color:var(--crimson);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xs text-gray-300 font-medium">04</span>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800 text-sm mb-1">კვლევა</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">სამეცნიერო სტატიები. კოდიკოლოგია, ტექსტობრივი ტრადიცია, ლინგვისტური ანალიზი.</p>
+                </div>
+                <div class="flex gap-1.5 mt-auto pt-1">
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">შანიძე 1959</span>
+                </div>
+            </a>
+
+            <!-- 05 TEI / Data -->
+            <a href="data/catalog.xml" class="section-card rounded-sm p-5">
+                <div class="flex items-start justify-between">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-sm" style="background:#faf6ee;">
+                        <svg class="w-4 h-4" style="color:var(--gold);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="text-xs text-gray-300 font-medium">05</span>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800 text-sm mb-1">TEI / მონაცემები</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">TEI P5 XML. ტექსტები, ლექსიკონი, კატალოგი. Python/Jinja2 სტატ. გენ., GitHub.</p>
+                </div>
+                <div class="flex gap-1.5 mt-auto pt-1">
+                    <span class="px-2 py-0.5 rounded-sm text-xs border border-yellow-200 bg-yellow-50 text-yellow-700">TEI P5</span>
+                    <span class="px-2 py-0.5 rounded-sm text-xs border border-yellow-200 bg-yellow-50 text-yellow-700">CC BY-NC-SA 4.0</span>
+                </div>
+            </a>
+
+            <!-- 06 About -->
+            <a href="about.html" class="section-card rounded-sm p-5">
+                <div class="flex items-start justify-between">
+                    <div class="w-8 h-8 flex items-center justify-center rounded-sm" style="background:var(--crimson-pale);">
+                        <svg class="w-4 h-4" style="color:var(--crimson);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xs text-gray-300 font-medium">06</span>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800 text-sm mb-1">გამოცემის შესახებ</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">მეთოდოლოგია, გუნდი, DOI, ციტირება, ბიბლიოგრაფია.</p>
+                </div>
+                <div class="flex gap-1.5 mt-auto pt-1">
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">ილიას სახ. უნივ.</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ═══════ MANUSCRIPT PANEL ══════════════════════════ -->
+<section class="py-12 px-4 bg-white border-b border-gray-200">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-xs tracking-widest text-gray-400 font-medium mb-6">ძირითადი ხელნაწერები</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <div class="witness-card rounded-sm p-5 flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                    <a href="manuscripts.html#N35"
+                       class="font-serif-geo text-lg font-bold text-gray-700 italic hover:text-gray-900 transition-colors">
+                        Sin. geo. Σ
+                    </a>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">
+                        0864 · 312 ff.
+                    </span>
+                </div>
+                
+                <p class="text-xs text-gray-500 leading-relaxed">კოლოფონი f. 312v. როლი: სიგმა (Σ) — ძირ. ლემა</p>
+                
+                <div class="flex items-center justify-between mt-1">
+                    <div class="flex gap-2">
+                        
+                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">nuskhuri</span>
+                        
+                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">
+                            ძირ. სია
+                        </span>
+                    </div>
+                    
+                    <span class="flex items-center gap-1.5">
+                        <a href="https://www.loc.gov/item/00279386887-ms/"
+                           target="_blank" rel="noopener"
+                           class="text-xs px-1.5 py-0.5 rounded-sm font-medium"
+                           style="background:#1a3d6b; color:white; font-size:.58rem; letter-spacing:.08em;"
+                           title="282 გამოსახულება · Library of Congress IIIF">IIIF</a>
+                        <a href="https://www.loc.gov/item/00279386887-ms/manifest.json"
+                           target="_blank" rel="noopener"
+                           class="text-xs text-gray-400 hover:text-gray-600 transition-colors"
+                           style="font-size:.65rem;"
+                           title="IIIF Manifest JSON">manifest</a>
+                    </span>
+                    
+                </div>
+            </div>
+            
+            <div class="witness-card rounded-sm p-5 flex flex-col gap-2">
+                <div class="flex items-center justify-between">
+                    <a href="manuscripts.html#N50"
+                       class="font-serif-geo text-lg font-bold text-gray-700 italic hover:text-gray-900 transition-colors">
+                        Sin. geo. Ν
+                    </a>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">
+                        0950–1050 · 198 ff. (ნაწილობრივ შემ.)
+                    </span>
+                </div>
+                
+                <p class="text-xs text-gray-500 leading-relaxed">როლი: ნიუ (Ν) — მეორე მოწმე; ვარიანტები კრიტ. აპარატში</p>
+                
+                <div class="flex items-center justify-between mt-1">
+                    <div class="flex gap-2">
+                        
+                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">nuskhuri</span>
+                        
+                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">
+                            მეორე მოწმე
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <p class="text-xs text-gray-400 mt-4">
+            გამოსახულებები: <a href="https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/"
+            target="_blank" rel="noopener"
+            class="underline decoration-dotted hover:text-gray-600 transition-colors">Library of Congress — Manuscripts in St. Catherine's Monastery, Mount Sinai</a>
+            · საჯარო სამართლებრივი სტატუსი (Public Domain)
+        </p>
+    </div>
+</section>
+
+
+<!-- ═══════ BOTTOM BAND ═══════════════════════════════ -->
+<section class="bg-white f5">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <p class="text-xs text-gray-400 leading-relaxed">
+                TEI-XML ფორმატის დაშიფვრა · VIAF ავტოორიტეტული ჩანაწერები ·
+                ლინგვ. კვლ. ინსტ., ილიას სახ. უნივ. · 2026
+            </p>
+            <div class="flex items-center gap-4 text-xs text-gray-400">
+                <a href="data/catalog.xml"
+                   class="hover:text-gray-600 underline decoration-dotted transition-colors">კატალოგი (XML)</a>
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                   target="_blank" rel="noopener"
+                   class="hover:text-gray-600 transition-colors">CC BY-NC-SA 4.0</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-gray-200 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <span>2026, ილიას სახ. უნივ. · ლინგვ. კვლ. ინსტ.</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <span class="flex items-center gap-2">
+                TEI-XML:
+                <a href="data/texts/" class="hover:text-gray-600 underline">ტექსტი</a>
+                <a href="data/lexicon.xml" class="hover:text-gray-600 underline">ლექსიკონი</a>
+                <a href="data/catalog.xml" class="hover:text-gray-600 underline">კატალოგი</a>
+            </span>
+            <span class="hidden sm:inline text-gray-300">|</span>
+            
+            <span>CC BY-NC-SA 4.0</span>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

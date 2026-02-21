@@ -1,0 +1,3097 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტექსტები — ციფრული სამეცნიერო გამოცემა</title>
+
+    <!-- Dublin Core -->
+    <meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
+    <meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+    <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+    <meta name="DC.language"  content="ka">
+    
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --crimson:      #7a1a1a;
+            --crimson-light:#9b2c2c;
+            --crimson-pale: #fdf2f2;
+            --gold:         #8a6e2e;
+            --gold-pale:    #faf6ee;
+            --parchment:    #faf8f5;
+            --parchment-dark:#f0ece4;
+            --ink:          #1a1a1a;
+            --ink-muted:    #4a4030;
+        }
+
+        /* ── Base ─────────────────────── */
+        body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
+        .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
+        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
+        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* ── Nav ─────────────────────── */
+        .nav-link { position:relative; letter-spacing:.07em; }
+        .nav-link::after {
+            content:''; position:absolute; bottom:-2px; left:0;
+            width:0; height:1px; background:var(--crimson); transition:width .2s;
+        }
+        .nav-link:hover::after { width:100%; }
+        .nav-link.active { color:var(--crimson); }
+        .nav-link.active::after { width:100%; }
+
+        /* ── Cards ───────────────────── */
+        .card { transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,.07); border-color:#c8bfb6; }
+
+        /* ── Chips & badges ──────────── */
+        .folio-chip { font-size:.65rem; letter-spacing:.04em; border:1px solid #ddd5c8; background:var(--parchment); font-family:'Noto Serif Georgian',Georgia,serif; font-style:italic; }
+        .bog-badge     { font-size:.6rem; letter-spacing:.08em; background:var(--ink);    color:var(--parchment); }
+        .lod-badge     { font-size:.6rem; letter-spacing:.08em; background:#1a3d6b;       color:white; }
+        .olia-badge    { font-size:.6rem; letter-spacing:.08em; background:#2d5a2d;       color:white; }
+        .logeion-badge { font-size:.6rem; letter-spacing:.08em; background:#5a3d1a;       color:white; }
+
+        /* ── Status dots (for catalog) ─ */
+        .status-done      { background:#2d5a2d; }
+        .status-progress  { background:#8a6e2e; }
+        .status-planned   { background:#d1cdc7; }
+
+        /* ── Genre badges ─────────────  */
+        .badge-homily  { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+        .badge-life    { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+        .badge-martyr  { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+        .badge-encomiun{ background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+        .badge-colophon{ background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+        .badge-other   { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
+
+        /* ── Parchment texture ────────── */
+        .parchment-texture {
+            background-image:
+                radial-gradient(ellipse at 15% 60%, rgba(122,26,26,.025) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(138,110,46,.03)  0%, transparent 45%);
+        }
+
+        /* ── Animations ──────────────── */
+        @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        .f1{animation:fadeUp .45s ease .04s both}
+        .f2{animation:fadeUp .45s ease .1s  both}
+        .f3{animation:fadeUp .45s ease .17s both}
+        .f4{animation:fadeUp .45s ease .24s both}
+        .f5{animation:fadeUp .45s ease .31s both}
+    </style>
+
+    
+<style>
+    .tab-btn { transition:background .15s, color .15s; letter-spacing:.06em; }
+    .tab-btn.active { background:var(--crimson); color:white; }
+
+    .month-header { background:var(--crimson-pale); border-left:3px solid var(--crimson); }
+
+    .text-row { transition:background .1s; cursor:pointer; }
+    .text-row:hover { background:#f5f2ed; }
+
+    .author-block { border-left:2px solid #ddd5c8; transition:border-color .15s; }
+    .author-block:hover { border-left-color:var(--crimson); }
+
+    /* status dot in table */
+    .dot { width:6px; height:6px; border-radius:50%; display:inline-block; flex-shrink:0; }
+
+    .panel { display:none; }
+    .panel.active { display:block; }
+
+    .filter-chip { transition:background .12s, color .12s, border-color .12s; cursor:pointer; }
+    .filter-chip.on { background:var(--crimson); color:white; border-color:var(--crimson); }
+</style>
+
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="border-b border-gray-200 sticky top-0 z-50" style="background:var(--parchment);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+
+            <a href="../index.html" class="flex items-center gap-2.5 group">
+                <span class="font-serif-geo font-bold text-lg leading-none select-none"
+                      style="color:var(--crimson);">Ⴑ</span>
+                <span class="text-sm font-medium text-gray-700 tracking-wide group-hover:text-gray-900 transition-colors">
+                    ႱႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                </span>
+            </a>
+
+            <!-- Desktop nav — order: ტექსტები · ხელნაწერები · ლექსიკონი · კვლევა · ბიბლიოგრაფია · შესახებ -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="../texts/index.html"
+                   class="nav-link active text-xs font-medium text-gray-500 hover:text-gray-900">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+
+            <button id="mob-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav — same order -->
+        <div id="mob-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+            <div class="flex flex-col gap-1">
+                <a href="../texts/index.html"       class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"        class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"      class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"     class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html" class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"              class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('mob-btn').addEventListener('click', () =>
+        document.getElementById('mob-menu').classList.toggle('hidden'));
+</script>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main class="flex-1">
+    
+
+<!-- PAGE HEADER -->
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto flex items-end justify-between gap-4 flex-wrap">
+        <div>
+            <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ 864</p>
+            <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ტექსტები</h1>
+            <p class="text-sm text-gray-500 mt-1">ჰომილიები · ცხოვრებანი · წამებანი · სხვა ·
+                <span class="font-medium text-gray-600">50 ტექსტი</span>
+            </p>
+        </div>
+        <!-- View toggle -->
+        <div class="flex items-center gap-1 p-1 rounded-sm border border-gray-200 bg-gray-50">
+            <button id="btn-theme" onclick="switchView('theme')"
+                    class="tab-btn active px-4 py-1.5 rounded-sm text-xs font-medium flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+                </svg>ავტ. / ჟანრი
+            </button>
+            <button id="btn-cal" onclick="switchView('cal')"
+                    class="tab-btn px-4 py-1.5 rounded-sm text-xs font-medium text-gray-600 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>კალენდარი
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN AREA -->
+<div class="max-w-5xl mx-auto px-4 py-8 flex gap-8">
+
+    <!-- SIDEBAR -->
+    <aside class="hidden lg:block w-44 flex-shrink-0">
+
+        <!-- Calendar sidebar -->
+        <div id="sb-cal" class="sticky top-24 hidden">
+            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ᲗᲕᲔᲔᲑᲘ</p>
+            <nav class="flex flex-col gap-0.5 text-xs">
+                
+                
+                <a href="#feast-feast-annunciation"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ხარება (25 მარტი)</a>
+                
+                
+                
+                <a href="#feast-feast-nativity"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ქრისტეს შობა (25 დეკემბერი)</a>
+                
+                
+                
+                <a href="#feast-feast-stephen"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">წმ. სტეფანე (27 დეკემბერი)</a>
+                
+                
+                
+                <a href="#feast-feast-jacob-apostle"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">წმ. იაკობ მოც. (26 დეკემბერი)</a>
+                
+                
+                
+                <a href="#feast-feast-basil"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ბასილი ეპ-სი (1 იანვარი)</a>
+                
+                
+                
+                <a href="#feast-feast-epiphany"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ნათლისღება (6 იანვარი)</a>
+                
+                
+                
+                <a href="#feast-feast-hypapante"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მიგება (2 თებერვალი)</a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="#feast-feast-transfiguration"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ფერისცვლება (6 აგვისტო)</a>
+                
+                
+                
+                <a href="#feast-feast-dormition"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ღ-მშობლის გარდაცვლება (15 აგვისტო)</a>
+                
+                
+                
+                <a href="#feast-feast-john-baptist"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">იოვ. ნათლ-სა თავის კვეთა (29 აგვისტო)</a>
+                
+                
+                
+                <a href="#feast-feast-nativity-theotokos"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ღ-მშობლის შობა (8 სექტემბერი)</a>
+                
+                
+                
+                <a href="#feast-feast-enkenia"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ენკენია (13 სექტემბერი)</a>
+                
+                
+                
+                <a href="#feast-feast-exaltation-cross"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ჯვართა აღაპყრობა (14 სექტემბერი)</a>
+                
+                
+                
+                
+                
+                
+                <a href="#feast-moveable"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მოძრავი</a>
+                <a href="#feast-misc"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა / დამ.</a>
+            </nav>
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
+                <div class="flex flex-col gap-1">
+                    <button onclick="toggleFilter(this,'homily')"  class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
+                    <button onclick="toggleFilter(this,'life')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
+                    <button onclick="toggleFilter(this,'martyrdom')"class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
+                    <button onclick="toggleFilter(this,'other')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thematic sidebar -->
+        <div id="sb-theme" class="sticky top-24">
+            <p class="text-xs tracking-widests text-gray-400 font-medium mb-3 tracking-widest">ავტორი</p>
+            <nav class="flex flex-col gap-0.5 text-xs">
+                
+                <a href="#author-aut-gregory-neocaes"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">გრიგოლ ნეოკესარიელი</a>
+                
+                <a href="#author-aut-antipater-bostra"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ანთიპატრ ბოსტრელი</a>
+                
+                <a href="#author-aut-athanasius-alex"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ათანასი ალექსანდრიელი</a>
+                
+                <a href="#author-aut-proklos-cpl"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">პროკლე კოსტანტინეპოლელი</a>
+                
+                <a href="#author-aut-epiphanius-cypros"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ეპიფანე კვიპრელი</a>
+                
+                <a href="#author-aut-basil-caesarea"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ბასილი კესარიელი</a>
+                
+                <a href="#author-aut-chrysostom"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">იოვანე ოქროპირი</a>
+                
+                <a href="#author-aut-iohannes-cpl"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">იოვანე მთავარეპისკოპოსი</a>
+                
+                <a href="#author-aut-cyrillus-hier"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">კირილე იერუსალემელი</a>
+                
+                <a href="#author-aut-hesychios-hier"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ევსუქი ხუცი</a>
+                
+                <a href="#author-aut-timotheus-hier"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ტიმოთე ხუცი</a>
+                
+                <a href="#author-aut-severian-gabala"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სებერიანოს გაბალონელი</a>
+                
+                <a href="#author-aut-meletios-antioch"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მელეტი ანტიოქელი</a>
+                
+                <a href="#author-aut-meletios-episc"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მელეტი ეპისკოპოსი</a>
+                
+                <a href="#author-aut-ephrem-syrus"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ეფრემ ასური</a>
+                
+                <a href="#author-aut-anon"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ანონიმი</a>
+                
+                <a href="#author-aut-ioane-zosime"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">იოანე-ზოსიმე</a>
+                
+                <a href="#author-aut-makari-leteteli"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მაკარი ლეთეთელი</a>
+                
+            </nav>
+        </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="flex-1 min-w-0">
+
+        <!-- Search (shared) -->
+        <div class="mb-6 relative">
+            <input id="text-search" type="text"
+                   placeholder="ძიება — სახელი, ავტორი, ფოლიო..."
+                   class="w-full border border-gray-300 rounded-sm px-4 py-2.5 text-sm placeholder-gray-400 focus:outline-none focus:border-gray-400 bg-white">
+            <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </span>
+        </div>
+
+        <!-- ═══════════ CALENDAR VIEW ═══════════ -->
+        <div id="panel-cal" class="panel">
+
+            
+            
+            
+            <section id="feast-feast-nativity-theotokos" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ღ-მშობლის შობა (8 სექტემბერი)</span>
+                        <span class="text-xs text-gray-400">8 სექტემბერი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-nativity-theotokos">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">შობა ღ-მშობლისა (8 სექ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-enkenia" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ენკენია (13 სექტემბერი)</span>
+                        <span class="text-xs text-gray-400">13 სექტემბერი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-enkenia">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — სატფ-ბა (13 სექ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — გურიტი და ეკლ.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-exaltation-cross" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ჯვართა აღაპყრობა (14 სექტემბერი)</span>
+                        <span class="text-xs text-gray-400">14 სექტემბერი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-exaltation-cross">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — ჯვართა (14 სექ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-nativity" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ქრისტეს შობა (25 დეკემბერი)</span>
+                        <span class="text-xs text-gray-400">25 დეკემბერი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-nativity">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ათანასი ალექსისაი — შობა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ათანასი ალექსანდრიელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">პროკლე კოსტანტინეპოლელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ეპიფანე კვ-სი — მარადის ქალწულ.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ეპიფანე კვიპრელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-stephen" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">წმ. სტეფანე (27 დეკემბერი)</span>
+                        <span class="text-xs text-gray-400">27 დეკემბერი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-stephen">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-martyrdom"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წამება წმ. სტეფანესი (27 დეკ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-martyrdom text-xs px-1.5 py-0.5 rounded-sm font-medium">წამ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-other"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">პოვნა წმ. სტეფანესი</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-jacob-apostle" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">წმ. იაკობ მოც. (26 დეკემბერი)</span>
+                        <span class="text-xs text-gray-400">26 დეკემბერი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-jacob-apostle">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-other"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-basil" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ბასილი ეპ-სი (1 იანვარი)</span>
+                        <span class="text-xs text-gray-400">1 იანვარი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-basil">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">სიტყვა ბასილი ეპ-სათჳს I (1 იანვ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">სიტყვა ბასილი ეპ-სათvს II</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-epiphany" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ნათლისღება (6 იანვარი)</span>
+                        <span class="text-xs text-gray-400">6 იანვარი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-epiphany">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული იოვ. ოქროპ-სა — ნათლ-ბა I</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — ნათლ-ბა II</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — ნათლ-ბა III</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული კირილე — ნათლ-ბა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">კირილე იერუსალემელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-hypapante" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">მიგება (2 თებერვალი)</span>
+                        <span class="text-xs text-gray-400">2 თებერვალი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-hypapante">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ევსუქი — ტაძრად მიყვანება</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ევსუქი ხუცი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ტიმოთე — მეორმეოცე დღე</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ტიმოთე ხუცი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-annunciation" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ხარება (25 მარტი)</span>
+                        <span class="text-xs text-gray-400">25 მარტი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-annunciation">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                
+                                onclick="window.location='mrav-kharbeba-1.html'"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-progress" title="მიმდ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს I</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">გრიგოლ ნეოკესარიელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">გრიგოლ ნეოკესარიელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">გრიგოლ ნეოკესარიელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ანთიპატრ ბოსტრელისაი — ხარება</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანთიპატრ ბოსტრელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-transfiguration" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ფერისცვლება (6 აგვისტო)</span>
+                        <span class="text-xs text-gray-400">6 აგვისტო</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-transfiguration">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — ფერისცვლება (6 აგვ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-dormition" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ღ-მშობლის გარდაცვლება (15 აგვისტო)</span>
+                        <span class="text-xs text-gray-400">15 აგვისტო</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-dormition">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — გარდ. ი. I (15 აგვ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — გარდ. ი. II</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-john-baptist" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">იოვ. ნათლ-სა თავის კვეთა (29 აგვისტო)</span>
+                        <span class="text-xs text-gray-400">29 აგვისტო</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-john-baptist">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-lent" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">მარხვანი (მოძრავი)</span>
+                        <span class="text-xs text-gray-400">მოძრავი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-lent">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — მარხვა და იონა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ეფრემი — მარხვა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ეფრემ ასური</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ბასილი — ორმოც მოწამე (9 მარ.)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ბასილი კესარიელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — ლაზარე, მარია, მართა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-palmsunday" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ბზობა (მოძრ.)</span>
+                        <span class="text-xs text-gray-400">მოძრავი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-palmsunday">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">სებ. გაბ. — შესხმა ყრმათა (ბზობა)</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">სებერიანოს გაბალონელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. კ-პოლელი — შესლვა იერ-მდ</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">მელეტი ანტ. — ბზობა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">მელეტი ანტიოქელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-holyweek" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">დიდი კვირა (მოძრ.)</span>
+                        <span class="text-xs text-gray-400">მოძრავი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-holyweek">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">დიდ ორშაბათი — იოვ. ეპ-სი</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-easter" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">აღდგომა (მოძრ.)</span>
+                        <span class="text-xs text-gray-400">მოძრავი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-easter">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">მელეტი ეპ-სი — მკვდრ. აღდგ.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">მელეტი ეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">კირილე იერ. — აღდგომა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">კირილე იერუსალემელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — თომა მოც.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — ახალი კვირიაკე</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-ascension" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">ამაღლება (მოძრ.)</span>
+                        <span class="text-xs text-gray-400">მოძრავი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-ascension">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — ამაღლება</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-pentecost" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">სულთმოფენობა (მოძრ.)</span>
+                        <span class="text-xs text-gray-400">მოძრავი</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-pentecost">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — სულ. წმ. I</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">კირილე იერ. — სულ. წმ. II</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">კირილე იერუსალემელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-misc" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">სხვა საკითხავები</span>
+                        <span class="text-xs text-gray-400"></span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-misc">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-other"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">გამოჩინება ჯვრისა კოსტ. მეფეს</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-other"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">პოვნა წმ. სამსჭვალთა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-martyrdom"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წამება პეტრე მოც.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-martyrdom text-xs px-1.5 py-0.5 rounded-sm font-medium">წამ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-martyrdom"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წამება პავლე მოც.</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-martyrdom text-xs px-1.5 py-0.5 rounded-sm font-medium">წამ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — მოწამეთათჳს</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-homily"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ეფრემი — შეს-ბ-თა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ეფრემ ასური</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-life"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ცხოვრება სინელ მამათა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანონიმი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-life text-xs px-1.5 py-0.5 rounded-sm font-medium">ცხ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="feast-feast-appendix" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">დამატებები</span>
+                        <span class="text-xs text-gray-400"></span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="feast-appendix">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row" data-genre="genre-colophon"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">მაკარი ლეთეთელი — ანდერძი</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">მაკარი ლეთეთელი</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-colophon text-xs px-1.5 py-0.5 rounded-sm font-medium">ანდ.</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                            <tr class="text-row" data-genre="genre-encomium"
+                                >
+                                <td class="px-4 py-3">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოანე-ზოსიმე — ქება ქართ. ენისა</div>
+                                    
+                                    <div class="text-xs text-gray-400 mt-0.5"></div>
+                                    
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოანე-ზოსიმე</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-encomium text-xs px-1.5 py-0.5 rounded-sm font-medium">ქება</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+
+        </div><!-- /panel-cal -->
+
+
+        <!-- ═══════════ THEMATIC VIEW ═══════════ -->
+        <div id="panel-theme" class="panel active">
+
+            
+            
+            
+            <section id="author-aut-gregory-neocaes" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">გრიგოლ ნეოკესარიელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Gregorius Thaumaturgus Neocaesariensis · c. 213–270</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                
+                                onclick="window.location='mrav-kharbeba-1.html'"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს I</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ხარება (25 მარტი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-progress" title="მიმდ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ხარება (25 მარტი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ხარება (25 მარტი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-antipater-bostra" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ანთიპატრ ბოსტრელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Antipater Bostrensis · c. 400–460</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ანთიპატრ ბოსტრელისაი — ხარება</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ხარება (25 მარტი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-athanasius-alex" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ათანასი ალექსანდრიელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Athanasius Alexandrinus · 296–373</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ათანასი ალექსისაი — შობა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ქრისტეს შობა (25 დეკემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-proklos-cpl" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">პროკლე კოსტანტინეპოლელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Proclus Constantinopolitanus</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ქრისტეს შობა (25 დეკემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-epiphanius-cypros" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ეპიფანე კვიპრელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Epiphanius Cypriensis · 310–403</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ეპიფანე კვ-სი — მარადის ქალწულ.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ქრისტეს შობა (25 დეკემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-basil-caesarea" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ბასილი კესარიელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Basilius Caesariensis (Magnus) · 329–379</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ბასილი — ორმოც მოწამე (9 მარ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">მარხვანი (მოძრავი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-chrysostom" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">იოვანე ოქროპირი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Iohannes Chrysostomus · 349–407</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული იოვ. ოქროპ-სა — ნათლ-ბა I</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ნათლისღება (6 იანვარი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — ნათლ-ბა II</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ნათლისღება (6 იანვარი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — ნათლ-ბა III</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ნათლისღება (6 იანვარი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — მარხვა და იონა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">მარხვანი (მოძრავი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — ლაზარე, მარია, მართა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">მარხვანი (მოძრავი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — თომა მოც.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">აღდგომა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — ამაღლება</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ამაღლება (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — ფერისცვლება (6 აგვ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ფერისცვლება (6 აგვისტო) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — გარდ. ი. I (15 აგვ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ღ-მშობლის გარდაცვლება (15 აგვისტო) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — გარდ. ი. II</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ღ-მშობლის გარდაცვლება (15 აგვისტო) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — სატფ-ბა (13 სექ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ენკენია (13 სექტემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — გურიტი და ეკლ.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ენკენია (13 სექტემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. ოქროპ. — მოწამეთათჳს</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-iohannes-cpl" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">იოვანე მთავარეპისკოპოსი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Iohannes archiepiscopus (incertus)</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. კ-პოლელი — შესლვა იერ-მდ</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ბზობა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">დიდ ორშაბათი — იოვ. ეპ-სი</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">დიდი კვირა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — ახალი კვირიაკე</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">აღდგომა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — სულ. წმ. I</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სულთმოფენობა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">იოვ. ნათლ-სა თავის კვეთა (29 აგვისტო) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოვ. მთ-ეპ-სი — ჯვართა (14 სექ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ჯვართა აღაპყრობა (14 სექტემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-cyrillus-hier" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">კირილე იერუსალემელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Cyrillus Hierosolymitanus · 313–386</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული კირილე — ნათლ-ბა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ნათლისღება (6 იანვარი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">კირილე იერ. — აღდგომა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">აღდგომა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">კირილე იერ. — სულ. წმ. II</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სულთმოფენობა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-hesychios-hier" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ევსუქი ხუცი იერუსალემელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Hesychius presbyter Hierosolymitanus · c. 400–450</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ევსუქი — ტაძრად მიყვანება</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">მიგება (2 თებერვალი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-timotheus-hier" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ტიმოთე ხუცი იერუსალემელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Timotheus presbyter Hierosolymitanus · c. 400–500</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ტიმოთე — მეორმეოცე დღე</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">მიგება (2 თებერვალი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-severian-gabala" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">სებერიანოს გაბალონელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Severianus Gabalensis</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">სებ. გაბ. — შესხმა ყრმათა (ბზობა)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ბზობა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-meletios-antioch" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">მელეტი ანტიოქელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Meletius Antiochenus</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">მელეტი ანტ. — ბზობა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ბზობა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-meletios-episc" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">მელეტი ეპისკოპოსი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Meletius episcopus</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">მელეტი ეპ-სი — მკვდრ. აღდგ.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">აღდგომა (მოძრ.) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-ephrem-syrus" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ეფრემ ასური</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Ephraem Syrus · 306–373</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ეფრემი — მარხვა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">მარხვანი (მოძრავი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ეფრემი — შეს-ბ-თა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-anon" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">ანონიმი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Anonymus</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">წმ. იაკობ მოც. (26 დეკემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-martyrdom text-xs px-1.5 py-0.5 rounded-sm font-medium">წამ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წამება წმ. სტეფანესი (27 დეკ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">წმ. სტეფანე (27 დეკემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">პოვნა წმ. სტეფანესი</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">წმ. სტეფანე (27 დეკემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">სიტყვა ბასილი ეპ-სათჳს I (1 იანვ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ბასილი ეპ-სი (1 იანვარი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">სიტყვა ბასილი ეპ-სათvს II</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ბასილი ეპ-სი (1 იანვარი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">შობა ღ-მშობლისა (8 სექ.)</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">ღ-მშობლის შობა (8 სექტემბერი) · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">გამოჩინება ჯვრისა კოსტ. მეფეს</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-other text-xs px-1.5 py-0.5 rounded-sm font-medium">სხვ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">პოვნა წმ. სამსჭვალთა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-martyrdom text-xs px-1.5 py-0.5 rounded-sm font-medium">წამ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წამება პეტრე მოც.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-martyrdom text-xs px-1.5 py-0.5 rounded-sm font-medium">წამ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">წამება პავლე მოც.</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-life text-xs px-1.5 py-0.5 rounded-sm font-medium">ცხ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">ცხოვრება სინელ მამათა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">სხვა საკითხავები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-ioane-zosime" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">იოანე-ზოსიმე</h3>
+                    <p class="text-xs text-gray-400 mt-0.5"> · c. 950–1000</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-encomium text-xs px-1.5 py-0.5 rounded-sm font-medium">ქება</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">იოანე-ზოსიმე — ქება ქართ. ენისა</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">დამატებები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+            
+            
+            <section id="author-aut-makari-leteteli" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">მაკარი ლეთეთელი</h3>
+                    <p class="text-xs text-gray-400 mt-0.5"></p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <tr class="text-row"
+                                >
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-colophon text-xs px-1.5 py-0.5 rounded-sm font-medium">ანდ.</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">მაკარი ლეთეთელი — ანდერძი</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">დამატებები · </div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-planned" title="დაგეგ."></span>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            
+            
+
+        </div><!-- /panel-theme -->
+
+        <!-- Status legend -->
+        <div class="flex items-center gap-5 text-xs text-gray-400 mt-6 pt-4 border-t border-gray-100">
+            <span class="flex items-center gap-1.5"><span class="dot status-done"></span>დასრ.</span>
+            <span class="flex items-center gap-1.5"><span class="dot status-progress"></span>მიმდ.</span>
+            <span class="flex items-center gap-1.5"><span class="dot status-planned"></span>დაგეგ.</span>
+        </div>
+
+    </div><!-- /content -->
+</div><!-- /flex area -->
+
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-gray-200 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <span>2026, ილიას სახ. უნივ. · ლინგვ. კვლ. ინსტ.</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <span class="flex items-center gap-2">
+                TEI-XML:
+                <a href="../data/texts/" class="hover:text-gray-600 underline">ტექსტი</a>
+                <a href="../data/lexicon.xml" class="hover:text-gray-600 underline">ლექსიკონი</a>
+                <a href="../data/catalog.xml" class="hover:text-gray-600 underline">კატალოგი</a>
+            </span>
+            <span class="hidden sm:inline text-gray-300">|</span>
+            
+            <span>CC BY-NC-SA 4.0</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+function switchView(mode) {
+    const panels   = { cal: 'panel-cal',   theme: 'panel-theme'  };
+    const sidebars = { cal: 'sb-cal',      theme: 'sb-theme'     };
+    const buttons  = { cal: 'btn-cal',     theme: 'btn-theme'    };
+    Object.keys(panels).forEach(k => {
+        document.getElementById(panels[k]).classList.toggle('active', k === mode);
+        document.getElementById(sidebars[k]).classList.toggle('hidden', k !== mode);
+        document.getElementById(buttons[k]).classList.toggle('active', k === mode);
+    });
+}
+
+const activeGenres = new Set(['homily','life','martyrdom','other']);
+
+function toggleFilter(btn, genre) {
+    btn.classList.toggle('on');
+    if (activeGenres.has(genre)) activeGenres.delete(genre);
+    else activeGenres.add(genre);
+    applyFilters();
+}
+
+function applyFilters() {
+    document.querySelectorAll('#panel-cal .text-row').forEach(row => {
+        const g = row.dataset.genre || 'other';
+        row.style.display = activeGenres.has(g) ? '' : 'none';
+    });
+    // Hide month sections if all rows hidden
+    document.querySelectorAll('#panel-cal section').forEach(sec => {
+        const rows = sec.querySelectorAll('.text-row');
+        const anyVisible = [...rows].some(r => r.style.display !== 'none');
+        sec.style.display = anyVisible ? '' : 'none';
+    });
+}
+
+document.getElementById('text-search').addEventListener('input', function() {
+    const q = this.value.toLowerCase();
+    const panel = document.querySelector('.panel.active');
+    panel.querySelectorAll('.text-row').forEach(row => {
+        row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>
