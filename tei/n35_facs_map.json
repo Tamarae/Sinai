@@ -1,0 +1,1983 @@
+{
+  "1r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0000",
+    "sp": 0,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0000/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0000/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=0"
+  },
+  "1v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0001",
+    "sp": 1,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0001/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0001/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=1"
+  },
+  "2r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0002",
+    "sp": 2,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0002/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0002/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=2"
+  },
+  "2v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0003",
+    "sp": 3,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0003/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0003/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=3"
+  },
+  "3r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0004",
+    "sp": 4,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0004/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0004/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=4"
+  },
+  "3v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0005",
+    "sp": 5,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0005/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0005/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=5"
+  },
+  "4r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0006",
+    "sp": 6,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0006/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0006/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=6"
+  },
+  "4v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0007",
+    "sp": 7,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0007/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0007/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=7"
+  },
+  "5r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0008",
+    "sp": 8,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0008/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0008/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=8"
+  },
+  "5v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0009",
+    "sp": 9,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0009/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0009/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=9"
+  },
+  "6r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0010",
+    "sp": 10,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0010/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0010/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=10"
+  },
+  "6v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0011",
+    "sp": 11,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0011/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0011/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=11"
+  },
+  "7r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0012",
+    "sp": 12,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0012/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0012/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=12"
+  },
+  "7v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0013",
+    "sp": 13,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0013/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0013/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=13"
+  },
+  "8r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0014",
+    "sp": 14,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0014/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0014/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=14"
+  },
+  "8v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0015",
+    "sp": 15,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0015/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0015/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=15"
+  },
+  "9r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0016",
+    "sp": 16,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0016/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0016/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=16"
+  },
+  "9v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0017",
+    "sp": 17,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0017/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0017/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=17"
+  },
+  "10r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0018",
+    "sp": 18,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0018/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0018/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=18"
+  },
+  "10v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0019",
+    "sp": 19,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0019/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0019/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=19"
+  },
+  "11r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0020",
+    "sp": 20,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0020/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0020/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=20"
+  },
+  "11v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0021",
+    "sp": 21,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0021/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0021/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=21"
+  },
+  "12r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0022",
+    "sp": 22,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0022/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0022/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=22"
+  },
+  "12v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0023",
+    "sp": 23,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0023/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0023/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=23"
+  },
+  "13r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0024",
+    "sp": 24,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0024/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0024/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=24"
+  },
+  "13v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0025",
+    "sp": 25,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0025/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0025/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=25"
+  },
+  "14r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0026",
+    "sp": 26,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0026/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0026/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=26"
+  },
+  "14v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0027",
+    "sp": 27,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0027/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0027/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=27"
+  },
+  "15r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0028",
+    "sp": 28,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0028/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0028/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=28"
+  },
+  "15v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0029",
+    "sp": 29,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0029/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0029/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=29"
+  },
+  "16r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0030",
+    "sp": 30,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0030/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0030/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=30"
+  },
+  "16v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0031",
+    "sp": 31,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0031/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0031/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=31"
+  },
+  "17r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0032",
+    "sp": 32,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0032/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0032/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=32"
+  },
+  "17v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0033",
+    "sp": 33,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0033/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0033/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=33"
+  },
+  "18r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0034",
+    "sp": 34,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0034/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0034/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=34"
+  },
+  "18v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0035",
+    "sp": 35,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0035/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0035/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=35"
+  },
+  "19r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0036",
+    "sp": 36,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0036/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0036/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=36"
+  },
+  "19v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0037",
+    "sp": 37,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0037/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0037/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=37"
+  },
+  "20r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0038",
+    "sp": 38,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0038/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0038/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=38"
+  },
+  "20v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0039",
+    "sp": 39,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0039/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0039/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=39"
+  },
+  "21r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0040",
+    "sp": 40,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0040/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0040/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=40"
+  },
+  "21v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0041",
+    "sp": 41,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0041/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0041/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=41"
+  },
+  "22r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0042",
+    "sp": 42,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0042/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0042/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=42"
+  },
+  "22v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0043",
+    "sp": 43,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0043/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0043/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=43"
+  },
+  "23r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0044",
+    "sp": 44,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0044/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0044/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=44"
+  },
+  "23v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0045",
+    "sp": 45,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0045/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0045/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=45"
+  },
+  "24r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0046",
+    "sp": 46,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0046/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0046/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=46"
+  },
+  "24v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0047",
+    "sp": 47,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0047/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0047/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=47"
+  },
+  "25r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0048",
+    "sp": 48,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0048/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0048/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=48"
+  },
+  "25v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0049",
+    "sp": 49,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0049/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0049/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=49"
+  },
+  "26r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0050",
+    "sp": 50,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0050/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0050/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=50"
+  },
+  "26v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0051",
+    "sp": 51,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0051/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0051/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=51"
+  },
+  "27r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0052",
+    "sp": 52,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0052/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0052/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=52"
+  },
+  "27v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0053",
+    "sp": 53,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0053/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0053/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=53"
+  },
+  "28r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0054",
+    "sp": 54,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0054/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0054/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=54"
+  },
+  "28v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0055",
+    "sp": 55,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0055/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0055/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=55"
+  },
+  "29r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0056",
+    "sp": 56,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0056/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0056/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=56"
+  },
+  "29v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0057",
+    "sp": 57,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0057/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0057/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=57"
+  },
+  "30r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0058",
+    "sp": 58,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0058/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0058/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=58"
+  },
+  "30v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0059",
+    "sp": 59,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0059/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0059/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=59"
+  },
+  "31r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0060",
+    "sp": 60,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0060/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0060/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=60"
+  },
+  "31v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0061",
+    "sp": 61,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0061/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0061/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=61"
+  },
+  "32r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0062",
+    "sp": 62,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0062/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0062/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=62"
+  },
+  "32v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0063",
+    "sp": 63,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0063/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0063/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=63"
+  },
+  "33r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0064",
+    "sp": 64,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0064/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0064/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=64"
+  },
+  "33v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0065",
+    "sp": 65,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0065/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0065/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=65"
+  },
+  "34r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0066",
+    "sp": 66,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0066/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0066/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=66"
+  },
+  "34v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0067",
+    "sp": 67,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0067/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0067/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=67"
+  },
+  "35r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0068",
+    "sp": 68,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0068/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0068/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=68"
+  },
+  "35v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0069",
+    "sp": 69,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0069/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0069/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=69"
+  },
+  "36r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0070",
+    "sp": 70,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0070/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0070/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=70"
+  },
+  "36v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0071",
+    "sp": 71,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0071/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0071/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=71"
+  },
+  "37r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0072",
+    "sp": 72,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0072/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0072/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=72"
+  },
+  "37v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0073",
+    "sp": 73,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0073/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0073/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=73"
+  },
+  "38r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0074",
+    "sp": 74,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0074/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0074/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=74"
+  },
+  "38v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0075",
+    "sp": 75,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0075/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0075/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=75"
+  },
+  "39r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0076",
+    "sp": 76,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0076/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0076/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=76"
+  },
+  "39v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0077",
+    "sp": 77,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0077/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0077/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=77"
+  },
+  "40r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0078",
+    "sp": 78,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0078/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0078/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=78"
+  },
+  "40v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0079",
+    "sp": 79,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0079/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0079/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=79"
+  },
+  "41r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0080",
+    "sp": 80,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0080/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0080/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=80"
+  },
+  "41v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0081",
+    "sp": 81,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0081/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0081/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=81"
+  },
+  "42r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0082",
+    "sp": 82,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0082/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0082/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=82"
+  },
+  "42v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0083",
+    "sp": 83,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0083/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0083/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=83"
+  },
+  "43r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0084",
+    "sp": 84,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0084/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0084/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=84"
+  },
+  "43v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0085",
+    "sp": 85,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0085/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0085/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=85"
+  },
+  "44r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0086",
+    "sp": 86,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0086/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0086/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=86"
+  },
+  "44v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0087",
+    "sp": 87,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0087/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0087/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=87"
+  },
+  "45r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0088",
+    "sp": 88,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0088/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0088/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=88"
+  },
+  "45v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0089",
+    "sp": 89,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0089/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0089/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=89"
+  },
+  "46r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0090",
+    "sp": 90,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0090/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0090/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=90"
+  },
+  "46v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0091",
+    "sp": 91,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0091/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0091/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=91"
+  },
+  "47r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0092",
+    "sp": 92,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0092/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0092/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=92"
+  },
+  "47v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0093",
+    "sp": 93,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0093/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0093/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=93"
+  },
+  "48r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0094",
+    "sp": 94,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0094/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0094/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=94"
+  },
+  "48v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0095",
+    "sp": 95,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0095/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0095/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=95"
+  },
+  "49r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0096",
+    "sp": 96,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0096/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0096/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=96"
+  },
+  "49v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0097",
+    "sp": 97,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0097/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0097/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=97"
+  },
+  "50r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0098",
+    "sp": 98,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0098/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0098/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=98"
+  },
+  "50v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0099",
+    "sp": 99,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0099/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0099/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=99"
+  },
+  "51r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0100",
+    "sp": 100,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0100/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0100/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=100"
+  },
+  "51v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0101",
+    "sp": 101,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0101/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0101/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=101"
+  },
+  "52r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0102",
+    "sp": 102,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0102/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0102/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=102"
+  },
+  "52v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0103",
+    "sp": 103,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0103/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0103/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=103"
+  },
+  "53r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0104",
+    "sp": 104,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0104/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0104/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=104"
+  },
+  "53v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0105",
+    "sp": 105,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0105/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0105/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=105"
+  },
+  "54r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0106",
+    "sp": 106,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0106/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0106/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=106"
+  },
+  "54v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0107",
+    "sp": 107,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0107/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0107/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=107"
+  },
+  "55r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0108",
+    "sp": 108,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0108/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0108/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=108"
+  },
+  "55v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0109",
+    "sp": 109,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0109/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0109/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=109"
+  },
+  "56r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0110",
+    "sp": 110,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0110/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0110/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=110"
+  },
+  "56v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0111",
+    "sp": 111,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0111/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0111/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=111"
+  },
+  "57r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0112",
+    "sp": 112,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0112/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0112/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=112"
+  },
+  "57v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0113",
+    "sp": 113,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0113/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0113/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=113"
+  },
+  "58r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0114",
+    "sp": 114,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0114/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0114/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=114"
+  },
+  "58v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0115",
+    "sp": 115,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0115/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0115/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=115"
+  },
+  "59r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0116",
+    "sp": 116,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0116/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0116/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=116"
+  },
+  "59v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0117",
+    "sp": 117,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0117/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0117/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=117"
+  },
+  "60r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0118",
+    "sp": 118,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0118/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0118/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=118"
+  },
+  "60v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0119",
+    "sp": 119,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0119/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0119/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=119"
+  },
+  "61r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0120",
+    "sp": 120,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0120/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0120/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=120"
+  },
+  "61v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0121",
+    "sp": 121,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0121/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0121/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=121"
+  },
+  "62r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0122",
+    "sp": 122,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0122/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0122/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=122"
+  },
+  "62v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0123",
+    "sp": 123,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0123/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0123/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=123"
+  },
+  "63r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0124",
+    "sp": 124,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0124/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0124/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=124"
+  },
+  "63v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0125",
+    "sp": 125,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0125/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0125/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=125"
+  },
+  "64r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0126",
+    "sp": 126,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0126/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0126/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=126"
+  },
+  "64v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0127",
+    "sp": 127,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0127/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0127/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=127"
+  },
+  "65r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0128",
+    "sp": 128,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0128/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0128/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=128"
+  },
+  "65v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0129",
+    "sp": 129,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0129/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0129/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=129"
+  },
+  "66r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0130",
+    "sp": 130,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0130/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0130/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=130"
+  },
+  "66v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0131",
+    "sp": 131,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0131/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0131/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=131"
+  },
+  "67r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0132",
+    "sp": 132,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0132/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0132/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=132"
+  },
+  "67v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0133",
+    "sp": 133,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0133/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0133/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=133"
+  },
+  "68r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0134",
+    "sp": 134,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0134/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0134/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=134"
+  },
+  "68v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0135",
+    "sp": 135,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0135/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0135/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=135"
+  },
+  "69r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0136",
+    "sp": 136,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0136/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0136/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=136"
+  },
+  "69v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0137",
+    "sp": 137,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0137/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0137/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=137"
+  },
+  "70r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0138",
+    "sp": 138,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0138/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0138/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=138"
+  },
+  "70v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0139",
+    "sp": 139,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0139/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0139/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=139"
+  },
+  "71r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0140",
+    "sp": 140,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0140/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0140/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=140"
+  },
+  "71v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0141",
+    "sp": 141,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0141/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0141/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=141"
+  },
+  "72r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0142",
+    "sp": 142,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0142/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0142/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=142"
+  },
+  "72v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0143",
+    "sp": 143,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0143/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0143/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=143"
+  },
+  "73r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0144",
+    "sp": 144,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0144/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0144/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=144"
+  },
+  "73v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145",
+    "sp": 145,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=145"
+  },
+  "74r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146",
+    "sp": 146,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=146"
+  },
+  "74v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147",
+    "sp": 147,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=147"
+  },
+  "75r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0148",
+    "sp": 148,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0148/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0148/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=148"
+  },
+  "75v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0149",
+    "sp": 149,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0149/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0149/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=149"
+  },
+  "76r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0150",
+    "sp": 150,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0150/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0150/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=150"
+  },
+  "76v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0151",
+    "sp": 151,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0151/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0151/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=151"
+  },
+  "77r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0152",
+    "sp": 152,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0152/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0152/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=152"
+  },
+  "77v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0153",
+    "sp": 153,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0153/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0153/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=153"
+  },
+  "78r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0154",
+    "sp": 154,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0154/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0154/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=154"
+  },
+  "78v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0155",
+    "sp": 155,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0155/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0155/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=155"
+  },
+  "79r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0156",
+    "sp": 156,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0156/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0156/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=156"
+  },
+  "79v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0157",
+    "sp": 157,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0157/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0157/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=157"
+  },
+  "80r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0158",
+    "sp": 158,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0158/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0158/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=158"
+  },
+  "80v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0159",
+    "sp": 159,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0159/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0159/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=159"
+  },
+  "81r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0160",
+    "sp": 160,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0160/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0160/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=160"
+  },
+  "81v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0161",
+    "sp": 161,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0161/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0161/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=161"
+  },
+  "82r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0162",
+    "sp": 162,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0162/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0162/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=162"
+  },
+  "82v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0163",
+    "sp": 163,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0163/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0163/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=163"
+  },
+  "83r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0164",
+    "sp": 164,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0164/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0164/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=164"
+  },
+  "83v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0165",
+    "sp": 165,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0165/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0165/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=165"
+  },
+  "84r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0166",
+    "sp": 166,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0166/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0166/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=166"
+  },
+  "84v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0167",
+    "sp": 167,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0167/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0167/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=167"
+  },
+  "85r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0168",
+    "sp": 168,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0168/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0168/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=168"
+  },
+  "85v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0169",
+    "sp": 169,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0169/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0169/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=169"
+  },
+  "86r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0170",
+    "sp": 170,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0170/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0170/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=170"
+  },
+  "86v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0171",
+    "sp": 171,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0171/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0171/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=171"
+  },
+  "87r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0172",
+    "sp": 172,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0172/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0172/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=172"
+  },
+  "87v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173",
+    "sp": 173,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=173"
+  },
+  "88r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174",
+    "sp": 174,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=174"
+  },
+  "88v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0175",
+    "sp": 175,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0175/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0175/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=175"
+  },
+  "89r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176",
+    "sp": 176,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=176"
+  },
+  "89v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0177",
+    "sp": 177,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0177/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0177/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=177"
+  },
+  "90r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0178",
+    "sp": 178,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0178/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0178/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=178"
+  },
+  "90v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0179",
+    "sp": 179,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0179/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0179/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=179"
+  },
+  "91r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0180",
+    "sp": 180,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0180/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0180/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=180"
+  },
+  "91v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0181",
+    "sp": 181,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0181/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0181/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=181"
+  },
+  "92r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0182",
+    "sp": 182,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0182/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0182/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=182"
+  },
+  "92v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0183",
+    "sp": 183,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0183/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0183/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=183"
+  },
+  "93r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0184",
+    "sp": 184,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0184/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0184/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=184"
+  },
+  "93v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0185",
+    "sp": 185,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0185/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0185/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=185"
+  },
+  "94r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0186",
+    "sp": 186,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0186/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0186/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=186"
+  },
+  "94v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0187",
+    "sp": 187,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0187/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0187/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=187"
+  },
+  "95r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0188",
+    "sp": 188,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0188/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0188/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=188"
+  },
+  "95v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0189",
+    "sp": 189,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0189/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0189/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=189"
+  },
+  "96r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0190",
+    "sp": 190,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0190/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0190/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=190"
+  },
+  "96v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0191",
+    "sp": 191,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0191/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0191/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=191"
+  },
+  "97r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0192",
+    "sp": 192,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0192/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0192/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=192"
+  },
+  "97v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0193",
+    "sp": 193,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0193/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0193/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=193"
+  },
+  "98r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0194",
+    "sp": 194,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0194/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0194/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=194"
+  },
+  "98v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0195",
+    "sp": 195,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0195/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0195/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=195"
+  },
+  "99r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0196",
+    "sp": 196,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0196/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0196/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=196"
+  },
+  "99v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0197",
+    "sp": 197,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0197/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0197/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=197"
+  },
+  "100r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0198",
+    "sp": 198,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0198/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0198/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=198"
+  },
+  "100v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0199",
+    "sp": 199,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0199/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0199/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=199"
+  },
+  "101r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0200",
+    "sp": 200,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0200/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0200/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=200"
+  },
+  "101v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0201",
+    "sp": 201,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0201/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0201/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=201"
+  },
+  "102r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0202",
+    "sp": 202,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0202/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0202/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=202"
+  },
+  "102v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0203",
+    "sp": 203,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0203/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0203/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=203"
+  },
+  "103r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0204",
+    "sp": 204,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0204/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0204/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=204"
+  },
+  "103v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0205",
+    "sp": 205,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0205/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0205/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=205"
+  },
+  "104r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0206",
+    "sp": 206,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0206/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0206/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=206"
+  },
+  "104v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0207",
+    "sp": 207,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0207/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0207/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=207"
+  },
+  "105r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0208",
+    "sp": 208,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0208/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0208/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=208"
+  },
+  "105v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0209",
+    "sp": 209,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0209/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0209/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=209"
+  },
+  "106r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0210",
+    "sp": 210,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0210/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0210/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=210"
+  },
+  "106v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0211",
+    "sp": 211,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0211/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0211/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=211"
+  },
+  "107r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0212",
+    "sp": 212,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0212/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0212/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=212"
+  },
+  "107v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0213",
+    "sp": 213,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0213/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0213/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=213"
+  },
+  "108r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0214",
+    "sp": 214,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0214/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0214/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=214"
+  },
+  "108v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0215",
+    "sp": 215,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0215/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0215/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=215"
+  },
+  "109r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0216",
+    "sp": 216,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0216/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0216/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=216"
+  },
+  "109v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0217",
+    "sp": 217,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0217/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0217/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=217"
+  },
+  "110r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0218",
+    "sp": 218,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0218/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0218/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=218"
+  },
+  "110v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0219",
+    "sp": 219,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0219/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0219/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=219"
+  },
+  "111r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0220",
+    "sp": 220,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0220/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0220/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=220"
+  },
+  "111v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0221",
+    "sp": 221,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0221/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0221/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=221"
+  },
+  "112r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0222",
+    "sp": 222,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0222/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0222/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=222"
+  },
+  "112v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0223",
+    "sp": 223,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0223/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0223/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=223"
+  },
+  "113r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0224",
+    "sp": 224,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0224/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0224/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=224"
+  },
+  "113v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0225",
+    "sp": 225,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0225/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0225/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=225"
+  },
+  "114r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0226",
+    "sp": 226,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0226/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0226/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=226"
+  },
+  "114v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0227",
+    "sp": 227,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0227/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0227/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=227"
+  },
+  "115r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0228",
+    "sp": 228,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0228/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0228/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=228"
+  },
+  "115v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0229",
+    "sp": 229,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0229/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0229/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=229"
+  },
+  "116r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0230",
+    "sp": 230,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0230/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0230/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=230"
+  },
+  "116v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0231",
+    "sp": 231,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0231/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0231/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=231"
+  },
+  "117r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0232",
+    "sp": 232,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0232/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0232/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=232"
+  },
+  "117v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0233",
+    "sp": 233,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0233/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0233/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=233"
+  },
+  "118r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0234",
+    "sp": 234,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0234/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0234/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=234"
+  },
+  "118v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0235",
+    "sp": 235,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0235/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0235/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=235"
+  },
+  "119r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236",
+    "sp": 236,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=236"
+  },
+  "119v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0237",
+    "sp": 237,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0237/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0237/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=237"
+  },
+  "120r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0238",
+    "sp": 238,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0238/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0238/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=238"
+  },
+  "120v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0239",
+    "sp": 239,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0239/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0239/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=239"
+  },
+  "121r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0240",
+    "sp": 240,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0240/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0240/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=240"
+  },
+  "121v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0241",
+    "sp": 241,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0241/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0241/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=241"
+  },
+  "122r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0242",
+    "sp": 242,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0242/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0242/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=242"
+  },
+  "122v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0243",
+    "sp": 243,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0243/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0243/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=243"
+  },
+  "123r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0244",
+    "sp": 244,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0244/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0244/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=244"
+  },
+  "123v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0245",
+    "sp": 245,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0245/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0245/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=245"
+  },
+  "124r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0246",
+    "sp": 246,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0246/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0246/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=246"
+  },
+  "124v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0247",
+    "sp": 247,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0247/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0247/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=247"
+  },
+  "125r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0248",
+    "sp": 248,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0248/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0248/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=248"
+  },
+  "125v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0249",
+    "sp": 249,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0249/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0249/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=249"
+  },
+  "126r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0250",
+    "sp": 250,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0250/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0250/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=250"
+  },
+  "126v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0251",
+    "sp": 251,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0251/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0251/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=251"
+  },
+  "127r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0252",
+    "sp": 252,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0252/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0252/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=252"
+  },
+  "127v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0253",
+    "sp": 253,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0253/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0253/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=253"
+  },
+  "128r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0254",
+    "sp": 254,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0254/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0254/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=254"
+  },
+  "128v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0255",
+    "sp": 255,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0255/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0255/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=255"
+  },
+  "129r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0256",
+    "sp": 256,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0256/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0256/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=256"
+  },
+  "129v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257",
+    "sp": 257,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=257"
+  },
+  "130r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0258",
+    "sp": 258,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0258/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0258/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=258"
+  },
+  "130v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0259",
+    "sp": 259,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0259/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0259/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=259"
+  },
+  "131r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0260",
+    "sp": 260,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0260/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0260/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=260"
+  },
+  "131v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0261",
+    "sp": 261,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0261/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0261/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=261"
+  },
+  "132r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0262",
+    "sp": 262,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0262/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0262/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=262"
+  },
+  "132v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0263",
+    "sp": 263,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0263/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0263/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=263"
+  },
+  "133r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0264",
+    "sp": 264,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0264/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0264/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=264"
+  },
+  "133v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0265",
+    "sp": 265,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0265/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0265/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=265"
+  },
+  "134r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0266",
+    "sp": 266,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0266/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0266/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=266"
+  },
+  "134v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0267",
+    "sp": 267,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0267/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0267/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=267"
+  },
+  "135r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0268",
+    "sp": 268,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0268/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0268/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=268"
+  },
+  "135v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0269",
+    "sp": 269,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0269/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0269/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=269"
+  },
+  "136r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0270",
+    "sp": 270,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0270/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0270/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=270"
+  },
+  "136v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0271",
+    "sp": 271,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0271/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0271/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=271"
+  },
+  "137r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0272",
+    "sp": 272,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0272/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0272/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=272"
+  },
+  "137v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0273",
+    "sp": 273,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0273/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0273/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=273"
+  },
+  "138r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0274",
+    "sp": 274,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0274/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0274/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=274"
+  },
+  "138v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0275",
+    "sp": 275,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0275/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0275/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=275"
+  },
+  "139r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276",
+    "sp": 276,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=276"
+  },
+  "139v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0277",
+    "sp": 277,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0277/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0277/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=277"
+  },
+  "140r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0278",
+    "sp": 278,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0278/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0278/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=278"
+  },
+  "140v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0279",
+    "sp": 279,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0279/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0279/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=279"
+  },
+  "141r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0280",
+    "sp": 280,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0280/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0280/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=280"
+  },
+  "141v": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0281",
+    "sp": 281,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0281/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0281/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=281"
+  },
+  "142r": {
+    "facs": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0282",
+    "sp": 282,
+    "tile_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0282/full/full/0/default.jpg",
+    "thumb_url": "https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0282/full/pct:12.5/0/default.jpg",
+    "viewer_url": "https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=282"
+  }
+}

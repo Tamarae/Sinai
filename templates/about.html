@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% set active = "about" %}
+
+{% block title %}შესახებ — სინური მრავალთავი 864{% endblock %}
+{% block dc_title %}შესახებ — სინური მრავალთავი 864 წლისა, ციფრული გამოცემა{% endblock %}
+
+{% block head_extra %}
+<style>
+    .section-rule { width: 2rem; height: 2px; background: var(--crimson); display: block; margin: .6rem 0 1rem; }
+    .about-card { border: 1px solid #e0d8ce; background: white; }
+
+    .tech-pill {
+        font-size: .65rem; letter-spacing: .07em; font-weight: 500;
+        border: 1px solid #ddd5c8; background: var(--parchment);
+        border-radius: 2px; padding: .2rem .55rem;
+        color: var(--ink-muted);
+    }
+</style>
+{% endblock %}
+
+{% block main %}
+
+<!-- PAGE HEADER -->
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto">
+        <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ 864</p>
+        <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">შესახებ</h1>
+        <p class="text-sm text-gray-500 mt-1">პროექტი · მეთოდოლოგია · გუნდი</p>
+    </div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+        <!-- Main prose -->
+        <div class="lg:col-span-2 flex flex-col gap-10">
+
+            <!-- About the project -->
+            <section>
+                <p class="text-xs tracking-widests text-gray-400 tracking-widest font-medium uppercase mb-1">ᲞᲠᲝᲔᲥᲢᲘᲡ ᲨᲔᲡᲐᲮᲔᲑ</p>
+                <span class="section-rule"></span>
+                <div class="space-y-4 text-sm text-gray-600 leading-relaxed font-serif-geo">
+                    <p>
+                        სინური მრავალთავი 864 წლისა — ეს ციფრული სამეცნიერო გამოცემა
+                        ეძღვნება სინაის მთის წმინდა ეკატერინეს მონასტრის ქართული
+                        ხელნაწერებს. N35 ხელნაწერი, 864 წლით დათარიღებული, ერთ-ერთი
+                        უადრესი და სრულად შემონახული ქართული ლიტურგიული კრებულია.
+                    </p>
+                    <p>
+                        გამოცემა მოიცავს {{ catalog.texts | length }} ლიტურგიულ ტექსტს:
+                        ჰომილიებს, წმინდანთა ცხოვრებებს, წამებებს და სხვა ჟანრის
+                        ნაწარმოებებს — {{ catalog.authors | length }} ავტორის,
+                        {{ catalog.feasts | length }} ეკლესიური დღეობის მიხედვით
+                        სტრუქტურირებულს.
+                    </p>
+                    <p>
+                        კრიტიკული ტექსტი ეფუძნება ორ მოწმე ხელნაწერს (N35 და N50)
+                        სრული კოლაციური აპარატით. TEI-XML კოდირება უზრუნველყოფს
+                        გამოცემის გრძელვადიან ხელმისაწვდომობასა და
+                        ინტეროპერაბელობას.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Methodology -->
+            <section>
+                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-1">ᲛᲔᲗᲝᲓᲝᲚᲝᲒᲘᲐ</p>
+                <span class="section-rule"></span>
+                <div class="space-y-4 text-sm text-gray-600 leading-relaxed font-serif-geo">
+                    <p>
+                        ტექსტების კოდირება ხორციელდება TEI P5 სტანდარტის
+                        მიხედვით. კრიტიკული აპარატი (<code class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">app</code> /
+                        <code class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">rdg</code>)
+                        ასახავს ორი მოწმე ხელნაწერის ვარიანტებს.
+                        ასომთავრული ინიციალები მარკირებულია
+                        <code class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">hi[@rend='initial']</code>
+                        ელემენტით.
+                    </p>
+                    <p>
+                        ავტოორიტეტული სია (VIAF ID) გამოყენებულია ყველა
+                        ავტორისა და ანონიმური ატრიბუციისათვის. ლექსიკა
+                        ეფუძნება ტექსტებიდან ამოკრებილ ფორმებს კომენტარებითა
+                        და პარალელური ბერძნული ტექსტების მითითებით
+                        (CPG ნომრები).
+                    </p>
+                </div>
+            </section>
+
+            <!-- License & citation -->
+            <section>
+                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-1">ᲚᲘᲪᲔᲜᲖᲘᲐ · ᲪᲘᲢᲘᲠᲔᲑᲐ</p>
+                <span class="section-rule"></span>
+                <div class="about-card rounded-sm p-5 text-sm text-gray-600 leading-relaxed space-y-3">
+                    <p>
+                        გამოცემა ვრცელდება
+                        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                           target="_blank" rel="noopener"
+                           class="underline decoration-dotted hover:text-gray-800 transition-colors">CC BY-NC-SA 4.0</a>
+                        ლიცენზიით. TEI-XML ფაილები ხელმისაწვდომია
+                        <a href="{{ root }}data/catalog.xml"
+                           class="underline decoration-dotted hover:text-gray-800 transition-colors font-mono text-xs">catalog.xml</a>-ის
+                        მეშვეობით.
+                    </p>
+                    {% if doi %}
+                    <p>
+                        DOI:
+                        <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener"
+                           class="font-mono text-xs underline decoration-dotted hover:text-gray-800">
+                            https://doi.org/{{ doi }}
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+            </section>
+
+        </div><!-- /prose -->
+
+
+        <!-- Sidebar -->
+        <div class="flex flex-col gap-6">
+
+            <!-- Institution -->
+            <div class="about-card rounded-sm p-5">
+                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-3">დაწესებულება</p>
+                <p class="text-sm font-medium text-gray-800 font-serif-geo leading-snug">
+                    ილიას სახელმწიფო უნივერსიტეტი
+                </p>
+                <p class="text-xs text-gray-500 mt-1">
+                    ენათმეცნიერების კვლევითი ინსტიტუტი
+                </p>
+                <p class="text-xs text-gray-400 mt-3">2026</p>
+            </div>
+
+            <!-- Corpus stats -->
+            <div class="about-card rounded-sm p-5">
+                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-4">კორპუსი</p>
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">ტექსტები</span>
+                        <span class="font-medium font-serif-geo" style="color:var(--crimson);">{{ catalog.texts | length }}</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">ავტორები</span>
+                        <span class="font-medium font-serif-geo" style="color:var(--crimson);">{{ catalog.authors | length }}</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">დღეობები</span>
+                        <span class="font-medium font-serif-geo" style="color:var(--crimson);">{{ catalog.feasts | length }}</span>
+                    </div>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-gray-600">ხელნაწერები</span>
+                        <span class="font-medium font-serif-geo" style="color:var(--crimson);">{{ catalog.witnesses | length }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech stack -->
+            <div class="about-card rounded-sm p-5">
+                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-3">ტექნოლოგია</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="tech-pill">TEI P5</span>
+                    <span class="tech-pill">XML</span>
+                    <span class="tech-pill">VIAF</span>
+                    <span class="tech-pill">CPG</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Jinja2</span>
+                    <span class="tech-pill">lxml</span>
+                </div>
+            </div>
+
+        </div><!-- /sidebar -->
+
+    </div>
+</div>
+
+{% endblock %}

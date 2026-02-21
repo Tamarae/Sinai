@@ -1,0 +1,281 @@
+{% extends "base.html" %}
+{% set active = "texts" %}
+{% set root   = "../" %}
+
+{% block title %}ტექსტები{% endblock %}
+
+{% block head_extra %}
+<style>
+    .tab-btn { transition:background .15s, color .15s; letter-spacing:.06em; }
+    .tab-btn.active { background:var(--crimson); color:white; }
+
+    .month-header { background:var(--crimson-pale); border-left:3px solid var(--crimson); }
+
+    .text-row { transition:background .1s; cursor:pointer; }
+    .text-row:hover { background:#f5f2ed; }
+
+    .author-block { border-left:2px solid #ddd5c8; transition:border-color .15s; }
+    .author-block:hover { border-left-color:var(--crimson); }
+
+    /* status dot in table */
+    .dot { width:6px; height:6px; border-radius:50%; display:inline-block; flex-shrink:0; }
+
+    .panel { display:none; }
+    .panel.active { display:block; }
+
+    .filter-chip { transition:background .12s, color .12s, border-color .12s; cursor:pointer; }
+    .filter-chip.on { background:var(--crimson); color:white; border-color:var(--crimson); }
+</style>
+{% endblock %}
+
+{% block main %}
+
+<!-- PAGE HEADER -->
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto flex items-end justify-between gap-4 flex-wrap">
+        <div>
+            <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ 864</p>
+            <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ტექსტები</h1>
+            <p class="text-sm text-gray-500 mt-1">ჰომილიები · ცხოვრებანი · წამებანი · სხვა ·
+                <span class="font-medium text-gray-600">{{ texts | length }} ტექსტი</span>
+            </p>
+        </div>
+        <!-- View toggle -->
+        <div class="flex items-center gap-1 p-1 rounded-sm border border-gray-200 bg-gray-50">
+            <button id="btn-theme" onclick="switchView('theme')"
+                    class="tab-btn active px-4 py-1.5 rounded-sm text-xs font-medium flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+                </svg>ავტ. / ჟანრი
+            </button>
+            <button id="btn-cal" onclick="switchView('cal')"
+                    class="tab-btn px-4 py-1.5 rounded-sm text-xs font-medium text-gray-600 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>კალენდარი
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN AREA -->
+<div class="max-w-5xl mx-auto px-4 py-8 flex gap-8">
+
+    <!-- SIDEBAR -->
+    <aside class="hidden lg:block w-44 flex-shrink-0">
+
+        <!-- Calendar sidebar -->
+        <div id="sb-cal" class="sticky top-24 hidden">
+            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ᲗᲕᲔᲔᲑᲘ</p>
+            <nav class="flex flex-col gap-0.5 text-xs">
+                {% for feast in feasts %}
+                {% if feast.fixed_month %}
+                <a href="#feast-{{ feast.id }}"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">{{ feast.label_ka }}</a>
+                {% endif %}
+                {% endfor %}
+                <a href="#feast-moveable"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მოძრავი</a>
+                <a href="#feast-misc"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა / დამ.</a>
+            </nav>
+            <div class="mt-6 pt-4 border-t border-gray-200">
+                <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
+                <div class="flex flex-col gap-1">
+                    <button onclick="toggleFilter(this,'homily')"  class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
+                    <button onclick="toggleFilter(this,'life')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
+                    <button onclick="toggleFilter(this,'martyrdom')"class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
+                    <button onclick="toggleFilter(this,'other')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thematic sidebar -->
+        <div id="sb-theme" class="sticky top-24">
+            <p class="text-xs tracking-widests text-gray-400 font-medium mb-3 tracking-widest">ავტორი</p>
+            <nav class="flex flex-col gap-0.5 text-xs">
+                {% for author in authors %}
+                <a href="#author-{{ author.id }}"
+                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">{{ author.short_ka }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="flex-1 min-w-0">
+
+        <!-- Search (shared) -->
+        <div class="mb-6 relative">
+            <input id="text-search" type="text"
+                   placeholder="ძიება — სახელი, ავტორი, ფოლიო..."
+                   class="w-full border border-gray-300 rounded-sm px-4 py-2.5 text-sm placeholder-gray-400 focus:outline-none focus:border-gray-400 bg-white">
+            <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </span>
+        </div>
+
+        <!-- ═══════════ CALENDAR VIEW ═══════════ -->
+        <div id="panel-cal" class="panel">
+
+            {% for feast in feasts_ordered %}
+            {% set feast_texts = texts | selectattr('feast_id','eq', feast.id) | list %}
+            {% if feast_texts %}
+            <section id="feast-{{ feast.id }}" class="mb-10">
+
+                <div class="month-header px-4 py-2">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold tracking-widest text-gray-700 uppercase">{{ feast.label_ka }}</span>
+                        <span class="text-xs text-gray-400">{{ feast.date_display }}</span>
+                    </div>
+                </div>
+
+                <div class="border border-t-0 border-gray-200 rounded-b-sm overflow-hidden">
+                    <table class="w-full text-sm" data-feast="{{ feast.id }}">
+                        <thead>
+                            <tr style="background:#faf8f5;" class="border-b border-gray-100">
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium w-12"></th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium">სახელწოდება</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ავტორი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden md:table-cell w-20">ჟანრი</th>
+                                <th class="text-left px-4 py-2.5 text-xs text-gray-400 tracking-widest font-medium hidden sm:table-cell w-28">ფოლიო (N35)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            {% for t in feast_texts %}
+                            <tr class="text-row" data-genre="{{ t.genre }}"
+                                {% if t.status == 'encoding-in-progress' or t.status == 'done' %}
+                                onclick="window.location='{{ t.xml_id }}.html'"
+                                {% endif %}>
+                                <td class="px-4 py-3">
+                                    <span class="dot status-{{ t.status_class }}" title="{{ t.status_label }}"></span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">{{ t.label_ka }}</div>
+                                    {% if t.ms_heading %}
+                                    <div class="text-xs text-gray-400 mt-0.5">{{ t.ms_heading_short }}</div>
+                                    {% endif %}
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">{{ t.author_short }}</td>
+                                <td class="px-4 py-3 hidden md:table-cell">
+                                    <span class="badge-{{ t.genre_class }} text-xs px-1.5 py-0.5 rounded-sm font-medium">{{ t.genre_label }}</span>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic">{{ t.locus_n35 }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            {% endif %}
+            {% endfor %}
+
+        </div><!-- /panel-cal -->
+
+
+        <!-- ═══════════ THEMATIC VIEW ═══════════ -->
+        <div id="panel-theme" class="panel active">
+
+            {% for author in authors %}
+            {% set author_texts = texts | selectattr('author_id','eq', author.id) | list %}
+            {% if author_texts %}
+            <section id="author-{{ author.id }}" class="mb-10">
+
+                <div class="author-block pl-4 pb-1 mb-3">
+                    <h3 class="font-serif-geo font-semibold text-gray-800">{{ author.name_ka }}</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">{{ author.name_la }}{% if author.dates %} · {{ author.dates }}{% endif %}</p>
+                </div>
+
+                <div class="border border-gray-200 rounded-sm overflow-hidden">
+                    <table class="w-full text-sm">
+                        <tbody class="divide-y divide-gray-100">
+                            {% for t in author_texts %}
+                            <tr class="text-row"
+                                {% if t.status in ('done','encoding-in-progress') %}
+                                onclick="window.location='{{ t.xml_id }}.html'"
+                                {% endif %}>
+                                <td class="px-4 py-3 w-16">
+                                    <span class="badge-{{ t.genre_class }} text-xs px-1.5 py-0.5 rounded-sm font-medium">{{ t.genre_label }}</span>
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="font-serif-geo text-sm text-gray-800">{{ t.label_ka }}</div>
+                                    <div class="text-xs text-gray-400 mt-0.5">{{ t.feast_label }} · {{ t.locus_n35 }}</div>
+                                </td>
+                                <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
+                                    <span class="dot status-{{ t.status_class }}" title="{{ t.status_label }}"></span>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            {% endif %}
+            {% endfor %}
+
+        </div><!-- /panel-theme -->
+
+        <!-- Status legend -->
+        <div class="flex items-center gap-5 text-xs text-gray-400 mt-6 pt-4 border-t border-gray-100">
+            <span class="flex items-center gap-1.5"><span class="dot status-done"></span>დასრ.</span>
+            <span class="flex items-center gap-1.5"><span class="dot status-progress"></span>მიმდ.</span>
+            <span class="flex items-center gap-1.5"><span class="dot status-planned"></span>დაგეგ.</span>
+        </div>
+
+    </div><!-- /content -->
+</div><!-- /flex area -->
+
+{% endblock %}
+
+
+{% block body_scripts %}
+<script>
+function switchView(mode) {
+    const panels   = { cal: 'panel-cal',   theme: 'panel-theme'  };
+    const sidebars = { cal: 'sb-cal',      theme: 'sb-theme'     };
+    const buttons  = { cal: 'btn-cal',     theme: 'btn-theme'    };
+    Object.keys(panels).forEach(k => {
+        document.getElementById(panels[k]).classList.toggle('active', k === mode);
+        document.getElementById(sidebars[k]).classList.toggle('hidden', k !== mode);
+        document.getElementById(buttons[k]).classList.toggle('active', k === mode);
+    });
+}
+
+const activeGenres = new Set(['homily','life','martyrdom','other']);
+
+function toggleFilter(btn, genre) {
+    btn.classList.toggle('on');
+    if (activeGenres.has(genre)) activeGenres.delete(genre);
+    else activeGenres.add(genre);
+    applyFilters();
+}
+
+function applyFilters() {
+    document.querySelectorAll('#panel-cal .text-row').forEach(row => {
+        const g = row.dataset.genre || 'other';
+        row.style.display = activeGenres.has(g) ? '' : 'none';
+    });
+    // Hide month sections if all rows hidden
+    document.querySelectorAll('#panel-cal section').forEach(sec => {
+        const rows = sec.querySelectorAll('.text-row');
+        const anyVisible = [...rows].some(r => r.style.display !== 'none');
+        sec.style.display = anyVisible ? '' : 'none';
+    });
+}
+
+document.getElementById('text-search').addEventListener('input', function() {
+    const q = this.value.toLowerCase();
+    const panel = document.querySelector('.panel.active');
+    panel.querySelectorAll('.text-row').forEach(row => {
+        row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+});
+</script>
+{% endblock %}

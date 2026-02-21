@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}ბიბლიოგრაფია{% endblock %}
+{% block dc_title %}ბიბლიოგრაფია — სინური მრავალთავი 864{% endblock %}
+
+{% block main %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  <!-- Header -->
+  <div class="mb-10 f1">
+    <p class="text-xs font-medium tracking-widest mb-2" style="color:var(--crimson);">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</p>
+    <h1 class="font-serif-geo text-3xl font-bold mb-3" style="color:var(--ink);">ბიბლიოგრაფია</h1>
+    <p class="text-sm text-gray-500 max-w-2xl">
+      პირველწყაროები, კრიტიკული გამოცემები, სამეცნიერო კვლევები და ციფრული ჰუმანიტარიის
+      სტანდარტები, რომლებზეც დაფუძნებულია სინური მრავალთავის ციფრული გამოცემა.
+    </p>
+  </div>
+
+  <!-- Section tabs / jump links -->
+  <div class="flex flex-wrap gap-2 mb-10 f2">
+    {% for btype in types %}
+    <a href="#{{ btype }}"
+       class="px-3 py-1.5 rounded-sm text-xs font-medium border transition-colors hover:border-gray-400"
+       style="border-color:#e0d8ce; color:var(--ink-muted); background:var(--parchment);">
+      {{ entries_by_type[btype][0].type_label }}
+      <span class="ml-1 text-gray-400">({{ entries_by_type[btype]|length }})</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <!-- Sections -->
+  {% for btype in types %}
+  {% set group = entries_by_type[btype] %}
+  <section id="{{ btype }}" class="mb-14 f3">
+
+    <div class="flex items-center gap-3 mb-6">
+      <h2 class="font-serif-geo text-lg font-semibold" style="color:var(--ink);">
+        {{ group[0].type_label }}
+      </h2>
+      <span class="h-px flex-1" style="background:#e0d8ce;"></span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      {% for entry in group %}
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="{{ entry.xml_id }}">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            {% if entry.author_display %}
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              {{ entry.author_display }}
+            </p>
+            {% endif %}
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              {% if entry.is_article %}"{{ entry.title }}"{% else %}{{ entry.title }}{% endif %}
+              {% if entry.title_short %}
+              <span class="font-sans font-normal text-xs text-gray-400 ml-1">[{{ entry.title_short }}]</span>
+              {% endif %}
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              {% if entry.journal %}
+                <span class="italic">{{ entry.journal }}</span>
+                {% if entry.volume %} {{ entry.volume }}{% endif %}
+                {% if entry.issue %}/{{ entry.issue }}{% endif %}
+                {% if entry.date %} ({{ entry.date }}){% endif %}
+                {% if entry.pages %}, {{ entry.pages }}{% endif %}
+              {% else %}
+                {% if entry.pub_place %}{{ entry.pub_place }}{% endif %}
+                {% if entry.publisher %}: {{ entry.publisher }}{% endif %}
+                {% if entry.date %}, {{ entry.date }}{% endif %}
+                {% if entry.series %}
+                <span class="ml-1 text-gray-400">({{ entry.series }})</span>
+                {% endif %}
+                {% if entry.extent %}
+                <span class="ml-1 text-gray-400">· {{ entry.extent }}</span>
+                {% endif %}
+              {% endif %}
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              {% if entry.shelfmark %}
+              <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-600">
+                {{ entry.shelfmark }}
+              </span>
+              {% endif %}
+
+              {% if entry.siglum %}
+              <span class="px-2 py-0.5 rounded-sm text-xs font-mono font-bold"
+                    style="background:var(--crimson-pale); color:var(--crimson); border:1px solid #e8c5c5;">
+                {{ entry.siglum }}
+              </span>
+              {% endif %}
+
+              {% if entry.doi %}
+              <a href="https://doi.org/{{ entry.doi }}"
+                 target="_blank" rel="noopener"
+                 class="lod-badge px-2 py-0.5 rounded-sm hover:opacity-80 transition-opacity">
+                DOI
+              </a>
+              {% endif %}
+
+              {% if entry.iiif %}
+              <a href="{{ entry.iiif }}"
+                 target="_blank" rel="noopener"
+                 class="px-2 py-0.5 rounded-sm text-xs font-medium hover:opacity-80 transition-opacity"
+                 style="background:#5a1a7a; color:white; font-size:.6rem; letter-spacing:.08em;">
+                IIIF
+              </a>
+              {% endif %}
+
+              {% if entry.url %}
+              <a href="{{ entry.url }}"
+                 target="_blank" rel="noopener"
+                 class="text-xs underline hover:no-underline"
+                 style="color:var(--crimson);">
+                ონლაინ
+              </a>
+              {% endif %}
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#{{ entry.xml_id }}"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #{{ entry.xml_id }}
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            {% if entry.note %}
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              {{ entry.note }}
+            </p>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <!-- Footer note -->
+  <div class="mt-4 pt-6 border-t text-xs text-gray-400" style="border-color:#e0d8ce;">
+    ბიბლიოგრაფია კოდირებულია TEI P5 სტანდარტით (<code class="font-mono">tei/bibliography.xml</code>).
+    შეცდომის ან გამოტოვების შემთხვევაში გთხოვთ დაგვიკავშირდეთ.
+  </div>
+
+</div>
+{% endblock %}

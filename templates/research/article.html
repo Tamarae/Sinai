@@ -1,0 +1,423 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.meta.title }} — სინური მრავალთავი 864{% endblock %}
+{% block dc_title %}{{ article.meta.title }}{% endblock %}
+
+{% block dc_extra %}
+{% if article.meta.author %}
+<meta name="DC.creator" content="{{ article.meta.author }}">
+{% endif %}
+{% if article.meta.date %}
+<meta name="DC.date" content="{{ article.meta.date }}">
+{% endif %}
+{% endblock %}
+
+{% block head_extra %}
+<style>
+    .article-body {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-size: 1rem;
+        line-height: 1.85;
+        color: var(--ink);
+    }
+    .article-body p {
+        margin-bottom: 1.1em;
+        text-align: justify;
+        hyphens: auto;
+        position: relative;
+    }
+
+    .section-head {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--crimson);
+        margin: 2rem 0 1rem;
+        letter-spacing: .02em;
+    }
+    .subsection-head {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-weight: 600;
+        font-size: .95rem;
+        color: var(--ink);
+        margin: 1.5rem 0 .75rem;
+        border-left: 2px solid var(--crimson);
+        padding-left: .75rem;
+    }
+
+    /* ── ⎘ URN: hidden, revealed on paragraph hover ──
+       No paragraph numbers in research articles.
+       Button is inside <p> so p:hover stays active
+       when mouse moves from text onto the button.       */
+    .cts-copy-btn {
+        position: absolute;
+        left: -2.8rem;
+        top: .05em;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .12s;
+        display: inline-flex;
+        align-items: center;
+        gap: .2rem;
+        background: white;
+        border: 1px solid #e0d8ce;
+        border-radius: 3px;
+        cursor: pointer;
+        color: #aaa;
+        font-size: .58rem;
+        font-family: 'Noto Sans Georgian', sans-serif;
+        padding: 2px 5px;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+    .cts-copy-btn:hover { color: var(--crimson); border-color: var(--crimson); }
+    .cts-copy-btn.copied { color: #2d5a2d; border-color: #2d5a2d; }
+
+    .article-body p:hover > .cts-copy-btn { opacity: 1; pointer-events: auto; }
+
+    /* Room for the button */
+    .article-body { padding-left: 3rem; }
+
+    /* ── Footnote superscripts ────────────────────── */
+    .note-ref-wrap { position: relative; display: inline; }
+    .note-ref {
+        color: var(--crimson);
+        text-decoration: none;
+        font-size: .7rem;
+        font-family: 'Noto Sans Georgian', sans-serif;
+        vertical-align: super;
+        line-height: 0;
+        padding: 0 1px;
+        cursor: pointer;
+    }
+    .note-ref:hover { text-decoration: underline; }
+
+    /* ── Footnote tooltip ─────────────────────────── */
+    .fn-tooltip {
+        display: none;
+        position: absolute;
+        bottom: calc(100% + 6px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 320px;
+        max-height: 220px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #e0d8ce;
+        border-radius: 3px;
+        box-shadow: 0 4px 16px rgba(0,0,0,.1);
+        padding: .65rem .75rem;
+        font-size: .75rem;
+        font-family: 'Noto Sans Georgian', sans-serif;
+        line-height: 1.55;
+        color: #4a4030;
+        z-index: 100;
+        text-align: left;
+    }
+    .fn-tooltip::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 5px solid transparent;
+        border-top-color: #e0d8ce;
+    }
+    .fn-tooltip .fn-tooltip-n {
+        display: inline-block;
+        color: var(--crimson);
+        font-weight: 700;
+        margin-right: .3em;
+        font-size: .65rem;
+    }
+    .fn-tooltip cite,
+    .fn-tooltip .bib-title,
+    .fn-tooltip .bib-title-foreign { font-style: italic; }
+    .fn-tooltip .bib-author { font-weight: 600; }
+    .note-ref-wrap:hover .fn-tooltip { display: block; }
+    .fn-tooltip:hover { display: block; }
+
+    .pb-marker {
+        font-size: .65rem;
+        font-family: 'Noto Sans Georgian', sans-serif;
+        color: #bbb;
+        font-style: normal;
+        letter-spacing: .03em;
+        margin: 0 .15em;
+    }
+    .persname { font-style: italic; }
+
+    /* ── Inline links ─────────────────────────────── */
+    .ext-link {
+        color: var(--crimson);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 2px;
+    }
+    .ext-link:hover {
+        text-decoration-style: solid;
+    }
+    .ext-link::after {
+        content: '\00a0↗';
+        font-size: .65em;
+        vertical-align: super;
+        color: var(--crimson);
+        opacity: .7;
+    }
+    .bib-ref {
+        color: var(--crimson);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 2px;
+    }
+    .bib-ref:hover { text-decoration-style: solid; }
+
+    /* ── Footnotes section ────────────────────────── */
+    .footnotes-section {
+        border-top: 1px solid #e0d8ce;
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+    }
+    .footnote-item {
+        display: flex;
+        gap: .75rem;
+        margin-bottom: .9rem;
+        font-size: .78rem;
+        line-height: 1.6;
+        font-family: 'Noto Sans Georgian', sans-serif;
+        color: #4a4030;
+    }
+    .footnote-n {
+        flex-shrink: 0;
+        width: 1.5rem;
+        text-align: right;
+        color: var(--crimson);
+        font-weight: 600;
+        font-size: .7rem;
+        padding-top: .1em;
+    }
+    .footnote-body { flex: 1; }
+    .footnote-body .bib-title,
+    .footnote-body .bib-title-foreign,
+    .footnote-body cite { font-style: italic; }
+    .footnote-body .bib-author { font-weight: 600; }
+    .fn-backref {
+        color: #bbb;
+        text-decoration: none;
+        margin-left: .3em;
+        font-size: .65rem;
+    }
+    .fn-backref:hover { color: var(--crimson); }
+
+    /* ── CTS toast ────────────────────────────────── */
+    .cts-toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: #1f2937;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 0.75rem;
+        font-family: 'Noto Sans Georgian', sans-serif;
+        opacity: 0;
+        transition: all 0.3s ease;
+        z-index: 200;
+        box-shadow: 0 4px 12px rgba(0,0,0,.15);
+        white-space: nowrap;
+        max-width: 90vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        pointer-events: none;
+    }
+    .cts-toast.visible {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+
+    /* ── TOC sidebar ──────────────────────────────── */
+    .toc-link {
+        display: block;
+        font-size: .75rem;
+        color: #6b7280;
+        padding: .2rem 0;
+        text-decoration: none;
+        border-left: 2px solid transparent;
+        padding-left: .6rem;
+        transition: all .15s;
+    }
+    .toc-link:hover { color: var(--crimson); border-left-color: var(--crimson); }
+</style>
+{% endblock %}
+
+{% block main %}
+
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto">
+        <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">
+            <a href="{{ root }}research/index.html"
+               class="hover:text-gray-600 transition-colors">ᲙᲕᲚᲔᲕᲐ</a>
+        </p>
+        <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">
+            {{ article.meta.title }}
+        </h1>
+        {% if article.meta.title_en %}
+        <p class="text-sm text-gray-400 italic mt-0.5">{{ article.meta.title_en }}</p>
+        {% endif %}
+        <div class="flex flex-wrap items-center gap-4 mt-2 text-xs text-gray-400">
+            {% if article.meta.author %}<span>{{ article.meta.author }}</span>{% endif %}
+            {% if article.meta.date %}<span>{{ article.meta.date }}</span>{% endif %}
+        </div>
+    </div>
+</div>
+
+<div id="cts-toast" class="cts-toast"></div>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-12">
+
+    <div>
+      {% if article.meta.abstract %}
+      <div class="mb-8 p-4 rounded-sm border text-sm font-serif-geo leading-relaxed text-gray-600"
+           style="border-color:#e0d8ce; background:var(--gold-pale);">
+        <span class="text-xs font-sans font-medium text-gray-400 tracking-widest block mb-1">ABSTRACT</span>
+        {{ article.meta.abstract }}
+      </div>
+      {% endif %}
+
+      <div class="article-body">
+        {% for section in article.sections %}
+
+          {% if section.head %}
+          <h2 class="section-head" id="{{ section.xml_id }}">{{ section.head }}</h2>
+          {% endif %}
+
+          {% for p in section.paragraphs %}
+          <p id="{{ p.xml_id }}"><button class="cts-copy-btn"
+                  data-urn="urn:cts:georgiansin:{{ article.meta.xml_id }}.geo1:{{ p.xml_id }}"
+                  title="CTS URN კოპირება"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN</button>{{ p.html | safe }}</p>
+          {% endfor %}
+
+          {% for sub in section.subsections %}
+            {% if sub.head %}
+            <h3 class="subsection-head" id="{{ sub.xml_id }}">{{ sub.head }}</h3>
+            {% endif %}
+            {% for p in sub.paragraphs %}
+            <p id="{{ p.xml_id }}"><button class="cts-copy-btn"
+                    data-urn="urn:cts:georgiansin:{{ article.meta.xml_id }}.geo1:{{ p.xml_id }}"
+                    title="CTS URN კოპირება"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN</button>{{ p.html | safe }}</p>
+            {% endfor %}
+          {% endfor %}
+
+        {% endfor %}
+      </div>
+
+      {% if article.all_notes %}
+      <div class="footnotes-section">
+        <p class="text-xs font-medium text-gray-400 tracking-widest mb-4">შენიშვნები</p>
+        {% for note in article.all_notes %}
+        <div class="footnote-item" id="fn-{{ note.xml_id }}">
+          <span class="footnote-n">{{ note.n }}</span>
+          <span class="footnote-body">
+            {{ note.html | safe }}
+            <a href="#ref-{{ note.xml_id }}" class="fn-backref" title="ტექსტში დაბრუნება">↑</a>
+          </span>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="mt-8 pt-4 border-t text-xs text-gray-400" style="border-color:#e0d8ce;">
+        TEI-XML: <code class="font-mono">tei/research/{{ article.meta.xml_id }}.xml</code>
+      </div>
+    </div>
+
+    <aside class="hidden lg:block">
+      <div class="sticky top-20">
+        <p class="text-xs font-medium text-gray-400 tracking-widest mb-3">შინაარსი</p>
+        {% for section in article.sections %}
+          {% if section.head %}
+          <a href="#{{ section.xml_id }}" class="toc-link">{{ section.head }}</a>
+          {% endif %}
+          {% for sub in section.subsections %}
+            {% if sub.head %}
+            <a href="#{{ sub.xml_id }}" class="toc-link pl-4">{{ sub.head }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% if article.all_notes %}
+        <a href="#fn-{{ article.all_notes[0].xml_id }}"
+           class="toc-link mt-2 border-t pt-2" style="border-color:#e0d8ce;">შენიშვნები</a>
+        {% endif %}
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block body_scripts %}
+<script>
+// ── Footnote tooltip injection ────────────────────────
+(function () {
+    const notes = {};
+    document.querySelectorAll('.footnote-item').forEach(item => {
+        const id   = item.id.replace(/^fn-/, '');
+        const n    = item.querySelector('.footnote-n')?.textContent.trim() || '';
+        const body = item.querySelector('.footnote-body')?.innerHTML || '';
+        notes[id] = { n, body };
+    });
+    document.querySelectorAll('.note-ref-wrap').forEach(wrap => {
+        const id = wrap.dataset.noteId;
+        if (!id || !notes[id]) return;
+        const tip = document.createElement('span');
+        tip.className = 'fn-tooltip';
+        tip.innerHTML = `<span class="fn-tooltip-n">${notes[id].n}</span>${notes[id].body}`;
+        wrap.appendChild(tip);
+    });
+})();
+
+// ── CTS URN copy ──────────────────────────────────────
+const ctsToast = document.getElementById('cts-toast');
+let toastTimer;
+
+function showToast(msg) {
+    clearTimeout(toastTimer);
+    ctsToast.textContent = msg;
+    ctsToast.classList.add('visible');
+    toastTimer = setTimeout(() => ctsToast.classList.remove('visible'), 2500);
+}
+
+document.querySelectorAll('.cts-copy-btn').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const urn = this.dataset.urn;
+        const self = this;
+
+        navigator.clipboard.writeText(urn).then(() => {
+            self.classList.add('copied');
+            showToast(urn);
+            setTimeout(() => self.classList.remove('copied'), 1500);
+        }).catch(() => {
+            const ta = document.createElement('textarea');
+            ta.value = urn;
+            ta.style.position = 'fixed';
+            ta.style.opacity  = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+                document.execCommand('copy');
+                self.classList.add('copied');
+                showToast(urn);
+                setTimeout(() => self.classList.remove('copied'), 1500);
+            } catch (err) {
+                showToast('კოპირება ვერ მოხდა: ' + urn);
+            }
+            document.body.removeChild(ta);
+        });
+    });
+});
+</script>
+{% endblock %}

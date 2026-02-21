@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბიბლიოგრაფია — ციფრული სამეცნიერო გამოცემა</title>
+
+    <!-- Dublin Core -->
+    <meta name="DC.title"     content="ბიბლიოგრაფია — სინური მრავალთავი 864">
+    <meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+    <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+    <meta name="DC.language"  content="ka">
+    
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --crimson:      #7a1a1a;
+            --crimson-light:#9b2c2c;
+            --crimson-pale: #fdf2f2;
+            --gold:         #8a6e2e;
+            --gold-pale:    #faf6ee;
+            --parchment:    #faf8f5;
+            --parchment-dark:#f0ece4;
+            --ink:          #1a1a1a;
+            --ink-muted:    #4a4030;
+        }
+
+        /* ── Base ─────────────────────── */
+        body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
+        .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
+        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
+        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* ── Nav ─────────────────────── */
+        .nav-link { position:relative; letter-spacing:.07em; }
+        .nav-link::after {
+            content:''; position:absolute; bottom:-2px; left:0;
+            width:0; height:1px; background:var(--crimson); transition:width .2s;
+        }
+        .nav-link:hover::after { width:100%; }
+        .nav-link.active { color:var(--crimson); }
+        .nav-link.active::after { width:100%; }
+
+        /* ── Cards ───────────────────── */
+        .card { transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,.07); border-color:#c8bfb6; }
+
+        /* ── Chips & badges ──────────── */
+        .folio-chip { font-size:.65rem; letter-spacing:.04em; border:1px solid #ddd5c8; background:var(--parchment); font-family:'Noto Serif Georgian',Georgia,serif; font-style:italic; }
+        .bog-badge     { font-size:.6rem; letter-spacing:.08em; background:var(--ink);    color:var(--parchment); }
+        .lod-badge     { font-size:.6rem; letter-spacing:.08em; background:#1a3d6b;       color:white; }
+        .olia-badge    { font-size:.6rem; letter-spacing:.08em; background:#2d5a2d;       color:white; }
+        .logeion-badge { font-size:.6rem; letter-spacing:.08em; background:#5a3d1a;       color:white; }
+
+        /* ── Status dots (for catalog) ─ */
+        .status-done      { background:#2d5a2d; }
+        .status-progress  { background:#8a6e2e; }
+        .status-planned   { background:#d1cdc7; }
+
+        /* ── Genre badges ─────────────  */
+        .badge-homily  { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+        .badge-life    { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+        .badge-martyr  { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+        .badge-encomiun{ background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+        .badge-colophon{ background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+        .badge-other   { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
+
+        /* ── Parchment texture ────────── */
+        .parchment-texture {
+            background-image:
+                radial-gradient(ellipse at 15% 60%, rgba(122,26,26,.025) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(138,110,46,.03)  0%, transparent 45%);
+        }
+
+        /* ── Animations ──────────────── */
+        @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        .f1{animation:fadeUp .45s ease .04s both}
+        .f2{animation:fadeUp .45s ease .1s  both}
+        .f3{animation:fadeUp .45s ease .17s both}
+        .f4{animation:fadeUp .45s ease .24s both}
+        .f5{animation:fadeUp .45s ease .31s both}
+    </style>
+
+    
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="border-b border-gray-200 sticky top-0 z-50" style="background:var(--parchment);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+
+            <a href="../index.html" class="flex items-center gap-2.5 group">
+                <span class="font-serif-geo font-bold text-lg leading-none select-none"
+                      style="color:var(--crimson);">Ⴑ</span>
+                <span class="text-sm font-medium text-gray-700 tracking-wide group-hover:text-gray-900 transition-colors">
+                    ႱႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                </span>
+            </a>
+
+            <!-- Desktop nav — order: ტექსტები · ხელნაწერები · ლექსიკონი · კვლევა · ბიბლიოგრაფია · შესახებ -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="../texts/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html"
+                   class="nav-link active text-xs font-medium text-gray-500 hover:text-gray-900">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+
+            <button id="mob-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav — same order -->
+        <div id="mob-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+            <div class="flex flex-col gap-1">
+                <a href="../texts/index.html"       class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"        class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"      class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"     class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html" class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"              class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('mob-btn').addEventListener('click', () =>
+        document.getElementById('mob-menu').classList.toggle('hidden'));
+</script>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main class="flex-1">
+    
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  <!-- Header -->
+  <div class="mb-10 f1">
+    <p class="text-xs font-medium tracking-widest mb-2" style="color:var(--crimson);">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</p>
+    <h1 class="font-serif-geo text-3xl font-bold mb-3" style="color:var(--ink);">ბიბლიოგრაფია</h1>
+    <p class="text-sm text-gray-500 max-w-2xl">
+      პირველწყაროები, კრიტიკული გამოცემები, სამეცნიერო კვლევები და ციფრული ჰუმანიტარიის
+      სტანდარტები, რომლებზეც დაფუძნებულია სინური მრავალთავის ციფრული გამოცემა.
+    </p>
+  </div>
+
+  <!-- Section tabs / jump links -->
+  <div class="flex flex-wrap gap-2 mb-10 f2">
+    
+    <a href="#manuscript"
+       class="px-3 py-1.5 rounded-sm text-xs font-medium border transition-colors hover:border-gray-400"
+       style="border-color:#e0d8ce; color:var(--ink-muted); background:var(--parchment);">
+      პირველწყაროები — ხელნაწერები
+      <span class="ml-1 text-gray-400">(2)</span>
+    </a>
+    
+    <a href="#edition"
+       class="px-3 py-1.5 rounded-sm text-xs font-medium border transition-colors hover:border-gray-400"
+       style="border-color:#e0d8ce; color:var(--ink-muted); background:var(--parchment);">
+      კრიტიკული გამოცემები
+      <span class="ml-1 text-gray-400">(3)</span>
+    </a>
+    
+    <a href="#secondary"
+       class="px-3 py-1.5 rounded-sm text-xs font-medium border transition-colors hover:border-gray-400"
+       style="border-color:#e0d8ce; color:var(--ink-muted); background:var(--parchment);">
+      კვლევები
+      <span class="ml-1 text-gray-400">(11)</span>
+    </a>
+    
+    <a href="#digital"
+       class="px-3 py-1.5 rounded-sm text-xs font-medium border transition-colors hover:border-gray-400"
+       style="border-color:#e0d8ce; color:var(--ink-muted); background:var(--parchment);">
+      ციფრული ჰუმანიტარია
+      <span class="ml-1 text-gray-400">(2)</span>
+    </a>
+    
+  </div>
+
+  <!-- Sections -->
+  
+  
+  <section id="manuscript" class="mb-14 f3">
+
+    <div class="flex items-center gap-3 mb-6">
+      <h2 class="font-serif-geo text-lg font-semibold" style="color:var(--ink);">
+        პირველწყაროები — ხელნაწერები
+      </h2>
+      <span class="h-px flex-1" style="background:#e0d8ce;"></span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-N50">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              სინური მრავალთავი
+              
+              <span class="font-sans font-normal text-xs text-gray-400 ml-1">[N 50]</span>
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                სინაის მთის წმ. ეკატერინეს მონასტერი
+                
+                , 0950–1050
+                
+                
+                <span class="ml-1 text-gray-400">· 198 ფურცელი</span>
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+              <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-600">
+                Sin. geo. N
+              </span>
+              
+
+              
+              <span class="px-2 py-0.5 rounded-sm text-xs font-mono font-bold"
+                    style="background:var(--crimson-pale); color:var(--crimson); border:1px solid #e8c5c5;">
+                N50
+              </span>
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-N50"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-N50
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              მეორე მოწმე; გამოიყენება კოლაციისთვის.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-N35">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              სინური მრავალთავი 864 წლისა
+              
+              <span class="font-sans font-normal text-xs text-gray-400 ml-1">[N 35]</span>
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                სინაის მთის წმ. ეკატერინეს მონასტერი
+                
+                , 0864
+                
+                
+                <span class="ml-1 text-gray-400">· 312 ფურცელი; ნუსხური</span>
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+              <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-600">
+                Sin. geo. Σ
+              </span>
+              
+
+              
+              <span class="px-2 py-0.5 rounded-sm text-xs font-mono font-bold"
+                    style="background:var(--crimson-pale); color:var(--crimson); border:1px solid #e8c5c5;">
+                N35
+              </span>
+              
+
+              
+
+              
+              <a href="https://www.loc.gov/item/00279386887-ms/"
+                 target="_blank" rel="noopener"
+                 class="px-2 py-0.5 rounded-sm text-xs font-medium hover:opacity-80 transition-opacity"
+                 style="background:#5a1a7a; color:white; font-size:.6rem; letter-spacing:.08em;">
+                IIIF
+              </a>
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-N35"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-N35
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              პირველი დათარიღებული ქართული ხელნაწერი. ძირითადი მოწმე.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <section id="edition" class="mb-14 f3">
+
+    <div class="flex items-center gap-3 mb-6">
+      <h2 class="font-serif-geo text-lg font-semibold" style="color:var(--ink);">
+        კრიტიკული გამოცემები
+      </h2>
+      <span class="h-px flex-1" style="background:#e0d8ce;"></span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-blake1935">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Blake, Robert P.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              "Catalogue des manuscrits géorgiens de la Bibliothèque de la Laure d&#39;Iviron au Mont Athos"
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                <span class="italic">Revue de l&#39;Orient Chrétien</span>
+                 29
+                
+                 (1935)
+                , pp. 148–179
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-blake1935"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-blake1935
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-garitte1956">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Garitte, Gérard
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Catalogue des manuscrits géorgiens littéraires du Mont Sinaï
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Louvain
+                : Secrétariat du CorpusSCO
+                , 1956
+                
+                <span class="ml-1 text-gray-400">(Corpus Scriptorum Christianorum Orientalium, vol. 165; Subsidia, t. 9)</span>
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-garitte1956"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-garitte1956
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              სინური მრავალთავის ყველაზე საფუძვლიანი აღწერილობა გვ. 72–97.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-shanidze1959">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              შანიძე, აკაკი
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              სინური მრავალთავი 864 წლისა
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                თბილისი
+                : თბილისის უნივერსიტეტის გამომცემლობა
+                , 1959
+                
+                <span class="ml-1 text-gray-400">(ძველი ქართული ენის ძეგლები, ტ. 4)</span>
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-shanidze1959"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-shanidze1959
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              სტანდარტული სამეცნიერო გამოცემა; ამ პროექტის ძირითადი საბეჭდი წყარო.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <section id="secondary" class="mb-14 f3">
+
+    <div class="flex items-center gap-3 mb-6">
+      <h2 class="font-serif-geo text-lg font-semibold" style="color:var(--ink);">
+        კვლევები
+      </h2>
+      <span class="h-px flex-1" style="background:#e0d8ce;"></span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-clark1952">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Checklist of Manuscripts in St. Catherine&#39;s Monastery,
+              Mount Sinai, Microfilmed for the Library of Congress, 1950
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Washington
+                
+                , 1952
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-clark1952"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-clark1952
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              1950 წლის ექსპედიციის მიკროფილმთა სარჩევი, კენეთ კლარქის რედაქციით.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-marr1926">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Marr, N.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Le synaxaire géorgien. Rédaction ancienne de l&#39;union
+              arméno-géorgienne. Publié et traduit d&#39;après le manuscrit du couvent Iviron
+              du mont Athos
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Paris
+                
+                , 1926
+                
+                <span class="ml-1 text-gray-400">(Patrologia Orientalis, t. XIX, f. 5)</span>
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-marr1926"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-marr1926
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-otkhmezuri2019">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Otkhmezuri, Tamara
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              "The Sinai Polycephalion of 864 and the Georgian Liturgical Tradition"
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                <span class="italic">Le Muséon</span>
+                 132
+                /3–4
+                 (2019)
+                , pp. 341–378
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+              <a href="https://doi.org/10.2143/MUS.132.3.3287051"
+                 target="_blank" rel="noopener"
+                 class="lod-badge px-2 py-0.5 rounded-sm hover:opacity-80 transition-opacity">
+                DOI
+              </a>
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-otkhmezuri2019"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-otkhmezuri2019
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-tarchnishvili1955">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Tarchnišvili, Michael
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Geschichte der kirchlichen georgischen Literatur
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Vatican City
+                : Biblioteca Apostolica Vaticana
+                , 1955
+                
+                <span class="ml-1 text-gray-400">(Studi e Testi 185)</span>
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-tarchnishvili1955"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-tarchnishvili1955
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-van-esbroeck1975">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              van Esbroeck, Michel
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Les plus anciens homéliaires géorgiens
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Louvain-la-Neuve
+                : Université Catholique de Louvain, Institut Orientaliste
+                , 1975
+                
+                <span class="ml-1 text-gray-400">(Publications de l&#39;Institut Orientaliste de Louvain 10)</span>
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-van-esbroeck1975"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-van-esbroeck1975
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-marr1903">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Марр, Н.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              "Предварительный отчет о работах на Синае, веденных
+              в сотрудничестве с И. А. Джаваховым, и в Иерусалиме, в поездку 1902 года
+              (апрель–ноябрь)"
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                <span class="italic">Сообщения Императорского Православного Палестинского общества</span>
+                 XIV
+                /II
+                 (1903)
+                , გვ. 50 (მრავალთავის შესახებ)
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-marr1903"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-marr1903
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-marr1940">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Марр, Н.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Описание грузинских рукописей Синайского монастыря
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Москва–Ленинград
+                
+                , 1940
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-marr1940"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-marr1940
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              მრავალთავის ორი ნაწილი (№№ 32–33): გვ. 1–26; მესამე (№ 57): გვ. 93–97.
+            გამოიცა მარის სიკვდილის შემდეგ, სინაზე შედგენილი ჩანაწერების მიხედვით.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-tsagareli1888">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Цагарели, А.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Памятники грузинской старины в Святой Земле и на Синае
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Санкт-Петербург
+                
+                , 1888
+                
+                <span class="ml-1 text-gray-400">(Православный палестинский сборник, т. IV, вып. 1)</span>
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-tsagareli1888"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-tsagareli1888
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              პირველი ცნობა სინური მრავალთავის შესახებ; მრავალთავი № 83. ათონის მთის
+            ქართ. ხელნაწერების აღწერილობა: Сведения, вып. 1 (1886), გვ. 69–96. სინაის
+            მოგზაურობა: 1883 წ. თებერვალი.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-tsagareli1886">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Цагарели, А.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Сведения о памятниках грузинской письменности
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                Санкт-Петербург
+                
+                , 1886
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-tsagareli1886"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-tsagareli1886
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-tsagareli1889">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Цагарели, А.
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              Сведения о памятниках грузинской письменности
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                
+                
+                , 1889
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-tsagareli1889"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-tsagareli1889
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+            <p class="mt-2 text-xs text-gray-400 italic border-l-2 pl-2"
+               style="border-color:#e0d8ce;">
+              „Памятники&#34; (1888) დანართები იდენტური ტექსტით, განსხვავებული პაგინაციით:
+            1/143, 2/144 და ა.შ.
+            </p>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-abula1973">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              აბულაძე, ილია
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              ძველი ქართული ენის ლექსიკონი
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                თბილისი
+                : მეცნიერება
+                , 1973
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-abula1973"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-abula1973
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <section id="digital" class="mb-14 f3">
+
+    <div class="flex items-center gap-3 mb-6">
+      <h2 class="font-serif-geo text-lg font-semibold" style="color:var(--ink);">
+        ციფრული ჰუმანიტარია
+      </h2>
+      <span class="h-px flex-1" style="background:#e0d8ce;"></span>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-stemmaweb">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              Andrews, Tara L.; Macé, Caroline
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              "Beyond the Tree of Texts: Building an Empirical Model of Scribal
+              Variation through Graph Analysis of Texts and Stemmata"
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                <span class="italic">Literary and Linguistic Computing</span>
+                 28
+                /4
+                 (2013)
+                , pp. 504–521
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+              <a href="https://doi.org/10.1093/llc/fqt032"
+                 target="_blank" rel="noopener"
+                 class="lod-badge px-2 py-0.5 rounded-sm hover:opacity-80 transition-opacity">
+                DOI
+              </a>
+              
+
+              
+
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-stemmaweb"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-stemmaweb
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="card rounded-sm p-5 border" style="border-color:#e0d8ce; background:white;"
+           id="bib-tei-p5">
+
+        <div class="flex items-start gap-3">
+
+          <!-- Type indicator dot -->
+          <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+               style="background:var(--crimson); opacity:.5;"></div>
+
+          <div class="flex-1 min-w-0">
+
+            <!-- Authors -->
+            
+            <p class="text-xs text-gray-500 mb-0.5 font-medium">
+              TEI Consortium
+            </p>
+            
+
+            <!-- Title -->
+            <p class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+              TEI P5: Guidelines for Electronic Text Encoding and Interchange
+              
+            </p>
+
+            <!-- Journal / monograph detail line -->
+            <p class="text-xs text-gray-500 mb-2">
+              
+                
+                
+                , 2023
+                
+                
+              
+            </p>
+
+            <!-- Metadata chips row -->
+            <div class="flex flex-wrap gap-1.5 items-center">
+
+              
+
+              
+
+              
+
+              
+
+              
+              <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/"
+                 target="_blank" rel="noopener"
+                 class="text-xs underline hover:no-underline"
+                 style="color:var(--crimson);">
+                ონლაინ
+              </a>
+              
+
+              <!-- Anchor link for cross-referencing -->
+              <a href="#bib-tei-p5"
+                 class="text-xs text-gray-300 hover:text-gray-500 transition-colors ml-auto font-mono">
+                #bib-tei-p5
+              </a>
+
+            </div>
+
+            <!-- Note -->
+            
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <!-- Footer note -->
+  <div class="mt-4 pt-6 border-t text-xs text-gray-400" style="border-color:#e0d8ce;">
+    ბიბლიოგრაფია კოდირებულია TEI P5 სტანდარტით (<code class="font-mono">tei/bibliography.xml</code>).
+    შეცდომის ან გამოტოვების შემთხვევაში გთხოვთ დაგვიკავშირდეთ.
+  </div>
+
+</div>
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-gray-200 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <span>2026, ილიას სახ. უნივ. · ლინგვ. კვლ. ინსტ.</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <span class="flex items-center gap-2">
+                TEI-XML:
+                <a href="../data/texts/" class="hover:text-gray-600 underline">ტექსტი</a>
+                <a href="../data/lexicon.xml" class="hover:text-gray-600 underline">ლექსიკონი</a>
+                <a href="../data/catalog.xml" class="hover:text-gray-600 underline">კატალოგი</a>
+            </span>
+            <span class="hidden sm:inline text-gray-300">|</span>
+            
+            <span>CC BY-NC-SA 4.0</span>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

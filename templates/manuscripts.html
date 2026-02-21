@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% set active = "manuscripts" %}
+
+{% block title %}ხელნაწერები — სინური მრავალთავი 864{% endblock %}
+{% block dc_title %}სინური მრავალთავი — მოწმე ხელნაწერები{% endblock %}
+
+{% block head_extra %}
+<style>
+    .ms-rule { width: 2rem; height: 2px; background: var(--crimson); display: block; margin: .75rem 0 1rem; }
+
+    .meta-row { display: grid; grid-template-columns: 8rem 1fr; gap: .25rem .75rem; }
+    .meta-label { font-size: .7rem; letter-spacing: .08em; color: #888; text-transform: uppercase; font-weight: 500; padding-top: .1rem; }
+    .meta-value { font-size: .85rem; color: var(--ink-muted); }
+
+    .ms-card {
+        border: 1px solid #e0d8ce;
+        background: white;
+    }
+    .ms-siglum {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-weight: 700; font-size: 2.5rem;
+        color: var(--crimson); line-height: 1;
+        letter-spacing: .02em;
+    }
+
+    .tab-btn { transition: color .12s, border-color .12s; border-bottom: 2px solid transparent; }
+    .tab-btn.active { color: var(--crimson); border-color: var(--crimson); }
+</style>
+{% endblock %}
+
+{% block main %}
+
+<!-- PAGE HEADER -->
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto">
+        <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ 864</p>
+        <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ხელნაწერები</h1>
+        <p class="text-sm text-gray-500 mt-1">
+            {{ witnesses | length }} მოწმე ხელნაწერი — N35 · N50
+        </p>
+    </div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Intro -->
+    <div class="max-w-2xl mb-10">
+        <p class="text-sm text-gray-600 leading-relaxed font-serif-geo">
+            გამოცემის საფუძველს ორი სინაური ხელნაწერი წარმოადგენს: N35 (864 წ.) — ძირითადი
+            მოწმე, და N50 — მეორადი მოწმე შედარებითი კოლაციისათვის. ქვემოთ მოცემულია
+            თითოეული ხელნაწერის კოდიკოლოგიური აღწერა.
+        </p>
+    </div>
+
+    <!-- Manuscript cards -->
+    <div class="flex flex-col gap-8">
+        {% for w in witnesses %}
+        <section id="{{ w.xml_id }}" class="ms-card rounded-sm overflow-hidden scroll-mt-20">
+
+            <!-- Card header -->
+            <div class="flex items-start gap-6 p-6 sm:p-8 border-b border-gray-100">
+                <div class="flex-shrink-0">
+                    <div class="ms-siglum">{{ w.siglum }}</div>
+                    <div class="text-xs text-gray-400 tracking-widest mt-1 uppercase">მოწმე</div>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <h2 class="font-serif-geo font-semibold text-gray-900 text-lg leading-snug">{{ w.idno }}</h2>
+                    {% if w.date %}
+                    <p class="text-sm text-gray-500 mt-1">
+                        <span style="color:var(--crimson);" class="font-medium">{{ w.date }}</span>
+                    </p>
+                    {% endif %}
+                    {% if w.note %}
+                    <p class="text-sm text-gray-600 mt-3 leading-relaxed font-serif-geo max-w-xl">{{ w.note }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Metadata grid -->
+            <div class="p-6 sm:p-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4">
+
+                    {% if w.leaves %}
+                    <div class="flex flex-col gap-0.5">
+                        <span class="meta-label">ფოლიოები</span>
+                        <span class="meta-value font-serif-geo">{{ w.leaves }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if w.script %}
+                    <div class="flex flex-col gap-0.5">
+                        <span class="meta-label">დამწერლობა</span>
+                        <span class="meta-value">{{ w.script }}</span>
+                    </div>
+                    {% endif %}
+
+                    {% if w.date %}
+                    <div class="flex flex-col gap-0.5">
+                        <span class="meta-label">თარიღი</span>
+                        <span class="meta-value font-serif-geo">{{ w.date }}</span>
+                    </div>
+                    {% endif %}
+
+                    <div class="flex flex-col gap-0.5">
+                        <span class="meta-label">TEI xml:id</span>
+                        <span class="meta-value font-mono text-xs text-gray-400">#{{ w.xml_id }}</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        {% endfor %}
+    </div>
+
+    <!-- TEI source note -->
+    <div class="mt-10 pt-6 border-t border-gray-100 flex items-start gap-3">
+        <svg class="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <p class="text-xs text-gray-400 leading-relaxed">
+            ხელნაწერების სრული კოდიკოლოგიური აღწერა ინახება
+            <a href="{{ root }}data/catalog.xml" class="underline decoration-dotted hover:text-gray-600 transition-colors">tei/catalog.xml</a>
+            ფაილში TEI-XML ფორმატით.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

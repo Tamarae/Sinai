@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}კვლევა — სინური მრავალთავი 864{% endblock %}
+{% block dc_title %}სინური მრავალთავი — ფილოლოგიური კვლევა{% endblock %}
+
+{% block main %}
+
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto">
+        <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ 864</p>
+        <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">კვლევა</h1>
+        <p class="text-sm text-gray-500 mt-1">ფილოლოგიური სტატიები · კოლაცია · ანოტაციები</p>
+    </div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+  {% if articles %}
+  <div class="flex flex-col gap-4">
+    {% for meta in articles %}
+    <a href="{{ root }}research/{{ meta.xml_id }}.html"
+       class="card block rounded-sm border p-5 hover:no-underline"
+       style="border-color:#e0d8ce; background:white;">
+
+      <div class="flex items-start gap-3">
+        <div class="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0"
+             style="background:var(--crimson); opacity:.5;"></div>
+
+        <div class="flex-1 min-w-0">
+          {% if meta.author %}
+          <p class="text-xs text-gray-400 mb-0.5 font-medium">{{ meta.author }}
+            {% if meta.date %}<span class="ml-2 text-gray-300">{{ meta.date }}</span>{% endif %}
+          </p>
+          {% endif %}
+
+          <h2 class="font-serif-geo text-sm font-semibold mb-1" style="color:var(--ink);">
+            {{ meta.title }}
+          </h2>
+
+          {% if meta.title_en %}
+          <p class="text-xs text-gray-400 italic mb-2">{{ meta.title_en }}</p>
+          {% endif %}
+
+          {% if meta.abstract %}
+          <p class="text-xs text-gray-500 leading-relaxed line-clamp-3">
+            {{ meta.abstract }}
+          </p>
+          {% endif %}
+
+          <p class="mt-2 text-xs font-medium" style="color:var(--crimson);">
+            წაიკითხე →
+          </p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  {% else %}
+  <div class="flex flex-col items-center justify-center text-center max-w-md mx-auto py-20">
+    <div class="font-serif-geo text-5xl font-bold mb-6" style="color:var(--crimson); opacity:.35;">Ⴉ</div>
+    <h2 class="font-serif-geo font-semibold text-gray-700 text-lg mb-3">
+      კვლევის განყოფილება მზადდება
+    </h2>
+    <p class="text-sm text-gray-500 leading-relaxed">
+      ფილოლოგიური სტატია და კოლაციური ანოტაციები დაემატება
+      <code class="font-mono text-xs bg-gray-100 px-1.5 py-0.5 rounded text-gray-600">tei/research/</code>
+      დირექტორიაში ფაილების შევსების შემდეგ.
+    </p>
+    <div class="mt-8 flex items-center gap-4 text-xs text-gray-400">
+      <a href="{{ root }}texts/index.html"
+         class="underline decoration-dotted hover:text-gray-600 transition-colors">← ტექსტები</a>
+      <span>·</span>
+      <a href="{{ root }}lexicon/index.html"
+         class="underline decoration-dotted hover:text-gray-600 transition-colors">ლექსიკონი →</a>
+    </div>
+  </div>
+  {% endif %}
+
+</div>
+
+{% endblock %}

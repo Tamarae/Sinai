@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="bibliography">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>სინური მრავალთავი 864 — ბიბლიოგრაფია</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვისტური კვლევის ინსტიტუტი</publisher>
+        <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence></availability>
+      </publicationStmt>
+      <sourceDesc><p>Born-digital authority list</p></sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <listBibl xml:id="bib-list">
+
+        <!-- PRIMARY SOURCES — MANUSCRIPT -->
+        <listBibl type="manuscript" xml:id="bib-manuscripts">
+          <head>პირველწყაროები — ხელნაწერები</head>
+
+          <biblStruct xml:id="bib-N35" type="manuscript">
+            <monogr>
+              <title level="m">სინური მრავალთავი 864 წლისა</title>
+              <title type="short">N 35</title>
+              <idno type="siglum">N35</idno>
+              <idno type="shelfmark">Sin. geo. Σ</idno>
+              <idno type="IIIF">https://www.loc.gov/item/00279386887-ms/</idno>
+              <imprint>
+                <pubPlace>სინაის მთის წმ. ეკატერინეს მონასტერი</pubPlace>
+                <date when="0864">864</date>
+              </imprint>
+              <extent>312 ფურცელი; ნუსხური</extent>
+            </monogr>
+            <note>პირველი დათარიღებული ქართული ხელნაწერი. ძირითადი მოწმე.</note>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-N50" type="manuscript">
+            <monogr>
+              <title level="m">სინური მრავალთავი</title>
+              <title type="short">N 50</title>
+              <idno type="siglum">N50</idno>
+              <idno type="shelfmark">Sin. geo. N</idno>
+              <imprint>
+                <pubPlace>სინაის მთის წმ. ეკატერინეს მონასტერი</pubPlace>
+                <date notBefore="0950" notAfter="1050">X–XI სს.</date>
+              </imprint>
+              <extent>198 ფურცელი</extent>
+            </monogr>
+            <note>მეორე მოწმე; გამოიყენება კოლაციისთვის.</note>
+          </biblStruct>
+        </listBibl>
+
+        <!-- PRIMARY SOURCES — CRITICAL EDITIONS -->
+        <listBibl type="edition" xml:id="bib-editions">
+          <head>კრიტიკული გამოცემები</head>
+
+          <biblStruct xml:id="bib-shanidze1959">
+            <monogr>
+              <author><surname>შანიძე</surname><forename>აკაკი</forename></author>
+              <title level="m">სინური მრავალთავი 864 წლისა</title>
+              <imprint>
+                <pubPlace>თბილისი</pubPlace>
+                <publisher>თბილისის უნივერსიტეტის გამომცემლობა</publisher>
+                <date when="1959">1959</date>
+              </imprint>
+              <biblScope unit="series">ძველი ქართული ენის ძეგლები, ტ. 4</biblScope>
+            </monogr>
+            <note>სტანდარტული სამეცნიერო გამოცემა; ამ პროექტის ძირითადი საბეჭდი წყარო.</note>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-garitte1956">
+            <monogr>
+              <author><surname>Garitte</surname><forename>Gérard</forename></author>
+              <title level="m">Catalogue des manuscrits géorgiens littéraires du Mont Sinaï</title>
+              <imprint>
+                <pubPlace>Louvain</pubPlace>
+                <publisher>Secrétariat du CorpusSCO</publisher>
+                <date when="1956">1956</date>
+              </imprint>
+              <biblScope unit="series">Corpus Scriptorum Christianorum Orientalium, vol. 165; Subsidia, t. 9</biblScope>
+            </monogr>
+            <note>სინური მრავალთავის ყველაზე საფუძვლიანი აღწერილობა გვ. 72–97.</note>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-blake1935">
+            <analytic>
+              <author><surname>Blake</surname><forename>Robert P.</forename></author>
+              <title level="a">Catalogue des manuscrits géorgiens de la Bibliothèque de la Laure d'Iviron au Mont Athos</title>
+            </analytic>
+            <monogr>
+              <title level="j">Revue de l'Orient Chrétien</title>
+              <imprint><date when="1935">1935</date></imprint>
+              <biblScope unit="volume">29</biblScope>
+              <biblScope unit="pp">pp. 148–179</biblScope>
+            </monogr>
+          </biblStruct>
+        </listBibl>
+
+        <!-- SECONDARY LITERATURE -->
+        <listBibl type="secondary" xml:id="bib-secondary">
+          <head>კვლევები</head>
+
+          <!-- Tsagareli -->
+          <biblStruct xml:id="bib-tsagareli1888">
+            <monogr>
+              <author><surname>Цагарели</surname><forename>А.</forename></author>
+              <title xml:lang="ru" level="m">Памятники грузинской старины в Святой Земле и на Синае</title>
+              <imprint>
+                <pubPlace>Санкт-Петербург</pubPlace>
+                <date when="1888">1888</date>
+              </imprint>
+              <biblScope unit="series">Православный палестинский сборник, т. IV, вып. 1</biblScope>
+            </monogr>
+            <note>პირველი ცნობა სინური მრავალთავის შესახებ; მრავალთავი № 83. ათონის მთის
+            ქართ. ხელნაწერების აღწერილობა: Сведения, вып. 1 (1886), გვ. 69–96. სინაის
+            მოგზაურობა: 1883 წ. თებერვალი.</note>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-tsagareli1886">
+            <monogr>
+              <author><surname>Цагарели</surname><forename>А.</forename></author>
+              <title xml:lang="ru" level="m">Сведения о памятниках грузинской письменности</title>
+              <edition>Выпуск первый</edition>
+              <imprint>
+                <pubPlace>Санкт-Петербург</pubPlace>
+                <date when="1886">1886</date>
+              </imprint>
+              <biblScope unit="pp">გვ. 69–96 (ათონის მთის ქართ. ხელნაწერები)</biblScope>
+            </monogr>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-tsagareli1889">
+            <monogr>
+              <author><surname>Цагарели</surname><forename>А.</forename></author>
+              <title xml:lang="ru" level="m">Сведения о памятниках грузинской письменности</title>
+              <edition>Выпуск второй</edition>
+              <imprint>
+                <date when="1889">1889</date>
+              </imprint>
+              <biblScope unit="pp">გვ. 1–119</biblScope>
+            </monogr>
+            <note>„Памятники" (1888) დანართები იდენტური ტექსტით, განსხვავებული პაგინაციით:
+            1/143, 2/144 და ა.შ.</note>
+          </biblStruct>
+
+          <!-- Marr -->
+          <biblStruct xml:id="bib-marr1903">
+            <analytic>
+              <author><surname>Марр</surname><forename>Н.</forename></author>
+              <title xml:lang="ru" level="a">Предварительный отчет о работах на Синае, веденных
+              в сотрудничестве с И. А. Джаваховым, и в Иерусалиме, в поездку 1902 года
+              (апрель–ноябрь)</title>
+            </analytic>
+            <monogr>
+              <title xml:lang="ru" level="j">Сообщения Императорского Православного Палестинского общества</title>
+              <imprint><date when="1903">1903</date></imprint>
+              <biblScope unit="volume">XIV</biblScope>
+              <biblScope unit="issue">II</biblScope>
+              <biblScope unit="pp">გვ. 50 (მრავალთავის შესახებ)</biblScope>
+            </monogr>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-marr1940">
+            <monogr>
+              <author><surname>Марр</surname><forename>Н.</forename></author>
+              <title xml:lang="ru" level="m">Описание грузинских рукописей Синайского монастыря</title>
+              <imprint>
+                <pubPlace>Москва–Ленинград</pubPlace>
+                <date when="1940">1940</date>
+              </imprint>
+            </monogr>
+            <note>მრავალთავის ორი ნაწილი (№№ 32–33): გვ. 1–26; მესამე (№ 57): გვ. 93–97.
+            გამოიცა მარის სიკვდილის შემდეგ, სინაზე შედგენილი ჩანაწერების მიხედვით.</note>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-marr1926">
+            <monogr>
+              <author><surname>Marr</surname><forename>N.</forename></author>
+              <title xml:lang="fr" level="m">Le synaxaire géorgien. Rédaction ancienne de l'union
+              arméno-géorgienne. Publié et traduit d'après le manuscrit du couvent Iviron
+              du mont Athos</title>
+              <imprint>
+                <pubPlace>Paris</pubPlace>
+                <date when="1926">1926</date>
+              </imprint>
+              <biblScope unit="series">Patrologia Orientalis, t. XIX, f. 5</biblScope>
+            </monogr>
+          </biblStruct>
+
+          <!-- Clark checklist -->
+          <biblStruct xml:id="bib-clark1952">
+            <monogr>
+              <editor><surname>Clark</surname><forename>Kenneth W.</forename></editor>
+              <title xml:lang="en" level="m">Checklist of Manuscripts in St. Catherine's Monastery,
+              Mount Sinai, Microfilmed for the Library of Congress, 1950</title>
+              <imprint>
+                <pubPlace>Washington</pubPlace>
+                <date when="1952">1952</date>
+              </imprint>
+            </monogr>
+            <note>1950 წლის ექსპედიციის მიკროფილმთა სარჩევი, კენეთ კლარქის რედაქციით.</note>
+          </biblStruct>
+
+          <!-- Other secondary -->
+          <biblStruct xml:id="bib-abula1973">
+            <monogr>
+              <author><surname>აბულაძე</surname><forename>ილია</forename></author>
+              <title level="m">ძველი ქართული ენის ლექსიკონი</title>
+              <imprint>
+                <pubPlace>თბილისი</pubPlace>
+                <publisher>მეცნიერება</publisher>
+                <date when="1973">1973</date>
+              </imprint>
+            </monogr>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-tarchnishvili1955">
+            <monogr>
+              <author><surname>Tarchnišvili</surname><forename>Michael</forename></author>
+              <title level="m">Geschichte der kirchlichen georgischen Literatur</title>
+              <imprint>
+                <pubPlace>Vatican City</pubPlace>
+                <publisher>Biblioteca Apostolica Vaticana</publisher>
+                <date when="1955">1955</date>
+              </imprint>
+              <biblScope unit="series">Studi e Testi 185</biblScope>
+            </monogr>
+          </biblStruct>
+
+          
+
+          <biblStruct xml:id="bib-otkhmezuri2019">
+            <analytic>
+              <author><surname>Otkhmezuri</surname><forename>Tamara</forename></author>
+              <title level="a">The Sinai Polycephalion of 864 and the Georgian Liturgical Tradition</title>
+            </analytic>
+            <monogr>
+              <title level="j">Le Muséon</title>
+              <imprint><date when="2019">2019</date></imprint>
+              <biblScope unit="volume">132</biblScope>
+              <biblScope unit="issue">3–4</biblScope>
+              <biblScope unit="pp">pp. 341–378</biblScope>
+            </monogr>
+            <idno type="DOI">10.2143/MUS.132.3.3287051</idno>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-van-esbroeck1975">
+            <monogr>
+              <author><surname>van Esbroeck</surname><forename>Michel</forename></author>
+              <title level="m">Les plus anciens homéliaires géorgiens</title>
+              <imprint>
+                <pubPlace>Louvain-la-Neuve</pubPlace>
+                <publisher>Université Catholique de Louvain, Institut Orientaliste</publisher>
+                <date when="1975">1975</date>
+              </imprint>
+              <biblScope unit="series">Publications de l'Institut Orientaliste de Louvain 10</biblScope>
+            </monogr>
+          </biblStruct>
+        </listBibl>
+
+        <!-- DIGITAL HUMANITIES / ENCODING -->
+        <listBibl type="digital" xml:id="bib-digital">
+          <head>ციფრული ჰუმანიტარია და კოდირების სტანდარტები</head>
+
+          <biblStruct xml:id="bib-tei-p5">
+            <monogr>
+              <author><orgName>TEI Consortium</orgName></author>
+              <title level="m">TEI P5: Guidelines for Electronic Text Encoding and Interchange</title>
+              <edition>version 4.7.0</edition>
+              <imprint>
+                <date when="2023">2023</date>
+              </imprint>
+              <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/"/>
+            </monogr>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-stemmaweb">
+            <analytic>
+              <author><surname>Andrews</surname><forename>Tara L.</forename></author>
+              <author><surname>Macé</surname><forename>Caroline</forename></author>
+              <title level="a">Beyond the Tree of Texts: Building an Empirical Model of Scribal
+              Variation through Graph Analysis of Texts and Stemmata</title>
+            </analytic>
+            <monogr>
+              <title level="j">Literary and Linguistic Computing</title>
+              <imprint><date when="2013">2013</date></imprint>
+              <biblScope unit="volume">28</biblScope>
+              <biblScope unit="issue">4</biblScope>
+              <biblScope unit="pp">pp. 504–521</biblScope>
+            </monogr>
+            <idno type="DOI">10.1093/llc/fqt032</idno>
+          </biblStruct>
+        </listBibl>
+
+      </listBibl>
+    </body>
+  </text>
+</TEI>
