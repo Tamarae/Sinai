@@ -283,127 +283,105 @@
 
         </listPerson>
       </particDesc>
+    </profileDesc>
 
-      <!-- ══════════════════════════════════════════════════════
-           FEAST / LITURGICAL PERIOD TAXONOMY
-           Used by build.py to construct the calendar navigation
-      ══════════════════════════════════════════════════════ -->
-      <textClass>
+    <encodingDesc>
         <classDecl>
           <taxonomy xml:id="feasts">
 
-            <category xml:id="feast-annunciation">
+            <category xml:id="feast-annunciation" n="--03-25">
               <catDesc xml:lang="ka">ხარება (25 მარტი)</catDesc>
               <catDesc xml:lang="la">Annuntiatio</catDesc>
-              <catDesc type="date">--03-25</catDesc>
             </category>
 
-            <category xml:id="feast-nativity">
+            <category xml:id="feast-nativity" n="--12-25">
               <catDesc xml:lang="ka">ქრისტეს შობა (25 დეკემბერი)</catDesc>
               <catDesc xml:lang="la">Nativitas Domini</catDesc>
-              <catDesc type="date">--12-25</catDesc>
             </category>
 
-            <category xml:id="feast-stephen">
+            <category xml:id="feast-stephen" n="--12-27">
               <catDesc xml:lang="ka">წმ. სტეფანე (27 დეკემბერი)</catDesc>
               <catDesc xml:lang="la">S. Stephanus</catDesc>
-              <catDesc type="date">--12-27</catDesc>
             </category>
 
-            <category xml:id="feast-jacob-apostle">
+            <category xml:id="feast-jacob-apostle" n="--12-26">
               <catDesc xml:lang="ka">წმ. იაკობ მოც. (26 დეკემბერი)</catDesc>
               <catDesc xml:lang="la">S. Iacobus Apostolus</catDesc>
-              <catDesc type="date">--12-26</catDesc>
             </category>
 
-            <category xml:id="feast-basil">
+            <category xml:id="feast-basil" n="--01-01">
               <catDesc xml:lang="ka">ბასილი ეპ-სი (1 იანვარი)</catDesc>
               <catDesc xml:lang="la">S. Basilius</catDesc>
-              <catDesc type="date">--01-01</catDesc>
             </category>
 
-            <category xml:id="feast-epiphany">
+            <category xml:id="feast-epiphany" n="--01-06">
               <catDesc xml:lang="ka">ნათლისღება (6 იანვარი)</catDesc>
               <catDesc xml:lang="la">Epiphania / Theophania</catDesc>
-              <catDesc type="date">--01-06</catDesc>
             </category>
 
-            <category xml:id="feast-hypapante">
+            <category xml:id="feast-hypapante" n="--02-02">
               <catDesc xml:lang="ka">მიგება (2 თებერვალი)</catDesc>
               <catDesc xml:lang="la">Hypapante / Praesentatio Domini</catDesc>
-              <catDesc type="date">--02-02</catDesc>
             </category>
 
-            <category xml:id="feast-lent">
+            <category xml:id="feast-lent" n="moveable">
               <catDesc xml:lang="ka">მარხვანი (მოძრავი)</catDesc>
               <catDesc xml:lang="la">Quadragesima</catDesc>
-              <catDesc type="moveable">true</catDesc>
             </category>
 
-            <category xml:id="feast-palmsunday">
+            <category xml:id="feast-palmsunday" n="moveable">
               <catDesc xml:lang="ka">ბზობა (მოძრ.)</catDesc>
               <catDesc xml:lang="la">Dominica Palmarum</catDesc>
-              <catDesc type="moveable">true</catDesc>
             </category>
 
-            <category xml:id="feast-holyweek">
+            <category xml:id="feast-holyweek" n="moveable">
               <catDesc xml:lang="ka">დიდი კვირა (მოძრ.)</catDesc>
               <catDesc xml:lang="la">Hebdomada Sancta</catDesc>
-              <catDesc type="moveable">true</catDesc>
             </category>
 
-            <category xml:id="feast-easter">
+            <category xml:id="feast-easter" n="moveable">
               <catDesc xml:lang="ka">აღდგომა (მოძრ.)</catDesc>
               <catDesc xml:lang="la">Pascha</catDesc>
-              <catDesc type="moveable">true</catDesc>
             </category>
 
-            <category xml:id="feast-ascension">
+            <category xml:id="feast-ascension" n="moveable">
               <catDesc xml:lang="ka">ამაღლება (მოძრ.)</catDesc>
               <catDesc xml:lang="la">Ascensio Domini</catDesc>
-              <catDesc type="moveable">true</catDesc>
             </category>
 
-            <category xml:id="feast-pentecost">
+            <category xml:id="feast-pentecost" n="moveable">
               <catDesc xml:lang="ka">სულთმოფენობა (მოძრ.)</catDesc>
               <catDesc xml:lang="la">Pentecoste</catDesc>
-              <catDesc type="moveable">true</catDesc>
             </category>
 
-            <category xml:id="feast-transfiguration">
+            <category xml:id="feast-transfiguration" n="--08-06">
               <catDesc xml:lang="ka">ფერისცვლება (6 აგვისტო)</catDesc>
               <catDesc xml:lang="la">Transfiguratio Domini</catDesc>
-              <catDesc type="date">--08-06</catDesc>
             </category>
 
-            <category xml:id="feast-dormition">
+            <category xml:id="feast-dormition" n="--08-15">
               <catDesc xml:lang="ka">ღ-მშობლის გარდაცვლება (15 აგვისტო)</catDesc>
               <catDesc xml:lang="la">Dormitio / Assumptio BMV</catDesc>
-              <catDesc type="date">--08-15</catDesc>
             </category>
 
-            <category xml:id="feast-john-baptist">
+            <category xml:id="feast-john-baptist" n="--08-29">
               <catDesc xml:lang="ka">იოვ. ნათლ-სა თავის კვეთა (29 აგვისტო)</catDesc>
               <catDesc xml:lang="la">Decollatio S. Iohannis Baptistae</catDesc>
-              <catDesc type="date">--08-29</catDesc>
             </category>
 
-            <category xml:id="feast-nativity-theotokos">
+            <category xml:id="feast-nativity-theotokos" n="--09-08">
               <catDesc xml:lang="ka">ღ-მშობლის შობა (8 სექტემბერი)</catDesc>
               <catDesc xml:lang="la">Nativitas BMV</catDesc>
-              <catDesc type="date">--09-08</catDesc>
             </category>
 
-            <category xml:id="feast-enkenia">
+            <category xml:id="feast-enkenia" n="--09-13">
               <catDesc xml:lang="ka">ენკენია (13 სექტემბერი)</catDesc>
               <catDesc xml:lang="la">Encaenia Hierosolymitana</catDesc>
-              <catDesc type="date">--09-13</catDesc>
             </category>
 
-            <category xml:id="feast-exaltation-cross">
+            <category xml:id="feast-exaltation-cross" n="--09-14">
               <catDesc xml:lang="ka">ჯვართა აღაპყრობა (14 სექტემბერი)</catDesc>
               <catDesc xml:lang="la">Exaltatio S. Crucis</catDesc>
-              <catDesc type="date">--09-14</catDesc>
             </category>
 
             <category xml:id="feast-misc">
@@ -446,10 +424,7 @@
           </taxonomy>
 
         </classDecl>
-      </textClass>
-    </profileDesc>
 
-    <encodingDesc>
       <projectDesc>
         <p>Level-4 Digital Scholarly Edition of the Sinai Mravaltavi of 864.
            This catalog file is consumed by build.py to generate calendar and
@@ -502,14 +477,14 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს I</label>
             <desc xml:lang="ka">თქმული წმ. გრიგოლი ნეოკესარიელ ეპისკოპოსისაი, ხარებისათჳს წმიდისა ღმრთისმშობელისა (პირველი)</desc>
-            <persName ref="#aut-gregory-neocaes"/>
+            <note type="author" corresp="#aut-gregory-neocaes"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="1r" to="12v">ff. 1r–12v</locus>
             </msDesc>
             <msDesc>
-              <msIdentifier><idno ref="#N50"/></msIdentifier>
+              <msIdentifier><idno type="witness">N50</idno></msIdentifier>
               <locus from="1r" to="9v">ff. 1r–9v</locus>
             </msDesc>
             <note type="CPG">1763</note>
@@ -522,15 +497,15 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</label>
             <desc xml:lang="ka">თქმული მისივე, ხარებისათჳს, მეორე</desc>
-            <persName ref="#aut-gregory-neocaes"/>
+            <note type="author" corresp="#aut-gregory-neocaes"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="13r" to="22v">ff. 13r–22v</locus>
             </msDesc>
             <note type="CPG">1764</note>
             <note type="file">tei/texts/mrav-kharbeba-2.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-kharbeba-3"
@@ -538,15 +513,15 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III</label>
             <desc xml:lang="ka">მისივე თქუმული, [ხარებისათჳს], მესამე</desc>
-            <persName ref="#aut-gregory-neocaes"/>
+            <note type="author" corresp="#aut-gregory-neocaes"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="23r" to="30v">ff. 23r–30v</locus>
             </msDesc>
             <note type="CPG">1765</note>
             <note type="file">tei/texts/mrav-kharbeba-3.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-antipater"
@@ -554,14 +529,14 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული ანთიპატრ ბოსტრელისაი — ხარება</label>
             <desc xml:lang="ka">თქuმული წმ. ანთიპატროს ბოსტრელ ეპისკოპოსისაი, წმ. ღმრთის-მშობელისათჳს და ზაქარიაის დადუმებისათჳს</desc>
-            <persName ref="#aut-antipater-bostra"/>
+            <note type="author" corresp="#aut-antipater-bostra"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="31r" to="41v">ff. 31r–41v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-antipater.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -574,15 +549,15 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული ათანასი ალექსისაი — შობა</label>
             <desc xml:lang="ka">თქუმული წმ. ათანასი ალექსანდრიელ მთავარეპისკოპოსისაი, ვითარ კაც იქმნა უფალი ჩuენი იესუ ქრისტე</desc>
-            <persName ref="#aut-athanasius-alex"/>
+            <note type="author" corresp="#aut-athanasius-alex"/>
             <date type="feast" when="--12-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="42r" to="56v">ff. 42r–56v</locus>
             </msDesc>
             <note type="CPG">2187</note>
             <note type="file">tei/texts/mrav-shoba-athanasi.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-shoba-prokle"
@@ -590,10 +565,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</label>
             <desc xml:lang="ka">ნეტარისა პროკლესი კოსტანტინელ ეპისკოპოსისაი, ღმრთის-მშობელისათჳს თქuმული</desc>
-            <persName ref="#aut-proklos-cpl"/>
+            <note type="author" corresp="#aut-proklos-cpl"/>
             <date type="feast" when="--12-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="57r" to="68v">ff. 57r–68v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-shoba-prokle.xml</note>
@@ -605,10 +580,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">ეპიფანე კვ-სი — მარადის ქალწულ.</label>
             <desc xml:lang="ka">თქუმული წმ. და ნეტარისა მამისა ჩuენისა ეპიფანე კუპრელ მთავარეპისკოპოსისაი, მარადის ქალწულისა მარიამისთჳს</desc>
-            <persName ref="#aut-epiphanius-cypros"/>
+            <note type="author" corresp="#aut-epiphanius-cypros"/>
             <date type="feast" when="--12-25"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="69r" to="81v">ff. 69r–81v</locus>
             </msDesc>
             <note type="CPG">3768</note>
@@ -626,10 +601,10 @@
                  type="#genre-other">
             <label xml:lang="ka">წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.)</label>
             <desc xml:lang="ka">წმ. იაკობ მოციქულისა და ძმისა უფლისა საკითხავი</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--12-26"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="82r" to="88v">ff. 82r–88v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-iakob-apostle.xml</note>
@@ -641,10 +616,10 @@
                  type="#genre-martyrdom">
             <label xml:lang="ka">წამება წმ. სტეფანესი (27 დეკ.)</label>
             <desc xml:lang="ka">წამებაი წმ. სტეფანესი</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--12-27"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="89r" to="102v">ff. 89r–102v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-stepane-martyrdom.xml</note>
@@ -656,10 +631,10 @@
                  type="#genre-other">
             <label xml:lang="ka">პოვნა წმ. სტეფანესი</label>
             <desc xml:lang="ka">პოვნა წმ. სტეფანესი, რჩეულისა მის მსახურისად და პირველმოწამისად</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--12-27"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="103r" to="112v">ff. 103r–112v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-stepane-inventio.xml</note>
@@ -671,10 +646,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">სიტყვა ბასილი ეპ-სათჳს I (1 იანვ.)</label>
             <desc xml:lang="ka">სიტყuად ბასილი ეპისკოპოსისათჳს</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--01-01"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="113r" to="124v">ff. 113r–124v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-basil-1.xml</note>
@@ -686,10 +661,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">სიტყვა ბასილი ეპ-სათvს II</label>
             <desc xml:lang="ka">სიტყuად ბასილისთჳსვე</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--01-01"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="125r" to="134v">ff. 125r–134v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-basil-2.xml</note>
@@ -706,10 +681,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული იოვ. ოქროპ-სა — ნათლ-ბა I</label>
             <desc xml:lang="ka">თქuმული იოვანე ოქროპირისაი, ნათლის-ღებისათჳს (პირველი)</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="135r" to="148v">ff. 135r–148v</locus>
             </msDesc>
             <note type="CPG">4988</note>
@@ -722,10 +697,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — ნათლ-ბა II</label>
             <desc xml:lang="ka">თქuმული მისივე, ნათლის-ღებისათჳს (მეორე)</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="149r" to="161v">ff. 149r–161v</locus>
             </msDesc>
             <note type="CPG">4989</note>
@@ -738,10 +713,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — ნათლ-ბა III</label>
             <desc xml:lang="ka">თქuმული მისივე, ნათლის-ღებისათჳს (მესამე)</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="162r" to="172v">ff. 162r–172v</locus>
             </msDesc>
             <note type="CPG">4990</note>
@@ -754,10 +729,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული კირილე — ნათლ-ბა</label>
             <desc xml:lang="ka">თქუმული კირილესი, ნათლის-ღებისათჳს უფლისა ჩუენისა იესუ ქრისტესი</desc>
-            <persName ref="#aut-cyrillus-hier"/>
+            <note type="author" corresp="#aut-cyrillus-hier"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="173r" to="182v">ff. 173r–182v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-natlisgheba-kyrile.xml</note>
@@ -774,10 +749,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">ევსუქი — ტაძრად მიყვანება</label>
             <desc xml:lang="ka">თქუმული ევსუქი ხუცისა იერუსალემელისაი, ტაძრად მიყვანებისათჳს</desc>
-            <persName ref="#aut-hesychios-hier"/>
+            <note type="author" corresp="#aut-hesychios-hier"/>
             <date type="feast" when="--02-02"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="183r" to="194v">ff. 183r–194v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-migeba-hesychios.xml</note>
@@ -789,10 +764,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">ტიმოთე — მეორმეოცე დღე</label>
             <desc xml:lang="ka">თქუმული წმ. ტიმოთე ხუცისა იერუსალემელისაი, მეორმეოცისა დღისათჳს</desc>
-            <persName ref="#aut-timotheus-hier"/>
+            <note type="author" corresp="#aut-timotheus-hier"/>
             <date type="feast" when="--02-02"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="195r" to="204v">ff. 195r–204v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-migeba-timote.xml</note>
@@ -809,10 +784,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — მარხვა და იონა</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, მარხვისათჳს და იონაისთჳს</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="205r" to="216v">ff. 205r–216v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-markhva-chrysostom.xml</note>
@@ -824,10 +799,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">ეფრემი — მარხვა</label>
             <desc xml:lang="ka">თქუმული ეფრემისი, მარხვისათჳს</desc>
-            <persName ref="#aut-ephrem-syrus"/>
+            <note type="author" corresp="#aut-ephrem-syrus"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="217r" to="226v">ff. 217r–226v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-markhva-ephrem.xml</note>
@@ -839,10 +814,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">ბასილი — ორმოც მოწამე (9 მარ.)</label>
             <desc xml:lang="ka">თქუმული ბასილი კესარიელისა, ხ-სენებასა წმ. ორმეოცთა მოწამეთასა</desc>
-            <persName ref="#aut-basil-caesarea"/>
+            <note type="author" corresp="#aut-basil-caesarea"/>
             <date type="feast" when="--03-09"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="227r" to="238v">ff. 227r–238v</locus>
             </msDesc>
             <note type="CPG">2863</note>
@@ -855,10 +830,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — ლაზარე, მარია, მართა</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, ლაზარესთჳს, მარიამისთჳს და მართასთჳს</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="239r" to="250v">ff. 239r–250v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-lazare.xml</note>
@@ -875,10 +850,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">სებ. გაბ. — შესხმა ყრმათა (ბზობა)</label>
             <desc xml:lang="ka">თქუმული სებერიანოს გაბალონელისა, შესხმისათჳს ყრმათაისა</desc>
-            <persName ref="#aut-severian-gabala"/>
+            <note type="author" corresp="#aut-severian-gabala"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="251r" to="261v">ff. 251r–261v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-bzoba-severian.xml</note>
@@ -890,10 +865,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. კ-პოლელი — შესლვა იერ-მდ</label>
             <desc xml:lang="ka">თქუმული იოვანე კოსტანტინეპოლელისა, შესლუასა უფლისასა იერუსალემდ</desc>
-            <persName ref="#aut-iohannes-cpl"/>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="262r" to="271v">ff. 262r–271v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-bzoba-iohannes.xml</note>
@@ -905,10 +880,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">მელეტი ანტ. — ბზობა</label>
             <desc xml:lang="ka">თქუმული წმ. მელეტი ანტიოქელისა, ბზობისათჳს</desc>
-            <persName ref="#aut-meletios-antioch"/>
+            <note type="author" corresp="#aut-meletios-antioch"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="272r" to="279v">ff. 272r–279v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-bzoba-meletios.xml</note>
@@ -925,10 +900,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">დიდ ორშაბათი — იოვ. ეპ-სი</label>
             <desc xml:lang="ka">დიდსა ორშაბათსა: თქუმული იოვანე ეპისკოპოსისაი</desc>
-            <persName ref="#aut-iohannes-cpl"/>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="280r" to="289v">ff. 280r–289v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-holymonday.xml</note>
@@ -945,10 +920,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">მელეტი ეპ-სი — მკვდრ. აღდგ.</label>
             <desc xml:lang="ka">თქუმული წმ. მელეტი ეპისკოპოსისაი, მკუდრეთით აღდგომისათჳს</desc>
-            <persName ref="#aut-meletios-episc"/>
+            <note type="author" corresp="#aut-meletios-episc"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="290r" to="299v">ff. 290r–299v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-aghdgoma-meletios.xml</note>
@@ -960,10 +935,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">კირილე იერ. — აღდგომა</label>
             <desc xml:lang="ka">თქუმული წმ. კირილე იერუსალიმელისა, აღდგომისათჳს</desc>
-            <persName ref="#aut-cyrillus-hier"/>
+            <note type="author" corresp="#aut-cyrillus-hier"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="300r" to="309v">ff. 300r–309v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-aghdgoma-kyrile.xml</note>
@@ -975,10 +950,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — თომა მოც.</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, აღსაარებისათჳს თომა მოციქულისა</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="310r" to="319v">ff. 310r–319v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-toma-chrysostom.xml</note>
@@ -990,10 +965,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. მთ-ეპ-სი — ახალი კვირიაკე</label>
             <desc xml:lang="ka">თქუმული იოვანე მთავარეპისკოპოსისაი, ახალკუირიაკისათჳს</desc>
-            <persName ref="#aut-iohannes-cpl"/>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="320r" to="329v">ff. 320r–329v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-new-sunday.xml</note>
@@ -1010,10 +985,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — ამაღლება</label>
             <desc xml:lang="ka">ამაღლებისათჳს: თქუმული იოვანე ოქროპირისაი</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="330r" to="341v">ff. 330r–341v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-amaghleba.xml</note>
@@ -1030,10 +1005,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. მთ-ეპ-სი — სულ. წმ. I</label>
             <desc xml:lang="ka">თქუმული იოვანე მთავარეპისკოპოსისა, სული წმიდის მოფენისათჳს</desc>
-            <persName ref="#aut-iohannes-cpl"/>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="342r" to="352v">ff. 342r–352v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-sulthmofenoba-1.xml</note>
@@ -1045,10 +1020,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">კირილე იერ. — სულ. წმ. II</label>
             <desc xml:lang="ka">თქუმული კირილე იერუსალიმელისა, სული წმიდის მოფენისათჳს</desc>
-            <persName ref="#aut-cyrillus-hier"/>
+            <note type="author" corresp="#aut-cyrillus-hier"/>
             <date type="moveable">true</date>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="353r" to="362v">ff. 353r–362v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-sulthmofenoba-2.xml</note>
@@ -1065,10 +1040,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — ფერისცვლება (6 აგვ.)</label>
             <desc xml:lang="ka">საკითხავნი ფერის-ცუალებისანი: თქუმული იოვანე ოქროპირისა</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--08-06"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="363r" to="374v">ff. 363r–374v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-feristsvaleba.xml</note>
@@ -1080,10 +1055,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — გარდ. ი. I (15 აგვ.)</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, გარდაცუალებისათჳს წმ. ღმრთის-მშობელისა</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--08-15"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="375r" to="386v">ff. 375r–386v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-dormition-1.xml</note>
@@ -1095,10 +1070,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — გარდ. ი. II</label>
             <desc xml:lang="ka">თქუმული მისივე, მეორე</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--08-15"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="387r" to="396v">ff. 387r–396v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-dormition-2.xml</note>
@@ -1110,10 +1085,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
             <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: ტქუმული იოვანე მთავარეპისკოპოსისა</desc>
-            <persName ref="#aut-iohannes-cpl"/>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--08-29"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="397r" to="406v">ff. 397r–406v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-john-baptist-decollatio.xml</note>
@@ -1130,10 +1105,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">შობა ღ-მშობლისა (8 სექ.)</label>
             <desc xml:lang="ka">შობაი წმიდისა ღმრთის-მშობლისა</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--09-08"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="407r" to="416v">ff. 407r–416v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-nativity-theotokos.xml</note>
@@ -1145,10 +1120,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — სატფ-ბა (13 სექ.)</label>
             <desc xml:lang="ka">ენკენია (13 სექტემბერი): თქუმული იოვანე ოქროპირისა, სტფურებისათჳს</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--09-13"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="417r" to="426v">ff. 417r–426v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-enkenia-1.xml</note>
@@ -1160,10 +1135,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — გურიტი და ეკლ.</label>
             <desc xml:lang="ka">თქუმული მისივე, ....</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--09-13"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="427r" to="436v">ff. 427r–436v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-enkenia-2.xml</note>
@@ -1175,10 +1150,10 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. მთ-ეპ-სი — ჯვართა (14 სექ.)</label>
             <desc xml:lang="ka">ჯუართა აღპყრობა (14 სექტემბერი): თქუმული იოვანე მთავარეპისკოპოსისა</desc>
-            <persName ref="#aut-iohannes-cpl"/>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--09-14"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="437r" to="447v">ff. 437r–447v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-exaltation-cross.xml</note>
@@ -1195,9 +1170,9 @@
                  type="#genre-other">
             <label xml:lang="ka">გამოჩინება ჯვრისა კოსტ. მეფეს</label>
             <desc xml:lang="ka">გამოჩინებაი ჯუარისაი, რომელი გამოუჩნდა კონსტანტინე...</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="448r" to="455v">ff. 448r–455v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-cross-vision.xml</note>
@@ -1209,9 +1184,9 @@
                  type="#genre-other">
             <label xml:lang="ka">პოვნა წმ. სამსჭვალთა</label>
             <desc xml:lang="ka">პოვნად წმიდათა სამსჭუალთა</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="456r" to="462v">ff. 456r–462v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-nails-inventio.xml</note>
@@ -1223,9 +1198,9 @@
                  type="#genre-martyrdom">
             <label xml:lang="ka">წამება პეტრე მოც.</label>
             <desc xml:lang="ka">წამებაი წმიდა პეტრე მოციქულისაი</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="463r" to="471v">ff. 463r–471v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-peter-martyrdom.xml</note>
@@ -1237,9 +1212,9 @@
                  type="#genre-martyrdom">
             <label xml:lang="ka">წამება პავლე მოც.</label>
             <desc xml:lang="ka">წამებაი წმიდა პავლე მოციქულისაი</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="472r" to="480v">ff. 472r–480v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-paul-martyrdom.xml</note>
@@ -1251,9 +1226,9 @@
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. ოქროპ. — მოწამეთათჳს</label>
             <desc xml:lang="ka">თქმულნი იოვანე ოქროპირისა მოწამეთათჳს</desc>
-            <persName ref="#aut-chrysostom"/>
+            <note type="author" corresp="#aut-chrysostom"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="481r" to="492v">ff. 481r–492v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-martyrs-chrysostom.xml</note>
@@ -1265,9 +1240,9 @@
                  type="#genre-homily">
             <label xml:lang="ka">ეფრემი — შეს-ბ-თა</label>
             <desc xml:lang="ka">თქუმული წმიდა ეფრემისი, შესუანებლუთათვის</desc>
-            <persName ref="#aut-ephrem-syrus"/>
+            <note type="author" corresp="#aut-ephrem-syrus"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="493r" to="502v">ff. 493r–502v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-departed-ephrem.xml</note>
@@ -1279,9 +1254,9 @@
                  type="#genre-life">
             <label xml:lang="ka">ცხოვრება სინელ მამათა</label>
             <desc xml:lang="ka">ცხორებაი წმიდა მამათაი, რომელი მოისრნა მთასა სინასა</desc>
-            <persName ref="#aut-anon"/>
+            <note type="author" corresp="#aut-anon"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="503r" to="512v">ff. 503r–512v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-sinai-fathers.xml</note>
@@ -1298,9 +1273,9 @@
                  type="#genre-colophon">
             <label xml:lang="ka">მაკარი ლეთეთელი — ანდერძი</label>
             <desc xml:lang="ka">მაკარი ლეთეთელი ანდერძი</desc>
-            <persName ref="#aut-makari-leteteli"/>
+            <note type="author" corresp="#aut-makari-leteteli"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="312v" to="312v">f. 312v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-colophon-makari.xml</note>
@@ -1312,9 +1287,9 @@
                  type="#genre-encomium">
             <label xml:lang="ka">იოანე-ზოსიმე — ქება ქართ. ენისა</label>
             <desc xml:lang="ka">იოანე-ზოსიმე, ქებაი და დიდებაი ქართულისა ენისაი</desc>
-            <persName ref="#aut-ioane-zosime"/>
+            <note type="author" corresp="#aut-ioane-zosime"/>
             <msDesc>
-              <msIdentifier><idno ref="#N35"/></msIdentifier>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus>appendix</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-ioane-zosime.xml</note>

@@ -209,22 +209,25 @@ class CatalogParser:
     # ── Feasts ────────────────────────────────────────
 
     def _parse_feasts(self):
-        # Use xml:id as attribute name in XPath now that NS includes "xml" prefix
         for cat in self.root_el.findall(
             ".//tei:taxonomy[@xml:id='feasts']/tei:category", NS
         ):
             xml_id   = _xml_id(cat)
-            label_ka = label_la = date_val = ""
-            moveable = False
+            label_ka = label_la = ""
+
+            # Date/moveable encoded as @n on <category> (TEI-valid; catDesc has no @type):
+            #   fixed feast  -> n="--MM-DD"   (xs:gMonthDay)
+            #   moveable     -> n="moveable"
+            #   no date      -> @n absent     (feast-misc, feast-appendix)
+            n_val    = _attr(cat, "n")
+            date_val = n_val if n_val.startswith("--") else ""
+            moveable = n_val == "moveable"
 
             for cd in cat.findall("tei:catDesc", NS):
                 lang = _xml_lang(cd)
-                typ  = _attr(cd, "type")
                 txt  = (cd.text or "").strip()
-                if lang == "ka":          label_ka = txt
-                if lang == "la":          label_la = txt
-                if typ  == "date":        date_val = txt
-                if typ  == "moveable":    moveable = txt.lower() == "true"
+                if lang == "ka": label_ka = txt
+                if lang == "la": label_la = txt
 
             fixed_month  = None
             date_display = ""
@@ -247,7 +250,7 @@ class CatalogParser:
 
     @property
     def feasts_ordered(self) -> List[FeastMeta]:
-        """Liturgical order: fixed feasts by month (Sep–Aug), then moveable, then misc."""
+        """Liturgical order: fixed feasts by month (Sep-Aug), then moveable, then misc."""
         def sort_key(f: FeastMeta):
             if f.fixed_month:
                 m = int(f.fixed_month)
@@ -268,29 +271,32 @@ class CatalogParser:
             label_ka   = _t(ev, "tei:label[@xml:lang='ka']") or _t(ev, "tei:label")
             ms_heading = _t(ev, "tei:desc[@xml:lang='ka']")  or _t(ev, "tei:desc")
 
-            # Author
-            author_el  = ev.find("tei:persName", NS)
-            author_ref = _attr(author_el, "ref").lstrip("#") if author_el is not None else "aut-anon"
+            # Author: <note type="author" corresp="#aut-..."/>
+            # (persName is not permitted in the event content model in TEI P5)
+            author_el  = ev.find("tei:note[@type='author']", NS)
+            author_ref = _attr(author_el, "corresp").lstrip("#") if author_el is not None else "aut-anon"
             author     = self._author_idx.get(author_ref, AuthorMeta(
                 id=author_ref, name_ka="?", name_la="?",
                 short_ka="?", dates="", viaf="",
             ))
 
-            # Loci in each witness
+            # Loci: <idno type="witness">N35</idno> — text content identifies witness
+            # (idno has no @ref attribute in TEI P5)
             locus_n35 = locus_n50 = ""
             for ms in ev.findall("tei:msDesc", NS):
-                ref_text  = _t(ms, "tei:msIdentifier/tei:idno")
-                locus_el  = ms.find("tei:locus", NS)
+                idno_el  = ms.find("tei:msIdentifier/tei:idno", NS)
+                wit_id   = (idno_el.text or "").strip() if idno_el is not None else ""
+                locus_el = ms.find("tei:locus", NS)
                 locus_str = ""
                 if locus_el is not None:
                     frm = _attr(locus_el, "from")
                     to  = _attr(locus_el, "to")
                     locus_str = (
-                        f"ff. {frm}–{to}" if frm and to
+                        f"ff. {frm}-{to}" if frm and to
                         else (locus_el.text or "").strip()
                     )
-                if "#N35" in ref_text or ref_text == "N35": locus_n35 = locus_str
-                elif "#N50" in ref_text or ref_text == "N50": locus_n50 = locus_str
+                if wit_id == "N35":   locus_n35 = locus_str
+                elif wit_id == "N50": locus_n50 = locus_str
 
             cpg        = _t(ev, "tei:note[@type='CPG']")
             file_path  = _t(ev, "tei:note[@type='file']")

@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II — ციფრული სამეცნიერო გამოცემა</title>
+
+    <!-- Dublin Core -->
+    <meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
+    <meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+    <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+    <meta name="DC.language"  content="ka">
+    
+<meta name="DC.title"   content="თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II">
+<meta name="DC.creator" content="Gregorius Thaumaturgus Neocaesariensis">
+<meta name="DC.subject" content="Annuntiatio; Old Georgian; Homiliary; Sinai">
+
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --crimson:      #7a1a1a;
+            --crimson-light:#9b2c2c;
+            --crimson-pale: #fdf2f2;
+            --gold:         #8a6e2e;
+            --gold-pale:    #faf6ee;
+            --parchment:    #faf8f5;
+            --parchment-dark:#f0ece4;
+            --ink:          #1a1a1a;
+            --ink-muted:    #4a4030;
+        }
+
+        /* ── Base ─────────────────────── */
+        body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
+        .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
+        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
+        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* ── Nav ─────────────────────── */
+        .nav-link { position:relative; letter-spacing:.07em; }
+        .nav-link::after {
+            content:''; position:absolute; bottom:-2px; left:0;
+            width:0; height:1px; background:var(--crimson); transition:width .2s;
+        }
+        .nav-link:hover::after { width:100%; }
+        .nav-link.active { color:var(--crimson); }
+        .nav-link.active::after { width:100%; }
+
+        /* ── Cards ───────────────────── */
+        .card { transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,.07); border-color:#c8bfb6; }
+
+        /* ── Chips & badges ──────────── */
+        .folio-chip { font-size:.65rem; letter-spacing:.04em; border:1px solid #ddd5c8; background:var(--parchment); font-family:'Noto Serif Georgian',Georgia,serif; font-style:italic; }
+        .bog-badge     { font-size:.6rem; letter-spacing:.08em; background:var(--ink);    color:var(--parchment); }
+        .lod-badge     { font-size:.6rem; letter-spacing:.08em; background:#1a3d6b;       color:white; }
+        .olia-badge    { font-size:.6rem; letter-spacing:.08em; background:#2d5a2d;       color:white; }
+        .logeion-badge { font-size:.6rem; letter-spacing:.08em; background:#5a3d1a;       color:white; }
+
+        /* ── Status dots (for catalog) ─ */
+        .status-done      { background:#2d5a2d; }
+        .status-progress  { background:#8a6e2e; }
+        .status-planned   { background:#d1cdc7; }
+
+        /* ── Genre badges ─────────────  */
+        .badge-homily  { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+        .badge-life    { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+        .badge-martyr  { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+        .badge-encomiun{ background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+        .badge-colophon{ background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+        .badge-other   { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
+
+        /* ── Parchment texture ────────── */
+        .parchment-texture {
+            background-image:
+                radial-gradient(ellipse at 15% 60%, rgba(122,26,26,.025) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(138,110,46,.03)  0%, transparent 45%);
+        }
+
+        /* ── Animations ──────────────── */
+        @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        .f1{animation:fadeUp .45s ease .04s both}
+        .f2{animation:fadeUp .45s ease .1s  both}
+        .f3{animation:fadeUp .45s ease .17s both}
+        .f4{animation:fadeUp .45s ease .24s both}
+        .f5{animation:fadeUp .45s ease .31s both}
+    </style>
+
+    
+<style>
+/* ═══════════════════════════════════════════════════════
+   LAYOUT MODES — class on #layout-root
+   (none)     → article only, full width
+   mode-iiif  → article 50% | facs 50%
+   mode-app   → article flex-1 | apparatus 22rem
+═══════════════════════════════════════════════════════ */
+#layout-root {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 88rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+/* ── Transcription ───────────────────────────────────── */
+#transcription { flex: 1; min-width: 0; }
+#layout-root.mode-iiif #transcription,
+#layout-root.mode-app  #transcription {
+    padding-right: 1.5rem;
+    border-right: 1px solid #e8e0d6;
+}
+#layout-root.mode-iiif #transcription { flex: none; width: 50%; }
+
+/* ── IIIF panel shell (positions facs-sticky) ────────── */
+#facs-panel { display: none; width: 0; flex-shrink: 0; }
+#layout-root.mode-iiif #facs-panel {
+    display: block;
+    width: 50%;
+    padding-left: 1.5rem;
+}
+
+/* facs-sticky: JS applies position:fixed on mode-iiif activate.
+   CSS fallback sticky is here but may be overridden by JS. */
+#facs-sticky {
+    position: sticky;
+    top: 5.5rem;
+    height: calc(65vh - 1rem);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #111;
+}
+
+/* ── Apparatus panel shell ───────────────────────────── */
+#app-panel { display: none; width: 0; flex-shrink: 0; }
+#layout-root.mode-app #app-panel {
+    display: block;
+    width: 22rem;
+    padding-left: 1.5rem;
+}
+#app-sticky {
+    position: sticky;
+    top: 5.5rem;
+    height: calc(65vh - 1rem);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0d8ce;
+    border-radius: 3px;
+    overflow: hidden;
+    background: white;
+}
+
+/* ── Georgian text ───────────────────────────────────── */
+.text-body {
+    font-family: 'Noto Serif Georgian', Georgia, serif;
+    font-size: .95rem; line-height: 1.9; color: #2a2018;
+    padding-left: 3rem;
+}
+.text-body p { margin-bottom: 1.1rem; position: relative; }
+.par-num {
+    font-size: .65rem; color: var(--crimson);
+    font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600;
+    letter-spacing: .04em; margin-right: .4rem; opacity: .7;
+    cursor: default; user-select: none; vertical-align: super;
+}
+
+/* ── CTS button ──────────────────────────────────────── */
+.cts-copy-btn {
+    position: absolute; left: -2.8rem; top: .05em;
+    opacity: 0; pointer-events: none; transition: opacity .12s;
+    display: inline-flex; align-items: center; gap: .2rem;
+    border: 1px solid #e0d8ce; border-radius: 3px; cursor: pointer;
+    color: #aaa; font-size: .58rem;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    padding: 2px 5px; line-height: 1.4; white-space: nowrap; background: white;
+}
+.cts-copy-btn:hover  { color: var(--crimson); border-color: var(--crimson); }
+.cts-copy-btn.copied { color: #2d5a2d; border-color: #2d5a2d; }
+.text-body p:hover > .cts-copy-btn { opacity: 1; pointer-events: auto; }
+
+/* ── Folio chips ─────────────────────────────────────── */
+.folio-milestone {
+    display: inline-block; font-size: .6rem;
+    font-family: 'Noto Sans Georgian', sans-serif; letter-spacing: .06em;
+    border: 1px solid #e0d5c5; background: var(--parchment); color: #8a7a60;
+    padding: .1rem .4rem; border-radius: 2px; margin: 0 .2rem;
+    vertical-align: middle; cursor: default;
+    transition: background .12s, border-color .12s, color .12s;
+}
+.folio-milestone[data-facs]       { cursor: pointer; }
+.folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
+.folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
+
+/* ── Apparatus inline ────────────────────────────────── */
+.app-inline { border-bottom: 1px dotted var(--crimson); cursor: pointer; transition: background .1s; }
+.app-inline:hover, .app-inline.highlighted { background: var(--crimson-pale); border-radius: 2px; }
+.rdg-orth { color: #2d4a6b; } .rdg-gram { color: #2d5a2d; }
+.rdg-lex  { color: #7a4f1a; } .rdg-om   { color: #888; }
+.rdg-add  { color: #5a2d7a; }
+
+/* ═══════════════════════════════════════════════════════
+   IIIF PANEL INTERNALS
+═══════════════════════════════════════════════════════ */
+#facs-metabar {
+    display: flex; align-items: center; gap: .4rem;
+    padding: .35rem .65rem;
+    background: var(--parchment); border-bottom: 1px solid #e0d8ce;
+    flex-shrink: 0;
+}
+#facs-folio-label {
+    font-family: monospace; font-size: .72rem; color: #555;
+    padding: .15rem .45rem; background: white;
+    border: 1px solid #ddd; border-radius: 2px;
+    min-width: 3.5rem; text-align: center; flex-shrink: 0;
+}
+.facs-nav {
+    width: 22px; height: 22px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid #d0c8be; border-radius: 2px; background: white;
+    cursor: pointer; color: #666; font-size: .8rem; line-height: 1;
+    transition: background .1s, color .1s;
+}
+.facs-nav:hover    { background: #f0ebe3; color: var(--crimson); }
+.facs-nav:disabled { opacity: .3; pointer-events: none; }
+#facs-wit-lbl { flex: 1; font-size: .6rem; color: #999; font-family: 'Noto Sans Georgian', sans-serif; text-align: center; }
+#facs-loc-link { font-size: .65rem; color: #888; text-decoration: none; flex-shrink: 0; transition: color .1s; }
+#facs-loc-link:hover { color: #eee; }
+
+/* ── Image viewport ──────────────────────────────────── */
+/* CRITICAL: display:block — NOT flex.
+   display:flex prevents child from overflowing for scroll-pan zoom.
+   With display:block, width:150% on the img creates horizontal overflow
+   which overflow:auto scrolls. This is the correct pattern. */
+#facs-viewport {
+    flex: 1;
+    min-height: 0;
+    display: block;       /* NOT flex — enables overflow-based zoom */
+    overflow: auto;
+    background: #111;
+    position: relative;
+    cursor: zoom-in;
+    text-align: center;   /* centers img when width < 100% */
+}
+#facs-viewport.zoom-out { cursor: zoom-out; text-align: left; }
+
+/* img: NO width/max-width in CSS — set entirely by JS inline style
+   so there's zero ambiguity about which rule wins. */
+#facs-img {
+    display: inline-block;
+    height: auto;
+    image-rendering: high-quality;
+    transition: opacity .2s;
+    vertical-align: top;
+}
+#facs-img.loading { opacity: .15; }
+
+#facs-overlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: #111; color: #555;
+    font-family: 'Noto Sans Georgian', sans-serif; font-size: .7rem; letter-spacing: .05em;
+    z-index: 5; pointer-events: none;
+}
+#facs-overlay.hidden { opacity: 0; pointer-events: none; }
+
+/* ── Thumbnail strip ─────────────────────────────────── */
+#facs-strip {
+    display: flex; align-items: center; gap: 4px;
+    padding: 5px 6px; background: #0a0a0a;
+    border-top: 1px solid #1e1e1e;
+    overflow-x: auto; flex-shrink: 0; min-height: 60px;
+    scrollbar-width: thin; scrollbar-color: #333 #0a0a0a;
+}
+#facs-strip::-webkit-scrollbar { height: 3px; }
+#facs-strip::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+.facs-thumb {
+    flex-shrink: 0; width: 40px; height: 50px;
+    border: 2px solid #2a2a2a; border-radius: 2px;
+    overflow: hidden; cursor: pointer; position: relative; background: #1a1a1a;
+    transition: border-color .15s;
+}
+.facs-thumb:hover             { border-color: #777; }
+.facs-thumb.active-thumb      { border-color: var(--crimson); }
+.facs-thumb img               { width:100%; height:100%; object-fit:cover; display:block; opacity:.65; transition:opacity .15s; }
+.facs-thumb:hover img,
+.facs-thumb.active-thumb img  { opacity: 1; }
+.facs-thumb-lbl {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    font-size: .42rem; font-family: monospace; color: #ccc;
+    background: rgba(0,0,0,.7); text-align: center; padding: 1px 0;
+}
+
+/* ── Zoom bar ────────────────────────────────────────── */
+#facs-zoombar {
+    display: flex; align-items: center; gap: .4rem;
+    padding: .28rem .65rem; background: #080808;
+    border-top: 1px solid #1a1a1a; flex-shrink: 0;
+}
+.z-btn {
+    padding: 2px 9px; background: #1a1a1a; color: #555;
+    border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer;
+    font-size: .62rem; font-family: monospace; line-height: 1.7;
+    transition: background .1s, color .1s, border-color .1s;
+}
+.z-btn:hover  { background: #2a2a2a; color: #bbb; }
+.z-btn.z-on   { background: #3a1212; color: #e08070; border-color: #6a2a2a; }
+#facs-full-link {
+    margin-left: auto;
+    font-size: .6rem; color: #333; text-decoration: none;
+    font-family: 'Noto Sans Georgian', sans-serif; transition: color .1s; white-space: nowrap;
+}
+#facs-full-link:hover { color: #888; }
+
+/* ── Attribution bar — LoC credit under zoom ─────────── */
+#facs-attribution {
+    padding: .28rem .65rem;
+    background: #0e0e0e; border-top: 1px solid #222;
+    flex-shrink: 0;
+    display: flex; align-items: baseline; justify-content: space-between; gap: .4rem;
+    flex-wrap: wrap;
+}
+#facs-attribution span {
+    font-size: .6rem; color: #888;
+    font-family: 'Noto Sans Georgian', sans-serif; line-height: 1.5; font-style: italic;
+}
+#facs-attribution a {
+    font-size: .6rem; color: #777; text-decoration: none;
+    font-family: 'Noto Sans Georgian', sans-serif; white-space: nowrap; transition: color .1s;
+}
+#facs-attribution a:hover { color: #bbb; }
+
+/* ═══════════════════════════════════════════════════════
+   APPARATUS PANEL INTERNALS
+═══════════════════════════════════════════════════════ */
+#app-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .5rem .85rem; background: var(--crimson-pale);
+    border-bottom: 1px solid #e8d0d0; flex-shrink: 0;
+}
+#app-header-title {
+    font-size: .62rem; font-family: 'Noto Sans Georgian', sans-serif;
+    font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--crimson);
+}
+#app-entries-wrap { flex: 1; min-height: 0; overflow-y: auto; }
+.app-entry        { border-bottom: 1px solid #f0ebe3; transition: background .1s; }
+.app-entry:hover  { background: #fdf8f2; }
+.app-entry.active { background: var(--crimson-pale); }
+.app-entry:last-child { border-bottom: none; }
+.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-wit { font-size: .6rem; font-style: italic; color: #999; }
+#app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
+
+/* ── Toolbar buttons ─────────────────────────────────── */
+.wit-btn { transition: background .12s, color .12s, border-color .12s; }
+.wit-btn.on { background: var(--ink); color: white; border-color: var(--ink); }
+.mode-btn {
+    display: inline-flex; align-items: center; gap: .35rem;
+    font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif;
+    padding: .28rem .7rem; border-radius: 2px;
+    border: 1px solid #d0c8be; color: #666; background: white;
+    cursor: pointer; transition: all .12s; white-space: nowrap; text-decoration: none;
+}
+.mode-btn:hover  { border-color: #b0a898; color: #333; background: #f8f5f0; }
+.mode-btn.active { background: var(--ink); color: white; border-color: var(--ink); }
+
+/* ── Citation ────────────────────────────────────────── */
+#citation-block { background: var(--crimson-pale); border-top: 1px solid #e8d8d8; padding: 1.5rem 0; margin-top: 2rem; }
+#citation-block .inner { max-width: 88rem; margin: 0 auto; padding: 0 1.5rem; }
+.cite-label { font-size: .6rem; font-family: 'Noto Sans Georgian', sans-serif; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--crimson); margin-bottom: .5rem; display: flex; align-items: center; gap: .35rem; }
+.cite-apa   { font-size: .78rem; font-family: 'Noto Serif Georgian', Georgia, serif; color: #4a3a2a; line-height: 1.75; margin-bottom: .3rem; }
+.cite-apa a { color: var(--crimson); }
+.cite-copy  { display: inline-flex; align-items: center; gap: .3rem; margin-top: .5rem; font-size: .62rem; font-family: 'Noto Sans Georgian', sans-serif; border: 1px solid #d8c8c8; border-radius: 2px; padding: .18rem .55rem; background: white; color: #888; cursor: pointer; transition: color .12s, border-color .12s; }
+.cite-copy:hover { color: var(--crimson); border-color: var(--crimson); }
+
+/* ── CTS toast ───────────────────────────────────────── */
+.cts-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px); background: #1f2937; color: white; padding: 10px 18px; border-radius: 8px; font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif; opacity: 0; transition: all .3s ease; z-index: 200; box-shadow: 0 4px 12px rgba(0,0,0,.2); white-space: nowrap; max-width: 90vw; pointer-events: none; }
+.cts-toast.visible { transform: translateX(-50%) translateY(0); opacity: 1; }
+</style>
+
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="border-b border-gray-200 sticky top-0 z-50" style="background:var(--parchment);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+
+            <a href="../index.html" class="flex items-center gap-2.5 group">
+                <span class="font-serif-geo font-bold text-lg leading-none select-none"
+                      style="color:var(--crimson);">Ⴑ</span>
+                <span class="text-sm font-medium text-gray-700 tracking-wide group-hover:text-gray-900 transition-colors">
+                    ႱႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                </span>
+            </a>
+
+            <!-- Desktop nav — order: ტექსტები · ხელნაწერები · ლექსიკონი · კვლევა · ბიბლიოგრაფია · შესახებ -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="../texts/index.html"
+                   class="nav-link active text-xs font-medium text-gray-500 hover:text-gray-900">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+
+            <button id="mob-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav — same order -->
+        <div id="mob-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+            <div class="flex flex-col gap-1">
+                <a href="../texts/index.html"       class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"        class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"      class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"     class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html" class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"              class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('mob-btn').addEventListener('click', () =>
+        document.getElementById('mob-menu').classList.toggle('hidden'));
+</script>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main class="flex-1">
+    
+
+<div id="text-breadcrumb"
+     style="position:sticky;top:var(--nav-h,48px);z-index:40;background:white;"
+     class="border-b border-gray-200 px-6 py-3">
+    <div style="max-width:88rem;margin:0 auto;" class="flex items-center gap-2 text-xs text-gray-500">
+        <a href="../texts/index.html" class="hover:text-gray-700">ტექსტები</a>
+        <span class="text-gray-300">›</span>
+        <span class="text-gray-700 font-medium">ხარება (25 მარტი)</span>
+        <span class="text-gray-300">›</span>
+        <span class="text-gray-600 truncate">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</span>
+    </div>
+</div>
+
+<div id="text-toolbar"
+     style="position:sticky;top:calc(var(--nav-h,48px) + var(--bc-h,36px));z-index:40;background:white;"
+     class="border-b border-gray-200 px-6 py-5">
+    <div style="max-width:88rem;margin:0 auto;">
+        <div class="flex items-start justify-between gap-4 flex-wrap">
+            <div class="flex-1 min-w-0">
+                <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">თქმული მისივე, ხარებისათჳს, მეორე</p>
+                <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</h1>
+                <div class="flex flex-wrap items-center gap-3 mt-2">
+                    <span class="text-sm text-gray-600">გრიგოლ ნეოკესარიელი</span>
+                    <span class="text-gray-300">·</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 13r-22v</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-400"></span>
+                    <span class="text-xs text-gray-400">CPG 1764</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0 pt-1">
+                <div class="flex gap-1 mr-2">
+                    <button id="wit-N35" onclick="toggleWit('N35')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 35</button>
+                    <button id="wit-N50" onclick="toggleWit('N50')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 50</button>
+                </div>
+                <div class="w-px h-5 bg-gray-200"></div>
+                <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    ფაქსიმილე
+                </button>
+                <button id="btn-app" class="mode-btn" onclick="setMode('app')">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    კრიტ. აპარატი
+                </button>
+                <div class="w-px h-5 bg-gray-200"></div>
+                <a href="../data/texts/mrav-kharbeba-2.xml" class="mode-btn">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>TEI
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cts-toast" class="cts-toast"></div>
+
+<div id="layout-root">
+
+    <!-- Transcription -->
+    <div id="transcription">
+        <div class="flex items-center justify-between mb-8 text-xs text-gray-400">
+            <a href="mrav-kharbeba-1.html" class="hover:text-gray-700">← </a>
+            <a href="mrav-kharbeba-3.html" class="hover:text-gray-700"> →</a>
+        </div>
+        <div class="text-body" id="text-content" data-text-id="mrav-kharbeba-2">
+            <p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ღესასწაულთა ყოველთა და გალობათაჲ ჯერ-არს ჩუენდა მსგავსად მსხუერპლთა შეწირვად ღმრთისა. ხოლო უპირადჱს ხარებაჲ ესე წმიდისა ღმრთის-მშობელისაჲ, რომელ-იგი მთავარანგელოზისა მისგან მისა მიმართ ითქუა: 
+          გიხაროდენ, მიმადლებულო! 
+          ამისთჳს რამეთუ უპირადჱს ყოვლისა საღმრთოჲსა ცხორებისა და მოძღურებისა ახლისა შჯულისა ესე მოივლინა ჩუენდა მამისაგან ნათლისაჲსა, ვითარმედ: გიხაროდენ, მიმადლებულო!
+        </p>
+<p id="p2"><span class="par-num" title="¶2">¶2</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>იმადლებულო რაჲ თქუა, ყოველივე ბუნებაჲ კაცობრივი გარე-შეიცვა. გიხაროდენ, მიმადლებულო! წმიდისა მისთჳს მიდგომილებისა და წმიდისა შობისათჳს გახარებ თქუენ სიხარულსა დიდსა, რომელი იყოს ყოვლისა ერისა.
+        </p>
+<p id="p3"><span class="par-num" title="¶3">¶3</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ერმე კუალად მაცხოვარებისასა მას რაჲ ვნებასა მოვიდოდა უფალი ჩუენი, იტყოდა, ვითარმედ: 
+          გიხილნე თქუენ და გიხაროდის და სიხარული თქუენი არავინ მიგიღოს თქუენგან.
+        </p>
+<p id="p4"><span class="par-num" title="¶4">¶4</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მერმე კუალად შემდგომად აღდგომისასა წმიდათა მათ დედათა მიერ ესრე გუახარა ჩუენ, ვითარმედ: 
+          გიხაროდენ! 
+          ხოლო მათსა მახლობელად მოციქული იტყჳს, ვითარმედ: 
+          მარადის გიხაროდენ! მოუკლებელად ილოცევდით, ყოველსა შინა ჰმადლობდით.
+        </p>
+<p id="p5"><span class="par-num" title="¶5">¶5</span>
+          <span class="folio-milestone" data-wit="" data-folio="6v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0014" data-sp="11" title="Sin. geo. , f. 6v">6v</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴔ</span>ხედავთა აწ, საყუარელნო, ვითარ გარდარეული იგი და გამოუთქუმელი მადლი განუყოფელად ყოველითა ადგილთა მოგუნიჭა ჩუენ უფალმან! რამეთუ წმიდაჲ მარიამ ჴორცთა შინა რაჲ იყო, უჴრწნელი ცხორებაჲ მოიპოვა და ყოვლითავე სათნოებითა იქცეოდა და ცხონდებოდა რჩეულად.
+        </p>
+<p id="p6"><span class="par-num" title="¶6">¶6</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მისათჳსცა ღმრთისა მამისა სიტყუამან ჴორცნი შემოსად და სრული კაცებაჲ ჯერ-იჩინა მისგან, რაჲთა რომლისა ჴორცისაგან ცოდვაჲ სოფლად შემოვიდა და ცოდვისაგან — სიკუდილი, მისვე ჴორცისაგან დაისაჯოს ცოდვაჲ იგი ჴორცითა და რაჲთა იძლიოს ცოდვისა იგი განსაცდელი დაფლვითა მით წმიდისა გუამისაჲთა, და დასაბამი აღდგომისაჲ გამოჩნდეს, და ცხოვრებაჲ საუკუნოჲ სოფელსა შინა იქადაგოს, და ღმრთისაჲ კაცთა მომართ იქმნეს ზიარებაჲ.
+        </p>
+<p id="p7"><span class="par-num" title="¶7">¶7</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რაჲ-მე ვთქუა, ანუ რაჲ-მე დავაკლო, ანუ ვითარ-მე გამოვთქუა საიდუმლოჲ იგი მიუწდომელი? — არამედ აწ რომელსა-ესე ზედა ვდგათ, მასვე ზედა კუალად მოვიდეთ.
+        </p>
+<p id="p8"><span class="par-num" title="¶8">¶8</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴕ</span>ალწულისა წმიდისა გაბრიელ მოივლინა, უჴორცოჲ ჴორცთა შინა მყოფისა, რომელი მოცვალებულ იყო ცხორებასა უჴრწნელსა, სიწმიდით და სათნოებით ცხონდებოდა.
+        </p>
+<p id="p9"><span class="par-num" title="¶9">¶9</span>
+          <span class="folio-milestone" data-wit="" data-folio="7r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0015" data-sp="12" title="Sin. geo. , f. 7r">7r</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მო-რაჲ-ვიდა მისა ანგელოზი იგი, პირველად ესრჱთ ახარა მას და ჰრქუა: 
+          გიხაროდენ, მიმადლებულო! 
+          გიხაროდენ, მიმადლებულო, რამეთუ შენ ნანდჳლვე სიხარულისა საქმეთა ღირს იქმ, რამეთუ შენ შეუგინებელი იგი სამოსელი გმოსიეს და ცხორებაჲ სიწმიდისაჲ გარე-შეგირტყამს. გიხაროდენ, მიმადლებულო, რომელი ზეცისა მის სიხარულისა დამტევნელი ხარ; გიხაროდენ, მიმადლებულო, რამეთუ შენ მიერ სიხარული ყოველთა დაბადებულთა განეყოფის და ნათესავი კაცთაჲ კუალად მიიღებს დასაბამითგანსა მას პატივსა; გიხაროდენ, მიმადლებულო, რამეთუ მკლავთა შენთა ზედა შემოქმედი ყოველთაჲ ტჳრთად გიც.
+        </p>
+<p id="p10"><span class="par-num" title="¶10">¶10</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო იგი სიტყუასა მას ზედა შეძრწუნდა, რამეთუ უჩუეველ იყო მამათა მიმართ ზრახვასა, და დუმილსა ვითარცა დედასა გონიერებისასა და სიწმიდისასა მარადის მოიკითხვიდა, წმიდა იყო და უბიწო და შეუგინებელ. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴄ</span>სე პირისაგან ანგელოზისა არა შესინდა, ვითარცა-იგი მრავალნი წინაწარმეტყუელთაგანნი, რამეთუ ქალწულებაჲ ჭეშმარიტი ანგელოზთა ნათესაობა არს და რამეთუ მოწლედ წმიდაჲ ესე სანთელსა მას ქალწულებისასა იმარხვიდა და მრავალი მოღუაწებაჲ აქუნდა, რაჲთა დაუშრეტელად და შეუგინებელად დაიცვეს.
+        </p>
+<p id="p11"><span class="par-num" title="¶11">¶11</span>
+          <span class="folio-milestone" data-wit="" data-folio="7v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0016" data-sp="13" title="Sin. geo. , f. 7v">7v</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვითარცა-იგი ვის სამოსელი რაჲ ბრწყინვალჱ ჰმოსიენ და ეკრძალებინ, რაჲთა ნუუკუე შეგინებაჲ რაჲმე გინა მწიკულევანებაჲ ვინაჲვე შეეხოს მას, ესეცა წმიდაჲ ესე ქალწული თავით თჳსით განიზრახვიდა და იტყოდა: ნუუკუე ზაკუვულებაჲ რაჲმე აქუნდეს მსახურებასა მას? ნუუკუე ნეტარებაჲ იგი ორგულებით იქმნეს ჩემდა მომართ? ნუუკუე გესლი რაჲმე თაფლსა მას შინა დამალულ არს? ნუუკუე სიტყუაჲ მახარებლისაჲ იყოს და განზრახვაჲ მტყუენველისაჲ? რამეთუ რომელი არა იცის, ვინაჲ მოიკითხავს? ამას თავით თჳსით განიზრახვიდა და იტყოდა.
+        </p>
+<p id="p12"><span class="par-num" title="¶12">¶12</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ ანგელოზმან მან ღაღატ-ყო მისა მიმართ განუყოფელი იგი სიხარული ყოველთა მორწმუნეთაჲ და ჰრქუა მას: 
+          ნუ გეშინინ, მარიამ, რამეთუ ჰპოვე მადლი წინაშე ღმრთისა, 
+          რამეთუ ჩემ მიერ ზეცისანი იგი ძალნი შენ წმიდასა ქალწულსა მოგოკითხვენ, და უფროჲსღა თავადმან, რომელი-იგი უფლებს ყოველთა ზედა ძალთა ცისათა, შენ წმიდაჲ ქალწული ყოვლისაგან დაბადებულისა გამოგირჩია, რაჲთა წმიდისაგან და უბიწოჲსა შეუგინებელისა მუცლისა შენისა ბრწყინვალჱ მარგალიტი გამოვიდეს. რამეთუ რომელი-იგი შენგან იშვეს, მაცხოვარი არს ყოვლისა დაბადებულისა(ჲ).
+        </p>
+<p id="p13"><span class="par-num" title="¶13">¶13</span>
+          <span class="folio-milestone" data-wit="" data-folio="8r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0017" data-sp="14" title="Sin. geo. , f. 8r">8r</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ამეთუ ყოვლისა ბუნებისა კაცობრივსა წმიდაჲცა ესე ქალწული უდიდებულჱს და უწმიდჱს და უპატიოსნე შობილ იყო, ხოლო უბრწყინვალჱს უფროჲს თოვლისა აქუნდა გონებაჲ. რამეთუ ყოვლისა ოქროჲსა გამოცდილისა უწმიდე იყო ჴორცითა მუცელი ესევითარი, რომელცა ეზეკიელ იხილა და მოგუასწავა მსგავსებაჲ მჴეცთაჲ და თავსა აღმატებულად, ვითარცა ხილვაჲ მყინვრისაჲ საშინელისაჲ და მსგავსებაჲ საყდრისაჲ მის ზედა; ვითარცა ხილვაჲ საფირონისაჲ, და ზედა-კერძო საყდარსა მას, ვითარცა ხილვაჲ კაცისაჲ; და ხილვაჲ ილიკტრიონისჲ და მას შიგან ვითარცა ხილვაჲ ცეცხლისაჲ.
+        </p>
+<p id="p14"><span class="par-num" title="¶14">¶14</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴝ</span>ეშმარიტად წინაწარმეტყუელმან წმიდისაგან ქალწულისა შობისათჳს ყოველივე ესრე სახედ იხილა, რომელ შენ, წმიდაო ქალწულო, ტჳრთვად ვერ ძალ-გედვა, უკუეთუმცა არა ყოვლითა დიდებითა და სატნოებითა მსგავსად საყდრისა მის ელვარე იპოვე.
+        </p>
+<p id="p15"><span class="par-num" title="¶15">¶15</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ომლითა-მე უკუე შესხმისა სიტყჳთა შევამკოთ ქალწულებისა იგი პატიოსნებაჲ? რომელთა ქებათა ღაღადებითა უჴრწნელსა მას უგალობდეთ ხატსა? ანუ რომლითა-მე სულიერთა გალობათა სიტყჳთა ვადიდებდეთ უფროჲს დიდებულსა მას ანგელოზთასა?
+        </p>
+<p id="p16"><span class="par-num" title="¶16">¶16</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴄ</span>სე სახლსა შინა ღმრთისასა დანერგულ იყო, ვითარცა ნაყოფ-მსხმოჲ 
+          ზეთისხილი, 
+          რომლისა ფარვითა სულმან წმიდამან ძედ და მკჳდრად გჳწოდა ჩუენ სასუფეველსა ქრისტჱსსა. ესე — მარადის შუებული უჴრწნელებისა სამოთხჱ, რომელსა შინა ცხოველს-მყოფელი იგი ხჱ დაენერგა და ყოველთავე მოგუანიჭებს
+          <span class="folio-milestone" data-wit="" data-folio="8v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0018" data-sp="15" title="Sin. geo. , f. 8v">8v</span>
+          უკუდვებისა ნაყოფსა. ესე — ქალწულთა სიქადული, მორწმუნეთა სიხარული; ესე — მორწმუნეთა სიმტკიცჱ და ღმრთის-მსახურთა სათნოებაჲ; ესე — ჭეშმარიტებისა სამოსელი და სათნოებისა საყოფელი; ესე — წყაროჲ დაუწყუედელი, რომელსა შინა ცხოველი იგი წყალი აღმოეცა, უფლისა იგი ჴორცითა მოსლვაჲ; ესე — სიმართლისა ზღუდე.
+        </p>
+<p id="p17"><span class="par-num" title="¶17">¶17</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რავდენნი ამისა იქმნეს ტრფიალ და ჭეშმარიტებისა მის ქალწულებისა გული უთქუამს, ანგელოზთასა მას შებმა-უყვეს მადლსა; რავდენნი ღჳნოსა და სიმთრვალესა და თაფლუჭისა შუებასა განეშორნენ, ცხოვრებისა შემოსილისა ნერგითა იშუებდენ; რავდენთა სანთელი იგი ქალწულებისაჲ დაუშრეტელად დაიმარხეს, დაუჭნობელი იგი უჴრწნელებისა გჳრგჳნი დაიდგან; რავდენთა სიწმიდისა იგი შეუგინებელი მოიგეს სამოსელი, უჴრწნელსა მას სიმართლისა სასძლოსა მიიყვანნენ; რავდენი ანგელოზთასა მას წესსა უმახლობელე იქმნენ, უმჯობჱს უფლისა მიერ თქმულისა მის ნეტარებისა იშუებდენ; რავდენთა ბრწყინვალჱ იგი ზეთი გონებისაჲ და იჭჳსა განწმედილი საკუმეველი მოიპოვონ, სულნელებისა იგი სულიერისა შვილებისაჲ დაიმკჳდრონ აღთქუმაჲ.
+        </p>
+<p id="p18"><span class="par-num" title="¶18">¶18</span>
+          <span class="folio-milestone" data-wit="" data-folio="9r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0019" data-sp="16" title="Sin. geo. , f. 9r">9r</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ავდენი ხარებასა წმიდისა ღმრთის-მშობელისასა დღესასწაულობდენ უსაკუთრჱს ხარებისა მის, რომელი-იგი თქუა: 
+          &quot;გიხაროდენ, მიმადლებულო&quot;, 
+          მიიღონ სასყიდლისა კუალად-გებაჲ. ჯერ-არს უკუე ჩუენდა დღესასწაულობად ესე დღესასწაული, რამეთუ სიხარულითა და მხიარულებითა აღავსო ყოველი სოფელი.
+        </p>
+<p id="p19"><span class="par-num" title="¶19">¶19</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ვდღესასწაულობდეთ ჩუენ ფსალმუნითა და ქებითა და გალობითა სულიერითა. დღესასწაულობდა ოდესმე ისრაელიცა, არამედ უცომოჲთა და ველის-ყრდელითა, რომელთათჳს წინაწარმეტყუელი იტყჳს: 
+          გარდავაქცინე დღესასწაულნი მათნი გლოვად და სიხარული მათი — მწუხარებად.
+        </p>
+<p id="p20"><span class="par-num" title="¶20">¶20</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ჩუენნი მწუხარებანი უფალმან ჩუენმან ნაყოფთაგან სინანულისათა სიხარულად გარდააქცინა, რამეთუ აქუნდა პირველსა მას შჯლსა სამართალი მსახურებათაჲ, ვითარცა-იგი მამათ-მთავრისა ჩუენისა აბრაჰამისი. არამედ სალმობითა ჴორციელებრითა და ტკივილითა წინა-დაცუეთისაჲთა ვიდრე ჟამთა აღსღსრულებადმდე, რამეთუ მათ შჯული მოსჱს მიერ მოეცა.
+        </p>
+<p id="p21"><span class="par-num" title="¶21">¶21</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ჩუენდა ჭეშმარიტებაჲ იესუ ქრისტჱს მიერ მონიჭებულ არს; ყოველთა კეთილთა დასაბამ ჩუენდა მომართ ხარებაჲ იქმნა წმიდისა ქალწულისა და მიმადლებულისა, მრავალ-საგალობელი ესე მაცხოვრისა ჩუენისა მოღუაწებაჲ, საღმრთოჲ იგი მისი და უფროჲ დიდებული მოღუაწებაჲ.
+        </p>
+<p id="p22"><span class="par-num" title="¶22">¶22</span>
+          <span class="folio-milestone" data-wit="" data-folio="9v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0020" data-sp="17" title="Sin. geo. , f. 9v">9v</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მიერ აღმოგჳბრწყინდებიან ჩუენ საცნაურისა მის ნათლისა მზისთუალნი; მიერ აღმოგჳცჱნდების ჩუენ წყაროჲ იგი სიბრძნისაჲ, ბრკინვალედ და წმიდად გამოადინებს ღმრთის მსახურებისათა მათ ნაკადულთა; ამიერ აღმოგჳბრწყინდებიან ჩუენ საფასენი იგი ღმრტის მეცნიერებისანი, რამეთუ ცხორებაჲ საუკუნჱ ესე არს, რაჲთა უწყოდით ჭეშმარიტი ღმერთი და რომელი მოავლინა — იესუ ქრისტჱ.
+        </p>
+<p id="p23"><span class="par-num" title="¶23">¶23</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მერმე იტყჳს, რამეთუ: 
+          გამოიძიეთ წიგნთაგან, ვითარმედ მათ შინა ელით ცხორებასა საუკუნესა. 
+          ამისთჳს რომელნი გამოეძიებენ საღმრთოთა სიტყუათა, გამოეცხადების მათ საუნჯჱ იგი ღმრთის მსახურებისაჲ. საფასჱ დაგჳფინა ჩუენ ღმრთის სულთაჲ მათ წიგნთაჲ ნუგეშინის-მცემელმან. საფასე იყავნ ჩუენდა სიბრძნის და წინაწარმეტყუელთა, გინათუ სახარებისაჲ და მოციქულთაჲ, რაჲთა გუაქუნდეს ჭეშმარიტისა ცხოვრებისა სასოებაჲ.
+        </p>
+<p id="p24"><span class="par-num" title="¶24">¶24</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ამეთუ წმიდათა წინაწარმეტყუელთა და მოციქულთა ენითა ჩუენ უფალი გუზრახავს, წმიდათა ჴმითა ღმერთი იშუებს. არა თუ სიტყუათაჲ იგი უჴმს, არამედ მორჩილებასა მას ზედა იხარებს; არა თუ ნაყოფ რაჲმე აქუს კაცთაგან, არამედ გონიერსა მას ზედა სულსა მართალსა განისუენებს; არა თუ რომლითა-იგი ჩუენ უგალობთ ქრისტჱ იდიდების, არამედ რომლითა-იგი ჩუენ კეთილი გუეყოფის, ქველის-მოქმედებასა მას მისსა მორჩილებით ვქადაგებთ; არა თუ რაჲთა პატიოსნებასა მას მისსა
+          <span class="folio-milestone" data-wit="" data-folio="10r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0021" data-sp="18" title="Sin. geo. , f. 10r">10r</span>
+          მივიწინეთ, არამედ რაჲთა მსგავსად ძალისა თანა-ნადები იგი გარდავიჴადოთ.
+        </p>
+<p id="p25"><span class="par-num" title="¶25">¶25</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო რაჟამს აღმოიკითხვებოდის სახარებაჲ, გინა თუ სამოციქულოჲ, ნუ წიგნსა მას ხედავ, ნუცა მკითხველსა მას, არამედ ზეცით გამო მეტყუელსა მას, რამეთუ წიგნი არს, რომელსა-იგი ხედავ, ხოლო ქრისტჱ არს, რომელი ღმრთის-მეტყუელებით იქადაგების. გუახარებს ჩუენ მრავალ-საგალობელსა მას მაცხოვრისა მოღუაწებასა, რამეთუ ღმერთი იყო და კაცთ-მოყუარებისათჳს კაც იქმნა; არა თუ პირველ საუკუნითგანი იგი პატივი განიშორა, არამედ მაცხოვარებისა იგი მოღუაწებაჲ შეიმოსა.
+        </p>
+<p id="p26"><span class="par-num" title="¶26">¶26</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴂ</span>უახარებს ჩუენ მრავალ-საგალობელსა მას მაცხოვრისა ჩუენისა განგებულებასა, რამეთუ უძლურთა მკურნალი მოვიდა; არა თუ წამლითა ჰკურნებს, არამედ წამის-ყოფითა კაცთ-მოყუარებისაჲთა ყოველთავე განჰკურნებს. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴂ</span>უახარებს ჩუენ მრავალ-საგალობელსა მაცხოვრისა მოღუაწებასა, რამეთუ შეცთომილთა გზაჲ გამოუჩნდა, განწირულთა — მაცხოვარებისა იგი მადლი, რომელი მრავალ-ფერად ყოველთავე შეეწევის: შეცთომილთა ეძიებს, დაბნელებულთა განანათლებს, მონათა განათავისუფლებს, მომწყუდართა განაცხოველებს, ტყუეთა გამოიჴსნის ყოვლად, ჩუენ ყოველთა გუექმნა გზა ცხოვრების.
+        </p>
+<p id="p27"><span class="par-num" title="¶27">¶27</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>რა თუ ჩუენისა გონიერებისათჳს ყოველსავე იქმოდა მაცხოვარი ჩუენი; არა თუ რაჲთა თავისა თჳსისა ივაჭროს სათნოებაჲ, არამედ რაჲთა ჩუენ ცხოვრებაჲ საუკუნოჲ მოგუანიჭოს. რამეთუ ხატად ღმრთისა დაჰბადა კაცი და სამოთხესა შინა საშუებლისასა უბრძანა, რაჲთა იქცეოდის; ხოლო შურითა რაჲ ეშმაკისაჲთა სცთა და ღმრთის მცნებასა გარდამავალ იქმნა, საშჯელსა შევარდა სიკუდილისასა რომლისათჳსცა შემდგომითი შემდგომად მისნი შობილნი მამულსა მას თანა-ნადებსა ქუეშე დაკირთებულ იყვნეს და სასჯელისა ზღვევაჲ იგი ძიებით მიეჴადებოდა.
+        </p>
+<p id="p28"><span class="par-num" title="¶28">¶28</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ამეთუ სუფევდა სიკუდილი ვიდრე მოსჱსამდე, ხოლო კაცთ-მოყუარემან ღმერთმან იხილა რაჲ თჳსი იგი შექმნული სიკუდილისაგან ძლეული, არა სრულიად გარე-მიიქცა მისგან, რომელი-იგი ხატად თჳსა შექნა, არამედ ნათესავითი ნათესავად მოხედვაჲ არა დააკლო, რამეთუ პირველად მამათა ეჩუენებოდა და შჯულსა შინა იქადაგებოდა და წინაწარმეტყუელთა მიერ მსგავსებით მაცხოვარებისა მოღუაწებასა მას წინავე გუაუწყებდა.
+        </p>
+<p id="p29"><span class="par-num" title="¶29">¶29</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო რაჟამს მოიწია აღსავსებაჲ იგი ჟამთაჲ დიდებულისა მის მოსლვისა მისისაჲ, მთავარანგელოზი მახარებელად წმიდისა ქალწულისა წინაჲსწარ მოივლინა, ხოლო იგი გამოუთქუმელთა მათგან რაჲ ზეცისა ძალთა მოვიდა
+          <span class="folio-milestone" data-wit="" data-folio="11r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0023" data-sp="20" title="Sin. geo. , f. 11r">11r</span>
+          წმიდისა მის, პირველად 
+          &quot;გიხაროდენ, მიმადლებულო&quot; 
+          მისსა მიმართ ღაღატ-ყო.
+        </p>
+<p id="p30"><span class="par-num" title="¶30">¶30</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო მას ვითარცა ესმა, ვითარმედ: &quot;გიხაროდენ, მიმადლებულო&quot;, მეყსეულად სასმენელით შევიდა სული წმიდაჲ შეუგინებელსა მას ტაძარსა ქალწულისასა და განწმიდა ბუნებაჲ მისი ასოთა თანა და დადგა ბუნებაჲ წინაშე მისა; განკრთომით ხედვიდა უფალსა მას ბუნებათასა უფროჲს ბუნებისა საკჳრველთ-მოქმედებასა გუამსა შინა. და რომლითა საჭურველითა ეშმაკი იღუწიდა ჩუენდა მომართ, მითვე საჭურველითა ქრისტემან ჩუენ გჳჴსნნა: შეიმოსნა მსგავსად ჴორცნი, რაჲთა ნაკლულსა მას უმეტჱსი მოანიჭოს მადლი. და ვინაჲ-იგი აღემატა ცოდვაჲ, უფროჲს გარდაემატა მადლი.
+        </p>
+<p id="p31"><span class="par-num" title="¶31">¶31</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴘ</span>ემსგავსებულად მადლი იგი წმიდისა ქალწულისა მოივლინა, რამეთუ ესრე აქუს ხარებისა მას სიტყუასა მოსწავებაჲ, ვითარმედ: 
+          თუესა მეექუსესა მოივლინა გაბრიელ ანგელოზი ქალწულისა, თხოვილისა ქმრისა, რომლისაჲ სახელი იოსებ, სახლისაგან და ტომისა დავითისა; და სახელი ქალწულისაჲ მის მარიამ. 
+          ესე პირველი თუჱ წმიდისა მის მიმართ, ვითარცა იტყჳს წერილი შჯულსა შინა, ვითარმედ: ესე თუჱ — თავი თუეთაჲ, ვნებაჲ წმიდაჲ, დღესასწაულობდით უფლისა ნათესავთა შორის თქუენთა. ხოლო მეექუსედ თუედ ზაქარიაჲს მიმართ იტყჳს. 
+        </p>
+<p id="p32"><span class="par-num" title="¶32">¶32</span>
+          <span class="folio-milestone" data-wit="" data-folio="11v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0024" data-sp="21" title="Sin. geo. , f. 11v">11v</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რამეთუ ჭეშმარიტად წმიდაჲ ესე ქალწული ნათესავისაგან დავითისა იყო და ბეთლემი მამულ ეყო და იოსებს მსგავსად შჯულისა ნათესაობით სამართლად მითხოვილ იყო; სიძჱ იგი და უჴრწნელებისა საუკუნოჲსა თანა-მყოფ. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო წმიდასა მას ქალწულსა ფრიად შემსგავსებული სახელი, რამეთუ მარიამ ეწოდა, რომელი ითარგმანების &quot;განმანათლებელ&quot;. და რაჲ-მე უბრწყინვალჱს არს ქალწულებისა ნათლისა, რომლისაგან სათნოებათაცა ქალწულად უწესედ, რომელნი ბუნებათა მათთა სახიერად მიუთხრობედ!
+        </p>
+<p id="p33"><span class="par-num" title="¶33">¶33</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კეთუ ესოდენ კეთილ არს გული ქალწულად პყრობად, რავდენ უფროჲს, უკეთუ ჴორცთა სულისა თანა ქალწულებაჲ დაიმარხონ! ეგრეცა წმიდაჲ ესე ჴორცთა რაჲ შინა იყო, უჴრწნელი ცხორებაჲ მოიპოვა და მთავარანგელოზისა მის მიერ თქუმულთა სარწმუნოებით შეიწყნარებდა.
+        </p>
+<p id="p34"><span class="par-num" title="¶34">¶34</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ მსწრაფლ ელისაბედისა, ნათესავისა მისისა, მთად კერძო წარვიდა და შევიდა სახიდ და მოიკითხა ელისაბედ მიმსგავსებულად ანგელოზისა მის. ვითარცა ესმა მოკითხვაჲ იგი მარიამისი ელისაბეთს, ჰკრთებოდა ყრმაჲ იგი მუცელსა შინა მისსა. და აღივსო სულითა წმიდითა. აწ უკუე ჴმაჲ მარიამისი შეეწია და სულითა წმიდითა ელისაბე(დ) აღივსო.
+        </p>
+<p id="p35"><span class="par-num" title="¶35">¶35</span>
+          <span class="folio-milestone" data-wit="" data-folio="12r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0025" data-sp="22" title="Sin. geo. , f. 12r">12r</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვითარცა დაუსრულებელისაგან წყაროჲსა მდინარჱ მადლთაჲ, ეგრევე ენისაგან წინაწარმეტყუელებაჲ იგი თჳსსა მას ნათეავსა გამოუცჱნა და ფერჴთა ყრმისათა, დაბმულთა მუცელსა შინა, ვლდომაჲ და სიმღერაჲ მიჰმადლა, რომელი ნანდჳლვე სიხარულისა და საკჳრველებისა ღირდა, რამეთუ სადაცა მივიდოდა მიმადლებული იგი, სიხარულითა აღივსებოდა.
+        </p>
+<p id="p36"><span class="par-num" title="¶36">¶36</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ღაღატ-ყო ჴმითა დიდითა ელისაბეთ და თქუა: 
+          კურთხეუ ხარ შენ დედათა შორის და კურთხეულ არს ნაყოფი მუცლისა შენისაჲ! და ვინაჲ ესე ჩემდა, რაჲთა მოვიდეს დედაჲ უფლისა ჩემისაჲ ჩემდა! 
+          კურთხეულ ხარ შენ დედათა შორის, რამეთუ შენ ექმენ მათ დასაბამ განახლებისა. შენ კადნიერებაჲ სამოთხედ შესლვისაჲ მოგუმადლე ჩუენ და პირველი იგი სალმობაჲ განსდევნე, რამეთუ შენსა შემდგომად ნათესავი დედათაჲ არღარა იყუედრებოდის, არღარა ეშინოდის მკჳდრთა ევაჲსთა პირველისა მისთჳს წყევისა, არცაღა შობადისა მის სალმობისა, რამეთუ ქრისტჱ ნათესავისა ჩუენისა მჴსნელი და მაცხოვარი ყოვლისა ბუნებისაჲ, სულიერი ადამ, რომელმან მიწისაგანისაჲ მის წყლულებაჲ განკურნა, წმიდისაგან მუცლისა შენისა გამოვალს.
+        </p>
+<p id="p37"><span class="par-num" title="¶37">¶37</span>
+          <span class="folio-milestone" data-wit="" data-folio="12v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0026" data-sp="23" title="Sin. geo. , f. 12v">12v</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ურთხეულ ხარ შენ დედათა შორის და მამათა შორის, რამეთუ ყოველთა კეთილთა დამნერგველი შენდა ნაყოფად გამოჩნდა, რამეთუ ბრწყინვალედ ვხედავთ ბერწისათა მათ სიტყუათა. არამედ უბრწყინვალჱსნი წმიდამან ქალწულმან აღმოთქუნა სიტყუანი და გალობაჲ მადლობისაჲ სულნელებითა სავსენი სიტყუანი ღმრთისა შეწირნა, დასაბამითგანთა მათ თანა ახალთა მიუთხრობდა, საუკუნითგანთა მათ თანა აღსასრულსა ამათ ჟამთასა ქადაგებდა, მცირითა ამით სიტყჳთა ყოველნივე საიდუმლონი ქრისტჱსნი გამოთქუნა.
+        </p>
+<p id="p38"><span class="par-num" title="¶38">¶38</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა თქუა მარიამ: 
+          ადიდებს სული ჩემი უფალსა და განიხარა სულმან ჩემმან ღმრთისა მიმართ მაცხოვრისა ჩემისა 
+          და შემდგომი. 
+          შეეწია ისრაელსა, მონასა თჳსსა მოჴსენებად წყალობისა თჳსისა — აღთქუმაჲ, რომელ აღუთქუა აბრაჰამსა და ნატესავსა მისსა ვიდრე მიუკუნისამდე.
+        </p>
+<p id="p39"><span class="par-num" title="¶39">¶39</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴟ</span>ხედავა, ვითარ წმიდამან ქალწულმან მამათ-მთავრისაცა გარდაჰმატა სრულებასა! დაამტკიცა ღმერთმან აბრაჰამისა მიმართ აღთქუმაჲ, რომელსა იტყჳს, ვითარმედ: 
+          ესე არს აღთქუმაჲ ჩემი, რომელი დავდევ შორის შენსა და ჩემსა. 
+          რომლისაგან მო-რაჲ-ვიდა, დაამტკიცა აბრაჰამისა მიმართი იგი აღთქუმაჲ, საცნაურად მიიღო სასწაული იგი წინა-დაცუეთისაჲ და აღმასრულებელ შჯულის და წინაწარმეტყუელთა.
+        </p>
+<p id="p40"><span class="par-num" title="¶40">¶40</span>
+          <span class="folio-milestone" data-wit="" data-folio="13r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0027" data-sp="24" title="Sin. geo. , f. 13r">13r</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ უკუე ესე წინაწარმეტყუელებისა გალობაჲ წმიდამან ქალწულმან ღმრთისა შეწირა და თქუა: 
+          ადიდებს სული ჩემი უფალსა და განიხარა სულმან ჩემმან ღმრთისა მიმართ, მაცხოვრისა ჩემისა, რამეთუ მიყო მე დიდძალი ძლიერმან; წმიდა არს სახელი მისი და წყალობაჲ მისი თესლითი თესლადმდე მოშიშთა მისთა ზედა, 
+          რამეთუ ღმრთის-მშობელ რაჲ მყო, კუალად ქალწულადვე დამმარხა და მუცლისაგან ჩემისა ყოველთა ნათესავთა სიწმიდედ განახლდების სავსებაჲ; ყო სიმტკიცჱ თავით თჳსით ჩუენთჳს სიკუდილისა მიმართ და ეშმაკისა მიმართ და ჩუენთა ცოდვათაჲ განხეთქა ჴელით-წერილი; განაბნინნა ამპარტავანნი გონებითა გულთა მათთაჲთა; თჳთ იგი ეშმაკი განაბნია და ერი მისი მის თანა, რამეთუ ჭეშმარიტად იგი იყო გულითა ამპარტავან, რამეთუ იკადრა და თქუა, ვითარმედ: 
+          ღრუბელთა ზედა ცისათა დავიდგნე საყდარნი ჩემნი და ვიყო მიმსგავსებულ მაღლისა.
+        </p>
+<p id="p41"><span class="par-num" title="¶41">¶41</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ითარ უკუე აწ განხეთქა იგი, შემდგომთა სიტყჳთა წინაწარმეტყუელმან გუაუწყა: 
+          ხოლო აწ ვიდრე ჯოჯოხეთამდე შთაჰჴდე 
+          და ყოველნი მძლავრნი და მსახურნი შენნი. რამეთუ ყოველთა ადგილთა ბომონნი მისნი და ამაოთა მსახურებანი განაბნინა და წარმართთაგან მოგებული ერი თავისა თჳსისა განჰმზადა; გარდამოსთხინა ძლიერნი საყდართაგან და აღამაღლნა მდაბალნი.
+        </p>
+<p id="p42"><span class="par-num" title="¶42">¶42</span>
+          <span class="folio-milestone" data-wit="" data-folio="13v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0028" data-sp="25" title="Sin. geo. , f. 13v">13v</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ უკუე ჰურიათა განვრდომაჲ და წარმართთა შემოყვანებაჲ ადვილად გუაუწყა, რამეთუ ჰურიათა მოხუცებულნი და მწიგნობარნი შჯულითა და სხჳთა მით ნეშტითა პატივითა განმდიდრებულ იყვნეს, რომლისაგან ბოროტად სიმდიდრესა მას მძლავრობასა უშჯულოდ იჴმევდეს. ამიერ უკუე ყოვლისაგან საყდრისა გარდამოვარდა: წინაწარმეტყუელებათაგან და მღდელობათაგან, შჯულის-დებისაგან და მოძღურებისაგან მამულისა, სიმდიდრისაგნ, მსხუერპლთაგან და სიმრავლისაგან დღესასწაულთაჲსა და სამეუფოჲსაგან პატივისა.
+        </p>
+<p id="p43"><span class="par-num" title="¶43">¶43</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მათ ყოველთაგან ცუდნი და დევნულნი და სიშუველნი ტყუედ განივლინნეს, ხოლო მათ წილ გლახაკნი წარმართთაგანნი სიმართლითა მშიერნი ამაღლდეს, რამეთუ მათსა მას სიგლახაკეს და რომლითა-იგი შეპყრობილ იყვნეს ღმრთის მეცნიერებისა სიყუარულითა საღმრთოჲსა სიტყჳთა მსგავსად ბჭისა, ვითარცა ქანანელი იგი ითხოვდა, და ამისთჳსცა ღმრთისა საიდუმლოთაგან სიმდიდრითა აღივსნეს. რამეთუ ყოველივე საფასჱ საღმრთოთა კეთილთაჲ ქალწულისაგან შობილმან წარმართთა მისცვალა.
+        </p>
+<p id="p44"><span class="par-num" title="¶44">¶44</span>
+          <span class="folio-milestone" data-wit="" data-folio="14r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0029" data-sp="26" title="Sin. geo. , f. 14r">14r</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴘ</span>ეეწია ისრაელსა, მონასა თჳსსა, — და არა რომელსავე ისრაელსა, არამედ მონასა თჳსსა, რომელი საქმით აღასრულებდა ისრაელისასა მას აზნაუირებასა. და ამისთჳსცა მონად და მკჳდრად წმიდამან ღმრთის-მშობელმან უწოდა, რამეთუ ჭირვეულად რაჲ პოვა წერილსა მას ზედა შჯულითა მშრომელად, მას მადლითა ნუგეშინის-სცა. აწ უკუე ესევითარსა მას ისრაელს მოუწოდა და შეეწია მოპსენებად წყალობისა, ვითარცა ეტყოდა მამათა ჩუენთა აბრაჰამსა და ნათესავსა მისსა ვიდრე მიუკუნისამდე.
+        </p>
+<p id="p45"><span class="par-num" title="¶45">¶45</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მით მცირითა სიტყჳთა ყოველსა მას განგებულებასა საიდუმლოსა გამოაჩინებს, რამეთუ გამოჴსნად რაჲ ნათესავისა კაცთაჲსა ინება და მამათა მიმართი იგი აღთქუმაჲ რაჲ აღსრულებად სათნო-იყო, ცანი მოდრიკნა და გარდამოჴდა. არამედ რომელ-იგი ჩუენ შემძლებელ ვიყვენით დატევნად, ეგრჱთ გამოგუეცხადა, რაჲთა ნახვად მისა და განხილვად და სმენად ზრახვათა მისთა შეუძლოთ.
+        </p>
+<p id="p46"><span class="par-num" title="¶46">¶46</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ამისთჳსცა ღმრთისა სიტყუამან ჴორცნი და სრული კაცებაჲ დედაკაცისაგან წმიდისა ქალწულისა თავს-იდვა შემოსად; და იშვა, ვითარცა კაცი, რაჲთა გარდაიჴადოს ჩუენი იგი თანა-ნადები და აღასრულოს ვიდრე თავისა თჳსისამდე აბრაჰამის მიმართი იგი აღთქუმაჲ წინა-დაცუეთისაჲ იგი და 
+          <span class="folio-milestone" data-wit="" data-folio="14v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0030" data-sp="27" title="Sin. geo. , f. 14v">14v</span>
+          შემდგომითი შემდგომად შჯულისა მცნებანი.
+        </p>
+<p id="p47"><span class="par-num" title="¶47">¶47</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო შემდგომად სიტყუათა ამათ წმიდაჲ ქალწული ნაზარეთა წარვიდა. მერმე კუალად ბრძანებამან კეისრისამან ბეთლემდ აღმოსლვაჲ აწჳა. ხოლო იგი იყო ვითარცა სამეუფოჲსაგან ტომისა, სამეუფოსავე მამულსა იოსების თანა, ქმრისა თჳსისა, მოვიდოდა, და ყოვლისა საკჳრველებისა უზეშთაჱსი შეუდგა საიდუმლოჲ. რამეთუ ქალწულმან შვა და მკლავთა ზედა იტჳრთა, რომელსა სიტყჳთა ყოველი დაბადებული უტჳრთავს. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა არცაღა ადგილ იყო სავანესა მას. სძითა იზარდებოდა ყოვლისა სოფლისა გამომზრდელი; სახუეველითა შეიხჳა, რომელსა ყოველი დაბადებული სიტყჳთა უპყრიეს.
+        </p>
+<p id="p48"><span class="par-num" title="¶48">¶48</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>აგასა მიიწვინა საყდართა ზედა ქერობინთა მჯდომარჱ; ნათელი ზეცით გარდამოჴდა ყოვლისა დაბადებულისა განმანათლებელი; ერნი ცისანი წინაშე დგეს და ადიდებდეს, რომელი პორველ საუკუნეთა ცათა შინა იდიდების; ვარსკულავი წინა უნათებდა და აუწყებდა შორიელთა მათ ჭეშმარიტისა მის აღმოსავალით მომავალთა. და მოვიდეს და ძღუენი მოართვეს მას, რომელი-იგი ჩუენთჳს დაგლახაკნა.
+        </p>
+<p id="p49"><span class="par-num" title="¶49">¶49</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო წმიდასა მას ქალწულსა დაემარხნეს სიტყუანი ესე და დაედვა გულსა თჳსსა, ვითარცა ყოველთა საიდუმლოთა დამტევნელსა. რამეთუ შენი არს, ჵ, ქალწულო წმიდაო, 
+          <span class="folio-milestone" data-wit="" data-folio="15r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0031" data-sp="28" title="Sin. geo. , f. 15r">15r</span>
+          უზეშთაესი ყოვლისა ქებისა შესხმაჲ მისთჳს, რომელმან-იგი შენგან ჴორცნი შეისხნა ღმერთმან და იშვა ვითარცა კაცი.
+        </p>
+<p id="p50"><span class="par-num" title="¶50">¶50</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴘ</span>ენდა ყოველივე ბუნებაჲ ზეცათაჲ და ქუეყანისაჲ და ქუესკნელთაჲ მსახურებასა შესწირავს თანა-ნადებსა, რამეთუ შენ ჭეშმარიტად საყდრად ქერობინთა გამოშჩნდი; შენ პატიოსანთა მათ და საცნაურთა სამეუფოთა ნათლად ელვის სახედ გამოუბრწყინდები, სადა იდიდების მამაჲ მაღალი, რომლისა-იგი ძალი გაქუნდა საფარველად.
+        </p>
+<p id="p51"><span class="par-num" title="¶51">¶51</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴇ</span>აყუანის-იცემების ძჱ, რომელი შენ ჴორციელად ჰშევ; დიდებულ არს სული წმიდაჲ, რომელმან მუცელსა შენსა შობაჲ იგი მეუფისა დიდისაჲ მოღუაწებით განაგო. რამეთუ შენ მიერ, მიმადლებულო, სამებაჲ წმიდაჲ და ერთი არსებაჲ სოფელსა ეუწყების. შენ თანა ჩუენცა ღირს მყვენ მოღებად სრულისა შენისა მადლისა ქრისტე იესუჲს მიერ უფლისა ჩუენისა.
+        </p>
+        </div>
+        <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
+            <a href="mrav-kharbeba-1.html" class="hover:text-gray-700">← </a>
+            <a href="mrav-kharbeba-3.html" class="hover:text-gray-700"> →</a>
+        </div>
+    </div>
+
+    <!-- IIIF panel -->
+    <div id="facs-panel">
+        <div id="facs-sticky">
+            <div id="facs-metabar">
+                <button class="facs-nav" id="facs-prev" onclick="navigateFacs(-1)" disabled>‹</button>
+                <span id="facs-folio-label">f. 6v</span>
+                <button class="facs-nav" id="facs-next" onclick="navigateFacs(1)">›</button>
+                <span id="facs-wit-lbl">Sin. geo. N 35 · 864 CE</span>
+                <a id="facs-loc-link" href="https://www.loc.gov/resource/amedmonastery.00279386887-ms/?sp=11" target="_blank" rel="noopener">LoC ↗</a>
+            </div>
+
+            <div id="facs-viewport" onclick="cycleZoom()">
+                <img id="facs-img" src="" alt="" class="loading"
+                     onload="onImgLoad()" onerror="onImgError()">
+                <div id="facs-overlay">იტვირთება…</div>
+            </div>
+
+            <div id="facs-strip"></div>
+
+            <div id="facs-zoombar">
+                <button class="z-btn z-on" id="z-fit"  onclick="setZoom('fit');  event.stopPropagation();">Fit</button>
+                <button class="z-btn"      id="z-150"  onclick="setZoom('150');  event.stopPropagation();">150%</button>
+                <button class="z-btn"      id="z-200"  onclick="setZoom('200');  event.stopPropagation();">200%</button>
+                <a id="facs-full-link" href="#" target="_blank" rel="noopener">სრული ↗</a>
+            </div>
+
+            <div id="facs-attribution">
+                <span>(0864). <em>Georgian Manuscripts 32-57-33 32, 57, and 33. Homilies</em> [Manuscript/Mixed Material]. Library of Congress.</span>
+                <a href="https://www.loc.gov/item/00279386887-ms/" target="_blank" rel="noopener">loc.gov ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apparatus panel -->
+    <div id="app-panel">
+        <div id="app-sticky">
+            <div id="app-header">
+                <span id="app-header-title">კრიტიკული აპარატი</span>
+                <div style="display:flex;align-items:center;gap:6px;">
+                    <select id="rdg-filter" onchange="filterRdg(this.value)" style="font-size:.62rem;border:1px solid #d8c8c8;border-radius:2px;padding:2px 6px;background:white;color:#666;outline:none;">
+                        <option value="">ყველა</option>
+                        <option value="orthographic">მართლ.</option>
+                        <option value="grammatical">გრამ.</option>
+                        <option value="lexical">ლექ.</option>
+                        <option value="omission">გამოტ.</option>
+                        <option value="addition">დამ.</option>
+                    </select>
+                    <span style="font-size:.6rem;color:#aaa;">0 ჩ.</span>
+                </div>
+            </div>
+            <div id="app-entries-wrap">
+                
+            </div>
+            <div id="app-legend">
+                <p style="font-size:.58rem;color:#bbb;font-family:'Noto Sans Georgian',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem;">ლეგენდა</p>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 8px;font-size:.65rem;">
+                    <span><span class="rdg-orth">■</span> მართლ.</span><span><span class="rdg-gram">■</span> გრამ.</span>
+                    <span><span class="rdg-lex">■</span> ლექ.</span><span><span class="rdg-om">■</span> გამოტ.</span>
+                    <span><span class="rdg-add">■</span> დამ.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /layout-root -->
+
+<div id="citation-block">
+    <div class="inner">
+        <div class="cite-label">
+            <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Citation
+        </div>
+        <p class="cite-apa" id="cite-ed">Gregorius Thaumaturgus Neocaesariensis. <em>თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</em>. In <em>სინური მრავალთავი 864 / Sinai Mravaltavi 864: Digital Scholarly Edition</em>. Ilia State University, Linguistic Research Institute. Retrieved from <a href="#">sinai-mravaltavi.iliauni.ge/texts/mrav-kharbeba-2.html</a></p>
+        <p class="cite-apa" id="cite-ms">(0864). <em>Georgian Manuscripts 32-57-33 32, 57, and 33. Homilies</em> [Manuscript/Mixed Material]. Library of Congress. <a href="https://www.loc.gov/item/00279386887-ms/" target="_blank" rel="noopener">https://www.loc.gov/item/00279386887-ms/</a></p>
+        <button class="cite-copy" id="cite-copy-btn" onclick="copyCitation()">
+            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+            Copy citations
+        </button>
+    </div>
+</div>
+
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-gray-200 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <span>2026, ილიას სახ. უნივ. · ლინგვ. კვლ. ინსტ.</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <span class="flex items-center gap-2">
+                TEI-XML:
+                <a href="../data/texts/" class="hover:text-gray-600 underline">ტექსტი</a>
+                <a href="../data/lexicon.xml" class="hover:text-gray-600 underline">ლექსიკონი</a>
+                <a href="../data/catalog.xml" class="hover:text-gray-600 underline">კატალოგი</a>
+            </span>
+            <span class="hidden sm:inline text-gray-300">|</span>
+            
+            <span>CC BY-NC-SA 4.0</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+/* ════════════════════════════════════════════════════════
+   STICKY PANEL — JS-based fixed positioning
+   Measures actual toolbar bottom each time so panel top
+   always aligns with the start of the text column,
+   regardless of browser font size or how tall the toolbar is.
+════════════════════════════════════════════════════════ */
+var PANEL_HEIGHT = 'calc(65vh - 1rem)';
+
+function getToolbarBottom() {
+    /* toolbar is the last sticky bar above the text */
+    var tb = document.getElementById('text-toolbar');
+    if (tb) return tb.getBoundingClientRect().bottom;
+    return 120; /* fallback */
+}
+
+function positionSticky(el, panel) {
+    var rect    = panel.getBoundingClientRect();
+    var top     = getToolbarBottom();
+    el.style.position = 'fixed';
+    el.style.top      = top + 'px';
+    el.style.left     = rect.left + 'px';
+    el.style.width    = rect.width + 'px';
+    el.style.height   = PANEL_HEIGHT;
+}
+
+function unpositionSticky(el) {
+    el.style.position = '';
+    el.style.top = '';
+    el.style.left = '';
+    el.style.width = '';
+    el.style.height = '';
+}
+
+var stickyEl    = null; /* currently fixed element */
+var stickyPanel = null; /* its parent panel div */
+
+function attachSticky(el, panel) {
+    stickyEl    = el;
+    stickyPanel = panel;
+    positionSticky(el, panel);
+}
+function detachSticky() {
+    if (stickyEl) unpositionSticky(stickyEl);
+    stickyEl = stickyPanel = null;
+}
+
+window.addEventListener('scroll', function() {
+    if (stickyEl && stickyPanel) positionSticky(stickyEl, stickyPanel);
+}, { passive: true });
+
+window.addEventListener('resize', function() {
+    if (stickyEl && stickyPanel) positionSticky(stickyEl, stickyPanel);
+}, { passive: true });
+
+/* ════════════════════════════════════════════════════════
+   MODE
+════════════════════════════════════════════════════════ */
+var currentMode = '';
+
+function setMode(mode) {
+    var root = document.getElementById('layout-root');
+
+    if (currentMode === mode) {
+        /* toggle off */
+        currentMode = '';
+        root.className = '';
+        document.getElementById('btn-iiif').classList.remove('active');
+        document.getElementById('btn-app').classList.remove('active');
+        detachSticky();
+        return;
+    }
+
+    /* switch to new mode */
+    detachSticky();
+    currentMode = mode;
+    root.className = 'mode-' + mode;
+    document.getElementById('btn-iiif').classList.toggle('active', mode === 'iiif');
+    document.getElementById('btn-app').classList.toggle('active', mode === 'app');
+
+    /* defer one frame so display:block has taken effect before measuring */
+    requestAnimationFrame(function() {
+        if (mode === 'iiif') {
+            attachSticky(
+                document.getElementById('facs-sticky'),
+                document.getElementById('facs-panel')
+            );
+            if (facsIdx === -1 && facsList.length > 0) loadFolioByIdx(0);
+        } else if (mode === 'app') {
+            attachSticky(
+                document.getElementById('app-sticky'),
+                document.getElementById('app-panel')
+            );
+        }
+    });
+}
+
+/* ════════════════════════════════════════════════════════
+   IIIF VIEWER
+
+   ZOOM — CSS width on #facs-img (inline style, no ambiguity).
+   #facs-viewport is display:block (NOT flex).
+   With display:block + overflow:auto, setting img width > 100%
+   creates genuine horizontal overflow that auto-scrolls.
+   No new network request on zoom — image fetched once at pct:75.
+
+   Zoom levels:
+     fit  → width:100%         (fits panel, centered)
+     150  → width:150%         (overflows, pan by scrolling)
+     200  → width:200%         (overflows, pan by scrolling)
+════════════════════════════════════════════════════════ */
+var IIIF_BASE  = 'https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:';
+var LOC_VIEWER = 'https://www.loc.gov/resource/amedmonastery.00279386887-ms/';
+var FETCH_PCT  = 75;
+
+var facsList  = [];
+var facsIdx   = -1;
+var zoomKey   = 'fit';
+var ZOOM_CYCLE = ['fit', '150', '200'];
+
+function setZoom(key) {
+    zoomKey = key;
+    var img  = document.getElementById('facs-img');
+    var vp   = document.getElementById('facs-viewport');
+
+    /* Inline style: no CSS rule can compete with this */
+    if (key === 'fit') {
+        img.style.width    = '100%';
+        img.style.maxWidth = '100%';
+        vp.style.textAlign = 'center';
+        vp.classList.remove('zoom-out');
+    } else {
+        img.style.width    = key + '%';
+        img.style.maxWidth = 'none';
+        vp.style.textAlign = 'left';
+        vp.classList.toggle('zoom-out', key === '200');
+    }
+
+    /* Highlight active button */
+    ['fit','150','200'].forEach(function(k) {
+        document.getElementById('z-' + k).classList.toggle('z-on', k === key);
+    });
+}
+
+function cycleZoom() {
+    var idx = ZOOM_CYCLE.indexOf(zoomKey);
+    setZoom(ZOOM_CYCLE[(idx + 1) % ZOOM_CYCLE.length]);
+}
+
+function buildStrip() {
+    var strip = document.getElementById('facs-strip');
+    var seen  = {};
+    document.querySelectorAll('.folio-milestone[data-facs]').forEach(function(m) {
+        var facs = m.dataset.facs;
+        if (seen[facs]) return;
+        seen[facs] = true;
+        var label = m.dataset.folio || m.textContent.trim();
+        var sp    = parseInt(m.dataset.sp || '0', 10);
+        var mat   = facs.match(/:(\d{4})$/);
+        var seq   = mat ? mat[1] : '';
+        var idx   = facsList.length;
+        facsList.push({ facs: facs, seq: seq, label: label, sp: sp });
+
+        var thumb = document.createElement('div');
+        thumb.className = 'facs-thumb';
+        thumb.dataset.idx = idx;
+        thumb.title = 'f. ' + label;
+        thumb.addEventListener('click', (function(i){ return function(){ loadFolioByIdx(i); }; })(idx));
+
+        var ti = document.createElement('img');
+        ti.src = IIIF_BASE + seq + '/full/pct:8/0/default.jpg';
+        ti.alt = label; ti.loading = 'lazy';
+
+        var tl = document.createElement('div');
+        tl.className = 'facs-thumb-lbl'; tl.textContent = label;
+
+        thumb.appendChild(ti); thumb.appendChild(tl);
+        strip.appendChild(thumb);
+    });
+}
+
+function loadFolioByIdx(idx) {
+    if (idx < 0 || idx >= facsList.length) return;
+    facsIdx = idx;
+    _renderFolio(facsList[idx]);
+}
+
+function _renderFolio(f) {
+    document.querySelectorAll('.facs-thumb').forEach(function(t) {
+        t.classList.toggle('active-thumb', parseInt(t.dataset.idx) === facsIdx);
+    });
+    var at = document.querySelector('.facs-thumb.active-thumb');
+    if (at) at.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+    document.getElementById('facs-folio-label').textContent = 'f. ' + f.label;
+    document.getElementById('facs-loc-link').href  = LOC_VIEWER + (f.sp ? '?sp=' + f.sp : '');
+    document.getElementById('facs-full-link').href = IIIF_BASE + f.seq + '/full/full/0/default.jpg';
+    document.getElementById('facs-prev').disabled  = (facsIdx <= 0);
+    document.getElementById('facs-next').disabled  = (facsIdx >= facsList.length - 1);
+
+    document.querySelectorAll('.folio-milestone').forEach(function(m) {
+        m.classList.toggle('active-folio', m.dataset.facs === f.facs);
+    });
+
+    var img = document.getElementById('facs-img');
+    img.classList.add('loading');
+    /* Apply current zoom BEFORE setting src so layout is correct on load */
+    setZoom(zoomKey);
+    document.getElementById('facs-overlay').classList.remove('hidden');
+    document.getElementById('facs-overlay').textContent = 'იტვირთება…';
+    img.src = IIIF_BASE + f.seq + '/full/pct:' + FETCH_PCT + '/0/default.jpg';
+}
+
+function onImgLoad() {
+    document.getElementById('facs-img').classList.remove('loading');
+    document.getElementById('facs-overlay').classList.add('hidden');
+}
+function onImgError() {
+    document.getElementById('facs-img').classList.remove('loading');
+    var o = document.getElementById('facs-overlay');
+    o.textContent = 'სურათი მიუწვდომელია'; o.classList.remove('hidden');
+}
+function navigateFacs(delta) { loadFolioByIdx(facsIdx + delta); }
+
+/* Folio chip clicks */
+document.querySelectorAll('.folio-milestone[data-facs]').forEach(function(m) {
+    m.addEventListener('click', function() {
+        var facs = m.dataset.facs;
+        var idx  = facsList.findIndex(function(f) { return f.facs === facs; });
+        if (idx === -1) return;
+        if (currentMode !== 'iiif') setMode('iiif');
+        facsIdx = idx;
+        _renderFolio(facsList[idx]);
+    });
+});
+
+/* Scroll sync */
+(function() {
+    var ms = document.querySelectorAll('.folio-milestone[data-facs]');
+    if (!ms.length) return;
+    var io = new IntersectionObserver(function(entries) {
+        if (currentMode !== 'iiif') return;
+        for (var i = 0; i < entries.length; i++) {
+            if (!entries[i].isIntersecting) continue;
+            var facs = entries[i].target.dataset.facs;
+            var idx  = facsList.findIndex(function(f) { return f.facs === facs; });
+            if (idx !== -1 && idx !== facsIdx) { facsIdx = idx; _renderFolio(facsList[idx]); }
+            break;
+        }
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+    ms.forEach(function(m) { io.observe(m); });
+})();
+
+/* ════════════════════════════════════════════════════════
+   APPARATUS
+════════════════════════════════════════════════════════ */
+document.querySelectorAll('.app-inline').forEach(function(span) {
+    span.addEventListener('click', function() {
+        var entry = document.getElementById(span.dataset.app);
+        if (!entry) return;
+        if (currentMode !== 'app') setMode('app');
+        document.querySelectorAll('.app-entry').forEach(function(e) { e.classList.remove('active'); });
+        document.querySelectorAll('.app-inline').forEach(function(s) { s.classList.remove('highlighted'); });
+        entry.classList.add('active'); span.classList.add('highlighted');
+        setTimeout(function() { entry.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 80);
+    });
+});
+function filterRdg(type) {
+    document.querySelectorAll('.app-entry').forEach(function(e) {
+        e.style.display = (!type || e.dataset.type === type) ? '' : 'none';
+    });
+}
+
+/* ════════════════════════════════════════════════════════
+   WITNESS
+════════════════════════════════════════════════════════ */
+var witState = { N35: true, N50: true };
+function toggleWit(wit) {
+    witState[wit] = !witState[wit];
+    document.getElementById('wit-' + wit).classList.toggle('on', witState[wit]);
+    document.querySelectorAll('.folio-milestone[data-wit="' + wit + '"]').forEach(function(m) {
+        m.style.display = witState[wit] ? '' : 'none';
+    });
+}
+
+/* ════════════════════════════════════════════════════════
+   CITATION
+════════════════════════════════════════════════════════ */
+function copyCitation() {
+    var t = document.getElementById('cite-ed').innerText + '\n\n' +
+            document.getElementById('cite-ms').innerText;
+    var btn = document.getElementById('cite-copy-btn');
+    navigator.clipboard.writeText(t).then(function() {
+        btn.textContent = '✓ Copied';
+        setTimeout(function() { btn.textContent = 'Copy citations'; }, 2000);
+    }).catch(function(){});
+}
+
+/* ════════════════════════════════════════════════════════
+   CTS URN
+════════════════════════════════════════════════════════ */
+(function() {
+    var c = document.getElementById('text-content');
+    if (!c) return;
+    var tid = c.dataset.textId || '';
+    c.querySelectorAll('p[id]').forEach(function(p) {
+        var urn = 'urn:cts:georgiansin:' + tid + '.geo1:' + p.id;
+        var btn = document.createElement('button');
+        btn.className = 'cts-copy-btn'; btn.dataset.urn = urn; btn.title = 'CTS URN';
+        btn.innerHTML = '<svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN';
+        p.insertBefore(btn, p.firstChild);
+    });
+})();
+var ctsToast = document.getElementById('cts-toast'), toastTimer;
+function showToast(msg) {
+    clearTimeout(toastTimer); ctsToast.textContent = msg;
+    ctsToast.classList.add('visible');
+    toastTimer = setTimeout(function() { ctsToast.classList.remove('visible'); }, 2500);
+}
+document.getElementById('text-content').addEventListener('click', function(e) {
+    var btn = e.target.closest('.cts-copy-btn');
+    if (!btn) return; e.preventDefault();
+    var urn = btn.dataset.urn;
+    navigator.clipboard.writeText(urn).then(function() {
+        btn.classList.add('copied'); showToast(urn);
+        setTimeout(function() { btn.classList.remove('copied'); }, 1500);
+    }).catch(function() {
+        var ta = document.createElement('textarea');
+        ta.value = urn; ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); btn.classList.add('copied'); showToast(urn);
+              setTimeout(function() { btn.classList.remove('copied'); }, 1500); }
+        catch(err) { showToast('კოპირება ვერ მოხდა'); }
+        document.body.removeChild(ta);
+    });
+});
+
+/* ════════════════════════════════════════════════════════
+   INIT
+════════════════════════════════════════════════════════ */
+/* Measure actual rendered nav and breadcrumb heights and
+   write them as CSS custom properties used by sticky tops */
+(function setHeaderVars() {
+    var nav = document.querySelector('nav, header'); /* base.html nav */
+    var bc  = document.getElementById('text-breadcrumb');
+    var navH = nav ? nav.getBoundingClientRect().height : 48;
+    var bcH  = bc  ? bc.getBoundingClientRect().height  : 36;
+    document.documentElement.style.setProperty('--nav-h', navH + 'px');
+    document.documentElement.style.setProperty('--bc-h',  bcH  + 'px');
+})();
+buildStrip();
+/* Set initial zoom inline style so img is pre-sized before first load */
+(function() {
+    var img = document.getElementById('facs-img');
+    img.style.width = '100%'; img.style.maxWidth = '100%';
+})();
+</script>
+
+</body>
+</html>
