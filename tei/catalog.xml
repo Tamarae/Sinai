@@ -547,7 +547,7 @@
           <event xml:id="mrav-shoba-athanasi"
                  corresp="#feast-nativity"
                  type="#genre-homily">
-            <label xml:lang="ka">თქმული ათანასი ალექსისაი — შობა</label>
+            <label xml:lang="ka">თქმული ათანასი ალექსანდრიელისა — შობა</label>
             <desc xml:lang="ka">თქუმული წმ. ათანასი ალექსანდრიელ მთავარეპისკოპოსისაი, ვითარ კაც იქმნა უფალი ჩuენი იესუ ქრისტე</desc>
             <note type="author" corresp="#aut-athanasius-alex"/>
             <date type="feast" when="--12-25"/>
@@ -572,7 +572,7 @@
               <locus from="57r" to="68v">ff. 57r–68v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-shoba-prokle.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-shoba-epiphane"
@@ -588,7 +588,7 @@
             </msDesc>
             <note type="CPG">3768</note>
             <note type="file">tei/texts/mrav-shoba-epiphane.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -608,7 +608,7 @@
               <locus from="82r" to="88v">ff. 82r–88v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-iakob-apostle.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-stepane-martyrdom"
@@ -623,7 +623,7 @@
               <locus from="89r" to="102v">ff. 89r–102v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-stepane-martyrdom.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-stepane-inventio"
@@ -638,7 +638,7 @@
               <locus from="103r" to="112v">ff. 103r–112v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-stepane-inventio.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-basil-1"
@@ -653,13 +653,13 @@
               <locus from="113r" to="124v">ff. 113r–124v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-basil-1.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-basil-2"
                  corresp="#feast-basil"
                  type="#genre-homily">
-            <label xml:lang="ka">სიტყვა ბასილი ეპ-სათvს II</label>
+            <label xml:lang="ka">სიტყვა ბასილი ეპ-სათჳს II</label>
             <desc xml:lang="ka">სიტყuად ბასილისთჳსვე</desc>
             <note type="author" corresp="#aut-anon"/>
             <date type="feast" when="--01-01"/>
@@ -668,7 +668,7 @@
               <locus from="125r" to="134v">ff. 125r–134v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-basil-2.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -689,7 +689,7 @@
             </msDesc>
             <note type="CPG">4988</note>
             <note type="file">tei/texts/mrav-natlisgheba-1.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-natlisgheba-2"
@@ -705,7 +705,7 @@
             </msDesc>
             <note type="CPG">4989</note>
             <note type="file">tei/texts/mrav-natlisgheba-2.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-natlisgheba-3"
@@ -721,7 +721,7 @@
             </msDesc>
             <note type="CPG">4990</note>
             <note type="file">tei/texts/mrav-natlisgheba-3.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-natlisgheba-kyrile"
@@ -736,7 +736,7 @@
               <locus from="173r" to="182v">ff. 173r–182v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-natlisgheba-kyrile.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -756,7 +756,7 @@
               <locus from="183r" to="194v">ff. 183r–194v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-migeba-hesychios.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-migeba-timote"
@@ -771,7 +771,7 @@
               <locus from="195r" to="204v">ff. 195r–204v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-migeba-timote.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -791,7 +791,7 @@
               <locus from="205r" to="216v">ff. 205r–216v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-markhva-chrysostom.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-markhva-ephrem"
@@ -806,7 +806,7 @@
               <locus from="217r" to="226v">ff. 217r–226v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-markhva-ephrem.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-forty-martyrs"
@@ -822,7 +822,7 @@
             </msDesc>
             <note type="CPG">2863</note>
             <note type="file">tei/texts/mrav-forty-martyrs.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-lazare"
@@ -837,7 +837,7 @@
               <locus from="239r" to="250v">ff. 239r–250v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-lazare.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -857,7 +857,7 @@
               <locus from="251r" to="261v">ff. 251r–261v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-bzoba-severian.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-bzoba-iohannes"
@@ -872,7 +872,7 @@
               <locus from="262r" to="271v">ff. 262r–271v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-bzoba-iohannes.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-bzoba-meletios"

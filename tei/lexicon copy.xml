@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="sinai-lexicon"
+     xml:lang="ka">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">სინური მრავალთავი — ლექსიკონი</title>
+      </titleStmt>
+      <publicationStmt>
+        <authority>ილიას სახელმწიფო უნივერსიტეტი, ლინგვისტურ კვლევათა ინსტიტუტი</authority>
+        <availability><licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/></availability>
+      </publicationStmt>
+      <sourceDesc><p>სინური მრავალთავი (864 წ.) ლექსიკონი</p></sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="lexicon">
+
+        <!-- ══ Entry 1: ანგელოზი ══════════════════════════ -->
+        <entry xml:id="lex-angelozi" corresp="bog:angelozi">
+          <form type="lemma"><orth xml:lang="ka">ანგელოზი</orth></form>
+          <gramGrp>
+            <pos>noun</pos>
+            <gen>m</gen>
+          </gramGrp>
+
+          <cit type="translation" xml:lang="grc"><quote>ἄγγελος</quote></cit>
+
+          <xr type="lod">
+            <ref target="http://purl.org/olia/olia.owl#Noun">OLiA:Noun</ref>
+          </xr>
+
+          <sense n="1">
+            <def xml:lang="ka">ანგელოზი; ღვთის მოციქული; ზეციური არსება</def>
+          </sense>
+          <sense n="2">
+            <def xml:lang="ka">მაცნე, მახარობელი (გადატ.)</def>
+            <note>გადატანითი მნიშვნელობით ადამიანის შესახებ</note>
+          </sense>
+
+          <cit type="example">
+            <quote xml:lang="ka">და ეტყოდა მას ანგელოზი უფლისაჲ</quote>
+            <bibl>
+              <author>გრიგოლ ნეოკეს.</author>
+              <title>ხარება I</title>
+              <ref>mrav-kharbeba-1, §3</ref>
+            </bibl>
+          </cit>
+
+          <xr type="source">
+            <ref target="#mrav-kharbeba-1">ხარება I</ref>
+          </xr>
+        </entry>
+
+
+        <!-- ══ Entry 2: ქება ════════════════════════════════ -->
+        <entry xml:id="lex-qeba">
+          <form type="lemma"><orth xml:lang="ka">ქება</orth></form>
+          <gramGrp>
+            <pos>noun</pos>
+            <gen>f</gen>
+          </gramGrp>
+
+          <cit type="translation" xml:lang="grc"><quote>αἴνεσις</quote></cit>
+          <cit type="translation" xml:lang="grc"><quote>ἔπαινος</quote></cit>
+
+          <sense n="1">
+            <def xml:lang="ka">ქება, განდიდება; ღვთის სადიდებელი</def>
+          </sense>
+          <sense n="2">
+            <def xml:lang="ka">სიტყვიერი სადიდებელი; ჰომილია</def>
+            <note>ლიტ. ჟანრის აღსანიშნავად</note>
+          </sense>
+
+          <xr type="cf">
+            <ref target="#lex-dideba">დიდება</ref>
+          </xr>
+
+          <xr type="source">
+            <ref target="#mrav-kharbeba-1">ხარება I</ref>
+          </xr>
+        </entry>
+
+
+        <!-- ══ Entry 3: წმიდა ════════════════════════════════ -->
+        <entry xml:id="lex-wmida">
+          <form type="lemma"><orth xml:lang="ka">წმიდა</orth></form>
+          <gramGrp>
+            <pos>adjective</pos>
+          </gramGrp>
+
+          <cit type="translation" xml:lang="grc"><quote>ἅγιος</quote></cit>
+
+          <xr type="lod">
+            <ref target="http://purl.org/olia/olia.owl#Adjective">OLiA:Adjective</ref>
+          </xr>
+
+          <sense n="1">
+            <def xml:lang="ka">წმიდა, სიწმინდის მქონე; ღვთისგან განწმენდილი</def>
+          </sense>
+          <sense n="2">
+            <def xml:lang="ka">წმინდანი (სახელ. ფუნქციით)</def>
+          </sense>
+
+          <cit type="example">
+            <quote xml:lang="ka">სული წმიდაჲ მოვიდეს შენ ზედა</quote>
+            <bibl>
+              <author>გრიგოლ ნეოკესარიელი</author>
+              <title>ხარება I</title>
+              <ref>mrav-kharbeba-1, §7</ref>
+            </bibl>
+          </cit>
+
+          <xr type="source">
+            <ref target="#mrav-kharbeba-1">ხარება I</ref>
+          </xr>
+        </entry>
+        
+        
+        
+
+      </div>
+    </body>
+  </text>
+
+</TEI>
