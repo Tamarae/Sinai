@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/relaxng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xml:id="mrav-nativity-theotokos"
+  xml:lang="ka">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">შობაჲ წმიდისა ღმრთის-მშობელისაჲ</title>
+        <title xml:lang="la" type="sub">In Nativitatem Beatae Mariae Virginis</title>
+        <author ref="#aut-anon">
+          <name xml:lang="ka">ანონიმი</name>
+          <name xml:lang="la">Anonymus</name>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.</publisher>
+        <pubPlace>თბილისი</pubPlace>
+        <date when="2026">2026</date>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="N35">
+            <abbr type="siglum">Σ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 35</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus from="407r" to="416v">ff. 407r–416v</locus>
+                  <note>ძირ. სია. ლემა ამ გამოცემაში.</note>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+          <witness xml:id="N50">
+            <abbr type="siglum">Ν</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 50</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus><!-- to be verified --></locus>
+                  <note>მეორე მოწმე.</note>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <p>Folio breaks (pb) reflect the manuscript catalog locus (ff. 407r–416v). This entry contains a liturgical instruction.</p>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="iiif-loc-n35" url="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="text" xml:id="mrav-nativity-theotokos-body">
+        <head>
+          <pb n="407r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0409"/>
+          <hi rend="rubric">Ⴇ̃ა სეკტენბერსა ჱ̂. შობაჲ წმიდისა ღმრთის-მშობელისაჲ</hi>
+        </head>
+        
+        <p xml:id="p1" n="1">
+          <hi rend="initial">Ⴘ</hi>ობაჲ, მისისა შობისაჲ წიგნი წაიკითხონ და შესხმაჲ ღმრთისმშობელისაჲ, რომელიცა გინდეს.
+        </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>

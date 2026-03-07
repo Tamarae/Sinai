@@ -43,6 +43,16 @@ env = Environment(
 import urllib.parse
 env.filters["urlencode"] = urllib.parse.quote
 
+# ── Georgian letter → ASCII slug ──────────────────────
+GEO_SLUG = {
+    'ა': 'a',  'ბ': 'b',  'გ': 'g',  'დ': 'd',  'ე': 'e',  'ვ': 'v',
+    'ზ': 'z',  'თ': 't',  'ი': 'i',  'კ': 'k',  'ლ': 'l',  'მ': 'm',
+    'ნ': 'n',  'ო': 'o',  'პ': 'p',  'ჟ': 'zh', 'რ': 'r',  'ს': 's',
+    'ტ': 't2', 'უ': 'u',  'ფ': 'f',  'ქ': 'q',  'ღ': 'gh', 'ყ': 'y',
+    'შ': 'sh', 'ჩ': 'ch', 'ც': 'ts', 'ძ': 'dz', 'წ': 'w',  'ჭ': 'chw',
+    'ხ': 'x',  'ჯ': 'j',  'ჰ': 'h',
+}
+
 # ── Helpers ───────────────────────────────────────────
 def render(template_path: str, dest: Path, **ctx):
     """Render a Jinja2 template to dest, creating parent dirs as needed."""
@@ -133,16 +143,33 @@ def build_lexicon():
     parser = LexiconParser(LEXICON_XML)
     data   = parser.parse()
 
+    # Hub / index page
     render(
         "lexicon/index.html",
         BUILD_DIR / "lexicon" / "index.html",
         root="../",
         active="lexicon",
-        entries=data.entries,
+        total_entries=len(data.entries),
         entries_by_letter=data.entries_by_letter,
         alphabet=data.alphabet,
-        pos_list=data.pos_list,
+        geo_slug=GEO_SLUG,
     )
+
+    # Per-letter pages  (e.g. build/lexicon/a.html, b.html …)
+    for letter in data.alphabet:
+        slug = GEO_SLUG[letter]
+        render(
+            "lexicon/letter.html",
+            BUILD_DIR / "lexicon" / f"{slug}.html",
+            root="../",
+            active="lexicon",
+            letter=letter,
+            entries=data.entries_by_letter[letter],
+            entries_by_letter=data.entries_by_letter,
+            alphabet=data.alphabet,
+            pos_list=data.pos_list,
+            geo_slug=GEO_SLUG,
+        )
 
 
 # ─────────────────────────────────────────────────────

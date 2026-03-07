@@ -6,98 +6,35 @@
 
 {% block head_extra %}
 <style>
-    /* ── Alphabet strip ─────────────────────── */
-    .alpha-btn {
+    /* ── Letter grid ──────────────────────── */
+    .letter-tile {
         font-family: 'Noto Serif Georgian', Georgia, serif;
-        font-size: .75rem; font-weight: 600;
-        width: 1.9rem; height: 1.9rem;
+        font-weight: 700; font-size: 1.5rem;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: .25rem;
+        width: 5rem; height: 5rem;
+        border: 1px solid #e0d8ce; border-radius: 3px; background: white;
+        text-decoration: none; color: var(--crimson);
+        transition: background .12s, border-color .12s, transform .1s;
+    }
+    .letter-tile:hover {
+        background: var(--crimson); color: white; border-color: var(--crimson);
+        transform: translateY(-1px);
+    }
+    .letter-tile:hover .tile-count { color: rgba(255,255,255,.75); }
+    .tile-count {
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: .6rem; font-weight: 400; letter-spacing: .06em;
+        color: #aaa; line-height: 1;
+    }
+
+    .letter-tile-empty {
+        width: 5rem; height: 5rem;
+        border: 1px solid #ede8e2; border-radius: 3px; background: #faf9f7;
         display: flex; align-items: center; justify-content: center;
-        border-radius: 3px; border: 1px solid transparent;
-        color: var(--ink-muted);
-        cursor: pointer; transition: background .12s, color .12s, border-color .12s;
-    }
-    .alpha-btn:hover { background: var(--parchment-dark); border-color: #ddd5c8; }
-    .alpha-btn.has-entries { color: var(--crimson); }
-    .alpha-btn.active { background: var(--crimson); color: white; border-color: var(--crimson); }
-    .alpha-btn.empty  { color: #d1cdc7; cursor: default; pointer-events: none; }
-
-    /* ── POS filter chips ──────────────────── */
-    .pos-chip {
-        font-size: .65rem; letter-spacing: .07em; font-weight: 500;
-        border: 1px solid #ddd5c8; border-radius: 2px;
-        padding: .25rem .6rem; cursor: pointer;
-        transition: background .12s, color .12s, border-color .12s;
-        color: var(--ink-muted); background: white;
-    }
-    .pos-chip.on { background: var(--crimson); color: white; border-color: var(--crimson); }
-
-    /* ── Entry cards ───────────────────────── */
-    .entry-card {
-        border: 1px solid #e0d8ce; background: white; border-radius: 2px;
-        transition: border-color .12s;
-    }
-    .entry-card:hover { border-color: #c8bfb6; }
-
-    .lemma-head {
         font-family: 'Noto Serif Georgian', Georgia, serif;
-        font-weight: 700; font-size: 1.15rem;
-        color: var(--ink); letter-spacing: .01em;
+        font-size: 1.5rem; color: #d4cfc9;
     }
-    .pos-tag {
-        font-size: .65rem; letter-spacing: .08em; font-weight: 600;
-        background: var(--crimson-pale); color: var(--crimson);
-        border: 1px solid #e8c5c5; border-radius: 2px;
-        padding: .15rem .5rem;
-    }
-    .gen-tag {
-        font-size: .65rem; font-style: italic;
-        color: #888; background: #f5f5f5;
-        border: 1px solid #e8e8e8; border-radius: 2px;
-        padding: .15rem .5rem;
-    }
-    .greek-form {
-        font-family: 'Times New Roman', Georgia, serif;
-        font-style: italic; color: #4a4030;
-        font-size: .85rem;
-    }
-
-    .sense-num {
-        font-size: .65rem; font-weight: 700; letter-spacing: .06em;
-        color: var(--crimson); min-width: 1.1rem; text-align: right;
-        padding-top: .1rem; flex-shrink: 0;
-    }
-    .sense-def { font-size: .85rem; color: #3a3028; line-height: 1.55; font-family: 'Noto Serif Georgian', Georgia, serif; }
-    .sense-note { font-size: .75rem; color: #888; font-style: italic; margin-top: .2rem; }
-
-    .citation-block {
-        background: var(--parchment); border-left: 2px solid var(--crimson);
-        border-radius: 0 2px 2px 0;
-        padding: .6rem .8rem;
-    }
-    .citation-text { font-family: 'Noto Serif Georgian', Georgia, serif; font-style: italic; font-size: .8rem; color: #3a3028; }
-    .citation-ref { font-size: .7rem; color: #888; margin-top: .25rem; }
-
-    .ext-link-badge {
-        font-size: .6rem; letter-spacing: .07em; font-weight: 500;
-        border-radius: 2px; padding: .2rem .45rem;
-        transition: opacity .12s;
-    }
-    .ext-link-badge:hover { opacity: .8; }
-
-    /* ── Letter sections ───────────────────── */
-    .letter-heading {
-        font-family: 'Noto Serif Georgian', Georgia, serif;
-        font-weight: 700; font-size: 1.4rem;
-        color: var(--crimson); line-height: 1;
-    }
-    .letter-section { scroll-margin-top: 5rem; }
-
-    /* ── Empty state ───────────────────────── */
-    .empty-state { display: none; }
-    .show-empty .empty-state { display: flex; }
-
-    /* ── Sidebar sticky ────────────────────── */
-    .sidebar-sticky { position: sticky; top: 5.5rem; }
 </style>
 {% endblock %}
 
@@ -106,294 +43,40 @@
 
 <!-- PAGE HEADER -->
 <div class="border-b border-gray-200 bg-white px-4 py-6">
-    <div class="max-w-5xl mx-auto flex items-end justify-between gap-4 flex-wrap">
-        <div>
-            <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">ᲡᲘᲜᲣᲠᲘ ᲛᲠᲐᲕᲐᲚᲗᲐᲕᲘ 864</p>
-            <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ლექსიკონი</h1>
-            <p class="text-sm text-gray-500 mt-1">
-                ძველი ქართული ·
-                <span class="font-medium text-gray-600">{{ entries | length }} ლექსიკური ერთეული</span>
-            </p>
-        </div>
-
-        <!-- Alphabet strip (header version) -->
-        <div class="hidden md:flex flex-wrap gap-0.5 max-w-sm">
-            {% for letter in "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ" %}
-            {% set has = letter in alphabet %}
-            <button
-                onclick="{% if has %}jumpTo('{{ letter }}'){% endif %}"
-                class="alpha-btn {% if has %}has-entries{% else %}empty{% endif %}"
-                id="ab-{{ loop.index }}"
-                data-letter="{{ letter }}"
-                title="{{ letter }}">{{ letter }}</button>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- POS FILTER BAR -->
-<div class="bg-white border-b border-gray-100 px-4 py-2.5">
-    <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap">
-        <span class="text-xs text-gray-400 font-medium tracking-widest mr-1">მეტყველების ნაწილი | POS:</span>
-        {% for pos in pos_list %}
-        <button onclick="togglePOS(this, '{{ pos.id }}')"
-                class="pos-chip on"
-                data-pos="{{ pos.id }}">{{ pos.abbr }}</button>
-        {% endfor %}
-        <span class="ml-auto text-xs text-gray-400" id="count-label">{{ entries | length }} ნაჩვ.</span>
+    <div class="max-w-5xl mx-auto">
+        <h1 class="font-serif-geo text-2xl font-semibold text-gray-800 mb-2">ლექსიკონი</h1>
+        <p class="text-sm text-gray-500 mt-1 mb-3">
+            ძველი ქართული ·
+            <span class="font-medium text-gray-600">{{ total_entries }} ლექსიკური ერთეული</span>
+            · {{ alphabet | length }} ასო
+        </p>
+        <p class="text-xs text-gray-400 font-serif italic leading-snug" style="font-family:'Times New Roman',Georgia,serif; font-style:italic;">
+            საძიებელი ლექსიკა ეფუძნება: ივანე იმნაიშვილი,
+            <em>სინური მრავალთავი, გამოკვლევა და ლექსიკონი</em>,
+            თბილისი, 1975
+        </p>
     </div>
 </div>
 
 
-<!-- MAIN AREA -->
-<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex gap-8">
+<!-- ALPHABET GRID -->
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-    <!-- SIDEBAR -->
-    <aside class="hidden lg:block w-40 flex-shrink-0">
-        <div class="sidebar-sticky">
+    <p class="text-xs tracking-widest text-gray-400 font-medium mb-6">აირჩიეთ ასო</p>
 
-            <!-- Search -->
-            <div class="relative mb-5">
-                <input id="lex-search" type="text"
-                       placeholder="ძიება…"
-                       class="w-full border border-gray-200 rounded-sm px-3 py-1.5 text-xs placeholder-gray-400 focus:outline-none focus:border-gray-400 bg-white">
-            </div>
-
-            <!-- Letter nav -->
-            <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">ᲐᲜᲑᲐᲜᲘ</p>
-            <nav class="flex flex-col gap-0.5">
-                {% for letter in alphabet %}
-                <button onclick="jumpTo('{{ letter }}')"
-                        class="text-left px-2 py-1 rounded-sm text-xs hover:bg-gray-100 transition-colors font-serif-geo font-semibold"
-                        style="color:var(--crimson);">
-                    {{ letter }}
-                    <span class="text-gray-400 font-normal ml-1">({{ entries_by_letter[letter] | length }})</span>
-                </button>
-                {% endfor %}
-            </nav>
-
-        </div>
-    </aside>
-
-    <!-- ENTRIES -->
-    <div class="flex-1 min-w-0" id="entries-container">
-
-        {% if entries %}
-
-            {% for letter in alphabet %}
-            <section class="letter-section mb-10" id="letter-{{ letter }}" data-letter-section="{{ letter }}">
-
-                <!-- Letter heading -->
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="letter-heading">{{ letter }}</span>
-                    <div class="flex-1 h-px bg-gray-200"></div>
-                    <span class="text-xs text-gray-400">{{ entries_by_letter[letter] | length }}</span>
-                </div>
-
-                <div class="flex flex-col gap-3">
-                    {% for entry in entries_by_letter[letter] %}
-                    <article class="entry-card p-4 sm:p-5"
-                             id="{{ entry.xml_id }}"
-                             data-pos="{{ entry.pos }}"
-                             data-lemma="{{ entry.lemma | lower }}">
-
-                        <!-- Entry header -->
-                        <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
-                            <div class="flex items-baseline gap-2 flex-wrap">
-                                <span class="lemma-head">{{ entry.lemma }}</span>
-                                {% if entry.pos_label %}
-                                <span class="pos-tag">{{ entry.pos_label }}</span>
-                                {% endif %}
-                                {% if entry.gender %}
-                                <span class="gen-tag">{{ entry.gender }}</span>
-                                {% endif %}
-                                {% if entry.greek %}
-                                <span class="greek-form">{{ entry.greek }}</span>
-                                {% if entry.greek_alt %}
-                                <span class="text-gray-300 text-xs">/</span>
-                                <span class="greek-form">{{ entry.greek_alt }}</span>
-                                {% endif %}
-                                {% endif %}
-                            </div>
-
-                            <!-- External links -->
-                            <div class="flex items-center gap-1.5 flex-shrink-0">
-                                {% if entry.bog_id %}
-                                <a href="https://bolis.tsu.ge/word/{{ entry.bog_id }}"
-                                   target="_blank" rel="noopener"
-                                   class="ext-link-badge bog-badge">BOG</a>
-                                {% endif %}
-                                {% if entry.greek_logeion %}
-                                <a href="https://logeion.uchicago.edu/{{ entry.greek_logeion | urlencode }}"
-                                   target="_blank" rel="noopener"
-                                   class="ext-link-badge logeion-badge">Logeion</a>
-                                {% endif %}
-                                {% if entry.olia_uri %}
-                                <a href="{{ entry.olia_uri }}"
-                                   target="_blank" rel="noopener"
-                                   class="ext-link-badge olia-badge">OLiA</a>
-                                {% endif %}
-                            </div>
-                        </div>
-
-                        <!-- Senses -->
-                        {% if entry.senses %}
-                        <div class="flex flex-col gap-2 mb-3">
-                            {% for sense in entry.senses %}
-                            <div class="flex gap-2">
-                                {% if entry.senses | length > 1 %}
-                                <span class="sense-num">{{ loop.index }}.</span>
-                                {% endif %}
-                                <div>
-                                    <div class="sense-def">{{ sense.def_ka }}</div>
-                                    {% if sense.note %}
-                                    <div class="sense-note">{{ sense.note }}</div>
-                                    {% endif %}
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        {% endif %}
-
-                        <!-- Citation -->
-                        {% if entry.citation %}
-                        <div class="citation-block mt-3">
-                            <div class="citation-text">{{ entry.citation.text }}</div>
-                            <div class="citation-ref">
-                                {% if entry.citation.author %}{{ entry.citation.author }}{% endif %}
-                                {% if entry.citation.title %}, {{ entry.citation.title }}{% endif %}
-                                {% if entry.citation.locus %} · {{ entry.citation.locus }}{% endif %}
-                            </div>
-                        </div>
-                        {% endif %}
-
-                        <!-- Footer: sources + see-also -->
-                        {% if entry.sources or entry.see_also %}
-                        <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
-
-                            {% if entry.sources %}
-                            <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
-                                <span class="text-gray-400">წყ.:</span>
-                                {% for src in entry.sources %}
-                                <a href="{{ root }}texts/{{ src.text_id }}.html"
-                                   class="underline decoration-dotted hover:text-gray-800 transition-colors">{{ src.label }}</a>
-                                {% endfor %}
-                                {% if entry.sources_more > 0 %}
-                                <span class="text-gray-400">+{{ entry.sources_more }}</span>
-                                {% endif %}
-                            </div>
-                            {% endif %}
-
-                            {% if entry.see_also %}
-                            <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
-                                <span class="text-gray-400">იხ.:</span>
-                                {% for sa in entry.see_also %}
-                                <a href="#{{ sa.xml_id }}"
-                                   class="font-serif-geo underline decoration-dotted hover:text-gray-800 transition-colors">{{ sa.lemma }}</a>
-                                {% endfor %}
-                            </div>
-                            {% endif %}
-
-                        </div>
-                        {% endif %}
-
-                    </article>
-                    {% endfor %}
-                </div>
-
-            </section>
-            {% endfor %}
-
+    <div class="flex flex-wrap gap-3">
+        {% for letter in "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ" %}
+        {% if letter in alphabet %}
+        <a href="{{ geo_slug[letter] }}.html" class="letter-tile">
+            {{ letter }}
+            <span class="tile-count">{{ entries_by_letter[letter] | length }}</span>
+        </a>
         {% else %}
-        <!-- Empty state when lexicon.xml has no entries yet -->
-        <div class="flex flex-col items-center justify-center py-24 text-center">
-            <div class="font-serif-geo text-4xl font-bold mb-4" style="color:var(--crimson)">Ⴊ</div>
-            <p class="text-sm text-gray-500">ლექსიკონი ივსება</p>
-            <p class="text-xs text-gray-400 mt-1">tei/lexicon.xml — ჯერ ცარიელია</p>
-        </div>
+        <span class="letter-tile-empty">{{ letter }}</span>
         {% endif %}
+        {% endfor %}
+    </div>
 
-        <!-- No-results message (hidden by default, shown by JS) -->
-        <div id="no-results" class="hidden flex-col items-center justify-center py-16 text-center">
-            <p class="text-sm text-gray-500">ვერ მოიძებნა</p>
-            <p class="text-xs text-gray-400 mt-1">სხვა სიტყვა სცადეთ</p>
-        </div>
+</div>
 
-    </div><!-- /entries -->
-</div><!-- /layout -->
-
-{% endblock %}
-
-
-{% block body_scripts %}
-<script>
-// ── State ───────────────────────────────────────────────
-const activePOS = new Set({{ pos_list | map(attribute='id') | list | tojson }});
-
-// ── Alphabet jump ───────────────────────────────────────
-function jumpTo(letter) {
-    const el = document.getElementById('letter-' + letter);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    // Mark active alpha btn
-    document.querySelectorAll('.alpha-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.letter === letter);
-    });
-}
-
-// ── POS filter ──────────────────────────────────────────
-function togglePOS(btn, pos) {
-    btn.classList.toggle('on');
-    if (activePOS.has(pos)) activePOS.delete(pos);
-    else activePOS.add(pos);
-    applyFilters();
-}
-
-// ── Search ──────────────────────────────────────────────
-const searchInput = document.getElementById('lex-search');
-if (searchInput) {
-    searchInput.addEventListener('input', applyFilters);
-}
-
-// ── Combined filter + search ────────────────────────────
-function applyFilters() {
-    const q = (searchInput ? searchInput.value.toLowerCase() : '');
-    let visible = 0;
-
-    document.querySelectorAll('.entry-card').forEach(card => {
-        const posOk    = activePOS.has(card.dataset.pos);
-        const searchOk = !q || card.dataset.lemma.includes(q)
-                              || card.textContent.toLowerCase().includes(q);
-        const show     = posOk && searchOk;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-    });
-
-    // Hide/show letter sections
-    document.querySelectorAll('.letter-section').forEach(sec => {
-        const any = [...sec.querySelectorAll('.entry-card')]
-            .some(c => c.style.display !== 'none');
-        sec.style.display = any ? '' : 'none';
-    });
-
-    // Count label
-    const lbl = document.getElementById('count-label');
-    if (lbl) lbl.textContent = visible + ' ნაჩვ.';
-
-    // No results
-    const noRes = document.getElementById('no-results');
-    if (noRes) noRes.classList.toggle('hidden', visible > 0);
-}
-
-// ── Highlight alphabet letters with visible entries ─────
-function refreshAlphaBtns() {
-    document.querySelectorAll('.alpha-btn').forEach(btn => {
-        const letter = btn.dataset.letter;
-        const sec    = document.getElementById('letter-' + letter);
-        if (sec) {
-            const any = sec.style.display !== 'none';
-            btn.classList.toggle('has-entries', any);
-        }
-    });
-}
-</script>
 {% endblock %}

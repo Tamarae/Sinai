@@ -887,7 +887,7 @@
               <locus from="272r" to="279v">ff. 272r–279v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-bzoba-meletios.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -907,7 +907,7 @@
               <locus from="280r" to="289v">ff. 280r–289v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-holymonday.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -927,7 +927,7 @@
               <locus from="290r" to="299v">ff. 290r–299v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-aghdgoma-meletios.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-aghdgoma-kyrile"
@@ -942,7 +942,7 @@
               <locus from="300r" to="309v">ff. 300r–309v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-aghdgoma-kyrile.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-toma-chrysostom"
@@ -957,7 +957,7 @@
               <locus from="310r" to="319v">ff. 310r–319v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-toma-chrysostom.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-new-sunday"
@@ -972,7 +972,7 @@
               <locus from="320r" to="329v">ff. 320r–329v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-new-sunday.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -992,7 +992,7 @@
               <locus from="330r" to="341v">ff. 330r–341v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-amaghleba.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -1012,7 +1012,7 @@
               <locus from="342r" to="352v">ff. 342r–352v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-sulthmofenoba-1.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-sulthmofenoba-2"
@@ -1027,11 +1027,16 @@
               <locus from="353r" to="362v">ff. 353r–362v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-sulthmofenoba-2.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
           <!-- ══════════════════
+            
+            საკითხავნი იოვანჱს შობისანი
+
+
+Line of edition: 10        ჰპოო ქრისტის შობასა, თავი ესე: ნაშობი დედათაჲ. ესე ჰპოო2* მუნ.
                AUGUST FEASTS
           ══════════════════ -->
 
@@ -1047,7 +1052,7 @@
               <locus from="363r" to="374v">ff. 363r–374v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-feristsvaleba.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-dormition-1"
@@ -1062,7 +1067,7 @@
               <locus from="375r" to="386v">ff. 375r–386v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-dormition-1.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-dormition-2"
@@ -1077,14 +1082,14 @@
               <locus from="387r" to="396v">ff. 387r–396v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-dormition-2.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-john-baptist-decollatio"
                  corresp="#feast-john-baptist"
                  type="#genre-homily">
             <label xml:lang="ka">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
-            <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: ტქუმული იოვანე მთავარეპისკოპოსისა</desc>
+            <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: თქუმული იოვანე მთავარეპისკოპოსისა</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--08-29"/>
             <msDesc>
@@ -1092,9 +1097,24 @@
               <locus from="397r" to="406v">ff. 397r–406v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-john-baptist-decollatio.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
-
+          
+          <event xml:id="mrav-john-baptist-decollatio-2"
+            corresp="#feast-john-baptist"
+            type="#genre-homily">
+            <label xml:lang="ka">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
+            <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: მეორე</desc>
+            <note type="author" corresp="#aut-iohannes-cpl"/>
+            <date type="feast" when="--08-29"/>
+            <msDesc>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
+              <locus from="397r" to="406v">ff. 397r–406v</locus>
+            </msDesc>
+            <note type="file">tei/texts/mrav-john-baptist-decollatio-2.xml</note>
+            <note type="status">encoding-in-progress</note>
+          </event>
+          
 
           <!-- ══════════════════
                SEPTEMBER FEASTS
@@ -1112,8 +1132,10 @@
               <locus from="407r" to="416v">ff. 407r–416v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-nativity-theotokos.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
+
+   
 
           <event xml:id="mrav-enkenia-1"
                  corresp="#feast-enkenia"
@@ -1127,7 +1149,7 @@
               <locus from="417r" to="426v">ff. 417r–426v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-enkenia-1.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-enkenia-2"

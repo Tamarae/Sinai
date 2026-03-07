@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მელეტი ანტ. — ბზობა — ციფრული სამეცნიერო გამოცემა</title>
+
+    <!-- Dublin Core -->
+    <meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
+    <meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+    <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+    <meta name="DC.language"  content="ka">
+    
+<meta name="DC.title"   content="მელეტი ანტ. — ბზობა">
+<meta name="DC.creator" content="Meletius Antiochenus">
+<meta name="DC.subject" content="Dominica Palmarum; Old Georgian; Homiliary; Sinai">
+
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --crimson:      #7a1a1a;
+            --crimson-light:#9b2c2c;
+            --crimson-pale: #fdf2f2;
+            --gold:         #8a6e2e;
+            --gold-pale:    #faf6ee;
+            --parchment:    #faf8f5;
+            --parchment-dark:#f0ece4;
+            --ink:          #1a1a1a;
+            --ink-muted:    #4a4030;
+        }
+
+        /* ── Base ─────────────────────── */
+        body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
+        .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
+        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
+        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* ── Nav ─────────────────────── */
+        .nav-link { position:relative; letter-spacing:.07em; }
+        .nav-link::after {
+            content:''; position:absolute; bottom:-2px; left:0;
+            width:0; height:1px; background:var(--crimson); transition:width .2s;
+        }
+        .nav-link:hover::after { width:100%; }
+        .nav-link.active { color:var(--crimson); }
+        .nav-link.active::after { width:100%; }
+
+        /* ── Cards ───────────────────── */
+        .card { transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,.07); border-color:#c8bfb6; }
+
+        /* ── Chips & badges ──────────── */
+        .folio-chip { font-size:.65rem; letter-spacing:.04em; border:1px solid #ddd5c8; background:var(--parchment); font-family:'Noto Serif Georgian',Georgia,serif; font-style:italic; }
+        .bog-badge     { font-size:.6rem; letter-spacing:.08em; background:var(--ink);    color:var(--parchment); }
+        .lod-badge     { font-size:.6rem; letter-spacing:.08em; background:#1a3d6b;       color:white; }
+        .olia-badge    { font-size:.6rem; letter-spacing:.08em; background:#2d5a2d;       color:white; }
+        .logeion-badge { font-size:.6rem; letter-spacing:.08em; background:#5a3d1a;       color:white; }
+
+        /* ── Status dots (for catalog) ─ */
+        .status-done      { background:#2d5a2d; }
+        .status-progress  { background:#8a6e2e; }
+        .status-planned   { background:#d1cdc7; }
+
+        /* ── Genre badges ─────────────  */
+        .badge-homily  { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+        .badge-life    { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+        .badge-martyr  { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+        .badge-encomiun{ background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+        .badge-colophon{ background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+        .badge-other   { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
+
+        /* ── Parchment texture ────────── */
+        .parchment-texture {
+            background-image:
+                radial-gradient(ellipse at 15% 60%, rgba(122,26,26,.025) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(138,110,46,.03)  0%, transparent 45%);
+        }
+
+        /* ── Animations ──────────────── */
+        @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        .f1{animation:fadeUp .45s ease .04s both}
+        .f2{animation:fadeUp .45s ease .1s  both}
+        .f3{animation:fadeUp .45s ease .17s both}
+        .f4{animation:fadeUp .45s ease .24s both}
+        .f5{animation:fadeUp .45s ease .31s both}
+    </style>
+
+    
+<style>
+/* ═══════════════════════════════════════════════════════
+   LAYOUT MODES — class on #layout-root
+   (none)     → article only, full width
+   mode-iiif  → article 50% | facs 50%
+   mode-app   → article flex-1 | apparatus 22rem
+═══════════════════════════════════════════════════════ */
+#layout-root {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    max-width: 88rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+/* ── Transcription ───────────────────────────────────── */
+#transcription { flex: 1; min-width: 0; }
+#layout-root.mode-iiif #transcription,
+#layout-root.mode-app  #transcription {
+    padding-right: 1.5rem;
+    border-right: 1px solid #e8e0d6;
+}
+#layout-root.mode-iiif #transcription { flex: none; width: 50%; }
+
+/* ── IIIF panel shell (positions facs-sticky) ────────── */
+#facs-panel { display: none; width: 0; flex-shrink: 0; }
+#layout-root.mode-iiif #facs-panel {
+    display: block;
+    width: 50%;
+    padding-left: 1.5rem;
+}
+
+/* facs-sticky: JS applies position:fixed on mode-iiif activate.
+   CSS fallback sticky is here but may be overridden by JS. */
+#facs-sticky {
+    position: sticky;
+    top: 5.5rem;
+    height: calc(65vh - 1rem);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #222;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #111;
+}
+
+/* ── Apparatus panel shell ───────────────────────────── */
+#app-panel { display: none; width: 0; flex-shrink: 0; }
+#layout-root.mode-app #app-panel {
+    display: block;
+    width: 22rem;
+    padding-left: 1.5rem;
+}
+#app-sticky {
+    position: sticky;
+    top: 5.5rem;
+    height: calc(65vh - 1rem);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0d8ce;
+    border-radius: 3px;
+    overflow: hidden;
+    background: white;
+}
+
+/* ── Georgian text ───────────────────────────────────── */
+.text-body {
+    font-family: 'Noto Serif Georgian', Georgia, serif;
+    font-size: .95rem; line-height: 1.9; color: #2a2018;
+    padding-left: 3rem;
+}
+.text-body p { margin-bottom: 1.1rem; position: relative; }
+.par-num {
+    font-size: .65rem; color: var(--crimson);
+    font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600;
+    letter-spacing: .04em; margin-right: .4rem; opacity: .7;
+    cursor: default; user-select: none; vertical-align: super;
+}
+
+/* ── CTS button ──────────────────────────────────────── */
+.cts-copy-btn {
+    position: absolute; left: -2.8rem; top: .05em;
+    opacity: 0; pointer-events: none; transition: opacity .12s;
+    display: inline-flex; align-items: center; gap: .2rem;
+    border: 1px solid #e0d8ce; border-radius: 3px; cursor: pointer;
+    color: #aaa; font-size: .58rem;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    padding: 2px 5px; line-height: 1.4; white-space: nowrap; background: white;
+}
+.cts-copy-btn:hover  { color: var(--crimson); border-color: var(--crimson); }
+.cts-copy-btn.copied { color: #2d5a2d; border-color: #2d5a2d; }
+.text-body p:hover > .cts-copy-btn { opacity: 1; pointer-events: auto; }
+
+/* ── Folio chips ─────────────────────────────────────── */
+.folio-milestone {
+    display: inline-block; font-size: .6rem;
+    font-family: 'Noto Sans Georgian', sans-serif; letter-spacing: .06em;
+    border: 1px solid #e0d5c5; background: var(--parchment); color: #8a7a60;
+    padding: .1rem .4rem; border-radius: 2px; margin: 0 .2rem;
+    vertical-align: middle; cursor: default;
+    transition: background .12s, border-color .12s, color .12s;
+}
+.folio-milestone[data-facs]       { cursor: pointer; }
+.folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
+.folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
+
+/* ── Apparatus inline ────────────────────────────────── */
+.app-inline { border-bottom: 1px dotted var(--crimson); cursor: pointer; transition: background .1s; }
+.app-inline:hover, .app-inline.highlighted { background: var(--crimson-pale); border-radius: 2px; }
+.rdg-orth { color: #2d4a6b; } .rdg-gram { color: #2d5a2d; }
+.rdg-lex  { color: #7a4f1a; } .rdg-om   { color: #888; }
+.rdg-add  { color: #5a2d7a; }
+
+/* ═══════════════════════════════════════════════════════
+   IIIF PANEL INTERNALS
+═══════════════════════════════════════════════════════ */
+#facs-metabar {
+    display: flex; align-items: center; gap: .4rem;
+    padding: .35rem .65rem;
+    background: var(--parchment); border-bottom: 1px solid #e0d8ce;
+    flex-shrink: 0;
+}
+#facs-folio-label {
+    font-family: monospace; font-size: .72rem; color: #555;
+    padding: .15rem .45rem; background: white;
+    border: 1px solid #ddd; border-radius: 2px;
+    min-width: 3.5rem; text-align: center; flex-shrink: 0;
+}
+.facs-nav {
+    width: 22px; height: 22px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid #d0c8be; border-radius: 2px; background: white;
+    cursor: pointer; color: #666; font-size: .8rem; line-height: 1;
+    transition: background .1s, color .1s;
+}
+.facs-nav:hover    { background: #f0ebe3; color: var(--crimson); }
+.facs-nav:disabled { opacity: .3; pointer-events: none; }
+#facs-wit-lbl { flex: 1; font-size: .6rem; color: #999; font-family: 'Noto Sans Georgian', sans-serif; text-align: center; }
+#facs-loc-link { font-size: .65rem; color: #888; text-decoration: none; flex-shrink: 0; transition: color .1s; }
+#facs-loc-link:hover { color: #eee; }
+
+/* ── Image viewport ──────────────────────────────────── */
+/* CRITICAL: display:block — NOT flex.
+   display:flex prevents child from overflowing for scroll-pan zoom.
+   With display:block, width:150% on the img creates horizontal overflow
+   which overflow:auto scrolls. This is the correct pattern. */
+#facs-viewport {
+    flex: 1;
+    min-height: 0;
+    display: block;       /* NOT flex — enables overflow-based zoom */
+    overflow: auto;
+    background: #111;
+    position: relative;
+    cursor: zoom-in;
+    text-align: center;   /* centers img when width < 100% */
+}
+#facs-viewport.zoom-out { cursor: zoom-out; text-align: left; }
+
+/* img: NO width/max-width in CSS — set entirely by JS inline style
+   so there's zero ambiguity about which rule wins. */
+#facs-img {
+    display: inline-block;
+    height: auto;
+    image-rendering: high-quality;
+    transition: opacity .2s;
+    vertical-align: top;
+}
+#facs-img.loading { opacity: .15; }
+
+#facs-overlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: #111; color: #555;
+    font-family: 'Noto Sans Georgian', sans-serif; font-size: .7rem; letter-spacing: .05em;
+    z-index: 5; pointer-events: none;
+}
+#facs-overlay.hidden { opacity: 0; pointer-events: none; }
+
+/* ── Thumbnail strip ─────────────────────────────────── */
+#facs-strip {
+    display: flex; align-items: center; gap: 4px;
+    padding: 5px 6px; background: #0a0a0a;
+    border-top: 1px solid #1e1e1e;
+    overflow-x: auto; flex-shrink: 0; min-height: 60px;
+    scrollbar-width: thin; scrollbar-color: #333 #0a0a0a;
+}
+#facs-strip::-webkit-scrollbar { height: 3px; }
+#facs-strip::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+.facs-thumb {
+    flex-shrink: 0; width: 40px; height: 50px;
+    border: 2px solid #2a2a2a; border-radius: 2px;
+    overflow: hidden; cursor: pointer; position: relative; background: #1a1a1a;
+    transition: border-color .15s;
+}
+.facs-thumb:hover             { border-color: #777; }
+.facs-thumb.active-thumb      { border-color: var(--crimson); }
+.facs-thumb img               { width:100%; height:100%; object-fit:cover; display:block; opacity:.65; transition:opacity .15s; }
+.facs-thumb:hover img,
+.facs-thumb.active-thumb img  { opacity: 1; }
+.facs-thumb-lbl {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    font-size: .42rem; font-family: monospace; color: #ccc;
+    background: rgba(0,0,0,.7); text-align: center; padding: 1px 0;
+}
+
+/* ── Zoom bar ────────────────────────────────────────── */
+#facs-zoombar {
+    display: flex; align-items: center; gap: .4rem;
+    padding: .28rem .65rem; background: #080808;
+    border-top: 1px solid #1a1a1a; flex-shrink: 0;
+}
+.z-btn {
+    padding: 2px 9px; background: #1a1a1a; color: #555;
+    border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer;
+    font-size: .62rem; font-family: monospace; line-height: 1.7;
+    transition: background .1s, color .1s, border-color .1s;
+}
+.z-btn:hover  { background: #2a2a2a; color: #bbb; }
+.z-btn.z-on   { background: #3a1212; color: #e08070; border-color: #6a2a2a; }
+#facs-full-link {
+    margin-left: auto;
+    font-size: .6rem; color: #333; text-decoration: none;
+    font-family: 'Noto Sans Georgian', sans-serif; transition: color .1s; white-space: nowrap;
+}
+#facs-full-link:hover { color: #888; }
+
+/* ── Attribution bar — LoC credit under zoom ─────────── */
+#facs-attribution {
+    padding: .28rem .65rem;
+    background: #0e0e0e; border-top: 1px solid #222;
+    flex-shrink: 0;
+    display: flex; align-items: baseline; justify-content: space-between; gap: .4rem;
+    flex-wrap: wrap;
+}
+#facs-attribution span {
+    font-size: .6rem; color: #888;
+    font-family: 'Noto Sans Georgian', sans-serif; line-height: 1.5; font-style: italic;
+}
+#facs-attribution a {
+    font-size: .6rem; color: #777; text-decoration: none;
+    font-family: 'Noto Sans Georgian', sans-serif; white-space: nowrap; transition: color .1s;
+}
+#facs-attribution a:hover { color: #bbb; }
+
+/* ═══════════════════════════════════════════════════════
+   APPARATUS PANEL INTERNALS
+═══════════════════════════════════════════════════════ */
+#app-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .5rem .85rem; background: var(--crimson-pale);
+    border-bottom: 1px solid #e8d0d0; flex-shrink: 0;
+}
+#app-header-title {
+    font-size: .62rem; font-family: 'Noto Sans Georgian', sans-serif;
+    font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--crimson);
+}
+#app-entries-wrap { flex: 1; min-height: 0; overflow-y: auto; }
+.app-entry        { border-bottom: 1px solid #f0ebe3; transition: background .1s; }
+.app-entry:hover  { background: #fdf8f2; }
+.app-entry.active { background: var(--crimson-pale); }
+.app-entry:last-child { border-bottom: none; }
+.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-wit { font-size: .6rem; font-style: italic; color: #999; }
+#app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
+
+/* ── Toolbar buttons ─────────────────────────────────── */
+.wit-btn { transition: background .12s, color .12s, border-color .12s; }
+.wit-btn.on { background: var(--ink); color: white; border-color: var(--ink); }
+.mode-btn {
+    display: inline-flex; align-items: center; gap: .35rem;
+    font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif;
+    padding: .28rem .7rem; border-radius: 2px;
+    border: 1px solid #d0c8be; color: #666; background: white;
+    cursor: pointer; transition: all .12s; white-space: nowrap; text-decoration: none;
+}
+.mode-btn:hover  { border-color: #b0a898; color: #333; background: #f8f5f0; }
+.mode-btn.active { background: var(--ink); color: white; border-color: var(--ink); }
+
+/* ── Citation ────────────────────────────────────────── */
+#citation-block { background: var(--crimson-pale); border-top: 1px solid #e8d8d8; padding: 1.5rem 0; margin-top: 2rem; }
+#citation-block .inner { max-width: 88rem; margin: 0 auto; padding: 0 1.5rem; }
+.cite-label { font-size: .6rem; font-family: 'Noto Sans Georgian', sans-serif; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--crimson); margin-bottom: .5rem; display: flex; align-items: center; gap: .35rem; }
+.cite-apa   { font-size: .78rem; font-family: 'Noto Serif Georgian', Georgia, serif; color: #4a3a2a; line-height: 1.75; margin-bottom: .3rem; }
+.cite-apa a { color: var(--crimson); }
+.cite-copy  { display: inline-flex; align-items: center; gap: .3rem; margin-top: .5rem; font-size: .62rem; font-family: 'Noto Sans Georgian', sans-serif; border: 1px solid #d8c8c8; border-radius: 2px; padding: .18rem .55rem; background: white; color: #888; cursor: pointer; transition: color .12s, border-color .12s; }
+.cite-copy:hover { color: var(--crimson); border-color: var(--crimson); }
+
+/* ── CTS toast ───────────────────────────────────────── */
+.cts-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px); background: #1f2937; color: white; padding: 10px 18px; border-radius: 8px; font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif; opacity: 0; transition: all .3s ease; z-index: 200; box-shadow: 0 4px 12px rgba(0,0,0,.2); white-space: nowrap; max-width: 90vw; pointer-events: none; }
+.cts-toast.visible { transform: translateX(-50%) translateY(0); opacity: 1; }
+</style>
+
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="border-b border-gray-200 sticky top-0 z-50" style="background:var(--parchment);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+
+            <a href="../index.html" class="flex items-center gap-2.5 group">
+                <span class="font-serif-geo font-bold text-lg leading-none select-none"
+                      style="color:var(--crimson);">Ⴑ</span>
+                <span class="text-sm font-medium text-gray-700 tracking-wide group-hover:text-gray-900 transition-colors">
+                    ႱႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                </span>
+            </a>
+
+            <!-- Desktop nav — order: ტექსტები · ხელნაწერები · ლექსიკონი · კვლევა · ბიბლიოგრაფია · შესახებ -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="../texts/index.html"
+                   class="nav-link active text-xs font-medium text-gray-500 hover:text-gray-900">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+
+            <button id="mob-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav — same order -->
+        <div id="mob-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+            <div class="flex flex-col gap-1">
+                <a href="../texts/index.html"       class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"        class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"      class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"     class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html" class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"              class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('mob-btn').addEventListener('click', () =>
+        document.getElementById('mob-menu').classList.toggle('hidden'));
+</script>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main class="flex-1">
+    
+
+<div id="text-breadcrumb"
+     style="position:sticky;top:var(--nav-h,48px);z-index:40;background:white;"
+     class="border-b border-gray-200 px-6 py-3">
+    <div style="max-width:88rem;margin:0 auto;" class="flex items-center gap-2 text-xs text-gray-500">
+        <a href="../texts/index.html" class="hover:text-gray-700">ტექსტები</a>
+        <span class="text-gray-300">›</span>
+        <span class="text-gray-700 font-medium">ბზობა (მოძრ.)</span>
+        <span class="text-gray-300">›</span>
+        <span class="text-gray-600 truncate">მელეტი ანტ. — ბზობა</span>
+    </div>
+</div>
+
+<div id="text-toolbar"
+     style="position:sticky;top:calc(var(--nav-h,48px) + var(--bc-h,36px));z-index:40;background:white;"
+     class="border-b border-gray-200 px-6 py-5">
+    <div style="max-width:88rem;margin:0 auto;">
+        <div class="flex items-start justify-between gap-4 flex-wrap">
+            <div class="flex-1 min-w-0">
+                <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">თქუმული წმ. მელეტი ანტიოქელისა, ბზობისათჳს</p>
+                <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug">მელეტი ანტ. — ბზობა</h1>
+                <div class="flex flex-wrap items-center gap-3 mt-2">
+                    <span class="text-sm text-gray-600">მელეტი ანტიოქელი</span>
+                    <span class="text-gray-300">·</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 272r-279v</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-400"></span>
+                    
+                </div>
+            </div>
+            <div class="flex items-center gap-2 flex-shrink-0 pt-1">
+                <div class="flex gap-1 mr-2">
+                    <button id="wit-N35" onclick="toggleWit('N35')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 35</button>
+                    <button id="wit-N50" onclick="toggleWit('N50')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 50</button>
+                </div>
+                <div class="w-px h-5 bg-gray-200"></div>
+                <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    ფაქსიმილე
+                </button>
+                <button id="btn-app" class="mode-btn" onclick="setMode('app')">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    კრიტ. აპარატი
+                </button>
+                <div class="w-px h-5 bg-gray-200"></div>
+                <a href="../data/texts/mrav-bzoba-meletios.xml" class="mode-btn">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>TEI
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cts-toast" class="cts-toast"></div>
+
+<div id="layout-root">
+
+    <!-- Transcription -->
+    <div id="transcription">
+        <div class="flex items-center justify-between mb-8 text-xs text-gray-400">
+            <a href="mrav-bzoba-iohannes.html" class="hover:text-gray-700">← </a>
+            <a href="mrav-holymonday.html" class="hover:text-gray-700"> →</a>
+        </div>
+        <div class="text-body" id="text-content" data-text-id="mrav-bzoba-meletios">
+            <p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ითარცა მოვიდა და მოიწია დღესასწაული იგი ბალარჯობისაჲ, რომელსა ჰყოფდეს ჰურიანი იგი მსგავსად მამათა მათთა, დაჯდა იესუ კიცუსა<span class="note-anchor" title="1*" id="anchor-note-4405168144">1</span> ზედა და შევიდა იერუსალემდ. და თუ სასწაულთა მათ გამო ვერ იცნეს იგი, მდაბლად მისულითა ღათუ იცნან იგი?
+        </p>
+<p id="p2"><span class="par-num" title="¶2">¶2</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ უფროჲსღა აღივსნეს შურითა; რომელთაჲ ჯერ- და წეს-იყო ყრმებსა მას თანა ჴმობაჲ და წინა მიგებებად, იგინი ყრმებსა მასცა ადუმებდეს. ვითარ იხილეს კრებაჲ იგი ერისაჲ მის, რამეთუ ჴმითა კურთხევისაჲთა აღასრულებდეს წინაწარმეტყუელებასა მას ზაქარიაჲსსა<span class="note-anchor" title="2*" id="anchor-note-4405172544">2</span>, მოვიდეს იესუსა<span class="note-anchor" title="3*" id="anchor-note-4405167504">3</span> და რქუეს<span class="note-anchor" title="4*" id="anchor-note-4405177424">4</span>: შეჰრისხენ ყრმათა მაგათ, რაჲთა არა ეგრე ჴმობდენ. რქუა<span class="note-anchor" title="5*" id="anchor-note-4405177664">5</span> მათ იესუ: და ღათუ ეგენი დადუმნენ, რომელთაგან წინაწარმეტყუელებაჲ აღესრულების, <span class="folio-milestone" data-wit="" data-folio="143v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145" title="Sin. geo. , f. 143v">143v</span> ქვანი ესე ღაღადებდენ მაგათ წილ<span class="note-anchor" title="(1)*" id="anchor-note-4405170464">6</span>.
+        </p>
+<p id="p3"><span class="par-num" title="¶3">¶3</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო არა ეგების უტყუთა<span class="note-anchor" title="6*" id="anchor-note-4405172944">7</span> ჴმობაჲ და პირ-მეტყუელთა უმანკოთა დადუმებაჲ. უკუეთუ ჴმობდენ ყრმანი ეგე თქუენნი, აღასრულებენ წინაწარმეტყუელებასა. და ერიცა იგი, რომელ მოკრებულ იყო, აკურთხევდეს, და წარმართნი რტოებითა მით დანაკის კუდისაჲთა წინა მიგებვოდეს მჴსნელთა მას სოფლისასა.
+        </p>
+<p id="p4"><span class="par-num" title="¶4">¶4</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო უფალმან ვითარცა იხილა იერუსალემი, მწუხარე იყო დღესა მას სიხარულისა თჳსისასა, ტიროდა მას ზედა და თქუა: ნეტარმცა იყო შენ ზედა, იერუსალემ, გამო-თუმცა-ცხადებულ იყო შენდა ჟამი ესე ჴსნისაჲ!
+        </p>
+<p id="p5"><span class="par-num" title="¶5">¶5</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო მღდელთა მათ რაჲთამცა რწმენა საქმეთაჲ მათ, რომელი ეხილვა თუალითა მათითა, გულის-წყრომაჲ გულის-წყრომასა დაურთეს და აყენებდეს წინაწარმეტყუელებასა მას, რომელი ჩჩჳლთა მიერ აღესრულებოდა და ეშინოდა მძლავრ დადუმებად ყრმებისა მის, ნუუკუე ქვაჲ დაჰკრიბოს ერმან მან. მოვიდეს იესუსა<span class="note-anchor" title="3*" id="anchor-note-4405176864">8</span> და რქუეს: არა გესმისა, რასა-ესე იტყუიან შენთჳს? რქუა მათ იესუ: მესმის მე, რასა უწესოსა იტყუიან, რამეთუ დაადუმებთ მაგათ; ნუუკუე უცხოდ ანუ ძედ უცხოჲსად იტყუიანა და არა ღმრთად და ძედ ღმრთისად?
+        </p>
+<p id="p6"><span class="par-num" title="¶6">¶6</span>
+          <span class="folio-milestone" data-wit="" data-folio="144r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146" title="Sin. geo. , f. 144r">144r</span> <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუ<span class="note-anchor" title="1*" id="anchor-note-4405179584">9</span> ძედ ღმრთისად სახელ-მდებენ, თქუენ რაჲსა განრისხნებით ანუ მათ რად დაადუმებთ?
+        </p>
+<p id="p7"><span class="par-num" title="¶7">¶7</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ რაჲსა-მე დაადუმებენ<span class="note-anchor" title="2*" id="anchor-note-4405170064">10</span> ყრმებსა მას, რამეთუ აჰა ეგერა რომელი სოლომონის ზედა იყო შესხმაჲ, რაჟამს-იგი დაჯდებოდა მეფედ იერუსალემს ზედა, რომელსა არცა ბრმასა თუალნი<span class="note-anchor" title="3*" id="anchor-note-4405171584">11</span> აეხილნეს და არცა მკელობელნი ევლინნეს და ეგრჱთ ოხრიდა ქუეყანაჲ ღაღადებითა მით და ქებითა. ხოლო ამან რომელმან ეგოდენნი სასწაულნი და საკუირველებანი ქმნა, ვითარ-მე იკადრეთ თქუმად, ვითარმედ: დაადუმეთ ერი ეგე მცირედისა მაგისთჳს ქებისა? ამის დღისათჳს მიეცა ქებაჲ ეგე მაგათ და ჴმობაჲ, რომელი თქუენცა აღმოგიკითხავს თქუმული დავითისი, ვითარმედ: პირითა ყრმათა ჩჩჳლთა მწოვართაჲთა დაემტკიცოს ქებაჲ<span class="note-anchor" title="(1)*" id="anchor-note-4405182064">12</span>.
+        </p>
+<p id="p8"><span class="par-num" title="¶8">¶8</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო დასამტკიცებელთა<span class="note-anchor" title="4*" id="anchor-note-4405177264">13</span> საქმეთა მათ ბრძანა უფალმან შეძრვაჲ ქუეყანისაჲ, და იგინი არცაღა შეძრვისა<span class="note-anchor" title="5*" id="anchor-note-4405182304">14</span> მისთჳს ქუეყანისა<span class="note-anchor" title="6*" id="anchor-note-4405173504">15</span> დაემორჩილნეს უფალსა. მაშინ მოვიდა ჴმაჲ ზეცით და თქუა: გადიდე და მერმე უმეტჱს<span class="note-anchor" title="7*" id="anchor-note-4405178064">16</span> გადიდო<span class="note-anchor" title="(2)*" id="anchor-note-4405182144">17</span>. და ღათუ ძალი ჴმისაჲ მის ვერ გულისჴმა-ყვეს ჰურიათა მათ, ხოლო ჴმაჲ იგი ესმა, რამეთუ იტყოდესცა რომელნიმე: ქუხილი იყოო; და ზოგნი იტყოდეს: ანგელოზი ეტყოდაო;<span class="note-anchor" title="(3)*" id="anchor-note-4405180064">18</span> <span class="folio-milestone" data-wit="" data-folio="144v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147" title="Sin. geo. , f. 144v">144v</span> და არცა ჴმისა მისთჳს შეირცხუინეს და არცა სასწაულთა მათგან და არცა ძლიერებათა მისთათჳს, რომელთაჲ კიცუსა<span class="note-anchor" title="8*" id="anchor-note-4405180864">19</span> მას ზედა ჯდომისათჳს, ხოლო ჯერ-იყო წინა მიგებებად და სიხარული.
+        </p>
+<p id="p9"><span class="par-num" title="¶9">¶9</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ჩუენ, საყვარელნო, განვაგდოთ ეგევითარი უგუნურებაჲ ურწმუნოებისაჲ<span class="note-anchor" title="9*" id="anchor-note-4405169824">20</span> და წადიერებით აღვიმსთოთ და ყრმათა თანა აღვიღოთ მცენარეთა რტოჲ და სიხარულით აღვიპყრნეთ ჴელნი ჩუენნი და გულითა წმიდითა შებმა-უყოთ საღმრთოსა გალობასა, ერთობით ყოველნი მივეგებვოდით და ვადიდებდეთ სარწმუნოებით უფალსა ღმერთსა ჩუენსა მამით და სულით წმიდითურთ აწ და მარადის, უკუნითი უკუნისამდე<span class="note-anchor" title="10*" id="anchor-note-4405181504">21</span>. ამენ<span class="note-anchor" title="11*" id="anchor-note-4405168784">22</span>.
+        </p>
+        </div>
+        <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
+            <a href="mrav-bzoba-iohannes.html" class="hover:text-gray-700">← </a>
+            <a href="mrav-holymonday.html" class="hover:text-gray-700"> →</a>
+        </div>
+    </div>
+
+    <!-- IIIF panel -->
+    <div id="facs-panel">
+        <div id="facs-sticky">
+            <div id="facs-metabar">
+                <button class="facs-nav" id="facs-prev" onclick="navigateFacs(-1)" disabled>‹</button>
+                <span id="facs-folio-label">f. 143v</span>
+                <button class="facs-nav" id="facs-next" onclick="navigateFacs(1)">›</button>
+                <span id="facs-wit-lbl">Sin. geo. N 35 · 864 CE</span>
+                <a id="facs-loc-link" href="https://www.loc.gov/resource/amedmonastery.00279386887-ms/" target="_blank" rel="noopener">LoC ↗</a>
+            </div>
+
+            <div id="facs-viewport" onclick="cycleZoom()">
+                <img id="facs-img" src="" alt="" class="loading"
+                     onload="onImgLoad()" onerror="onImgError()">
+                <div id="facs-overlay">იტვირთება…</div>
+            </div>
+
+            <div id="facs-strip"></div>
+
+            <div id="facs-zoombar">
+                <button class="z-btn z-on" id="z-fit"  onclick="setZoom('fit');  event.stopPropagation();">Fit</button>
+                <button class="z-btn"      id="z-150"  onclick="setZoom('150');  event.stopPropagation();">150%</button>
+                <button class="z-btn"      id="z-200"  onclick="setZoom('200');  event.stopPropagation();">200%</button>
+                <a id="facs-full-link" href="#" target="_blank" rel="noopener">სრული ↗</a>
+            </div>
+
+            <div id="facs-attribution">
+                <span>(0864). <em>Georgian Manuscripts 32-57-33 32, 57, and 33. Homilies</em> [Manuscript/Mixed Material]. Library of Congress.</span>
+                <a href="https://www.loc.gov/item/00279386887-ms/" target="_blank" rel="noopener">loc.gov ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apparatus panel -->
+    <div id="app-panel">
+        <div id="app-sticky">
+            <div id="app-header">
+                <span id="app-header-title">კრიტიკული აპარატი</span>
+                <div style="display:flex;align-items:center;gap:6px;">
+                    <select id="rdg-filter" onchange="filterRdg(this.value)" style="font-size:.62rem;border:1px solid #d8c8c8;border-radius:2px;padding:2px 6px;background:white;color:#666;outline:none;">
+                        <option value="">ყველა</option>
+                        <option value="orthographic">მართლ.</option>
+                        <option value="grammatical">გრამ.</option>
+                        <option value="lexical">ლექ.</option>
+                        <option value="omission">გამოტ.</option>
+                        <option value="addition">დამ.</option>
+                    </select>
+                    <span style="font-size:.6rem;color:#aaa;">0 ჩ.</span>
+                </div>
+            </div>
+            <div id="app-entries-wrap">
+                
+            </div>
+            <div id="app-legend">
+                <p style="font-size:.58rem;color:#bbb;font-family:'Noto Sans Georgian',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem;">ლეგენდა</p>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 8px;font-size:.65rem;">
+                    <span><span class="rdg-orth">■</span> მართლ.</span><span><span class="rdg-gram">■</span> გრამ.</span>
+                    <span><span class="rdg-lex">■</span> ლექ.</span><span><span class="rdg-om">■</span> გამოტ.</span>
+                    <span><span class="rdg-add">■</span> დამ.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /layout-root -->
+
+<div id="citation-block">
+    <div class="inner">
+        <div class="cite-label">
+            <svg width="11" height="11" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Citation
+        </div>
+        <p class="cite-apa" id="cite-ed">Meletius Antiochenus. <em>მელეტი ანტ. — ბზობა</em>. In <em>სინური მრავალთავი 864 / Sinai Mravaltavi 864: Digital Scholarly Edition</em>. Ilia State University, Linguistic Research Institute. Retrieved from <a href="#">sinai-mravaltavi.iliauni.ge/texts/mrav-bzoba-meletios.html</a></p>
+        <p class="cite-apa" id="cite-ms">(0864). <em>Georgian Manuscripts 32-57-33 32, 57, and 33. Homilies</em> [Manuscript/Mixed Material]. Library of Congress. <a href="https://www.loc.gov/item/00279386887-ms/" target="_blank" rel="noopener">https://www.loc.gov/item/00279386887-ms/</a></p>
+        <button class="cite-copy" id="cite-copy-btn" onclick="copyCitation()">
+            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+            Copy citations
+        </button>
+    </div>
+</div>
+
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-gray-200 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <span>2026, ილიას სახ. უნივ. · ლინგვ. კვლ. ინსტ.</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <span class="flex items-center gap-2">
+                TEI-XML:
+                <a href="../data/texts/" class="hover:text-gray-600 underline">ტექსტი</a>
+                <a href="../data/lexicon.xml" class="hover:text-gray-600 underline">ლექსიკონი</a>
+                <a href="../data/catalog.xml" class="hover:text-gray-600 underline">კატალოგი</a>
+            </span>
+            <span class="hidden sm:inline text-gray-300">|</span>
+            
+            <span>CC BY-NC-SA 4.0</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+/* ════════════════════════════════════════════════════════
+   STICKY PANEL — JS-based fixed positioning
+   Measures actual toolbar bottom each time so panel top
+   always aligns with the start of the text column,
+   regardless of browser font size or how tall the toolbar is.
+════════════════════════════════════════════════════════ */
+var PANEL_HEIGHT = 'calc(65vh - 1rem)';
+
+function getToolbarBottom() {
+    /* toolbar is the last sticky bar above the text */
+    var tb = document.getElementById('text-toolbar');
+    if (tb) return tb.getBoundingClientRect().bottom;
+    return 120; /* fallback */
+}
+
+function positionSticky(el, panel) {
+    var rect    = panel.getBoundingClientRect();
+    var top     = getToolbarBottom();
+    el.style.position = 'fixed';
+    el.style.top      = top + 'px';
+    el.style.left     = rect.left + 'px';
+    el.style.width    = rect.width + 'px';
+    el.style.height   = PANEL_HEIGHT;
+}
+
+function unpositionSticky(el) {
+    el.style.position = '';
+    el.style.top = '';
+    el.style.left = '';
+    el.style.width = '';
+    el.style.height = '';
+}
+
+var stickyEl    = null; /* currently fixed element */
+var stickyPanel = null; /* its parent panel div */
+
+function attachSticky(el, panel) {
+    stickyEl    = el;
+    stickyPanel = panel;
+    positionSticky(el, panel);
+}
+function detachSticky() {
+    if (stickyEl) unpositionSticky(stickyEl);
+    stickyEl = stickyPanel = null;
+}
+
+window.addEventListener('scroll', function() {
+    if (stickyEl && stickyPanel) positionSticky(stickyEl, stickyPanel);
+}, { passive: true });
+
+window.addEventListener('resize', function() {
+    if (stickyEl && stickyPanel) positionSticky(stickyEl, stickyPanel);
+}, { passive: true });
+
+/* ════════════════════════════════════════════════════════
+   MODE
+════════════════════════════════════════════════════════ */
+var currentMode = '';
+
+function setMode(mode) {
+    var root = document.getElementById('layout-root');
+
+    if (currentMode === mode) {
+        /* toggle off */
+        currentMode = '';
+        root.className = '';
+        document.getElementById('btn-iiif').classList.remove('active');
+        document.getElementById('btn-app').classList.remove('active');
+        detachSticky();
+        return;
+    }
+
+    /* switch to new mode */
+    detachSticky();
+    currentMode = mode;
+    root.className = 'mode-' + mode;
+    document.getElementById('btn-iiif').classList.toggle('active', mode === 'iiif');
+    document.getElementById('btn-app').classList.toggle('active', mode === 'app');
+
+    /* defer one frame so display:block has taken effect before measuring */
+    requestAnimationFrame(function() {
+        if (mode === 'iiif') {
+            attachSticky(
+                document.getElementById('facs-sticky'),
+                document.getElementById('facs-panel')
+            );
+            if (facsIdx === -1 && facsList.length > 0) loadFolioByIdx(0);
+        } else if (mode === 'app') {
+            attachSticky(
+                document.getElementById('app-sticky'),
+                document.getElementById('app-panel')
+            );
+        }
+    });
+}
+
+/* ════════════════════════════════════════════════════════
+   IIIF VIEWER
+
+   ZOOM — CSS width on #facs-img (inline style, no ambiguity).
+   #facs-viewport is display:block (NOT flex).
+   With display:block + overflow:auto, setting img width > 100%
+   creates genuine horizontal overflow that auto-scrolls.
+   No new network request on zoom — image fetched once at pct:75.
+
+   Zoom levels:
+     fit  → width:100%         (fits panel, centered)
+     150  → width:150%         (overflows, pan by scrolling)
+     200  → width:200%         (overflows, pan by scrolling)
+════════════════════════════════════════════════════════ */
+var IIIF_BASE  = 'https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:';
+var LOC_VIEWER = 'https://www.loc.gov/resource/amedmonastery.00279386887-ms/';
+var FETCH_PCT  = 75;
+
+var facsList  = [];
+var facsIdx   = -1;
+var zoomKey   = 'fit';
+var ZOOM_CYCLE = ['fit', '150', '200'];
+
+function setZoom(key) {
+    zoomKey = key;
+    var img  = document.getElementById('facs-img');
+    var vp   = document.getElementById('facs-viewport');
+
+    /* Inline style: no CSS rule can compete with this */
+    if (key === 'fit') {
+        img.style.width    = '100%';
+        img.style.maxWidth = '100%';
+        vp.style.textAlign = 'center';
+        vp.classList.remove('zoom-out');
+    } else {
+        img.style.width    = key + '%';
+        img.style.maxWidth = 'none';
+        vp.style.textAlign = 'left';
+        vp.classList.toggle('zoom-out', key === '200');
+    }
+
+    /* Highlight active button */
+    ['fit','150','200'].forEach(function(k) {
+        document.getElementById('z-' + k).classList.toggle('z-on', k === key);
+    });
+}
+
+function cycleZoom() {
+    var idx = ZOOM_CYCLE.indexOf(zoomKey);
+    setZoom(ZOOM_CYCLE[(idx + 1) % ZOOM_CYCLE.length]);
+}
+
+function buildStrip() {
+    var strip = document.getElementById('facs-strip');
+    var seen  = {};
+    document.querySelectorAll('.folio-milestone[data-facs]').forEach(function(m) {
+        var facs = m.dataset.facs;
+        if (seen[facs]) return;
+        seen[facs] = true;
+        var label = m.dataset.folio || m.textContent.trim();
+        var sp    = parseInt(m.dataset.sp || '0', 10);
+        var mat   = facs.match(/:(\d{4})$/);
+        var seq   = mat ? mat[1] : '';
+        var idx   = facsList.length;
+        facsList.push({ facs: facs, seq: seq, label: label, sp: sp });
+
+        var thumb = document.createElement('div');
+        thumb.className = 'facs-thumb';
+        thumb.dataset.idx = idx;
+        thumb.title = 'f. ' + label;
+        thumb.addEventListener('click', (function(i){ return function(){ loadFolioByIdx(i); }; })(idx));
+
+        var ti = document.createElement('img');
+        ti.src = IIIF_BASE + seq + '/full/pct:8/0/default.jpg';
+        ti.alt = label; ti.loading = 'lazy';
+
+        var tl = document.createElement('div');
+        tl.className = 'facs-thumb-lbl'; tl.textContent = label;
+
+        thumb.appendChild(ti); thumb.appendChild(tl);
+        strip.appendChild(thumb);
+    });
+}
+
+function loadFolioByIdx(idx) {
+    if (idx < 0 || idx >= facsList.length) return;
+    facsIdx = idx;
+    _renderFolio(facsList[idx]);
+}
+
+function _renderFolio(f) {
+    document.querySelectorAll('.facs-thumb').forEach(function(t) {
+        t.classList.toggle('active-thumb', parseInt(t.dataset.idx) === facsIdx);
+    });
+    var at = document.querySelector('.facs-thumb.active-thumb');
+    if (at) at.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+    document.getElementById('facs-folio-label').textContent = 'f. ' + f.label;
+    document.getElementById('facs-loc-link').href  = LOC_VIEWER + (f.sp ? '?sp=' + f.sp : '');
+    document.getElementById('facs-full-link').href = IIIF_BASE + f.seq + '/full/full/0/default.jpg';
+    document.getElementById('facs-prev').disabled  = (facsIdx <= 0);
+    document.getElementById('facs-next').disabled  = (facsIdx >= facsList.length - 1);
+
+    document.querySelectorAll('.folio-milestone').forEach(function(m) {
+        m.classList.toggle('active-folio', m.dataset.facs === f.facs);
+    });
+
+    var img = document.getElementById('facs-img');
+    img.classList.add('loading');
+    /* Apply current zoom BEFORE setting src so layout is correct on load */
+    setZoom(zoomKey);
+    document.getElementById('facs-overlay').classList.remove('hidden');
+    document.getElementById('facs-overlay').textContent = 'იტვირთება…';
+    img.src = IIIF_BASE + f.seq + '/full/pct:' + FETCH_PCT + '/0/default.jpg';
+}
+
+function onImgLoad() {
+    document.getElementById('facs-img').classList.remove('loading');
+    document.getElementById('facs-overlay').classList.add('hidden');
+}
+function onImgError() {
+    document.getElementById('facs-img').classList.remove('loading');
+    var o = document.getElementById('facs-overlay');
+    o.textContent = 'სურათი მიუწვდომელია'; o.classList.remove('hidden');
+}
+function navigateFacs(delta) { loadFolioByIdx(facsIdx + delta); }
+
+/* Folio chip clicks */
+document.querySelectorAll('.folio-milestone[data-facs]').forEach(function(m) {
+    m.addEventListener('click', function() {
+        var facs = m.dataset.facs;
+        var idx  = facsList.findIndex(function(f) { return f.facs === facs; });
+        if (idx === -1) return;
+        if (currentMode !== 'iiif') setMode('iiif');
+        facsIdx = idx;
+        _renderFolio(facsList[idx]);
+    });
+});
+
+/* Scroll sync */
+(function() {
+    var ms = document.querySelectorAll('.folio-milestone[data-facs]');
+    if (!ms.length) return;
+    var io = new IntersectionObserver(function(entries) {
+        if (currentMode !== 'iiif') return;
+        for (var i = 0; i < entries.length; i++) {
+            if (!entries[i].isIntersecting) continue;
+            var facs = entries[i].target.dataset.facs;
+            var idx  = facsList.findIndex(function(f) { return f.facs === facs; });
+            if (idx !== -1 && idx !== facsIdx) { facsIdx = idx; _renderFolio(facsList[idx]); }
+            break;
+        }
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0 });
+    ms.forEach(function(m) { io.observe(m); });
+})();
+
+/* ════════════════════════════════════════════════════════
+   APPARATUS
+════════════════════════════════════════════════════════ */
+document.querySelectorAll('.app-inline').forEach(function(span) {
+    span.addEventListener('click', function() {
+        var entry = document.getElementById(span.dataset.app);
+        if (!entry) return;
+        if (currentMode !== 'app') setMode('app');
+        document.querySelectorAll('.app-entry').forEach(function(e) { e.classList.remove('active'); });
+        document.querySelectorAll('.app-inline').forEach(function(s) { s.classList.remove('highlighted'); });
+        entry.classList.add('active'); span.classList.add('highlighted');
+        setTimeout(function() { entry.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 80);
+    });
+});
+function filterRdg(type) {
+    document.querySelectorAll('.app-entry').forEach(function(e) {
+        e.style.display = (!type || e.dataset.type === type) ? '' : 'none';
+    });
+}
+
+/* ════════════════════════════════════════════════════════
+   WITNESS
+════════════════════════════════════════════════════════ */
+var witState = { N35: true, N50: true };
+function toggleWit(wit) {
+    witState[wit] = !witState[wit];
+    document.getElementById('wit-' + wit).classList.toggle('on', witState[wit]);
+    document.querySelectorAll('.folio-milestone[data-wit="' + wit + '"]').forEach(function(m) {
+        m.style.display = witState[wit] ? '' : 'none';
+    });
+}
+
+/* ════════════════════════════════════════════════════════
+   CITATION
+════════════════════════════════════════════════════════ */
+function copyCitation() {
+    var t = document.getElementById('cite-ed').innerText + '\n\n' +
+            document.getElementById('cite-ms').innerText;
+    var btn = document.getElementById('cite-copy-btn');
+    navigator.clipboard.writeText(t).then(function() {
+        btn.textContent = '✓ Copied';
+        setTimeout(function() { btn.textContent = 'Copy citations'; }, 2000);
+    }).catch(function(){});
+}
+
+/* ════════════════════════════════════════════════════════
+   CTS URN
+════════════════════════════════════════════════════════ */
+(function() {
+    var c = document.getElementById('text-content');
+    if (!c) return;
+    var tid = c.dataset.textId || '';
+    c.querySelectorAll('p[id]').forEach(function(p) {
+        var urn = 'urn:cts:georgiansin:' + tid + '.geo1:' + p.id;
+        var btn = document.createElement('button');
+        btn.className = 'cts-copy-btn'; btn.dataset.urn = urn; btn.title = 'CTS URN';
+        btn.innerHTML = '<svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN';
+        p.insertBefore(btn, p.firstChild);
+    });
+})();
+var ctsToast = document.getElementById('cts-toast'), toastTimer;
+function showToast(msg) {
+    clearTimeout(toastTimer); ctsToast.textContent = msg;
+    ctsToast.classList.add('visible');
+    toastTimer = setTimeout(function() { ctsToast.classList.remove('visible'); }, 2500);
+}
+document.getElementById('text-content').addEventListener('click', function(e) {
+    var btn = e.target.closest('.cts-copy-btn');
+    if (!btn) return; e.preventDefault();
+    var urn = btn.dataset.urn;
+    navigator.clipboard.writeText(urn).then(function() {
+        btn.classList.add('copied'); showToast(urn);
+        setTimeout(function() { btn.classList.remove('copied'); }, 1500);
+    }).catch(function() {
+        var ta = document.createElement('textarea');
+        ta.value = urn; ta.style.cssText = 'position:fixed;opacity:0';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); btn.classList.add('copied'); showToast(urn);
+              setTimeout(function() { btn.classList.remove('copied'); }, 1500); }
+        catch(err) { showToast('კოპირება ვერ მოხდა'); }
+        document.body.removeChild(ta);
+    });
+});
+
+/* ════════════════════════════════════════════════════════
+   INIT
+════════════════════════════════════════════════════════ */
+/* Measure actual rendered nav and breadcrumb heights and
+   write them as CSS custom properties used by sticky tops */
+(function setHeaderVars() {
+    var nav = document.querySelector('nav, header'); /* base.html nav */
+    var bc  = document.getElementById('text-breadcrumb');
+    var navH = nav ? nav.getBoundingClientRect().height : 48;
+    var bcH  = bc  ? bc.getBoundingClientRect().height  : 36;
+    document.documentElement.style.setProperty('--nav-h', navH + 'px');
+    document.documentElement.style.setProperty('--bc-h',  bcH  + 'px');
+})();
+buildStrip();
+/* Set initial zoom inline style so img is pre-sized before first load */
+(function() {
+    var img = document.getElementById('facs-img');
+    img.style.width = '100%'; img.style.maxWidth = '100%';
+})();
+</script>
+
+</body>
+</html>

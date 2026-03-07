@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/relaxng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xml:id="mrav-bzoba-meletios"
+  xml:lang="ka">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">მელეტი ანტიოქიელი — ბზობისათჳს და შესხმისა ყრმათაჲსა</title>
+        <title xml:lang="la" type="sub">Meletii Antiocheni Sermo in ramis palmarum</title>
+        <author ref="#aut-meletios-ant">
+          <name xml:lang="ka">მელეტი ანტიოქიელი</name>
+          <name xml:lang="la">Meletius Antiochenus</name>
+          <idno type="VIAF">261735160</idno>
+          <idno type="CPG">3418</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.</publisher>
+        <pubPlace>თბილისი</pubPlace>
+        <date when="2026">2026</date>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="N35">
+            <abbr type="siglum">Σ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 35</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus from="271v" to="281v">ff. 271v–281v</locus>
+                  <note>ძირ. სია. ლემა ამ გამოცემაში.</note>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+          <witness xml:id="N50">
+            <abbr type="siglum">Ν</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 50</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus><!-- to be verified --></locus>
+                  <note>მეორე მოწმე.</note>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <p>Folio breaks (pb) reflect Shanidze 1959 print references (based on N35), pending remap to catalog locus (ff. 271v–281v).</p>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="iiif-loc-n35" url="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="text" xml:id="mrav-bzoba-meletios-body">
+        <head>
+          <hi rend="rubric">თქუმული წმიდისა მელეტი ანტიოქიელ ებისკოპოსისაჲ, ბზობისათჳს და შესხმისა ყრმათაჲსა</hi>
+        </head>
+        
+        <p xml:id="p1" n="1">
+          <hi rend="initial">Ⴅ</hi>ითარცა მოვიდა და მოიწია დღესასწაული იგი ბალარჯობისაჲ, რომელსა ჰყოფდეს ჰურიანი იგი მსგავსად მამათა მათთა, დაჯდა იესუ კიცუსა<note n="1">1*</note> ზედა და შევიდა იერუსალემდ. და თუ სასწაულთა მათ გამო ვერ იცნეს იგი, მდაბლად მისულითა ღათუ იცნან იგი?
+        </p>
+        
+        <p xml:id="p2" n="2">
+          <hi rend="initial">Ⴋ</hi>აშინ უფროჲსღა აღივსნეს შურითა; რომელთაჲ ჯერ- და წეს-იყო ყრმებსა მას თანა ჴმობაჲ და წინა მიგებებად, იგინი ყრმებსა მასცა ადუმებდეს. ვითარ იხილეს კრებაჲ იგი ერისაჲ მის, რამეთუ ჴმითა კურთხევისაჲთა აღასრულებდეს წინაწარმეტყუელებასა მას ზაქარიაჲსსა<note n="2">2*</note>, მოვიდეს იესუსა<note n="3">3*</note> და რქუეს<note n="4">4*</note>: შეჰრისხენ ყრმათა მაგათ, რაჲთა არა ეგრე ჴმობდენ. რქუა<note n="5">5*</note> მათ იესუ: და ღათუ ეგენი დადუმნენ, რომელთაგან წინაწარმეტყუელებაჲ აღესრულების, <pb n="143v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145"/> ქვანი ესე ღაღადებდენ მაგათ წილ<note n="6">(1)*</note>.
+        </p>
+        
+        <p xml:id="p3" n="3">
+          <hi rend="initial">Ⴞ</hi>ოლო არა ეგების უტყუთა<note n="7">6*</note> ჴმობაჲ და პირ-მეტყუელთა უმანკოთა დადუმებაჲ. უკუეთუ ჴმობდენ ყრმანი ეგე თქუენნი, აღასრულებენ წინაწარმეტყუელებასა. და ერიცა იგი, რომელ მოკრებულ იყო, აკურთხევდეს, და წარმართნი რტოებითა მით დანაკის კუდისაჲთა წინა მიგებვოდეს მჴსნელთა მას სოფლისასა.
+        </p>
+        
+        <p xml:id="p4" n="4">
+          <hi rend="initial">Ⴞ</hi>ოლო უფალმან ვითარცა იხილა იერუსალემი, მწუხარე იყო დღესა მას სიხარულისა თჳსისასა, ტიროდა მას ზედა და თქუა: ნეტარმცა იყო შენ ზედა, იერუსალემ, გამო-თუმცა-ცხადებულ იყო შენდა ჟამი ესე ჴსნისაჲ!
+        </p>
+        
+        <p xml:id="p5" n="5">
+          <hi rend="initial">Ⴞ</hi>ოლო მღდელთა მათ რაჲთამცა რწმენა საქმეთაჲ მათ, რომელი ეხილვა თუალითა მათითა, გულის-წყრომაჲ გულის-წყრომასა დაურთეს და აყენებდეს წინაწარმეტყუელებასა მას, რომელი ჩჩჳლთა მიერ აღესრულებოდა და ეშინოდა მძლავრ დადუმებად ყრმებისა მის, ნუუკუე ქვაჲ დაჰკრიბოს ერმან მან. მოვიდეს იესუსა<note n="8">3*</note> და რქუეს: არა გესმისა, რასა-ესე იტყუიან შენთჳს? რქუა მათ იესუ: მესმის მე, რასა უწესოსა იტყუიან, რამეთუ დაადუმებთ მაგათ; ნუუკუე უცხოდ ანუ ძედ უცხოჲსად იტყუიანა და არა ღმრთად და ძედ ღმრთისად?
+        </p>
+        
+        <p xml:id="p6" n="6">
+          <pb n="144r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146"/> <hi rend="initial">Ⴓ</hi>კუეთუ<note n="9">1*</note> ძედ ღმრთისად სახელ-მდებენ, თქუენ რაჲსა განრისხნებით ანუ მათ რად დაადუმებთ?
+        </p>
+        
+        <p xml:id="p7" n="7">
+          <hi rend="initial">Ⴀ</hi>წ რაჲსა-მე დაადუმებენ<note n="10">2*</note> ყრმებსა მას, რამეთუ აჰა ეგერა რომელი სოლომონის ზედა იყო შესხმაჲ, რაჟამს-იგი დაჯდებოდა მეფედ იერუსალემს ზედა, რომელსა არცა ბრმასა თუალნი<note n="11">3*</note> აეხილნეს და არცა მკელობელნი ევლინნეს და ეგრჱთ ოხრიდა ქუეყანაჲ ღაღადებითა მით და ქებითა. ხოლო ამან რომელმან ეგოდენნი სასწაულნი და საკუირველებანი ქმნა, ვითარ-მე იკადრეთ თქუმად, ვითარმედ: დაადუმეთ ერი ეგე მცირედისა მაგისთჳს ქებისა? ამის დღისათჳს მიეცა ქებაჲ ეგე მაგათ და ჴმობაჲ, რომელი თქუენცა აღმოგიკითხავს თქუმული დავითისი, ვითარმედ: პირითა ყრმათა ჩჩჳლთა მწოვართაჲთა დაემტკიცოს ქებაჲ<note n="12">(1)*</note>.
+        </p>
+        
+        <p xml:id="p8" n="8">
+          <hi rend="initial">Ⴞ</hi>ოლო დასამტკიცებელთა<note n="13">4*</note> საქმეთა მათ ბრძანა უფალმან შეძრვაჲ ქუეყანისაჲ, და იგინი არცაღა შეძრვისა<note n="14">5*</note> მისთჳს ქუეყანისა<note n="15">6*</note> დაემორჩილნეს უფალსა. მაშინ მოვიდა ჴმაჲ ზეცით და თქუა: გადიდე და მერმე უმეტჱს<note n="16">7*</note> გადიდო<note n="17">(2)*</note>. და ღათუ ძალი ჴმისაჲ მის ვერ გულისჴმა-ყვეს ჰურიათა მათ, ხოლო ჴმაჲ იგი ესმა, რამეთუ იტყოდესცა რომელნიმე: ქუხილი იყოო; და ზოგნი იტყოდეს: ანგელოზი ეტყოდაო;<note n="18">(3)*</note> <pb n="144v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147"/> და არცა ჴმისა მისთჳს შეირცხუინეს და არცა სასწაულთა მათგან და არცა ძლიერებათა მისთათჳს, რომელთაჲ კიცუსა<note n="19">8*</note> მას ზედა ჯდომისათჳს, ხოლო ჯერ-იყო წინა მიგებებად და სიხარული.
+        </p>
+        
+        <p xml:id="p9" n="9">
+          <hi rend="initial">Ⴞ</hi>ოლო ჩუენ, საყვარელნო, განვაგდოთ ეგევითარი უგუნურებაჲ ურწმუნოებისაჲ<note n="20">9*</note> და წადიერებით აღვიმსთოთ და ყრმათა თანა აღვიღოთ მცენარეთა რტოჲ და სიხარულით აღვიპყრნეთ ჴელნი ჩუენნი და გულითა წმიდითა შებმა-უყოთ საღმრთოსა გალობასა, ერთობით ყოველნი მივეგებვოდით და ვადიდებდეთ სარწმუნოებით უფალსა ღმერთსა ჩუენსა მამით და სულით წმიდითურთ აწ და მარადის, უკუნითი უკუნისამდე<note n="21">10*</note>. ამენ<note n="22">11*</note>.
+        </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>

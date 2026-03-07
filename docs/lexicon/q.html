@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქ — ლექსიკონი — სინური მრავალთავი 864 — ციფრული სამეცნიერო გამოცემა</title>
+
+    <!-- Dublin Core -->
+    <meta name="DC.title"     content="სინური მრავალთავი — ძველი ქართული ლექსიკა · ქ">
+    <meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+    <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+    <meta name="DC.language"  content="ka">
+    
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --crimson:      #7a1a1a;
+            --crimson-light:#9b2c2c;
+            --crimson-pale: #fdf2f2;
+            --gold:         #8a6e2e;
+            --gold-pale:    #faf6ee;
+            --parchment:    #faf8f5;
+            --parchment-dark:#f0ece4;
+            --ink:          #1a1a1a;
+            --ink-muted:    #4a4030;
+        }
+
+        /* ── Base ─────────────────────── */
+        body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
+        .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
+        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
+        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* ── Nav ─────────────────────── */
+        .nav-link { position:relative; letter-spacing:.07em; }
+        .nav-link::after {
+            content:''; position:absolute; bottom:-2px; left:0;
+            width:0; height:1px; background:var(--crimson); transition:width .2s;
+        }
+        .nav-link:hover::after { width:100%; }
+        .nav-link.active { color:var(--crimson); }
+        .nav-link.active::after { width:100%; }
+
+        /* ── Cards ───────────────────── */
+        .card { transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+        .card:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,.07); border-color:#c8bfb6; }
+
+        /* ── Chips & badges ──────────── */
+        .folio-chip { font-size:.65rem; letter-spacing:.04em; border:1px solid #ddd5c8; background:var(--parchment); font-family:'Noto Serif Georgian',Georgia,serif; font-style:italic; }
+        .bog-badge     { font-size:.6rem; letter-spacing:.08em; background:var(--ink);    color:var(--parchment); }
+        .lod-badge     { font-size:.6rem; letter-spacing:.08em; background:#1a3d6b;       color:white; }
+        .olia-badge    { font-size:.6rem; letter-spacing:.08em; background:#2d5a2d;       color:white; }
+        .logeion-badge { font-size:.6rem; letter-spacing:.08em; background:#5a3d1a;       color:white; }
+
+        /* ── Status dots (for catalog) ─ */
+        .status-done      { background:#2d5a2d; }
+        .status-progress  { background:#8a6e2e; }
+        .status-planned   { background:#d1cdc7; }
+
+        /* ── Genre badges ─────────────  */
+        .badge-homily  { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+        .badge-life    { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+        .badge-martyr  { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+        .badge-encomiun{ background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+        .badge-colophon{ background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+        .badge-other   { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
+
+        /* ── Parchment texture ────────── */
+        .parchment-texture {
+            background-image:
+                radial-gradient(ellipse at 15% 60%, rgba(122,26,26,.025) 0%, transparent 55%),
+                radial-gradient(ellipse at 85% 15%, rgba(138,110,46,.03)  0%, transparent 45%);
+        }
+
+        /* ── Animations ──────────────── */
+        @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+        .f1{animation:fadeUp .45s ease .04s both}
+        .f2{animation:fadeUp .45s ease .1s  both}
+        .f3{animation:fadeUp .45s ease .17s both}
+        .f4{animation:fadeUp .45s ease .24s both}
+        .f5{animation:fadeUp .45s ease .31s both}
+    </style>
+
+    
+<style>
+    /* ── Alphabet strip ─────────────────────── */
+    .alpha-btn {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-size: .75rem; font-weight: 600;
+        width: 1.9rem; height: 1.9rem;
+        display: flex; align-items: center; justify-content: center;
+        border-radius: 3px; border: 1px solid transparent;
+        color: var(--ink-muted);
+        cursor: pointer; transition: background .12s, color .12s, border-color .12s;
+        text-decoration: none;
+    }
+    .alpha-btn:hover { background: var(--parchment-dark); border-color: #ddd5c8; }
+    .alpha-btn.has-entries { color: var(--crimson); }
+    .alpha-btn.active { background: var(--crimson); color: white; border-color: var(--crimson); }
+    .alpha-btn.empty  { color: #d1cdc7; cursor: default; pointer-events: none; }
+
+    /* ── POS filter chips ──────────────────── */
+    .pos-chip {
+        font-size: .65rem; letter-spacing: .07em; font-weight: 500;
+        border: 1px solid #ddd5c8; border-radius: 2px;
+        padding: .25rem .6rem; cursor: pointer;
+        transition: background .12s, color .12s, border-color .12s;
+        color: var(--ink-muted); background: white;
+    }
+    .pos-chip.on { background: var(--crimson); color: white; border-color: var(--crimson); }
+
+    /* ── Entry cards ───────────────────────── */
+    .entry-card {
+        border: 1px solid #e0d8ce; background: white; border-radius: 2px;
+        transition: border-color .12s;
+    }
+    .entry-card:hover { border-color: #c8bfb6; }
+
+    .lemma-head {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-weight: 700; font-size: 1.15rem;
+        color: var(--ink); letter-spacing: .01em;
+    }
+    .pos-tag {
+        font-size: .65rem; letter-spacing: .08em; font-weight: 600;
+        background: var(--crimson-pale); color: var(--crimson);
+        border: 1px solid #e8c5c5; border-radius: 2px;
+        padding: .15rem .5rem;
+    }
+    .gen-tag {
+        font-size: .65rem; font-style: italic;
+        color: #888; background: #f5f5f5;
+        border: 1px solid #e8e8e8; border-radius: 2px;
+        padding: .15rem .5rem;
+    }
+    .greek-form {
+        font-family: 'Times New Roman', Georgia, serif;
+        font-style: italic; color: #4a4030;
+        font-size: .85rem;
+    }
+    .sense-num {
+        font-size: .65rem; font-weight: 700; letter-spacing: .06em;
+        color: var(--crimson); min-width: 1.1rem; text-align: right;
+        padding-top: .1rem; flex-shrink: 0;
+    }
+    .sense-def { font-size: .85rem; color: #3a3028; line-height: 1.55; font-family: 'Noto Serif Georgian', Georgia, serif; }
+    .sense-note { font-size: .75rem; color: #888; font-style: italic; margin-top: .2rem; }
+
+    .citation-block {
+        background: var(--parchment); border-left: 2px solid var(--crimson);
+        border-radius: 0 2px 2px 0;
+        padding: .6rem .8rem;
+    }
+    .citation-text { font-family: 'Noto Serif Georgian', Georgia, serif; font-style: italic; font-size: .8rem; color: #3a3028; }
+    .citation-ref { font-size: .7rem; color: #888; margin-top: .25rem; }
+
+    .ext-link-badge {
+        font-size: .6rem; letter-spacing: .07em; font-weight: 500;
+        border-radius: 2px; padding: .2rem .45rem;
+        transition: opacity .12s;
+    }
+    .ext-link-badge:hover { opacity: .8; }
+
+    /* ── Sidebar sticky ────────────────────── */
+    .sidebar-sticky { position: sticky; top: 5.5rem; }
+</style>
+
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="border-b border-gray-200 sticky top-0 z-50" style="background:var(--parchment);">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14">
+
+            <a href="../index.html" class="flex items-center gap-2.5 group">
+                <span class="font-serif-geo font-bold text-lg leading-none select-none"
+                      style="color:var(--crimson);">Ⴑ</span>
+                <span class="text-sm font-medium text-gray-700 tracking-wide group-hover:text-gray-900 transition-colors">
+                    ႱႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                </span>
+            </a>
+
+            <!-- Desktop nav — order: ტექსტები · ხელნაწერები · ლექსიკონი · კვლევა · ბიბლიოგრაფია · შესახებ -->
+            <div class="hidden md:flex items-center gap-7">
+                <a href="../texts/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"
+                   class="nav-link active text-xs font-medium text-gray-500 hover:text-gray-900">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"
+                   class="nav-link  text-xs font-medium text-gray-500 hover:text-gray-900">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+
+            <button id="mob-btn" class="md:hidden p-2 text-gray-500 hover:text-gray-900">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav — same order -->
+        <div id="mob-menu" class="hidden md:hidden border-t border-gray-100 py-3">
+            <div class="flex flex-col gap-1">
+                <a href="../texts/index.html"       class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲢᲔᲥᲡᲢᲘ</a>
+                <a href="../manuscripts.html"        class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲮᲔᲚᲜᲐᲬᲔᲠᲘ</a>
+                <a href="../lexicon/index.html"      class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲚᲔᲥᲡᲘᲙᲝᲜᲘ</a>
+                <a href="../research/index.html"     class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲙᲕᲚᲔᲕᲐ</a>
+                <a href="../bibliography/index.html" class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲑᲘᲑᲚᲘᲝᲒᲠᲐᲤᲘᲐ</a>
+                <a href="../about.html"              class="px-3 py-2 rounded text-sm text-gray-600 hover:bg-gray-50">ᲨᲔᲡᲐᲮᲔᲑ</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('mob-btn').addEventListener('click', () =>
+        document.getElementById('mob-menu').classList.toggle('hidden'));
+</script>
+
+<!-- ═══════════════════ MAIN ═══════════════════ -->
+<main class="flex-1">
+    
+
+<!-- PAGE HEADER -->
+<div class="border-b border-gray-200 bg-white px-4 py-6">
+    <div class="max-w-5xl mx-auto flex items-end justify-between gap-4 flex-wrap">
+        <div>
+            <p class="text-xs text-gray-400 tracking-widest font-medium mb-1">
+                <a href="../lexicon/" class="hover:text-gray-600 transition-colors">ლექსიკონი</a>
+                &rsaquo; ქ
+            </p>
+            <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ქ</h1>
+            <p class="text-sm text-gray-500 mt-1">
+                ძველი ქართული ·
+                <span class="font-medium text-gray-600">2 ლექსიკური ერთეული</span>
+            </p>
+        </div>
+
+        <!-- Alphabet strip (header version) — links to letter pages -->
+        <div class="hidden md:flex flex-wrap gap-0.5 max-w-sm">
+            
+            
+            
+            <a href="a.html"
+               class="alpha-btn has-entries "
+               title="ა">ა</a>
+            
+            
+            
+            
+            <a href="b.html"
+               class="alpha-btn has-entries "
+               title="ბ">ბ</a>
+            
+            
+            
+            
+            <a href="g.html"
+               class="alpha-btn has-entries "
+               title="გ">გ</a>
+            
+            
+            
+            
+            <a href="d.html"
+               class="alpha-btn has-entries "
+               title="დ">დ</a>
+            
+            
+            
+            
+            <a href="e.html"
+               class="alpha-btn has-entries "
+               title="ე">ე</a>
+            
+            
+            
+            
+            <a href="v.html"
+               class="alpha-btn has-entries "
+               title="ვ">ვ</a>
+            
+            
+            
+            
+            <a href="z.html"
+               class="alpha-btn has-entries "
+               title="ზ">ზ</a>
+            
+            
+            
+            
+            <a href="t.html"
+               class="alpha-btn has-entries "
+               title="თ">თ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ი">ი</span>
+            
+            
+            
+            
+            <a href="k.html"
+               class="alpha-btn has-entries "
+               title="კ">კ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ლ">ლ</span>
+            
+            
+            
+            
+            <a href="m.html"
+               class="alpha-btn has-entries "
+               title="მ">მ</a>
+            
+            
+            
+            
+            <a href="n.html"
+               class="alpha-btn has-entries "
+               title="ნ">ნ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ო">ო</span>
+            
+            
+            
+            
+            <a href="p.html"
+               class="alpha-btn has-entries "
+               title="პ">პ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ჟ">ჟ</span>
+            
+            
+            
+            
+            <a href="r.html"
+               class="alpha-btn has-entries "
+               title="რ">რ</a>
+            
+            
+            
+            
+            <a href="s.html"
+               class="alpha-btn has-entries "
+               title="ს">ს</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ტ">ტ</span>
+            
+            
+            
+            
+            <a href="u.html"
+               class="alpha-btn has-entries "
+               title="უ">უ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ფ">ფ</span>
+            
+            
+            
+            
+            <a href="q.html"
+               class="alpha-btn has-entries active"
+               title="ქ">ქ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ღ">ღ</span>
+            
+            
+            
+            
+            <a href="y.html"
+               class="alpha-btn has-entries "
+               title="ყ">ყ</a>
+            
+            
+            
+            
+            <a href="sh.html"
+               class="alpha-btn has-entries "
+               title="შ">შ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ჩ">ჩ</span>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ც">ც</span>
+            
+            
+            
+            
+            <a href="dz.html"
+               class="alpha-btn has-entries "
+               title="ძ">ძ</a>
+            
+            
+            
+            
+            <a href="w.html"
+               class="alpha-btn has-entries "
+               title="წ">წ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ჭ">ჭ</span>
+            
+            
+            
+            
+            <a href="x.html"
+               class="alpha-btn has-entries "
+               title="ხ">ხ</a>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ჯ">ჯ</span>
+            
+            
+            
+            
+            <span class="alpha-btn empty" title="ჰ">ჰ</span>
+            
+            
+        </div>
+    </div>
+</div>
+
+<!-- POS FILTER BAR -->
+<div class="bg-white border-b border-gray-100 px-4 py-2.5">
+    <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap">
+        <span class="text-xs text-gray-400 font-medium tracking-widest mr-1">მეტყველების ნაწილი | POS:</span>
+        
+        <button onclick="togglePOS(this, 'noun')"
+                class="pos-chip on"
+                data-pos="noun">სახ.</button>
+        
+        <button onclick="togglePOS(this, 'verb')"
+                class="pos-chip on"
+                data-pos="verb">ზმნ.</button>
+        
+        <button onclick="togglePOS(this, 'adj')"
+                class="pos-chip on"
+                data-pos="adj">ზედ.</button>
+        
+        <button onclick="togglePOS(this, 'adv')"
+                class="pos-chip on"
+                data-pos="adv">ზმნზ.</button>
+        
+        <button onclick="togglePOS(this, 'num')"
+                class="pos-chip on"
+                data-pos="num">რცხ.</button>
+        
+        <button onclick="togglePOS(this, 'pron')"
+                class="pos-chip on"
+                data-pos="pron">ნაც.</button>
+        
+        <button onclick="togglePOS(this, 'conj')"
+                class="pos-chip on"
+                data-pos="conj">კავ.</button>
+        
+        <button onclick="togglePOS(this, 'prep')"
+                class="pos-chip on"
+                data-pos="prep">თანდ.</button>
+        
+        <button onclick="togglePOS(this, 'part')"
+                class="pos-chip on"
+                data-pos="part">ნაწ.</button>
+        
+        <button onclick="togglePOS(this, 'other')"
+                class="pos-chip on"
+                data-pos="other">სხვ.</button>
+        
+        <span class="ml-auto text-xs text-gray-400" id="count-label">2 ნაჩვ.</span>
+    </div>
+</div>
+
+
+<!-- MAIN AREA -->
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex gap-8">
+
+    <!-- SIDEBAR -->
+    <aside class="hidden lg:block w-40 flex-shrink-0">
+        <div class="sidebar-sticky">
+
+            <!-- Search (within this letter) -->
+            <div class="relative mb-5">
+                <input id="lex-search" type="text"
+                       placeholder="ძიება…"
+                       class="w-full border border-gray-200 rounded-sm px-3 py-1.5 text-xs placeholder-gray-400 focus:outline-none focus:border-gray-400 bg-white">
+            </div>
+
+            <!-- Letter nav — links to other letter pages -->
+            <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">ᲐᲜᲑᲐᲜᲘ</p>
+            <nav class="flex flex-col gap-0.5">
+                
+                <a href="a.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ა
+                    <span class="text-gray-400 font-normal ml-1">(2)</span>
+                </a>
+                
+                <a href="b.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ბ
+                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                </a>
+                
+                <a href="g.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    გ
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                </a>
+                
+                <a href="d.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    დ
+                    <span class="text-gray-400 font-normal ml-1">(2)</span>
+                </a>
+                
+                <a href="e.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ე
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                </a>
+                
+                <a href="v.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ვ
+                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                </a>
+                
+                <a href="z.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ზ
+                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                </a>
+                
+                <a href="t.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    თ
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                </a>
+                
+                <a href="k.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    კ
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                </a>
+                
+                <a href="m.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    მ
+                    <span class="text-gray-400 font-normal ml-1">(14)</span>
+                </a>
+                
+                <a href="n.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ნ
+                    <span class="text-gray-400 font-normal ml-1">(4)</span>
+                </a>
+                
+                <a href="p.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    პ
+                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                </a>
+                
+                <a href="r.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    რ
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                </a>
+                
+                <a href="s.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ს
+                    <span class="text-gray-400 font-normal ml-1">(14)</span>
+                </a>
+                
+                <a href="u.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    უ
+                    <span class="text-gray-400 font-normal ml-1">(4)</span>
+                </a>
+                
+                <a href="q.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          bg-gray-100"
+                   style="color:var(--crimson);">
+                    ქ
+                    <span class="text-gray-400 font-normal ml-1">(2)</span>
+                </a>
+                
+                <a href="y.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ყ
+                    <span class="text-gray-400 font-normal ml-1">(4)</span>
+                </a>
+                
+                <a href="sh.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    შ
+                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                </a>
+                
+                <a href="dz.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ძ
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                </a>
+                
+                <a href="w.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    წ
+                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                </a>
+                
+                <a href="x.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ხ
+                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                </a>
+                
+            </nav>
+
+        </div>
+    </aside>
+
+    <!-- ENTRIES -->
+    <div class="flex-1 min-w-0" id="entries-container">
+
+        <div class="flex flex-col gap-3">
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-qeba"
+                     data-pos="noun"
+                     data-lemma="ქება">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ქება</span>
+                        
+                        <span class="pos-tag">სახ.</span>
+                        
+                        
+                        <span class="gen-tag">f.</span>
+                        
+                        
+                        <span class="greek-form">αἴνεσις</span>
+                        
+                        <span class="text-gray-300 text-xs">/</span>
+                        <span class="greek-form">ἔπαινος</span>
+                        
+                        
+                    </div>
+
+                    <!-- External links -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <a href="https://logeion.uchicago.edu/%CE%B1%E1%BC%B4%CE%BD%CE%B5%CF%83%CE%B9%CF%82"
+                           target="_blank" rel="noopener"
+                           class="ext-link-badge logeion-badge">Logeion</a>
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <span class="sense-num">1.</span>
+                        
+                        <div>
+                            <div class="sense-def">ქება, განდიდება; ღვთის სადიდებელი</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-2">
+                        
+                        <span class="sense-num">2.</span>
+                        
+                        <div>
+                            <div class="sense-def">სიტყვიერი სადიდებელი; ჰომილია</div>
+                            
+                            <div class="sense-note">ლიტ. ჟანრის აღსანიშნავად</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation -->
+                
+
+                <!-- Footer: sources + see-also -->
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        <a href="../texts/mrav-kharbeba-1.html"
+                           class="underline decoration-dotted hover:text-gray-800 transition-colors">ხარება I</a>
+                        
+                        
+                    </div>
+                    
+
+                    
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        <span class="text-gray-400">იხ.:</span>
+                        
+                        <a href="#lex-dideba"
+                           class="font-serif-geo underline decoration-dotted hover:text-gray-800 transition-colors">დიდება</a>
+                        
+                    </div>
+                    
+
+                </div>
+                
+
+            </article>
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-qerobinebr"
+                     data-pos="adj"
+                     data-lemma="ქერობინებრ">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ქერობინებრ</span>
+                        
+                        <span class="pos-tag">ზედ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">ქერობინისებრი, ქერობინის მსგავსი.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation -->
+                
+
+                <!-- Footer: sources + see-also -->
+                
+
+            </article>
+            
+        </div>
+
+        <!-- No-results message -->
+        <div id="no-results" class="hidden flex-col items-center justify-center py-16 text-center">
+            <p class="text-sm text-gray-500">ვერ მოიძებნა</p>
+            <p class="text-xs text-gray-400 mt-1">სხვა სიტყვა სცადეთ</p>
+        </div>
+
+    </div><!-- /entries -->
+</div><!-- /layout -->
+
+
+</main>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer class="border-t border-gray-200 py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+        <span>2026, ილიას სახ. უნივ. · ლინგვ. კვლ. ინსტ.</span>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <span class="flex items-center gap-2">
+                TEI-XML:
+                <a href="../data/texts/" class="hover:text-gray-600 underline">ტექსტი</a>
+                <a href="../data/lexicon.xml" class="hover:text-gray-600 underline">ლექსიკონი</a>
+                <a href="../data/catalog.xml" class="hover:text-gray-600 underline">კატალოგი</a>
+            </span>
+            <span class="hidden sm:inline text-gray-300">|</span>
+            
+            <span>CC BY-NC-SA 4.0</span>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+const activePOS = new Set(["noun", "verb", "adj", "adv", "num", "pron", "conj", "prep", "part", "other"]);
+
+function togglePOS(btn, pos) {
+    btn.classList.toggle('on');
+    if (activePOS.has(pos)) activePOS.delete(pos);
+    else activePOS.add(pos);
+    applyFilters();
+}
+
+const searchInput = document.getElementById('lex-search');
+if (searchInput) searchInput.addEventListener('input', applyFilters);
+
+function applyFilters() {
+    const q = searchInput ? searchInput.value.toLowerCase() : '';
+    let visible = 0;
+    document.querySelectorAll('.entry-card').forEach(card => {
+        const posOk    = activePOS.has(card.dataset.pos);
+        const searchOk = !q || card.dataset.lemma.includes(q)
+                              || card.textContent.toLowerCase().includes(q);
+        const show     = posOk && searchOk;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+    });
+    const lbl = document.getElementById('count-label');
+    if (lbl) lbl.textContent = visible + ' ნაჩვ.';
+    const noRes = document.getElementById('no-results');
+    if (noRes) noRes.classList.toggle('hidden', visible > 0);
+}
+</script>
+
+</body>
+</html>

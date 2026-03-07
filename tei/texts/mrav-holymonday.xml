@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/relaxng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xml:id="mrav-holymonday"
+  xml:lang="ka">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">იოვანე კოსტანტინეპოლელი — დიდსა ორშაბათსა</title>
+        <title xml:lang="la" type="sub">Iohannis Chrysostomi Sermo in feriam secundam hebdomadae sanctae</title>
+        <author ref="#aut-iohannes-cpl">
+          <name xml:lang="ka">იოვანე კოსტანტინეპოლელი (ოქროპირი)</name>
+          <name xml:lang="la">Iohannes Chrysostomus</name>
+          <idno type="VIAF">106963496</idno>
+          <idno type="CPG">4335</idno>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.</publisher>
+        <pubPlace>თბილისი</pubPlace>
+        <date when="2026">2026</date>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="N35">
+            <abbr type="siglum">Σ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 35</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus from="280r" to="289v">ff. 280r–289v</locus>
+                  <note>ძირ. სია. ლემა ამ გამოცემაში.</note>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+          <witness xml:id="N50">
+            <abbr type="siglum">Ν</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 50</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus><!-- to be verified --></locus>
+                  <note>მეორე მოწმე.</note>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <p>Text is highly fragmentary in this section. Folio breaks (pb) reflect Shanidze 1959 print references where available. Large lacuna noted at the end of the current surviving fragment.</p>
+      </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="iiif-loc-n35" url="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="text" xml:id="mrav-holymonday-body">
+        <head>
+          <hi rend="rubric">დიდსა ორშაბათსა: თქუმული იოვანე ეპისკოპოსისაჲ კოსტანტინეპოვლელისაჲ</hi>
+        </head>
+        
+        <p xml:id="p1" n="1">
+          <hi rend="initial">Ⴅ</hi>ითარცა გუაუწყა ჩუენ მათე მახარებელმან, რამეთუ თქუა: განთიად ვითარ აღვიდოდა იესუ ქალაქად, შეემშია და იხილა ლეღუი მდგომარჱ და მივიდა, რაჲთამცა პოვა ნაყოფი მას შინა, და, ვითარ არა პოვა, რქუა ლეღუსა მას: ნუღარამცა გაქუს ნაყოფი უკუნისამდე! და მუნქუესვე განჴმა<note n="1">(1)*</note>.
+        </p>
+        
+        <p xml:id="p2" n="2">
+          ამასღა მოგაჴსენებ, საყუარელნო: მნებავს, რაჲთამცა გულის . . . . .
+          <gap reason="lost" unit="folio" quantity="75">
+            <desc>აკლია დაახლოებით 75 ფურცლის ტექსტი</desc>
+          </gap>
+        </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>
