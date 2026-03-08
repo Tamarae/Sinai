@@ -163,9 +163,20 @@ class TextParser:
     def _render_body(self, body_el: ET.Element) -> str:
         chunks = []
         for div in body_el.findall(".//tei:div[@type='text']", NS):
+            for head_el in div.findall("tei:head", NS):
+                chunks.append(self._render_head(head_el))
             for p_el in div.findall("tei:p", NS):
                 chunks.append(self._render_paragraph(p_el))
         return "\n".join(chunks)
+
+    def _render_head(self, head_el: ET.Element) -> str:
+        head_type = head_el.get("type", "")
+        inner = "".join(self._render_children(head_el, "", ""))
+        if head_type == "rubric":
+            return f'<div class="ms-rubric">{inner}</div>'
+        if head_type == "dateline":
+            return f'<div class="ms-dateline">{inner}</div>'
+        return f'<div class="ms-head">{inner}</div>'
 
     def _render_paragraph(self, p_el: ET.Element) -> str:
         par_id = _xml_id_attr(p_el) or f"p{id(p_el)}"
@@ -204,16 +215,16 @@ class TextParser:
 
             elif tag == "hi":
                 rend  = child.get("rend", "")
-                inner = html_lib.escape("".join(child.itertext()))
+                inner = "".join(self._render_children(child, par_id, par_n))
                 if rend == "initial":
                     parts.append(
                         f'<span class="geo-initial" style="color:var(--crimson);'
-                        f'font-family:\'Noto Serif Georgian\',Georgia,serif;'
-                        f'font-weight:700;">{inner}</span>'
+                        f'font-family:\'Noto Sans Georgian\',sans-serif;'
+                        f'font-weight:500;">{inner}</span>'
                     )
                 elif rend == "rubric":
                     parts.append(
-                        f'<span class="geo-rubric" style="color:var(--crimson);font-style:italic;">{inner}</span>'
+                        f'<span class="geo-rubric" style="color:var(--crimson);">{inner}</span>'
                     )
                 else:
                     parts.append(f'<em>{inner}</em>')

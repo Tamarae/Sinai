@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,53 +561,56 @@
             <a href="mrav-basil-2.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-basil-1">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა იყო მათ დღეთა შინა აღძვრაჲ მწვალებელთაჲ მართლ-მორწმუნეთა ზედა, რამეთუ იტყოდეს მეფისათჳსცა, ვითარმედ: არიანოს არს. და მოვიდეს არიანოსნი სარჩელად წმიდისა ბასილი ეპისკოპოსისა და ეტყოდეს მას კათოლიკე ეკლესიისათჳს კესარია კაბადუკიისა, ვითარმედ: ჩუენი არსო და შენ რაჲსთჳს გიპყრია? ხოლო იგი მიუგებდა სიტყუათა მათთაებრ. და ვერ უძლეს მათ წინა-დადგომად სიტყუათა მისთა სიბრძნისა მისგან და სულისა წმიდისა, რომლითა იტყოდა.
+            <div class="ms-head">
+          <span class="geo-rubric" style="color:var(--crimson);">თ̃ა იანვარსა: ა: წმიდისა ბასილისი. სიტყუაჲ ბასილი მთავარ-ეპისკოპოსისათჳს</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იყო მათ დღეთა შინა აღძვრაჲ მწვალებელთაჲ მართლ-მორწმუნეთა ზედა, რამეთუ იტყოდეს მეფისათჳსცა, ვითარმედ: არიანოს არს. და მოვიდეს არიანოსნი სარჩელად წმიდისა ბასილი ეპისკოპოსისა და ეტყოდეს მას კათოლიკე ეკლესიისათჳს კესარია კაბადუკიისა, ვითარმედ: ჩუენი არსო და შენ რაჲსთჳს გიპყრია? ხოლო იგი მიუგებდა სიტყუათა მათთაებრ. და ვერ უძლეს მათ წინა-დადგომად სიტყუათა მისთა სიბრძნისა მისგან და სულისა წმიდისა, რომლითა იტყოდა.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მათ ვითარცა იხილნეს თავნი თჳსნი უძლურად წინაშე მისსა, განიზრახვიდეს, ვითარმედ: მივაწიოთ 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მათ ვითარცა იხილნეს თავნი თჳსნი უძლურად წინაშე მისსა, განიზრახვიდეს, ვითარმედ: მივაწიოთ 
           <span class="app-inline" data-app="app-1" title="ვარ. 1">სასჯელი</span>
           ჩუენი წინაშე მეფისა. და ჰრქუეს მას, ვითარმედ: ეკლესიაჲ ჩუენი უპყრიეს თჳნიერ სამართლისა. ხოლო მეფემან ჰკითხა მას: უკუეთუ ესრჱთ არს?
           <span class="folio-milestone" data-wit="" data-folio="67v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0133" data-sp="133" title="Sin. geo. , f. 67v">67v</span>
           მაშინ ჰრქუა წმიდამან ეპისკოპოსმან მეფესა: უფალო მეფე, ჯერ-არს სახლისათჳს ღმრთისა თჳთ თავადმან ყოს სასჯელი. და ჰრქუა მეფემან: ჭეშმარიტად ეგრე იყავნ! აჰა ესერა უბრძანო დაკრძალვად კარი ეკლესიისაჲ კლიტითა და ბეჭდითა თქუენითა და ჩუენითაცა. და იყოს, რომელსაცა განეღოს ღმრთისა მიერ, მანცა დაიმკჳდროს ეკლესიაჲ.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა დაჰკრძალეს კარი ეკლესიისაჲ ბრძანებითა მეფისაჲთა და დაჰბეჭდეს ყოველთა ერთბამად. და ჰრქუა წმიდამან ეპისკოპოსმან არიანოსთა მათ: უკუეთუ ჯერ-გიჩს თქუენ, დავადგრეთ სამ დღე ლოცვასა და შემდგომად სამისა დღისა მოვიდეთ ეკლესიად. და ყვეს ეგრჱთ. და დაადგრეს სამ დღე ლოცვასა და შემდგომად სამისა დღისა მოვიდეს ეკლესიად. ჰრქუა წმიდამან ეპისკოპოსმან არიანოზთა მათ: მივედით თქუენ პირველად კარად ეკლესიისა და ილოცეთ, რაჲთა განგეხუნენ, რამეთუ უმრავლე ხართ თქუენ. ხოლო იგინი მივიდეს განთიადითგან და ილოცვიდეს შოვა-სამხრამდე კართა მათ ეკლესიისათა, და არა იყო ჴმაჲ, არცა სმენია, ვითარცა წერილ არს ქურუმათა მათთჳს ბაალისთა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა დაჰკრძალეს კარი ეკლესიისაჲ ბრძანებითა მეფისაჲთა და დაჰბეჭდეს ყოველთა ერთბამად. და ჰრქუა წმიდამან ეპისკოპოსმან არიანოსთა მათ: უკუეთუ ჯერ-გიჩს თქუენ, დავადგრეთ სამ დღე ლოცვასა და შემდგომად სამისა დღისა მოვიდეთ ეკლესიად. და ყვეს ეგრჱთ. და დაადგრეს სამ დღე ლოცვასა და შემდგომად სამისა დღისა მოვიდეს ეკლესიად. ჰრქუა წმიდამან ეპისკოპოსმან არიანოზთა მათ: მივედით თქუენ პირველად კარად ეკლესიისა და ილოცეთ, რაჲთა განგეხუნენ, რამეთუ უმრავლე ხართ თქუენ. ხოლო იგინი მივიდეს განთიადითგან და ილოცვიდეს შოვა-სამხრამდე კართა მათ ეკლესიისათა, და არა იყო ჴმაჲ, არცა სმენია, ვითარცა წერილ არს ქურუმათა მათთჳს ბაალისთა.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
           <span class="folio-milestone" data-wit="" data-folio="71" title="Sin. geo. , f. 71">71</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴠ</span>ბასრობდა მათ წმიდაჲ ეპისკოპოსი, ვითარცა ელია ქურუმთა მათ. და ვითარცა ვერ მიიღეს თხოვაჲ იგი, ჰრქუა მათ: განდეგით აწ თქუენ თჳსგან. და უკუნდგეს იგინი სირცხჳლეულნი ერთ კერძო და ჰხედვიდეს მას, ვითარმედ რაჲ-ძი ყოს მანცა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴠ</span>ბასრობდა მათ წმიდაჲ ეპისკოპოსი, ვითარცა ელია ქურუმთა მათ. და ვითარცა ვერ მიიღეს თხოვაჲ იგი, ჰრქუა მათ: განდეგით აწ თქუენ თჳსგან. და უკუნდგეს იგინი სირცხჳლეულნი ერთ კერძო და ჰხედვიდეს მას, ვითარმედ რაჲ-ძი ყოს მანცა.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
           <span class="folio-milestone" data-wit="" data-folio="68r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0134" data-sp="134" title="Sin. geo. , f. 68r">68r</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ წარმოჴდა წმიდაჲ ეპისკოპოსი ხუცესთა და დიაკონთა თჳსთა თანა და უბრძანა კუერექსისა თქუმაჲ. და შეწირა ლოცვაჲ და უბრძანა ფსალმუნისა თქუმაჲ რიზ; 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ წარმოჴდა წმიდაჲ ეპისკოპოსი ხუცესთა და დიაკონთა თჳსთა თანა და უბრძანა კუერექსისა თქუმაჲ. და შეწირა ლოცვაჲ და უბრძანა ფსალმუნისა თქუმაჲ რიზ; 
           განმეხუენით მე, ბჭენო სიმართლისანო, შევიდე მათ და აუვარო უფალსა.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მისა შემდგომად უბრძანა პავლეს მოციქულისა მიწერილი ტიმოთჱსა მიმართ პირველისა თავისა საკითხავი: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>მისა შემდგომად უბრძანა პავლეს მოციქულისა მიწერილი ტიმოთჱსა მიმართ პირველისა თავისა საკითხავი: 
           ამას მივსწერ შენდა და ვესავ ჩემსაცა ადრე მოსლვასა, 
           რომელსა შინა არს სარმრთოჲსა ჴორცთ შესხმისა განგებულებაჲ. და იტყჳს ეკლესიისათჳს სახლად ღმრთისა და სუეტად სიმტკიცისა და ჭეშმარიტებისა.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა შემდგომად საკიტხავისა ასწავა თქუმად ალელუაჲ, ფსალმუნი ჲე: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა შემდგომად საკიტხავისა ასწავა თქუმად ალელუაჲ, ფსალმუნი ჲე: 
           შევიდე სახლსა შენსა მსხუერპლითა და მიგცნე შენ აღნათქუემნი ჩემნი, რომელ აღთქუნეს ბაგეთა ჩემთა.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო შემდგომად ალელუაჲსა მისცა მათ სახარებაჲ მათჱს თავისაჲ საკითხავად: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო შემდგომად ალელუაჲსა მისცა მათ სახარებაჲ მათჱს თავისაჲ საკითხავად: 
           და მო-რაჲ-ვიდა იესუ საზღვართა კესარია ფილიპჱსათა, 
           რომელ არს აღთქუმაჲ ეკლესიისათჳს უფლისა მიერ, ვითარმედ: 
           ბჭენი ჯოჯოხეთისანი არა ერეოდიან მას.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა შემდგომად წარკითხვისა სახარებისა დასწერა ჯუარი კარსა ეკლესიისა, ღაღატ-ყო და თქუა: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა შემდგომად წარკითხვისა სახარებისა დასწერა ჯუარი კარსა ეკლესიისა, ღაღატ-ყო და თქუა: 
           განმიხუენით მე ბჭენი თქუენი, მთავარნო, და განეხუნენ ბჭენი საუკუნენი და შევიდეს მეუფჱ დიდებისაჲ.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
           <span class="folio-milestone" data-wit="" data-folio="68v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0135" data-sp="135" title="Sin. geo. , f. 68v">68v</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მეყსეულად დაირღუეს კლიტენი იგი, და ბეჭედნი იგი დასცჳვეს კართა მათგან, და განეხუნეს კარნი. და შევიდა წმიდაჲ ეპისკოპოსი და ყოველნი მოწესენი მის თანა და აღასრულა საღმრთოჲ საიდუმლოჲ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მეყსეულად დაირღუეს კლიტენი იგი, და ბეჭედნი იგი დასცჳვეს კართა მათგან, და განეხუნეს კარნი. და შევიდა წმიდაჲ ეპისკოპოსი და ყოველნი მოწესენი მის თანა და აღასრულა საღმრთოჲ საიდუმლოჲ.
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ სირცხჳლეულ იქმნა არიოს და ყოველნი მოწაფენი მისნი, და ვერღავინ იკადრა სიტყჳს-გებად წმიდისა ბასილისა მაცილობელთაგანმან, რამეთუ სული წმიდაჲ დამკჳდრებულ იყო მის თანა მარადის.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ სირცხჳლეულ იქმნა არიოს და ყოველნი მოწაფენი მისნი, და ვერღავინ იკადრა სიტყჳს-გებად წმიდისა ბასილისა მაცილობელთაგანმან, რამეთუ სული წმიდაჲ დამკჳდრებულ იყო მის თანა მარადის.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -738,12 +764,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

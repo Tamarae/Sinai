@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,32 +561,35 @@
             <a href="mrav-holymonday.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-bzoba-meletios">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ითარცა მოვიდა და მოიწია დღესასწაული იგი ბალარჯობისაჲ, რომელსა ჰყოფდეს ჰურიანი იგი მსგავსად მამათა მათთა, დაჯდა იესუ კიცუსა<span class="note-anchor" title="1*" id="anchor-note-4433801312">1</span> ზედა და შევიდა იერუსალემდ. და თუ სასწაულთა მათ გამო ვერ იცნეს იგი, მდაბლად მისულითა ღათუ იცნან იგი?
+            <div class="ms-head">
+          <span class="geo-rubric" style="color:var(--crimson);">თქუმული წმიდისა მელეტი ანტიოქიელ ებისკოპოსისაჲ, ბზობისათჳს და შესხმისა ყრმათაჲსა</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ითარცა მოვიდა და მოიწია დღესასწაული იგი ბალარჯობისაჲ, რომელსა ჰყოფდეს ჰურიანი იგი მსგავსად მამათა მათთა, დაჯდა იესუ კიცუსა<span class="note-anchor" title="1*" id="anchor-note-4466570592">1</span> ზედა და შევიდა იერუსალემდ. და თუ სასწაულთა მათ გამო ვერ იცნეს იგი, მდაბლად მისულითა ღათუ იცნან იგი?
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ უფროჲსღა აღივსნეს შურითა; რომელთაჲ ჯერ- და წეს-იყო ყრმებსა მას თანა ჴმობაჲ და წინა მიგებებად, იგინი ყრმებსა მასცა ადუმებდეს. ვითარ იხილეს კრებაჲ იგი ერისაჲ მის, რამეთუ ჴმითა კურთხევისაჲთა აღასრულებდეს წინაწარმეტყუელებასა მას ზაქარიაჲსსა<span class="note-anchor" title="2*" id="anchor-note-4433798432">2</span>, მოვიდეს იესუსა<span class="note-anchor" title="3*" id="anchor-note-4433794512">3</span> და რქუეს<span class="note-anchor" title="4*" id="anchor-note-4433793792">4</span>: შეჰრისხენ ყრმათა მაგათ, რაჲთა არა ეგრე ჴმობდენ. რქუა<span class="note-anchor" title="5*" id="anchor-note-4433802112">5</span> მათ იესუ: და ღათუ ეგენი დადუმნენ, რომელთაგან წინაწარმეტყუელებაჲ აღესრულების, <span class="folio-milestone" data-wit="" data-folio="143v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145" title="Sin. geo. , f. 143v">143v</span> ქვანი ესე ღაღადებდენ მაგათ წილ<span class="note-anchor" title="(1)*" id="anchor-note-4433804672">6</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ უფროჲსღა აღივსნეს შურითა; რომელთაჲ ჯერ- და წეს-იყო ყრმებსა მას თანა ჴმობაჲ და წინა მიგებებად, იგინი ყრმებსა მასცა ადუმებდეს. ვითარ იხილეს კრებაჲ იგი ერისაჲ მის, რამეთუ ჴმითა კურთხევისაჲთა აღასრულებდეს წინაწარმეტყუელებასა მას ზაქარიაჲსსა<span class="note-anchor" title="2*" id="anchor-note-4466564512">2</span>, მოვიდეს იესუსა<span class="note-anchor" title="3*" id="anchor-note-4466561872">3</span> და რქუეს<span class="note-anchor" title="4*" id="anchor-note-4466564832">4</span>: შეჰრისხენ ყრმათა მაგათ, რაჲთა არა ეგრე ჴმობდენ. რქუა<span class="note-anchor" title="5*" id="anchor-note-4466570112">5</span> მათ იესუ: და ღათუ ეგენი დადუმნენ, რომელთაგან წინაწარმეტყუელებაჲ აღესრულების, <span class="folio-milestone" data-wit="" data-folio="143v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0145" title="Sin. geo. , f. 143v">143v</span> ქვანი ესე ღაღადებდენ მაგათ წილ<span class="note-anchor" title="(1)*" id="anchor-note-4466572432">6</span>.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო არა ეგების უტყუთა<span class="note-anchor" title="6*" id="anchor-note-4433793072">7</span> ჴმობაჲ და პირ-მეტყუელთა უმანკოთა დადუმებაჲ. უკუეთუ ჴმობდენ ყრმანი ეგე თქუენნი, აღასრულებენ წინაწარმეტყუელებასა. და ერიცა იგი, რომელ მოკრებულ იყო, აკურთხევდეს, და წარმართნი რტოებითა მით დანაკის კუდისაჲთა წინა მიგებვოდეს მჴსნელთა მას სოფლისასა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო არა ეგების უტყუთა<span class="note-anchor" title="6*" id="anchor-note-4466560192">7</span> ჴმობაჲ და პირ-მეტყუელთა უმანკოთა დადუმებაჲ. უკუეთუ ჴმობდენ ყრმანი ეგე თქუენნი, აღასრულებენ წინაწარმეტყუელებასა. და ერიცა იგი, რომელ მოკრებულ იყო, აკურთხევდეს, და წარმართნი რტოებითა მით დანაკის კუდისაჲთა წინა მიგებვოდეს მჴსნელთა მას სოფლისასა.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო უფალმან ვითარცა იხილა იერუსალემი, მწუხარე იყო დღესა მას სიხარულისა თჳსისასა, ტიროდა მას ზედა და თქუა: ნეტარმცა იყო შენ ზედა, იერუსალემ, გამო-თუმცა-ცხადებულ იყო შენდა ჟამი ესე ჴსნისაჲ!
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო უფალმან ვითარცა იხილა იერუსალემი, მწუხარე იყო დღესა მას სიხარულისა თჳსისასა, ტიროდა მას ზედა და თქუა: ნეტარმცა იყო შენ ზედა, იერუსალემ, გამო-თუმცა-ცხადებულ იყო შენდა ჟამი ესე ჴსნისაჲ!
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო მღდელთა მათ რაჲთამცა რწმენა საქმეთაჲ მათ, რომელი ეხილვა თუალითა მათითა, გულის-წყრომაჲ გულის-წყრომასა დაურთეს და აყენებდეს წინაწარმეტყუელებასა მას, რომელი ჩჩჳლთა მიერ აღესრულებოდა და ეშინოდა მძლავრ დადუმებად ყრმებისა მის, ნუუკუე ქვაჲ დაჰკრიბოს ერმან მან. მოვიდეს იესუსა<span class="note-anchor" title="3*" id="anchor-note-4433799872">8</span> და რქუეს: არა გესმისა, რასა-ესე იტყუიან შენთჳს? რქუა მათ იესუ: მესმის მე, რასა უწესოსა იტყუიან, რამეთუ დაადუმებთ მაგათ; ნუუკუე უცხოდ ანუ ძედ უცხოჲსად იტყუიანა და არა ღმრთად და ძედ ღმრთისად?
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო მღდელთა მათ რაჲთამცა რწმენა საქმეთაჲ მათ, რომელი ეხილვა თუალითა მათითა, გულის-წყრომაჲ გულის-წყრომასა დაურთეს და აყენებდეს წინაწარმეტყუელებასა მას, რომელი ჩჩჳლთა მიერ აღესრულებოდა და ეშინოდა მძლავრ დადუმებად ყრმებისა მის, ნუუკუე ქვაჲ დაჰკრიბოს ერმან მან. მოვიდეს იესუსა<span class="note-anchor" title="3*" id="anchor-note-4466566192">8</span> და რქუეს: არა გესმისა, რასა-ესე იტყუიან შენთჳს? რქუა მათ იესუ: მესმის მე, რასა უწესოსა იტყუიან, რამეთუ დაადუმებთ მაგათ; ნუუკუე უცხოდ ანუ ძედ უცხოჲსად იტყუიანა და არა ღმრთად და ძედ ღმრთისად?
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="folio-milestone" data-wit="" data-folio="144r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146" title="Sin. geo. , f. 144r">144r</span> <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუ<span class="note-anchor" title="1*" id="anchor-note-4433798032">9</span> ძედ ღმრთისად სახელ-მდებენ, თქუენ რაჲსა განრისხნებით ანუ მათ რად დაადუმებთ?
+          <span class="folio-milestone" data-wit="" data-folio="144r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0146" title="Sin. geo. , f. 144r">144r</span> <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ<span class="note-anchor" title="1*" id="anchor-note-4466565472">9</span> ძედ ღმრთისად სახელ-მდებენ, თქუენ რაჲსა განრისხნებით ანუ მათ რად დაადუმებთ?
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ რაჲსა-მე დაადუმებენ<span class="note-anchor" title="2*" id="anchor-note-4433797792">10</span> ყრმებსა მას, რამეთუ აჰა ეგერა რომელი სოლომონის ზედა იყო შესხმაჲ, რაჟამს-იგი დაჯდებოდა მეფედ იერუსალემს ზედა, რომელსა არცა ბრმასა თუალნი<span class="note-anchor" title="3*" id="anchor-note-4433793392">11</span> აეხილნეს და არცა მკელობელნი ევლინნეს და ეგრჱთ ოხრიდა ქუეყანაჲ ღაღადებითა მით და ქებითა. ხოლო ამან რომელმან ეგოდენნი სასწაულნი და საკუირველებანი ქმნა, ვითარ-მე იკადრეთ თქუმად, ვითარმედ: დაადუმეთ ერი ეგე მცირედისა მაგისთჳს ქებისა? ამის დღისათჳს მიეცა ქებაჲ ეგე მაგათ და ჴმობაჲ, რომელი თქუენცა აღმოგიკითხავს თქუმული დავითისი, ვითარმედ: პირითა ყრმათა ჩჩჳლთა მწოვართაჲთა დაემტკიცოს ქებაჲ<span class="note-anchor" title="(1)*" id="anchor-note-4433793152">12</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ რაჲსა-მე დაადუმებენ<span class="note-anchor" title="2*" id="anchor-note-4466564352">10</span> ყრმებსა მას, რამეთუ აჰა ეგერა რომელი სოლომონის ზედა იყო შესხმაჲ, რაჟამს-იგი დაჯდებოდა მეფედ იერუსალემს ზედა, რომელსა არცა ბრმასა თუალნი<span class="note-anchor" title="3*" id="anchor-note-4466560672">11</span> აეხილნეს და არცა მკელობელნი ევლინნეს და ეგრჱთ ოხრიდა ქუეყანაჲ ღაღადებითა მით და ქებითა. ხოლო ამან რომელმან ეგოდენნი სასწაულნი და საკუირველებანი ქმნა, ვითარ-მე იკადრეთ თქუმად, ვითარმედ: დაადუმეთ ერი ეგე მცირედისა მაგისთჳს ქებისა? ამის დღისათჳს მიეცა ქებაჲ ეგე მაგათ და ჴმობაჲ, რომელი თქუენცა აღმოგიკითხავს თქუმული დავითისი, ვითარმედ: პირითა ყრმათა ჩჩჳლთა მწოვართაჲთა დაემტკიცოს ქებაჲ<span class="note-anchor" title="(1)*" id="anchor-note-4466561232">12</span>.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო დასამტკიცებელთა<span class="note-anchor" title="4*" id="anchor-note-4433801392">13</span> საქმეთა მათ ბრძანა უფალმან შეძრვაჲ ქუეყანისაჲ, და იგინი არცაღა შეძრვისა<span class="note-anchor" title="5*" id="anchor-note-4433793472">14</span> მისთჳს ქუეყანისა<span class="note-anchor" title="6*" id="anchor-note-4433789392">15</span> დაემორჩილნეს უფალსა. მაშინ მოვიდა ჴმაჲ ზეცით და თქუა: გადიდე და მერმე უმეტჱს<span class="note-anchor" title="7*" id="anchor-note-4433804192">16</span> გადიდო<span class="note-anchor" title="(2)*" id="anchor-note-4433801632">17</span>. და ღათუ ძალი ჴმისაჲ მის ვერ გულისჴმა-ყვეს ჰურიათა მათ, ხოლო ჴმაჲ იგი ესმა, რამეთუ იტყოდესცა რომელნიმე: ქუხილი იყოო; და ზოგნი იტყოდეს: ანგელოზი ეტყოდაო;<span class="note-anchor" title="(3)*" id="anchor-note-4433802992">18</span> <span class="folio-milestone" data-wit="" data-folio="144v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147" title="Sin. geo. , f. 144v">144v</span> და არცა ჴმისა მისთჳს შეირცხუინეს და არცა სასწაულთა მათგან და არცა ძლიერებათა მისთათჳს, რომელთაჲ კიცუსა<span class="note-anchor" title="8*" id="anchor-note-4433798752">19</span> მას ზედა ჯდომისათჳს, ხოლო ჯერ-იყო წინა მიგებებად და სიხარული.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო დასამტკიცებელთა<span class="note-anchor" title="4*" id="anchor-note-4466569632">13</span> საქმეთა მათ ბრძანა უფალმან შეძრვაჲ ქუეყანისაჲ, და იგინი არცაღა შეძრვისა<span class="note-anchor" title="5*" id="anchor-note-4466559472">14</span> მისთჳს ქუეყანისა<span class="note-anchor" title="6*" id="anchor-note-4466557312">15</span> დაემორჩილნეს უფალსა. მაშინ მოვიდა ჴმაჲ ზეცით და თქუა: გადიდე და მერმე უმეტჱს<span class="note-anchor" title="7*" id="anchor-note-4466572272">16</span> გადიდო<span class="note-anchor" title="(2)*" id="anchor-note-4466570512">17</span>. და ღათუ ძალი ჴმისაჲ მის ვერ გულისჴმა-ყვეს ჰურიათა მათ, ხოლო ჴმაჲ იგი ესმა, რამეთუ იტყოდესცა რომელნიმე: ქუხილი იყოო; და ზოგნი იტყოდეს: ანგელოზი ეტყოდაო;<span class="note-anchor" title="(3)*" id="anchor-note-4466570992">18</span> <span class="folio-milestone" data-wit="" data-folio="144v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0147" title="Sin. geo. , f. 144v">144v</span> და არცა ჴმისა მისთჳს შეირცხუინეს და არცა სასწაულთა მათგან და არცა ძლიერებათა მისთათჳს, რომელთაჲ კიცუსა<span class="note-anchor" title="8*" id="anchor-note-4466565632">19</span> მას ზედა ჯდომისათჳს, ხოლო ჯერ-იყო წინა მიგებებად და სიხარული.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ჩუენ, საყვარელნო, განვაგდოთ ეგევითარი უგუნურებაჲ ურწმუნოებისაჲ<span class="note-anchor" title="9*" id="anchor-note-4433799952">20</span> და წადიერებით აღვიმსთოთ და ყრმათა თანა აღვიღოთ მცენარეთა რტოჲ და სიხარულით აღვიპყრნეთ ჴელნი ჩუენნი და გულითა წმიდითა შებმა-უყოთ საღმრთოსა გალობასა, ერთობით ყოველნი მივეგებვოდით და ვადიდებდეთ სარწმუნოებით უფალსა ღმერთსა ჩუენსა მამით და სულით წმიდითურთ აწ და მარადის, უკუნითი უკუნისამდე<span class="note-anchor" title="10*" id="anchor-note-4433797952">21</span>. ამენ<span class="note-anchor" title="11*" id="anchor-note-4433794192">22</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ჩუენ, საყვარელნო, განვაგდოთ ეგევითარი უგუნურებაჲ ურწმუნოებისაჲ<span class="note-anchor" title="9*" id="anchor-note-4466567952">20</span> და წადიერებით აღვიმსთოთ და ყრმათა თანა აღვიღოთ მცენარეთა რტოჲ და სიხარულით აღვიპყრნეთ ჴელნი ჩუენნი და გულითა წმიდითა შებმა-უყოთ საღმრთოსა გალობასა, ერთობით ყოველნი მივეგებვოდით და ვადიდებდეთ სარწმუნოებით უფალსა ღმერთსა ჩუენსა მამით და სულით წმიდითურთ აწ და მარადის, უკუნითი უკუნისამდე<span class="note-anchor" title="10*" id="anchor-note-4466567312">21</span>. ამენ<span class="note-anchor" title="11*" id="anchor-note-4466562832">22</span>.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -701,12 +727,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

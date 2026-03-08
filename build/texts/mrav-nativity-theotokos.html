@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,8 +561,12 @@
             <a href="mrav-enkenia-1.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-nativity-theotokos">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴘ</span>ობაჲ, მისისა შობისაჲ წიგნი წაიკითხონ და შესხმაჲ ღმრთისმშობელისაჲ, რომელიცა გინდეს.
+            <div class="ms-head">
+          <span class="folio-milestone" data-wit="" data-folio="407r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0409" title="Sin. geo. , f. 407r">407r</span>
+          <span class="geo-rubric" style="color:var(--crimson);">Ⴇ̃ა სეკტენბერსა ჱ̂. შობაჲ წმიდისა ღმრთის-მშობელისაჲ</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴘ</span>ობაჲ, მისისა შობისაჲ წიგნი წაიკითხონ და შესხმაჲ ღმრთისმშობელისაჲ, რომელიცა გინდეს.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -553,7 +580,7 @@
         <div id="facs-sticky">
             <div id="facs-metabar">
                 <button class="facs-nav" id="facs-prev" onclick="navigateFacs(-1)" disabled>‹</button>
-                <span id="facs-folio-label">—</span>
+                <span id="facs-folio-label">f. 407r</span>
                 <button class="facs-nav" id="facs-next" onclick="navigateFacs(1)">›</button>
                 <span id="facs-wit-lbl">Sin. geo. N 35 · 864 CE</span>
                 <a id="facs-loc-link" href="https://www.loc.gov/resource/amedmonastery.00279386887-ms/" target="_blank" rel="noopener">LoC ↗</a>
@@ -677,12 +704,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

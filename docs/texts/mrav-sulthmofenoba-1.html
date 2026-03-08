@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,68 +561,71 @@
             <a href="mrav-sulthmofenoba-2.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-sulthmofenoba-1">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴍ</span>დესმე ენანი ღმრთისაგან რისხვითა განიწვალნეს უკეთურებისათჳს კაცთაჲსა, ხოლო ამას დღესა შინა წყალობითა და მადლითა სულისა წმიდისაჲთა <span class="folio-milestone" data-wit="" data-folio="173v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0175" title="Sin. geo. , f. 173v">173v</span> მოეცნეს შეწევნისათჳს სოფლისა; მაშინ განიბნინეს, რაჲთა მოყუასმან მოყუსისა თჳსისაჲ ნუ ისმინოს, აწ მოეცნეს, რაჲთა ისმინონ, ისწაონ და გულისხმა ყონ.
+            <div class="ms-head">
+                    <span class="geo-rubric" style="color:var(--crimson);">საკითხავნი მარტჳლიისანი: თქუმული იოვანე მთავარეპისკოპოსისაჲ დღისა მისთჳს რომელსა მოევლინა სული წმიდაჲ</span>
+                </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴍ</span>დესმე ენანი ღმრთისაგან რისხვითა განიწვალნეს უკეთურებისათჳს კაცთაჲსა, ხოლო ამას დღესა შინა წყალობითა და მადლითა სულისა წმიდისაჲთა <span class="folio-milestone" data-wit="" data-folio="173v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0175" title="Sin. geo. , f. 173v">173v</span> მოეცნეს შეწევნისათჳს სოფლისა; მაშინ განიბნინეს, რაჲთა მოყუასმან მოყუსისა თჳსისაჲ ნუ ისმინოს, აწ მოეცნეს, რაჲთა ისმინონ, ისწაონ და გულისხმა ყონ.
                 </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ას ჟამსა განყოფამან მან ენათამან საქმენი ცუდნი განაქარვნა; ხოლო აწ ენანი რომელნი მომეცნეს, საქმენი ჭეშმარიტებისანი დაამტკიცნეს და აღავსნეს; მუნ მოეცნეს, რაჲთა ზრახვანი უკეთურნი განაქარვნეს, და აქა მოეცნეს, რაჲთა კეთილი ღმრთისა ნებაჲ ქადაგონ.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ას ჟამსა განყოფამან მან ენათამან საქმენი ცუდნი განაქარვნა; ხოლო აწ ენანი რომელნი მომეცნეს, საქმენი ჭეშმარიტებისანი დაამტკიცნეს და აღავსნეს; მუნ მოეცნეს, რაჲთა ზრახვანი უკეთურნი განაქარვნეს, და აქა მოეცნეს, რაჲთა კეთილი ღმრთისა ნებაჲ ქადაგონ.
                 </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ას ჟამსა მისთჳს, რაჲთამცა არა ისმინეს ენაჲ იგი ურთიერთასი, და აწ მისთჳს, რაჲთა ყური მიუყონ სიტყუათა შეწევნისათა. მას ჟამსა განიბნინეს ენანი გოდლისა მისთჳს, რომელი აღიშჱნებოდა<span class="note-anchor" title="1*" id="anchor-note-4428427760">1</span> ბოროტად, და აქა მომეცნეს ენანი, რაჲთა დაემჴუნენ ცოდვანი, რომელნი აღეშჳნებიან<span class="note-anchor" title="1*" id="anchor-note-4428425040">2</span> საცთურად. და გამოვიდეს ენანი შემდგომად ენათა, რაჲთა შემოიყვანნეს იგინი სახლსა ცხოვრებისასა.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ას ჟამსა მისთჳს, რაჲთამცა არა ისმინეს ენაჲ იგი ურთიერთასი, და აწ მისთჳს, რაჲთა ყური მიუყონ სიტყუათა შეწევნისათა. მას ჟამსა განიბნინეს ენანი გოდლისა მისთჳს, რომელი აღიშჱნებოდა<span class="note-anchor" title="1*" id="anchor-note-4461064128">1</span> ბოროტად, და აქა მომეცნეს ენანი, რაჲთა დაემჴუნენ ცოდვანი, რომელნი აღეშჳნებიან<span class="note-anchor" title="1*" id="anchor-note-4461066928">2</span> საცთურად. და გამოვიდეს ენანი შემდგომად ენათა, რაჲთა შემოიყვანნეს იგინი სახლსა ცხოვრებისასა.
                 </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მოვიდა სული შემდგომად ძისა, დაებეჭდა ჴსნაჲ ჩუენი ბეჭდითა თჳსითა, აღმაღლდა მხოლოდშობილი იგი, რომელი დამდაბლდა ჩუენთჳს წყალობითა თჳსითა, გარდამოჴდა ნუგეშინისმცემელი, რაჲთა აღასრულოს <span class="folio-milestone" data-wit="" data-folio="172r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174" title="Sin. geo. , f. 172r">172r</span> ძლევაჲ ჩუენი მოწყალებით.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მოვიდა სული შემდგომად ძისა, დაებეჭდა ჴსნაჲ ჩუენი ბეჭდითა თჳსითა, აღმაღლდა მხოლოდშობილი იგი, რომელი დამდაბლდა ჩუენთჳს წყალობითა თჳსითა, გარდამოჴდა ნუგეშინისმცემელი, რაჲთა აღასრულოს <span class="folio-milestone" data-wit="" data-folio="172r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174" title="Sin. geo. , f. 172r">172r</span> ძლევაჲ ჩუენი მოწყალებით.
                 </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ოივლინა ჩუენდა აზნაურებაჲ ჴელითა ძისა თჳსისაჲთა და შემეძინნეს ჩუენ ნიჭნი ჴელითა სულისაჲთა, რომელი მისგან არს. რამეთუ უნდა მამასა ცხორებაჲ ჩუენი, გულს-იდგინა ძემანცა მოძიებაჲ ჩუენი.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ოივლინა ჩუენდა აზნაურებაჲ ჴელითა ძისა თჳსისაჲთა და შემეძინნეს ჩუენ ნიჭნი ჴელითა სულისაჲთა, რომელი მისგან არს. რამეთუ უნდა მამასა ცხორებაჲ ჩუენი, გულს-იდგინა ძემანცა მოძიებაჲ ჩუენი.
                 </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ამეთუ დამდაბლდა მხოლოდშობილი იგი ჩუენთჳს და დამდაბლდა სულითა იგი და ჰფუფუნებდა ყოველთა. განმდიდრდეს მოციქულნიცა ნიჭითა სამებისაჲთა ჩუენისა სარგებელისათჳს, განვიდეს და განეფინნეს ყოველთა კიდეთა ქუეყანისათა, და შეკრებისა ჩუენისათჳს ქადაგებდეს წინაწარმეტყუელნი, და დაჰბეჭდეს მოციქულთა ძლევაჲ ჩუენი.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ამეთუ დამდაბლდა მხოლოდშობილი იგი ჩუენთჳს და დამდაბლდა სულითა იგი და ჰფუფუნებდა ყოველთა. განმდიდრდეს მოციქულნიცა ნიჭითა სამებისაჲთა ჩუენისა სარგებელისათჳს, განვიდეს და განეფინნეს ყოველთა კიდეთა ქუეყანისათა, და შეკრებისა ჩუენისათჳს ქადაგებდეს წინაწარმეტყუელნი, და დაჰბეჭდეს მოციქულთა ძლევაჲ ჩუენი.
                 </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>იეფინა სული იგი ყოველსა ჴორციელსა, ვითარცა თქუა იოველ წინაწარმეტყუელმან: წინაწარმეტყუელებდეს ძენი და ასულნი თქუენნი<span class="note-anchor" title="(1)*" id="anchor-note-4428425360">3</span>. ვითარცა აღუთქუა, მისცა ღმერთმან მადლი მონათა და მჴევალთა თჳსთა ზედა — სული იგი თჳსი. და იცნეს იგი, ვითარცა თქუა: კნინნი დიდთა თანა, და აღივსო ქუეყანაჲ მეცნიერებითა მისითა, რომელი სავსე იყო საცთურითა, და დამტკიცნა ჭეშმარიტებაჲ. გამოაბრწყინვა ნათელი თჳსი და მის გამო წარემართა მისლვად მისა. ისწრაფეს შეწევნათა მისთა და გულს იდგინეს და აღჴოცნეს სავნებელნი ჩუენნი.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>იეფინა სული იგი ყოველსა ჴორციელსა, ვითარცა თქუა იოველ წინაწარმეტყუელმან: წინაწარმეტყუელებდეს ძენი და ასულნი თქუენნი<span class="note-anchor" title="(1)*" id="anchor-note-4461052288">3</span>. ვითარცა აღუთქუა, მისცა ღმერთმან მადლი მონათა და მჴევალთა თჳსთა ზედა — სული იგი თჳსი. და იცნეს იგი, ვითარცა თქუა: კნინნი დიდთა თანა, და აღივსო ქუეყანაჲ მეცნიერებითა მისითა, რომელი სავსე იყო საცთურითა, და დამტკიცნა ჭეშმარიტებაჲ. გამოაბრწყინვა ნათელი თჳსი და მის გამო წარემართა მისლვად მისა. ისწრაფეს შეწევნათა მისთა და გულს იდგინეს და აღჴოცნეს სავნებელნი ჩუენნი.
                 </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴂ</span>ამობრწყინდა ჴორცთა <span class="folio-milestone" data-wit="" data-folio="172v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174" title="Sin. geo. , f. 172v">172v</span> ჩუენთა ზედა და განანათლნა სულნი ჩუენნი; მოვიდა ცხადად და შეეწია გონებათა ფარულად; იჴსნნა ათასნი ბრალისაგან და განარინნა ბევრნი სიკუდილისაგან; შეისხნა ჴორცნი, თანამდებნი მიწისაგანნი, და მისგან აღიღო ძლევაჲ სრულითა სიმჴნითა; შთავიდა სიღრმესა და წარმოტყუენა ტყუჱ; აღჴდა მაღლად და განუყო ნიჭი თჳსი და იქმნნეს ჴორცნი მისნი მიზეზ კეთილის; და განარინნა სულნი ბოროტისა შეპყრობისაგან; გამოუჩნდა თუალთა, რაჲთა გამოუჩნდეს გულთაცა; შეეხნეს ჴელნი, რაჲთა დაემტკიცნენ გონებანიცა; შესახებელ ყვნა მადლნი თჳსნი და უჩუენა კაცთა სიმდიდრჱ თჳსი; და არა მით ხოლო კმა-ყო, რაჲთამცა კაც ხოლო იქმნა, არამედ მოკლულცა; და არა ხოლო თუ მოკლულ, არამედ დაფლულცა.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴂ</span>ამობრწყინდა ჴორცთა <span class="folio-milestone" data-wit="" data-folio="172v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174" title="Sin. geo. , f. 172v">172v</span> ჩუენთა ზედა და განანათლნა სულნი ჩუენნი; მოვიდა ცხადად და შეეწია გონებათა ფარულად; იჴსნნა ათასნი ბრალისაგან და განარინნა ბევრნი სიკუდილისაგან; შეისხნა ჴორცნი, თანამდებნი მიწისაგანნი, და მისგან აღიღო ძლევაჲ სრულითა სიმჴნითა; შთავიდა სიღრმესა და წარმოტყუენა ტყუჱ; აღჴდა მაღლად და განუყო ნიჭი თჳსი და იქმნნეს ჴორცნი მისნი მიზეზ კეთილის; და განარინნა სულნი ბოროტისა შეპყრობისაგან; გამოუჩნდა თუალთა, რაჲთა გამოუჩნდეს გულთაცა; შეეხნეს ჴელნი, რაჲთა დაემტკიცნენ გონებანიცა; შესახებელ ყვნა მადლნი თჳსნი და უჩუენა კაცთა სიმდიდრჱ თჳსი; და არა მით ხოლო კმა-ყო, რაჲთამცა კაც ხოლო იქმნა, არამედ მოკლულცა; და არა ხოლო თუ მოკლულ, არამედ დაფლულცა.
                 </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ოვიდა მადლითა თჳსითა და მოწყჳდნა ცოდვანი ჩუენნი, და თუმცა მოწყალებასა მას მისსა<span class="note-anchor" title="1*" id="anchor-note-4428423120">4</span> არა დაემშჳდა იგი, აღმცაჴოცა ბუნებაჲ ესე ჩუენი. ბუნებანი ბუნებათა ჩუენთა ზედა განრისხნეს ჯუარცუმასა<span class="note-anchor" title="2*" id="anchor-note-4428430800">5</span> მას მისსა და შთანთქმაჲ ჩუენი ეგულებოდა ყოველთაჲ. რაჟამს ჯუარსაცუეს, კლდენი <span class="folio-milestone" data-wit="" data-folio="175r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0177" title="Sin. geo. , f. 175r">175r</span> განიპნეს და სამარენი აღეხუნეს და მკუდარნი განცხოველდეს, ხოლო ცხოველნი იგი განცოფნეს.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ოვიდა მადლითა თჳსითა და მოწყჳდნა ცოდვანი ჩუენნი, და თუმცა მოწყალებასა მას მისსა<span class="note-anchor" title="1*" id="anchor-note-4461053728">4</span> არა დაემშჳდა იგი, აღმცაჴოცა ბუნებაჲ ესე ჩუენი. ბუნებანი ბუნებათა ჩუენთა ზედა განრისხნეს ჯუარცუმასა<span class="note-anchor" title="2*" id="anchor-note-4461060928">5</span> მას მისსა და შთანთქმაჲ ჩუენი ეგულებოდა ყოველთაჲ. რაჟამს ჯუარსაცუეს, კლდენი <span class="folio-milestone" data-wit="" data-folio="175r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0177" title="Sin. geo. , f. 175r">175r</span> განიპნეს და სამარენი აღეხუნეს და მკუდარნი განცხოველდეს, ხოლო ცხოველნი იგი განცოფნეს.
                 </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴂ</span>ანაგდო ჯუარი იგი და აღმაღლდა ცად. არა დაიმარხა მან მანკიერებაჲ ნათესავისა ჩუენთჳს, მოავლინა ნიჭი თჳსი და აღავსნა ეკლესიანი. უწოდა მკლველთაცა მისთა, უნდეს თუ, სუფევდენ იგინიცა მეგობართა თჳსთა თანა. და თუ ჰრწმენეს სიმდაბლჱ იგი მისი, ჴორცნი თჳსნი მისცნენ მათ სიყუარულითა თჳსითა.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴂ</span>ანაგდო ჯუარი იგი და აღმაღლდა ცად. არა დაიმარხა მან მანკიერებაჲ ნათესავისა ჩუენთჳს, მოავლინა ნიჭი თჳსი და აღავსნა ეკლესიანი. უწოდა მკლველთაცა მისთა, უნდეს თუ, სუფევდენ იგინიცა მეგობართა თჳსთა თანა. და თუ ჰრწმენეს სიმდაბლჱ იგი მისი, ჴორცნი თჳსნი მისცნენ მათ სიყუარულითა თჳსითა.
                 </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ასაბამად ნიჭთა თჳსთა ჴორცნი თჳსნი განუყვნის და სისხლნი თჳსნი უსასყიდლოდ მისცნის. უსასყიდლოდ ეკლესიათა თჳსთა განუყვნა ენანი, რაჲთა ქადაგონ ჭეშმარიტებაჲ მისი.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ასაბამად ნიჭთა თჳსთა ჴორცნი თჳსნი განუყვნის და სისხლნი თჳსნი უსასყიდლოდ მისცნის. უსასყიდლოდ ეკლესიათა თჳსთა განუყვნა ენანი, რაჲთა ქადაგონ ჭეშმარიტებაჲ მისი.
                 </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ოავლინა ნიჭი თჳსი, რაჲთა წამონ სარწმუნოებაჲ მისი. იქმნა თავსმდებ სოფლისა სასწაულებითა მით, ვითარმედ ღმერთი არს, და დააბა წიგნწერილებაჲ იგი სასწაულებითა ძალისა მისისაჲთა, ვითარმედ დამბადებელი იგი არს.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ოავლინა ნიჭი თჳსი, რაჲთა წამონ სარწმუნოებაჲ მისი. იქმნა თავსმდებ სოფლისა სასწაულებითა მით, ვითარმედ ღმერთი არს, და დააბა წიგნწერილებაჲ იგი სასწაულებითა ძალისა მისისაჲთა, ვითარმედ დამბადებელი იგი არს.
                 </p>
 <p id="p13"><span class="par-num" title="¶13">¶13</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴈ</span>გი არს დამბადებელი და იგი არს მჴსნელი ჩუენი. მის გამო აღესრულნეს საქმენი, ამან იჴსნა კაცი, ამისგან გამოჩნდა მამაჲ, ამისგან იცნობა სუფევაჲ და იგი არს ნიჭი ჩუენი. და სულისა გამო დაებეჭდა ჭეშმარიტებასა და განიყვნეს ნიჭნი მადლთა მისთანი. ეწამების დამდაბლებაჲ<span class="note-anchor" title="1*" id="anchor-note-4428050688">6</span> იგი მისი და უფლებისა მისისათჳს დაჰბეჭდა ძალმან მისმან.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴈ</span>გი არს დამბადებელი და იგი არს მჴსნელი ჩუენი. მის გამო აღესრულნეს საქმენი, ამან იჴსნა კაცი, ამისგან გამოჩნდა მამაჲ, ამისგან იცნობა სუფევაჲ და იგი არს ნიჭი ჩუენი. და სულისა გამო დაებეჭდა ჭეშმარიტებასა და განიყვნეს ნიჭნი მადლთა მისთანი. ეწამების დამდაბლებაჲ<span class="note-anchor" title="1*" id="anchor-note-4460691376">6</span> იგი მისი და უფლებისა მისისათჳს დაჰბეჭდა ძალმან მისმან.
                 </p>
 <p id="p14"><span class="par-num" title="¶14">¶14</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴖ</span>მრთეებისა სიტყუათა მათ ღაღატყვეს სასწაულთა მისთა ძალითა თჳსითა, ვითარმედ: ღმერთი არს ჭეშმარიტად, რამეთუ აღასრულნა სიტყუანი მისნი, ვითარმედ: შემოქმედი არს ჴელოვანთმოძღუარი ყოვლითურთ და არწმუნა სოფელსა და იმიერ და ამიერ მისცა არგანი ყოველთა, რამეთუ დასნეულდა კაცებაჲ ესე ჩუენი. და განამრავლნა შეწყნარებანი თჳსნი, რამეთუ დასნეულდა თავისუფლებითა თჳსითა<span class="note-anchor" title="2*" id="anchor-note-4428054368">7</span>.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴖ</span>მრთეებისა სიტყუათა მათ ღაღატყვეს სასწაულთა მისთა ძალითა თჳსითა, ვითარმედ: ღმერთი არს ჭეშმარიტად, რამეთუ აღასრულნა სიტყუანი მისნი, ვითარმედ: შემოქმედი არს ჴელოვანთმოძღუარი ყოვლითურთ და არწმუნა სოფელსა და იმიერ და ამიერ მისცა არგანი ყოველთა, რამეთუ დასნეულდა კაცებაჲ ესე ჩუენი. და განამრავლნა შეწყნარებანი თჳსნი, რამეთუ დასნეულდა თავისუფლებითა თჳსითა<span class="note-anchor" title="2*" id="anchor-note-4460690656">7</span>.
                 </p>
 <p id="p15"><span class="par-num" title="¶15">¶15</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴈ</span>ღუაწა მისთჳს ნებითა თჳსითა<span class="note-anchor" title="2*" id="anchor-note-4428048048">8</span>, რამეთუ დაავიწყდა იგი და დაითმინა მისი და შეაჯერა მას. და ვითარცა შეეშინა მას სიმდიდრისაგან მისისა, შეეწია მარჯუენითა თჳსითა. შემდგომად ნათლისა მის მისისა, ვითარმედ განიძარცუეს დიდებაჲ იგი, რომელ შთაეცუა მას, განბანა და განწმიდა ლხინებითა თჳსითა.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴈ</span>ღუაწა მისთჳს ნებითა თჳსითა<span class="note-anchor" title="2*" id="anchor-note-4466564432">8</span>, რამეთუ დაავიწყდა იგი და დაითმინა მისი და შეაჯერა მას. და ვითარცა შეეშინა მას სიმდიდრისაგან მისისა, შეეწია მარჯუენითა თჳსითა. შემდგომად ნათლისა მის მისისა, ვითარმედ განიძარცუეს დიდებაჲ იგი, რომელ შთაეცუა მას, განბანა და განწმიდა ლხინებითა თჳსითა.
                 </p>
 <p id="p16"><span class="par-num" title="¶16">¶16</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>დამსა შეემოსა და შეემკო ესე დიდებითა თჳსითა და წყალობითა თჳსითა ძიება-ყო სრულიად. არა თუ ხარკით დაჰბადა და არცა ხარკით იჴსნა და არცა ხარკით ყვის კეთილი, დაბადებულნი მისნი <span class="folio-milestone" data-wit="" data-folio="174r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176" title="Sin. geo. , f. 174r">174r</span> ეწამებიან, ვითარმედ იგი არს, და საქმენი მისნი ღაღადებენ, ვითარმედ ქველისმოქმედ არს.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>დამსა შეემოსა და შეემკო ესე დიდებითა თჳსითა და წყალობითა თჳსითა ძიება-ყო სრულიად. არა თუ ხარკით დაჰბადა და არცა ხარკით იჴსნა და არცა ხარკით ყვის კეთილი, დაბადებულნი მისნი <span class="folio-milestone" data-wit="" data-folio="174r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176" title="Sin. geo. , f. 174r">174r</span> ეწამებიან, ვითარმედ იგი არს, და საქმენი მისნი ღაღადებენ, ვითარმედ ქველისმოქმედ არს.
                 </p>
 <p id="p17"><span class="par-num" title="¶17">¶17</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ოწამე არს ჴელი მხოლოდშობილისაჲ, რომელმან დაჰბეჭდა<span class="note-anchor" title="3*" id="anchor-note-4433789072">9</span> სულითა თჳსითა. მამაჲ მოწამე არს ძისა სრულითა სიყუარულითა თჳსითა, და ძჱ ქადაგებს მამისათჳს ჭეშმარიტითა<span class="note-anchor" title="4*" id="anchor-note-4433793872">10</span> მოწამებითა თჳსითა, და სული ფუფუნებითა თჳსითა აუწყებს მადლისა მისისათჳს, წინაწარმეტყუელნი ქადაგებენ, მოციქულნი ღაღადებენ, გონებანი ეწამებიან.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ოწამე არს ჴელი მხოლოდშობილისაჲ, რომელმან დაჰბეჭდა<span class="note-anchor" title="3*" id="anchor-note-4466556992">9</span> სულითა თჳსითა. მამაჲ მოწამე არს ძისა სრულითა სიყუარულითა თჳსითა, და ძჱ ქადაგებს მამისათჳს ჭეშმარიტითა<span class="note-anchor" title="4*" id="anchor-note-4466569872">10</span> მოწამებითა თჳსითა, და სული ფუფუნებითა თჳსითა აუწყებს მადლისა მისისათჳს, წინაწარმეტყუელნი ქადაგებენ, მოციქულნი ღაღადებენ, გონებანი ეწამებიან.
                 </p>
 <p id="p18"><span class="par-num" title="¶18">¶18</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ღეს აღესრულა სიტყუაჲ იგი, რომელი ითქუა წინაწარმეტყუელთაგან, ვითარმედ: მოვჰფინო სულისაგან ჩემისა ყოველსა ზედა ჴორციელსა და წინაწარმეტყუელებდენ ყრმანი თქუენნი<span class="note-anchor" title="(1)*" id="anchor-note-4433794272">11</span>.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ღეს აღესრულა სიტყუაჲ იგი, რომელი ითქუა წინაწარმეტყუელთაგან, ვითარმედ: მოვჰფინო სულისაგან ჩემისა ყოველსა ზედა ჴორციელსა და წინაწარმეტყუელებდენ ყრმანი თქუენნი<span class="note-anchor" title="(1)*" id="anchor-note-4466561712">11</span>.
                 </p>
 <p id="p19"><span class="par-num" title="¶19">¶19</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴈ</span>ხილეთღა, არაძი აღესრულაა მოციქულთაცა მიმართ ჟამსა მას, რომელსა შეკრებულ იყვნეს ერთად ქორსა მას ზედა და გამოუჩნდეს მათ ნაწილნი ვითარცა ცეცხლისაგან! იწყეს სიტყუად უცხოთა ენათა ენად-ენად, რაჲთა დააკჳრვონ ნათესავსა ზედა, რომელნი შეკრიბნა და მოიყვანნა სულმან მან, რაჲთა იხილნეს დიდ-დიდნი იგი ძალნი ღმრთისანი.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴈ</span>ხილეთღა, არაძი აღესრულაა მოციქულთაცა მიმართ ჟამსა მას, რომელსა შეკრებულ იყვნეს ერთად ქორსა მას ზედა და გამოუჩნდეს მათ ნაწილნი ვითარცა ცეცხლისაგან! იწყეს სიტყუად უცხოთა ენათა ენად-ენად, რაჲთა დააკჳრვონ ნათესავსა ზედა, რომელნი შეკრიბნა და მოიყვანნა სულმან მან, რაჲთა იხილნეს დიდ-დიდნი იგი ძალნი ღმრთისანი.
                 </p>
 <p id="p20"><span class="par-num" title="¶20">¶20</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ჩუენცა, ძმანო, ნუმცა თანაწარვსცოდავთ სულთა ჩუენთა ზიარებისა მისგან სულისა წმიდისაჲსა და ნუ მოვალნ გულთა ჩუენთა, ვითარმედ იგინი<span class="note-anchor" title="5*" id="anchor-note-4433790592">12</span> ხოლო ღირს იქმნნეს.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ჩუენცა, ძმანო, ნუმცა თანაწარვსცოდავთ სულთა ჩუენთა ზიარებისა მისგან სულისა წმიდისაჲსა და ნუ მოვალნ გულთა ჩუენთა, ვითარმედ იგინი<span class="note-anchor" title="5*" id="anchor-note-4466568832">12</span> ხოლო ღირს იქმნნეს.
                 </p>
 <p id="p21"><span class="par-num" title="¶21">¶21</span>
-                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>რამედ ჩუენ თუ გჳნდეს, მოფენილ არიან მადლნი მისნი ჩუენ ზედაცა უხუად. <span class="folio-milestone" data-wit="" data-folio="174v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176" title="Sin. geo. , f. 174v">174v</span> და რაჲთა მივიღოთ გჳრგჳნი და ენითა, რომელი არს თარგმანებითა, დავიმოწაფნეთ და ვასწაოთ უცებთა და ვჰმოძღურიდეთ უსწავლელთა და განვანათლოთ გონებაჲ მათი. და დავანელნეთ ულამონი<span class="note-anchor" title="1*" id="anchor-note-4433793632">13</span> და დავამტკიცეთ უძლურნი და ვიღუაწნეთ სნეულნი და გამოვზარდნეთ ჴუებულნი<span class="note-anchor" title="2*" id="anchor-note-4433791792">14</span>. და ღმერთი რომელი მოვიდა ცხორებად ჩუენდა, ვემსგავსნეთ და მცნებათა მისთა ვიმარხვიდეთ და აღმოვთქუათ მადლი და ძლიერებაჲ, სიმდიდრჱ სამებისაჲ, ერთობით პატივვსცემდეთ<span class="note-anchor" title="3*" id="anchor-note-4433798112">15</span> აწ და უკუნითი უკუნისამდე. ამენ.
+                    <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>რამედ ჩუენ თუ გჳნდეს, მოფენილ არიან მადლნი მისნი ჩუენ ზედაცა უხუად. <span class="folio-milestone" data-wit="" data-folio="174v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176" title="Sin. geo. , f. 174v">174v</span> და რაჲთა მივიღოთ გჳრგჳნი და ენითა, რომელი არს თარგმანებითა, დავიმოწაფნეთ და ვასწაოთ უცებთა და ვჰმოძღურიდეთ უსწავლელთა და განვანათლოთ გონებაჲ მათი. და დავანელნეთ ულამონი<span class="note-anchor" title="1*" id="anchor-note-4466562032">13</span> და დავამტკიცეთ უძლურნი და ვიღუაწნეთ სნეულნი და გამოვზარდნეთ ჴუებულნი<span class="note-anchor" title="2*" id="anchor-note-4466559712">14</span>. და ღმერთი რომელი მოვიდა ცხორებად ჩუენდა, ვემსგავსნეთ და მცნებათა მისთა ვიმარხვიდეთ და აღმოვთქუათ მადლი და ძლიერებაჲ, სიმდიდრჱ სამებისაჲ, ერთობით პატივვსცემდეთ<span class="note-anchor" title="3*" id="anchor-note-4466564832">15</span> აწ და უკუნითი უკუნისამდე. ამენ.
                 </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -737,12 +763,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

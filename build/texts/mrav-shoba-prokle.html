@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,86 +561,90 @@
             <a href="mrav-shoba-epiphane.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-shoba-prokle">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴕ</span>ალწულისა კრებაჲ დღეს მოუწესს ენასა ჩუენსა, ძმანო, ქებად და მოწევნული ესე დღესასწაულისაჲ ამის სარგებლის მომატყტუებელ იქმნების და უფროჲსღა ჭეშმარიტად სიწმიდისაჲ აქუს ხატი ნათესავისათჳს დედათაჲსა<span class="note-anchor" title="2*" id="anchor-note-4428425840">*</span> სიქადული; რომელსა-ესე დღეს აღვასრულებთ დღესასწაულსა, დიდებაჲ დედათაჲ არს მისთჳს, რომელ-იგი ჟამ ერთ დედა იყო და ქალწულ, მიუწდომელი კრებაჲ დღესასწაულებისაჲ; რამეთუ აჰა ესერა ქუეყანაჲ და ზღუაჲ პატივ-სცემს ქალწულსა მარიამს. ზღუამან ზურგი თჳსი განუმარტა ღელვათაგან და ქუეყანამან კუალნი ზედა-მავალთანი წარუმართნა დაუბრკოლებელად.
+            <div class="ms-head">
+          <span class="geo-rubric" style="color:var(--crimson);">ნეტარისა პროკლესი, კოსტანტინელ<span class="note-anchor" title="1*" id="anchor-note-4461059568">*</span> ეპისკოპოსისაჲ, 
+            ღმრთის-მშობელისათჳს თქუმული</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴕ</span>ალწულისა კრებაჲ დღეს მოუწესს ენასა ჩუენსა, ძმანო, ქებად და მოწევნული ესე დღესასწაულისაჲ ამის სარგებლის მომატყტუებელ იქმნების და უფროჲსღა ჭეშმარიტად სიწმიდისაჲ აქუს ხატი ნათესავისათჳს დედათაჲსა<span class="note-anchor" title="2*" id="anchor-note-4461063008">*</span> სიქადული; რომელსა-ესე დღეს აღვასრულებთ დღესასწაულსა, დიდებაჲ დედათაჲ არს მისთჳს, რომელ-იგი ჟამ ერთ დედა იყო და ქალწულ, მიუწდომელი კრებაჲ დღესასწაულებისაჲ; რამეთუ აჰა ესერა ქუეყანაჲ და ზღუაჲ პატივ-სცემს ქალწულსა მარიამს. ზღუამან ზურგი თჳსი განუმარტა ღელვათაგან და ქუეყანამან კუალნი ზედა-მავალთანი წარუმართნა დაუბრკოლებელად.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>ხაროდენ ბუნებასა კაცთასა, რამეთუ დედანი პატიოსან იქმნებიან. მხიარულ იყვნედ მამანი, რამეთუ... სადა გარდაერია ცოდვაჲ, უფროჲსად აღემატა მადლი<span class="note-anchor" title="Rom. 5:20" id="anchor-note-4428426240">*</span>. რამეთუ მომიწოდა ჩუენ წმიდამან მარიამ, შეუგინებელმან ქალწულმან, ჭურჭელმან სიწმიდისამან, მეტყუელისა მის მეორისა ადამისა სამოთხემან, 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>ხაროდენ ბუნებასა კაცთასა, რამეთუ დედანი პატიოსან იქმნებიან. მხიარულ იყვნედ მამანი, რამეთუ... სადა გარდაერია ცოდვაჲ, უფროჲსად აღემატა მადლი<span class="note-anchor" title="Rom. 5:20" id="anchor-note-4461063168">*</span>. რამეთუ მომიწოდა ჩუენ წმიდამან მარიამ, შეუგინებელმან ქალწულმან, ჭურჭელმან სიწმიდისამან, მეტყუელისა მის მეორისა ადამისა სამოთხემან, 
           <span class="folio-milestone" data-wit="" data-folio="16r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0030" data-sp="30" title="Sin. geo. , f. 16r">16r</span> 
-          საქმარმან ერთობისა ორთა ბუნება[თა]მან<span class="note-anchor" title="3*" id="anchor-note-4428426880">*</span>, კრებამან მაცხოვრისამან, მოცვალებამან სასძლოჲსამან, რომელსა შინა სიტყუამან სიძე ქმნა ჴორცნი, სულიერმან მან ბუნებისა ჩუენისა მაყუალმან, რომელ-იგი საღმრთომან მიდგომილებისა ცეცხლმან არა დაწუა.
+          საქმარმან ერთობისა ორთა ბუნება[თა]მან<span class="note-anchor" title="3*" id="anchor-note-4461063888">*</span>, კრებამან მაცხოვრისამან, მოცვალებამან სასძლოჲსამან, რომელსა შინა სიტყუამან სიძე ქმნა ჴორცნი, სულიერმან მან ბუნებისა ჩუენისა მაყუალმან, რომელ-იგი საღმრთომან მიდგომილებისა ცეცხლმან არა დაწუა.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴌ</span>ანდჳლვე სულმცირემან ღრუბელმან ქერობინთა ზედა მჯდომარჱ იგი ჴორცითა იტჳრთა, რომელ-იგი ზეცისა წჳმისა წმიდაჲ საწმისი იყო<span class="note-anchor" title="4*" id="anchor-note-4428426320">*</span>, რომელ-იგი მწყემსმან პირმეტყუელთა ცხოვართამან შეიმოსა. მარიამ მჴევალი და დედაჲ და ქალწული და ცაჲ, მხოლოჲ ჴიდი ღმრთისაჲ კაცთა მომართ მოსულისაჲ, საშინელი მოღუაწებისა ჩუენისა ქსელი, რომელსა შინა გამოუთქუმელად ჴორციელებისაჲ იგი საუფლოჲ იქსოვა სამოსელი, რომელსა მექსლე იყო სული წმიდაჲ, ხოლო მქსოველ — რომელ მაღლით ჰფარვიდა მას ძალი, და მატყლ — დასაბამისა იგი ადამის ტყავი, და საგუსალ<span class="note-anchor" title="5*" id="anchor-note-4428426960">*</span> — ქალწულისანი იგი ჴორცნი, და ცხემლ — განუზომელი იგი შემოსილისა მადლი, და ხურო — რომლითა-იგი მორჩილებითა შევიდა მისა<span class="note-anchor" title="6*" id="anchor-note-4428427440">*</span> სიტყუაჲ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴌ</span>ანდჳლვე სულმცირემან ღრუბელმან ქერობინთა ზედა მჯდომარჱ იგი ჴორცითა იტჳრთა, რომელ-იგი ზეცისა წჳმისა წმიდაჲ საწმისი იყო<span class="note-anchor" title="4*" id="anchor-note-4461064368">*</span>, რომელ-იგი მწყემსმან პირმეტყუელთა ცხოვართამან შეიმოსა. მარიამ მჴევალი და დედაჲ და ქალწული და ცაჲ, მხოლოჲ ჴიდი ღმრთისაჲ კაცთა მომართ მოსულისაჲ, საშინელი მოღუაწებისა ჩუენისა ქსელი, რომელსა შინა გამოუთქუმელად ჴორციელებისაჲ იგი საუფლოჲ იქსოვა სამოსელი, რომელსა მექსლე იყო სული წმიდაჲ, ხოლო მქსოველ — რომელ მაღლით ჰფარვიდა მას ძალი, და მატყლ — დასაბამისა იგი ადამის ტყავი, და საგუსალ<span class="note-anchor" title="5*" id="anchor-note-4461063968">*</span> — ქალწულისანი იგი ჴორცნი, და ცხემლ — განუზომელი იგი შემოსილისა მადლი, და ხურო — რომლითა-იგი მორჩილებითა შევიდა მისა<span class="note-anchor" title="6*" id="anchor-note-4461064848">*</span> სიტყუაჲ.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ის ესმა, ანუ ვინ იხილა, ვითარმედ ღმერთი მუცელსა და საშოსა დაემკჳდროს? რომელსა ცანი ვერ იტევენ, მუცელი ქალწულისაჲ არა იწრო უჩნდა, არამედ იშვა დედაკაცისაგან ღმერთი, ღმერთი არა შიშუველი და კაცი არა ლიტონი. რამეთუ ბჭჱ 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ის ესმა, ანუ ვინ იხილა, ვითარმედ ღმერთი მუცელსა და საშოსა დაემკჳდროს? რომელსა ცანი ვერ იტევენ, მუცელი ქალწულისაჲ არა იწრო უჩნდა, არამედ იშვა დედაკაცისაგან ღმერთი, ღმერთი არა შიშუველი და კაცი არა ლიტონი. რამეთუ ბჭჱ 
           <span class="folio-milestone" data-wit="" data-folio="41r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0080" data-sp="80" title="Sin. geo. , f. 41r">41r</span> 
           იყო ცხოვრებისაჲ, რომელი იშვა, და პირველი იგი აჩუენა კარი. სადა-იგი გუელმან ურჩებითა დასტხია გესლი, მიერვე სიტყუაჲ იგი მორჩილებითა შევიდა მისა და ტაძარი იგი ცხოველი დაჰბადა მას შინა; ვინაჲ-იგი ცოდვისა კარი გამოჩნდა, მიერვე ნათესავისა ჩუენისა მჴსნელი ქრისტჱ უთესლოდ აღმოსცჱნდა.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>რა სირცხჳლ-უჩნდა კაცთ-მოყუარესა დედაკაცისაგან შობაჲ, რამეთუ ცხორებაჲ იყო, რომელი-იგი იქმნებოდა; არა შეაგინა, იყო რაჲ იგი ასოთა შინა ქალწულისათა, რომელი-იგი მანვე შეუგინებელად დაჰბადა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>რა სირცხჳლ-უჩნდა კაცთ-მოყუარესა დედაკაცისაგან შობაჲ, რამეთუ ცხორებაჲ იყო, რომელი-იგი იქმნებოდა; არა შეაგინა, იყო რაჲ იგი ასოთა შინა ქალწულისათა, რომელი-იგი მანვე შეუგინებელად დაჰბადა.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუმცა არა ქალწულივე ეგო დედაჲ იგი, ლიტონიმცა იყო, რომელი-იგი იშვა, და არამცა დიდებულ იყო შობაჲ იგი. უკუეთუ შემდგომად შობისა ქალწულივე ეგო იგი, გამოუთქუმელად იშვა, რომელცა-იგი კართა ჴშულთა შევიდა დაუბრკოლებელად, რომლისა შეუღლვილებაჲ ბუნებათაჲ თომა ღაღატ-ყო და თქუა: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუმცა არა ქალწულივე ეგო დედაჲ იგი, ლიტონიმცა იყო, რომელი-იგი იშვა, და არამცა დიდებულ იყო შობაჲ იგი. უკუეთუ შემდგომად შობისა ქალწულივე ეგო იგი, გამოუთქუმელად იშვა, რომელცა-იგი კართა ჴშულთა შევიდა დაუბრკოლებელად, რომლისა შეუღლვილებაჲ ბუნებათაჲ თომა ღაღატ-ყო და თქუა: 
           უფალი ჩემი და ღმერთი ჩემი!
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴌ</span>უ სირცხჳლ-გიჩნ შობაჲ იგი მისი, კაცო, რამეთუ იგი გუექმნა ჩუენ მიზეზ ცხოვრების. უკუეთუმცა დედაკაცისაგან არა იშვა, არამცა მოკუდა, არამცა სიკუდილითა მისითა განქარდა, რომელსა აქუნდა ჴელმწიფებაჲ სიკუდილისაჲ, ესე იგი არს ეშმაკი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴌ</span>უ სირცხჳლ-გიჩნ შობაჲ იგი მისი, კაცო, რამეთუ იგი გუექმნა ჩუენ მიზეზ ცხოვრების. უკუეთუმცა დედაკაცისაგან არა იშვა, არამცა მოკუდა, არამცა სიკუდილითა მისითა განქარდა, რომელსა აქუნდა ჴელმწიფებაჲ სიკუდილისაჲ, ესე იგი არს ეშმაკი.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>რა გინება არს ხუროთ-მოძღურისა ყოფაჲ მას შინა, რომელი იგი მან აღაშჱნა. არა შეაგინის მეკეცჱ თიჴამან, რაჟამს განაახლებნ თჳსსა მას სექმნულსა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>რა გინება არს ხუროთ-მოძღურისა ყოფაჲ მას შინა, რომელი იგი მან აღაშჱნა. არა შეაგინის მეკეცჱ თიჴამან, რაჟამს განაახლებნ თჳსსა მას სექმნულსა.
           <span class="folio-milestone" data-wit="" data-folio="41v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0081" data-sp="81" title="Sin. geo. , f. 41v">41v</span> 
           ეგრევე უჴრწნელი იგი საშოჲსაგან ქალწულისაჲსა მოსლვაჲ, რომელ-იგი შესაქმესა არა შეაგინა.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴥ</span> მუცელსა მას, რომელსა შინა სიკუდილისა იგი მძლჱ გამოიჭედა საჭურველი! ჵ ყანასა მას, რომელსა შინა ბუნებისა იგი ჩუენისა შემოქმედი ქრისტჱ უთესლოდ აღმოსცჱნდა! ჵ ტაძარი, რომელსა შინა ღმერთი მღდელ იქმნა! არა ბუნებაჲ ცვალა, არამედ წესისა მისებრ მელქიზედეკისა წყალობისათჳს ჴორცნი შეისხნა, სიტყუაჲ იგი ჴორციელ იქმნა და დაემკჳდრა კაცთა შორის.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴥ</span> მუცელსა მას, რომელსა შინა სიკუდილისა იგი მძლჱ გამოიჭედა საჭურველი! ჵ ყანასა მას, რომელსა შინა ბუნებისა იგი ჩუენისა შემოქმედი ქრისტჱ უთესლოდ აღმოსცჱნდა! ჵ ტაძარი, რომელსა შინა ღმერთი მღდელ იქმნა! არა ბუნებაჲ ცვალა, არამედ წესისა მისებრ მელქიზედეკისა წყალობისათჳს ჴორცნი შეისხნა, სიტყუაჲ იგი ჴორციელ იქმნა და დაემკჳდრა კაცთა შორის.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ღათუ არა ჰრწამს<span class="note-anchor" title="1*" id="anchor-note-4428430960">*</span> ჰურიათა უფალი, ხოლო ღმერთმან ხატი კაცისაჲ შეიმოსა; და ღათუ წარმართნი გუბასრობენ საკრველებასა ამას, ამისთჳს ჰურიათა - საცთურ და წარმართთა - სისულელე.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ღათუ არა ჰრწამს<span class="note-anchor" title="1*" id="anchor-note-4461067648">*</span> ჰურიათა უფალი, ხოლო ღმერთმან ხატი კაცისაჲ შეიმოსა; და ღათუ წარმართნი გუბასრობენ საკრველებასა ამას, ამისთჳს ჰურიათა - საცთურ და წარმართთა - სისულელე.
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴑ</span>აიდუმლოჲ ესე... უფროჲს სიტყჳსა გადარეულ არს და საკჳრველება. უკუეთუმცა სიტყუაჲ იგი არა დაემკჳდრა მუცელსა, არამცა დაჯდა ჴორცითა საყდართა. უკუეთუ ღმრთისა გინება არს საშოსა შესლვაჲ... ანგელოზთაცა გინება არს კაცთა მსახურებაჲ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴑ</span>აიდუმლოჲ ესე... უფროჲს სიტყჳსა გადარეულ არს და საკჳრველება. უკუეთუმცა სიტყუაჲ იგი არა დაემკჳდრა მუცელსა, არამცა დაჯდა ჴორცითა საყდართა. უკუეთუ ღმრთისა გინება არს საშოსა შესლვაჲ... ანგელოზთაცა გინება არს კაცთა მსახურებაჲ.
         </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ომელი-იგი ღმერთი ბუნებით უვნებელი იყო, იქმნა მოწყალებით მრავალვნებულ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ომელი-იგი ღმერთი ბუნებით უვნებელი იყო, იქმნა მოწყალებით მრავალვნებულ.
         </p>
 <p id="p13"><span class="par-num" title="¶13">¶13</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>რა თუ წარმოჩინებით ქრისტე იქმნს ღმერთ — ნუ იყოფინ! — არამედ მოწყალებით იქმნა კაც, ვითარცა-ესე გურწამს. არა კაცსა ლიტონსა ღმერთ ყოფად ვქადაგებთ, 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>რა თუ წარმოჩინებით ქრისტე იქმნს ღმერთ — ნუ იყოფინ! — არამედ მოწყალებით იქმნა კაც, ვითარცა-ესე გურწამს. არა კაცსა ლიტონსა ღმერთ ყოფად ვქადაგებთ, 
           <span class="folio-milestone" data-wit="" data-folio="42r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0082" data-sp="82" title="Sin. geo. , f. 42r">42r</span> 
-          არამედ ღმერთსა ჴორციელ ყოფად<span class="note-anchor" title="1*" id="anchor-note-4428423120">*</span> აღვიარებთ. და თჳსი მჴევალი იჩემა დედად, რომელი იყო არსებით უდედო და მოღუაწებით - უმამო, უკუეთუ არა მსგავსად მოციქულისა მის სიტყჳსა უმამო და იგივე უდედო. უკუეთუ ლიტონი კაცი არა უდედო, არამედ უვის დედაჲ, და თუ შიშუველი ღმერთი არა უმამო, არამედ უვის მამაჲ, ხოლო აწ იგივე უდედო ამისთჳს — ვითარცა დამბადებელი<span class="note-anchor" title="2*" id="anchor-note-4428424160">*</span>, და უმამო — ვითარცა დაბადებული; უმამო<span class="note-anchor" title="3*" id="anchor-note-4428423680">*</span> — ქუეყანასა ზედა და უდედო — ცათა შინა.
+          არამედ ღმერთსა ჴორციელ ყოფად<span class="note-anchor" title="1*" id="anchor-note-4461060928">*</span> აღვიარებთ. და თჳსი მჴევალი იჩემა დედად, რომელი იყო არსებით უდედო და მოღუაწებით - უმამო, უკუეთუ არა მსგავსად მოციქულისა მის სიტყჳსა უმამო და იგივე უდედო. უკუეთუ ლიტონი კაცი არა უდედო, არამედ უვის დედაჲ, და თუ შიშუველი ღმერთი არა უმამო, არამედ უვის მამაჲ, ხოლო აწ იგივე უდედო ამისთჳს — ვითარცა დამბადებელი<span class="note-anchor" title="2*" id="anchor-note-4461060368">*</span>, და უმამო — ვითარცა დაბადებული; უმამო<span class="note-anchor" title="3*" id="anchor-note-4461065888">*</span> — ქუეყანასა ზედა და უდედო — ცათა შინა.
         </p>
 <p id="p14"><span class="par-num" title="¶14">¶14</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴘ</span>ეიკდიმე აწ, მწვალებელო, მოკითხვისა მისთჳს ანგელოზთ-მთავრისა<span class="note-anchor" title="4*" id="anchor-note-4428425200">*</span> გაბრიელისა, რომელმან-იგი მარიამს ახარა, რამეთუ გაბრიელ ერქუა. აწ რაჲ ითარგმანების გაბრიელ ? — ესრე სამე: ღმრთისა კაცი. რამეთუ რომელი-იგი მის მიერ ეხარა, ღმერთი იყო და კაცი. უსწრო მოკითხვამან მან, რაჲთა სარწმუნო იყოს საქმჱ იგი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴘ</span>ეიკდიმე აწ, მწვალებელო, მოკითხვისა მისთჳს ანგელოზთ-მთავრისა<span class="note-anchor" title="4*" id="anchor-note-4461062128">*</span> გაბრიელისა, რომელმან-იგი მარიამს ახარა, რამეთუ გაბრიელ ერქუა. აწ რაჲ ითარგმანების გაბრიელ ? — ესრე სამე: ღმრთისა კაცი. რამეთუ რომელი-იგი მის მიერ ეხარა, ღმერთი იყო და კაცი. უსწრო მოკითხვამან მან, რაჲთა სარწმუნო იყოს საქმჱ იგი.
         </p>
 <p id="p15"><span class="par-num" title="¶15">¶15</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴈ</span>სწავეთ მიზეზი იგი მოსლვისაჲ და ადიდებდით ძალსა მას ჴორცთ შესხმისასა. ფრიად თანა-ედვა კაცთა ბუნებასა, და თანა-ნადებსა მას მიცემად ვერ ჰპოვებდა. ადამის მიერ ცოდვასა მას ყოველთა ჴელითა ჴელი დაგუეწერა და მონა ვეპყრენით ჩუენ ეშმაკსა. ჴელით-წერილი იგი წინა-დაგჳპყრის ჩუენ, რამეთუ ქარტისა წილ იმსახურებდა მრავალ-ვნებულთა ამათ ჴორცთაგან. დადგა ბოროტი იგი ვნებათაჲ მათ ცილის მწერალი და აღმიდგინებდა ჩუენ აღნადგინებისა მის ვახშსა და მიმჴდიდა ჩუენ სარჩელსა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴈ</span>სწავეთ მიზეზი იგი მოსლვისაჲ და ადიდებდით ძალსა მას ჴორცთ შესხმისასა. ფრიად თანა-ედვა კაცთა ბუნებასა, და თანა-ნადებსა მას მიცემად ვერ ჰპოვებდა. ადამის მიერ ცოდვასა მას ყოველთა ჴელითა ჴელი დაგუეწერა და მონა ვეპყრენით ჩუენ ეშმაკსა. ჴელით-წერილი იგი წინა-დაგჳპყრის ჩუენ, რამეთუ ქარტისა წილ იმსახურებდა მრავალ-ვნებულთა ამათ ჴორცთაგან. დადგა ბოროტი იგი ვნებათაჲ მათ ცილის მწერალი და აღმიდგინებდა ჩუენ აღნადგინებისა მის ვახშსა და მიმჴდიდა ჩუენ სარჩელსა.
           <span class="folio-milestone" data-wit="" data-folio="42v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0083" data-sp="83" title="Sin. geo. , f. 42v">42v</span> 
         </p>
 <p id="p16"><span class="par-num" title="¶16">¶16</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ უკუე ჯერ-იყო ორკერძოვე: ყოველთა ზედა მოწევნად საშჯელისა მისგან სიკუდილი, — რამეთუ ყოველთა შესცოდეს, — ანუ ეგოდენი კუალად მიცემად, რომელი იყო სამართალი ვედრებად.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ უკუე ჯერ-იყო ორკერძოვე: ყოველთა ზედა მოწევნად საშჯელისა მისგან სიკუდილი, — რამეთუ ყოველთა შესცოდეს, — ანუ ეგოდენი კუალად მიცემად, რომელი იყო სამართალი ვედრებად.
         </p>
 <p id="p17"><span class="par-num" title="¶17">¶17</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ უკუე კაცი ვერ შემძლებელ იყო ჴსნად, რამეთუ თანა-ნადებსა მას ქუეშე იყო ნაჴუთევად. ანგელოზსა ვერ ეძლო გამოჴსნად, რამეთუ ვერ მომპოვნებელ იყო ისევითარისათჳს<span class="note-anchor" title="5*" id="anchor-note-4428427600">*</span> გამოჴსნისა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ უკუე კაცი ვერ შემძლებელ იყო ჴსნად, რამეთუ თანა-ნადებსა მას ქუეშე იყო ნაჴუთევად. ანგელოზსა ვერ ეძლო გამოჴსნად, რამეთუ ვერ მომპოვნებელ იყო ისევითარისათჳს<span class="note-anchor" title="5*" id="anchor-note-4461064608">*</span> გამოჴსნისა.
         </p>
 <p id="p18"><span class="par-num" title="¶18">¶18</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ უკუე უცოდველსა მას თანა-ედვა ცოდვილთათჳს სიკუდილი. ესე ხოლო აკლდა, გარნა ბოროტისაჲ მის დაჴსნაჲ. რაჲ-მე უკუე ჯერ-იყო ყოფად? მანვე, რომელმან-იგი ყოველი ბუნებაჲ მოიყვანა ყოფად, — რამეთუ ღმერთ არს, — და არა<span class="note-anchor" title="6*" id="anchor-note-4428428400">*</span> უნაკლულოდ მიცემად გამოიძია და შვილთა მათთჳს ცხორებაჲ შუენიერი და სიკუდილისა დაჴსნაჲ მტკიცჱ და იქმნა კაც, — ვითარცა მან თავადმან იცის, რამეთუ სიტყუასა მას საქმეთაჲ მათ თარგმანებად ვერ ძალ-უც, — და მოკუდა, რომელ-იგი ყო, და იჴსნა, რომელ-იგი დაიპყრა, მსგავსად სიტყჳსა მის პავლჱსისა: რომლისა მიერ გუაქუს ჩუენ გამოჴსნაჲ სისხლითა მისითა და მოტევებაჲ ცოდვათაჲ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ უკუე უცოდველსა მას თანა-ედვა ცოდვილთათჳს სიკუდილი. ესე ხოლო აკლდა, გარნა ბოროტისაჲ მის დაჴსნაჲ. რაჲ-მე უკუე ჯერ-იყო ყოფად? მანვე, რომელმან-იგი ყოველი ბუნებაჲ მოიყვანა ყოფად, — რამეთუ ღმერთ არს, — და არა<span class="note-anchor" title="6*" id="anchor-note-4461065408">*</span> უნაკლულოდ მიცემად გამოიძია და შვილთა მათთჳს ცხორებაჲ შუენიერი და სიკუდილისა დაჴსნაჲ მტკიცჱ და იქმნა კაც, — ვითარცა მან თავადმან იცის, რამეთუ სიტყუასა მას საქმეთაჲ მათ თარგმანებად ვერ ძალ-უც, — და მოკუდა, რომელ-იგი ყო, და იჴსნა, რომელ-იგი დაიპყრა, მსგავსად სიტყჳსა მის პავლჱსისა: რომლისა მიერ გუაქუს ჩუენ გამოჴსნაჲ სისხლითა მისითა და მოტევებაჲ ცოდვათაჲ.
         </p>
 <p id="p19"><span class="par-num" title="¶19">¶19</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴥ</span> საკჳრველებათაჲ ამათ! რამეთუ სხუათა განუმზადა უკუდავებაჲ, ხოლო იგი იყოვე უკუდავ. ესევითარი სხუაჲ მოწყალებისათჳს არავინ არესრულა, არცა იყო, არცა არს, არცა ყოფად არს, 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴥ</span> საკჳრველებათაჲ ამათ! რამეთუ სხუათა განუმზადა უკუდავებაჲ, ხოლო იგი იყოვე უკუდავ. ესევითარი სხუაჲ მოწყალებისათჳს არავინ არესრულა, არცა იყო, არცა არს, არცა ყოფად არს, 
           <span class="folio-milestone" data-wit="" data-folio="43r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0084" data-sp="84" title="Sin. geo. , f. 43r">43r</span> 
           გარნა მხოლოჲ ქალწულისაგან შობილი ღმერთი და კაცი. არა თანა-შეასწორებს, რამეთუ აკლს პატივი სიმართლესა მას დარჩილთასა, არამედ ყოველსავე რიცხუსა ჰმატს შვილად ყოფითა, უცვალებელად აცუენებს თავსა თჳსსა მამისა მიმართ, ხოლო შემოქმედებითა ძლიერებაჲ იგი უნაკლულოდ აქუს და მოწყალების მოყუარებაჲ წყალობისათჳს გარდაუქცეველად მრავალთათჳს განაგო. ხოლო მღდელთ-მოძღურებაჲ უჯმნელად ღირს, სარწმუნოდ მოაქუს, რომელ-იგი არავინ პოვოს სხუამან არარასა ზედა სიტყუად მსგავსი ამისი.
         </p>
 <p id="p20"><span class="par-num" title="¶20">¶20</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ იხილეთ მისი იგი კაცთ-მოყუარებაჲ, რამეთუ ნეფსით დაისაჯა და ჯუარის-მცუმელთაჲ მათ განაქარვა სიკუდილი, მოაქცია მომკლველთაჲ მათ უშჯულოებაჲ, უშჯულოებისა მოქმედთაჲ მათ მათთავე საცხორებელად! კაცისა ლიტონისა ვერ შესაძლებელ იყო ჴსნაჲ, გარნა მისი ხოლო ჯერ-იყო, მაცხოვრისაჲ, მსგავსად სიტყჳსა მის პავლჱსისა, ვითარმედ: ყოველთა შეცოდეს. რამეთუ ცოდვაჲ იგი ეშმაკისა მიჰგურიდა და ეშმაკი სიკუდილსა მისცემდა და დიდსა ჭირსა ჩუენ ზედა მოაწევდა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ იხილეთ მისი იგი კაცთ-მოყუარებაჲ, რამეთუ ნეფსით დაისაჯა და ჯუარის-მცუმელთაჲ მათ განაქარვა სიკუდილი, მოაქცია მომკლველთაჲ მათ უშჯულოებაჲ, უშჯულოებისა მოქმედთაჲ მათ მათთავე საცხორებელად! კაცისა ლიტონისა ვერ შესაძლებელ იყო ჴსნაჲ, გარნა მისი ხოლო ჯერ-იყო, მაცხოვრისაჲ, მსგავსად სიტყჳსა მის პავლჱსისა, ვითარმედ: ყოველთა შეცოდეს. რამეთუ ცოდვაჲ იგი ეშმაკისა მიჰგურიდა და ეშმაკი სიკუდილსა მისცემდა და დიდსა ჭირსა ჩუენ ზედა მოაწევდა.
         </p>
 <p id="p21"><span class="par-num" title="¶21">¶21</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ერვინაჲ მოსაპოვნელ იყო გამოჴსნაჲ ჩუენთჳს. მოივლინნეს 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ერვინაჲ მოსაპოვნელ იყო გამოჴსნაჲ ჩუენთჳს. მოივლინნეს 
           <span class="folio-milestone" data-wit="" data-folio="43v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0085" data-sp="85" title="Sin. geo. , f. 43v">43v</span> 
           მკურნალნი და სეასმენდეს. აწ უკუე რაჲ ჯერ-იყო სიტყუად?
         </p>
 <p id="p22"><span class="par-num" title="¶22">¶22</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ითარცა იხილეს წინაწარმეტუელთა უფროჲს ჴელოვნებისა კაცთაჲსა წყლულებაჲ იგი ზეცით მოსულად, მკურნალსა მას ევედრებოდეს. რომელიმე იტყოდა: 
-          უფალო, მოდრიკენ<span class="note-anchor" title="1*" id="anchor-note-4428357184">*</span> ცანი და გარდამოჴედ;
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ითარცა იხილეს წინაწარმეტუელთა უფროჲს ჴელოვნებისა კაცთაჲსა წყლულებაჲ იგი ზეცით მოსულად, მკურნალსა მას ევედრებოდეს. რომელიმე იტყოდა: 
+          უფალო, მოდრიკენ<span class="note-anchor" title="1*" id="anchor-note-4460948800">*</span> ცანი და გარდამოჴედ;
           და სხუაჲ იტყოდა: 
           განმკურნე მე, უფალო, და განვიკურნო;
           და რომელიმე იტყოდა: 
@@ -636,41 +663,41 @@
           ვიქმენ მე, ვითარცა ცხოვარი წყმედული; მომიძიე მონაჲ შენი, უფალო.
         </p>
 <p id="p23"><span class="par-num" title="¶23">¶23</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მისთჳს არა უგულებელს-ყო გონებაჲ ჩუენი მიმძლავრებისაგან, რომელი-იგი არს ბუნებით მეუფე და ღმერთ, არამედ მოვიდა, რომელი-იგი მარადის ყოველსა ადგილსა არს, და მოგუცნა საჴსრად თჳსნი სისხლნი, და მისცა ნათესავისა ჩუენისათჳს ჴელით-წერილი იგი სიკუდილისაჲ, 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>მისთჳს არა უგულებელს-ყო გონებაჲ ჩუენი მიმძლავრებისაგან, რომელი-იგი არს ბუნებით მეუფე და ღმერთ, არამედ მოვიდა, რომელი-იგი მარადის ყოველსა ადგილსა არს, და მოგუცნა საჴსრად თჳსნი სისხლნი, და მისცა ნათესავისა ჩუენისათჳს ჴელით-წერილი იგი სიკუდილისაჲ, 
           <span class="folio-milestone" data-wit="" data-folio="44r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0086" data-sp="86" title="Sin. geo. , f. 44r">44r</span> 
           <span class="folio-milestone" data-wit="" data-folio="44" title="Sin. geo. , f. 44">44</span> 
           რომელ-იგი ქალწულისაგან შეისხნა ჴორცნი, და მოიყიდა სოფელი წყევისა მისგან შჯულისა.
         </p>
 <p id="p24"><span class="par-num" title="¶24">¶24</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ რომელმან-ესე მოიყიდა, არა ლიტონი კაცი არს, ჵ ჰურიაო, რამეთუ კაცთა ბუნებაჲ ცოდვასა დამონებულ იყო; არამედ არცა ღმერთი შიშუველი კაცობისაგან, რამეთუ ჴორცნი ესხნეს, ჵ მანიქეველო. უკუეთუმცა არა შემემოსა მე, არცამცა მიჴსნა მე, არამედ მუცელსა ქალწულისასა განაჩინა და დაშჯილი იგი შეიმოსა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ რომელმან-ესე მოიყიდა, არა ლიტონი კაცი არს, ჵ ჰურიაო, რამეთუ კაცთა ბუნებაჲ ცოდვასა დამონებულ იყო; არამედ არცა ღმერთი შიშუველი კაცობისაგან, რამეთუ ჴორცნი ესხნეს, ჵ მანიქეველო. უკუეთუმცა არა შემემოსა მე, არცამცა მიჴსნა მე, არამედ მუცელსა ქალწულისასა განაჩინა და დაშჯილი იგი შეიმოსა.
         </p>
 <p id="p25"><span class="par-num" title="¶25">¶25</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ იხილე საშინელი იგი და შესაძრწუნებელი ცვალებაჲ: არა თუ სხუამან ჴორცნი სეისხნა თავადისა ქალწულისაგან და სხუაჲ ჰფარვიდა მას, ხოლო იგი ჴორციელ იქმნა მისგან. უკუეთუ სხუაჲ არს ქრისტჱ და სხუაჲ არს სიტყუაჲ ღმრთისაჲ, არღარა სამება, არამედ ოთხება არს.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ იხილე საშინელი იგი და შესაძრწუნებელი ცვალებაჲ: არა თუ სხუამან ჴორცნი სეისხნა თავადისა ქალწულისაგან და სხუაჲ ჰფარვიდა მას, ხოლო იგი ჴორციელ იქმნა მისგან. უკუეთუ სხუაჲ არს ქრისტჱ და სხუაჲ არს სიტყუაჲ ღმრთისაჲ, არღარა სამება, არამედ ოთხება არს.
         </p>
 <p id="p26"><span class="par-num" title="¶26">¶26</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴌ</span>უ განხეთქ მოღუაწებისასა მას მოსლვასა ზეგარდამო ქსოვილსა; ნუ დაემოწაფები არისს უღმრთოსა, რამეთუ იგი ტავადი უშჯულოებით არსებასა მას განჰყოფს, ხოლო შენ ერთობასა მას ნუ განჰყოფ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴌ</span>უ განხეთქ მოღუაწებისასა მას მოსლვასა ზეგარდამო ქსოვილსა; ნუ დაემოწაფები არისს უღმრთოსა, რამეთუ იგი ტავადი უშჯულოებით არსებასა მას განჰყოფს, ხოლო შენ ერთობასა მას ნუ განჰყოფ.
         </p>
 <p id="p27"><span class="par-num" title="¶27">¶27</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ინ არს, რომელი-იგი გამოუჩნდა მსხდომარეთა მათ ქუეშე აჩრდილთა სიკუდილისათა? კაცნი სამე იყვნეს. და ვითარ-მე, რომელნი-იგი ბნელსა შინა იქცეოდეს სიტყჳსა მისებრ პავლჱსისა, რომელსა იტყჳს, ვითარმედ: ოდესმე იყვენით ბნელ, ხოლო აწ ნათელ ხართ უფლისა მიერ? ხოლო რომელი-იგი გამოჩნდა და ვითარ ასწავებს და იტყჳს: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ინ არს, რომელი-იგი გამოუჩნდა მსხდომარეთა მათ ქუეშე აჩრდილთა სიკუდილისათა? კაცნი სამე იყვნეს. და ვითარ-მე, რომელნი-იგი ბნელსა შინა იქცეოდეს სიტყჳსა მისებრ პავლჱსისა, რომელსა იტყჳს, ვითარმედ: ოდესმე იყვენით ბნელ, ხოლო აწ ნათელ ხართ უფლისა მიერ? ხოლო რომელი-იგი გამოჩნდა და ვითარ ასწავებს და იტყჳს: 
           კურთხეულ არს მომავალი სახელითა უფლისაჲთა.
         </p>
 <p id="p28"><span class="par-num" title="¶28">¶28</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვინ არს 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ვინ არს 
           <span class="folio-milestone" data-wit="" data-folio="44v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0087" data-sp="87" title="Sin. geo. , f. 44v">44v</span> 
           მომავალი იგი? თქუ განცხადებულად, ჵ დავით! და იგი იტყჳს: 
           ღმერთი უფალი, და გამოგჳჩნდა ჩუენ.
           შეერთო ბუნებაჲ იგი და შეურწყუმელად ჰგიეს ერთობაჲ იგი. მოვიდა ცხორებაჲ იგი, არამედ თანა-ედვა სიკუდილიცა. ვითარ შესაზლებელ იყო ორივე ესე? კაცი ლიტონი ვერ შემძლებელ იყო ჴსნად, ღმრთისა შეუძლებელ იყო თჳნიერ ჴორცთა ვნებისა, რომელ-იგი ყო, ბუნებით და კაცთ-მოყუარებით იქმნა კაც; რომელი-იგი არსი იყო, მან აცხოვნა, და მერმე რომელი-იგი კაც იქმნა, მან ივნო.
         </p>
 <p id="p29"><span class="par-num" title="¶29">¶29</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მისთჳს ვითარცა იხილა იგი ეკლესიამან გჳრგჳნოსანი ეკლითა, შესაკრებელისა მის მათისა კადნიერებასა ჰგოდებს და იტყჳს: 
-          ასულნო იერუსალემისანო<span class="note-anchor" title="1*" id="anchor-note-4428356304">*</span>, გამოვედით და იხილეთ გჳრგჳნი, რომლითა გჳრგჳნოსან ყო დედამან მისმან.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>მისთჳს ვითარცა იხილა იგი ეკლესიამან გჳრგჳნოსანი ეკლითა, შესაკრებელისა მის მათისა კადნიერებასა ჰგოდებს და იტყჳს: 
+          ასულნო იერუსალემისანო<span class="note-anchor" title="1*" id="anchor-note-4460946480">*</span>, გამოვედით და იხილეთ გჳრგჳნი, რომლითა გჳრგჳნოსან ყო დედამან მისმან.
           რამეთუ ეკლისა გჳრგჳნი დაიდგა და ეკალთაჲ იგი დაჰჴსნა პატიჟი. იგივე წიაღთა მამისათა იყო და წიაღთა ქალწულისათა და ქალწულებისა კლიტჱ არა განხეთქა; რამეთუ ღმერთი იყო და ესრჱთ საშოჲსაგან გამოვიდა და ეგრევე იშვა, ვითარცა მუცელსა შევიდა; უვნებელად შევიდა და უჴრწნელად გამოვიდა სიტყჳსა მისებრ ეზეკიელ წინაწარმეტყუელისა, ვითარცა იტყჳს: 
           და მომაქცია მე უფალმან გზასა მას ბჭისა მის წმიდათაჲსა არმოსავალად. და იყო ოგო დაჴშულ. და მრქუა მე უფალმან; ძეო კაცისაო, ბჭჱ ესე იყოს დაჴშულ და არა განეღოს 
             <span class="folio-milestone" data-wit="" data-folio="45r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0088" data-sp="88" title="Sin. geo. , f. 45r">45r</span> 
             ესე, არცა გან-ვინ-ვიდეს მიერ, რამეთუ ღმერთი მხოლოჲ შევიდეს და იგი თავადი გამოვიდეს. და იყო ბჭჱ იგი დაჴშულ.
         </p>
 <p id="p30"><span class="par-num" title="¶30">¶30</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>ჰა ესერა განჩინებაჲ ქმნული წმიდისა ღმრთის-მშობელისა მარიამოსო. დასცხერინ ამიერითგან ყოველი ცილობაჲ და ჩუენ წმიდათა მიერ წიგნთა მოძღურებისათა განვნათლდებოდით, რაჲთა სასუფეველსა ცათასა მიწევნად ღირს ვიქმნეთ ქრისტჱს იესუს მიერ, უფლისა ჩუენისა, რომლისაჲ არს დიდებაჲ და ძალი მამისაჲ და ძისაჲ და სულისა წმიდისაჲ აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>ჰა ესერა განჩინებაჲ ქმნული წმიდისა ღმრთის-მშობელისა მარიამოსო. დასცხერინ ამიერითგან ყოველი ცილობაჲ და ჩუენ წმიდათა მიერ წიგნთა მოძღურებისათა განვნათლდებოდით, რაჲთა სასუფეველსა ცათასა მიწევნად ღირს ვიქმნეთ ქრისტჱს იესუს მიერ, უფლისა ჩუენისა, რომლისაჲ არს დიდებაჲ და ძალი მამისაჲ და ძისაჲ და სულისა წმიდისაჲ აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -808,12 +835,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

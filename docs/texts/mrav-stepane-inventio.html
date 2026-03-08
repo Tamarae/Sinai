@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,16 +561,20 @@
             <a href="mrav-basil-1.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-stepane-inventio">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ომელ ხართ ქალაქთა შინა და დაბნებსა წმიდანი და ღმრთის მსახურნი,
+            <div class="ms-head">
+          პოვნაჲ წმიდისა სტეფანჱსი, რჩეულისა მის მსახურისაჲ
+          და პირველ-მოწამისაჲ
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ომელ ხართ ქალაქთა შინა და დაბნებსა წმიდანი და ღმრთის მსახურნი,
           რომელნი სიმჴნესა შინა ხართ ეპისკოპოსნი და ხუცესნი და ერთბამად
-          ყოველთა მორწმუნეთა ქრისტე იესუს მიმარტთა მსახურთა<span class="note-anchor" title="1*" id="anchor-note-4428429600">*</span> ეკლესიისათა
+          ყოველთა მორწმუნეთა ქრისტე იესუს მიმარტთა მსახურთა<span class="note-anchor" title="1*" id="anchor-note-4461061488">*</span> ეკლესიისათა
           და ძმათა მარტო-მყოფთა, ლუკიანე საწყალობელი 
           <span class="folio-milestone" data-wit="" data-folio="60r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0118" data-sp="118" title="Sin. geo. , f. 60r">60r</span> და უნარჩევჱსი
           ყოველთაჲ უფლისა მიერ გიკითხავ.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴕ</span>ველის-მოქმედმან და კაცთ-მოყუარემან ღმერთმან ინება, რაჲთ უმეტჱსად
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴕ</span>ველის-მოქმედმან და კაცთ-მოყუარემან ღმერთმან ინება, რაჲთ უმეტჱსად
           აღამაღლოს რქაჲ ცხებულისა თჳსისაჲ, რომელ არს ქადაგებაჲ სახარებისაჲ,
           ინება ჩემ გლახაკისა ჴელითა უკუანათა მათ დღეთა გამოცხადებაჲ წმიდათა
           მონათა თჳსთაჲ სამ გზის სანატრელისა მის და დიდებულისა სტეფანჱსი,
@@ -562,7 +589,7 @@
           კაცთა, რომელთა პირველი მე ვარ.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა იყო სახჱ გამოცხადებისაჲ მის ესრჱთ: მეძინა, ვითარცა წინაჲთ
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იყო სახჱ გამოცხადებისაჲ მის ესრჱთ: მეძინა, ვითარცა წინაჲთ
           ჩუეულებასა ჩემსა, განშორებულსა მას სახლსა სანათლოჲსასა, სად-იგი დგა
           კიდობანი, რომელსა-იგი შთადვიან სამსახურებელი ეკლესიისაჲ, დღჱ რომელი
           განთენებოდა პარასკევად, აპნისა თთუესა სამსა, ჟამსა <span class="folio-milestone" data-wit="" data-folio="60v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0119" data-sp="119" title="Sin. geo. , f. 60v">60v</span> მას მეათხუთმეტესა
@@ -570,7 +597,7 @@
           თევდოსისსა, უფალთა მათ ჩუენთა თჳთმპყრობელთასა შარავანდედთასა.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ესამესა ჟამსა მის ღამისასა, ვიდრე მღჳძარეღა ვიყავ და რეცა და-რამე-მიკჳრდებოდა<span class="note-anchor" title="2*" id="anchor-note-4428423520">*</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ესამესა ჟამსა მის ღამისასა, ვიდრე მღჳძარეღა ვიყავ და რეცა და-რამე-მიკჳრდებოდა<span class="note-anchor" title="2*" id="anchor-note-4461059968">*</span>
           და შევსულბი. და ვიხილე კაცი ერთი ჰასაკოვანი და
           მოხუცებული და საკჳრველად შუენიერი ,რომელსა მოებლარდნა საბლარდნელი
           სპეტაკი. და იყვნეს ოთხთავე ყურთა მის საბლარდნელისათა სადგმელნი
@@ -580,7 +607,7 @@
           ოქროჲსაჲ აქუნდა მარჯუენესა ჴელსა მისსა.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მოვიდა, დადგა მახლობელად წინაშე ჩემსა და შემიგუმირა მე
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მოვიდა, დადგა მახლობელად წინაშე ჩემსა და შემიგუმირა მე
           კუერთხითა მით სამ გზის და მიწოდა მე სახელით სამ ჯერ. და მე მიუგე:
           რაჲ არს, უფალო? და მრქუა მე: აღვედ იერუსალემდ და არქუ წმიდასა მას
           ეპისკოპოსსა: ვიდრემდე ესრჱთ დაფარულ ვიყვნეთ და არა აღგუაღ ჩუენ
@@ -589,15 +616,15 @@
           რაჲთა ჩუენ გამო კარი კაცთ-მოყუარებისაჲ განეღოს სოფელსა, რამეთუ
           ურვასა შინა დგას და მიახს წარსაწყმედელად <span class="folio-milestone" data-wit="" data-folio="61r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0120" data-sp="120" title="Sin. geo. , f. 61r">61r</span> მრავალთათჳს უშჯულოებათა,
           რომელ იქმნებიან მას შინა მარადღე. და არა ესოდენი ესე ურვაჲ ჩემთჳს
-          ხოლო, არამედ უფროსღა<span class="note-anchor" title="1*" id="anchor-note-4428430320">*</span> მათთჳს, რომელნი-იგი არიან ჩემ თანა, რომელნი
+          ხოლო, არამედ უფროსღა<span class="note-anchor" title="1*" id="anchor-note-4461066448">*</span> მათთჳს, რომელნი-იგი არიან ჩემ თანა, რომელნი
           არიან ღირს მრავლისა დიდებისა და პატივისა. და ადგილი იგი ჩუენი
           უღუაწ არს და ძუალნი ჩუენნი სადამე ჟამ წჳმითა დაილტვნიან, და არნ ჟამი
           სადამე, მზითა განჴმიან და გამოეჴუების ძუალთა ჩუენთა სლვითა უღირსთაჲთა
-          ჩუენ ზედა დღითი-დღედ<span class="note-anchor" title="2*" id="anchor-note-4428429760">*</span>.
+          ჩუენ ზედა დღითი-დღედ<span class="note-anchor" title="2*" id="anchor-note-4461067248">*</span>.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მე, გლახაკმან ლუკიანე, მიუგე და ვარქუ: და სენ ვინ ხარ, უფალო,
-          და ვინ არიან იგი[ნი]<span class="note-anchor" title="3*" id="anchor-note-4428422480">*</span>, რომელ შენ თანა არიან, ანუ რომელსა ადგილსა გპოვნეთ?
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მე, გლახაკმან ლუკიანე, მიუგე და ვარქუ: და სენ ვინ ხარ, უფალო,
+          და ვინ არიან იგი[ნი]<span class="note-anchor" title="3*" id="anchor-note-4461064048">*</span>, რომელ შენ თანა არიან, ანუ რომელსა ადგილსა გპოვნეთ?
           და მრქუა მე: მე ვარ გამალიელ, რომელმან პავლე განვზარდე და შჯულის-მოძღუარ
           ვყავ იერუსალემს. ხოლო რომელი-იგი ჩემ თანა არიან დამარხულ,
           იგი თავადი არს უფალი ჩემი სტეფანე, რომელი ქვითა განიტჳნა ურწმუნოთაგან
@@ -607,7 +634,7 @@
           რაჲთამცა იყო იგი შესაჭმელად მჴეცთა და განსაჭრელად მფრინველთა.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მე, გამალიელ, უწყოდე სიმჴნჱ იგი მისი. რაჲთამცა ნაწილი მაქუნდა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მე, გამალიელ, უწყოდე სიმჴნჱ იგი მისი. რაჲთამცა ნაწილი მაქუნდა
           სარწმუნოებისაჲ აღდგომასა, აღვდეგ ფარულად ღამე და მოუწოდე, <span class="folio-milestone" data-wit="" data-folio="61v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0121" data-sp="121" title="Sin. geo. , f. 61v">61v</span> რომელნი
           უწყოდენ წმიდანი კაცნი და მორწმუნენი ქრისტჱსმიმართნი, რომელთა
           მუნქუეს ოდენ ნათელი მოეღო, და გულისხმა-უყავ და ვანებე და ვასწავე
@@ -615,12 +642,12 @@
           მას აგარაკსა, რომელსა ჰრქჳან ჩემდა სახელად კაპარ გამალ, რომელი
           შორავს ქალაქსა ვითარ ოც მილიონით ოდენ.
           და მუნ წესი ორმეოცთა დღეთაჲ აღასრულეს მსგავსად შჯულისა ბრძანებისა
-          და საჴმარი იგი მეტყებელთაჲ მათ უბრძანე მიცემად ჩემისა საფასისაგან<span class="note-anchor" title="4*" id="anchor-note-4428357504">*</span>.
+          და საჴმარი იგი მეტყებელთაჲ მათ უბრძანე მიცემად ჩემისა საფასისაგან<span class="note-anchor" title="4*" id="anchor-note-4460945360">*</span>.
           და ესრჱთ დაჰმარხეს იგი ჩემსა მას ახალსა სამარხოსა, რომელსა
           მებრვე არავინ დიდებულ იყო. 
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო მის თანა რომელი-იგი დამარხულ არს,
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო მის თანა რომელი-იგი დამარხულ არს,
           იგი თავადი არს ნიკოდემოს, მამის-ძmaჲ ჩემი, რომელ-იგი მივიდა ღამე მაცხოვრისა
           ჩუენისა იესუსა და ისწავა მისგან და ჰრწმენა, ვითარმედ ჯერ-არს
           <span class="folio-milestone" data-wit="" data-folio="65" title="Sin. geo. , f. 65">65</span>
@@ -628,54 +655,54 @@
           მოწაფეთა მისთაგან ჴელითა პეტრჱსითა.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვითარცა აგრძნეს მღდელთ-მოძღუართა მათ და სხუათა ფარისეველთა,
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ვითარცა აგრძნეს მღდელთ-მოძღუართა მათ და სხუათა ფარისეველთა,
           განრისხნეს მის ზედა და იზრახეს მოკლვაჲ მისი, ვითარცა წმიდისა
           სტეფანჱსი, ხოლო პატიოსნებისა ჩემისათჳს ვერ იკადრეს მოკლვაჲ მისი, _ უწყოდეს,
           რამეთუ ნათესავი ჩემი იყო, _ არამედ შეჩუენებულ ყვეს იგი და მიუღეს
-          პატივი მთავრობისა<span class="note-anchor" title="1*" id="anchor-note-4428358304">*</span> მისისაჲ და ყოველი ნაყოფი მისი იავარ-ყვეს და
+          პატივი მთავრობისა<span class="note-anchor" title="1*" id="anchor-note-4460945440">*</span> მისისაჲ და ყოველი ნაყოფი მისი იავარ-ყვეს და
           გუემეს იგი დიდითა გუემითა <span class="folio-milestone" data-wit="" data-folio="62r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0122" data-sp="122" title="Sin. geo. , f. 62r">62r</span> და წყლულებაჲ დასდვეს მის ზედა და
           განაძეს იგი ქალაქით.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო მე, გამალიელ, წარმოვიყვანე იგიცა ფარულად დაბასა მას ჩემსა,
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო მე, გამალიელ, წარმოვიყვანე იგიცა ფარულად დაბასა მას ჩემსა,
           რომელსა შენ, ლუკიანე, სდგა მღდელად, და განუწესე როჭიკი ჩემთაგან
           საფასეთა. და შემდგომად მცირეთა ჟამთა მანცა შეისუენა ვითარცა აღმსაარებელმან
           ქრისტჱსმან, და უბრძანე დამარხვაჲ მისი მახლობელად ფერჴთა
           თანა წმიდისა სტეფანჱსთა.
           ხოლო მესამჱ იგი, რომელ ჩემ თანა დამარხულ არს, იგი არს აბიბა,
-          საყუარელი შვილი ჩემი მწემი, რამეთუ<span class="note-anchor" title="2*" id="anchor-note-4428350304">*</span> მე და მან ნათელი მოვიღეთ ჴელითა
+          საყუარელი შვილი ჩემი მწემი, რამეთუ<span class="note-anchor" title="2*" id="anchor-note-4460942080">*</span> მე და მან ნათელი მოვიღეთ ჴელითა
           მათვე მოწაფეთაჲთა, რომელ-იგი იყვნეს მოწაფენი მაცხოვრისანი, რომელსაიგი
           ჰურიაებასა სახელი ერქუა ადდა, ხოლო ნათლის-ღებასა უწოდეს საყუარელ,
           რომელ ითქუმის სახელი ესე ასურებრ აბიბოს. ესე ოც წელ
           შჯულის მოწაფე იყო უფროჲს ჩემსა და პავლჱს თანა იზარდებოდა ბაგინსა
-          შინა. დედალაცი მებრვე<span class="note-anchor" title="3*" id="anchor-note-4428353104">*</span> არა შეემთხჳს, არცა იხილის, გარნა დედაჲ ხოლო
+          შინა. დედალაცი მებრვე<span class="note-anchor" title="3*" id="anchor-note-4460942240">*</span> არა შეემთხჳს, არცა იხილის, გარნა დედაჲ ხოლო
           თჳსი. და უბიწოჲ და შეუგინებელი აღესრულა. მაშინღა მე, გამალიელ, შემდგომად
           მისსა აღვესრულე და დავემარხე შვილისა ჩემისა თანა ზეჟთა სამარხვოსა
           მას სტეფანჱსსა.
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ცოლი ჩემი ედნა და პირველი ძჱ ჩემი სელემია, _ რამეთუ არა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ცოლი ჩემი ედნა და პირველი ძჱ ჩემი სელემია, _ რამეთუ არა
           თავს-იდვეს სარწმუნოებაჲ ქრისტჱსი, არამედ უფროჲსღა ლალვაჲ აღადგინეს
-          ჩუენ ზედა ნათლის-ღებისა ჩუენისათჳს, _ <span class="folio-milestone" data-wit="" data-folio="62v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0123" data-sp="123" title="Sin. geo. , f. 62v">62v</span> განგუყენნეს<span class="note-anchor" title="4*" id="anchor-note-4428357744">*</span>, გაგუეშორნეს,
+          ჩუენ ზედა ნათლის-ღებისა ჩუენისათჳს, _ <span class="folio-milestone" data-wit="" data-folio="62v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0123" data-sp="123" title="Sin. geo. , f. 62v">62v</span> განგუყენნეს<span class="note-anchor" title="4*" id="anchor-note-4460939920">*</span>, გაგუეშორნეს,
           წარვიდეს და მივიდეს დაბასა მას დედულსა ჩუენსა, რომელსა ჰრქჳან კაპარ
           სელემია, და მუნ მოწყდეს და არა ღირს იქმნეს დამარხვად ჩუენ თანა ჩუენსა
           ამას სამარხვოსა.
         </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ესრჱთ მე, ლუკიანე, აღვდეგ და ვჰმადლობდ უფალსა და ვევედრე
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ესრჱთ მე, ლუკიანე, აღვდეგ და ვჰმადლობდ უფალსა და ვევედრე
           ღმერთსა მას ღამესა და ვარქუ: უფალო, უფალო საუკუნეო, უკუეთუ კაცთმოყუარებისა
-          შენისაგან მოივლინა ჩემდა ხილვაჲ<span class="note-anchor" title="5*" id="anchor-note-4428355184">*</span> ესე, ჯერ-გიჩნდინ და
+          შენისაგან მოივლინა ჩემდა ხილვაჲ<span class="note-anchor" title="5*" id="anchor-note-4460945840">*</span> ესე, ჯერ-გიჩნდინ და
           ბრძანე, რაჲთა მეორედ და მესამედ გამომეცხადოს. და ვიწყე მიერითგან
           მარხვად და ვედრებად, მსგავსად წმიდათა მათ ორმეოცთა დღეთა. 
         </p>
 <p id="p13"><span class="par-num" title="¶13">¶13</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მერმესა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მერმესა
           პარასკევსა, ჟამსა მისვე ღამისასა, მოვიდა, დადგა ჩემ წინაშე იგივე გამალიელ
           მითვე ხატითა და მრქუა მე: რად უდებ-ჰყავ და არა ახუედ და უთხარ
           იოვანე ეპისკოპოსსა, რასა-იგი მე გეტყოდე შენ? ხოლო მე მიუგე და
           ვარქუ: შემინდვე, უფალო, რამეთუ ერტითა ჩუენებითა ვერ ვიკადრე ეგევითარისა
           <span class="folio-milestone" data-wit="" data-folio="66" title="Sin. geo. , f. 66">66</span>
-          მის მღდელთ-მოძღურისა<span class="note-anchor" title="1*" id="anchor-note-4428361984">*</span> ღმრთისაჲსა აღძრვად და ეგემლევანისა
+          მის მღდელთ-მოძღურისა<span class="note-anchor" title="1*" id="anchor-note-4460950080">*</span> ღმრთისაჲსა აღძრვად და ეგემლევანისა
           მის ერისა, უფროჲსღა, რამეთუ მასმიეს წიგნთაგან საღმრთოთა, ვითარმედ:
           პირითა ორისა და სამისა მოწამისაჲთა დაემტკიცოს ყოველი სიტყუაჲ(1)*. ხოლო
           ესე ვიკადრე და ვთქუ: უკუეთუ არს ხილვაჲ ესე ცემდა <span class="folio-milestone" data-wit="" data-folio="63r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0124" data-sp="124" title="Sin. geo. , f. 63r">63r</span> უფლისა მიერ,
@@ -684,7 +711,7 @@
           იყოს.
         </p>
 <p id="p14"><span class="par-num" title="¶14">¶14</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მან აღიმაღლა ჴმაჲ, ჴელი განყარა და თქუა სამ-ჯერ: შენდობილ
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მან აღიმაღლა ჴმაჲ, ჴელი განყარა და თქუა სამ-ჯერ: შენდობილ
           იყავნ შენდა! და ვითარცა ეგულვა განსლვად კართა ოდენ, დაიპყრა ფერჴი,
           უკმოიქცა და მრქუა მე: ჩემდა მოიხილე, ხუცეს! მაქუს სხუაჲცა სიტყუაჲ
           შენდა. და ვარქუ: რაჲ არს, უფალო? და თქუა: უწყი, რამეთუ შეორგულდი
@@ -701,11 +728,11 @@
           <span class="folio-milestone" data-wit="" data-folio="63v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0125" data-sp="125" title="Sin. geo. , f. 63v">63v</span> 
           დადგა კიშტჱ იგი, რომელ-იგი სავსე იყო ვარდითა მეწამულითა,
           მარჯუენით ჩემსა მზის აღმოსავალით კერძო, და კიშტჱ იგი სავსჱ ვარდითა
-          სპეტაკითა და ერთი იგი<span class="note-anchor" title="2*" id="anchor-note-4428355904">*</span> კიშტჱ სავსჱ შროშნითა დადგა მარცხენით ჩემსა
+          სპეტაკითა და ერთი იგი<span class="note-anchor" title="2*" id="anchor-note-4460944960">*</span> კიშტჱ სავსჱ შროშნითა დადგა მარცხენით ჩემსა
           ჩრდილოჲთ კერძო.
         </p>
 <p id="p15"><span class="par-num" title="¶15">¶15</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ორნი იგი დამოეკიდნეს აღყენებულად ქუეყანისაგან ვითარ სამით
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ორნი იგი დამოეკიდნეს აღყენებულად ქუეყანისაგან ვითარ სამით
           წყრთით ოდენ. და მრქუა მე: იხილენა კიშტენი ეგე? და მიუგე: ჰე,
           უფალო. და მრქუა მე: კიშტენი ეგე არიან სამარხონი ძუალთა ჩუენთანი. და
           რომელ-იგი ვარდითა მეწამულითა სავსე არს, იგი არს უფალი სტეფანე, რამეთუ
@@ -715,8 +742,8 @@
           ჰხედავ.
         </p>
 <p id="p16"><span class="par-num" title="¶16">¶16</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მე ვიკადრე და ვჰკითხე: რაჲსა-მე, უფალო, ერტი იგი კიშტჱ ოქროჲსაჲ
-          [არს]<span class="note-anchor" title="3*" id="anchor-note-4428363104">*</span> და ერთი იგი ვეცხლისაჲ? ანუ რაყსა ერთი იგი სავსე არს
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მე ვიკადრე და ვჰკითხე: რაჲსა-მე, უფალო, ერტი იგი კიშტჱ ოქროჲსაჲ
+          [არს]<span class="note-anchor" title="3*" id="anchor-note-4460952800">*</span> და ერთი იგი ვეცხლისაჲ? ანუ რაყსა ერთი იგი სავსე არს
           ვარდითა მეწამულითა და ერტი იგი სავსე არს შროშნითა? და მრქუა მე:
           ვეცხლისა იგი კიშტჱ სამარხოჲ ძისა ჩემისაჲ არს, რამეთუ წმიდა იყო ჴორცითა
           და მბრწყინვალე სულითა ვითარცა ვეცხლი; ბაგინსა მას ღმრთისასა
@@ -725,32 +752,32 @@
           ამისთჳს სავსე არს შროშნითა.
         </p>
 <p id="p17"><span class="par-num" title="¶17">¶17</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მისსა შემდგომად ვჰმადლობდ მადლსა მას ღმრთისასა და დავადგერ
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>მისსა შემდგომად ვჰმადლობდ მადლსა მას ღმრთისასა და დავადგერ
           მასვე მარხვასა და მოველოდე <span class="folio-milestone" data-wit="" data-folio="64r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0126" data-sp="126" title="Sin. geo. , f. 64r">64r</span> მესამედ მოსლვასა მისსა. და მესამესა
           პარასკევსა, ჟამსა მას წინანდელსავე, მოვიდა, დადგა წინაშე ჩემსა იგივე უფალი
           საკჳრველი გამალიელ, თქუმიტ შემრისხნა და მრქუა: რაჲ განიზრახე და
           უდებ-ჰყავ და არა ახუედ და უთხარ ეპისკოპოსსა მას? მართლიად გეტყჳ შენ:
           უკუეთუ არა ადრე ახჳდე და უთხრა ეპისკოპოსსა, მოწევნად არს შენ ზედა
           ტანჯვაჲ არაისაგონებელი. და ვთქუ: წინაჲსწარვე გევედრე, უფალო, რამეთუ
-          მოგელოდე მესამედ ჩუენებად ჩემდა, რაჲთა<span class="note-anchor" title="1*" id="anchor-note-4428359664">*</span> ესრჱთ დამტკიცებულად და
+          მოგელოდე მესამედ ჩუენებად ჩემდა, რაჲთა<span class="note-anchor" title="1*" id="anchor-note-4460944880">*</span> ესრჱთ დამტკიცებულად და
           დაუბრკოლებელად განვთქუა გამოცხადებისა თქუენისათჳს.
         </p>
 <p id="p18"><span class="par-num" title="¶18">¶18</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვიდრე-იგი დგა და მითქუმიდა მე ჩუენებასა მასვე შინა, მივიტაცე
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ვიდრე-იგი დგა და მითქუმიდა მე ჩუენებასა მასვე შინა, მივიტაცე
           ქალაქად და უთხარ ყოველი იგი ჩუენებაჲ ეპისკოპოსსა იოვანეს. და მასვე
           ჩუენებასა შინა მრქუა მე ეპისკოპოსმან: უკუეთუ იხილე, საყუარელო, თუ
           ნანდჳლ ეგე ეგრე გამოგეცხადა ჟამთა ამათ ჩუენთა, უკუე ჩემდაცა წეს-არს
           გამოპყრობად ჴარი იგი მთავარი, უკუანა საბამი, მშრომელი და ურნატსავსედ
-          განმმართებელი იგი და ურმად მჴნჱ იგი, და შენდად მიგეტეოს<span class="note-anchor" title="2*" id="anchor-note-4428354224">*</span> აგარაკი
-          იგი ნაყოფითურთ<span class="note-anchor" title="3*" id="anchor-note-4428355664">*</span>, რომელ მას შინა იყოს. და მე მიუგე მასვე ჩუენებასა
+          განმმართებელი იგი და ურმად მჴნჱ იგი, და შენდად მიგეტეოს<span class="note-anchor" title="2*" id="anchor-note-4460941280">*</span> აგარაკი
+          იგი ნაყოფითურთ<span class="note-anchor" title="3*" id="anchor-note-4460940800">*</span>, რომელ მას შინა იყოს. და მე მიუგე მასვე ჩუენებასა
           შინა და ვთქუ: უფალო, რაჲთა-მე იყოს ჩემდა აგარაკი, უკუეთუ არა
           მედგას ჴარი მშრომელი? და მან მრქუა მე: ეგრე წეს-არს, რამეთუ ქალაქი ესე
           ურემ-დიდ და ტჳრთ-მძიმის <span class="folio-milestone" data-wit="" data-folio="64v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0127" data-sp="127" title="Sin. geo. , f. 64v">64v</span> მოხარკე არს და ჴამს დიდისა მის ურმისა
           ჴარი მჴნჱ და ითქუმოდის მოგებულ შემნ მიერ.
         </p>
 <p id="p19"><span class="par-num" title="¶19">¶19</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ამეთუ სამართალ არს მოცემად ქალაქსა ამას ეგევითარი და შენდა
-          კმა-არიან ორნი იგი ჴარნი სამწყულითურთ<span class="note-anchor" title="4*" id="anchor-note-4428352864">*</span> შემწეობითა ჴარისა მის დიდისაჲთა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ამეთუ სამართალ არს მოცემად ქალაქსა ამას ეგევითარი და შენდა
+          კმა-არიან ორნი იგი ჴარნი სამწყულითურთ<span class="note-anchor" title="4*" id="anchor-note-4460938560">*</span> შემწეობითა ჴარისა მის დიდისაჲთა
           საჴმარად საქმისა აგარაკისა მის შენისათჳს. და ესე ვითარცა მრქუა
           ეპისკოპოსმან, ჩუენებასა მას ვიხილე უფალი გამალიელ, რამეთუ მოვიდა და
           მიპყრა ჴელი ჩემი და მიმიყვანა მე მასვე აგარაკსა და მრქუა: უკუეთუ გნებავს
@@ -763,8 +790,8 @@
           მათსა.
         </p>
 <p id="p20"><span class="par-num" title="¶20">¶20</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ამისსა შემდგომად შევედ ქალაქად და ვაუწყე პირველად მორწმუნეთა
-          და ღირსთა ხუცესთა, რაჲთამცა მასწავეს, ვითარმედ რაჲმე-რაჲ<span class="note-anchor" title="5*" id="anchor-note-4433796192">*</span> ჯერ-არს
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ამისსა შემდგომად შევედ ქალაქად და ვაუწყე პირველად მორწმუნეთა
+          და ღირსთა ხუცესთა, რაჲთამცა მასწავეს, ვითარმედ რაჲმე-რაჲ<span class="note-anchor" title="5*" id="anchor-note-4466564192">*</span> ჯერ-არს
           ყოფად ჩემდა. და მათ მრქუეს მე: ჰხედავა, ვითარ-ესე ზედაყს-ზედა
           ძრვანი იყოფიან ყოველსა ჟამსა და ესევითარი ესე გუალვაჲ და და\ყენებაჲ <span class="folio-milestone" data-wit="" data-folio="65r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0128" data-sp="128" title="Sin. geo. , f. 65r">65r</span> 
           წჳმისაჲ, და გნებავს დაფარვად გამოცხადებული ესე ჩუენებაჲ, რომელ
@@ -772,19 +799,19 @@
           კაცთ-მოყუარებისათჳს სოფელსა გამოცხადნა ღმრთისა მიერ? აწ ნუ დასდუმნები.
         </p>
 <p id="p21"><span class="par-num" title="¶21">¶21</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა პირველ იგინი შევიდეს და უთხრეს ჩემთჳს ეპისკოპოსსა იოვანეს.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა პირველ იგინი შევიდეს და უთხრეს ჩემთჳს ეპისკოპოსსა იოვანეს.
           და მან შემიწოდა მე და მკითხვიოდა, ვითარმედ: ნანდჳლ ეგრე არსა?
           და ესრჱთ დავდეგ და მიუთხარ ჩუენებაჲ იგი _ ხილვაჲ იგი პირველი და
           მეორჱ, და კერძოჲ მესამისა მის ჩუენებისაჲ დავიპყარ და არა უთხარ ხილვაჲ
           იგი, რომელ ჴარისა მისთჳს უკუანა საბამისა იოვანე მომიგო, და ველოდე
           სმენად მისგან. და მან ადრე-ადრე აღიმაღლა ჴმაჲ თჳსი და თქუა: კურთხეულ
           არს უფალი! უკუეთუ ნანდჳლ ეგრე იხილე, საყუარელო, და ჟამთა
-          ამათ<span class="note-anchor" title="1*" id="anchor-note-4433794272">*</span> ჩუენთა უნდა უფალსა წმიდათა თჳსთა გამოცხადებაყ, ჩემდა წეს-არს,
+          ამათ<span class="note-anchor" title="1*" id="anchor-note-4466562192">*</span> ჩუენთა უნდა უფალსა წმიდათა თჳსთა გამოცხადებაყ, ჩემდა წეს-არს,
           რაჲთა მოვიხუნე ძუალნი იგი წმიდისა სტეფანჱსნი, პირველ-მოწამისაჲ, რომელმან-იგი
           თუალითა თჳსითა იხილა სასუფეველი ცათაჲ.
         </p>
 <p id="p22"><span class="par-num" title="¶22">¶22</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ამისა შემდგომად მიუთხარ ნეშტი იგი მესამისა მის ჩუენებისაჲ. და
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ამისა შემდგომად მიუთხარ ნეშტი იგი მესამისა მის ჩუენებისაჲ. და
           მრქუა მე, ვითარმედ: ნანდჳლვე ჭეშმარიტად უნებს გამოცხადებად წმიდათა
           მათ, ვითარცა-ეგე რენ გეჩუენა. და აღივსო სიხარულითა <span class="folio-milestone" data-wit="" data-folio="65v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0129" data-sp="129" title="Sin. geo. , f. 65v">65v</span> სახარებისა
           ამისთჳს და მიბრძანა ,ე, ვითარმედ: შთავედ და თხარე და იძიენ ბორცუსა
@@ -792,7 +819,7 @@
           წიგნითა.
         </p>
 <p id="p23"><span class="par-num" title="¶23">¶23</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მე ვითარცა ესევითარი ბრძანებაჲ მოვიღე მისგან, შთამოვედ დაბასა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მე ვითარცა ესევითარი ბრძანებაჲ მოვიღე მისგან, შთამოვედ დაბასა
           მას ჩემსა და უთხარ ყოველთა მწუხრისა ჟამსა და ვამცენ, რაჲთა ყოველნივე
           ერთბამად ხვალისაგან მსთუად მივკრბეთ თხრად ბორცუსა მას ოდენ.
           და მასვე ღამესა მეჩუენა იგივე უფალი გამალიელ და თქუა: ხუცეს, ნუ
@@ -803,12 +830,12 @@
           ათხუთმეტ.
         </p>
 <p id="p24"><span class="par-num" title="¶24">¶24</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴄ</span>გრე სახედ სხუასაცა ვისმე მონაზონსა წრფელსა და უბიწოსა, რომელსა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴄ</span>გრე სახედ სხუასაცა ვისმე მონაზონსა წრფელსა და უბიწოსა, რომელსა
           სახელი ერქუა მეგეთეს, ეჩუენა მასვე ღამესა იგივე უფალი
           გამალიელ და ჰრქუა: მივედ და არქუ ლუკიანე ხუცესსა, ვითარმედ: ნუ ცუდად
-          დაშურები ძიებად ჩუენდა ბორცუსა<span class="note-anchor" title="2*" id="anchor-note-4433790832">*</span> მას, რამეთუ არა მუნ ვართ, არამედ
+          დაშურები ძიებად ჩუენდა ბორცუსა<span class="note-anchor" title="2*" id="anchor-note-4466559312">*</span> მას, რამეთუ არა მუნ ვართ, არამედ
           ბღუარით კერძო ყანობირსა მას შინა. უჩუენა მას ადგილი იგი, რომელცა-იგი
-          მე <span class="folio-milestone" data-wit="" data-folio="66r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0130" data-sp="130" title="Sin. geo. , f. 66r">66r</span> გლახაკსა ამას მეჩუენა. მერმე კუალად მეჩუენა<span class="note-anchor" title="3*" id="anchor-note-4433789872">*</span> მე, ლუკიანეს,
+          მე <span class="folio-milestone" data-wit="" data-folio="66r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0130" data-sp="130" title="Sin. geo. , f. 66r">66r</span> გლახაკსა ამას მეჩუენა. მერმე კუალად მეჩუენა<span class="note-anchor" title="3*" id="anchor-note-4466558112">*</span> მე, ლუკიანეს,
           სამნი ცხედარნი ოქროჲსანი. და იყვნეს ორნი იგი უმდაბლჱს და ერთი იგი
           უმაღლჱს. და ერთსა მას ცხედარსა ზედა ისხნეს ორ კაც: ერთი იგი მჴრცოვან
           და ერთი იგი ჭაბუკ. და შემკულ იყვნეს ცხედარნი იგი ესრე სახედ:
@@ -819,9 +846,9 @@
         </p>
 <p id="p25"><span class="par-num" title="¶25">¶25</span>
           <span class="folio-milestone" data-wit="" data-folio="69" title="Sin. geo. , f. 69">69</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვითარცა აღვდეგით რიჟურაჟუს ოდენ, მივიმართეთ მისლვად პირველ
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ვითარცა აღვდეგით რიჟურაჟუს ოდენ, მივიმართეთ მისლვად პირველ
           ბორცუსა მას, ხოლო მონაზონი იგი გუაყენებდა ჩუენ და მრქუა მე:
-          ესე და ესე ვიხილე თხრობად<span class="note-anchor" title="1*" id="anchor-note-4433789072">*</span> სენდა. ხოლო მე ვითარცა მესმა, ვცან, ვითარმედ
+          ესე და ესე ვიხილე თხრობად<span class="note-anchor" title="1*" id="anchor-note-4466556992">*</span> სენდა. ხოლო მე ვითარცა მესმა, ვცან, ვითარმედ
           ჭეშმარიტ იყო ხილვაჲ იგი მისი. ხოლო პირველად ბორცუსა მასვე
           მივიმართეთ და ვთხარეთ ვითარ სამ ჟამ ოდენ. და ვპოვეთ ზეგლი ერტი,
           რომელსა წერილ იყო ჰებრაელებრ. და მუნქუესვე მოვიყვანეთ მწიგნობარი,
@@ -838,7 +865,7 @@
           აბიბას, რომელ არს: საყუარელი შვილი. 
         </p>
 <p id="p26"><span class="par-num" title="¶26">¶26</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მუნქუეს ოდენ მეყსეულად
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მუნქუეს ოდენ მეყსეულად
           იყო ძრვა დიდ და აღიმღერნეს ძუალთა მათ წმიდისა სტეფანჱსთა
           და განმხიარულდეს, და სული სულნელებისაჲ დიდძალი გამოჴდა მისისა მის
           ლუსკუმისაგან, და ჩუენ ყოველთა ვითარცა მთრვალთა მიგუერულებოდა.
@@ -850,7 +877,7 @@
         </p>
 <p id="p27"><span class="par-num" title="¶27">¶27</span>
           <span class="folio-milestone" data-wit="" data-folio="67r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0132" data-sp="132" title="Sin. geo. , f. 67r">67r</span> 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ამისსა შემდგომად ვაუწყე წმიდასა მას ეპისკოპოსსა. და შთამოვიდა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ამისსა შემდგომად ვაუწყე წმიდასა მას ეპისკოპოსსა. და შთამოვიდა
           იგი და ორნი ეპისკოპოსნი სხუანი მის თანა. და ვითარ იხილეს,
           განიხარეს ფრიად. და წრიღეს წმიდაჲ სტეფანე წმიდად ქალაქად
           იერუსალემდ და დადვეს წმიდასა სიონს. დაშეკრბეს და აღაშჱნეს ერთბამად
@@ -992,12 +1019,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

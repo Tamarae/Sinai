@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,41 +561,44 @@
             <a href="mrav-sulthmofenoba-1.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-amaghleba">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>ფალი ჩუენი და ძჱ ღმრთისაჲ რაჟამს მოვიდოდა, ვერ იხილეს იგი ანგელოზთა; ხოლო ვითარცა აღმაღლდა დღეს, ჰხედვიდეს და იხილვიდეს მას მოწაფენიცა მისნი. არა იხილეს ანგელოზთა მოსლვაჲ იგი მისი ჩუენდა, რამეთუ ძალი თჳნიერ ჴორცთა დაფარულად გარდამოჴდა მაღლით და განისუენა ქალწულსა მას ზედა.
+            <div class="ms-head">
+          <span class="geo-rubric" style="color:var(--crimson);">საკითხავნი ამაღლებისანი, თქუმული იოვანე ოქროპირისაჲ</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>ფალი ჩუენი და ძჱ ღმრთისაჲ რაჟამს მოვიდოდა, ვერ იხილეს იგი ანგელოზთა; ხოლო ვითარცა აღმაღლდა დღეს, ჰხედვიდეს და იხილვიდეს მას მოწაფენიცა მისნი. არა იხილეს ანგელოზთა მოსლვაჲ იგი მისი ჩუენდა, რამეთუ ძალი თჳნიერ ჴორცთა დაფარულად გარდამოჴდა მაღლით და განისუენა ქალწულსა მას ზედა.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴈ</span>ხილეს კაცთა აღმაღლებაჲ იგი მაღლად, რამეთუ ჴორცნი ქუეყანისანი აღჴდეს ზეცად, განეფინა ღრუბელი და შეიწყნარა უფალი, ახარა ქალწულსა და შეიწყნარა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴈ</span>ხილეს კაცთა აღმაღლებაჲ იგი მაღლად, რამეთუ ჴორცნი ქუეყანისანი აღჴდეს ზეცად, განეფინა ღრუბელი და შეიწყნარა უფალი, ახარა ქალწულსა და შეიწყნარა.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>აჟამს ღმრთეებაჲ იგი მისი კაცებასა ჩუენსა შეეზიარებოდა და ქალწულსა მას, რომელი ქუეყანისაჲ იყო, დაადგრა მას შინა; ხოლო რაჟამს კაცებასა ამას ჩუენსა <span class="folio-milestone" data-wit="" data-folio="171r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173" title="Sin. geo. , f. 171r">171r</span> ღმრთეებითა თჳსითა განამდიდრებდა, ღრუბლითა აღამაღლებდა ჴორცთა ჩუენთა და წესცა იყო, რამეთუ ვიდრე ჩუენ თანა იყო, ძლიერებასა თჳსსა დაიმდაბლებდა, რაჲთა უძლურებასა ზედა დაემკჳდროს.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>აჟამს ღმრთეებაჲ იგი მისი კაცებასა ჩუენსა შეეზიარებოდა და ქალწულსა მას, რომელი ქუეყანისაჲ იყო, დაადგრა მას შინა; ხოლო რაჟამს კაცებასა ამას ჩუენსა <span class="folio-milestone" data-wit="" data-folio="171r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173" title="Sin. geo. , f. 171r">171r</span> ღმრთეებითა თჳსითა განამდიდრებდა, ღრუბლითა აღამაღლებდა ჴორცთა ჩუენთა და წესცა იყო, რამეთუ ვიდრე ჩუენ თანა იყო, ძლიერებასა თჳსსა დაიმდაბლებდა, რაჲთა უძლურებასა ზედა დაემკჳდროს.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴄ</span>გრეცა რაჟამს აღჰქონდეს ჴორცნი ჩუენნი მის თანა, დიდებითა სიმდიდრისა მისისაჲთა აღმაღლდეს. ვითარცა შეიმოსეს ძალი მაღალთა შინა ჴორცთა მათ, რომელნი ქალწულისაგან იყვნეს, მოვიდა და ეჩუენა კაცთა, ეგრეცა შეიმოსს ჴორცთა ქუეყანისათა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴄ</span>გრეცა რაჟამს აღჰქონდეს ჴორცნი ჩუენნი მის თანა, დიდებითა სიმდიდრისა მისისაჲთა აღმაღლდეს. ვითარცა შეიმოსეს ძალი მაღალთა შინა ჴორცთა მათ, რომელნი ქალწულისაგან იყვნეს, მოვიდა და ეჩუენა კაცთა, ეგრეცა შეიმოსს ჴორცთა ქუეყანისათა.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>იდებულებაჲ შორის ღრუბელსა მას აღჴდა და მოიღო თაყუანის-ცემაჲ ანგელოზთაგან მაღალთა შინა, რაჲთა აჩუენოს, რამეთუ ეზიარა კაცებაჲ ჩუენი ღმრთეებასა მისსა და განმდიდრდა ცათა შინა; ღაღატ-ყო და თქუა, ვითარმედ: აღმომიყვანნა ჩუენ მარჯუენითა ცათა შინა. და წინაწარმეტყუელმან თქუა, ვითარმედ: აღმაღლენით ბჭენი თქუენი, მთავარნო. და აღმაღლდედ ბჭენი საუკუნენი და შევიდეს მეუფჱ დიდებისაჲ<span class="note-anchor" title="(1)*" id="anchor-note-4428427280">1</span>. და კულად<span class="note-anchor" title="1*" id="anchor-note-4428430560">2</span>, ვითარმედ: ჰრქუა უფალმან უფალსა ჩემსა: დაჯედ მარჯუენით ჩემსა<span class="note-anchor" title="(2)*" id="anchor-note-4428425840">3</span>. ხოლო მოციქული გამოუთარგმანებს: რომელსა-იგი წინაწარმეტყუელი უფლით ჰხადის, რაჟამს დაჯდების მარჯუენით მშობლისა თჳსისა, იგი არს, რომელსა ჰრქუა გაბრიელ უფალ, რაჟამს შთავიდოდა იგი ყურსა მას ქალწულისასა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>იდებულებაჲ შორის ღრუბელსა მას აღჴდა და მოიღო თაყუანის-ცემაჲ ანგელოზთაგან მაღალთა შინა, რაჲთა აჩუენოს, რამეთუ ეზიარა კაცებაჲ ჩუენი ღმრთეებასა მისსა და განმდიდრდა ცათა შინა; ღაღატ-ყო და თქუა, ვითარმედ: აღმომიყვანნა ჩუენ მარჯუენითა ცათა შინა. და წინაწარმეტყუელმან თქუა, ვითარმედ: აღმაღლენით ბჭენი თქუენი, მთავარნო. და აღმაღლდედ ბჭენი საუკუნენი და შევიდეს მეუფჱ დიდებისაჲ<span class="note-anchor" title="(1)*" id="anchor-note-4461063888">1</span>. და კულად<span class="note-anchor" title="1*" id="anchor-note-4461054208">2</span>, ვითარმედ: ჰრქუა უფალმან უფალსა ჩემსა: დაჯედ მარჯუენით ჩემსა<span class="note-anchor" title="(2)*" id="anchor-note-4461053888">3</span>. ხოლო მოციქული გამოუთარგმანებს: რომელსა-იგი წინაწარმეტყუელი უფლით ჰხადის, რაჟამს დაჯდების მარჯუენით მშობლისა თჳსისა, იგი არს, რომელსა ჰრქუა გაბრიელ უფალ, რაჟამს შთავიდოდა იგი ყურსა მას ქალწულისასა.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მისთჳს ვიდოდა უფალი მოწაფეთა თანა ამას ორმეოცსა დღესა და მერმეღა აღმაღლდა <span class="folio-milestone" data-wit="" data-folio="171v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174" title="Sin. geo. , f. 171v">171v</span> ცად, რაჲთა დაამტკიცნეს მოწაფენი აღდგომისათჳს.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>მისთჳს ვიდოდა უფალი მოწაფეთა თანა ამას ორმეოცსა დღესა და მერმეღა აღმაღლდა <span class="folio-milestone" data-wit="" data-folio="171v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174" title="Sin. geo. , f. 171v">171v</span> ცად, რაჲთა დაამტკიცნეს მოწაფენი აღდგომისათჳს.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუმცა შემდგომად აღდგომისა აღ-ხოლო-სრულ იყო ცად და არა ყოფილ იყო მოწაფეთა თანა, ეგონამცა, ვითარმედ საუცარ რაჲმე იყოო და არა ვითარცა ჭეშმარიტად განცხოველებული. რამეთუ ვითარცა უჩუენნა მათ ჴორცნი და გუერდი თჳსი და ბრძჳლნი ლახურისანი, და ჰრქუა მათ: მიხილეთ მე და განმიცადეთ, რამეთუ მე ვარ, და ნუ განიწვალებით გონებითა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუმცა შემდგომად აღდგომისა აღ-ხოლო-სრულ იყო ცად და არა ყოფილ იყო მოწაფეთა თანა, ეგონამცა, ვითარმედ საუცარ რაჲმე იყოო და არა ვითარცა ჭეშმარიტად განცხოველებული. რამეთუ ვითარცა უჩუენნა მათ ჴორცნი და გუერდი თჳსი და ბრძჳლნი ლახურისანი, და ჰრქუა მათ: მიხილეთ მე და განმიცადეთ, რამეთუ მე ვარ, და ნუ განიწვალებით გონებითა.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ჯეკმა ღათუ მრავალ იყვნეს მოწამენი აღდგომისანი, ხოლო იგი[ნი]<span class="note-anchor" title="1*" id="anchor-note-4428420000">4</span> გონებითა მათითა, ვითარცა ნავნი ღელვათაგან, შეძრწუნებულ იყვნეს; რავდენმეღა უფროჲს, არა თუ-მცა ყოფილ იყო მათ თანა, მრავალიმცა თესლი ორგულებისაჲ დათესულ იყო მათ თანა!
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ჯეკმა ღათუ მრავალ იყვნეს მოწამენი აღდგომისანი, ხოლო იგი[ნი]<span class="note-anchor" title="1*" id="anchor-note-4461056128">4</span> გონებითა მათითა, ვითარცა ნავნი ღელვათაგან, შეძრწუნებულ იყვნეს; რავდენმეღა უფროჲს, არა თუ-მცა ყოფილ იყო მათ თანა, მრავალიმცა თესლი ორგულებისაჲ დათესულ იყო მათ თანა!
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>რამედ დადგა მათ თანა და ჭამა მათ თანა, არა ვითარცა მშიერი, და ნუგეშინისსცა<span class="note-anchor" title="2*" id="anchor-note-4428422800">5</span> მათ მოკითხვითა თჳსითა და ახარა მათ ზიარებითა თჳსითა და უბრძანა მათ ქადაგებად სახარებაჲ მისი ყოველთა დაბადებულთა. წარვიდა მათგან კაცებრ და იყო მათ თანა ღმრთეებითა; და აღმაღლდა მეუფჱ იგი ჩუენი ძლევითა და დაჯდა მარჯუენით<span class="note-anchor" title="3*" id="anchor-note-4428421760">6</span> მამისა თჳსისა, ვითარცა თქუა მოციქულმან: საყდარი შენი, ღმერთო, უკუნითი უკუნისამდე<span class="note-anchor" title="(1)*" id="anchor-note-4428425520">7</span>. და დავით თქუა: უფალი სუფევს, შუენიერებაჲ შეიმოსა<span class="note-anchor" title="(2)*" id="anchor-note-4428419920">8</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>რამედ დადგა მათ თანა და ჭამა მათ თანა, არა ვითარცა მშიერი, და ნუგეშინისსცა<span class="note-anchor" title="2*" id="anchor-note-4461058528">5</span> მათ მოკითხვითა თჳსითა და ახარა მათ ზიარებითა თჳსითა და უბრძანა მათ ქადაგებად სახარებაჲ მისი ყოველთა დაბადებულთა. წარვიდა მათგან კაცებრ და იყო მათ თანა ღმრთეებითა; და აღმაღლდა მეუფჱ იგი ჩუენი ძლევითა და დაჯდა მარჯუენით<span class="note-anchor" title="3*" id="anchor-note-4461055568">6</span> მამისა თჳსისა, ვითარცა თქუა მოციქულმან: საყდარი შენი, ღმერთო, უკუნითი უკუნისამდე<span class="note-anchor" title="(1)*" id="anchor-note-4461057328">7</span>. და დავით თქუა: უფალი სუფევს, შუენიერებაჲ შეიმოსა<span class="note-anchor" title="(2)*" id="anchor-note-4461058048">8</span>.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-          <span class="folio-milestone" data-wit="" data-folio="173r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176" title="Sin. geo. , f. 173r">173r</span> <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო აწ ამას ორმეოცსა დღესა აღჳრნი მარხვისანი განგუაშორნა ჩუენგან, რამეთუ თავადმან თჳთ თქუა, ვითარმედ: არა ჯერ-არს მარხვაჲ ყრმათა მექორწილეთაჲ და არცა გლოვაჲ, ვიდრე სიძჱ იგი მათ თანა არს. ხოლო მოვიდენ დღენი, რაჟამს აღმაღლდეს მათგან სიძჱ იგი, და მაშინ იმარხვიდენ<span class="note-anchor" title="(3)*" id="anchor-note-4428428640">9</span>.
+          <span class="folio-milestone" data-wit="" data-folio="173r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176" title="Sin. geo. , f. 173r">173r</span> <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო აწ ამას ორმეოცსა დღესა აღჳრნი მარხვისანი განგუაშორნა ჩუენგან, რამეთუ თავადმან თჳთ თქუა, ვითარმედ: არა ჯერ-არს მარხვაჲ ყრმათა მექორწილეთაჲ და არცა გლოვაჲ, ვიდრე სიძჱ იგი მათ თანა არს. ხოლო მოვიდენ დღენი, რაჟამს აღმაღლდეს მათგან სიძჱ იგი, და მაშინ იმარხვიდენ<span class="note-anchor" title="(3)*" id="anchor-note-4461066768">9</span>.
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>ღვიხუნეთ ამიერითგან მარხვანი მოციქულთანი, რამეთუ ნაშობნი ვართ ქადაგებისა მათისანი, და წეს-არს ჩუენდა ნუგეშინის-ცემად მარხვითა, რაჲთა გამოვიზარდნეთ სულნი ჩუენნი ტაბლისაგან ქრისტჱსისა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>ღვიხუნეთ ამიერითგან მარხვანი მოციქულთანი, რამეთუ ნაშობნი ვართ ქადაგებისა მათისანი, და წეს-არს ჩუენდა ნუგეშინის-ცემად მარხვითა, რაჲთა გამოვიზარდნეთ სულნი ჩუენნი ტაბლისაგან ქრისტჱსისა.
         </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო ყავნ ჩუენ თანა ამიერითგან უფალმან ჩუენმან მძლემან, რომელი აღმაღლდა დღეს ძლევით და აღმიყვანნა<span class="note-anchor" title="4*" id="anchor-note-4428429360">10</span> ჩუენ მის თანა მაღლად ჴორცითა მით, რომელ შეისხნა ჩუენგან, რაჲთა ღირს ვიყვნეთ აღსრულებად ამის დღესასწაულისა და აღმოვთქუათ მადლი და დიდებაჲ და თაყუანის-ცემაჲ მამისაჲ და ძისაჲ და სულისა წმიდისაჲ აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ყავნ ჩუენ თანა ამიერითგან უფალმან ჩუენმან მძლემან, რომელი აღმაღლდა დღეს ძლევით და აღმიყვანნა<span class="note-anchor" title="4*" id="anchor-note-4461067808">10</span> ჩუენ მის თანა მაღლად ჴორცითა მით, რომელ შეისხნა ჩუენგან, რაჲთა ღირს ვიყვნეთ აღსრულებად ამის დღესასწაულისა და აღმოვთქუათ მადლი და დიდებაჲ და თაყუანის-ცემაჲ მამისაჲ და ძისაჲ და სულისა წმიდისაჲ აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -710,12 +736,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

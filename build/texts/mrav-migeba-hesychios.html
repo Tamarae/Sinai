@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,18 +561,26 @@
             <a href="mrav-migeba-timote.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-migeba-hesychios">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
+            <div class="ms-head">
+           [თ̃ა ფებერვალსა ბ̂
+           მიგებებაჲ
+           დღესა, რომელსა მიიქუას სჳმეონ მკლავთა თჳსთა ზედა უფალი
+           თქუმული ევსუქი ხუცისაჲ იერუსალემელისაჲ
+           მეორმეოცისა მის დღისა შობითგან ქალწულისა უფლისა ჩუენისა იესუ ქრისტჱსა
+           ოდეს მიიყვანეს ტაძრად, ვითარ აკურთხევდა წ̃ა სჳმეონ]
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
           <span class="folio-milestone" data-wit="" data-folio="85r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0168" data-sp="168" title="Sin. geo. , f. 85r">85r</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>მად მის პირველისაებრ სარწმუნოებით და მანცა იგივე ხედვაჲ მოიპოვენ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>მად მის პირველისაებრ სარწმუნოებით და მანცა იგივე ხედვაჲ მოიპოვენ.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუ ვინმე დაჴსნილი იყოს, შევედინ იგიცა პირველსავე მას საბანელსა პროდიაკისასა და ეყოს მას, რაჲცა ენებოს, გარნა ჰრწმენინ ხოლო და ესევდინ მას, რომელმან-იგი ათვრამეტისა წლისა დაჴსნილი აღადგინა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ ვინმე დაჴსნილი იყოს, შევედინ იგიცა პირველსავე მას საბანელსა პროდიაკისასა და ეყოს მას, რაჲცა ენებოს, გარნა ჰრწმენინ ხოლო და ესევდინ მას, რომელმან-იგი ათვრამეტისა წლისა დაჴსნილი აღადგინა.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუ ვინმე ქურივი იყოს, ჰბაძევდინ იგი წმიდასა ანნას წინაწარმეტყუელსა მარხვითა, მღჳძარებითა და ლოცვითა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ ვინმე ქურივი იყოს, ჰბაძევდინ იგი წმიდასა ანნას წინაწარმეტყუელსა მარხვითა, მღჳძარებითა და ლოცვითა.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუ ამის ცხოვრებისაგან
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ ამის ცხოვრებისაგან
           <span class="app-inline" data-app="app-1" title="ვარ. 1">მაძღარი</span>
           იყოს,
           <span class="app-inline" data-app="app-2" title="ვარ. 2">ემსგავსენ</span>
@@ -560,19 +591,19 @@
           რამეთუ სულისაჲ იყო შესაწირავი და ჴორცთაჲ მუნ მხოლოდ-შობილი ყრმად ჩჩჳლად აცუენებდა.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო იორდანეს ჰხედევდ მას განშიშუვლებულად და დაგიკჳრდებოდა გარდამოსლვაჲ იგი სულისა წმიდისაჲ სახედ ტრედისა მას ზედა და გესმოდა ზეცით გარდამოჲ იგი წამებაჲ მამისაჲ და
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო იორდანეს ჰხედევდ მას განშიშუვლებულად და დაგიკჳრდებოდა გარდამოსლვაჲ იგი სულისა წმიდისაჲ სახედ ტრედისა მას ზედა და გესმოდა ზეცით გარდამოჲ იგი წამებაჲ მამისაჲ და
           <span class="app-inline" data-app="app-4" title="ვარ. 4">აღიარებდ</span>
           მას ღმრთად; ჰხედევდ მას ჯუარსა ზედა დამოკიდებულსა და მიეგებვოდე კურთხევად
           <span class="folio-milestone" data-wit="" data-folio="85v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0169" data-sp="169" title="Sin. geo. , f. 85v">85v</span>
           მკუდრეთით აღდგომილსა.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴍ</span>დეს შევიდეს იესუ იერუსალემდ, ყრმაჲ ყოველი დაბადებული იძრვოდა, რამეთუ სჳმეონს ვითარცა ყრმაჲ აქუნდა მკლავთა ზედა, ხოლო ღმრთად ქადაგებდა და იტყოდა:
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴍ</span>დეს შევიდეს იესუ იერუსალემდ, ყრმაჲ ყოველი დაბადებული იძრვოდა, რამეთუ სჳმეონს ვითარცა ყრმაჲ აქუნდა მკლავთა ზედა, ხოლო ღმრთად ქადაგებდა და იტყოდა:
           აწ, უფალო, განუტევე მონაჲ შენი მსგავსად სიტყჳსა შენისა მშჳდობით.
           არა ხოლო თუ მე, არამედ პირველ ჩემსა ადამი პყრობილებისაგან განეტევების და მისი იგი საცთური დაჴსნდების. ამიერითგან არღარავინ აყუედროს გარდასლვაჲ იგი მცნებათაჲ და აღმოცჱნებაჲ იგი ეკალთაჲ, რამეთუ მდიდარი იგი მისთჳს დაგლახაკნა და ეკლისაჲ იგი გჳრგჳნი მის წილ მან დაიდგა და ჯუარსა ზედა განიპყრნა ჴელნი, რაჲთა თანა-ნადები იგი მისი მან გარდაიჴადოს.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ, უფალო, განუტეო მონაჲ შენი მშჳდობით. სიტყჳთა ჰყოფს ესე, რომელ-იგი თქუა ესაია, ვითარმედ:
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ, უფალო, განუტეო მონაჲ შენი მშჳდობით. სიტყჳთა ჰყოფს ესე, რომელ-იგი თქუა ესაია, ვითარმედ:
           არა თუ მოციქულმან, არცა ანგელოზმან, არცა მამშჳდებელმან, არამედ მან თავადმან აცხოვნნა იგინი.
           აწ არა თუ ძალნი ცატანი რაჲ საშინელებით მოავლინნა, არცა ანგელოზნი იგი ცეცხლებრ მოტყინარენი განსადევნელად მისთჳს, რომელმან-იგი თქუა, ვითარმედ:
           აღვიდე სიმაღლესა ცისასა და მუნ დავიდგნე საყდარნი ჩემნი,
@@ -582,37 +613,37 @@
           რამეთუ იხილეს თუალთა ჩემთა მაცხოვრებაჲ შენი.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>აჲ იხილეს თუალთა შენთა, ჵ სჳმეონ? ნუ დაჰფარავ ჩუენგან! და იგი იტყჳს: რომელი-იგი პირველ ევაჲსგან წყევაჲ იქმნა, აწ ესერა ასულსა მისსა წყაროჲ იგი ცხორებისაჲ მოაქუს და ჭეშმარიტად, რამეთუ იხილეს თუალთა ჩემთა მაცხოვარებაჲ შენი, რომელ განუმზადე წინაშე პირსა ყოვლისა ერისასა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>აჲ იხილეს თუალთა შენთა, ჵ სჳმეონ? ნუ დაჰფარავ ჩუენგან! და იგი იტყჳს: რომელი-იგი პირველ ევაჲსგან წყევაჲ იქმნა, აწ ესერა ასულსა მისსა წყაროჲ იგი ცხორებისაჲ მოაქუს და ჭეშმარიტად, რამეთუ იხილეს თუალთა ჩემთა მაცხოვარებაჲ შენი, რომელ განუმზადე წინაშე პირსა ყოვლისა ერისასა.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴐ</span>ომელმან ჩუენთჳს ჴორცნი შეისხნა, გუექმნა ჩუენ თაყვანის-საცემელ, რაჲთა არღარა ძელთა და ქვათა და ყოველთა დაბადებულთა ცთომით თავყანის-სცემდენ კაცნი, არამედ ჭეშმარიტსა ღმერთსა უხილავსა და ძესა მისსა მხოლოდ-შობილსა, რომელმან-იგი ჩუენთჳს ჴორცნი შეისხნა და ვიხილეთ ჩუენ, და სულსა წმიდასა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ომელმან ჩუენთჳს ჴორცნი შეისხნა, გუექმნა ჩუენ თაყვანის-საცემელ, რაჲთა არღარა ძელთა და ქვათა და ყოველთა დაბადებულთა ცთომით თავყანის-სცემდენ კაცნი, არამედ ჭეშმარიტსა ღმერთსა უხილავსა და ძესა მისსა მხოლოდ-შობილსა, რომელმან-იგი ჩუენთჳს ჴორცნი შეისხნა და ვიხილეთ ჩუენ, და სულსა წმიდასა.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ ვითარ ყოვლად განკრძალულად თქუა სულიერად წინაწარმეტყუელმან შემდგომიცა ესე:
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ ვითარ ყოვლად განკრძალულად თქუა სულიერად წინაწარმეტყუელმან შემდგომიცა ესე:
           ნათელი გამობრწყინებად წარმართთა ზედა და დიდებად ერისა შენისა ისრაელისა?
           <span class="folio-milestone" data-wit="" data-folio="92" title="Sin. geo. , f. 92">92</span>
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუმცა არა მოვიდა მაცხოვარი ყოველთაჲ, წარმართნიმცა არა ცხომდეს; და უკუეთუმცა ნატესავი აბრაჰამისი არა შოვამდგომელ იქმნა,
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუმცა არა მოვიდა მაცხოვარი ყოველთაჲ, წარმართნიმცა არა ცხომდეს; და უკუეთუმცა ნატესავი აბრაჰამისი არა შოვამდგომელ იქმნა,
           <span class="folio-milestone" data-wit="" data-folio="87v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173" data-sp="173" title="Sin. geo. , f. 87v">87v</span>
           განბნეულნი ისრაელისანი არამცა შეკრებულ იყვნეს; და უკუეთუმცა ბუნებისა იგი შემოქმედი და მუშაკი სარწმუნოებისაჲ არა მოსრულ იყო ზეცით, წინადაცუეთილებისა იგი ზღუდჱ არამცა დაცემულ იყო; და უკუეთუმცა ქვაჲ იგი საკიდური ჩუენ არა ხურო გუექმნა, დაჴსნილი იგი სახლი ვერ შესაძლებელ იყო აღშჱნებად.
         </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა იყვნეს მამაჲ მისი და დედაჲ მისი დაკჳრვებულ სიტყუათა მათ ზედა სჳმეონისათა, რომელთა-იგი იტყოდა წინაწარმეტყუელებით იესუჲს ზედა, რამეთუ ლიტონ იყო მიხედვაჲ მისი და ღმრთეებრ ადიდებდა ყრმად მიქუმული და ღმრთად საგონებელი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იყვნეს მამაჲ მისი და დედაჲ მისი დაკჳრვებულ სიტყუათა მათ ზედა სჳმეონისათა, რომელთა-იგი იტყოდა წინაწარმეტყუელებით იესუჲს ზედა, რამეთუ ლიტონ იყო მიხედვაჲ მისი და ღმრთეებრ ადიდებდა ყრმად მიქუმული და ღმრთად საგონებელი.
         </p>
 <p id="p13"><span class="par-num" title="¶13">¶13</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა აკურთხნა იგინი სჳმეონ და თქუა:
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა აკურთხნა იგინი სჳმეონ და თქუა:
           აჰა ესერა ესე დგას დაცემად მრავალთა და აღდგინებად ისრაელსა შორის.
           რაჲ არს დაცემაჲ იგი და აღდგინებაჲ? გუნებავს, წინაწარმეტყუელო, რაჲთა გულისხმა-ვყოთ. — დაეცა იუდა და აღდგა პავლე; ჰურიათაჲ იგი კრებული განისხმის და მეძავი იჩინების; ფარისეველნი დაიშაჯებიან და მეზუერენი ინატრებიან; მწიგნობარნი შეურაცხ-იქმნებიან და მოგუნი წინაწარმეტყუელად იწოდებიან.
         </p>
 <p id="p14"><span class="par-num" title="¶14">¶14</span>
           <span class="folio-milestone" data-wit="" data-folio="87r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0172" data-sp="172" title="Sin. geo. , f. 87r">87r</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მარიამს ჰრქუა, ვითარმედ:
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მარიამს ჰრქუა, ვითარმედ:
           შენსაცა სულსა განვიდეს მახჳლი.
           ოდეს იხილო იგი ჯუარსა ზედა განკუართული, რომელსა-იგი ჰმოსიეს დიდებაჲ მამისაჲ; ოდეს-იგი იხილო, რომელ-იგი შენ ჰშევ, რაჟამს აგინებდენ მას, ჰურიანი და ყოველნი დაბადებულნი მატსა მას კადრებასა მის ზედა განკრთენ და შეიშალნენ; ოდეს იძრვოდის ქუეყანაჲ და კლდენი განსთქდენ და ქვანი აღცჳვოდიან, და ენებოს, რაჲთამცა დაჰკრბეს ღმრთის მბრძოლთა მათ; ოდეს იხილო ტაძარსა მას სინა თჳნიერ ჴელისა განპებაჲ იგი კრეთსაბმელისაჲ მის, და მაშინ გამოჩნდენ მრავალთაგან გულთა ზრახვანი.
         </p>
 <p id="p15"><span class="par-num" title="¶15">¶15</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ითარ, ჵ, წინაწარმეტყუელო? გულთა ზრახვანიცა იგი გუაუწყენ ჩუენ. რომელთა მრავალთანი? — ცან, რამეთუ პილატჱსი იგი დაბანაჲ ჴელთაჲ, განზრახვაჲ და ცნობაჲ გულისაჲ ძისა ღმრთისაჲ იყო და გამოჩინებით თქუა:
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ითარ, ჵ, წინაწარმეტყუელო? გულთა ზრახვანიცა იგი გუაუწყენ ჩუენ. რომელთა მრავალთანი? — ცან, რამეთუ პილატჱსი იგი დაბანაჲ ჴელთაჲ, განზრახვაჲ და ცნობაჲ გულისაჲ ძისა ღმრთისაჲ იყო და გამოჩინებით თქუა:
           უბრალო ვარ მე სისხლისაგან ამის მართლისა.
           <span class="folio-milestone" data-wit="" data-folio="87v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173" data-sp="173" title="Sin. geo. , f. 87v">87v</span>
           <span class="folio-milestone" data-wit="" data-folio="93" title="Sin. geo. , f. 93">93</span>
@@ -794,12 +825,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

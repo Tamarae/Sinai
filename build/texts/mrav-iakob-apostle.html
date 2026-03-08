@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,8 +561,12 @@
             <a href="mrav-stepane-martyrdom.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-iakob-apostle">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა იყო რაჟამს ნებითა უფლისა ჩუენისა იესუ ქრისტჱსითა სცვალებდა
+            <div class="ms-head">
+          <span class="geo-rubric" style="color:var(--crimson);">თ̃ა დეკენბერსა კ̂ვ</span>
+          <span class="geo-rubric" style="color:var(--crimson);">წმიდისა იაკობ მოციქულისა და უფლისა საკითხავი</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იყო რაჟამს ნებითა უფლისა ჩუენისა იესუ ქრისტჱსითა სცვალებდა
           ტაძარსა მას, რომელი იყო ისრაელისაჲ, კათოლიკედ ეკლესიად, იაკობ,
           რომელსა წოდებულ იყო ძმად უფლისა. და ესე იყო პირველ ეპისკოპოს იერუსალემს
           და წოდებულ იყო ყოვლისაგან ერისა &quot;იაკობ მართალი&quot;, რამეთუ
@@ -557,7 +584,7 @@
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
           <span class="folio-milestone" data-wit="" data-folio="54v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0107" data-sp="107" title="Sin. geo. , f. 54v">54v</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რომელნიმე შჳდისა მის წვალებისაგანნი ჰკითხვიდეს და ეტყოდეს,
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა რომელნიმე შჳდისა მის წვალებისაგანნი ჰკითხვიდეს და ეტყოდეს,
           ვითარმედ: რომელი არს კარი ღმრთისაჲ? და იგი მოასწავებდა მათ
           მაცხოვრისასა. და რომელთამე მათგანთა ჰრწმენა უფლისა ჩუენისა იესუ
           ქრისტჱსთჳს. ხოლო პირველთა მათ განდგომილთა მწვალებელთა არა ჰრწმენა
@@ -566,7 +593,7 @@
           მთავართაგანთაცა.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა იყო შფოთი დიდი შორის მწიგნობართა მათ ჰურიათასა და ფარისეველთა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იყო შფოთი დიდი შორის მწიგნობართა მათ ჰურიათასა და ფარისეველთა
           და იტყოდეს: განგუადგების ჩუენგან ყოველი ერი მოლოდებითა
           იესუ ქრისტჱსითა. და ეტყოდეს შემოკრებულნი იაკობს; გევედრებით შენ, დააყენე
           ერი ესე, რაჲთა არა სეუდგენ ქრისტესა; შეგივრდებით, დააყენე ერი ესე
@@ -581,7 +608,7 @@
           წარმართნი.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა დაადგინეს წმიდაჲ იაკობ ფარისეველთა მათ და მწიგნობართა ზედა
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა დაადგინეს წმიდაჲ იაკობ ფარისეველთა მათ და მწიგნობართა ზედა
           გოდოლსა მას და ჴმა-ყვეს მისა მიმართ და თქუეს ერთბამად: მართლისა მაგის
           რომლისა ჩუენ ყოველნი დამორჩილებულ ვართ, ხოლო ერი ესე სცთების
           შემდგომითა იესუ ჯუარ-ცუმულისათჳს, აწ გჳთხარ ჩუენ განცხადებულად
@@ -592,7 +619,7 @@
           დავითისსა!
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ მწიგნობართა მათ და ფარისეველთა თქუეს ურთიერთას: ბოროტად
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ მწიგნობართა მათ და ფარისეველთა თქუეს ურთიერთას: ბოროტად
           ვყავთ საქმჱ ესე, რომელ ვქმენით, რამეთუ ამან წამა იესუჲსთჳს. აწ
           მოვედით და აღვჴდეთ და გარდამოვაგდოთ იგი, რაჲთა შეშინდეს ერი ესე
           და არა ჰრწმენეს მისი. და ჴმა-ყვეს ჴმითა დიდითა და თქუეს: ჵჵ, მართალი
@@ -601,7 +628,7 @@
             არს. ამიერითგან <span class="folio-milestone" data-wit="" data-folio="55v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0109" data-sp="109" title="Sin. geo. , f. 55v">55v</span> ნაშრომსა ჴელთა მათთასა ჭამდენ.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>აშინ აღჴდეს და გარდამოაგდეს მართალი იგი გოდლისა მისგან და
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ აღჴდეს და გარდამოაგდეს მართალი იგი გოდლისა მისგან და
           იტყოდეს ურთიერთას: ქვაჲ დაჰკრიბეთ ყოველთა იაკობს მართალსა! და ქვასა
           დაჰკრებდეს მას. ხოლო იგი გარდავარდა სიმაღლისა მისგან და არა მოკუდა,
           არამედ დაიდგინა მუჴლნი, ღაღადებდა და იტყოდა: გევედრები, შენ, უფალო ყოვლისა
@@ -612,14 +639,14 @@
           ილოცავს თქუენთჳს მართალი ესე.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა აღდგა ერთი მათგანი, რომელი იყო სამოსლისა მრცხელი, აღიღო
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა აღდგა ერთი მათგანი, რომელი იყო სამოსლისა მრცხელი, აღიღო
           ძელი, რომლითა გარდაართხიან სამოსელი, და უხეთქნა თავსა მის მართლისასა.
           და ესრჱთ აღესრულა წამებითა ქრისტჱსითა. და დაჰფლეს იგი ადგილსა
           მას მახლობელად ტაძრისა მის. და მან წამა ჭეშმარიტად ჰურიათა მიმართ
           და წარმართთა ჲესუსთჳს, რომელ არს ქრისტჱ.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა მახლობელად მათვე დღეთა შინა სპასიონი ვინმე, განსაკჳრვებელი
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მახლობელად მათვე დღეთა შინა სპასიონი ვინმე, განსაკჳრვებელი
           კაცი, მოვიდა და მოიცვნა ჰურიანი. და ესრჱთ განუცხადებდა სიმართლესა
           <span class="folio-milestone" data-wit="" data-folio="57" title="Sin. geo. , f. 57">57</span>
           ნეტარისა იაკობისსა. და ჰურიათაგანნიცა ბრძენნი ადიდებდეს მას და იტყოდეს,
@@ -632,7 +659,7 @@
           ჰურიათა.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ესევითარი ესე შემთხუევაჲ ნეტარისა მისთჳს და მართლისა იაკობისთჳს
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ესევითარი ესე შემთხუევაჲ ნეტარისა მისთჳს და მართლისა იაკობისთჳს
           შეემთხჳა ჰურიათა, რომელიცა უწინარჱს კათოლიკეთა ებისტოლეთა
           დაიწერა. და ესე არს წამებაჲ წმიდისა იაკობისი, რომელი იქმნა წინაჲთ
           ებისკოპოს და დაჯდა საყდართა წმიდისა ქალაქისა იერუსალემისათა, რომელი
@@ -774,12 +801,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;

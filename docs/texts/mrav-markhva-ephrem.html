@@ -198,6 +198,22 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Manuscript headings ─────────────────────────────── */
+.ms-rubric {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .82rem; line-height: 1.75; color: var(--crimson);
+    font-weight: 700; letter-spacing: .05em;
+    text-align: center; margin-bottom: 1.2rem;
+    padding-bottom: .9rem; border-bottom: 1px solid #e8d8d8;
+}
+.ms-dateline {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: .78rem; color: #8a6e2e;
+    text-align: center; margin-bottom: 1.4rem;
+    letter-spacing: .04em;
+}
+.ms-dateline .geo-initial { color: #8a6e2e; }
+
 /* ── Lexicon words ───────────────────────────────────── */
 .lex-word {
     border-bottom: 1px dotted var(--crimson);
@@ -362,9 +378,16 @@
 .app-entry:hover  { background: #fdf8f2; }
 .app-entry.active { background: var(--crimson-pale); }
 .app-entry:last-child { border-bottom: none; }
-.app-lem { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
-.app-rdg { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; }
+.app-lem { font-family: 'Noto Sans Georgian', sans-serif; font-weight: 600; color: var(--ink); font-size: .85rem; }
+.app-rdg { font-family: 'Noto Sans Georgian', sans-serif; font-size: .82rem; }
 .app-wit { font-size: .6rem; font-style: italic; color: #999; }
+.app-entry.type-biblical { border-left: 3px solid #8a6e2e; }
+.app-entry.type-biblical .app-lem { color: #8a6e2e; }
+.bibl-ref { font-size: .75rem; font-family: 'Noto Serif Georgian', Georgia, serif;
+            color: #6a5030; font-style: italic; }
+.bibl-label { font-size: .58rem; letter-spacing: .08em; background: #f5f0e8;
+              color: #8a6e2e; border: 1px solid #d4c4a0; padding: 1px 5px;
+              border-radius: 2px; margin-right: .3rem; }
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
@@ -538,75 +561,78 @@
             <a href="mrav-forty-martyrs.html" class="hover:text-gray-700"> →</a>
         </div>
         <div class="text-body" id="text-content" data-text-id="mrav-markhva-ephrem">
-            <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴛ</span>მანო, არა 
+            <div class="ms-head">
+          <span class="geo-rubric" style="color:var(--crimson);">მარხვისათჳს</span>
+        </div>
+<p id="p1"><span class="par-num" title="¶1">¶1</span>
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴛ</span>მანო, არა 
           <span class="app-inline" data-app="app-1" title="ვარ. 1">ვითარმცა</span> 
           ვგუემენ ჴორცნი ეგე თქუენნი მახჳლითა, არამედ გაწუევ 
           <span class="app-inline" data-app="app-2" title="ვარ. 2">თქუენ</span>, 
           საყუარელნო, რაჲთა ვახარო სულთა თქუენთა მოძრურებითა ქრისტჱსითა. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>იწრაფით ცუენ, ძმანო, რამეთუ საჭმელმან ცუენმან განასუქნის ჴორცნი და ღჳნომან ფეროვან ქმნის ფერი პირისაჲ. ამან უმეტჱს გესლოვან ქმნის გონებაჲ, რაჲთა არა განწმიდნეს, და შეაშთვის სული იგი შიმშილითა გულის თქუმისაჲთა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>იწრაფით ცუენ, ძმანო, რამეთუ საჭმელმან ცუენმან განასუქნის ჴორცნი და ღჳნომან ფეროვან ქმნის ფერი პირისაჲ. ამან უმეტჱს გესლოვან ქმნის გონებაჲ, რაჲთა არა განწმიდნეს, და შეაშთვის სული იგი შიმშილითა გულის თქუმისაჲთა.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
           <span class="folio-milestone" data-wit="" data-folio="107r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0212" data-sp="212" title="Sin. geo. , f. 107r">107r</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ვითარ სახედ მოგუეახლნიან ჩუენ მარხვანი, მოგუეცნიან ჩუენ გონებანი ანგელოზთანი, რამეთუ ამით მიზეზითა ვჰმსახურებდით უფალსა ქუეყანასა ზედა, ვითარცა-იგი ცათა შინა. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴑ</span>აჭმელმან და სასუმელმან დამდაბლიან კაცი და მიაწიიან სახესა პირუტყუთასა, რომელნი დაკლებულ არიან სასოებისაგან აღდგომისაჲსა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ვითარ სახედ მოგუეახლნიან ჩუენ მარხვანი, მოგუეცნიან ჩუენ გონებანი ანგელოზთანი, რამეთუ ამით მიზეზითა ვჰმსახურებდით უფალსა ქუეყანასა ზედა, ვითარცა-იგი ცათა შინა. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴑ</span>აჭმელმან და სასუმელმან დამდაბლიან კაცი და მიაწიიან სახესა პირუტყუთასა, რომელნი დაკლებულ არიან სასოებისაგან აღდგომისაჲსა.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>წყით თქუენცა, საყუარელნო, რამეთუ სასოებაჲ პირუტყუთაჲ მუცელი მათი არს და აღსასრული მათი — დღჱ სიკუდილისა მათისაჲ. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა ყოვლისათჳს, რომელი მსგავს არს მათა, ესრე თქუა პავლე მოციქულმან, ვითარმედ: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>წყით თქუენცა, საყუარელნო, რამეთუ სასოებაჲ პირუტყუთაჲ მუცელი მათი არს და აღსასრული მათი — დღჱ სიკუდილისა მათისაჲ. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ყოვლისათჳს, რომელი მსგავს არს მათა, ესრე თქუა პავლე მოციქულმან, ვითარმედ: 
           რომელთაჲ ღმერთ მუცელი მათი არს და დიდებად — სირცხჳლი მათი. 
           ხოლო ჩუენ არა ესრჱთ ვისწავეთ ქრისტჱსგან, არამედ ესრჱთ გურქუა ჩუენ, ვითარმედ: 
           ნეტარ იყვნენ, რომელთა შიოდის და სწყუროდის სიმართლისათჳს, რამეთუ იგინი განძღნენ.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴓ</span>კუეთუმცა არა გუაუწყა ჩუენ საუკუნისა ცეცხლისათჳს, ვინ უწყის, ვჰგონებდითმცა, ვითარმედ ყვიან მათ, რომელთა არა დაიდვიან უღელი მარხვისაჲ სიტყჳსა მისებრ, ვითარცა წერილ არს, ვითარმედ: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუმცა არა გუაუწყა ჩუენ საუკუნისა ცეცხლისათჳს, ვინ უწყის, ვჰგონებდითმცა, ვითარმედ ყვიან მათ, რომელთა არა დაიდვიან უღელი მარხვისაჲ სიტყჳსა მისებრ, ვითარცა წერილ არს, ვითარმედ: 
           ვსუათ და ვწამოტ, რამეთუ ხვალე სიკუდილდ ვართ. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>ითარმედ არცა ამას სოფელსა სარგებელ არს ნაყროვანებაჲ და სიმთრვალჱ, რომელთა მოიპოვიან იგი, რამეთუ ნაყროვანებამან 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ითარმედ არცა ამას სოფელსა სარგებელ არს ნაყროვანებაჲ და სიმთრვალჱ, რომელთა მოიპოვიან იგი, რამეთუ ნაყროვანებამან 
           <span class="folio-milestone" data-wit="" data-folio="107v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0213" data-sp="213" title="Sin. geo. , f. 107v">107v</span> 
           შეამძიმნის ჴორცნი და აურვებნ ასოთა, აჭირებნ სტომაქსა და აღაგზნის აღძრვანი გონებათანი.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რამეთუ მრავალ არიან საცთურნი მთრვალთანი, ვითარცა გარდასცთის კაცი ღჳნითა, უფროჲს პირუტყჳსა უგუნურ იქმნის, რამეთუ პირუტყუმან იცნის მომგებელი ტჳსი, ხოლო მთრვალმან არა იცნის მეზობელი თჳსი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა რამეთუ მრავალ არიან საცთურნი მთრვალთანი, ვითარცა გარდასცთის კაცი ღჳნითა, უფროჲს პირუტყჳსა უგუნურ იქმნის, რამეთუ პირუტყუმან იცნის მომგებელი ტჳსი, ხოლო მთრვალმან არა იცნის მეზობელი თჳსი.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴀ</span>წ უკუე რომელი-მე ვნებაჲ არს, რომელი არა შეაბს სიმთრვალესა? 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴒ</span>ავი ალმვის შეტევებითა ღჳნისაჲთა, და სლვანი ფერჴთანი შეურღჳნის, და აცთუნებნ სიტყუათა პირისა მისისათა, და უქცევნ წრფელად ხედვასა გუგათასა, და შთააგდის მთრვალი მღჳმესა დღისი, და წარმოუდგინნის სიზმრად ღამე საყუარელნი თჳსნი, და დაჰჴსნის გონებანი სიმტკისაგან, მოუღის სირცხჳლი მორცხჳნეთაგან, და განეფინის სულთა ზედა ვითარცა ნისლი საცთურებაჲ, და ჰგავნ იგი განმრყუნელსა მას დევსა. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა იქმან მთრვალნი, რომელი მათ არა უნებნ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ უკუე რომელი-მე ვნებაჲ არს, რომელი არა შეაბს სიმთრვალესა? 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴒ</span>ავი ალმვის შეტევებითა ღჳნისაჲთა, და სლვანი ფერჴთანი შეურღჳნის, და აცთუნებნ სიტყუათა პირისა მისისათა, და უქცევნ წრფელად ხედვასა გუგათასა, და შთააგდის მთრვალი მღჳმესა დღისი, და წარმოუდგინნის სიზმრად ღამე საყუარელნი თჳსნი, და დაჰჴსნის გონებანი სიმტკისაგან, მოუღის სირცხჳლი მორცხჳნეთაგან, და განეფინის სულთა ზედა ვითარცა ნისლი საცთურებაჲ, და ჰგავნ იგი განმრყუნელსა მას დევსა. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იქმან მთრვალნი, რომელი მათ არა უნებნ.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო სიმტკიცჱ მარხვათაჲ განმტკიცებულ არს მათა მიმართ, რომელთა მოიგნეს იგი, რამეთუ წარჰმართის სტუანვაჲ სახიერთა თუალთაჲ, და აღჳრ-ასხნის წამ-წამ 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო სიმტკიცჱ მარხვათაჲ განმტკიცებულ არს მათა მიმართ, რომელთა მოიგნეს იგი, რამეთუ წარჰმართის სტუანვაჲ სახიერთა თუალთაჲ, და აღჳრ-ასხნის წამ-წამ 
           <span class="folio-milestone" data-wit="" data-folio="108r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0214" data-sp="214" title="Sin. geo. , f. 108r">108r</span> 
           სიდაშნისათჳს, და აღუხუნის ყურნი მოძრურებისა ქრისტჱსსა, და განწმიდის ენაჲცა სალხინებელი ცოდვათაჲ, და განაღჳძის გონებაჲ ლოცვისათჳს, და ასწავის სულთა სიყუარულისათჳს ღმრთისაჲსა, ჴელთა ასწავის გლახაკთა ღუწოლაჲ, და ფერჴთა ასწავის სლვაჲ და ხილვაჲ სნეულთაჲ.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რამეთუ დაღათუ კაცი არნ, ხოლო შრომითა მით ანგელოზ იქმნის, რამეთუ ჴორცნი ასხენედ ძესა მას ადამისსა, ხოლო ხატი სულიერთაჲ შთაუცუამს მათ, რამეთუ ესე ყოველი შესძინიან მარხვათა, რომელთა მოიპოვიან იგი, და ესემლევანითა კეტილითა ნაყოფითა აღივსნიან საუნჯენი სულთა მათთანი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა რამეთუ დაღათუ კაცი არნ, ხოლო შრომითა მით ანგელოზ იქმნის, რამეთუ ჴორცნი ასხენედ ძესა მას ადამისსა, ხოლო ხატი სულიერთაჲ შთაუცუამს მათ, რამეთუ ესე ყოველი შესძინიან მარხვათა, რომელთა მოიპოვიან იგი, და ესემლევანითა კეტილითა ნაყოფითა აღივსნიან საუნჯენი სულთა მათთანი.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴜ</span>ეშმარიტად მმარხველთათჳს ვიტყჳ, რომელნი იმარხვენ პურისაგან და წყლისა ჴორცთა განკაფისათჳს და დაყენებულ არიან უნასისაგან ბოროტისა სულთა სარგებელისატჳს. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო არიან ჰურიანიცა, რომელნი იმარხვენ პურისათჳსცა დ ღჳნისა და მთრვალ არიან შურითა გონებანი მათნი და სილაღითა. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა არიან რომელნიმე, არა ჭამედ ჭამადთა, ხოლო შეშჭამენ კბილითა ანგაჰრებისა მათისაჲთა ობოლთა და ქურივთა. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა რომელნი ესემლევან არიედ, 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴜ</span>ეშმარიტად მმარხველთათჳს ვიტყჳ, რომელნი იმარხვენ პურისაგან და წყლისა ჴორცთა განკაფისათჳს და დაყენებულ არიან უნასისაგან ბოროტისა სულთა სარგებელისატჳს. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო არიან ჰურიანიცა, რომელნი იმარხვენ პურისათჳსცა დ ღჳნისა და მთრვალ არიან შურითა გონებანი მათნი და სილაღითა. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა არიან რომელნიმე, არა ჭამედ ჭამადთა, ხოლო შეშჭამენ კბილითა ანგაჰრებისა მათისაჲთა ობოლთა და ქურივთა. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა რომელნი ესემლევან არიედ, 
           <span class="folio-milestone" data-wit="" data-folio="108v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0215" data-sp="215" title="Sin. geo. , f. 108v">108v</span> 
           ისმინედ მათ, რამეთუ არა სასყიდელი ხოლო მარხვისაჲ არა მიიღონ მათ, არამედ თანა-მდებცა არიან იგინი დასასრულსა ჯოჯოხეთისასა, რამეთუ მარხვანი რომელ არიან შესაძინელნი კეტილთანი, მის გამო აღიკიდიან ტჳრთი ბოროტი. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო გლოცავ თქუენ, საყუარელნო, ვიმარხოთ საჭმლისაგან, რაჲთა არა შთაჴდენ მუცელთა ჩუენთა სავნებელად, და ვეკრძალნეთ ბოროტისაგანცა, რაჲთა არა გამოჴდენ გულისა ჩუენისაგან მრავალთა სავნებელნი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო გლოცავ თქუენ, საყუარელნო, ვიმარხოთ საჭმლისაგან, რაჲთა არა შთაჴდენ მუცელთა ჩუენთა სავნებელად, და ვეკრძალნეთ ბოროტისაგანცა, რაჲთა არა გამოჴდენ გულისა ჩუენისაგან მრავალთა სავნებელნი.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴅ</span>იმარხვიდეთ ფარულად და ცხადად მისა, რომელი-იგი ხედავს გარეშესა ხატსა ჩუენსა და უწყის შინაგანი ზრახვაჲ ჩუენი, და ყავნ ქველის მოქმედმან უფალმან წყალობითა თჳსითა, ვითარცა-იგი განისუენა მარხვასა და ლოცვასა და მოგეცინ სასყიდელი წმიდათა და უბიწოტა მარხვათა თქუენთათჳს, რაჟამს მოვიდეს დიდებითა თჳსითა და განუყოფდეს მარჯუენითა თჳსითა. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა აღმოვთქუათ ერთობით ჩუენ და თქუენ: 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>იმარხვიდეთ ფარულად და ცხადად მისა, რომელი-იგი ხედავს გარეშესა ხატსა ჩუენსა და უწყის შინაგანი ზრახვაჲ ჩუენი, და ყავნ ქველის მოქმედმან უფალმან წყალობითა თჳსითა, ვითარცა-იგი განისუენა მარხვასა და ლოცვასა და მოგეცინ სასყიდელი წმიდათა და უბიწოტა მარხვათა თქუენთათჳს, რაჟამს მოვიდეს დიდებითა თჳსითა და განუყოფდეს მარჯუენითა თჳსითა. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა აღმოვთქუათ ერთობით ჩუენ და თქუენ: 
           დიდებაჲ მამისაჲ და ძისაჲ და წმიდისა სულისაჲ აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
           <span class="folio-milestone" data-wit="" data-folio="109r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0216" data-sp="216" title="Sin. geo. , f. 109r">109r</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>არხვანი განცხადებულნი ფარულითა მარხვითა აღესრულებიან, დაყენებაჲ ჭამადთაჲ დაყენებითა ჴორცთაჲთა აღესრულების, რამეთუ არა ერთსა ასოსა შეუმოსიეს ყოველი ჴორცი, არცა ერთითა ქვითა აღეშჱნის ყოველი ნაშჱნები. 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴞ</span>ოლო რომელთა-იგი კეთილად იმარხიან, ყოვლისაგან ბოროტისა შემოკლდიან, კეთილსა მიეახლნიან; და რომელნი ბოროტსა განეშორიან, ღმერთსა მიეახლნიან, ეზიარნიან და მშჳდობით ამაღლდიან.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>არხვანი განცხადებულნი ფარულითა მარხვითა აღესრულებიან, დაყენებაჲ ჭამადთაჲ დაყენებითა ჴორცთაჲთა აღესრულების, რამეთუ არა ერთსა ასოსა შეუმოსიეს ყოველი ჴორცი, არცა ერთითა ქვითა აღეშჱნის ყოველი ნაშჱნები. 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო რომელთა-იგი კეთილად იმარხიან, ყოვლისაგან ბოროტისა შემოკლდიან, კეთილსა მიეახლნიან; და რომელნი ბოროტსა განეშორიან, ღმერთსა მიეახლნიან, ეზიარნიან და მშჳდობით ამაღლდიან.
         </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>ოსე რომელმან კეთილად იმარხა, აეროვან იქმნა პირი მისი და გარდამოართუა შჯული ერსა თჳსსა; 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴄ</span>ლია შემდგომად მარხვისა თჳსისა იხილა დიდებაჲ ღმრთისაჲ და აცხოვნა მკუდარი იგი და აღიტაცა ეტლითა ცეცხლისაჲთა მაღლად; 
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴃ</span>ა დანიელცა და რომელთა იმარხეს, განერნეს ცეცხლისგან დაწუვისა და ლომთაგან და ღირს იქმნნეს, რამეთუ გამოეცხადა მათ ღმერთი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>ოსე რომელმან კეთილად იმარხა, აეროვან იქმნა პირი მისი და გარდამოართუა შჯული ერსა თჳსსა; 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴄ</span>ლია შემდგომად მარხვისა თჳსისა იხილა დიდებაჲ ღმრთისაჲ და აცხოვნა მკუდარი იგი და აღიტაცა ეტლითა ცეცხლისაჲთა მაღლად; 
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა დანიელცა და რომელთა იმარხეს, განერნეს ცეცხლისგან დაწუვისა და ლომთაგან და ღირს იქმნნეს, რამეთუ გამოეცხადა მათ ღმერთი.
         </p>
 <p id="p13"><span class="par-num" title="¶13">¶13</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;">Ⴋ</span>არხვანი სარწმუნოებით დაშრტენ ალსა ცეცხლისასა და დაუყვნეს პირნი ლომთანი; მარხვანი სიქადულ არიან წინაწარმეტყუელთა და საყუარელ — მოციქულთა და ზღუდე — წმიდათა; მარხვანი საჭურველ არიან კეთილთა და ფარ არიან ბოროტთა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>არხვანი სარწმუნოებით დაშრტენ ალსა ცეცხლისასა და დაუყვნეს პირნი ლომთანი; მარხვანი სიქადულ არიან წინაწარმეტყუელთა და საყუარელ — მოციქულთა და ზღუდე — წმიდათა; მარხვანი საჭურველ არიან კეთილთა და ფარ არიან ბოროტთა.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -764,12 +790,13 @@ const LEX_DATA = {"lex-angelozi": {"def": "\u10d0\u10dc\u10d2\u10d4\u10da\u10dd\
         var pw   = popup.offsetWidth;
         var ph   = popup.offsetHeight;
         var ww   = window.innerWidth;
-        var left = rect.left + window.scrollX;
-        var top  = rect.bottom + window.scrollY + 6;
+        var left = rect.left;
+        var top  = rect.bottom + 6;
         if (left + pw > ww - 8) left = ww - pw - 8;
         if (left < 8) left = 8;
         var spaceBelow = window.innerHeight - rect.bottom;
-        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        if (spaceBelow < ph + 10) top = rect.top - ph - 6;
+        if (top < 8) top = 8;
         popup.style.left = left + 'px';
         popup.style.top  = top  + 'px';
         openWord = span;
