@@ -166,6 +166,13 @@
     }
     .ext-link-badge:hover { opacity: .8; }
 
+    /* ── Attestation count ─────────────────── */
+    .attest-count { font-size: .65rem; color: #888; font-family: 'Noto Sans Georgian', sans-serif; letter-spacing: .03em; margin-bottom: .35rem; display: block; }
+
+    /* ── Copy-URI button ───────────────────── */
+    .entry-copy { display: inline-flex; align-items: center; gap: .3rem; font-size: .62rem; font-family: 'Noto Sans Georgian', sans-serif; border: 1px solid #d8c8c8; border-radius: 2px; padding: .18rem .55rem; background: white; color: #888; cursor: pointer; transition: color .12s, border-color .12s; flex-shrink: 0; }
+    .entry-copy:hover { color: var(--crimson); border-color: var(--crimson); }
+
     /* ── Sidebar sticky ────────────────────── */
     .sidebar-sticky { position: sticky; top: 5.5rem; }
 </style>
@@ -723,11 +730,16 @@
                         
                     </div>
 
-                    <!-- External links -->
+                    <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
                         
                         
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, '', 'lex-vidremde')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
                     </div>
                 </div>
 
@@ -749,9 +761,10 @@
                 <!-- Attestations from encoded texts -->
                 
                 
+                
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">დადასტურება</p>
-                    <div class="flex flex-col gap-2">
+                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-vidremde">
                         
                         <div>
                             <div class="citation-text">…ამან მან ნიჭი იგი დაითმინა შეწყნარებად, ვიდრემდე ისწავა მოძღუნებული და რაი არს ნიჭი იგი,…</div>
@@ -764,6 +777,7 @@
                         </div>
                         
                     </div>
+                    
                 </div>
                 
 
@@ -791,11 +805,16 @@
                         
                     </div>
 
-                    <!-- External links -->
+                    <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
                         
                         
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, '', 'lex-vitar')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
                     </div>
                 </div>
 
@@ -839,9 +858,10 @@
                 <!-- Attestations from encoded texts -->
                 
                 
+                
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">დადასტურება</p>
-                    <div class="flex flex-col gap-2">
+                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">4 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-vitar">
                         
                         <div>
                             <div class="citation-text">…ებულო! ხოლო იგი განიზრახვიდა: ვითარ-მე იყოს მოკითხვად ესე? ხოლო ანგელოზმან…</div>
@@ -884,6 +904,7 @@
                         </div>
                         
                     </div>
+                    
                 </div>
                 
 
@@ -911,11 +932,16 @@
                         
                     </div>
 
-                    <!-- External links -->
+                    <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
                         
                         
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, '', 'lex-vitarmed')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
                     </div>
                 </div>
 
@@ -949,9 +975,10 @@
                 <!-- Attestations from encoded texts -->
                 
                 
+                
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">დადასტურება</p>
-                    <div class="flex flex-col gap-2">
+                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-vitarmed">
                         
                         <div>
                             <div class="citation-text">…ართ დავითისსა მას ნათესაობასა და იტყჳს, ვითარმედ: აღმოვიდა იოსებ გალილეაით ქალ…</div>
@@ -964,6 +991,7 @@
                         </div>
                         
                     </div>
+                    
                 </div>
                 
 
@@ -991,11 +1019,16 @@
                         
                     </div>
 
-                    <!-- External links -->
+                    <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
                         
                         
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, '', 'lex-vitartsa')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
                     </div>
                 </div>
 
@@ -1029,9 +1062,10 @@
                 <!-- Attestations from encoded texts -->
                 
                 
+                
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">დადასტურება</p>
-                    <div class="flex flex-col gap-2">
+                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">6 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-vitartsa">
                         
                         <div>
                             <div class="citation-text">…იალთაჲ მათ უქცეველისა სარწმუნოებისათაჲ, ვითარცა ჩინებულთა და მკვდრთა მოუწოდა, და ზეცათა…</div>
@@ -1083,7 +1117,7 @@
                             </div>
                         </div>
                         
-                        <div>
+                        <div class="att-extra" style="display:none">
                             <div class="citation-text">…ს მარჯუენით მამისა დაჯდა და ბაგასა შინა ვითარცა ქერობინთა ზედა განისუენებდა.…</div>
                             <div class="citation-ref mt-0.5">
                                 <a href="../texts/mrav-kharbeba-1.html#p29"
@@ -1094,6 +1128,13 @@
                         </div>
                         
                     </div>
+                    
+                    <button class="att-toggle mt-2 text-xs cursor-pointer"
+                            style="color:var(--crimson);background:none;border:none;padding:0;"
+                            onclick="toggleAtts(this, 'lex-vitartsa', 6)">
+                        ყველა (6) →
+                    </button>
+                    
                 </div>
                 
 
@@ -1121,11 +1162,16 @@
                         
                     </div>
 
-                    <!-- External links -->
+                    <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
                         
                         
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, '', 'lex-vin')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
                     </div>
                 </div>
 
@@ -1147,9 +1193,10 @@
                 <!-- Attestations from encoded texts -->
                 
                 
+                
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">დადასტურება</p>
-                    <div class="flex flex-col gap-2">
+                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">2 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-vin">
                         
                         <div>
                             <div class="citation-text">…ავა მოძღუნებული და რაი არს ნიჭი იგი, და ვინ არს მომღებელი.</div>
@@ -1172,6 +1219,7 @@
                         </div>
                         
                     </div>
+                    
                 </div>
                 
 
@@ -1244,6 +1292,22 @@ function applyFilters() {
     if (lbl) lbl.textContent = visible + ' ნაჩვ.';
     const noRes = document.getElementById('no-results');
     if (noRes) noRes.classList.toggle('hidden', visible > 0);
+}
+
+function toggleAtts(btn, entryId, total) {
+    var extras = document.querySelectorAll('#atts-' + entryId + ' .att-extra');
+    var expanded = extras[0] && extras[0].style.display !== 'none';
+    extras.forEach(function(el) { el.style.display = expanded ? 'none' : ''; });
+    btn.textContent = expanded ? 'ყველა (' + total + ') →' : '← დამალვა';
+}
+
+function copyEntryURI(btn, slug, entryId) {
+    var url = 'https://tamarae.github.io/Sinai/lexicon/' + slug + '.html#' + entryId;
+    navigator.clipboard.writeText(url).then(function() {
+        var prev = btn.innerHTML;
+        btn.textContent = '✓';
+        setTimeout(function() { btn.innerHTML = prev; }, 1500);
+    });
 }
 </script>
 
