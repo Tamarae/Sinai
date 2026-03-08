@@ -84,6 +84,25 @@ class LexiconData:
     pos_list:         List[POS]
 
 
+def build_popup_lookup(data: LexiconData, geo_slug: dict) -> dict:
+    """
+    Returns {xml_id: {lemma, pos, def, slug}} for JS lexicon word popups.
+    slug is the ASCII letter-page filename stem (e.g. 'a', 'b', 'gh').
+    """
+    lookup = {}
+    for entry in data.entries:
+        first = entry.lemma[0] if entry.lemma else ""
+        slug = geo_slug.get(first, "a")
+        def_text = entry.senses[0].def_ka if entry.senses else ""
+        lookup[entry.xml_id] = {
+            "lemma": entry.lemma,
+            "pos":   entry.pos_label,
+            "def":   def_text,
+            "slug":  slug,
+        }
+    return lookup
+
+
 # ── Georgian alphabet order ────────────────────────────
 GEO_ALPHA = list("აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ")
 

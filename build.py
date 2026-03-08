@@ -19,8 +19,8 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from src.catalog_parser import CatalogParser
-from src.text_parser    import TextParser
-from src.lexicon_parser import LexiconParser
+from src.text_parser    import TextParser, collect_attestations
+from src.lexicon_parser import LexiconParser, build_popup_lookup
 
 # ── Paths ─────────────────────────────────────────────
 ROOT             = Path(__file__).parent
@@ -112,6 +112,7 @@ def build_texts_index(catalog: CatalogParser):
 # ─────────────────────────────────────────────────────
 def build_texts(catalog: CatalogParser):
     print("\n[texts]")
+    lex_lookup = build_popup_lookup(LexiconParser(LEXICON_XML).parse(), GEO_SLUG)
     text_list = catalog.texts
 
     for i, meta in enumerate(text_list):
@@ -132,14 +133,31 @@ def build_texts(catalog: CatalogParser):
             root="../",
             active="texts",
             text=text,
+            lex_lookup=lex_lookup,
         )
 
 
 # ─────────────────────────────────────────────────────
 # 4.  LEXICON
 # ─────────────────────────────────────────────────────
-def build_lexicon():
+def build_lexicon(catalog=None):
     print("\n[lexicon]")
+
+    # Collect attestations from all texts that have an XML file
+    attestations: dict = {}
+    if catalog is not None:
+        for meta in catalog.texts:
+            if not meta.file_path:
+                continue
+            xml_path = ROOT / meta.file_path
+            if not xml_path.exists():
+                continue
+            text_att = collect_attestations(xml_path, meta.xml_id, meta.label_ka)
+            for lex_id, refs in text_att.items():
+                attestations.setdefault(lex_id, []).extend(refs)
+        print(f"  attestations collected: {sum(len(v) for v in attestations.values())} "
+              f"across {len(attestations)} entries")
+
     parser = LexiconParser(LEXICON_XML)
     data   = parser.parse()
 
@@ -169,6 +187,7 @@ def build_lexicon():
             alphabet=data.alphabet,
             pos_list=data.pos_list,
             geo_slug=GEO_SLUG,
+            attestations=attestations,
         )
 
 
@@ -275,7 +294,7 @@ def main():
         build_texts(catalog)
 
     if full_build or args.lexicon:
-        build_lexicon()
+        build_lexicon(catalog)
 
     if full_build or args.bibliography:
         build_bibliography()

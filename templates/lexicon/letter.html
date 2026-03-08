@@ -236,6 +236,27 @@
                 </div>
                 {% endif %}
 
+                <!-- Attestations from encoded texts -->
+                {% set atts = attestations.get(entry.xml_id, []) %}
+                {% if atts %}
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">დადასტურება</p>
+                    <div class="flex flex-col gap-2">
+                        {% for att in atts %}
+                        <div>
+                            <div class="citation-text">{{ att.quote }}</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="{{ root }}texts/{{ att.text_id }}.html{% if att.para_id %}#{{ att.para_id }}{% endif %}"
+                                   class="hover:text-gray-700 transition-colors">
+                                    {{ att.title }}{% if att.para_n %} §{{ att.para_n }}{% endif %} →
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
                 <!-- Citation -->
                 {% if entry.citation %}
                 <div class="citation-block mt-3">

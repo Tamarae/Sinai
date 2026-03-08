@@ -116,6 +116,14 @@
 .folio-milestone[data-facs]:hover { background: #f0e8d8; border-color: #b8a88a; color: #6a5a40; }
 .folio-milestone.active-folio     { background: var(--crimson-pale); border-color: var(--crimson); color: var(--crimson); }
 
+/* ── Lexicon words ───────────────────────────────────── */
+.lex-word {
+    border-bottom: 1px dotted var(--crimson);
+    cursor: help;
+    transition: background .1s;
+}
+.lex-word:hover { background: var(--crimson-pale); border-radius: 2px; }
+
 /* ── Apparatus inline ────────────────────────────────── */
 .app-inline { border-bottom: 1px dotted var(--crimson); cursor: pointer; transition: background .1s; }
 .app-inline:hover, .app-inline.highlighted { background: var(--crimson-pale); border-radius: 2px; }
@@ -361,6 +369,26 @@
 
 <div id="cts-toast" class="cts-toast"></div>
 
+<!-- Lexicon word popup -->
+<div id="lex-popup" style="display:none;position:fixed;z-index:150;
+     background:#faf8f5;border:1px solid #e0d8ce;border-left:3px solid var(--crimson);
+     border-radius:3px;padding:.75rem 1rem;max-width:18rem;
+     box-shadow:0 4px 16px rgba(0,0,0,.12);">
+    <div id="lex-popup-lemma"
+         style="font-family:'Noto Serif Georgian',Georgia,serif;font-weight:700;
+                font-size:1rem;color:var(--crimson);margin-bottom:.2rem;"></div>
+    <div id="lex-popup-pos"
+         style="font-size:.65rem;letter-spacing:.07em;color:#888;margin-bottom:.4rem;
+                font-family:ui-sans-serif,system-ui,sans-serif;"></div>
+    <div id="lex-popup-def"
+         style="font-family:'Noto Serif Georgian',Georgia,serif;
+                font-size:.82rem;color:#3a3028;line-height:1.55;"></div>
+    <a id="lex-popup-link" href="#"
+       style="display:inline-block;margin-top:.5rem;font-size:.65rem;
+              color:var(--crimson);text-decoration:none;
+              font-family:ui-sans-serif,system-ui,sans-serif;">→ ლექსიკონი</a>
+</div>
+
 <div id="layout-root">
 
     <!-- Transcription -->
@@ -480,6 +508,62 @@
 
 {% block body_scripts %}
 <script>
+const LEX_DATA = {{ lex_lookup | tojson }};
+</script>
+<script>
+/* ════════════════════════════════════════════════════════
+   LEXICON WORD POPUPS
+════════════════════════════════════════════════════════ */
+(function() {
+    var popup    = document.getElementById('lex-popup');
+    var openWord = null;
+
+    function showPopup(span) {
+        var id    = span.dataset.lemma;
+        var entry = LEX_DATA[id];
+        if (!entry) return;
+        document.getElementById('lex-popup-lemma').textContent = entry.lemma;
+        document.getElementById('lex-popup-pos').textContent   = entry.pos;
+        document.getElementById('lex-popup-def').textContent   = entry.def;
+        var link = document.getElementById('lex-popup-link');
+        link.href = '../lexicon/' + entry.slug + '.html#' + id;
+
+        popup.style.display = 'block';
+        var rect = span.getBoundingClientRect();
+        var pw   = popup.offsetWidth;
+        var ph   = popup.offsetHeight;
+        var ww   = window.innerWidth;
+        var left = rect.left + window.scrollX;
+        var top  = rect.bottom + window.scrollY + 6;
+        if (left + pw > ww - 8) left = ww - pw - 8;
+        if (left < 8) left = 8;
+        var spaceBelow = window.innerHeight - rect.bottom;
+        if (spaceBelow < ph + 10) top = rect.top + window.scrollY - ph - 6;
+        popup.style.left = left + 'px';
+        popup.style.top  = top  + 'px';
+        openWord = span;
+    }
+
+    function hidePopup() {
+        popup.style.display = 'none';
+        openWord = null;
+    }
+
+    document.getElementById('text-content').addEventListener('click', function(e) {
+        var span = e.target.closest('.lex-word');
+        if (!span) return;
+        e.stopPropagation();
+        if (openWord === span) { hidePopup(); return; }
+        showPopup(span);
+    });
+
+    document.addEventListener('click', function(e) {
+        if (openWord && !e.target.closest('#lex-popup') && !e.target.closest('.lex-word')) {
+            hidePopup();
+        }
+    });
+})();
+
 /* ════════════════════════════════════════════════════════
    STICKY PANEL — JS-based fixed positioning
    Measures actual toolbar bottom each time so panel top

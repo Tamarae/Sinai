@@ -18,6 +18,8 @@ import xml.etree.ElementTree as ET
 import html as html_lib
 
 NS = {"tei": "http://www.tei-c.org/ns/1.0"}
+_TEI = "http://www.tei-c.org/ns/1.0"
+_XML = "http://www.w3.org/XML/1998/namespace"
 
 def _attr(el, attrib: str, default: str = "") -> str:
     return el.get(attrib, default)
@@ -219,6 +221,15 @@ class TextParser:
             elif tag == "lb":
                 pass  # line break — reflow in CSS
 
+            elif tag == "w":
+                lemma_ref = child.get("lemma", "")
+                lex_id = lemma_ref.lstrip("#")
+                word = html_lib.escape("".join(child.itertext()))
+                if lex_id:
+                    parts.append(f'<span class="lex-word" data-lemma="{html_lib.escape(lex_id)}">{word}</span>')
+                else:
+                    parts.append(word)
+
             else:
                 inner = "".join(self._render_children(child, par_id, par_n))
                 parts.append(inner)
@@ -306,3 +317,104 @@ class TextParser:
             f'<span class="app-inline" data-app="{app_id}" '
             f'title="ვარ. {app_n}">{lem_text}</span>'
         )
+
+
+# ── Attestation collector ──────────────────────────────
+
+def _get_context(para_el: ET.Element, target_w: ET.Element):
+    """
+    Walk para_el mixed content in document order, accumulating text.
+    Returns (full_text, word_start, word_len) for target_w's text.
+    """
+    buf = []
+    start = [None]
+    end_p = [None]
+
+    def walk(el):
+        if el.text:
+            if el is target_w:
+                start[0] = sum(len(s) for s in buf)
+            buf.append(el.text)
+            if el is target_w:
+                end_p[0] = sum(len(s) for s in buf)
+        for child in el:
+            walk(child)
+            if child.tail:
+                buf.append(child.tail)
+
+    walk(para_el)
+    full = "".join(buf)
+    s = start[0] if start[0] is not None else 0
+    e = end_p[0] if end_p[0] is not None else s
+    return full, s, e - s
+
+
+def collect_attestations(xml_path: Path, text_id: str, title: str) -> dict:
+    """
+    Scan xml_path for <w lemma="#lex-{id}"> annotations.
+    Returns {lex_id: [{text_id, title, para_id, para_n, quote}]}.
+    One entry per unique (lex_id, text_id, para_id) — deduplicates repeated
+    occurrences of the same word within the same paragraph.
+    quote is ~80 chars of parent-paragraph text centred on the word,
+    with normalised whitespace.
+    """
+    _P_TAGS = {f"{{{_TEI}}}p", f"{{{_TEI}}}ab"}
+
+    tree = ET.parse(xml_path)
+    root = tree.getroot()
+
+    # Build child→parent map for upward traversal
+    parent_map: dict = {}
+    for parent in root.iter():
+        for child in parent:
+            parent_map[child] = parent
+
+    result: dict = {}
+    seen: set = set()   # (lex_id, text_id, para_id)
+
+    for w_el in root.findall(f".//{{{_TEI}}}w"):
+        lemma_ref = w_el.get("lemma", "")
+        if not lemma_ref.startswith("#"):
+            continue
+        lex_id = lemma_ref[1:]
+
+        # Walk up to nearest <p> or <ab>
+        para_el = None
+        node = w_el
+        while node in parent_map:
+            node = parent_map[node]
+            if node.tag in _P_TAGS:
+                para_el = node
+                break
+
+        if para_el is None:
+            continue
+
+        para_id = para_el.get(f"{{{_XML}}}id", "")
+        para_n  = para_el.get("n", para_id.lstrip("p") if para_id else "")
+
+        key = (lex_id, text_id, para_id)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        full_text, wstart, wlen = _get_context(para_el, w_el)
+        HALF = 40
+        cs = max(0, wstart - HALF)
+        ce = min(len(full_text), wstart + wlen + HALF)
+        raw = full_text[cs:ce]
+        quote = " ".join(raw.split())   # normalise whitespace
+        if cs > 0:
+            quote = "…" + quote
+        if ce < len(full_text):
+            quote += "…"
+
+        result.setdefault(lex_id, []).append({
+            "text_id": text_id,
+            "title":   title,
+            "para_id": para_id,
+            "para_n":  para_n,
+            "quote":   quote,
+        })
+
+    return result
