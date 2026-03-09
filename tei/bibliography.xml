@@ -68,7 +68,7 @@
               </imprint>
               <biblScope unit="series">ძველი ქართული ენის ძეგლები, ტ. 4</biblScope>
             </monogr>
-            <note>სტანდარტული სამეცნიერო გამოცემა; ამ პროექტის ძირითადი საბეჭდი წყარო.</note>
+            <note>კრიტიკული გამოცემა; ამ პროექტის ამოსავალი ბეჭდური წყარო.</note>
           </biblStruct>
 
           <biblStruct xml:id="bib-garitte1956">
@@ -103,7 +103,6 @@
         <listBibl type="secondary" xml:id="bib-secondary">
           <head>კვლევები</head>
 
-          <!-- Tsagareli -->
           <biblStruct xml:id="bib-tsagareli1888">
             <monogr>
               <author><surname>Цагарели</surname><forename>А.</forename></author>
@@ -146,7 +145,6 @@
             1/143, 2/144 და ა.შ.</note>
           </biblStruct>
 
-          <!-- Marr -->
           <biblStruct xml:id="bib-marr1903">
             <analytic>
               <author><surname>Марр</surname><forename>Н.</forename></author>
@@ -190,7 +188,6 @@
             </monogr>
           </biblStruct>
 
-          <!-- Clark checklist -->
           <biblStruct xml:id="bib-clark1952">
             <monogr>
               <editor><surname>Clark</surname><forename>Kenneth W.</forename></editor>
@@ -204,7 +201,6 @@
             <note>1950 წლის ექსპედიციის მიკროფილმთა სარჩევი, კენეთ კლარქის რედაქციით.</note>
           </biblStruct>
 
-          <!-- Other secondary -->
           <biblStruct xml:id="bib-abula1973">
             <monogr>
               <author><surname>აბულაძე</surname><forename>ილია</forename></author>
@@ -228,23 +224,6 @@
               </imprint>
               <biblScope unit="series">Studi e Testi 185</biblScope>
             </monogr>
-          </biblStruct>
-
-          
-
-          <biblStruct xml:id="bib-otkhmezuri2019">
-            <analytic>
-              <author><surname>Otkhmezuri</surname><forename>Tamara</forename></author>
-              <title level="a">The Sinai Polycephalion of 864 and the Georgian Liturgical Tradition</title>
-            </analytic>
-            <monogr>
-              <title level="j">Le Muséon</title>
-              <imprint><date when="2019">2019</date></imprint>
-              <biblScope unit="volume">132</biblScope>
-              <biblScope unit="issue">3–4</biblScope>
-              <biblScope unit="pp">pp. 341–378</biblScope>
-            </monogr>
-            <idno type="DOI">10.2143/MUS.132.3.3287051</idno>
           </biblStruct>
 
           <biblStruct xml:id="bib-van-esbroeck1975">

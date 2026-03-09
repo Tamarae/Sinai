@@ -1,17 +1,11 @@
 {% extends "base.html" %}
-{% set active = "manuscripts" %}
 
 {% block title %}ხელნაწერები — სინური მრავალთავი 864{% endblock %}
 {% block dc_title %}სინური მრავალთავი — მოწმე ხელნაწერები{% endblock %}
 
 {% block head_extra %}
 <style>
-    .ms-rule { width: 2rem; height: 2px; background: var(--crimson); display: block; margin: .75rem 0 1rem; }
-
-    .meta-row { display: grid; grid-template-columns: 8rem 1fr; gap: .25rem .75rem; }
-    .meta-label { font-size: .7rem; letter-spacing: .08em; color: #888; text-transform: uppercase; font-weight: 500; padding-top: .1rem; }
-    .meta-value { font-size: .85rem; color: var(--ink-muted); }
-
+    /* ── Layout ──────────────────────────────────────── */
     .ms-card {
         border: 1px solid #e0d8ce;
         background: white;
@@ -23,9 +17,95 @@
         letter-spacing: .02em;
     }
 
-    .tab-btn { transition: color .12s, border-color .12s; border-bottom: 2px solid transparent; }
-    .tab-btn.active { color: var(--crimson); border-color: var(--crimson); }
+    /* ── Section tabs ────────────────────────────────── */
+    .ms-tabs { border-bottom: 1px solid #e0d8ce; }
+    .ms-tab-btn {
+        font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+        font-weight: 500; color: #888; padding: .6rem 1rem;
+        border-bottom: 2px solid transparent;
+        cursor: pointer; transition: color .12s, border-color .12s;
+        background: none; border-top: none; border-left: none; border-right: none;
+    }
+    .ms-tab-btn.active { color: var(--crimson); border-bottom-color: var(--crimson); }
+    .ms-tab-btn:hover:not(.active) { color: #555; }
+
+    .ms-panel { display: none; }
+    .ms-panel.active { display: block; }
+
+    /* ── Meta grid ───────────────────────────────────── */
+    .meta-grid { display: grid; grid-template-columns: 10rem 1fr; gap: .3rem .75rem; }
+    .meta-label {
+        font-size: .7rem; letter-spacing: .08em; color: #999;
+        text-transform: uppercase; font-weight: 500; padding-top: .15rem;
+    }
+    .meta-value { font-size: .85rem; color: #333; }
+    .meta-value.geo { font-family: 'Noto Serif Georgian', Georgia, serif; }
+
+    /* ── Scribe cards ────────────────────────────────── */
+    .scribe-card {
+        border-left: 3px solid var(--crimson);
+        padding: .75rem 1rem;
+        background: #faf8f5;
+        margin-bottom: .75rem;
+    }
+    .scribe-label {
+        font-weight: 700; color: var(--crimson); font-size: .9rem;
+        font-family: monospace; letter-spacing: .05em;
+    }
+    .scribe-name {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-size: .9rem; color: #444;
+    }
+    .scribe-folios {
+        font-size: .75rem; color: #777; font-family: monospace;
+    }
+    .scribe-note { font-size: .8rem; color: #555; line-height: 1.5; }
+
+    /* ── Quire table ─────────────────────────────────── */
+    .quire-row { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: .25rem .75rem; font-size: .8rem; }
+    .quire-header { font-size: .7rem; letter-spacing: .07em; text-transform: uppercase; color: #999; font-weight: 500; }
+    .quire-divider { border: none; border-top: 1px solid #e0d8ce; margin: .4rem 0; }
+
+    /* ── Bib history ─────────────────────────────────── */
+    .bib-entry { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: .9rem; }
+    .bib-year {
+        font-size: .75rem; font-weight: 700; color: var(--crimson);
+        font-family: monospace; min-width: 2.5rem; padding-top: .1rem;
+    }
+    .bib-desc { font-size: .82rem; color: #444; line-height: 1.55; }
+    .bib-scholar { font-weight: 600; color: #333; }
+
+    /* ── Colophon block ──────────────────────────────── */
+    .colophon-block {
+        border: 1px solid #e0d8ce;
+        border-left: 3px solid var(--gold, #8a6e2e);
+        padding: 1rem 1.25rem;
+        background: #fdfbf7;
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-size: .9rem; line-height: 1.8;
+        color: #333;
+    }
+    .colophon-source {
+        font-size: .7rem; text-transform: uppercase; letter-spacing: .07em;
+        color: #999; margin-top: .75rem;
+    }
+
+    /* ── N50 placeholder ─────────────────────────────── */
+    .n50-notice {
+        background: #faf8f5; border: 1px dashed #d0c8be;
+        padding: 1.5rem; text-align: center;
+        font-size: .85rem; color: #888;
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+    }
 </style>
+<script>
+function showTab(msId, panelId, btn) {
+    document.querySelectorAll('[id^="' + msId + '-"]').forEach(p => p.classList.remove('active'));
+    btn.closest('.ms-tabs').querySelectorAll('.ms-tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(msId + '-' + panelId).classList.add('active');
+    btn.classList.add('active');
+}
+</script>
 {% endblock %}
 
 {% block main %}
@@ -47,82 +127,476 @@
     <div class="max-w-2xl mb-10">
         <p class="text-sm text-gray-600 leading-relaxed font-serif-geo">
             გამოცემის საფუძველს ორი სინაური ხელნაწერი წარმოადგენს: N35 (864 წ.) — ძირითადი
-            მოწმე, და N50 — მეორადი მოწმე შედარებითი კოლაციისათვის. ქვემოთ მოცემულია
-            თითოეული ხელნაწერის კოდიკოლოგიური აღწერა.
+            მოწმე, და N50 — მეორადი მოწმე შედარებითი კოლაციისათვის. N35-ის კოდიკოლოგიური
+            აღწერა ეფუძნება <a href="{{ root }}research/shanidze-1959-intro.html"
+                class="underline decoration-dotted text-gray-600 hover:text-gray-900 transition-colors">
+                შანიძის 1959 წლის გამოცემის შესავალს</a>, §§ II.2–II.6.
         </p>
     </div>
 
-    <!-- Manuscript cards -->
-    <div class="flex flex-col gap-8">
-        {% for w in witnesses %}
-        <section id="{{ w.xml_id }}" class="ms-card rounded-sm overflow-hidden scroll-mt-20">
+    <!-- ══ N35 CARD ═══════════════════════════════════════════════════════ -->
+    {% for w in witnesses %}{% if w.xml_id == "N35" %}
+    <section id="{{ w.xml_id }}" class="ms-card rounded-sm overflow-hidden scroll-mt-20 mb-8">
 
-            <!-- Card header -->
-            <div class="flex items-start gap-6 p-6 sm:p-8 border-b border-gray-100">
-                <div class="flex-shrink-0">
-                    <div class="ms-siglum">{{ w.siglum }}</div>
-                    <div class="text-xs text-gray-400 tracking-widest mt-1 uppercase">მოწმე</div>
+        <!-- Card header -->
+        <div class="flex items-start gap-6 p-6 sm:p-8 border-b border-gray-100">
+            <div class="flex-shrink-0">
+                <div class="ms-siglum">N 35</div>
+                <div class="text-xs text-gray-400 tracking-widest mt-1 uppercase">ძირითადი მოწმე</div>
+            </div>
+            <div class="flex-1 min-w-0">
+                <h2 class="font-serif-geo font-semibold text-gray-900 text-lg leading-snug">
+                    სინური მრავალთავი 864 წლისა
+                </h2>
+                <p class="text-sm text-gray-500 mt-0.5">Sin. geo. Σ</p>
+                <p class="text-sm mt-1">
+                    <span style="color:var(--crimson);" class="font-semibold font-mono">864 CE</span>
+                    <span class="text-gray-400 mx-1.5">·</span>
+                    <span class="text-gray-500 text-sm">იერუსალიმი → სინა</span>
+                    <span class="text-gray-400 mx-1.5">·</span>
+                    <span class="text-gray-500 text-sm">275 ფურცელი</span>
+                </p>
+                {% if w.iiif %}
+                <p class="mt-2">
+                    <a href="{{ w.iiif }}" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-1 text-xs text-gray-400 underline decoration-dotted hover:text-gray-600 transition-colors">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        LoC IIIF ფაქსიმილე
+                    </a>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Tab navigation -->
+        <div class="ms-tabs px-6 sm:px-8" id="tabs-N35">
+            <button class="ms-tab-btn active" onclick="showTab('N35','provenance',this)">წარმომავლობა</button>
+            <button class="ms-tab-btn" onclick="showTab('N35','physdesc',this)">ფიზ. აღწერა</button>
+            <button class="ms-tab-btn" onclick="showTab('N35','quires',this)">რვეულები</button>
+            <button class="ms-tab-btn" onclick="showTab('N35','scribes',this)">გადამწერლები</button>
+            <button class="ms-tab-btn" onclick="showTab('N35','colophon',this)">ანდერძი</button>
+            <button class="ms-tab-btn" onclick="showTab('N35','history',this)">სამეცნ. ისტორია</button>
+        </div>
+
+        <!-- ── PANEL 1: Provenance ─────────────────────── -->
+        <div id="N35-provenance" class="ms-panel active p-6 sm:p-8">
+            <div class="meta-grid max-w-xl">
+                <span class="meta-label">დაწერის ადგილი</span>
+                <span class="meta-value geo">საბაწმინდის ლავრა, იერუსალიმი</span>
+
+                <span class="meta-label">თარიღი</span>
+                <span class="meta-value">864 წ. (ქრონ. 84; დასაბ. 6468)</span>
+
+                <span class="meta-label">შეწირვა</span>
+                <span class="meta-value geo">სინას მთა, წმ. ეკატერინეს მონასტერი</span>
+
+                <span class="meta-label">ამჟ. ადგილ.</span>
+                <span class="meta-value geo">სინას მთა, წმ. ეკატერინეს მონასტერი</span>
+
+                <span class="meta-label">სიგლი</span>
+                <span class="meta-value font-mono text-xs">N35 / Sin. geo. Σ</span>
+
+                <span class="meta-label">მარის ნომ.</span>
+                <span class="meta-value font-mono text-xs">№№ 32, 33, 57</span>
+
+                <span class="meta-label">ცაგ. ნომ.</span>
+                <span class="meta-value font-mono text-xs">№№ 83, 86</span>
+
+                <span class="meta-label">პატრიარქი</span>
+                <span class="meta-value geo">თევდოსი (862–878)</span>
+
+                <span class="meta-label">მამასახლ.</span>
+                <span class="meta-value geo">სოლომონ (საბაწმინდა)</span>
+
+                <span class="meta-label">ხელნაწ. სახ.</span>
+                <span class="meta-value geo">მრავალთავი (ჰომილიარი); 50 თავი</span>
+
+                <span class="meta-label">TEI xml:id</span>
+                <span class="meta-value font-mono text-xs text-gray-400">#N35</span>
+            </div>
+
+            <div class="mt-5 max-w-xl">
+                <p class="text-sm text-gray-600 leading-relaxed font-serif-geo">
+                    ხელნაწერი პალესტინური წარმომავლობისაა: დაუწერიათ საბაწმიდის ლავრაში და შეუწირავთ
+                    სინას მთისთვის. ანდერძი ზედმიწევნილობით ასახელებს წელს ორი სათვალავით —
+                    დასაბამითგანი (6468) და ქრონიკონი (84) — ორივე იძლევა 864 წელს.
+                    ამჟამად ხელნაწერი სამ ნაწილად (Marr 32, 33, 57) ინახება სინას
+                    წმ. ეკატერინეს მონასტერში.
+                </p>
+            </div>
+        </div>
+
+        <!-- ── PANEL 2: Physical Description ──────────────── -->
+        <div id="N35-physdesc" class="ms-panel p-6 sm:p-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest text-gray-400 font-medium mb-3">
+                        ზომები და მასალა
+                    </h3>
+                    <div class="meta-grid">
+                        <span class="meta-label">ფურცლები</span>
+                        <span class="meta-value">275 (თავდაპ. ~354)</span>
+
+                        <span class="meta-label">გვ. ზომა</span>
+                        <span class="meta-value">24,3 × 20,3 სმ</span>
+
+                        <span class="meta-label">სვეტები</span>
+                        <span class="meta-value">2 (per page)</span>
+
+                        <span class="meta-label">სტრიქ./სვეტ.</span>
+                        <span class="meta-value">24–27</span>
+
+                        <span class="meta-label">ნაწ. სვეტი</span>
+                        <span class="meta-value">18,2 × 6,2 სმ</span>
+
+                        <span class="meta-label">ასოს სიმ.</span>
+                        <span class="meta-value">3–4 მმ</span>
+
+                        <span class="meta-label">მასალა</span>
+                        <span class="meta-value geo">საშ. ხარისხის ეტრატი</span>
+                    </div>
                 </div>
-                <div class="flex-1 min-w-0">
-                    <h2 class="font-serif-geo font-semibold text-gray-900 text-lg leading-snug">{{ w.idno }}</h2>
-                    {% if w.date %}
-                    <p class="text-sm text-gray-500 mt-1">
-                        <span style="color:var(--crimson);" class="font-medium">{{ w.date }}</span>
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest text-gray-400 font-medium mb-3">
+                        დამწერლობა და სამკაული
+                    </h3>
+                    <div class="meta-grid">
+                        <span class="meta-label">სცრიფტი</span>
+                        <span class="meta-value geo">მრგლოვანი (ნუსხური — ანდერძ.)</span>
+
+                        <span class="meta-label">მელანი</span>
+                        <span class="meta-value geo">შავი; სათაურები — წითელი</span>
+
+                        <span class="meta-label">ინიციალები</span>
+                        <span class="meta-value geo">ასომთავრული; სვეტის გარეთ</span>
+
+                        <span class="meta-label">ყდა</span>
+                        <span class="meta-value geo">ხის დაფა; მოჭედილი ტყავი</span>
+
+                        <span class="meta-label">საფარველი</span>
+                        <span class="meta-value geo">სირ. ტექსტი (მათ. 24:5–13; იოვ. 2:23–3:2)</span>
+
+                        <span class="meta-label">ნახ. სიტყვ.</span>
+                        <span class="meta-value geo">არაბ.: „ჰომილიების წიგნი"</span>
+                    </div>
+
+                    <p class="text-xs text-gray-400 mt-4 leading-relaxed">
+                        ფოტოსურათები: Marr 1940, ტაბ. I–II, VI, XVI–XVIII; LoC IIIF (282 სურ.).
                     </p>
-                    {% endif %}
-                    {% if w.note %}
-                    <p class="text-sm text-gray-600 mt-3 leading-relaxed font-serif-geo max-w-xl">{{ w.note }}</p>
-                    {% endif %}
                 </div>
             </div>
+        </div>
 
-            <!-- Metadata grid -->
-            <div class="p-6 sm:p-8">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4">
+        <!-- ── PANEL 3: Quires ─────────────────────────── -->
+        <div id="N35-quires" class="ms-panel p-6 sm:p-8">
+            <div class="max-w-xl">
+                <div class="quire-row quire-header mb-1">
+                    <span>სტატუსი</span><span>ფურცლები / შენიშვნა</span><span>რვეულები</span>
+                </div>
+                <hr class="quire-divider">
+                <div class="quire-row mb-1 text-gray-700">
+                    <span class="text-green-700 font-medium">სრული</span>
+                    <span>ფფ. 1–84 (I ნაწ.); 85–144 (II); 145–275 (III)</span>
+                    <span>რვ. 1–44</span>
+                </div>
+                <hr class="quire-divider">
+                <div class="quire-row mb-1 text-gray-600 text-xs">
+                    <span class="text-amber-700">ნაკლული</span>
+                    <span>რვ. 1-ს — 2 ფ. (წინ); რვ. 11-ს — 2 ფ. (ბოლოს)</span>
+                    <span>–4 ფ.</span>
+                </div>
+                <div class="quire-row mb-1 text-gray-600 text-xs">
+                    <span class="text-amber-700">ნაკლული</span>
+                    <span>რვ. 19-ს — 4 ფ.; რვ. 28-ს — 7 ფ.</span>
+                    <span>–11 ფ.</span>
+                </div>
+                <div class="quire-row mb-1 text-gray-600 text-xs">
+                    <span class="text-red-700">დაკარგ.</span>
+                    <span>რვ. 20–27 — სრულად</span>
+                    <span>–64 ფ.</span>
+                </div>
+                <div class="quire-row mb-1 text-green-700 text-xs">
+                    <span>სრული</span>
+                    <span>რვ. 29–44 (ფფ. 146–275)</span>
+                    <span>16 რვ.</span>
+                </div>
+                <hr class="quire-divider">
+                <div class="quire-row text-xs font-medium text-gray-700">
+                    <span>სულ</span>
+                    <span>275 ფ. მოღ. / ~354 თავდაპ. / 79 დაკარგ.</span>
+                    <span>34 რვ. + 1 ფ.</span>
+                </div>
 
-                    {% if w.leaves %}
-                    <div class="flex flex-col gap-0.5">
-                        <span class="meta-label">ფოლიოები</span>
-                        <span class="meta-value font-serif-geo">{{ w.leaves }}</span>
-                    </div>
-                    {% endif %}
-
-                    {% if w.script %}
-                    <div class="flex flex-col gap-0.5">
-                        <span class="meta-label">დამწერლობა</span>
-                        <span class="meta-value">{{ w.script }}</span>
-                    </div>
-                    {% endif %}
-
-                    {% if w.date %}
-                    <div class="flex flex-col gap-0.5">
-                        <span class="meta-label">თარიღი</span>
-                        <span class="meta-value font-serif-geo">{{ w.date }}</span>
-                    </div>
-                    {% endif %}
-
-                    <div class="flex flex-col gap-0.5">
-                        <span class="meta-label">TEI xml:id</span>
-                        <span class="meta-value font-mono text-xs text-gray-400">#{{ w.xml_id }}</span>
-                    </div>
-
+                <div class="mt-5 p-3 bg-gray-50 border border-gray-100 text-xs text-gray-500 leading-relaxed">
+                    <strong class="text-gray-600">სტრუქტურა.</strong>
+                    საზოგადოდ 8-ფურცლიანი რვეულები; გამონაკლისი — უკანასკნელი (44-ე), 10-ფურც.
+                    (ფფ. 266–275). რვეულის ნომრები ქართ. ასოებით, დასმულია დაწერის დროს (864 წ.).
+                    ფფ. 4–5 და ფფ. 172–175 გადასმულია: სწ. თანამ. 173/172, 175/174.
+                    პაგინაცია ორმაგია: ახ. ნომ. (1–275) + ძვ. (Marr-ის ხელით, ფანქ.).
                 </div>
             </div>
+        </div>
 
-        </section>
-        {% endfor %}
-    </div>
+        <!-- ── PANEL 4: Scribes ────────────────────────── -->
+        <div id="N35-scribes" class="ms-panel p-6 sm:p-8">
+            <div class="max-w-2xl">
+
+                <p class="text-sm text-gray-500 mb-4 font-serif-geo">
+                    ხელნაწერი გადაწერილია რამდენიმე პირის მიერ; გარკვევით გაირჩევა სამი ხელი (A, B, C),
+                    შეიძლება იყოს D, E-ც. გადამწერად ანდერძი პირდაპირ ასახელებს
+                    <strong>ამონა</strong>-ს.
+                </p>
+
+                <div class="scribe-card">
+                    <div class="flex items-baseline gap-2 mb-1">
+                        <span class="scribe-label">ხელი A</span>
+                        <span class="scribe-name">მაკარი ლეთეთელი (ვარ.)</span>
+                    </div>
+                    <div class="scribe-folios mb-1.5">
+                        ფფ. 1r–55r · 70v–116v · 145r–160r · 202–274r
+                    </div>
+                    <p class="scribe-note">
+                        გამოცდილი ხელი; ასოები სწორი და ლამაზი. სიტყვის შემდეგ წერტილი ზედა
+                        ხაზის გასწვრივ; წინადადების ბოლოს — ირიბი ორწერტილი.
+                        დამახასიათებელია გრძლად ჩამოსული <em>Ⴆ</em> მოკლე ფეხით და
+                        ლამაზად გამოყვანილი <em>Ⴊ</em>. ანდერძს იწყებს მრგლოვანი ხელით,
+                        განაგრძობს ნუსხურად, ამთავრებს მრგლოვანი ხელით კვლავ.
+                        ითვლება წიგნის ძირითად შემქმნელად.
+                    </p>
+                </div>
+
+                <div class="scribe-card">
+                    <div class="flex items-baseline gap-2 mb-1">
+                        <span class="scribe-label">ხელი B</span>
+                        <span class="scribe-name">—</span>
+                    </div>
+                    <div class="scribe-folios mb-1.5">
+                        ფფ. 55v–70r
+                    </div>
+                    <p class="scribe-note">
+                        ასოები ვიწრო და არათანაბარი. <em>Ⴕ</em>-ს პატარა მუცელი აქვს.
+                        დამახასიათებელია <em>Ⴈ</em> ასოს მოყვანილობა: მარჯვენა ფრთა
+                        ვერტიკალურ ხაზს უერთდება და შემდეგ წვრილი ხაზია ამართული ოდნავ ირიბად.
+                        <em>Ⴑ</em> ასოს ხშირად ჩამოსდის ბოლოები ძირს. ასოები მიჯრით
+                        არის მიწყობილი; სიტყვებს შორის თავისუფალი არე ნაკლებად არის.
+                        სიტყვის შემდეგ — ორწერტილი; აბზაცის ბოლოს — სამწერტილი.
+                    </p>
+                </div>
+
+                <div class="scribe-card">
+                    <div class="flex items-baseline gap-2 mb-1">
+                        <span class="scribe-label">ხელი C</span>
+                        <span class="scribe-name">—</span>
+                    </div>
+                    <div class="scribe-folios mb-1.5">
+                        ფფ. 117r–140v · 160v–169v
+                    </div>
+                    <p class="scribe-note">
+                        დამახასიათებელია გაუარებული <em>Ⴕ</em>, რომელიც ნ. მარის ყურადღებასაც
+                        იქცევდა. ამას გარდა, ხშირად ხმარობს <em>ႭႱ</em>-ს <em>Ⴍ</em>-ს
+                        ნაცვლად. სიტყვების შემდეგ წერტილებს არ ხმარობს. <em>Ⴆ</em> ასოს
+                        მუცელი მარცხნივ აქვს შეწეული.
+                    </p>
+                </div>
+
+                <div class="mt-4 p-3 bg-gray-50 border border-gray-100 text-xs text-gray-500 leading-relaxed">
+                    <strong class="text-gray-600">მოგვიანო მინაწერები.</strong>
+                    <span class="font-serif-geo">იოვანე-ზოსიმე</span> (~X ს.):
+                    ფ. 274v — ხელნაწერის მესამედ შემოსვის ამბავი (ნუსხური);
+                    ფ. 275r — „<span class="font-serif-geo">ქებაი ქართულისა ენისაი</span>" (ნუსხური).
+                    ფ. 181r ზედა აშია: „<span class="font-serif-geo">ქრისტე ღმერთო, შეიწყალენ გაბრიელი და იოვანე</span>" (X–XI სს.).
+                </div>
+            </div>
+        </div>
+
+        <!-- ── PANEL 5: Colophon ───────────────────────── -->
+        <div id="N35-colophon" class="ms-panel p-6 sm:p-8">
+            <div class="max-w-2xl">
+                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-medium mb-3">
+                    შეწირვის ფორმულა (ფ. 273v–274r)
+                </h3>
+                <div class="colophon-block mb-4">
+                    „დაიწერა ესე წიგნი იერუსალიმს ლავრასა დიდსა წმიდისა და ნეტარისა მამისა
+                    ჩუენისა საბაიასსა ლოცვაითა ღმრთის მოყუარისა <strong>თევდოსი პატრიაქისათა</strong>
+                    და საბაწმიდის პატიოსნისა და სანატრელისა <strong>სოლომონ მამასახლისისათა</strong>
+                    [...] და დაიწერა წმიდაი ესე წიგნი დასაბამითგანთა წელთა <strong>ხკჱ</strong> (6468),
+                    ქრონიკონი იყო <strong>პდ</strong> (84)."
+                    <div class="colophon-source">Shanidze 1959, §II.1 — ფ. 273v–274r</div>
+                </div>
+
+                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-medium mb-3 mt-5">
+                    შექმნის ინიციატორი (ანდ. ფ. 273v)
+                </h3>
+                <div class="colophon-block mb-4">
+                    „მე, <strong>მაკარი ლეთეთელი</strong>, ძე <strong>გიორგი გრძელისაი</strong>,
+                    ცოდვილი ფრიად, ღირს მყო ღმერთმან შესაქმედ წმიდისა ამის წიგნისა მრავალთავისა
+                    თანა-შეწევნითა ძმისა ჩუენისა სულიერად <strong>პიმენ კახისაითა</strong> და
+                    კელთ-წერითა დედის ძმის წულისა ჩემისა <strong>ამონ ვახტანგ მოძარღულისა
+                    ძისაითა</strong>."
+                    <div class="colophon-source">Shanidze 1959, §II.1 — ანდერძი, ფ. 273v</div>
+                </div>
+
+                <div class="meta-grid max-w-sm mt-4">
+                    <span class="meta-label">ინიც.</span>
+                    <span class="meta-value geo">მაკარი ლეთეთელი (გრ. ხანძთ. მოწ.)</span>
+                    <span class="meta-label">ხელ.-მწ.</span>
+                    <span class="meta-value geo">ამონა (ვახტ. მოძ. ძე)</span>
+                    <span class="meta-label">სულ. ძმა</span>
+                    <span class="meta-value geo">პიმენ კახი</span>
+                    <span class="meta-label">ანდ. ენა</span>
+                    <span class="meta-value">ნუსხური + მრგლ.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── PANEL 6: Bibliographic History ─────────────── -->
+        <div id="N35-history" class="ms-panel p-6 sm:p-8">
+            <div class="max-w-2xl">
+
+                <div class="bib-entry">
+                    <span class="bib-year">1883</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">ა. ცაგარელი</span> — სინაზე 3 დღეში, მძიმე
+                        პირობებში, აღწერა 93 ქართ. ხელნ.; მრ-ავი — № 83. 208 ფ. დათვალა
+                        (ვიდრე 275); III ნაწ. ცალ. № 86-ად ჩაწ. ვერ შეამჩნია.
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1888</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">ა. ცაგარელი</span> —
+                        <em>Памятники грузинской старины в Святой Земле и на Синае</em>
+                        (Прав. Пал. Сбор. IV/1, СПб. 1888). პირველი ბეჭ. ცნობა მრ-ავის შ.;
+                        Прил. II — სინ. ქ-ლ. ხელნ. კატ. (გვ. 193–240).
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1902</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">ნ. მარი + ი. ჯავახიშვილი</span> —
+                        სინ. ექსპ. ხელნ. აღწ. მიზნ. N35-ის ორი ნაწ. (32, 33) ერთ., მესამე
+                        (57) — ცალ.; ფოტ. ეგზ.
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1903</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">ნ. მარი</span> —
+                        <em>Предварит. отчет о работах на Синае</em>
+                        (Сообщ. ИППО XIV/II, 1903, გვ. 50). მოკ. ც. მრ-ავის შ.
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1940</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">ნ. მარი</span> (post.) —
+                        <em>Описание грузинских рукописей Синайского монастыря</em>
+                        (М.–Л.). №№ 32–33: გვ. 1–26; № 57: გვ. 93–97; ეთ., ყდ., ფოტ.
+                        (ტაბ. I–II, VI, XVI–XVIII).
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1950</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">K. Clark ექსპ.</span> (LoC) —
+                        სინ. ყველა ენ. ხელნ. მიკ-ფ-ზე გადაღება; ქ-ლ. ხელნ. ანაგ. —
+                        <span class="bib-scholar">Gérard Garitte</span>. სარჩ.:
+                        <em>Checklist</em>, Washington 1952.
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1956</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">G. Garitte</span> —
+                        <em>Catalogue des manuscrits géorgiens littéraires du Mont Sinaï</em>
+                        (CSCO 165, Louvain). ყ-ზ. საფ-ლ. აღწ. N35-ის: გვ. 72–97; ლათ.
+                        თ-ბ-ები, სათ-ები, ბიბლ. ც.
+                    </div>
+                </div>
+
+                <div class="bib-entry">
+                    <span class="bib-year">1959</span>
+                    <div class="bib-desc">
+                        <span class="bib-scholar">ა. შანიძე</span> —
+                        <em>სინური მრავალთავი 864 წლისა</em>
+                        (თბ., თბ. უნ. გამ.; ძვ. ქ. ე. ძ. ტ. 4). სრ. კრ. გამ.
+                        N35-ისა; ვ-ები N50-ისა; შ-ავ. §§ I–III ეფ. ამ გვ-ზ.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    {% endif %}{% endfor %}
+
+    <!-- ══ N50 CARD ═══════════════════════════════════════════════════════ -->
+    {% for w in witnesses %}{% if w.xml_id == "N50" %}
+    <section id="{{ w.xml_id }}" class="ms-card rounded-sm overflow-hidden scroll-mt-20 mb-8">
+
+        <!-- Card header -->
+        <div class="flex items-start gap-6 p-6 sm:p-8 border-b border-gray-100">
+            <div class="flex-shrink-0">
+                <div class="ms-siglum">N 50</div>
+                <div class="text-xs text-gray-400 tracking-widest mt-1 uppercase">მეორადი მოწმე</div>
+            </div>
+            <div class="flex-1 min-w-0">
+                <h2 class="font-serif-geo font-semibold text-gray-900 text-lg leading-snug">
+                    სინური მრავალთავი
+                </h2>
+                <p class="text-sm text-gray-500 mt-0.5">Sin. geo. N</p>
+                <p class="text-sm mt-1">
+                    <span style="color:var(--crimson);" class="font-semibold font-mono">X–XI სს.</span>
+                    <span class="text-gray-400 mx-1.5">·</span>
+                    <span class="text-gray-500 text-sm">198 ფურცელი</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Basic meta -->
+        <div class="p-6 sm:p-8">
+            <div class="meta-grid max-w-sm mb-5">
+                <span class="meta-label">თარიღი</span>
+                <span class="meta-value">X–XI სს. (950–1050)</span>
+                <span class="meta-label">ფოლიოები</span>
+                <span class="meta-value">198</span>
+                <span class="meta-label">გამოყ.</span>
+                <span class="meta-value geo">N35-ის კოლაციისათვის</span>
+                <span class="meta-label">TEI xml:id</span>
+                <span class="meta-value font-mono text-xs text-gray-400">#N50</span>
+            </div>
+
+            <div class="n50-notice rounded-sm">
+                <p class="mb-1">სრული კოდიკოლოგიური აღწერა — მომავალ ეტაპზე.</p>
+                <p class="text-xs">N50-ის ვარიანტები N35-ის კოლაციის
+                    <code class="font-mono bg-gray-100 px-1">rdg wit="#N50"</code>
+                    ელემენტებში აისახება.</p>
+            </div>
+        </div>
+
+    </section>
+    {% endif %}{% endfor %}
 
     <!-- TEI source note -->
-    <div class="mt-10 pt-6 border-t border-gray-100 flex items-start gap-3">
+    <div class="mt-6 pt-6 border-t border-gray-100 flex items-start gap-3">
         <svg class="w-4 h-4 text-gray-300 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
         </svg>
         <p class="text-xs text-gray-400 leading-relaxed">
-            ხელნაწერების სრული კოდიკოლოგიური აღწერა ინახება
-            <a href="{{ root }}data/catalog.xml" class="underline decoration-dotted hover:text-gray-600 transition-colors">tei/catalog.xml</a>
-            ფაილში TEI-XML ფორმატით.
+            ხელნაწერების სრული კოდიკოლოგიური მონაცემები TEI-XML სახით:
+            <a href="{{ root }}data/catalog.xml" class="underline decoration-dotted hover:text-gray-600 transition-colors">tei/catalog.xml</a>.
+            N35-ის ვრ. კოდ. აღ.: Shanidze 1959, §§ II.2–II.6;
+            Marr 1940; Garitte 1956, გვ. 72–97.
         </p>
     </div>
 
