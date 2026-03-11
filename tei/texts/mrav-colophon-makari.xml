@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/relaxng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-colophon-makari" xml:lang="ka">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">მაკარი ლეთეთელი — ანდერძი</title>
+        <title xml:lang="la" type="sub">Testamentum Macarii Leteteli</title>
+        <author ref="#aut-makari-leteteli">
+          <name xml:lang="ka">მაკარი ლეთეთელი</name>
+          <name xml:lang="la">Macarius Letetensis</name>
+        </author>
+        <editor xml:id="ed-TK"><!-- editor name --></editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.</publisher>
+        <pubPlace>თბილისი</pubPlace>
+        <date when="2026"/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="N35">
+            <abbr type="siglum">Σ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 35</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus from="312v" to="312v">f. 312v</locus>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <p>ტექსტი ემყარება ხელნაწერს Sin. geo. N 35 (864 წ.). საწყისი ასოები Asomtavruliდ გადაცემულია hi rend="initial"-ით.</p>
+      </editorialDecl>
+      <variantEncoding method="location-referenced" location="internal"/>
+    </encodingDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="iiif-loc-n35" url="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="text" xml:id="mrav-colophon-makari-body">
+        <pb n="312v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
+        
+        <p xml:id="p1" n="1">
+          <hi rend="initial">Ⴜ</hi>ყალობითა მამისაჲთა და ძისაჲთა და სულისა წმიდისაჲთა, ამის თაყუანის-საცემელისა სამებისა წმიდისა, ღმრთისა ჩუენისა მომადლებითა და მეოხებითა წმიდისა ღმრთის-მშობელისა მარადის ქალწულისა მარიამისითა, ძალითა პატიოსნისა და ცხოველს-მყოფელის საუფლოჲსა ჯუარისაჲთა და მადლითა წმიდისა ადგომისა საფლავისა უფლისა ჩუენისა იესუ ქრისტჱსისაჲთა და მეოხებითა ყოველთა წინაწარმეტყუელთა, მოციქულთა, მახარებელთა, მარტჳლთა მართალთა და მოწამეთაჲთა და ყოველთა წმიდათა მისთაჲთა და მადლითა წმიდისა წინაწარმეტყუელისა და დიდებულისა მოსჱსითა მე, მაკარი ლეთეთელი, ძჱ გიორგი <note n="1">1*</note> გრძელისაჲ, ცოდვილი ფრიად, ღირს მყო ღმერთმან შესაქმედ წმიდისა ამის წიგნისა მრავალთავისა თანა-შეწევნითა ძმისა ჩუენისა სულიერად პიმენ კახისაჲთა და ჴელთ-წერითა დედის ძმისწულისა ჩემისა ამონა ვახთანგ მოძარღულისა ძისაჲთა, საჴსენებელად სულთა ჩუენთათჳს და სულთა მშობელთა ჩუენთათჳს და ყოველთა გარდაცვალებულთა თჳსთა ჩუენთათჳს.
+        </p>
+        
+        <p xml:id="p2" n="2">
+          <hi rend="initial">Ⴀ</hi>წ, ღმერთმან დაგაჯეროს, მამანო და ძმანო, რომელნი აღმოიკითხვიდეთ წმიდათა ამათ სიტყუათა ამათ მიერ, ჩუენ პირველ მოჴსენებულნი ესე ცოცხალნი და მიცვალებულნი მოგჳჴსენენით ღმრთისათჳს წმიდათა ლოცვათა თქუენთა <note n="2">2*</note> შინა, რაჲთა თქუენ მიერ განვერნეთ ჩუენ დღესა მას საშინელსა განკითხვისა <note n="3">3*</note> <pb n="274r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/pct:100/0/default.jpg"/> ჩუენისასა ტირილისაგან თუალთაჲსა და ღრჭენისაგან კბილთაჲსა. და თქუენცა უფალმან მოგიჴსენენინ სასუფეველსა მისსა <note n="4">4*</note>. ამენ <note n="5">5*</note>.
+        </p>
+        
+        <p xml:id="p3" n="3">
+          <hi rend="initial">Ⴃ</hi>ა მოიჴსენენინ <note n="6">6*</note> უფალმან ყოველნი, რომელთა ყვეს შეწევნაჲ წიგნისაჲ ამის სულთა მათთათჳს.
+        </p>
+        
+        <p xml:id="p4" n="4">
+          <hi rend="initial">Ⴃ</hi>აიწერა ესე წიგნი იერუსალემს <note n="7">7*</note>, ლავრასა <note n="8">8*</note> დიდსა წმიდისა <note n="9">9*</note> და ნეტარისა მამისა ჩუენისა საბაჲსსა <note n="10">10*</note> დღეთა ღმრთის მოყუარისა თევდოსი პატრეაქისათა და საბა-წმიდას პატიოსნისა და სანატრელისა სოლომონ მამასახლისისათა.
+        </p>
+        
+        <p xml:id="p5" n="5">
+          <hi rend="initial">Ⴃ</hi>ა დაიწერა წმიდაჲ ესე წიგნი დასაბამითგან წელთა <note n="11">11*</note>: ხ̂ჳჲჱ ქრონიკონი იყო: პ̂დ:
+        </p>
+        
+        <p xml:id="p6" n="6">
+          <hi rend="initial">Ⴃ</hi>ა მე, გლახაკმან მაკარი, შევწირე წმიდაჲ ესე მრავალთავი წმიდათ-წმიდასა <note n="12">1*</note> მთასა სინას საჴსენებელად და სარგებელად თავთა ჩუენთა და სულთა ჩუენთათჳს.
+        </p>
+        
+        <p xml:id="p7" n="7">
+          <hi rend="initial">Ⴃ</hi>ა ამას შინა არს შემკობაჲ წელიწდისა დღესასწაულთა ყოველთაჲ, თქუმული წმიდათა მოძღუართაჲ.
+        </p>
+        
+        <p xml:id="p8" n="8">
+          <hi rend="initial">Ⴋ</hi>ოეც, უფალო, პოვნად წყალობაჲ შენი მას დღესა შინა სულთა ჩუენთა ცოდვილთა და უწყალოდ გუემულთა ბოროტის მოძღურისა მიერ ეშმაკისა.
+        </p>
+        
+        <p xml:id="p9" n="9">
+          <hi rend="initial">Ⴓ</hi>ფალო, იჴსენ სული ჩუენი სიკუდილისაგან <note n="13">2*</note>, თუალნი ჩუენნი _ ცრემლთაგან და ფერჴნი ჩუენნი _ ბრკომისაგან <note n="14">(1)*</note>. ამენ.
+        </p>
+        
+        <p xml:id="p10" n="10">
+          <hi rend="initial">Ⴃ</hi>იდებაჲ შენდა, უფალო, რომელმან ღირს მყავ მე, უღირსი ესე, აღსრულებად საქმისა ამის.
+        </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>

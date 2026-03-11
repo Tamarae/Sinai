@@ -268,6 +268,10 @@
             <persName xml:lang="ka">ანონიმი</persName>
             <persName xml:lang="la">Anonymus</persName>
           </person>
+          <person xml:id="aut-amonios">
+            <persName xml:lang="ka">ამონიოსი</persName>
+            <persName xml:lang="la">Amonios</persName>
+          </person>
 
           <!-- Appendix authors -->
           <person xml:id="aut-ioane-zosime">
@@ -1164,7 +1168,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="427r" to="436v">ff. 427r–436v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-enkenia-2.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-exaltation-cross"
@@ -1179,7 +1183,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="437r" to="447v">ff. 437r–447v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-exaltation-cross.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 
@@ -1198,7 +1202,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="448r" to="455v">ff. 448r–455v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-cross-vision.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-nails-inventio"
@@ -1212,7 +1216,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="456r" to="462v">ff. 456r–462v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-nails-inventio.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-peter-martyrdom"
@@ -1226,7 +1230,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="463r" to="471v">ff. 463r–471v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-peter-martyrdom.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-paul-martyrdom"
@@ -1240,7 +1244,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="472r" to="480v">ff. 472r–480v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-paul-martyrdom.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-martyrs-chrysostom"
@@ -1254,21 +1258,50 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="481r" to="492v">ff. 481r–492v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-martyrs-chrysostom.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
+          
+          <event xml:id="mrav-martyrs-chrysostom-2"
+            corresp="#feast-misc"
+            type="#genre-homily">
+            <label xml:lang="ka">იოვ. ოქროპ. — მოწამეთათჳს II</label>
+            <desc xml:lang="ka">თქმულნი იოვანე ოქროპირისა მოწამეთათჳს</desc>
+            <note type="author" corresp="#aut-chrysostom"/>
+            <msDesc>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
+              <locus from="481r" to="492v">ff. 481r–492v</locus>
+            </msDesc>
+            <note type="file">tei/texts/mrav-martyrs-chrysostom.xml</note>
+            <note type="status">encoding-in-progress</note>
+          </event>
+          
+          <event xml:id="mrav-martyrs-chrysostom-3"
+            corresp="#feast-misc"
+            type="#genre-homily">
+            <label xml:lang="ka">იოვ. ოქროპ. — მოწამეთათჳს III</label>
+            <desc xml:lang="ka">თქმულნი იოვანე ოქროპირისა მოწამეთათჳს</desc>
+            <note type="author" corresp="#aut-chrysostom"/>
+            <msDesc>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
+              <locus from="481r" to="492v">ff. 481r–492v</locus>
+            </msDesc>
+            <note type="file">tei/texts/mrav-martyrs-chrysostom.xml</note>
+            <note type="status">encoding-in-progress</note>
+          </event>
+          
 
           <event xml:id="mrav-departed-ephrem"
                  corresp="#feast-misc"
                  type="#genre-homily">
             <label xml:lang="ka">ეფრემი — შეს-ბ-თა</label>
-            <desc xml:lang="ka">თქუმული წმიდა ეფრემისი, შესუანებლუთათვის</desc>
+            <desc xml:lang="ka">თქუმული წმიდა ეფრემისი, შესუენებლუთათვის</desc>
             <note type="author" corresp="#aut-ephrem-syrus"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="493r" to="502v">ff. 493r–502v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-departed-ephrem.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
           <event xml:id="mrav-sinai-fathers"
@@ -1282,8 +1315,23 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="503r" to="512v">ff. 503r–512v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-sinai-fathers.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
+          
+          <event xml:id="mrav-sinai-fathers-amonios"
+            corresp="#feast-misc"
+            type="#genre-life">
+            <label xml:lang="ka">ცხოვრება სინელ მამათა</label>
+            <desc xml:lang="ka">ცხორებაჲ წმიდათა და ნეტართა მამათაჲ აღწერა წმიდამან ამონიოს</desc>
+            <note type="author" corresp="#aut-amonios"/>
+            <msDesc>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
+              <locus from="503r" to="512v">ff. 503r–512v</locus>
+            </msDesc>
+            <note type="file">tei/texts/mrav-sinai-fathers-amonios.xml</note>
+            <note type="status">encoding-in-progress</note>
+          </event>
+          
 
 
           <!-- ══════════════════
@@ -1301,8 +1349,24 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus from="312v" to="312v">f. 312v</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-colophon-makari.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
+          
+          <event xml:id="mrav-bound-ioane-zosime"
+            corresp="#feast-appendix"
+            type="#genre-colophon">
+            <label xml:lang="ka">იოანე-ზოსიმე — მესამედ შემოსაჲ წიგნისაჲ</label>
+            <desc xml:lang="ka">იოანე-ზოსიმე, მესამედ შემოსაჲ წიგნისაჲ</desc>
+            <note type="author" corresp="#aut-ioane-zosime"/>
+            <msDesc>
+              <msIdentifier><idno type="witness">N35</idno></msIdentifier>
+              <locus>appendix</locus>
+            </msDesc>
+            <note type="file">tei/texts/mrav-bound-ioane-zosime.xml</note>
+            <note type="status">encoding-in-progress</note>
+          </event>
+        
+
 
           <event xml:id="mrav-ioane-zosime"
                  corresp="#feast-appendix"
@@ -1315,7 +1379,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <locus>appendix</locus>
             </msDesc>
             <note type="file">tei/texts/mrav-ioane-zosime.xml</note>
-            <note type="status">planned</note>
+            <note type="status">encoding-in-progress</note>
           </event>
 
 

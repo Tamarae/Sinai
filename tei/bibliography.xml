@@ -68,7 +68,7 @@
               </imprint>
               <biblScope unit="series">ძველი ქართული ენის ძეგლები, ტ. 4</biblScope>
             </monogr>
-            <note>კრიტიკული გამოცემა; ამ პროექტის ამოსავალი ბეჭდური წყარო.</note>
+            <note>სტანდარტული სამეცნიერო გამოცემა; ამ პროექტის ძირითადი საბეჭდი წყარო.</note>
           </biblStruct>
 
           <biblStruct xml:id="bib-garitte1956">
@@ -224,6 +224,21 @@
               </imprint>
               <biblScope unit="series">Studi e Testi 185</biblScope>
             </monogr>
+          </biblStruct>
+
+          <biblStruct xml:id="bib-imnaishvili1975">
+            <monogr>
+              <author><surname>იმნაიშვილი</surname><forename>ივანე</forename></author>
+              <title level="m">სინური მრავალთავი (ენა და ლექსიკონი)</title>
+              <imprint>
+                <pubPlace>თბილისი</pubPlace>
+                <publisher>თბილისის უნივერსიტეტის გამომცემლობა</publisher>
+                <date when="1975">1975</date>
+              </imprint>
+            </monogr>
+            <note>ხელნაწერის ენის სრული გამოკვლევა და ლექსიკონი; ძირითადი
+            საცნობარო წყარო ამ პროექტის ლექსიკოგრაფიული კომპონენტისათვის.
+            შეიქმნა 1956–57 წლებში, გამოიცა 1975 წ. (ავტ. წინასიტყვ.: 2.XI.1973).</note>
           </biblStruct>
 
           <biblStruct xml:id="bib-van-esbroeck1975">

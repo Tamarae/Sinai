@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/relaxng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-ioane-zosime" xml:lang="ka">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">იოანე-ზოსიმე — ქებაჲ და დიდებაჲ ქართულისა ენისაჲ</title>
+        <title xml:lang="la" type="sub">Ioannis Zosimi Laus et gloria linguae georgicae</title>
+        <author ref="#aut-ioane-zosime">
+          <name xml:lang="ka">იოანე-ზოსიმე</name>
+          <name xml:lang="la">Ioannes Zosimus</name>
+        </author>
+        <editor xml:id="ed-TK"><!-- editor name --></editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.</publisher>
+        <pubPlace>თბილისი</pubPlace>
+        <date when="2026"/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="N35">
+            <abbr type="siglum">Σ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 35</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus from="312v" to="312v">f. 312v</locus>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <p>ტექსტი ემყარება ხელნაწერს Sin. geo. N 35 (864 წ.). საწყისი ასოები Asomtavruliდ გადაცემულია hi rend="initial"-ით.</p>
+      </editorialDecl>
+      <variantEncoding method="location-referenced" location="internal"/>
+    </encodingDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="iiif-loc-n35" url="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="text" xml:id="mrav-ioane-zosime-body">
+        <pb n="312v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
+        
+        <head type="invocation">
+          <hi rend="asomtavruli"><hi rend="initial">Ⴑ</hi>ახელითა ღმრთისაჲთა</hi>
+        </head>
+        
+        <head type="rubric">
+          <hi rend="rubric">ქებაჲ და დიდებაჲ ქართულისა ენისაჲ</hi>
+        </head>
+        
+        <p xml:id="p1" n="1">
+          <hi rend="initial">Ⴃ</hi>ამარხულ არს ენაჲ ქართული დღედმდე მეორედ მოსლვისა მისისა საწამებელად, რაჲთა ყოველსა ენასა ღმერთმან ამხილოს ამით ენითა. და ესე ენაჲ მძინარე <note n="1">1*</note> არს დღესამომდე, და სახარებასა შინა ამას ენასა ლაზარე ჰრქჳან. და ახალმან ნინო მოაქცია და ჰჱლენე დედოფალმან, ესე არიან ორნი დანი, ვითარცა მარიამ და მართაჲ. და მეგობრობაჲ ამისთჳს თქუა, ვითარმედ ყოველი საიდუმლოჲ <note n="2">2*</note> ამას ენასა შინა დამარხულ არს, და ოთხისა დღისა მკუდარი <note n="3">3*</note> ამისთჳს თქუა დავით წინაწარმეტყუელმან, რამეთუ: წელი ათასი ვითარცა ერთი დღჱ <note n="4">(1)*</note>. და სახარებასა შინა ქართულსა თავსა ხოლო მათჱსსა წილი <note n="5">4*</note> ზის, რომელ ასოჲ არს და იტყჳს ყოვლად ოთხ ათასსა მარაგსა. და ესე არს ოთხი დღჱ და ოთხისა დღისა მკუდარი <note n="6">5*</note>, ამისთჳს მის თანავე დაფლული სიკუდილითა ნათლის-ღებისა მისისაჲთა.
+        </p>
+        
+        <p xml:id="p2" n="2">
+          <hi rend="initial">Ⴃ</hi>ა ესე ენაჲ, შემკული და კურთხეული სახელითა უფლისაჲთა, მდაბალი და დაწუნებული, მოელის დღესა მას მეორედ მოსლვასა უფლისასა. და სასწაულად ესე აქუს: ოთხმეოც და ათოთხმეტი წელი უმეტჱს სხუათა ენათა ქრისტჱს <note n="7">6*</note> მოსლვითგან ვიდრე დღესამომდე.
+        </p>
+        
+        <p xml:id="p3" n="3">
+          <hi rend="initial">Ⴃ</hi>ა ესე ყოველი, რომელი წერილ არს, მოწამედ წარმოგითხარ, ასი ესე წილი ანბანისაჲ.
+        </p>
+        
+        <p xml:id="p4" n="4">
+          <hi rend="initial">Ⴊ</hi>ოცვა-ყავთ, წმიდანო ღმრთისანო, ლოცვა-ყავთ!
+        </p>
+        
+        <p xml:id="p5" n="5">
+          <hi rend="initial">Ⴕ</hi>რისტე, შეიწყალე მჩხრეკალი <note n="8">7*</note> ამისი იოვანე <note n="9">8*</note>. ამენ <note n="10">9*</note>.
+        </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>

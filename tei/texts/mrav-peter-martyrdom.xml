@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/relaxng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-peter-martyrdom" xml:lang="ka">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">წამებაჲ წმიდისა პეტრე მოციქულისაჲ</title>
+        <title xml:lang="la" type="sub">Passio Sancti Petri Apostoli</title>
+        <author ref="#aut-anon">
+          <name xml:lang="ka">ანონიმი</name>
+          <name xml:lang="la">Anonymus</name>
+        </author>
+        <editor xml:id="ed-TK"><!-- editor name --></editor>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.</publisher>
+        <pubPlace>თბილისი</pubPlace>
+        <date when="2026"/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="N35">
+            <abbr type="siglum">Σ</abbr>
+            <msDesc>
+              <msIdentifier>
+                <institution>წმ. ეკატერინეს მონ., სინაის მთა</institution>
+                <idno>Sin. geo. N 35</idno>
+              </msIdentifier>
+              <msContents>
+                <msItem>
+                  <locus from="463r" to="471v">ff. 463r–471v</locus>
+                </msItem>
+              </msContents>
+            </msDesc>
+          </witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <p>ტექსტი ემყარება ხელნაწერს Sin. geo. N 35 (864 წ.). საწყისი ასოები Asomtavruliდ გადაცემულია hi rend="initial"-ით.</p>
+      </editorialDecl>
+      <variantEncoding method="location-referenced" location="internal"/>
+    </encodingDesc>
+  </teiHeader>
+  <facsimile>
+    <graphic xml:id="iiif-loc-n35" url="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms"/>
+  </facsimile>
+  <text>
+    <body>
+      <div type="text" xml:id="mrav-peter-martyrdom-body">
+        <pb n="463r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0465/full/pct:100/0/default.jpg"/>
+        <head type="rubric">
+          <hi rend="rubric"><hi rend="initial">Ⴜ</hi>ამებაჲ წმიდისა პეტრე მოციქულისაჲ</hi>
+        </head>
+        
+        <p xml:id="p1" n="1">
+          <hi rend="initial">Ⴋ</hi>ას ჟამსა, ოდეს-იგი მოვიდა წმიდაჲ პეტრე ჰრომე, განაკჳრვებდა ყოველთა ნიშებითა და სასწაულებითა, რომელსა იქმოდა სახელითა უფლისა ჩუენისა იესუ ქრისტჱსითა. და მრავალნი წარმართთაგანი მოიქცეოდეს სარწმუნოებად. და იყო ვინმე ჰრომეს შინა სიმონ მოგჳ, რომელი-იგი წინა-აღუდგებოდა პეტრეს და აცთუნებდა ერსა მას. ხოლო ნეტარი პეტრე ყოვლითურთ ამხილებდა მას და აჩუენებდა ყოველთა ჭეშმარიტებასა.
+        </p>
+        
+        <p xml:id="p2" n="2">
+          <hi rend="initial">Ⴞ</hi>ოლო ოდეს იხილა სიმონ, რამეთუ სირცხჳლეულ იქმნა წინაშე ყოველთა, თქუა: აღვფრინდე ზეცად და თქუენ ყოველთა დაგიტეოთ. და აღ-რა-ფრინდა <pb n="463v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0466/full/pct:100/0/default.jpg"/> ჰაერთა შინა ეშმაკთა შეწევნითა, ილოცა წმიდამან პეტრე და მეყსეულად დაეცა სიმონ და შეიმუსრა. მაშინ უფროჲსად განმრავლდა სარწმუნოებაჲ ქრისტჱსი.
+        </p>
+        
+        <p xml:id="p3" n="3">
+          <hi rend="initial">Ⴞ</hi>ოლო ნეტარი პეტრე დაადგრა ჰრომეს შინა და ასწავებდა ერსა მას. და მრავალნი დედანნი მთავართანი და აზნაურთანი მოიქცეოდეს და დაუტევებდნენ ქმართა თჳსთა ბილწებისა გამო და სიწმიდითა იყოფოდეს. ამისთჳსცა აღიძრა რისხუად ნერონ კეისარი, რამეთუ ცოლნიცა მისნი განეშორნეს მას პეტრჱს სწავლითა. და ბრძანა პყრობაჲ პეტრჱსი, რაჲთამცა სიკუდილითა მოაკუდინა იგი.
+        </p>
+        
+        <p xml:id="p4" n="4">
+          <hi rend="initial">Ⴋ</hi>აშინ ევედრებოდეს მორწმუნენი პეტრეს, რაჲთამცა განერა და განვიდა ქალაქით. და ოდეს განვიდოდა პეტრე ქალაქით, იხილა უფალი, რომელი შევიდოდა ჰრომეს. და ჰრქუა მას პეტრე: <quote>უფალო, ვიდრე ჰხუალ?</quote> ხოლო უფალმან ჰრქუა: <quote>ჰრომედ შევალ კუალად ჯუარ-ცუმად.</quote> მაშინ გულისხმა-ყო პეტრე, რამეთუ მისთჳს იყო სიტყუაჲ იგი. და მოიქცა კუალად ქალაქად და მისცა თავი თჳსი მტანჯველთა.
+        </p>
+        
+        <p xml:id="p5" n="5">
+          <hi rend="initial">Ⴃ</hi>ა ოდეს მოიყვანეს იგი წინაშე ნერონისა, ჰკითხვიდა მას მრავალსა. ხოლო პეტრე ყოვლითა კადნიერებითა ქადაგებდა ქრისტესა. მაშინ უბრძანა ნერონ ჯუარ-ცუმაჲ მისი. ხოლო პეტრე ევედრებოდა მსახურთა მათ, რაჲთამცა ქუეგან-დამამხობითა <note n="1">1*</note> ჯუარს-აცუეს იგი, რამეთუ თქუა: <quote>არა ვარ ღირს სწორად უფლისა ჩემისა ჯუარ-ცუმად, არამედ თავ-დაღმართ დამდევით მე.</quote>
+        </p>
+        
+        <p xml:id="p6" n="6">
+          <hi rend="initial">Ⴄ</hi>სრჱთ აღასრულა წამებაჲ თჳსი ნეტარმან პეტრე და შეჰვედრა სული თჳსი ღმერთსა. ხოლო მორწმუნეთა პატივითა დიდითა დაჰფლეს წმიდაჲ გუამი მისი. და იქმნებოდეს მრავალნი საკჳრველებანი საფლავსა <note n="2">2*</note> მას ზედა წმიდისა პეტრე მოციქულისაჲსა.
+        </p>
+        
+        <p xml:id="p7" n="7">
+          <hi rend="initial">Ⴞ</hi>ოლო ნერონ კეისარი უფროჲსად განრისხდა მორწმუნეთა ზედა და იწყო დევნულებაჲ დიდი. არამედ მადლითა <note n="3">3*</note> ღმრთისაჲთა სარწმუნოებაჲ ქრისტჱსი უფროჲსად განმტკიცდებოდა ყოველსა სოფელსა.
+        </p>
+        
+        <p xml:id="p8" n="8">
+          <hi rend="initial">Ⴂ</hi>ულისხმა-ყავთ უკუე, საყუარელნო, რავდენი ძალი აქუს სიმტკიცესა სარწმუნოებისასა, რამეთუ პეტრე, რომელი პირველ შიშითა უვარ-ჰყოფდა უფალსა, შემდგომად მადლითა სულისა წმიდისაჲთა განძლიერდა და სიკუდილსაცა არა მოერიდა სახელისათჳს ქრისტჱსისა.
+        </p>
+        
+        <p xml:id="p9" n="9">
+          <hi rend="initial">Ⴀ</hi>მისთჳს ჩუენცა ვევედრნეთ წმიდასა პეტრეს, რაჲთამცა მეოხ-გუექმნა წინაშე ღმრთისა, რაჲთა მოგუეცეს მოტევებაჲ ცოდვათა ჩუენთა და ღირს ვიქმნეთ სასუფეველსა ცათასა <note n="4">1*</note> მადლითა და კაცთ-მოყუარებითა უფლისა ჩუენისა იესუ ქრისტჱსითა, რომლისაჲ არს დიდებაჲ <note n="5">2*</note> და სიმტკიცე მამისა თანა და წმიდისა სულისა აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
+        </p>
+        
+      </div>
+    </body>
+  </text>
+</TEI>
