@@ -6638,7 +6638,7 @@
           <form type="lemma"><orth xml:lang="ka">გესლოვანი</orth></form>
           <form type="inflected"><orth xml:lang="ka">გესლოვანი</orth></form>
           <sense n="1">
-            <def xml:lang="ka">გესლიანი, შხა-მიანი.</def>
+            <def xml:lang="ka">გესლიანი, შხამიანი.</def>
             <note type="citations">112, 6</note>
           </sense>
         </entry>
@@ -6690,7 +6690,7 @@
             <note type="citations">217, 27; 218, 1</note>
           </sense>
           <cit type="example">
-            <quote xml:lang="ka">ხ ე რ ვ ა—სვლა, მ ხ ე რ ვ ა ლ ი —წამყვანი, მატარებელი (ილ. აბულაძე).</quote>
+            <quote xml:lang="ka">ხ ე რ ვ ა—სვლა, მ ხ ე რ ვ ა ლ ი — წამყვანი, მატარებელი (ილ. აბულაძე).</quote>
           </cit>
         </entry>
         
@@ -8625,7 +8625,7 @@
           <form type="lemma"><orth xml:lang="ka">ხლდომა</orth></form>
           <form type="inflected"><orth xml:lang="ka">ხლდომა</orth></form>
           <sense n="1">
-            <def xml:lang="ka">შენძრევა, შეხტომა, შეთა-მაშება (ჩვეულებრივად ბავშვისა დედის მუცელში); ხტომა, ხტუნვა.</def>
+            <def xml:lang="ka">შენძრევა, შეხტომა, შეთამაშება (ჩვეულებრივად ბავშვისა დედის მუცელში); ხტომა, ხტუნვა.</def>
           </sense>
           <cit type="example"><quote xml:lang="ka">0—1: ყო-</quote></cit>
         <cit type="example"><quote xml:lang="ka">ველთა უხარის და ხ ლ ებ ნ ი ა ნ 32,17; ხოლო იოვანე ხ ლ დ ე ბ ო დ ა წინაშე სამოსსა შინა სიხარულით 86,11; იოვანე ხ ლ დ ო მ ი თ გუახარებდა 24,15; იოვა-ნჱს ხ ლ დ ო მ ა ნ ი 25,10.</quote></cit>

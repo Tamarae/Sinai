@@ -19,7 +19,7 @@
 
         <!-- PRIMARY SOURCES — MANUSCRIPT -->
         <listBibl type="manuscript" xml:id="bib-manuscripts">
-          <head>პირველწყაროები — ხელნაწერები</head>
+          <head>პირველწყარო — ხელნაწერი</head>
 
           <biblStruct xml:id="bib-N35" type="manuscript">
             <monogr>
@@ -29,28 +29,15 @@
               <idno type="shelfmark">Sin. geo. Σ</idno>
               <idno type="IIIF">https://www.loc.gov/item/00279386887-ms/</idno>
               <imprint>
-                <pubPlace>სინაის მთის წმ. ეკატერინეს მონასტერი</pubPlace>
+                <pubPlace>სინის მთის წმ. ეკატერინეს მონასტერი</pubPlace>
                 <date when="0864">864</date>
               </imprint>
               <extent>312 ფურცელი; ნუსხური</extent>
             </monogr>
-            <note>პირველი დათარიღებული ქართული ხელნაწერი. ძირითადი მოწმე.</note>
+            <note>ბეჭდური გამოცემის ამოსავალი წყარო</note>
           </biblStruct>
 
-          <biblStruct xml:id="bib-N50" type="manuscript">
-            <monogr>
-              <title level="m">სინური მრავალთავი</title>
-              <title type="short">N 50</title>
-              <idno type="siglum">N50</idno>
-              <idno type="shelfmark">Sin. geo. N</idno>
-              <imprint>
-                <pubPlace>სინაის მთის წმ. ეკატერინეს მონასტერი</pubPlace>
-                <date notBefore="0950" notAfter="1050">X–XI სს.</date>
-              </imprint>
-              <extent>198 ფურცელი</extent>
-            </monogr>
-            <note>მეორე მოწმე; გამოიყენება კოლაციისთვის.</note>
-          </biblStruct>
+
         </listBibl>
 
         <!-- PRIMARY SOURCES — CRITICAL EDITIONS -->

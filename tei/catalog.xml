@@ -449,12 +449,9 @@
             <date type="feast" when="--03-25"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
-              <locus from="1r" to="12v">ff. 1r–12v</locus>
+              <locus from="1r" to="12v">ff. 1r–6r</locus>
             </msDesc>
-            <msDesc>
-              <msIdentifier><idno type="witness">N50</idno></msIdentifier>
-              <locus from="1r" to="9v">ff. 1r–9v</locus>
-            </msDesc>
+          
             <note type="CPG">1763</note>
             <note type="file">tei/texts/mrav-kharbeba-1.xml</note>
             <note type="status">encoding-in-progress</note>
