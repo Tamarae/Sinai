@@ -112,7 +112,7 @@
         </a>
         <a href="{{ root }}manuscripts.html"
            class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-600 border border-gray-300 rounded-sm hover:border-gray-400 hover:text-gray-800 transition-colors bg-white">
-            ხელნაწერები
+            ხელნაწერი
         </a>
     </div>
 
@@ -142,10 +142,10 @@
 <!-- ═══════ SECTION CARDS ═════════════════════════════ -->
 <section class="py-12 px-4 border-b border-gray-200">
     <div class="max-w-5xl mx-auto">
-        <h2 class="text-xs tracking-widests text-gray-400 tracking-widest font-medium mb-6">განყოფილებები</h2>
+        <h2 class="text-xs tracking-widest text-gray-400 font-medium mb-6">განყოფილებები</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <!-- 01 Manuscripts -->
+            <!-- 01 Manuscript -->
             <a href="{{ root }}manuscripts.html" class="section-card rounded-sm p-5">
                 <div class="flex items-start justify-between">
                     <div class="w-8 h-8 flex items-center justify-center rounded-sm font-serif-geo font-bold text-base"
@@ -154,11 +154,11 @@
                 </div>
                 <div>
                     <h3 class="font-medium text-gray-800 text-sm mb-1">ხელნაწერი</h3>
-                    <p class="text-xs text-gray-500 leading-relaxed">N35 (864 წ.) და N50 — ორი მოწმე. კოდიკოლოგიური აღწერა, ფოლიაცია, დამწერლობა.</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">S · №32-57-33 (864 წ.) — კოდიკოლოგიური აღწერა, ფოლიაცია, გადამწერლები, ანდერძი.</p>
                 </div>
                 <div class="flex gap-1.5 flex-wrap mt-auto pt-1">
-                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">Sin. geo. N 35</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">Sin. geo. N 50</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">Sin. geo. Σ</span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">864 წ.</span>
                 </div>
             </a>
 
@@ -266,36 +266,26 @@
 </section>
 
 
-
 <!-- ═══════ MANUSCRIPT PANEL ══════════════════════════ -->
 <section class="py-12 px-4 bg-white border-b border-gray-200">
     <div class="max-w-5xl mx-auto">
-        <h2 class="text-xs tracking-widest text-gray-400 font-medium mb-6">ძირითადი ხელნაწერები</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {% for w in catalog.witnesses %}
+        <h2 class="text-xs tracking-widest text-gray-400 font-medium mb-6">ხელნაწერი</h2>
+        <div class="grid grid-cols-1 gap-4">
+            {% set w = catalog.witnesses[0] %}
             <div class="witness-card rounded-sm p-5 flex flex-col gap-2">
                 <div class="flex items-center justify-between">
                     <a href="{{ root }}manuscripts.html#{{ w.xml_id }}"
                        class="font-serif-geo text-lg font-bold text-gray-700 italic hover:text-gray-900 transition-colors">
-                        Sin. geo. {{ w.siglum }}
+                        Sin. geo. Σ
                     </a>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">
-                        {{ w.date }}{% if w.leaves %} · {{ w.leaves }}{% endif %}
-                    </span>
+                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">864 წ. · 275 ფ.</span>
                 </div>
-                {% if w.note %}
-                <p class="text-xs text-gray-500 leading-relaxed">{{ w.note }}</p>
-                {% endif %}
+                <p class="text-xs text-gray-500 leading-relaxed">საბაწმინდის ლავრა, იერუსალიმი → სინა. პირველი თარიღიანი ქართული ხელნაწერი.</p>
                 <div class="flex items-center justify-between mt-1">
                     <div class="flex gap-2">
-                        {% if w.script %}
-                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">{{ w.script }}</span>
-                        {% endif %}
-                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">
-                            {% if loop.first %}ძირ. სია{% else %}მეორე მოწმე{% endif %}
-                        </span>
+                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">მთავრული</span>
+                        <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-500">S · №32-57-33</span>
                     </div>
-                    {% if loop.first %}
                     <span class="flex items-center gap-1.5">
                         <a href="https://www.loc.gov/item/00279386887-ms/"
                            target="_blank" rel="noopener"
@@ -308,10 +298,8 @@
                            style="font-size:.65rem;"
                            title="IIIF Manifest JSON">manifest</a>
                     </span>
-                    {% endif %}
                 </div>
             </div>
-            {% endfor %}
         </div>
         <p class="text-xs text-gray-400 mt-4">
             გამოსახულებები: <a href="https://www.loc.gov/collections/manuscripts-in-st-catherines-monastery-mount-sinai/"
@@ -321,7 +309,6 @@
         </p>
     </div>
 </section>
-
 
 <!-- ═══════ BOTTOM BAND ═══════════════════════════════ -->
 <section class="bg-white f5">

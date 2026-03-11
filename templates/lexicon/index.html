@@ -10,8 +10,9 @@
     .letter-tile {
         font-family: 'Noto Serif Georgian', Georgia, serif;
         font-weight: 700; font-size: 1.5rem;
+        position: relative; overflow: hidden;
         display: flex; flex-direction: column; align-items: center; justify-content: center;
-        gap: .25rem;
+        gap: .4rem;
         width: 5rem; height: 5rem;
         border: 1px solid #e0d8ce; border-radius: 3px; background: white;
         text-decoration: none; color: var(--crimson);
@@ -22,24 +23,61 @@
         transform: translateY(-1px);
     }
     .letter-tile:hover .tile-count { color: rgba(255,255,255,.75); }
+    .letter-tile:hover .asomtavruli-corner { color: rgba(255,255,255,.45); }
+
+    .asomtavruli-corner {
+        position: absolute;
+        top: .3rem; right: .35rem;
+        font-family: 'Noto Sans Georgian', ui-sans-serif, sans-serif;
+        font-weight: 400;
+        font-size: .65rem;
+        line-height: 1;
+        color: var(--crimson);
+        opacity: .35;
+        pointer-events: none;
+        user-select: none;
+    }
+    .letter-label {
+        position: relative; z-index: 1;
+        line-height: 1;
+        transform: translateY(-2px);
+    }
     .tile-count {
+        position: relative; z-index: 1;
         font-family: ui-sans-serif, system-ui, sans-serif;
         font-size: .6rem; font-weight: 400; letter-spacing: .06em;
         color: #aaa; line-height: 1;
     }
 
     .letter-tile-empty {
+        position: relative; overflow: hidden;
         width: 5rem; height: 5rem;
         border: 1px solid #ede8e2; border-radius: 3px; background: #faf9f7;
-        display: flex; align-items: center; justify-content: center;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: .4rem;
         font-family: 'Noto Serif Georgian', Georgia, serif;
         font-size: 1.5rem; color: #d4cfc9;
+    }
+    .letter-tile-empty .asomtavruli-corner {
+        color: #c8c3bc; opacity: .25;
+    }
+    .letter-tile-empty .letter-label {
+        transform: translateY(-2px);
     }
 </style>
 {% endblock %}
 
 
 {% block main %}
+
+{% set asomtavruli = {
+    'Ა': 'Ⴀ', 'ბ': 'Ⴁ', 'გ': 'Ⴂ', 'დ': 'Ⴃ', 'ე': 'Ⴄ', 'ვ': 'Ⴅ',
+    'ზ': 'Ⴆ', 'თ': 'Ⴡ', 'ი': 'Ⴇ', 'კ': 'Ⴈ', 'ლ': 'Ⴉ', 'მ': 'Ⴊ',
+    'ნ': 'Ⴋ', 'ო': 'Ⴌ', 'პ': 'Ⴢ', 'ჟ': 'Ⴍ', 'რ': 'Ⴎ', 'ს': 'Ⴏ',
+    'ტ': 'Ⴐ', 'უ': 'Ⴑ', 'ფ': 'Ⴒ', 'ქ': 'Ⴣ', 'ღ': 'Ⴓ', 'ყ': 'Ⴔ',
+    'შ': 'Ⴕ', 'ჩ': 'Ⴖ', 'ც': 'Ⴗ', 'ძ': 'Ⴘ', 'წ': 'Ⴙ', 'ჭ': 'Ⴚ',
+    'ხ': 'Ⴛ', 'ჯ': 'Ⴜ', 'ჰ': 'Ⴝ'
+} %}
 
 <!-- PAGE HEADER -->
 <div class="border-b border-gray-200 bg-white px-4 py-6">
@@ -68,11 +106,15 @@
         {% for letter in "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ" %}
         {% if letter in alphabet %}
         <a href="{{ geo_slug[letter] }}.html" class="letter-tile">
-            {{ letter }}
+            <span class="asomtavruli-corner">{{ asomtavruli[letter] }}</span>
+            <span class="letter-label">{{ letter }}</span>
             <span class="tile-count">{{ entries_by_letter[letter] | length }}</span>
         </a>
         {% else %}
-        <span class="letter-tile-empty">{{ letter }}</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">{{ asomtavruli[letter] }}</span>
+            <span class="letter-label">{{ letter }}</span>
+        </span>
         {% endif %}
         {% endfor %}
     </div>

@@ -67,62 +67,26 @@
                   </layoutDesc>
                 </objectDesc>
                 <handDesc>
-                  <handNote xml:id="N35-h1" script="nuskhuri">ნუსხური, ძირ. მხედარი</handNote>
+                  <handNote xml:id="N35-h1">მხედრული</handNote>
                 </handDesc>
               </physDesc>
               <history>
                 <origin>
                   <origDate when="0864">864</origDate>
-                  <origPlace>სინაის მთა</origPlace>
+                  <origPlace>სინის მთა</origPlace>
                 </origin>
               </history>
               <additional>
                 <adminInfo>
-                  <note>კოლოფონი f. 312v. როლი: სიგმა (Σ) — ძირ. ლემა</note>
+                  <note>კოლოფონი f. 312v. ლემა</note>
                 </adminInfo>
               </additional>
             </msDesc>
             <!-- sigla used in apparatus -->
-            <abbr type="siglum">Σ</abbr>
+            <abbr type="siglum">S</abbr>
           </witness>
 
-          <witness xml:id="N50">
-            <msDesc>
-              <msIdentifier>
-                <settlement>სინაის მთა</settlement>
-                <institution>წმ. ეკატერინეს მონასტერი</institution>
-                <collection>ქართული ხელნაწერები</collection>
-                <idno>Sin. geo. N 50</idno>
-              </msIdentifier>
-              <msContents>
-                <summary>მეორე მოწმე. X–XI სს. ვარიანტები, ლოკუნები.</summary>
-              </msContents>
-              <physDesc>
-                <objectDesc form="codex">
-                  <supportDesc material="parchment">
-                    <extent>
-                      <measure type="leavesCount" quantity="198">198 ff. (ნაწილობრივ შემ.)</measure>
-                    </extent>
-                  </supportDesc>
-                </objectDesc>
-                <handDesc>
-                  <handNote xml:id="N50-h1" script="nuskhuri">ნუსხური</handNote>
-                </handDesc>
-              </physDesc>
-              <history>
-                <origin>
-                  <origDate notBefore="0950" notAfter="1050">X–XI სს.</origDate>
-                  <origPlace>სინაის მთა</origPlace>
-                </origin>
-              </history>
-              <additional>
-                <adminInfo>
-                  <note>როლი: ნიუ (Ν) — მეორე მოწმე; ვარიანტები კრიტ. აპარატში</note>
-                </adminInfo>
-              </additional>
-            </msDesc>
-            <abbr type="siglum">Ν</abbr>
-          </witness>
+          
 
         </listWit>
 

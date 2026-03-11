@@ -92,8 +92,9 @@
     .letter-tile {
         font-family: 'Noto Serif Georgian', Georgia, serif;
         font-weight: 700; font-size: 1.5rem;
+        position: relative; overflow: hidden;
         display: flex; flex-direction: column; align-items: center; justify-content: center;
-        gap: .25rem;
+        gap: .4rem;
         width: 5rem; height: 5rem;
         border: 1px solid #e0d8ce; border-radius: 3px; background: white;
         text-decoration: none; color: var(--crimson);
@@ -104,18 +105,46 @@
         transform: translateY(-1px);
     }
     .letter-tile:hover .tile-count { color: rgba(255,255,255,.75); }
+    .letter-tile:hover .asomtavruli-corner { color: rgba(255,255,255,.45); }
+
+    .asomtavruli-corner {
+        position: absolute;
+        top: .3rem; right: .35rem;
+        font-family: 'Noto Sans Georgian', ui-sans-serif, sans-serif;
+        font-weight: 400;
+        font-size: .65rem;
+        line-height: 1;
+        color: var(--crimson);
+        opacity: .35;
+        pointer-events: none;
+        user-select: none;
+    }
+    .letter-label {
+        position: relative; z-index: 1;
+        line-height: 1;
+        transform: translateY(-2px);
+    }
     .tile-count {
+        position: relative; z-index: 1;
         font-family: ui-sans-serif, system-ui, sans-serif;
         font-size: .6rem; font-weight: 400; letter-spacing: .06em;
         color: #aaa; line-height: 1;
     }
 
     .letter-tile-empty {
+        position: relative; overflow: hidden;
         width: 5rem; height: 5rem;
         border: 1px solid #ede8e2; border-radius: 3px; background: #faf9f7;
-        display: flex; align-items: center; justify-content: center;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: .4rem;
         font-family: 'Noto Serif Georgian', Georgia, serif;
         font-size: 1.5rem; color: #d4cfc9;
+    }
+    .letter-tile-empty .asomtavruli-corner {
+        color: #c8c3bc; opacity: .25;
+    }
+    .letter-tile-empty .letter-label {
+        transform: translateY(-2px);
     }
 </style>
 
@@ -181,6 +210,8 @@
 <main class="flex-1">
     
 
+
+
 <!-- PAGE HEADER -->
 <div class="border-b border-gray-200 bg-white px-4 py-6">
     <div class="max-w-5xl mx-auto">
@@ -208,197 +239,254 @@
         
         
         <a href="a.html" class="letter-tile">
-            ა
+            <span class="asomtavruli-corner"></span>
+            <span class="letter-label">ა</span>
             <span class="tile-count">2</span>
         </a>
         
         
         
         <a href="b.html" class="letter-tile">
-            ბ
+            <span class="asomtavruli-corner">Ⴁ</span>
+            <span class="letter-label">ბ</span>
             <span class="tile-count">1</span>
         </a>
         
         
         
         <a href="g.html" class="letter-tile">
-            გ
+            <span class="asomtavruli-corner">Ⴂ</span>
+            <span class="letter-label">გ</span>
             <span class="tile-count">3</span>
         </a>
         
         
         
         <a href="d.html" class="letter-tile">
-            დ
+            <span class="asomtavruli-corner">Ⴃ</span>
+            <span class="letter-label">დ</span>
             <span class="tile-count">2</span>
         </a>
         
         
         
         <a href="e.html" class="letter-tile">
-            ე
+            <span class="asomtavruli-corner">Ⴄ</span>
+            <span class="letter-label">ე</span>
             <span class="tile-count">3</span>
         </a>
         
         
         
         <a href="v.html" class="letter-tile">
-            ვ
+            <span class="asomtavruli-corner">Ⴅ</span>
+            <span class="letter-label">ვ</span>
             <span class="tile-count">5</span>
         </a>
         
         
         
         <a href="z.html" class="letter-tile">
-            ზ
+            <span class="asomtavruli-corner">Ⴆ</span>
+            <span class="letter-label">ზ</span>
             <span class="tile-count">1</span>
         </a>
         
         
         
         <a href="t.html" class="letter-tile">
-            თ
+            <span class="asomtavruli-corner">Ⴡ</span>
+            <span class="letter-label">თ</span>
             <span class="tile-count">3</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ი</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴇ</span>
+            <span class="letter-label">ი</span>
+        </span>
         
         
         
         <a href="k.html" class="letter-tile">
-            კ
+            <span class="asomtavruli-corner">Ⴈ</span>
+            <span class="letter-label">კ</span>
             <span class="tile-count">3</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ლ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴉ</span>
+            <span class="letter-label">ლ</span>
+        </span>
         
         
         
         <a href="m.html" class="letter-tile">
-            მ
+            <span class="asomtavruli-corner">Ⴊ</span>
+            <span class="letter-label">მ</span>
             <span class="tile-count">14</span>
         </a>
         
         
         
         <a href="n.html" class="letter-tile">
-            ნ
+            <span class="asomtavruli-corner">Ⴋ</span>
+            <span class="letter-label">ნ</span>
             <span class="tile-count">4</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ო</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴌ</span>
+            <span class="letter-label">ო</span>
+        </span>
         
         
         
         <a href="p.html" class="letter-tile">
-            პ
+            <span class="asomtavruli-corner">Ⴢ</span>
+            <span class="letter-label">პ</span>
             <span class="tile-count">5</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ჟ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴍ</span>
+            <span class="letter-label">ჟ</span>
+        </span>
         
         
         
         <a href="r.html" class="letter-tile">
-            რ
+            <span class="asomtavruli-corner">Ⴎ</span>
+            <span class="letter-label">რ</span>
             <span class="tile-count">3</span>
         </a>
         
         
         
         <a href="s.html" class="letter-tile">
-            ს
+            <span class="asomtavruli-corner">Ⴏ</span>
+            <span class="letter-label">ს</span>
             <span class="tile-count">14</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ტ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴐ</span>
+            <span class="letter-label">ტ</span>
+        </span>
         
         
         
         <a href="u.html" class="letter-tile">
-            უ
+            <span class="asomtavruli-corner">Ⴑ</span>
+            <span class="letter-label">უ</span>
             <span class="tile-count">4</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ფ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴒ</span>
+            <span class="letter-label">ფ</span>
+        </span>
         
         
         
         <a href="q.html" class="letter-tile">
-            ქ
+            <span class="asomtavruli-corner">Ⴣ</span>
+            <span class="letter-label">ქ</span>
             <span class="tile-count">2</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ღ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴓ</span>
+            <span class="letter-label">ღ</span>
+        </span>
         
         
         
         <a href="y.html" class="letter-tile">
-            ყ
+            <span class="asomtavruli-corner">Ⴔ</span>
+            <span class="letter-label">ყ</span>
             <span class="tile-count">4</span>
         </a>
         
         
         
         <a href="sh.html" class="letter-tile">
-            შ
+            <span class="asomtavruli-corner">Ⴕ</span>
+            <span class="letter-label">შ</span>
             <span class="tile-count">5</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ჩ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴖ</span>
+            <span class="letter-label">ჩ</span>
+        </span>
         
         
         
-        <span class="letter-tile-empty">ც</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴗ</span>
+            <span class="letter-label">ც</span>
+        </span>
         
         
         
         <a href="dz.html" class="letter-tile">
-            ძ
+            <span class="asomtavruli-corner">Ⴘ</span>
+            <span class="letter-label">ძ</span>
             <span class="tile-count">3</span>
         </a>
         
         
         
         <a href="w.html" class="letter-tile">
-            წ
+            <span class="asomtavruli-corner">Ⴙ</span>
+            <span class="letter-label">წ</span>
             <span class="tile-count">1</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ჭ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴚ</span>
+            <span class="letter-label">ჭ</span>
+        </span>
         
         
         
         <a href="x.html" class="letter-tile">
-            ხ
+            <span class="asomtavruli-corner">Ⴛ</span>
+            <span class="letter-label">ხ</span>
             <span class="tile-count">1</span>
         </a>
         
         
         
-        <span class="letter-tile-empty">ჯ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴜ</span>
+            <span class="letter-label">ჯ</span>
+        </span>
         
         
         
-        <span class="letter-tile-empty">ჰ</span>
+        <span class="letter-tile-empty">
+            <span class="asomtavruli-corner">Ⴝ</span>
+            <span class="letter-label">ჰ</span>
+        </span>
         
         
     </div>

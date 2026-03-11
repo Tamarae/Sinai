@@ -37,14 +37,15 @@
 
             <!-- About the project -->
             <section>
-                <p class="text-xs tracking-widests text-gray-400 tracking-widest font-medium uppercase mb-1">ᲞᲠᲝᲔᲥᲢᲘᲡ ᲨᲔᲡᲐᲮᲔᲑ</p>
+                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-1">ᲞᲠᲝᲔᲥᲢᲘᲡ ᲨᲔᲡᲐᲮᲔᲑ</p>
                 <span class="section-rule"></span>
                 <div class="space-y-4 text-sm text-gray-600 leading-relaxed font-serif-geo">
                     <p>
                         სინური მრავალთავი 864 წლისა — ეს ციფრული სამეცნიერო გამოცემა
                         ეძღვნება სინის მთის წმინდა ეკატერინეს მონასტრის ქართული
-                        ხელნაწერებს. N35 ხელნაწერი, 864 წლით დათარიღებული, ერთ-ერთი
-                        უადრესი და სრულად შემონახული ქართული ლიტურგიული კრებულია.
+                        ხელნაწერს. S ხელნაწერი (სინური მრავალთავი, №32-57-33),
+                        864 წლით დათარიღებული, ერთ-ერთი უადრესი და სრულად
+                        შემონახული ქართული ლიტურგიული კრებულია.
                     </p>
                     <p>
                         გამოცემა მოიცავს {{ catalog.texts | length }} ლიტურგიულ ტექსტს:
@@ -54,9 +55,9 @@
                         სტრუქტურირებულს.
                     </p>
                     <p>
-                        კრიტიკული ტექსტი ეფუძნება ორ მოწმე ხელნაწერს (N35 და N50)
-                        სრული კოლაციური აპარატით. TEI-XML კოდირება უზრუნველყოფს
-                        გამოცემის გრძელვადიან ხელმისაწვდომობასა და
+                        კრიტიკული ტექსტი ეფუძნება ა. შანიძის 1959 წლის სამეცნიერო
+                        გამოცემას (S = ხელნაწერი №32-57-33). TEI-XML კოდირება
+                        უზრუნველყოფს გამოცემის გრძელვადიან ხელმისაწვდომობასა და
                         ინტეროპერაბელობას.
                     </p>
                 </div>
@@ -71,7 +72,8 @@
                         ტექსტების კოდირება ხორციელდება TEI P5 სტანდარტის
                         მიხედვით. კრიტიკული აპარატი (<code class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">app</code> /
                         <code class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">rdg</code>)
-                        ასახავს ორი მოწმე ხელნაწერის ვარიანტებს.
+                        ასახავს ხელნაწერის S-ის ვარიანტებს შანიძის გამოცემასთან
+                        მიმართებით.
                         ასომთავრული ინიციალები მარკირებულია
                         <code class="font-mono text-xs bg-gray-100 px-1 py-0.5 rounded">hi[@rend='initial']</code>
                         ელემენტით.
@@ -133,7 +135,7 @@
 
             <!-- Corpus stats -->
             <div class="about-card rounded-sm p-5">
-                <p class="text-xs tracking-widest text-gray-400 font-medium uppercase mb-4">კორპუსი</p>
+                <p class="text-xs tracking-widests text-gray-400 font-medium uppercase mb-4">კორპუსი</p>
                 <div class="flex flex-col gap-3">
                     <div class="flex items-center justify-between text-sm">
                         <span class="text-gray-600">ტექსტები</span>
@@ -148,8 +150,8 @@
                         <span class="font-medium font-serif-geo" style="color:var(--crimson);">{{ catalog.feasts | length }}</span>
                     </div>
                     <div class="flex items-center justify-between text-sm">
-                        <span class="text-gray-600">ხელნაწერები</span>
-                        <span class="font-medium font-serif-geo" style="color:var(--crimson);">{{ catalog.witnesses | length }}</span>
+                        <span class="text-gray-600">ხელნაწერი</span>
+                        <span class="font-medium font-serif-geo" style="color:var(--crimson);">S · №32-57-33</span>
                     </div>
                 </div>
             </div>
