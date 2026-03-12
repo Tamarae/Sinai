@@ -391,8 +391,6 @@
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
-.wit-btn { transition: background .12s, color .12s, border-color .12s; }
-.wit-btn.on { background: var(--ink); color: white; border-color: var(--ink); }
 .mode-btn {
     display: inline-flex; align-items: center; gap: .35rem;
     font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif;
@@ -495,37 +493,29 @@
      style="position:sticky;top:calc(var(--nav-h,48px) + var(--bc-h,36px));z-index:40;background:white;"
      class="border-b border-gray-200 px-6 py-5">
     <div style="max-width:88rem;margin:0 auto;">
-        <div class="flex items-start justify-between gap-4 flex-wrap">
-            <div class="flex-1 min-w-0">
-                <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">სიტყuად ბასილისთჳსვე</p>
-                <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug">სიტყვა ბასილი ეპ-სათჳს II</h1>
-                <div class="flex flex-wrap items-center gap-3 mt-2">
-                    <span class="text-sm text-gray-600">ანონიმი</span>
-                    <span class="text-gray-300">·</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 125r-134v</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-400"></span>
-                    
-                </div>
-            </div>
-            <div class="flex items-center gap-2 flex-shrink-0 pt-1">
-                <div class="flex gap-1 mr-2">
-                    <button id="wit-N35" onclick="toggleWit('N35')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 35</button>
-                    <button id="wit-N50" onclick="toggleWit('N50')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 50</button>
-                </div>
-                <div class="w-px h-5 bg-gray-200"></div>
-                <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                    ფაქსიმილე
-                </button>
-                <button id="btn-app" class="mode-btn" onclick="setMode('app')">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-                    კრიტ. აპარატი
-                </button>
-                <div class="w-px h-5 bg-gray-200"></div>
-                <a href="../data/texts/mrav-basil-2.xml" class="mode-btn">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>TEI
-                </a>
-            </div>
+        <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">სიტყuად ბასილისთჳსვე</p>
+        <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug mb-2">სიტყვა ბასილი ეპ-სათჳს II</h1>
+        <div class="flex flex-wrap items-center gap-2">
+            <span class="text-sm text-gray-600">ანონიმი</span>
+            <span class="text-gray-300">·</span>
+            <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 125r-134v</span>
+            
+            <span class="w-px h-4 bg-gray-200 mx-1"></span>
+            <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                ფაქსიმილე
+            </button>
+            <button id="btn-app" class="mode-btn" onclick="setMode('app')">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                კრიტ. აპარატი
+            </button>
+            <span class="w-px h-4 bg-gray-200 mx-1"></span>
+            <a href="../data/texts/mrav-basil-2.xml" class="mode-btn">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg> TEI
+            </a>
+            <button class="mode-btn" onclick="window.print()">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>PDF
+            </button>
         </div>
     </div>
 </div>
@@ -563,7 +553,7 @@
         <div class="text-body" id="text-content" data-text-id="mrav-basil-2">
             <div class="ms-head">
           <span class="geo-rubric" style="color:var(--crimson);">ბ̂. სიტყუაჲ ბასილისათჳსვე</span>
-          <span class="note-anchor" title="1* სათაური გამოცემაში მონიშნულია როგორც ვარიანტი ან დამატება." id="anchor-note-4394634832">*</span>
+          <span class="note-anchor" title="1* სათაური გამოცემაში მონიშნულია როგორც ვარიანტი ან დამატება." id="anchor-note-4460303104">*</span>
         </div>
 <p id="p1"><span class="par-num" title="¶1">¶1</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა იყო ვინმე ჰურიაჲ მაცილობელი, რომელი მარადის წინა-აღუდგებოდა ქრისტიანეთა. ესე მრავალ გზის მოვიდის წმიდისა ბასილი ეპისკოპოსისა და გამოეძიებნ მის თანა სიტყუასა შჯულისა და წინაწარმეტყუელთასა არა თუ სარწმუნოებისათჳს, არამედ ჴდომისათჳს; და სიტყჳთა ლალვისაჲთა ეშჯინ მას და აცილობნ ქრისტჱსთჳს. ხოლო იგი სულითა წმიდითა გამოუთარგმანებნ ყოველთა წიგნთა სიტყუასა უფლისა განკაცებისატჳს, ვნებისა და ადგომისათჳს და სასუფეველისათჳს ცათაჲსა და წარმართთა ცხორებისათჳს. ხოლო იგი თჳსსავე მას ურწმუნოებასა დადგრომილ იყო.
@@ -599,14 +589,14 @@
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ვითარცა ესე თქუა, დასწერა ჯუარი ბორცუსა მას და ჰრქუა: სახელითა უფლისა ჩუენისა იესუ ქრისტჱსითა აღიფხუერ და იცვალე ამიერ იქი! და მეყსეულად სიტყუასა 
           <span class="folio-milestone" data-wit="" data-folio="70r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0138" data-sp="138" title="Sin. geo. , f. 70r">70r</span> 
           მას აღიფხურა ბორცჳ იგი და იცვალა იმიერ იქი, ვინაჲცა-იგი ჰრქუა მას.
-          <span class="note-anchor" title="1* იმიერ: შესაძლოა იყოს „იმიერ“ ან „ამიერ“ კონტექსტის მიხედვით." id="anchor-note-4394645632">*</span>
+          <span class="note-anchor" title="1* იმიერ: შესაძლოა იყოს „იმიერ“ ან „ამიერ“ კონტექსტის მიხედვით." id="anchor-note-4460298784">*</span>
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴅ</span>ითარცა იხილა ჰურიამან მან საკჳრველი იგი, შეძრწუნდა ფრიად და შეუვარდა ფერჴთა ეპისკოპოსისათა და ჰრქუა: გევედრები შენ, უფალო, შემინდვე, რაჲთა ვიტყოდიღა ერთ გზის, — რაჲთა კუალად მოეგოს ბორცჳ ესე ადგილსავე თჳსსა, ვითარცა იყო პირველ. ხოლო წმიდამან ეპისკოპოსმან ილოცა მერმეცა და კუალად მოიყვანა ბორცჳ იგი ადგილსავე თკსსა; და არა უბრძანა დადგომად ქუეყანასა, არამედ აღშორებულად ქუეყანისაგან, ვითარცა რრუბელი ჰაერთა დამოკიდებულ იყო ზედა ადგილსა მას თჳსსა, და დგა შეუძრველად მყოვარ ჟამ.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ ჰრქუა წმიდამან ეპისკოპოსმან ჰურიასა მას: ირწმუნეთ აწ, ჰურიანო, და ნუღარა აცილობთ ამიერითგან საღმრთოსა ძლიერებასა. ვითარცა-ესე თქუა, უბრძანა ბორცუსა მას, და კუალად მოეგო ადგილსავე თჳსსა.
-          <span class="note-anchor" title="2* გამოცემაში აქ მთავრდება ძირითადი თხრობა." id="anchor-note-4394644272">*</span>
+          <span class="note-anchor" title="2* გამოცემაში აქ მთავრდება ძირითადი თხრობა." id="anchor-note-4460307024">*</span>
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ ყოველთა მათ ჰურიათა ჰრწმენა და სიმრავლესა წარმართთასა და ნათელ-იღეს სახელითა უფლისა ჩუენისა იესუ ქრისტჱსითა და ადიდებდეს ღმერთსა. ხოლო წმიდაჲ ეპისკოპოსი ჰმადლობდა მომცემელსა მადლისასა, რომელმან ყვის საკჳრველი მხოლომან.
@@ -1080,18 +1070,6 @@ document.querySelectorAll('.app-inline').forEach(function(span) {
 function filterRdg(type) {
     document.querySelectorAll('.app-entry').forEach(function(e) {
         e.style.display = (!type || e.dataset.type === type) ? '' : 'none';
-    });
-}
-
-/* ════════════════════════════════════════════════════════
-   WITNESS
-════════════════════════════════════════════════════════ */
-var witState = { N35: true, N50: true };
-function toggleWit(wit) {
-    witState[wit] = !witState[wit];
-    document.getElementById('wit-' + wit).classList.toggle('on', witState[wit]);
-    document.querySelectorAll('.folio-milestone[data-wit="' + wit + '"]').forEach(function(m) {
-        m.style.display = witState[wit] ? '' : 'none';
     });
 }
 

@@ -391,8 +391,6 @@
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
-.wit-btn { transition: background .12s, color .12s, border-color .12s; }
-.wit-btn.on { background: var(--ink); color: white; border-color: var(--ink); }
 .mode-btn {
     display: inline-flex; align-items: center; gap: .35rem;
     font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif;
@@ -495,37 +493,29 @@
      style="position:sticky;top:calc(var(--nav-h,48px) + var(--bc-h,36px));z-index:40;background:white;"
      class="border-b border-gray-200 px-6 py-5">
     <div style="max-width:88rem;margin:0 auto;">
-        <div class="flex items-start justify-between gap-4 flex-wrap">
-            <div class="flex-1 min-w-0">
-                <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">ცხორებაი წმიდა მამათაი, რომელი მოისრნა მთასა სინასა</p>
-                <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug">ცხოვრება სინელ მამათა</h1>
-                <div class="flex flex-wrap items-center gap-3 mt-2">
-                    <span class="text-sm text-gray-600">ანონიმი</span>
-                    <span class="text-gray-300">·</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 503r-512v</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-400"></span>
-                    
-                </div>
-            </div>
-            <div class="flex items-center gap-2 flex-shrink-0 pt-1">
-                <div class="flex gap-1 mr-2">
-                    <button id="wit-N35" onclick="toggleWit('N35')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 35</button>
-                    <button id="wit-N50" onclick="toggleWit('N50')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 50</button>
-                </div>
-                <div class="w-px h-5 bg-gray-200"></div>
-                <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                    ფაქსიმილე
-                </button>
-                <button id="btn-app" class="mode-btn" onclick="setMode('app')">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-                    კრიტ. აპარატი
-                </button>
-                <div class="w-px h-5 bg-gray-200"></div>
-                <a href="../data/texts/mrav-sinai-fathers.xml" class="mode-btn">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>TEI
-                </a>
-            </div>
+        <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">ცხორებაი წმიდა მამათაი, რომელი მოისრნა მთასა სინასა</p>
+        <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug mb-2">ცხოვრება სინელ მამათა</h1>
+        <div class="flex flex-wrap items-center gap-2">
+            <span class="text-sm text-gray-600">ანონიმი</span>
+            <span class="text-gray-300">·</span>
+            <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 503r-512v</span>
+            
+            <span class="w-px h-4 bg-gray-200 mx-1"></span>
+            <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                ფაქსიმილე
+            </button>
+            <button id="btn-app" class="mode-btn" onclick="setMode('app')">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                კრიტ. აპარატი
+            </button>
+            <span class="w-px h-4 bg-gray-200 mx-1"></span>
+            <a href="../data/texts/mrav-sinai-fathers.xml" class="mode-btn">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg> TEI
+            </a>
+            <button class="mode-btn" onclick="window.print()">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>PDF
+            </button>
         </div>
     </div>
 </div>
@@ -568,19 +558,19 @@
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴉ</span>აცნი მორწმუნენი რომელნი განმზადებულ არიან მარადის წიგნთაგან სმენად ნუგეშინის-ცემისათჳს, არა ჯერ-არს, ვითარმცა მწუხარებაჲ ეუფლა მათ ზედა, გინა თუ მგლოვარებამან დააბრკოლნეს გონებანი და სულნი მათნი.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ამეთუ აჰა ესერა სავსე არიან წინაწარმეტყუელნი ნუგეშინის-ცემითა და მოციქულნი სასოებითა მათთჳს, რომელნი სარწმუნოებით ისმენენ და შეუორგულებელად <span class="note-anchor" title="1*" id="anchor-note-4394554912">1</span> ჰრწამს, ხოლო უღმრთონი ამისთჳს ჰყოფენ გლოვასა, რამეთუ არა მოელიან <span class="note-anchor" title="2*" id="anchor-note-4394549952">2</span> აღდგომასა; და მწვალებელნი ამისთჳს მეტად ჰყოფენ მწუხარებასა, რამეთუ არა აქუს სასოებაჲ აღდგომისაჲ; ხოლო რომელნი ესვენ აღდგომასა, <span class="folio-milestone" data-wit="" data-folio="255r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255r">255r</span> არა მეტად იგლოვენ; და რომელნი მოელიან მერმესა ცხოვრებასა, არა გარდარეულად მწუხარე არიედ; და რომელთა ჰრწამნ წმიდათა წიგნთაჲ, მუნვე სმენითა მათ წიგნთაჲთა ნუგეშინის-ცემულ არიედ, რამეთუ წინაწარმეტყუელთა თქუეს განცხოველებისათჳს, და მოციქულთა ქადაგეს აღდგომისათჳს.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ამეთუ აჰა ესერა სავსე არიან წინაწარმეტყუელნი ნუგეშინის-ცემითა და მოციქულნი სასოებითა მათთჳს, რომელნი სარწმუნოებით ისმენენ და შეუორგულებელად <span class="note-anchor" title="1*" id="anchor-note-4396456336">1</span> ჰრწამს, ხოლო უღმრთონი ამისთჳს ჰყოფენ გლოვასა, რამეთუ არა მოელიან <span class="note-anchor" title="2*" id="anchor-note-4396452096">2</span> აღდგომასა; და მწვალებელნი ამისთჳს მეტად ჰყოფენ მწუხარებასა, რამეთუ არა აქუს სასოებაჲ აღდგომისაჲ; ხოლო რომელნი ესვენ აღდგომასა, <span class="folio-milestone" data-wit="" data-folio="255r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255r">255r</span> არა მეტად იგლოვენ; და რომელნი მოელიან მერმესა ცხოვრებასა, არა გარდარეულად მწუხარე არიედ; და რომელთა ჰრწამნ წმიდათა წიგნთაჲ, მუნვე სმენითა მათ წიგნთაჲთა ნუგეშინის-ცემულ არიედ, რამეთუ წინაწარმეტყუელთა თქუეს განცხოველებისათჳს, და მოციქულთა ქადაგეს აღდგომისათჳს.
         </p>
 <p id="p3"><span class="par-num" title="¶3">¶3</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ერთი წინაწარმეტყუელთაგანი იტყოდა ამას, _ იგი, რომელ იქმნა შარავანდედ და წინაწარმეტყუელ <span class="note-anchor" title="3*" id="anchor-note-4394559232">3</span>, დავით მართალი, _ და თქუა ესრჱთ: მოუღის სული მათი მათგან და მოაკლდიან და მიწადვე თჳსა მიიქციან. გამოავლინი სული შენი და დაამტკიცნი <span class="note-anchor" title="(1)*" id="anchor-note-4394561472">4</span>. და ესაია იტყჳს: ცხონდენ მკუდარნი იგი მათნი, და შესუენებულთა განისუენონ, და აღდგენ და აკურთხევდენ ღმერთსა; რომელნი დაძინებულ არიან მიწასა. და ეზეკიელ წინაწარმეტყუელებდა განჴმელთა მაგათ ზედა ძუალთა, და შეემოსა მათ ყოველთა ჴორცი <span class="note-anchor" title="(2)*" id="anchor-note-4394563472">5</span>, და აღდგომითა ძუალთაჲთა განმრავლდა სასოებაჲ კაცთაჲ და დანიელ თქუა: მივედ და განისუენე სიკუდილსა შინა და ასდგე ჟამსა დასასრულსა დღეთასა <span class="note-anchor" title="(3)*" id="anchor-note-4394556192">6</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ერთი წინაწარმეტყუელთაგანი იტყოდა ამას, _ იგი, რომელ იქმნა შარავანდედ და წინაწარმეტყუელ <span class="note-anchor" title="3*" id="anchor-note-4396450256">3</span>, დავით მართალი, _ და თქუა ესრჱთ: მოუღის სული მათი მათგან და მოაკლდიან და მიწადვე თჳსა მიიქციან. გამოავლინი სული შენი და დაამტკიცნი <span class="note-anchor" title="(1)*" id="anchor-note-4396464416">4</span>. და ესაია იტყჳს: ცხონდენ მკუდარნი იგი მათნი, და შესუენებულთა განისუენონ, და აღდგენ და აკურთხევდენ ღმერთსა; რომელნი დაძინებულ არიან მიწასა. და ეზეკიელ წინაწარმეტყუელებდა განჴმელთა მაგათ ზედა ძუალთა, და შეემოსა მათ ყოველთა ჴორცი <span class="note-anchor" title="(2)*" id="anchor-note-4396459136">5</span>, და აღდგომითა ძუალთაჲთა განმრავლდა სასოებაჲ კაცთაჲ და დანიელ თქუა: მივედ და განისუენე სიკუდილსა შინა და ასდგე ჟამსა დასასრულსა დღეთასა <span class="note-anchor" title="(3)*" id="anchor-note-4396460016">6</span>.
         </p>
 <p id="p4"><span class="par-num" title="¶4">¶4</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ყოველსავე ადგილსა გჳჩუენა ჩუენ, ვითარმედ რომელნი-იგი მოკუდეს, იგინივე აღდგენ; და რომელნი განირყუნეს, იგინივე <span class="note-anchor" title="4*" id="anchor-note-4394557552">7</span> განცხოველდენ; <span class="folio-milestone" data-wit="" data-folio="255v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255v">255v</span> და რომელნი-იგი იქმნეს ვითარცა არარაჲ, იგინივე განდიდნენ <span class="note-anchor" title="5*" id="anchor-note-4394555392">8</span> და აღმაღლდენ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ყოველსავე ადგილსა გჳჩუენა ჩუენ, ვითარმედ რომელნი-იგი მოკუდეს, იგინივე აღდგენ; და რომელნი განირყუნეს, იგინივე <span class="note-anchor" title="4*" id="anchor-note-4396457776">7</span> განცხოველდენ; <span class="folio-milestone" data-wit="" data-folio="255v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255v">255v</span> და რომელნი-იგი იქმნეს ვითარცა არარაჲ, იგინივე განდიდნენ <span class="note-anchor" title="5*" id="anchor-note-4396452256">8</span> და აღმაღლდენ.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ არა ეგონოს მწვალებელთა, ვითარმედ წინაწარმეტყუელთა ხოლო ქადაგეს აღდგომისათჳს ჴორცთაჲსა, ისმინე მოციქულისაჲ მის, რომელ არს სუეტი და სიმტკიცჱ, მოძღუარი კეთილი და წინამძღუარი ეკლესიათაჲ, რასა-იგი იტყჳს, რამეთუ: არიან ვინმე თქუენგანნი <span class="note-anchor" title="1*" id="anchor-note-4394552112">9</span>, რომელნი იტყჳან, ვითარმედ: აღდგომაჲ მკუდართაჲ არა არსო. უკუეთუ მკუდარნი არა აღდგენ, ქრისტჱცა არა აღდგომილ არს <span class="note-anchor" title="(1)*" id="anchor-note-4394557632">10</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ არა ეგონოს მწვალებელთა, ვითარმედ წინაწარმეტყუელთა ხოლო ქადაგეს აღდგომისათჳს ჴორცთაჲსა, ისმინე მოციქულისაჲ მის, რომელ არს სუეტი და სიმტკიცჱ, მოძღუარი კეთილი და წინამძღუარი ეკლესიათაჲ, რასა-იგი იტყჳს, რამეთუ: არიან ვინმე თქუენგანნი <span class="note-anchor" title="1*" id="anchor-note-4396458816">9</span>, რომელნი იტყჳან, ვითარმედ: აღდგომაჲ მკუდართაჲ არა არსო. უკუეთუ მკუდარნი არა აღდგენ, ქრისტჱცა არა აღდგომილ არს <span class="note-anchor" title="(1)*" id="anchor-note-4396451856">10</span>.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ დაჰბრკოლდა სარწმუნოებაჲ იგი თქუენი და ქადაგებაჲ ჩუენი და ვიპოვენით ჩუენ ცრუ მოწამე, რომელთა ვწამეთ ღმრთისათჳს, ვითარმედ: აღადგინა ქრისტჱ, რომელ-იგი არა აღადგინა მკუდრეთით <span class="note-anchor" title="(2)*" id="anchor-note-4394560032">11</span>. აწ აღადგინა ქრისტჱ და მოსცა სასოებაჲ მოკუდავთა, რაჲთა ნუგეშინის-ცემულ იქმნენ მის მიერ. და მერმე იტყჳს მოციქულივე იგი, ვითარმედ: შესუენებულთა <span class="note-anchor" title="2*" id="anchor-note-4394555872">12</span> მათთჳს ნუ მწუხარე იქმნებით ვითარცა სხუანი, რომელთა არა აქუს სასოებაჲ აღდგომისაჲ. უკუეთუ გრწამს, ვითარმედ აღდგა ქრისტჱ მკუდრეთით, ეგრეცა, რომელთა შეისუენეს ქრისტჱს მიერ, იგინი ცხონდენ <span class="note-anchor" title="(3)*" id="anchor-note-4394550192">13</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ დაჰბრკოლდა სარწმუნოებაჲ იგი თქუენი და ქადაგებაჲ ჩუენი და ვიპოვენით ჩუენ ცრუ მოწამე, რომელთა ვწამეთ ღმრთისათჳს, ვითარმედ: აღადგინა ქრისტჱ, რომელ-იგი არა აღადგინა მკუდრეთით <span class="note-anchor" title="(2)*" id="anchor-note-4396453616">11</span>. აწ აღადგინა ქრისტჱ და მოსცა სასოებაჲ მოკუდავთა, რაჲთა ნუგეშინის-ცემულ იქმნენ მის მიერ. და მერმე იტყჳს მოციქულივე იგი, ვითარმედ: შესუენებულთა <span class="note-anchor" title="2*" id="anchor-note-4396462576">12</span> მათთჳს ნუ მწუხარე იქმნებით ვითარცა სხუანი, რომელთა არა აქუს სასოებაჲ აღდგომისაჲ. უკუეთუ გრწამს, ვითარმედ აღდგა ქრისტჱ მკუდრეთით, ეგრეცა, რომელთა შეისუენეს ქრისტჱს მიერ, იგინი ცხონდენ <span class="note-anchor" title="(3)*" id="anchor-note-4396461536">13</span>.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ იგი საფასჱ, მცენარჱ კეთილი და აღდგომაჲ ცხოველთაჲ, რომელმან დაჰბადა ადამი <span class="folio-milestone" data-wit="" data-folio="254r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0256/full/pct:100/0/default.jpg" title="Sin. geo. , f. 254r">254r</span> არარაჲსაგან, და რამეთუ გარდაჰჴდა იგი მცნებათა მისთა და დასდვა მას ზედა სიკუდილი. და თავადი იგი განმზადებულ არს განცხოველებად შესუენებულისა მის, რომელმან იჯმნა ჩუენგან.
@@ -589,22 +579,22 @@
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴓ</span>კუეთუ ოდეს იგი არა იყო, და შექმნა იგი, უფროჲს აწ განჴრწნილისაჲ მის უადვილჱს არს განცხოველებაჲ და აღდგინებაჲ, და ჩუენ მეცნიერებით მოგუცა მადლი მისა მიმართ მამისა მიერ, რომელ არა არს განცხადებულ და დაფარულ არს შორის ქუეყანასა და მსგავსად ჴორცთა განბნეულ და დათესულ არიან, და ჩუენ განვკუეთით ქუეყანაჲ და აღმოვიღით იგი მიერ, რავდენ უფროჲს ყოვლისა მპყრობელი იგი მეცნიერებით ყოეელსავე, რომელმან არა თუ სიტყჳსა ვისგან მოიღო მეცნიერებაჲ, უადვილე არს მისა აღდგინებად ადამისა და მიგებად მართალთა მისაგებელი კეთილი და რჩეულთა მისთა ნიჭი, ხოლო უძღებთა და უღმრთოთა _ პატიჟი სასიკუდინჱ.
         </p>
 <p id="p9"><span class="par-num" title="¶9">¶9</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ღათუ ძირი ესე მწარე არს და სალმობაჲ ძლიერ და ძალითა თჳსითა შეარწყუნა ყოველი გუამი ჩუენი <span class="note-anchor" title="3*" id="anchor-note-4394562912">14</span>, ხოლო ჩუენდა ეგრე წეს-არს, რაჲთა აღვიხილნეთ თუალნი საცნობელნი და ზრახვითა ფრთხილითა ნუგეშინის-ცემულ ვიქმნეთ <span class="folio-milestone" data-wit="" data-folio="254v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0256/full/pct:100/0/default.jpg" title="Sin. geo. , f. 254v">254v</span> და აღსარებითა ღმრთისაჲთა ნუგეშინის-ვსცეთ თავთა ჩუენთა, ვითარცა წერილ არს: და მოველოდით <span class="note-anchor" title="4*" id="anchor-note-4394549632">15</span> მეცნიერებით, რამეთუ აღთქუმანი ღმრთისანი არა სიცრუვით არიან და სასოებაჲ იგი ჩუენი დამარხულად გუელის.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ღათუ ძირი ესე მწარე არს და სალმობაჲ ძლიერ და ძალითა თჳსითა შეარწყუნა ყოველი გუამი ჩუენი <span class="note-anchor" title="3*" id="anchor-note-4396462176">14</span>, ხოლო ჩუენდა ეგრე წეს-არს, რაჲთა აღვიხილნეთ თუალნი საცნობელნი და ზრახვითა ფრთხილითა ნუგეშინის-ცემულ ვიქმნეთ <span class="folio-milestone" data-wit="" data-folio="254v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0256/full/pct:100/0/default.jpg" title="Sin. geo. , f. 254v">254v</span> და აღსარებითა ღმრთისაჲთა ნუგეშინის-ვსცეთ თავთა ჩუენთა, ვითარცა წერილ არს: და მოველოდით <span class="note-anchor" title="4*" id="anchor-note-4396459936">15</span> მეცნიერებით, რამეთუ აღთქუმანი ღმრთისანი არა სიცრუვით არიან და სასოებაჲ იგი ჩუენი დამარხულად გუელის.
         </p>
 <p id="p10"><span class="par-num" title="¶10">¶10</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ღათუ ჟამ ერთ ნაკლულეეან ვიქმნნეთ არა ხილვითა მეგობართა ჩუენთაჲთა მიზეზითა განშორებისა მათისაჲთა, ნუმც <span class="note-anchor" title="5*" id="anchor-note-4394551712">16</span> განვამრავლებთ მწუხარებასა და გლოვასა, არამედ ნუგეშინის-ვიცეთ სასოებითა ღმრთისაჲთა და შევიკრძალნეთ თავნი თჳსნი.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა ღათუ ჟამ ერთ ნაკლულეეან ვიქმნნეთ არა ხილვითა მეგობართა ჩუენთაჲთა მიზეზითა განშორებისა მათისაჲთა, ნუმც <span class="note-anchor" title="5*" id="anchor-note-4396456416">16</span> განვამრავლებთ მწუხარებასა და გლოვასა, არამედ ნუგეშინის-ვიცეთ სასოებითა ღმრთისაჲთა და შევიკრძალნეთ თავნი თჳსნი.
         </p>
 <p id="p11"><span class="par-num" title="¶11">¶11</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ ვინ წარგჳქცინა ჩუენ ძლით, ანუ ვინ წარგუტყუენნა ჩუენ სოფლით? _ არამედ მანვე, რომელმანცა მომიყვანნა სოფლად. რომელი-ესე არა ვიცოდეთ სოფლად, მანვე წარგჳყვანნეს ჩუენ ამიერ სოფლით ჟამსა თჳსსა <span class="note-anchor" title="1*" id="anchor-note-4394551232">17</span> მსგავსად ნებისა თჳსისა. და ვითარცა ჴელითა შობისაჲთა იქმნა შემოსლვაჲ ჩუენი სოფლად, ეგრეცა ჴელითა სიკუდილისაჲთა იქმნეს წარსლვაჲ ჩუენი სოფლისა ამისგან და მივიცვალნეთ სოფელსა მას წარუვალსა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴀ</span>წ ვინ წარგჳქცინა ჩუენ ძლით, ანუ ვინ წარგუტყუენნა ჩუენ სოფლით? _ არამედ მანვე, რომელმანცა მომიყვანნა სოფლად. რომელი-ესე არა ვიცოდეთ სოფლად, მანვე წარგჳყვანნეს ჩუენ ამიერ სოფლით ჟამსა თჳსსა <span class="note-anchor" title="1*" id="anchor-note-4396461856">17</span> მსგავსად ნებისა თჳსისა. და ვითარცა ჴელითა შობისაჲთა იქმნა შემოსლვაჲ ჩუენი სოფლად, ეგრეცა ჴელითა სიკუდილისაჲთა იქმნეს წარსლვაჲ ჩუენი სოფლისა ამისგან და მივიცვალნეთ სოფელსა მას წარუვალსა.
         </p>
 <p id="p12"><span class="par-num" title="¶12">¶12</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ამეთუ გარდაჰჴდა ადამი მცნებასა უფლისასა, და მოიწია მის ზედა ბრძანებაჲ სიკუდილისაჲ და მის გამო ყოველნი ნაშობნი მისნი მიიცვალებიან მუნვე მიწად, ვინაჲცა დაებადნეს. და დაიჴრწნეს ყოველი ხატი მათი, <span class="folio-milestone" data-wit="" data-folio="255r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255r">255r</span> და ბრძანებითა ღმრთისაჲთა და ჴმითა ნესტჳსაჲთა აღემართნენ მიერ მიწით, რამეთუ მიეახლა ჴელი დამბადებელისა მათისაჲ მიწასა მას ადამისსა. იხილა და ესმა, იყნოსა და გამოცადა, განიშოვრა და გულისხმა-ყო და ცნა, რამეთუ გარდაჰჴდა მცნებათა ღმრთისათა; დაეცა და განიჴრწნა და იქმნა ვითარცა არარაჲ. წყალობითა ღმრთისაჲთა მერმე განცხოველდეს <span class="note-anchor" title="2*" id="anchor-note-4394561872">18</span>, გამოიცადოს, განდიდნეს და სუფევდეს. და ღმერთმან ჩუენმან ძლიერმან და დიდებულმან, რომელმან მოაწია სიკუდილი ყოველთა ზედა ჴორციელთა და განაწესა ყოველივე, ვითარცა მას უნდა, და ყოველთაჲვე იგი ჟამი მან უწყის და მანვე რომელმან სათნო-იყო ესე და მოაქცია ესე ჩუენგან, თავადმან განაცხოველოს და დაადგინოს იგი მარჯუენით მისა და ახაროს მას სასუფეველსა მისსა <span class="note-anchor" title="3*" id="anchor-note-4394563792">19</span> და დაწეროს სახელი მისი წიგნსა მას ცხოველთასა ყოველთა თანა ნების-მყოფელთა მისთა. და სახელი მისი ნუმცა დაივიწყების თქუენ შორის, და საჴსენებელი მისი განეწესენ შვილითი შვილად.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴐ</span>ამეთუ გარდაჰჴდა ადამი მცნებასა უფლისასა, და მოიწია მის ზედა ბრძანებაჲ სიკუდილისაჲ და მის გამო ყოველნი ნაშობნი მისნი მიიცვალებიან მუნვე მიწად, ვინაჲცა დაებადნეს. და დაიჴრწნეს ყოველი ხატი მათი, <span class="folio-milestone" data-wit="" data-folio="255r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255r">255r</span> და ბრძანებითა ღმრთისაჲთა და ჴმითა ნესტჳსაჲთა აღემართნენ მიერ მიწით, რამეთუ მიეახლა ჴელი დამბადებელისა მათისაჲ მიწასა მას ადამისსა. იხილა და ესმა, იყნოსა და გამოცადა, განიშოვრა და გულისხმა-ყო და ცნა, რამეთუ გარდაჰჴდა მცნებათა ღმრთისათა; დაეცა და განიჴრწნა და იქმნა ვითარცა არარაჲ. წყალობითა ღმრთისაჲთა მერმე განცხოველდეს <span class="note-anchor" title="2*" id="anchor-note-4396456976">18</span>, გამოიცადოს, განდიდნეს და სუფევდეს. და ღმერთმან ჩუენმან ძლიერმან და დიდებულმან, რომელმან მოაწია სიკუდილი ყოველთა ზედა ჴორციელთა და განაწესა ყოველივე, ვითარცა მას უნდა, და ყოველთაჲვე იგი ჟამი მან უწყის და მანვე რომელმან სათნო-იყო ესე და მოაქცია ესე ჩუენგან, თავადმან განაცხოველოს და დაადგინოს იგი მარჯუენით მისა და ახაროს მას სასუფეველსა მისსა <span class="note-anchor" title="3*" id="anchor-note-4396460256">19</span> და დაწეროს სახელი მისი წიგნსა მას ცხოველთასა ყოველთა თანა ნების-მყოფელთა მისთა. და სახელი მისი ნუმცა დაივიწყების თქუენ შორის, და საჴსენებელი მისი განეწესენ შვილითი შვილად.
         </p>
 <p id="p13"><span class="par-num" title="¶13">¶13</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა თქუენ რომელთა-ეგე შეგიმოსიეს გლოვაჲ და ჭირი, მოავლინენ ღმერთმან წყალობაჲ მისი და ნუგეშინის-გეცინ თქუენ მადლითა თჳსითა და აღასრულენ ნებაჲ თქუენი <span class="folio-milestone" data-wit="" data-folio="255v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255v">255v</span> და მონასა მას თჳსსა <span class="note-anchor" title="1*" id="anchor-note-4394565552">20</span> მიეცინ ნაწილი და მკჳდრობაჲ სასუფესელსა მისსამ ცხებულისა მისისა მიერ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა თქუენ რომელთა-ეგე შეგიმოსიეს გლოვაჲ და ჭირი, მოავლინენ ღმერთმან წყალობაჲ მისი და ნუგეშინის-გეცინ თქუენ მადლითა თჳსითა და აღასრულენ ნებაჲ თქუენი <span class="folio-milestone" data-wit="" data-folio="255v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0257/full/pct:100/0/default.jpg" title="Sin. geo. , f. 255v">255v</span> და მონასა მას თჳსსა <span class="note-anchor" title="1*" id="anchor-note-4396458656">20</span> მიეცინ ნაწილი და მკჳდრობაჲ სასუფესელსა მისსამ ცხებულისა მისისა მიერ.
         </p>
 <p id="p14"><span class="par-num" title="¶14">¶14</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა თქუენ, მამანო და ძმანო, რომელნი მოშუერით და აღასრულეთ წესი იგი მეგობრისა მის თქუენისაჲ, მოგეცინ თქუენ უფალმან მოსაგებელი კეთილი, რამეთუ აღასრულეთ წესი იგი, რომელსა იტყჳს: გიხაროდენ მოხარულთა თანა და ტიროდეთ მტირალთა თანა <span class="note-anchor" title="(1)*" id="anchor-note-4394561712">21</span>. და თქუენ მოგეცინ უფალმან მეგობართა თქუენთა მიერ პოვნად კეთილისა, და თავადი უფალი რომელი-იგი ნუგეშინის-მცემელი არს ყოველთა მონათა თჳსთაჲ, ნუგეშინის-გეცინ თქუენ და მოგაგენ მოსაგებელი კეთილი სასუფეველსა მას ცხოველთასა წმიდისა ცხებულისა მისისა მიერ საუკუნეთა მიერ საუკუნეთასა. ამენ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა თქუენ, მამანო და ძმანო, რომელნი მოშუერით და აღასრულეთ წესი იგი მეგობრისა მის თქუენისაჲ, მოგეცინ თქუენ უფალმან მოსაგებელი კეთილი, რამეთუ აღასრულეთ წესი იგი, რომელსა იტყჳს: გიხაროდენ მოხარულთა თანა და ტიროდეთ მტირალთა თანა <span class="note-anchor" title="(1)*" id="anchor-note-4390588544">21</span>. და თქუენ მოგეცინ უფალმან მეგობართა თქუენთა მიერ პოვნად კეთილისა, და თავადი უფალი რომელი-იგი ნუგეშინის-მცემელი არს ყოველთა მონათა თჳსთაჲ, ნუგეშინის-გეცინ თქუენ და მოგაგენ მოსაგებელი კეთილი სასუფეველსა მას ცხოველთასა წმიდისა ცხებულისა მისისა მიერ საუკუნეთა მიერ საუკუნეთასა. ამენ.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -1043,18 +1033,6 @@ document.querySelectorAll('.app-inline').forEach(function(span) {
 function filterRdg(type) {
     document.querySelectorAll('.app-entry').forEach(function(e) {
         e.style.display = (!type || e.dataset.type === type) ? '' : 'none';
-    });
-}
-
-/* ════════════════════════════════════════════════════════
-   WITNESS
-════════════════════════════════════════════════════════ */
-var witState = { N35: true, N50: true };
-function toggleWit(wit) {
-    witState[wit] = !witState[wit];
-    document.getElementById('wit-' + wit).classList.toggle('on', witState[wit]);
-    document.querySelectorAll('.folio-milestone[data-wit="' + wit + '"]').forEach(function(m) {
-        m.style.display = witState[wit] ? '' : 'none';
     });
 }
 

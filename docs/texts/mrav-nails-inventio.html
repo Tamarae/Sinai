@@ -391,8 +391,6 @@
 #app-legend { border-top: 1px solid #ede8e0; padding: .5rem .85rem; background: #faf8f5; flex-shrink: 0; }
 
 /* ── Toolbar buttons ─────────────────────────────────── */
-.wit-btn { transition: background .12s, color .12s, border-color .12s; }
-.wit-btn.on { background: var(--ink); color: white; border-color: var(--ink); }
 .mode-btn {
     display: inline-flex; align-items: center; gap: .35rem;
     font-size: .72rem; font-family: 'Noto Sans Georgian', sans-serif;
@@ -495,37 +493,29 @@
      style="position:sticky;top:calc(var(--nav-h,48px) + var(--bc-h,36px));z-index:40;background:white;"
      class="border-b border-gray-200 px-6 py-5">
     <div style="max-width:88rem;margin:0 auto;">
-        <div class="flex items-start justify-between gap-4 flex-wrap">
-            <div class="flex-1 min-w-0">
-                <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">პოვნად წმიდათა სამსჭუალთა</p>
-                <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug">პოვნა წმ. სამსჭვალთა</h1>
-                <div class="flex flex-wrap items-center gap-3 mt-2">
-                    <span class="text-sm text-gray-600">ანონიმი</span>
-                    <span class="text-gray-300">·</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 456r-462v</span>
-                    <span class="folio-chip px-2 py-0.5 rounded-sm text-gray-400"></span>
-                    
-                </div>
-            </div>
-            <div class="flex items-center gap-2 flex-shrink-0 pt-1">
-                <div class="flex gap-1 mr-2">
-                    <button id="wit-N35" onclick="toggleWit('N35')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 35</button>
-                    <button id="wit-N50" onclick="toggleWit('N50')" class="wit-btn on text-xs px-2.5 py-1 rounded-sm border border-gray-300">N 50</button>
-                </div>
-                <div class="w-px h-5 bg-gray-200"></div>
-                <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                    ფაქსიმილე
-                </button>
-                <button id="btn-app" class="mode-btn" onclick="setMode('app')">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-                    კრიტ. აპარატი
-                </button>
-                <div class="w-px h-5 bg-gray-200"></div>
-                <a href="../data/texts/mrav-nails-inventio.xml" class="mode-btn">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>TEI
-                </a>
-            </div>
+        <p class="font-serif-geo text-xs text-gray-400 mb-1 italic">პოვნად წმიდათა სამსჭუალთა</p>
+        <h1 class="font-serif-geo text-xl font-semibold text-gray-800 leading-snug mb-2">პოვნა წმ. სამსჭვალთა</h1>
+        <div class="flex flex-wrap items-center gap-2">
+            <span class="text-sm text-gray-600">ანონიმი</span>
+            <span class="text-gray-300">·</span>
+            <span class="folio-chip px-2 py-0.5 rounded-sm">ff. 456r-462v</span>
+            
+            <span class="w-px h-4 bg-gray-200 mx-1"></span>
+            <button id="btn-iiif" class="mode-btn" onclick="setMode('iiif')">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                ფაქსიმილე
+            </button>
+            <button id="btn-app" class="mode-btn" onclick="setMode('app')">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                კრიტ. აპარატი
+            </button>
+            <span class="w-px h-4 bg-gray-200 mx-1"></span>
+            <a href="../data/texts/mrav-nails-inventio.xml" class="mode-btn">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg> TEI
+            </a>
+            <button class="mode-btn" onclick="window.print()">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>PDF
+            </button>
         </div>
     </div>
 </div>
@@ -565,7 +555,7 @@
           <span class="geo-rubric" style="color:var(--crimson);"><span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴎ</span>ოვნაჲ წმიდათა სამსჭუალთაჲ</span>
         </div>
 <p id="p1"><span class="par-num" title="¶1">¶1</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ნეტარი ელენე დედოფალი სავსე იყო ღმრთისა მიმართ სარწმუნოებითა და იყო წადიერ საღმრთოთა წიგნთა კითხვად, ძუელთა და ახალთა აღთქუმათა გამოიძიებდა, უფროჲსად შესძინა გულს-მოდგინედ ძიებაჲ სამსჭუალთა მათ ჯუარისათაჲ, რომლითა უკეთურთა ჰურიათა მაცხოვარი შემსჭუალეს. მოუწოდა იუდას, რომელსა ეწოდა კჳრიაკოს, და ჰრქუა მას: ძელისა მისთჳს ჯუარისა აღესრულა ჩემი წადილი, ხოლო რომელ-იგი ჯაუარსა მას ზედა დაემსჭუალნეს სამსჭუალნი მათნი <span class="note-anchor" title="3*" id="anchor-note-4394551872">1</span>, გულსა შიდა მიც იჭჳ და აწ არა დავსცხრე, ვიდრე არა მაგისიცა ნებაჲ აღმისრულოს ღმერთმან, და შევეღასძინე და ევედრე უფალსა მათთჳს.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ნეტარი ელენე დედოფალი სავსე იყო ღმრთისა მიმართ სარწმუნოებითა და იყო წადიერ საღმრთოთა წიგნთა კითხვად, ძუელთა და ახალთა აღთქუმათა გამოიძიებდა, უფროჲსად შესძინა გულს-მოდგინედ ძიებაჲ სამსჭუალთა მათ ჯუარისათაჲ, რომლითა უკეთურთა ჰურიათა მაცხოვარი შემსჭუალეს. მოუწოდა იუდას, რომელსა ეწოდა კჳრიაკოს, და ჰრქუა მას: ძელისა მისთჳს ჯუარისა აღესრულა ჩემი წადილი, ხოლო რომელ-იგი ჯაუარსა მას ზედა დაემსჭუალნეს სამსჭუალნი მათნი <span class="note-anchor" title="3*" id="anchor-note-4466059808">1</span>, გულსა შიდა მიც იჭჳ და აწ არა დავსცხრე, ვიდრე არა მაგისიცა ნებაჲ აღმისრულოს ღმერთმან, და შევეღასძინე და ევედრე უფალსა მათთჳს.
         </p>
 <p id="p2"><span class="par-num" title="¶2">¶2</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო წმიდაჲ კჳრიაკოს ეპისკოპოსი მივიდა თხემისა ადგილსა და ერთბამად მის თანა ძმანი მრავალნი, რომელნი-იგი უფალსა ჩუენსა იესუ ქრისტესა ესვიდეს ჯუარისა პოვნისათჳს, და მკუდარსა მას ზედა რომელ სასწაული იქმნა, აღიხილნა თუალნი ზეცად და ჴელნი, ერთბამად იცემდა მკერდსა, ღაღადებდა გულს-მოდგინედ უფლისა მიმართ და აღიარებდა პირველთა მათ უმეცრებათა თჳსთა და ჰნატრიდა <span class="folio-milestone" data-wit="" data-folio="233r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0235/full/pct:100/0/default.jpg" title="Sin. geo. , f. 233r">233r</span> ყოველთა მორწმუნეთა ქრისტჱსთა.
@@ -577,16 +567,16 @@
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მეყსეულად გამოჩნდეს სამსჭუალნი იგი, რომელ-იგი უფლისა იესუჲს ჴელთა დაემსჭუალნეს, უბრწყინვალჱსნი ოქროჲსა, ქუეყანასა ზედა. მოიხუნა იგინი იუდა და მიუთუალნა ელენე დედოფალსა.
         </p>
 <p id="p5"><span class="par-num" title="¶5">¶5</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ მუჴლთ-მოდრეკით თაყუანის-სცა <span class="note-anchor" title="4*" id="anchor-note-4394562432">2</span> მათ დედოფალმან. აღივსო სიბრძნითა ღმრთისაჲთა დედოფალი იგი და გულს-მოდგინედ სამსჭუალთა მათთჳს განიზრახვიდა, რაჲთამცა რაჲ ყვნა სამსჭუალნი იგი. ხოლო შევეღასძინა სიმართლისა გზაჲ გამოკულევად, და მადლმან სულისა წმიდისამან გულისხმა-უყო გონებასა მისსა <span class="note-anchor" title="1*" id="anchor-note-4394558032">3</span> წინაჲწარცა მრავლით <span class="folio-milestone" data-wit="" data-folio="233v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236/full/pct:100/0/default.jpg" title="Sin. geo. , f. 233v">233v</span> ჟამით უწყებული იგი. მოუწოდა კაცსა ერთსა სარწმუნოსა და გონიერთა, რომელი წინაჲთვე მრავალთაგან მართლად წოდებულ იყო, და ჰრქუა მას: დაჯედ აქა წინაშე თუალთა ჩემთა და შექმნენ სამსჭუალნი ესე შუად აღჳრისა ჰუნისათჳს მეფისა, რაჲთა იყოს ისრის ჭურ ყოველთათჳს, მტერთა ძლევად მის მიერ მეფჱ, დასამშჳდებელად ბრძოლისა, რაჲთა აღესრულოს თქუმული იგი წინაწარმეტყუელისა მიერ: და იყოს მას დღესა შინა რომელი აღჳრთა მათ ცხენისათა იყოს, წმიდა უფლისა წოდებულ იყოს <span class="note-anchor" title="(1)*" id="anchor-note-4394562992">4</span>.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴋ</span>აშინ მუჴლთ-მოდრეკით თაყუანის-სცა <span class="note-anchor" title="4*" id="anchor-note-4466060128">2</span> მათ დედოფალმან. აღივსო სიბრძნითა ღმრთისაჲთა დედოფალი იგი და გულს-მოდგინედ სამსჭუალთა მათთჳს განიზრახვიდა, რაჲთამცა რაჲ ყვნა სამსჭუალნი იგი. ხოლო შევეღასძინა სიმართლისა გზაჲ გამოკულევად, და მადლმან სულისა წმიდისამან გულისხმა-უყო გონებასა მისსა <span class="note-anchor" title="1*" id="anchor-note-4466058928">3</span> წინაჲწარცა მრავლით <span class="folio-milestone" data-wit="" data-folio="233v" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236/full/pct:100/0/default.jpg" title="Sin. geo. , f. 233v">233v</span> ჟამით უწყებული იგი. მოუწოდა კაცსა ერთსა სარწმუნოსა და გონიერთა, რომელი წინაჲთვე მრავალთაგან მართლად წოდებულ იყო, და ჰრქუა მას: დაჯედ აქა წინაშე თუალთა ჩემთა და შექმნენ სამსჭუალნი ესე შუად აღჳრისა ჰუნისათჳს მეფისა, რაჲთა იყოს ისრის ჭურ ყოველთათჳს, მტერთა ძლევად მის მიერ მეფჱ, დასამშჳდებელად ბრძოლისა, რაჲთა აღესრულოს თქუმული იგი წინაწარმეტყუელისა მიერ: და იყოს მას დღესა შინა რომელი აღჳრთა მათ ცხენისათა იყოს, წმიდა უფლისა წოდებულ იყოს <span class="note-anchor" title="(1)*" id="anchor-note-4466055248">4</span>.
         </p>
 <p id="p6"><span class="par-num" title="¶6">¶6</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ღმრთის მოყუარჱ ელენე დედოფალი სარწმუნოებითა უფლისა ჩუენისა იესუ ქრისტჱსითა განმტკიცებულ იყო იერუსალემს შინა. ყოველივე აღასრულა, დევნულებით ჰურიანი განასხნა; რომელ-იგი ურწმუნო იქმნნეს, განიდევნეს ჰურიასტანით და ღმრთის მოყუარემან დედოფალმან ამცნო მამათა და დედათა აღსრულებად დღესასწაული პატიოსნისა ჯუარისაჲ თუესა <span class="note-anchor" title="2*" id="anchor-note-4394553472">5</span> ვარდობისასა, მეათესა დღესა, რომელნი ვაჴსენებთ დღესასწაულსა ჯუარისასა და ღირს ვიქმნენით ზიარ ყოფად ნაწილსა მას მარიამისსა.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო ღმრთის მოყუარჱ ელენე დედოფალი სარწმუნოებითა უფლისა ჩუენისა იესუ ქრისტჱსითა განმტკიცებულ იყო იერუსალემს შინა. ყოველივე აღასრულა, დევნულებით ჰურიანი განასხნა; რომელ-იგი ურწმუნო იქმნნეს, განიდევნეს ჰურიასტანით და ღმრთის მოყუარემან დედოფალმან ამცნო მამათა და დედათა აღსრულებად დღესასწაული პატიოსნისა ჯუარისაჲ თუესა <span class="note-anchor" title="2*" id="anchor-note-4466060048">5</span> ვარდობისასა, მეათესა დღესა, რომელნი ვაჴსენებთ დღესასწაულსა ჯუარისასა და ღირს ვიქმნენით ზიარ ყოფად ნაწილსა მას მარიამისსა.
         </p>
 <p id="p7"><span class="par-num" title="¶7">¶7</span>
           <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴃ</span>ა მადლი დიდი მოეცა წმიდასა მას ეპისკოპოსსა და ლოცვითა გუნდები <span class="folio-milestone" data-wit="" data-folio="234r" data-facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0237/full/pct:100/0/default.jpg" title="Sin. geo. , f. 234r">234r</span> ეშმაკთაჲ განასხა და სნეულთა ჰკურნებდა.
         </p>
 <p id="p8"><span class="par-num" title="¶8">¶8</span>
-          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო აღესრულების საჴსენებელი პატიოსნისა ჯუარისაჲ თთუესა <span class="note-anchor" title="3*" id="anchor-note-4394556752">6</span> ვარდობისასა ორას და სამ წლისა შემდგომად ამაღლებისა სადიდებელად მამისა და ძისა და წმიდისა სულისა აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
+          <span class="geo-initial" style="color:var(--crimson);font-family:'Noto Sans Georgian',sans-serif;font-weight:500;">Ⴞ</span>ოლო აღესრულების საჴსენებელი პატიოსნისა ჯუარისაჲ თთუესა <span class="note-anchor" title="3*" id="anchor-note-4466055728">6</span> ვარდობისასა ორას და სამ წლისა შემდგომად ამაღლებისა სადიდებელად მამისა და ძისა და წმიდისა სულისა აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
         </p>
         </div>
         <div class="flex items-center justify-between mt-12 pt-6 border-t border-gray-200 text-xs text-gray-400">
@@ -1025,18 +1015,6 @@ document.querySelectorAll('.app-inline').forEach(function(span) {
 function filterRdg(type) {
     document.querySelectorAll('.app-entry').forEach(function(e) {
         e.style.display = (!type || e.dataset.type === type) ? '' : 'none';
-    });
-}
-
-/* ════════════════════════════════════════════════════════
-   WITNESS
-════════════════════════════════════════════════════════ */
-var witState = { N35: true, N50: true };
-function toggleWit(wit) {
-    witState[wit] = !witState[wit];
-    document.getElementById('wit-' + wit).classList.toggle('on', witState[wit]);
-    document.querySelectorAll('.folio-milestone[data-wit="' + wit + '"]').forEach(function(m) {
-        m.style.display = witState[wit] ? '' : 'none';
     });
 }
 

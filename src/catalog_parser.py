@@ -38,6 +38,19 @@ def _xml_lang(el) -> str:
     return el.get(_XML_LANG, "")
 
 
+def _clean_idno(raw: str) -> str:
+    """
+    Strip placeholder values so absent identifiers become empty string.
+    Treats as absent: empty, whitespace-only, or XML comment text
+    (ElementTree strips comments so this mainly guards against empty elements
+    and any residual whitespace).
+    """
+    s = raw.strip()
+    # XML comments are invisible to ElementTree, so s will simply be '' for
+    # elements whose only content is a comment — no extra handling needed.
+    return s
+
+
 # ── Data classes ──────────────────────────────────────
 
 @dataclass
@@ -63,12 +76,19 @@ class FeastMeta:
 
 @dataclass
 class AuthorMeta:
-    id:       str
-    name_ka:  str
-    name_la:  str
-    short_ka: str
-    dates:    str
-    viaf:     str
+    id:        str
+    name_ka:   str
+    name_la:   str
+    short_ka:  str
+    dates:     str
+    # Constructed-URL identifiers (empty string = absent)
+    viaf:      str
+    cpg:       str
+    tm:        str
+    # Arbitrary external authority links: list of {"label": str, "url": str}
+    # Populated from <idno type="URI" subtype="…">full-url</idno> elements.
+    # Any number of entries allowed; each renders as its own pill in the UI.
+    uri_links: List[Dict[str, str]] = field(default_factory=list)
 
 
 @dataclass
@@ -195,13 +215,34 @@ class CatalogParser:
                 na = _attr(floruit, "notAfter",  "").lstrip("0")
                 dates = f"c. {nb}–{na}" if nb and na else ""
 
-            viaf     = _t(p, "tei:idno[@type='VIAF']")
+            # ── Constructed-URL identifiers ────────────
+            # All three use _clean_idno so empty elements and comment-only
+            # elements (ElementTree sees them as '') are treated as absent.
+            viaf = _clean_idno(_t(p, "tei:idno[@type='VIAF']"))
+            cpg  = _clean_idno(_t(p, "tei:idno[@type='CPG']"))
+            tm   = _clean_idno(_t(p, "tei:idno[@type='TM']"))
+
+            # ── Arbitrary URI links ────────────────────
+            # Collect every <idno type="URI" subtype="…">full-url</idno>.
+            # @subtype becomes the display label; element text is the full URL.
+            # The XPath predicate [@type='URI'] works because ElementTree
+            # matches on the bare attribute name (no namespace prefix needed
+            # for non-namespaced attributes).
+            uri_links: List[Dict[str, str]] = []
+            for idno_el in p.findall("tei:idno[@type='URI']", NS):
+                url   = _clean_idno((idno_el.text or "").strip())
+                label = idno_el.get("subtype", "").strip()
+                if url and label:
+                    uri_links.append({"label": label, "url": url})
+
             words    = name_ka.split()
             short_ka = " ".join(words[:2]) if len(words) >= 2 else name_ka
 
             a = AuthorMeta(
                 id=xml_id, name_ka=name_ka, name_la=name_la,
-                short_ka=short_ka, dates=dates, viaf=viaf,
+                short_ka=short_ka, dates=dates,
+                viaf=viaf, cpg=cpg, tm=tm,
+                uri_links=uri_links,
             )
             self.authors.append(a)
             self._author_idx[xml_id] = a
@@ -215,10 +256,6 @@ class CatalogParser:
             xml_id   = _xml_id(cat)
             label_ka = label_la = ""
 
-            # Date/moveable encoded as @n on <category> (TEI-valid; catDesc has no @type):
-            #   fixed feast  -> n="--MM-DD"   (xs:gMonthDay)
-            #   moveable     -> n="moveable"
-            #   no date      -> @n absent     (feast-misc, feast-appendix)
             n_val    = _attr(cat, "n")
             date_val = n_val if n_val.startswith("--") else ""
             moveable = n_val == "moveable"
@@ -271,17 +308,13 @@ class CatalogParser:
             label_ka   = _t(ev, "tei:label[@xml:lang='ka']") or _t(ev, "tei:label")
             ms_heading = _t(ev, "tei:desc[@xml:lang='ka']")  or _t(ev, "tei:desc")
 
-            # Author: <note type="author" corresp="#aut-..."/>
-            # (persName is not permitted in the event content model in TEI P5)
             author_el  = ev.find("tei:note[@type='author']", NS)
             author_ref = _attr(author_el, "corresp").lstrip("#") if author_el is not None else "aut-anon"
             author     = self._author_idx.get(author_ref, AuthorMeta(
                 id=author_ref, name_ka="?", name_la="?",
-                short_ka="?", dates="", viaf="",
+                short_ka="?", dates="", viaf="", cpg="", tm="", uri_links=[],
             ))
 
-            # Loci: <idno type="witness">N35</idno> — text content identifies witness
-            # (idno has no @ref attribute in TEI P5)
             locus_n35 = locus_n50 = ""
             for ms in ev.findall("tei:msDesc", NS):
                 idno_el  = ms.find("tei:msIdentifier/tei:idno", NS)

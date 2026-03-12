@@ -118,60 +118,86 @@
     <profileDesc>
       <particDesc>
         <listPerson type="authors">
-
+          
           <person xml:id="aut-gregory-neocaes">
             <persName xml:lang="ka">გრიგოლ ნეოკესარიელი</persName>
             <persName xml:lang="la">Gregorius Thaumaturgus Neocaesariensis</persName>
             <persName xml:lang="en">Gregory the Wonderworker of Neocaesarea</persName>
             <floruit notBefore="0213" notAfter="0270"/>
             <idno type="VIAF">105863911</idno>
+            <!-- CPG range: 1763–1783 -->
+            <idno type="CPG">1763</idno>
+            <idno type="TM"></idno>
+            <idno type="URI" subtype="Syriaca">http://syriaca.org/person/513</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00687</idno>
+            <!-- add URI links below as needed, e.g.:
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00687</idno>
+            -->
           </person>
-
+          
           <person xml:id="aut-antipater-bostra">
             <persName xml:lang="ka">ანთიპატრ ბოსტრელი</persName>
             <persName xml:lang="la">Antipater Bostrensis</persName>
             <floruit notBefore="0400" notAfter="0460"/>
-            <idno type="VIAF"><!-- add --></idno>
+            <idno type="VIAF"></idno>
+            <!-- CPG range: 6686–6694 -->
+            <idno type="CPG">6686</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-athanasius-alex">
             <persName xml:lang="ka">ათანასი ალექსანდრიელი</persName>
             <persName xml:lang="la">Athanasius Alexandrinus</persName>
             <persName xml:lang="en">Athanasius of Alexandria</persName>
             <birth when="0296"/><death when="0373"/>
             <idno type="VIAF">13651211</idno>
+            <!-- CPG range: 2090–2309 -->
+            <idno type="CPG">2090</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-proklos-cpl">
             <persName xml:lang="ka">პროკლე კოსტანტინეპოლელი</persName>
             <persName xml:lang="la">Proclus Constantinopolitanus</persName>
             <death when="0446"/>
-            <idno type="VIAF"><!-- add --></idno>
+            <idno type="VIAF"></idno>
+            <!-- CPG range: 5800–5860 -->
+            <idno type="CPG">5800</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-epiphanius-cypros">
             <persName xml:lang="ka">ეპიფანე კვიპრელი</persName>
             <persName xml:lang="la">Epiphanius Cypriensis</persName>
             <birth when="0310"/><death when="0403"/>
             <idno type="VIAF">95155322</idno>
+            <!-- CPG range: 3744–3807 -->
+            <idno type="CPG">3744</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-basil-caesarea">
             <persName xml:lang="ka">ბასილი კესარიელი</persName>
             <persName xml:lang="la">Basilius Caesariensis (Magnus)</persName>
             <persName xml:lang="en">Basil of Caesarea</persName>
             <birth when="0329"/><death when="0379"/>
             <idno type="VIAF">88967224</idno>
+            <!-- CPG range: 2835–3005 -->
+            <idno type="CPG">2835</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-chrysostom">
             <persName xml:lang="ka">იოვანე ოქროპირი</persName>
             <persName xml:lang="la">Iohannes Chrysostomus</persName>
             <persName xml:lang="en">John Chrysostom</persName>
             <birth when="0349"/><death when="0407"/>
             <idno type="VIAF">297475035</idno>
+            <!-- CPG range: 4000–5197 -->
+            <idno type="CPG">4000</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-iohannes-cpl">
             <!-- Several texts attributed to Iohannes episcopus/archiepiscopus
                  without clear identification. Kept separate from Chrysostom. -->
@@ -179,76 +205,96 @@
             <persName xml:lang="la">Iohannes archiepiscopus (incertus)</persName>
             <note>Attribution uncertain; distinct from Chrysostom in the ms headings.</note>
           </person>
-
+          
           <person xml:id="aut-cyrillus-hier">
             <persName xml:lang="ka">კირილე იერუსალემელი</persName>
             <persName xml:lang="la">Cyrillus Hierosolymitanus</persName>
             <birth when="0313"/><death when="0386"/>
             <idno type="VIAF">89397828</idno>
+            <!-- CPG range: 3585–3678 -->
+            <idno type="CPG">3585</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-hesychios-hier">
             <persName xml:lang="ka">ევსუქი ხუცი იერუსალემელი</persName>
             <persName xml:lang="la">Hesychius presbyter Hierosolymitanus</persName>
             <floruit notBefore="0400" notAfter="0450"/>
-            <idno type="VIAF"><!-- add --></idno>
+            <idno type="VIAF"></idno>
+            <!-- CPG range: 6551–6602 -->
+            <idno type="CPG">6551</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-timotheus-hier">
             <persName xml:lang="ka">ტიმოთე ხუცი იერუსალემელი</persName>
             <persName xml:lang="la">Timotheus presbyter Hierosolymitanus</persName>
             <floruit notBefore="0400" notAfter="0500"/>
+            <!-- CPG range: 7406–7410 -->
+            <idno type="CPG">7406</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-severian-gabala">
             <persName xml:lang="ka">სებერიანოს გაბალონელი</persName>
             <persName xml:lang="la">Severianus Gabalensis</persName>
             <death when="0408"/>
             <idno type="VIAF">27422228</idno>
+            <!-- CPG range: 4185–4236 -->
+            <idno type="CPG">4185</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-meletios-antioch">
             <persName xml:lang="ka">მელეტი ანტიოქელი</persName>
             <persName xml:lang="la">Meletius Antiochenus</persName>
             <death when="0381"/>
-            <idno type="VIAF"><!-- add --></idno>
+            <idno type="VIAF"></idno>
+            <!-- CPG range: 3420–3426 -->
+            <idno type="CPG">3420</idno>
+            <idno type="TM"></idno>
           </person>
-
+          
           <person xml:id="aut-meletios-episc">
             <!-- Meletius episcopus, possibly same as above or different -->
             <persName xml:lang="ka">მელეტი ეპისკოპოსი</persName>
             <persName xml:lang="la">Meletius episcopus</persName>
             <note>Identity uncertain; see apparatus.</note>
           </person>
-
+          
           <person xml:id="aut-ephrem-syrus">
             <persName xml:lang="ka">ეფრემ ასური</persName>
             <persName xml:lang="la">Ephraem Syrus</persName>
             <birth when="0306"/><death when="0373"/>
             <idno type="VIAF">100177778</idno>
+            <!-- CPG range: 3905–4175 -->
+            <idno type="CPG">3905</idno>
+            <idno type="TM"></idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/13</idno>
           </person>
-
+          
           <person xml:id="aut-anon">
             <persName xml:lang="ka">ანონიმი</persName>
             <persName xml:lang="la">Anonymus</persName>
           </person>
+          
           <person xml:id="aut-amonios">
             <persName xml:lang="ka">ამონიოსი</persName>
             <persName xml:lang="la">Amonios</persName>
           </person>
-
+          
           <!-- Appendix authors -->
           <person xml:id="aut-ioane-zosime">
             <persName xml:lang="ka">იოანე-ზოსიმე</persName>
             <floruit notBefore="0950" notAfter="1000"/>
             <note>ავტ. "ქება და დიდება ქართულისა ენისაი"</note>
           </person>
-
+          
           <person xml:id="aut-makari-leteteli">
             <persName xml:lang="ka">მაკარი ლეთეთელი</persName>
             <note>კოლოფონის ავტ.</note>
           </person>
-
+          
         </listPerson>
       </particDesc>
     </profileDesc>

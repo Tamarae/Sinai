@@ -25,6 +25,27 @@
 
     .filter-chip { transition:background .12s, color .12s, border-color .12s; cursor:pointer; }
     .filter-chip.on { background:var(--crimson); color:white; border-color:var(--crimson); }
+
+    /* authority DB links */
+    .aut-ext-link {
+        display:inline-flex; align-items:center; gap:3px;
+        font-size:.65rem; font-family:var(--font-sans); letter-spacing:.04em;
+        padding:1px 5px; border-radius:2px;
+        border:1px solid #ddd5c8; color:#6b6053;
+        text-decoration:none; transition:border-color .12s, color .12s, background .12s;
+        white-space:nowrap;
+    }
+    .aut-ext-link:hover { border-color:var(--crimson); color:var(--crimson); background:var(--crimson-pale); }
+    .aut-ext-link svg { width:9px; height:9px; opacity:.6; flex-shrink:0; }
+
+    /* copy-URI button */
+    .copy-uri-btn {
+        background:none; border:none; padding:3px; cursor:pointer;
+        color:#c5bdb5; transition:color .12s;
+        flex-shrink:0;
+    }
+    .copy-uri-btn:hover { color:var(--crimson); }
+    .copy-uri-btn.copied { color:#2d8a4e; }
 </style>
 {% endblock %}
 
@@ -84,17 +105,17 @@
             <div class="mt-6 pt-4 border-t border-gray-200">
                 <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
                 <div class="flex flex-col gap-1">
-                    <button onclick="toggleFilter(this,'homily')"  class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
-                    <button onclick="toggleFilter(this,'life')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
-                    <button onclick="toggleFilter(this,'martyrdom')"class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
-                    <button onclick="toggleFilter(this,'other')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
+                    <button onclick="toggleFilter(this,'homily')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
+                    <button onclick="toggleFilter(this,'life')"     class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
+                    <button onclick="toggleFilter(this,'martyrdom')" class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
+                    <button onclick="toggleFilter(this,'other')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
                 </div>
             </div>
         </div>
 
         <!-- Thematic sidebar -->
         <div id="sb-theme" class="sticky top-24">
-            <p class="text-xs tracking-widests text-gray-400 font-medium mb-3 tracking-widest">ავტორი</p>
+            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ავტორი</p>
             <nav class="flex flex-col gap-0.5 text-xs">
                 {% for author in authors %}
                 <a href="#author-{{ author.id }}"
@@ -187,9 +208,83 @@
             {% if author_texts %}
             <section id="author-{{ author.id }}" class="mb-10">
 
+                <!-- Author header -->
                 <div class="author-block pl-4 pb-1 mb-3">
-                    <h3 class="font-serif-geo font-semibold text-gray-800">{{ author.name_ka }}</h3>
-                    <p class="text-xs text-gray-400 mt-0.5">{{ author.name_la }}{% if author.dates %} · {{ author.dates }}{% endif %}</p>
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="min-w-0">
+                            <h3 class="font-serif-geo font-semibold text-gray-800">{{ author.name_ka }}</h3>
+                            <p class="text-xs text-gray-400 mt-0.5">
+                                {{ author.name_la }}{% if author.dates %} · {{ author.dates }}{% endif %}
+                            </p>
+
+                            {# ── Authority links row ────────────────────────────────────────────
+                               Rendered only when at least one identifier is present.
+                               Order: VIAF · CPG · TM · arbitrary URI links (in XML order).
+                            #}
+                            {% set has_links = author.viaf or author.cpg or author.tm or author.uri_links %}
+                            {% if has_links %}
+                            <div class="flex items-center gap-1.5 mt-2 flex-wrap">
+
+                                {% if author.viaf %}
+                                <a href="https://viaf.org/viaf/{{ author.viaf }}"
+                                   target="_blank" rel="noopener"
+                                   class="aut-ext-link" title="Virtual International Authority File">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>VIAF
+                                </a>
+                                {% endif %}
+
+                                {% if author.cpg %}
+                                <a href="https://clavis.brepols.net/clacla/OA/link.aspx?clavis=CPG&amp;number={{ author.cpg }}"
+                                   target="_blank" rel="noopener"
+                                   class="aut-ext-link" title="Clavis Patrum Graecorum (Brepols)">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>CPG&nbsp;{{ author.cpg }}
+                                </a>
+                                {% endif %}
+
+                                {% if author.tm %}
+                                <a href="https://www.trismegistos.org/person/{{ author.tm }}"
+                                   target="_blank" rel="noopener"
+                                   class="aut-ext-link" title="Trismegistos People">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>TM&nbsp;{{ author.tm }}
+                                </a>
+                                {% endif %}
+
+                                {# Arbitrary URI links — each <idno type="URI" subtype="…"> becomes one pill #}
+                                {% for link in author.uri_links %}
+                                <a href="{{ link.url }}"
+                                   target="_blank" rel="noopener"
+                                   class="aut-ext-link" title="{{ link.label }}">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>{{ link.label }}
+                                </a>
+                                {% endfor %}
+
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <!-- Copy URI button: copies the canonical GitHub Pages anchor URL -->
+                        <button class="copy-uri-btn"
+                                data-author-id="{{ author.id }}"
+                                onclick="copyAuthorURI(this)"
+                                title="URI კოპირება">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="border border-gray-200 rounded-sm overflow-hidden">
@@ -237,10 +332,11 @@
 
 {% block body_scripts %}
 <script>
+// ── View switcher ────────────────────────────────────────────────
 function switchView(mode) {
-    const panels   = { cal: 'panel-cal',   theme: 'panel-theme'  };
-    const sidebars = { cal: 'sb-cal',      theme: 'sb-theme'     };
-    const buttons  = { cal: 'btn-cal',     theme: 'btn-theme'    };
+    const panels   = { cal: 'panel-cal',   theme: 'panel-theme' };
+    const sidebars = { cal: 'sb-cal',      theme: 'sb-theme'    };
+    const buttons  = { cal: 'btn-cal',     theme: 'btn-theme'   };
     Object.keys(panels).forEach(k => {
         document.getElementById(panels[k]).classList.toggle('active', k === mode);
         document.getElementById(sidebars[k]).classList.toggle('hidden', k !== mode);
@@ -248,6 +344,7 @@ function switchView(mode) {
     });
 }
 
+// ── Genre filter ─────────────────────────────────────────────────
 const activeGenres = new Set(['homily','life','martyrdom','other']);
 
 function toggleFilter(btn, genre) {
@@ -262,7 +359,6 @@ function applyFilters() {
         const g = row.dataset.genre || 'other';
         row.style.display = activeGenres.has(g) ? '' : 'none';
     });
-    // Hide month sections if all rows hidden
     document.querySelectorAll('#panel-cal section').forEach(sec => {
         const rows = sec.querySelectorAll('.text-row');
         const anyVisible = [...rows].some(r => r.style.display !== 'none');
@@ -270,6 +366,7 @@ function applyFilters() {
     });
 }
 
+// ── Search ───────────────────────────────────────────────────────
 document.getElementById('text-search').addEventListener('input', function() {
     const q = this.value.toLowerCase();
     const panel = document.querySelector('.panel.active');
@@ -277,5 +374,48 @@ document.getElementById('text-search').addEventListener('input', function() {
         row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
     });
 });
+
+// ── Copy author URI ───────────────────────────────────────────────
+// Always uses the canonical GitHub Pages URL, not the local filesystem path.
+const SITE_BASE = 'https://tamarae.github.io/Sinai';
+
+function copyAuthorURI(btn) {
+    const authorId = btn.dataset.authorId;
+    const url = SITE_BASE + '/texts/index.html#author-' + authorId;
+
+    const svgLink = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+    </svg>`;
+    const svgCheck = `<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+    </svg>`;
+
+    const doFlash = () => {
+        btn.classList.add('copied');
+        btn.innerHTML = svgCheck;
+        setTimeout(() => {
+            btn.classList.remove('copied');
+            btn.innerHTML = svgLink;
+        }, 1500);
+    };
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(doFlash).catch(() => fallbackCopy(url, doFlash));
+    } else {
+        fallbackCopy(url, doFlash);
+    }
+}
+
+function fallbackCopy(text, callback) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); } catch(e) {}
+    document.body.removeChild(ta);
+    callback();
+}
 </script>
 {% endblock %}
