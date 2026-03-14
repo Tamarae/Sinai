@@ -21,7 +21,7 @@
       <div type="lexicon">
 
         <!-- ══ Entry 1: ანგელოზი ══════════════════════════ -->
-        <entry xml:id="lex-angelozi" corresp="bog:angelozi">
+        <entry xml:id="lex-angelozi" corresp="bog:angelozi" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ანგელოზი</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -46,7 +46,7 @@
 
 
         <!-- ══ Entry 2: ქება ════════════════════════════════ -->
-        <entry xml:id="lex-qeba">
+        <entry xml:id="lex-qeba" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ქება</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -75,7 +75,7 @@
 
 
         <!-- ══ Entry 3: წმიდა ════════════════════════════════ -->
-        <entry xml:id="lex-wmida">
+        <entry xml:id="lex-wmida" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">წმიდა</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -109,7 +109,7 @@
         </entry>
         
         
-        <entry xml:id="lex-ats">
+        <entry xml:id="lex-ats" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">აწ</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -120,7 +120,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-brtsqinvale">
+        <entry xml:id="lex-brtsqinvale" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ბრწყინვალე</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -131,7 +131,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-dakhsna">
+        <entry xml:id="lex-dakhsna" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">დაჴსნა</orth></form>
           <gramGrp>
             <pos>verb</pos>
@@ -142,7 +142,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-dasabam">
+        <entry xml:id="lex-dasabam" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">დასაბამ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -153,7 +153,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-dzal">
+        <entry xml:id="lex-dzal" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ძალ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -164,7 +164,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-dze">
+        <entry xml:id="lex-dze" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ძე</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -178,7 +178,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-dzir">
+        <entry xml:id="lex-dzir" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ძირ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -186,7 +186,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-er">
+        <entry xml:id="lex-er" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ერ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -200,7 +200,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-esevitar">
+        <entry xml:id="lex-esevitar" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ესევითარ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -211,7 +211,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-esre">
+        <entry xml:id="lex-esre" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ესრე</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -219,7 +219,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-gareshe">
+        <entry xml:id="lex-gareshe" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">გარეშე</orth></form>
           <gramGrp>
             <pos>postposition</pos>
@@ -236,7 +236,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-gikharoden">
+        <entry xml:id="lex-gikharoden" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">გიხაროდენ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -247,7 +247,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-gvirgvinosan">
+        <entry xml:id="lex-gvirgvinosan" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">გჳრგჳნოსან</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -259,7 +259,7 @@
         </entry>
 
 
-        <entry xml:id="lex-khati">
+        <entry xml:id="lex-khati" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ხატ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -270,7 +270,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-kidoban">
+        <entry xml:id="lex-kidoban" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">კიდობან</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -281,7 +281,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-krebul">
+        <entry xml:id="lex-krebul" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">კრებულ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -292,7 +292,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-kuertkh">
+        <entry xml:id="lex-kuertkh" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">კუერთხ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -303,7 +303,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-mamakats">
+        <entry xml:id="lex-mamakats" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მამაკაც</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -311,7 +311,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-maradis">
+        <entry xml:id="lex-maradis" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მარადის</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -322,7 +322,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-margalit">
+        <entry xml:id="lex-margalit" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მარგალიტ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -330,7 +330,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-marjuenit">
+        <entry xml:id="lex-marjuenit" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მარჯუენით</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -341,7 +341,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-merme">
+        <entry xml:id="lex-merme" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მერმე</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -355,7 +355,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-midgomil">
+        <entry xml:id="lex-midgomil" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მიდგომილ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -366,7 +366,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-mier">
+        <entry xml:id="lex-mier" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მიერ</orth></form>
           <gramGrp>
             <pos>preposition</pos>
@@ -383,7 +383,7 @@
 
         
 
-        <entry xml:id="lex-mimart">
+        <entry xml:id="lex-mimart" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მიმართ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -394,7 +394,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-moaqamomde">
+        <entry xml:id="lex-moaqamomde" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მოაქამომდე</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -405,7 +405,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-modzghunnebul">
+        <entry xml:id="lex-modzghunnebul" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მოძღუნებულ</orth></form> <!-- პარტიციპიუმია -->
           <gramGrp>
             <pos>adjective</pos>
@@ -416,10 +416,10 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-moghuatse">
+        <entry xml:id="lex-moghuatse" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მოღუაწე</orth></form> <!-- პარტიციპიუმია -->
           <gramGrp>
-            <pos>adjective></pos>
+            <pos>adjective</pos>
           </gramGrp>
           <sense n="1">
             <def xml:lang="ka">მებრძოლი, მეომარი.</def>
@@ -433,7 +433,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-mtavarangeloz">
+        <entry xml:id="lex-mtavarangeloz" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მთავარანგელოზ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -444,7 +444,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-mtsrapl">
+        <entry xml:id="lex-mtsrapl" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მწრაფლ</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -455,7 +455,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-mun" corresp="bog:mun">
+        <entry xml:id="lex-mun" corresp="bog:mun" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">მუნ</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -466,7 +466,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-nandvlve">
+        <entry xml:id="lex-nandvlve" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ნანდჳლვე</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -477,7 +477,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-natesav">
+        <entry xml:id="lex-natesav" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ნათესავ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -488,7 +488,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-nayop">
+        <entry xml:id="lex-nayop" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ნაყოფ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -502,7 +502,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-nich">
+        <entry xml:id="lex-nich" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ნიჭ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -513,7 +513,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-pativ">
+        <entry xml:id="lex-pativ" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">პატივ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -527,7 +527,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-pirspir">
+        <entry xml:id="lex-pirspir" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">პირსპირ</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -538,7 +538,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-pirutqu">
+        <entry xml:id="lex-pirutqu" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">პირუტყუ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -549,7 +549,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-pirvel">
+        <entry xml:id="lex-pirvel" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">პირველ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -560,7 +560,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-pur" corresp="bog:pur">
+        <entry xml:id="lex-pur" corresp="bog:pur" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">პურ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -574,7 +574,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-qerobinebr">
+        <entry xml:id="lex-qerobinebr" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ქერობინებრ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -585,7 +585,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-qortsilebr">
+        <entry xml:id="lex-qortsilebr" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ჴორციელებრ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -596,7 +596,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-qovel">
+        <entry xml:id="lex-qovel" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ყოველ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -607,7 +607,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-qovlad">
+        <entry xml:id="lex-qovlad" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ყოვლად</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -618,7 +618,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-quavil">
+        <entry xml:id="lex-quavil" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ყუავილ</orth></form>
           <gramGrp>
             <pos>verb</pos>
@@ -629,7 +629,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-qur">
+        <entry xml:id="lex-qur" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ყურ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -637,7 +637,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-rad" corresp="bog:rad">
+        <entry xml:id="lex-rad" corresp="bog:rad" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">რად</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -648,7 +648,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-rametu">
+        <entry xml:id="lex-rametu" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">რამეთუ</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -662,7 +662,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-retsa">
+        <entry xml:id="lex-retsa" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">რეცა</orth></form>
           <gramGrp>
             <pos>particle</pos>
@@ -675,7 +675,7 @@
 
       
 
-        <entry xml:id="lex-sadame">
+        <entry xml:id="lex-sadame" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სადამე</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -686,7 +686,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sakhe">
+        <entry xml:id="lex-sakhe" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სახე</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -703,7 +703,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sakvirvel">
+        <entry xml:id="lex-sakvirvel" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">საკჳრველ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -717,7 +717,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-samosel">
+        <entry xml:id="lex-samosel" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სამოსელ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -725,7 +725,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sapase">
+        <entry xml:id="lex-sapase" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">საფასე</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -742,7 +742,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-saqdar">
+        <entry xml:id="lex-saqdar" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">საყდარ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -753,7 +753,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sasmenel">
+        <entry xml:id="lex-sasmenel" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სასმენელ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -764,7 +764,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sasupevel">
+        <entry xml:id="lex-sasupevel" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სასუფეველ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -775,7 +775,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-satno">
+        <entry xml:id="lex-satno" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სათნო</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -786,7 +786,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-saukunitgan">
+        <entry xml:id="lex-saukunitgan" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">საუკუნითგან</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -797,7 +797,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-shemoqmed">
+        <entry xml:id="lex-shemoqmed" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">შემოქმედ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -808,7 +808,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-shemsgavsebulad">
+        <entry xml:id="lex-shemsgavsebulad" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">შემსგავსებულად</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -819,7 +819,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sheqmnul">
+        <entry xml:id="lex-sheqmnul" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">შექმნულ</orth></form> <!-- პარტიციპიუმია -->
           <gramGrp>
             <pos>adjective</pos>
@@ -830,7 +830,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-shoris1">
+        <entry xml:id="lex-shoris1" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">შორის</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -838,7 +838,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-shuenier1">
+        <entry xml:id="lex-shuenier1" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">შუენიერ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -849,7 +849,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sidze">
+        <entry xml:id="lex-sidze" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სიძე</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -857,7 +857,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sikete">
+        <entry xml:id="lex-sikete" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სიკეთე</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -868,7 +868,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sikharul">
+        <entry xml:id="lex-sikharul" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სიხარულ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -876,7 +876,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-sikudil">
+        <entry xml:id="lex-sikudil" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">სიკუდილ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -887,7 +887,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-tanamsgavs">
+        <entry xml:id="lex-tanamsgavs" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">თანა-მსგავს</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -898,7 +898,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-tavad">
+        <entry xml:id="lex-tavad" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">თავად</orth></form>
           <gramGrp>
             <pos>pronoun</pos>
@@ -909,7 +909,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-tesl">
+        <entry xml:id="lex-tesl" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">თესლ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -920,7 +920,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-ukuetu">
+        <entry xml:id="lex-ukuetu" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">უკუეთუ</orth></form>
           <gramGrp>
             <pos>conjunction</pos>
@@ -931,7 +931,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-umetari">
+        <entry xml:id="lex-umetari" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">უმეცარ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -942,7 +942,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-upal">
+        <entry xml:id="lex-upal" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">უფალ</orth></form>
           <gramGrp>
             <pos>noun</pos>
@@ -953,7 +953,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-ususur">
+        <entry xml:id="lex-ususur" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">უსუსურ</orth></form>
           <gramGrp>
             <pos>adjective</pos>
@@ -964,7 +964,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-vidremde">
+        <entry xml:id="lex-vidremde" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ვიდრემდე</orth></form>
           <gramGrp>
             <pos>particle</pos>
@@ -975,7 +975,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-vin">
+        <entry xml:id="lex-vin" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ვინ</orth></form>
           <gramGrp>
             <pos>pronoun</pos>
@@ -986,7 +986,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-vitar">
+        <entry xml:id="lex-vitar" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ვითარ</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -1003,7 +1003,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-vitarmed">
+        <entry xml:id="lex-vitarmed" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ვითარმედ</orth></form>
           <gramGrp>
             <pos>conjunction</pos>
@@ -1017,7 +1017,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-vitartsa">
+        <entry xml:id="lex-vitartsa" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ვითარცა</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -1031,7 +1031,7 @@
           <!-- ENRICH: add grc, OLiA, source xr -->
         </entry>
 
-        <entry xml:id="lex-zeda">
+        <entry xml:id="lex-zeda" source="imnaishvili-1975">
           <form type="lemma"><orth xml:lang="ka">ზედა</orth></form>
           <gramGrp>
             <pos>adverb</pos>
@@ -1047,6 +1047,417 @@
         </entry>
         
         
+
+        <!-- ══ New entries from Imnaishvili 1975 ══════════════════════ -->
+        <entry xml:id="lex-baga" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ბაგა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">საქონლისათვის საკვების ჩასაყრელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-bevreul" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ბევრეულ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">ათი ათასობით, ათი ათასეული, მრავალი.</def></sense>
+        </entry>
+        <entry xml:id="lex-galoba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">გალობა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მღერა, გალობა.</def></sense>
+        </entry>
+        <entry xml:id="lex-gamotskhadeba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">გამოცხადება</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">გამომჟღავნება, ცხადად გახდომა, გამოჩენა.</def></sense>
+        </entry>
+        <entry xml:id="lex-goneba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">გონება</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">გონება, ფიქრი, ჭკუა.</def></sense>
+        </entry>
+        <entry xml:id="lex-gul" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">გულ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">გული.</def></sense>
+        </entry>
+        <entry xml:id="lex-dautsquedel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">დაუწყუედელ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">დაუჭერელი, შეუკავებელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-dideba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">დიდება</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">დიდება, სიდიადე, განდიდება.</def></sense>
+        </entry>
+        <entry xml:id="lex-dzel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ძელ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ხე (ცოცხალი, არამოჭრილი).</def></sense>
+        </entry>
+        <entry xml:id="lex-kual" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">კუალ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">კვალი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mama" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მამა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მამა.</def></sense>
+        </entry>
+        <entry xml:id="lex-mariamoba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მარიამობა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">საეკლესიო დღესასწაული მარიამის მიძინებისა, 28 აგვისტო.</def></sense>
+        </entry>
+        <entry xml:id="lex-mdinare" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მდინარე</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">მომდინარე, მომჩქეფარე.</def></sense>
+        </entry>
+        <entry xml:id="lex-meupe" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მეუფე</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მეფე; ზეციური მეფე, უფალი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mimadlebul" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მიმადლებულ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">დალოცვილი, კურთხეული, მადლიანი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mklav" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მკლავ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მკლავი, ხელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mobadzav" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მობაძავ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მიმბაძველი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mosa" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მოსა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">შემოსვა, ჩაცმა.</def></sense>
+        </entry>
+        <entry xml:id="lex-moslva" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მოსლვა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მოსვლა.</def></sense>
+        </entry>
+        <entry xml:id="lex-moquare" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მოყუარე</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მოყვარული, ვისაც უყვარს.</def></sense>
+        </entry>
+        <entry xml:id="lex-mtavar" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მთავარ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მხედართმთავარი, მმართველი, წინამძღვარი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mutsel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მუცელ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მუცელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-natesaoba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ნათესაობა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მსგავსება, მონათესავობა.</def></sense>
+        </entry>
+        <entry xml:id="lex-oqro" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ოქრო</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ოქრო.</def></sense>
+        </entry>
+        <entry xml:id="lex-pir" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">პირ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">პირი, სახე; პირი (ვინმეს).</def></sense>
+        </entry>
+        <entry xml:id="lex-savane" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სავანე</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ბინა, სადგომი; სასტუმრო.</def></sense>
+        </entry>
+        <entry xml:id="lex-sagalobel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საგალობელ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">სასიმღერო, სალოცავი, გასამღერებელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-saidumlo" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საიდუმლო</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">საიდუმლო, სიდუმლე.</def></sense>
+        </entry>
+        <entry xml:id="lex-samotkhe" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სამოთხე</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">სამოთხე, სასეირნო ადგილი, ბაღი.</def></sense>
+        </entry>
+        <entry xml:id="lex-saqme" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საქმე</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">საქმე, ქმედება; ახალი აღთქმის წიგნი.</def></sense>
+        </entry>
+        <entry xml:id="lex-saso" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სასო</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">იმედი.</def></sense>
+        </entry>
+        <entry xml:id="lex-sastsaul" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სასწაულ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">სასწაული, ნიშანი, საკვირველება.</def></sense>
+        </entry>
+        <entry xml:id="lex-saukune" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საუკუნე</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">მუდმივი, მარადიული.</def></sense>
+        </entry>
+        <entry xml:id="lex-satsnaur" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საცნაურ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">გასაგები, მისახვედრი; საცნობი, გამოსაცნობი.</def></sense>
+        </entry>
+        <entry xml:id="lex-slva" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სლვა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">სვლა, სიარული.</def></sense>
+        </entry>
+        <entry xml:id="lex-sopel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სოფელ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ქვეყანა, სამყარო.</def></sense>
+        </entry>
+        <entry xml:id="lex-suet" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სუეტ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">სვეტი, ბოძი.</def></sense>
+        </entry>
+        <entry xml:id="lex-trpial" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ტრფიალ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">მოსიყვარულე, მოყვარული.</def></sense>
+        </entry>
+        <entry xml:id="lex-ukhilav" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უხილავ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">დაუნახავი, უჩინარი.</def></sense>
+        </entry>
+        <entry xml:id="lex-uktsevel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უქცეველ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">უცვლელი, მტკიცე, შეურყეველი.</def></sense>
+        </entry>
+        <entry xml:id="lex-upro" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უფრო</orth></form>
+          <gramGrp><pos>adverb</pos></gramGrp>
+          <sense><def xml:lang="ka">უფრო მეტად.</def></sense>
+        </entry>
+        <entry xml:id="lex-utsq" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უწყ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ცოდნა.</def></sense>
+        </entry>
+        <entry xml:id="lex-qana" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ყანა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ყანა, სახნავი მინდორი.</def></sense>
+        </entry>
+        <entry xml:id="lex-qopa" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ყოფა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ყოფა, ქმნა, კეთება.</def></sense>
+        </entry>
+        <entry xml:id="lex-quab" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ქუაბ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">გამოქვაბული; ბინა გამოქვაბულში.</def></sense>
+        </entry>
+        <entry xml:id="lex-queqana" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ქუეყანა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">მიწა, ქვეყანა.</def></sense>
+        </entry>
+        <entry xml:id="lex-sheuginfebel124" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">შეუგინებელ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">შეუბილწველი, წმინდა, სიწმინდე.</def></sense>
+        </entry>
+        <entry xml:id="lex-shjul1" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">შჯულ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">კანონი, წესი; სამართალი; სარწმუნოება.</def></sense>
+        </entry>
+        <entry xml:id="lex-shueni1" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">შუენი</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">შვენის, შვენიერი, კეკლუცი.</def></sense>
+        </entry>
+        <entry xml:id="lex-tsiagh2" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">წიაღ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">კალთა, უბე.</def></sense>
+        </entry>
+        <entry xml:id="lex-tsqaro1" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">წყარო</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">წყარო.</def></sense>
+        </entry>
+        <entry xml:id="lex-zham" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ჟამ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">დრო, ხანი.</def></sense>
+        </entry>
+        <entry xml:id="lex-tskhtel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ცხოველ</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">ცოცხალი.</def></sense>
+        </entry>
+        <entry xml:id="lex-khar1" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ხარ</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ხარი, ნამუშევარი სულადობა.</def></sense>
+        </entry>
+        <entry xml:id="lex-ertoba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ერთობა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">ერთიანობა, შეერთება, მთლიანობა.</def></sense>
+        </entry>
+        <entry xml:id="lex-katsoba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">კაცობა</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">კაცი, ადამიანი; კაცური სახე.</def></sense>
+        </entry>
+
+        <!-- ══ Corpus-only entries ════════════════════════════════ -->
+        <entry xml:id="lex-erti" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ერთი</orth></form>
+          <gramGrp><pos>adjective</pos></gramGrp>
+          <sense><def xml:lang="ka">ერთი.</def></sense>
+        </entry>
+        <entry xml:id="lex-katsi" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">კაცი</orth></form>
+          <gramGrp><pos>noun</pos></gramGrp>
+          <sense><def xml:lang="ka">კაცი, ადამიანი.</def></sense>
+        </entry>
+
+        <!-- ══ Corpus-only entries (high-frequency, no Imnaishvili coverage) ═══ -->
+        <entry xml:id="lex-qaltsuli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ქალწული</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-madli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">მადლი</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-suli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">სული</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-nateli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ნათელი</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-ghmrteeba" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ღმრთეება</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-buneba" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ბუნება</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-ghmerti" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ღმერთი</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-simartle" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">სიმართლე</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-sartsmunoeba" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">სარწმუნოება</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-simdable" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">სიმდაბლე</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-sitsmide" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">სიწმიდე</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-bdzeni" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ბძენი</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-mortsmune" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">მორწმუნე</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-adgili" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ადგილი</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-zetsa" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ზეცა</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-sruli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">სრული</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-tsinatsarmetqveli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">წინაწარმეტყუელი</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-qalaqi" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ქალაქი</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-saqvareli" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">საყვარელი</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-tana" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">თანა</orth></form>
+          <gramGrp><pos>სხვ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-shina" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">შინა</orth></form>
+          <gramGrp><pos>სხვ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-meqseulad" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">მეყსეულად</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-cheshmaritad" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ჭეშმარიტად</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
 
       </div>
     </body>

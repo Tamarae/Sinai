@@ -74,6 +74,7 @@ class EntryData:
     sources_more:  int = 0
     bog_id:        str = ""
     olia_uri:      str = ""
+    source:        str = "corpus"   # entry-level provenance (e.g. "imnaishvili-1975")
 
 
 @dataclass
@@ -135,7 +136,19 @@ class LexiconParser:
         "pronoun": "pron",
         "conjunction": "conj",
         "preposition": "prep",
+        "postposition": "other",
         "particle": "part",
+        # Georgian abbreviations
+        "სახ.": "noun",
+        "ზმნ.": "verb",
+        "ზედ.": "adj",
+        "ზმნზ.": "adv",
+        "რცხ.": "num",
+        "ნაც.": "pron",
+        "კავ.": "conj",
+        "თანდ.": "other",
+        "ნაწ.": "part",
+        "სხვ.": "other",
     }
 
     GENDER_MAP = {"m": "m.", "f": "f.", "n": "n.", "m/n": "m./n.", "f/n": "f./n."}
@@ -176,6 +189,7 @@ class LexiconParser:
         xml_id  = _xml_id(el)
         corresp = _attr(el, "corresp", "")        # e.g. "bog:angelozi"
         bog_id  = corresp.replace("bog:", "") if corresp.startswith("bog:") else ""
+        source  = _attr(el, "source", "corpus")
 
         # Lemma
         form_el = el.find("tei:form[@type='lemma']/tei:orth", NS)
@@ -253,5 +267,5 @@ class LexiconParser:
             greek=greek, greek_alt=greek_alt, greek_logeion=greek_logeion,
             senses=senses, citation=citation, see_also=see_also,
             sources=sources, sources_more=sources_more,
-            bog_id=bog_id, olia_uri=olia_uri,
+            bog_id=bog_id, olia_uri=olia_uri, source=source,
         )

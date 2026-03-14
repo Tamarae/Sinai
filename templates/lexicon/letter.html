@@ -87,6 +87,13 @@
     /* ── Attestation count ─────────────────── */
     .attest-count { font-size: .65rem; color: #888; font-family: 'Noto Sans Georgian', sans-serif; letter-spacing: .03em; margin-bottom: .35rem; display: block; }
 
+    /* ── Source badge ──────────────────────── */
+    .src-badge { font-size: .55rem; letter-spacing: .07em; font-weight: 600; border-radius: 2px; padding: .15rem .45rem; background: #e3caca; color: white; }
+
+    /* ── Source filter chip ─────────────────── */
+    .src-chip { font-size: .65rem; letter-spacing: .07em; font-weight: 500; border: 1px solid #e3caca; border-radius: 2px; padding: .25rem .6rem; cursor: pointer; transition: background .12s, color .12s, border-color .12s; color: var(--ink-muted); background: white; }
+    .src-chip.on { background: #e3caca; color: white; border-color: #e3caca; }
+
     /* ── Copy-URI button ───────────────────── */
     .entry-copy { display: inline-flex; align-items: center; gap: .3rem; font-size: .62rem; font-family: 'Noto Sans Georgian', sans-serif; border: 1px solid #d8c8c8; border-radius: 2px; padding: .18rem .55rem; background: white; color: #888; cursor: pointer; transition: color .12s, border-color .12s; flex-shrink: 0; }
     .entry-copy:hover { color: var(--crimson); border-color: var(--crimson); }
@@ -130,9 +137,9 @@
     </div>
 </div>
 
-<!-- POS FILTER BAR -->
-<div class="bg-white border-b border-gray-100 px-4 py-2.5">
-    <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap">
+<!-- FILTER BARS -->
+<div class="bg-white border-b border-gray-100 px-4">
+    <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap py-2.5">
         <span class="text-xs text-gray-400 font-medium tracking-widest mr-1">მეტყველების ნაწილი | POS:</span>
         {% for pos in pos_list %}
         <button onclick="togglePOS(this, '{{ pos.id }}')"
@@ -140,6 +147,12 @@
                 data-pos="{{ pos.id }}">{{ pos.abbr }}</button>
         {% endfor %}
         <span class="ml-auto text-xs text-gray-400" id="count-label">{{ entries | length }} ნაჩვ.</span>
+    </div>
+    <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap py-2 border-t border-gray-50">
+        <span class="text-xs text-gray-400 font-medium tracking-widest mr-1">წყარო:</span>
+        <button onclick="toggleSRC(this, 'all')"   class="src-chip on" data-src="all">ყველა</button>
+        <button onclick="toggleSRC(this, 'imnaishvili-1975')" class="src-chip" data-src="imnaishvili-1975">იმნაიშვილი 1975</button>
+        <button onclick="toggleSRC(this, 'corpus')" class="src-chip" data-src="corpus">კორპუსი</button>
     </div>
 </div>
 
@@ -183,6 +196,7 @@
             <article class="entry-card p-4 sm:p-5"
                      id="{{ entry.xml_id }}"
                      data-pos="{{ entry.pos }}"
+                     data-source="{{ entry.source }}"
                      data-lemma="{{ entry.lemma | lower }}">
 
                 <!-- Entry header -->
@@ -206,6 +220,9 @@
 
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
+                        {% if entry.source == 'imnaishvili-1975' %}
+                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        {% endif %}
                         {% if entry.bog_id %}
                         <a href="https://bolis.tsu.ge/word/{{ entry.bog_id }}"
                            target="_blank" rel="noopener"
@@ -338,11 +355,19 @@
 {% block body_scripts %}
 <script>
 const activePOS = new Set({{ pos_list | map(attribute='id') | list | tojson }});
+var activeSRC = 'all';
 
 function togglePOS(btn, pos) {
     btn.classList.toggle('on');
     if (activePOS.has(pos)) activePOS.delete(pos);
     else activePOS.add(pos);
+    applyFilters();
+}
+
+function toggleSRC(btn, src) {
+    document.querySelectorAll('.src-chip').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    activeSRC = src;
     applyFilters();
 }
 
@@ -354,9 +379,10 @@ function applyFilters() {
     let visible = 0;
     document.querySelectorAll('.entry-card').forEach(card => {
         const posOk    = activePOS.has(card.dataset.pos);
+        const srcOk    = activeSRC === 'all' || card.dataset.source === activeSRC;
         const searchOk = !q || card.dataset.lemma.includes(q)
                               || card.textContent.toLowerCase().includes(q);
-        const show     = posOk && searchOk;
+        const show     = posOk && srcOk && searchOk;
         card.style.display = show ? '' : 'none';
         if (show) visible++;
     });
