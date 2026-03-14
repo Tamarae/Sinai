@@ -252,29 +252,39 @@
             <persName xml:lang="ka">ტიმოთე ხუცი იერუსალემელი</persName>
             <persName xml:lang="la">Timotheus presbyter Hierosolymitanus</persName>
             <floruit notBefore="0400" notAfter="0500"/>
-            <!-- CPG range: 7406–7410 -->
-            <idno type="CPG">7406</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">249522050</idno>
+            <!-- CPG range: 7406–7410 
+            <idno type="CPG">249522050</idno>-->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=F27E8B643A4D4E828AEE50B327E1F912</idno>
+            <idno type="TM">3841</idno>
+            
+      
           </person>
           
           <person xml:id="aut-severian-gabala">
             <persName xml:lang="ka">სებერიანოს გაბალონელი</persName>
             <persName xml:lang="la">Severianus Gabalensis</persName>
             <death when="0408"/>
-            <idno type="VIAF">27422228</idno>
-            <!-- CPG range: 4185–4236 -->
-            <idno type="CPG">4185</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">224699772</idno>
+            <!-- CPG range: 4185–4236
+            <idno type="CPG">4185</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=F81A1A00459346E2A98ACE0865DC77EC</idno>
+            <idno type="TM">841</idno>
+            <idno type="URI" subtype="PseudoChrys">https://www.trismegistos.org/pseudo-chrysostomica/author/7</idno>
+            
           </person>
           
           <person xml:id="aut-meletios-antioch">
             <persName xml:lang="ka">მელეტი ანტიოქელი</persName>
             <persName xml:lang="la">Meletius Antiochenus</persName>
             <death when="0381"/>
-            <idno type="VIAF"></idno>
-            <!-- CPG range: 3420–3426 -->
-            <idno type="CPG">3420</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">103016603</idno>
+            <!-- CPG range: 3420–3426
+            <idno type="CPG">3420</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=596B0908AF924912AB086C88E19C24AA</idno>
+            <idno type="TM">568</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/1919</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S01192</idno>
           </person>
           
           <person xml:id="aut-meletios-episc">
@@ -289,10 +299,12 @@
             <persName xml:lang="la">Ephraem Syrus</persName>
             <birth when="0306"/><death when="0373"/>
             <idno type="VIAF">100177778</idno>
-            <!-- CPG range: 3905–4175 -->
-            <idno type="CPG">3905</idno>
-            <idno type="TM"></idno>
+            <!-- CPG range: 3905–4175 
+            <idno type="CPG">3905</idno>-->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=44152165D71F4C349BA93E6EA75EF17F</idno>
+            <idno type="TM">273</idno>
             <idno type="URI" subtype="Syriaca">https://syriaca.org/person/13</idno>
+            
           </person>
           
           <person xml:id="aut-anon">
@@ -308,7 +320,8 @@
           <!-- Appendix authors -->
           <person xml:id="aut-ioane-zosime">
             <persName xml:lang="ka">იოანე-ზოსიმე</persName>
-            <floruit notBefore="0950" notAfter="1000"/>
+            <floruit notAfter="0990"/>
+            <idno type="VIAF">310589464</idno>
             <note>ავტ. "ქება და დიდება ქართულისა ენისაი"</note>
           </person>
           
