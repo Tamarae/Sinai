@@ -159,7 +159,7 @@
             </div>
 
             <!-- Letter nav — links to other letter pages -->
-            <p class="text-xs tracking-widest text-gray-400 font-medium mb-2">ᲐᲜᲑᲐᲜᲘ</p>
+            <p class="text-xs tracking-widests text-gray-400 font-medium mb-2">ᲐᲜᲑᲐᲜᲘ</p>
             <nav class="flex flex-col gap-0.5">
                 {% for l in alphabet %}
                 <a href="{{ geo_slug[l] }}.html"
@@ -222,7 +222,7 @@
                            class="ext-link-badge olia-badge">OLiA</a>
                         {% endif %}
                         <button class="entry-copy"
-                                onclick="copyEntryURI(this, '{{ slug }}', '{{ entry.xml_id }}')">
+                                onclick="copyEntryURI(this, '{{ geo_slug[letter] }}', '{{ entry.xml_id }}')">
                             <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
                             URI
                         </button>
@@ -253,7 +253,7 @@
                 {% if atts %}
                 {% set text_count = atts | map(attribute='text_id') | unique | list | length %}
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widest text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">{{ atts | length }} · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · {{ text_count }} ტექსტში</span></p>
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">{{ atts | length }} · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · {{ text_count }} ტექსტში</span></p>
                     <div class="flex flex-col gap-2" id="atts-{{ entry.xml_id }}">
                         {% for att in atts %}
                         <div{% if loop.index > 5 %} class="att-extra" style="display:none"{% endif %}>

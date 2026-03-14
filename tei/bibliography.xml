@@ -37,7 +37,6 @@
             <note>ბეჭდური გამოცემის ამოსავალი წყარო</note>
           </biblStruct>
 
-
         </listBibl>
 
         <!-- PRIMARY SOURCES — CRITICAL EDITIONS -->
@@ -240,6 +239,23 @@
               <biblScope unit="series">Publications de l'Institut Orientaliste de Louvain 10</biblScope>
             </monogr>
           </biblStruct>
+
+          <biblStruct xml:id="bib-gippert2011">
+            <analytic>
+              <author><surname>Gippert</surname><forename>Jost</forename></author>
+              <title level="a">Towards a Typology of the Use of Coloured Ink in Old Georgian Manuscripts</title>
+            </analytic>
+            <monogr>
+              <title level="j">Manuscript Cultures</title>
+              <imprint>
+                <publisher>Centre for the Study of Manuscript Cultures, Universität Hamburg</publisher>
+                <date when="2011">2011</date>
+              </imprint>
+              <biblScope unit="issue">3</biblScope>
+            </monogr>
+            <ref target="https://www.csmc.uni-hamburg.de/publications/mc/files/articles/mc03-gippert.pdf"/>
+          </biblStruct>
+
         </listBibl>
 
         <!-- DIGITAL HUMANITIES / ENCODING -->

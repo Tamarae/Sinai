@@ -234,10 +234,17 @@ class BibliographyParser:
             if ext is not None:
                 entry.extent = self._text(ext)
 
-            # <ref target="...">
+            # <ref> inside <monogr> (e.g. bib-tei-p5)
             ref = monogr.find("tei:ref", NS)
             if ref is not None:
                 entry.url = ref.get("target", "")
+
+        # ── <ref> as direct child of <biblStruct> ─────
+        # Covers cases like bib-gippert2011 where <ref> sits beside <analytic>/<monogr>
+        if not entry.url:
+            top_ref = el.find("tei:ref", NS)
+            if top_ref is not None:
+                entry.url = top_ref.get("target", "")
 
         # ── <idno> ────────────────────────────────────
         for idno in el.iter("{http://www.tei-c.org/ns/1.0}idno"):
