@@ -205,10 +205,13 @@
             <persName xml:lang="la">Iohannes Chrysostomus</persName>
             <persName xml:lang="en">John Chrysostom</persName>
             <birth when="0349"/><death when="0407"/>
-            <idno type="VIAF">297475035</idno>
-            <!-- CPG range: 4000–5197 -->
-            <idno type="CPG">4000</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">305214868</idno>
+            <!-- CPG range: 4000–5197
+            <idno type="CPG">4000</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=F585A204A69B4B1FB39DA341148806F8</idno>
+            <idno type="TM">416</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/573</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00779</idno>
           </person>
           
           <person xml:id="aut-iohannes-cpl">
@@ -223,20 +226,26 @@
             <persName xml:lang="ka">კირილე იერუსალემელი</persName>
             <persName xml:lang="la">Cyrillus Hierosolymitanus</persName>
             <birth when="0313"/><death when="0386"/>
-            <idno type="VIAF">89397828</idno>
-            <!-- CPG range: 3585–3678 -->
-            <idno type="CPG">3585</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">2437490</idno>
+            <!-- CPG range: 3585–3678 
+            <idno type="CPG">3585</idno>-->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=3C2FEF548B9A41858BD7DC3F4AAD8C4E</idno>
+            <idno type="TM">506</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/431</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S01569</idno>
           </person>
           
           <person xml:id="aut-hesychios-hier">
             <persName xml:lang="ka">ევსუქი ხუცი იერუსალემელი</persName>
             <persName xml:lang="la">Hesychius presbyter Hierosolymitanus</persName>
             <floruit notBefore="0400" notAfter="0450"/>
-            <idno type="VIAF"></idno>
-            <!-- CPG range: 6551–6602 -->
-            <idno type="CPG">6551</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">262453640</idno>
+            <!-- CPG range: 6551–6602
+            <idno type="CPG">6551</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=E42D147C2150411194093D9BF6B16A33</idno>
+            <idno type="TM">382</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/2510</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=E05886</idno>
           </person>
           
           <person xml:id="aut-timotheus-hier">
