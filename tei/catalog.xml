@@ -151,30 +151,39 @@
             <persName xml:lang="la">Athanasius Alexandrinus</persName>
             <persName xml:lang="en">Athanasius of Alexandria</persName>
             <birth when="0296"/><death when="0373"/>
-            <idno type="VIAF">13651211</idno>
-            <!-- CPG range: 2090–2309 -->
-            <idno type="CPG">2090</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">105155222</idno>
+            <!-- CPG range: 2090–2309
+            <idno type="CPG">2090</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=67C4922D844248DC84B2952F2CDAB3B3</idno>
+            <idno type="TM">134</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/354</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00294</idno>
           </person>
           
           <person xml:id="aut-proklos-cpl">
             <persName xml:lang="ka">პროკლე კოსტანტინეპოლელი</persName>
             <persName xml:lang="la">Proclus Constantinopolitanus</persName>
             <death when="0446"/>
-            <idno type="VIAF"></idno>
-            <!-- CPG range: 5800–5860 -->
-            <idno type="CPG">5800</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">102329138</idno>
+            <!-- CPG range: 5800–5860
+            <idno type="CPG">5800</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=602DCB9DC3CC4F2D825CEBBCAD54EF6F</idno>
+            <idno type="TM">721</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/688</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=E05457</idno>
           </person>
           
           <person xml:id="aut-epiphanius-cypros">
             <persName xml:lang="ka">ეპიფანე კვიპრელი</persName>
             <persName xml:lang="la">Epiphanius Cypriensis</persName>
             <birth when="0310"/><death when="0403"/>
-            <idno type="VIAF">95155322</idno>
-            <!-- CPG range: 3744–3807 -->
-            <idno type="CPG">3744</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">13651211</idno>
+            <!-- CPG range: 3744–3807
+            <idno type="CPG">3744</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=7FDD8A122698492480FF5F0B18B47555</idno>
+            <idno type="TM">277</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/477</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00215</idno>
           </person>
           
           <person xml:id="aut-basil-caesarea">
@@ -183,9 +192,12 @@
             <persName xml:lang="en">Basil of Caesarea</persName>
             <birth when="0329"/><death when="0379"/>
             <idno type="VIAF">88967224</idno>
-            <!-- CPG range: 2835–3005 -->
-            <idno type="CPG">2835</idno>
-            <idno type="TM"></idno>
+            <!-- CPG range: 2835–3005
+            <idno type="CPG">2835</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=F4E7E5A3D24F453C944DA514509B1563</idno>
+            <idno type="TM">154</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/376</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00780</idno>
           </person>
           
           <person xml:id="aut-chrysostom">
