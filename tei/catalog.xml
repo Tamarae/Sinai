@@ -124,25 +124,26 @@
             <persName xml:lang="la">Gregorius Thaumaturgus Neocaesariensis</persName>
             <persName xml:lang="en">Gregory the Wonderworker of Neocaesarea</persName>
             <floruit notBefore="0213" notAfter="0270"/>
-            <idno type="VIAF">105863911</idno>
-            <!-- CPG range: 1763–1783 -->
-            <idno type="CPG">1763</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">88726043</idno>
+            <!-- CPG range: 1763–1783
+            <idno type="CPG">1763</idno> -->
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=9BE212B07BAE48A6B30DD40012714700</idno>
+            <idno type="TM">347</idno>
             <idno type="URI" subtype="Syriaca">http://syriaca.org/person/513</idno>
             <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00687</idno>
-            <!-- add URI links below as needed, e.g.:
-            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S00687</idno>
-            -->
           </person>
           
           <person xml:id="aut-antipater-bostra">
             <persName xml:lang="ka">ანთიპატრ ბოსტრელი</persName>
             <persName xml:lang="la">Antipater Bostrensis</persName>
             <floruit notBefore="0400" notAfter="0460"/>
-            <idno type="VIAF"></idno>
-            <!-- CPG range: 6686–6694 -->
-            <idno type="CPG">6686</idno>
-            <idno type="TM"></idno>
+            <idno type="VIAF">17613822</idno>
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=7EA8EEF846A9467D852B13C7A53E38AF</idno>
+            <!-- CPG range: 6686–6694 
+            <idno type="CPG">6686</idno>-->
+            <idno type="TM">74</idno>
+            <idno type="URI" subtype="Syriaca">http://syriaca.org/person/2796</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/record.php?recid=S01645</idno>
           </person>
           
           <person xml:id="aut-athanasius-alex">
