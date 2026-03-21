@@ -1373,8 +1373,8 @@
           <gramGrp><pos>სახ.</pos></gramGrp>
           <sense><def xml:lang="ka"></def></sense>
         </entry>
-        <entry xml:id="lex-ghmerti" source="corpus" type="common">
-          <form type="lemma"><orth xml:lang="ka">ღმერთი</orth></form>
+        <entry xml:id="lex-ghmert" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ღმერთ</orth></form>
           <gramGrp><pos>სახ.</pos></gramGrp>
           <sense><def xml:lang="ka"></def></sense>
         </entry>
@@ -1456,6 +1456,11 @@
         <entry xml:id="lex-cheshmaritad" source="corpus" type="common">
           <form type="lemma"><orth xml:lang="ka">ჭეშმარიტად</orth></form>
           <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka"></def></sense>
+        </entry>
+        <entry xml:id="lex-cheshmarit" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">ჭეშმარიტ</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
           <sense><def xml:lang="ka"></def></sense>
         </entry>
 

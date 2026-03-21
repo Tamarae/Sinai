@@ -241,6 +241,12 @@ class TextParser:
                 else:
                     parts.append(word)
 
+            elif tag == "quote":
+                source = child.get("source", "").lstrip("#")
+                inner = "".join(self._render_children(child, par_id, par_n))
+                source_attr = f' data-source="{html_lib.escape(source)}"' if source else ""
+                parts.append(f'<span class="geo-quote"{source_attr}>{inner}</span>')
+
             else:
                 inner = "".join(self._render_children(child, par_id, par_n))
                 parts.append(inner)

@@ -21,6 +21,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700&family=Noto+Serif+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
+        /* ── DM-Archium: Asomtavruli (U+10A0–U+10C5) + Nuskhuri (U+2D00–U+2D2F) ── */
+        @font-face {
+            font-family: 'DM-Archium';
+            src: url('static/fonts/DM-Archium.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+            unicode-range: U+10A0-10C5, U+2D00-2D2F;
+        }
+
         :root {
             --crimson:      #7a1a1a;
             --crimson-light:#9b2c2c;
@@ -36,8 +46,20 @@
         /* ── Base ─────────────────────── */
         body { font-family:'Noto Sans Georgian', sans-serif; background:var(--parchment); color:var(--ink); }
         .font-serif-geo { font-family:'Noto Serif Georgian', Georgia, serif; }
-        .asomtavruli    { font-family:'Noto Serif Georgian', Georgia, serif; font-weight:700; letter-spacing:.04em; }
-        .greek          { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
+
+        /* Asomtavruli: DM-Archium first, Noto Serif Georgian as fallback */
+        .asomtavruli {
+            font-family: 'DM-Archium', 'Noto Serif Georgian', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: .04em;
+        }
+
+        /* Nuskhuri: DM-Archium first, Noto Serif Georgian as fallback */
+        .nuskhuri {
+            font-family: 'DM-Archium', 'Noto Serif Georgian', Georgia, serif;
+        }
+
+        .greek { font-family:'Times New Roman', Georgia, serif; font-style:italic; }
 
         /* ── Nav ─────────────────────── */
         .nav-link { position:relative; letter-spacing:.07em; }
@@ -141,8 +163,8 @@
 
             <a href="index.html" class="group">
                 <span class="text-lg leading-none select-none tracking-wide
-                             text-gray-700 group-hover:text-gray-900 transition-colors">
-                    <span style="color:var(--crimson);" class="font-bold">Ⴑ</span>ႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
+                             text-gray-700 group-hover:text-gray-900 transition-colors asomtavruli">
+                    <span style="color:var(--crimson);">Ⴑ</span>ႨႬႳႰႨ ႫႰႠႥႠႪႧႠႥႨ
                 </span>
             </a>
 
