@@ -55,9 +55,9 @@
       <div type="text" xml:id="inventio-stephani-body">
 
         <!-- Title / Head -->
-        <head>
-          <lb n="1"/>პოვნაჲ წმიდისა სტეფანჱსი, რჩეულისა მის მსახურისაჲ
-          <lb n="2"/>და პირველ-მოწამისაჲ
+        <head type="rubric">
+          <lb n="1"/>ႮႭႥႬႠჂ ႼႫႨႣႨႱႠ ႱႲႤႴႠႬჁႱႨ, ႰႹႤႳႪႨႱႠ ႫႨႱ ႫႱႠႾႳႰႨႱႠჂ
+          <lb n="2"/>ႣႠ ႮႨႰႥႤႪ-ႫႭႼႠႫႨႱႠჂ
         </head>
 
         <!-- Salutation Paragraph -->

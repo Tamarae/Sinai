@@ -53,8 +53,8 @@
     <body>
       <div type="text" xml:id="ephr-markhva-body">
         
-        <head>
-          <hi rend="rubric">მარხვისათჳს</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႧႵႳႫႳႪႨ ႤႴႰႤႫႨႱႨ ႫႠႰႾႥႨႱႠႧႥႨႱ</hi>
         </head>
         
         <!-- ¶ 1 -->

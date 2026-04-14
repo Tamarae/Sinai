@@ -53,8 +53,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-natlisgeba-okropiri-body">
-        <head>
-          <hi rend="rubric">თქმული იოვანე ოქროპირისაჲ, ნათლის-ღებისათჳსვე</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႧႵႫႳႪႨ ႨႭႥႠႬႤ ႭႵႰႭႮႨႰႨႱႠჂ, ႬႠႧႪႨႱ-ႶႤႡႨႱႠႧჃႱႥႤ</hi>
         </head>
         
         <!-- ¶ 1 -->

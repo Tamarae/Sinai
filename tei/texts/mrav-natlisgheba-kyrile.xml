@@ -55,8 +55,8 @@
       <div type="text" xml:id="baptism-body">
         
         <!-- Rubric / Heading -->
-        <head>
-          <hi rend="rubric">დ̂. თქუმული კჳრილჱსი, ნათლის-ღებისათჳს უფლისა ჩუენისა იესუ ქრისტჱსა</hi>
+        <head type="rubric">
+          <hi rend="rubric">Ⴃ. ႧႵႳႫႳႪႨ ႩჃႰႨႪჁႱႨ, ႬႠႧႪႨႱ-ႶႤႡႨႱႠႧჃႱ ႳႴႪႨႱႠ ႹႳႤႬႨႱႠ ႨႤႱႳ ႵႰႨႱႲჁႱႠ</hi>
         </head>
         
         <!-- ¶ 1 -->

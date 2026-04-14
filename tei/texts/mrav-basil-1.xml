@@ -53,10 +53,21 @@
     <body>
       <div type="text" xml:id="mrav-basili-1-body">
         
-        <!-- Rubric -->
-        <head>
-          <hi rend="rubric">თ̃ა იანვარსა: ა: წმიდისა ბასილისი. სიტყუაჲ ბასილი მთავარ-ეპისკოპოსისათჳს</hi>
+    
+        
+        <!-- Dateline (liturgical calendar entry) -->
+        <head type="dateline">
+          <hi rend="asomtavruli">
+            <hi rend="initial">Ⴇ</hi>ⴀ ⴈⴀⴌⴅⴀⴐⴑⴀ <num type="georgian">: Ⴀ :</num> ⴜⴋⴈⴃⴈⴑⴀ ⴁⴀⴑⴈⴊⴈⴑⴈ
+          </hi>
         </head>
+        
+        <!-- Rubric -->
+        <head type="rubric">
+          <hi rend="rubric">ႱႨႲႷႳႠჂ ႡႠႱႨႪႨ ႫႧႠႥႠႰ-ႤႮႨႱႩႭႮႭႱႨႱႠႧჃႱ</hi>
+        </head>
+        
+        
         
         <!-- ¶ 1 -->
         <p xml:id="p1" n="1">

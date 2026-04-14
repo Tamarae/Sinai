@@ -65,9 +65,9 @@
       <div type="text" xml:id="proclus-hom-body">
         
         <!-- Title/Rubric -->
-        <head>
-          <hi rend="rubric">ნეტარისა პროკლესი, კოსტანტინელ<note type="editor">1*</note> ეპისკოპოსისაჲ, 
-            ღმრთის-მშობელისათჳს თქუმული</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႬႤႲႠႰႨႱႠ ႮႰႭႩႪႤႱႨ, ႩႭႱႲႠႬႲႨႬႤႪ<note type="editor">1*</note> ႤႮႨႱႩႭႮႭႱႨႱႠჂ, 
+            ႶႫႰႧႨႱ-ႫႸႭႡႤႪႨႱႠႧჃႱ ႧႵႳႫႳႪႨ</hi>
         </head>
         
         <!-- ¶ 1 -->

@@ -38,8 +38,10 @@
     
     <encodingDesc>
       <editorialDecl>
-        <p>Asomtavruli initial letters are preserved within &lt;hi rend="initial"&gt;. 
-          Paragraphs (p) follow logical thematic breaks and initial letter marks.</p>
+        <p>Asomtavruli initial letters are preserved within &lt;hi rend="initial"&gt;,
+          wrapping the single opening capital only. The remaining text in the dateline
+          and rubric is wrapped in &lt;hi rend="asomtavruli"&gt;. Paragraphs (p) follow
+          logical thematic breaks and initial letter marks.</p>
       </editorialDecl>
       <variantEncoding method="location-referenced" location="internal"/>
     </encodingDesc>
@@ -49,10 +51,16 @@
     <body>
       <div type="text" xml:id="mart-iaqob-body">
         
-        <!-- Heading / Rubric -->
-        <head>
-          <lb n="1"/><hi rend="rubric">თ̃ა დეკენბერსა კ̂ვ</hi>
-          <lb n="2"/><hi rend="rubric">წმიდისა იაკობ მოციქულისა და უფლისა საკითხავი</hi>
+        <!-- Dateline (liturgical calendar entry) -->
+        <head type="dateline">
+          <hi rend="asomtavruli">
+            <hi rend="initial">Ⴇ</hi>ⴀ ⴃⴄⴉⴄⴌⴁⴄⴐⴑⴀ <num type="georgian">Ⴉ Ⴅ</num>
+          </hi>
+        </head>
+        
+        <!-- Rubric -->
+        <head type="rubric">
+          <hi rend="rubric">ႼႫႨႣႨႱႠ ႨႠႩႭႡ ႫႭႺႨႵႳႪႨႱႠ Ⴃ Ⴀ ႳႴႪႨႱႠ ႱႠႩႨႧႾႠႥႨ</hi>
         </head>
         
         <!-- ¶ 1 -->
