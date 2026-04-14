@@ -43,9 +43,10 @@
     <text>
         <body>
             <div type="text" xml:id="antipater-zachariae-body">
-                <head>
-                    <lb n="2"/><hi rend="rubric">თქმულნი წმიდისა ანთიპატროს<note n="1*"/> ბოსტრელ ეპისკოპოსისაჲ</hi>
-                    <lb n="3"/><hi rend="rubric">წმიდისა ღმრთის-მშობლისათჳს და ზაქარიაჲს დადუმებისათჳს</hi>
+                <head type="rubric">
+                    <lb n="1"/><hi rend="rubric">ႱႠႩႨႧႾႠႥႬႨ</hi>
+                    <lb n="2"/><hi rend="rubric">ႧႵႫႳႪႬႨ ႼႫႨႣႨႱႠ ႠႬႧႨႮႠႲႰႭႱ<note n="1*"/> ႡႭႱႲႰႤႪ ႤႮႨႱႩႭႮႭႱႨႱႠჂ</hi>
+                    <lb n="3"/><hi rend="rubric">ႼႫႨႣႨႱႠ ႶႫႰႧႨႱ-ႫႸႭႡႪႨႱႠႧჃႱ ႣႠ ႦႠႵႠႰႨႠჂႱ ႣႠႣႳႫႤႡႨႱႠႧჃႱ</hi>
                 </head>
 
                 <pb n="24" ed="edition"/>

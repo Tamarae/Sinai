@@ -264,6 +264,22 @@ def copy_static():
 
 
 # ─────────────────────────────────────────────────────
+# 8.  SYNC build/ → docs/  (GitHub Pages source)
+# ─────────────────────────────────────────────────────
+def copy_docs():
+    import shutil
+    src = BUILD_DIR
+    dst = ROOT / "docs"
+    if not src.exists():
+        print("\n[docs] — skipped (build/ not found)")
+        return
+    if dst.exists():
+        shutil.rmtree(dst)
+    shutil.copytree(src, dst)
+    print(f"\n[docs] build/ → docs/")
+
+
+# ─────────────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────────────
 def main():
@@ -302,8 +318,8 @@ def main():
     if full_build or args.research:
         build_research()
 
-    if full_build:
-        copy_static()
+    copy_static()
+    copy_docs()
 
     print("\n✓ done")
 

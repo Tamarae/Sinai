@@ -61,8 +61,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-kharbeba-3-body">
-        <head>
-          <hi rend="rubric">მისივე თქმული, მესამჱ</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႫႨႱႨႥႤ ႧႵႫႳႪႨ, ႫႤႱႠႫჁ</hi>
         </head>
         
         <!-- ¶ 1 -->

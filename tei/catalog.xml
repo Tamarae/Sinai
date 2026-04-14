@@ -594,7 +594,7 @@
                  corresp="#feast-nativity"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული ათანასი ალექსანდრიელისა — შობა</label>
-            <desc xml:lang="ka">თქუმული წმ. ათანასი ალექსანდრიელ მთავარეპისკოპოსისაი, ვითარ კაც იქმნა უფალი ჩuენი იესუ ქრისტე</desc>
+            <desc xml:lang="ka">თქუმული წმ. ათანასი ალექსანდრიელ მთავარეპისკოპოსისაი, ვითარ კაც იქმნა უფალი ჩუენი იესუ ქრისტე</desc>
             <note type="author" corresp="#aut-athanasius-alex"/>
             <date type="feast" when="--12-25"/>
             <msDesc>
