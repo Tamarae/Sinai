@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
     <text>
         <body>
             <div type="text" xml:id="mrav-sulthmofenoba-2-body">
-                <head>
-                    <hi rend="rubric">მეორჱ<note n="1">1*</note> თქუმული კირილე მთავარეპისკოპოსისა იერუსალემელისაჲ<note n="2">2*</note> რაჟამს-იგი მოვიდა წმიდათა მოციქულთა ზედა სული წმიდაჲ</hi>
+                <head type="rubric">
+                    <hi rend="rubric">ႫႤႭႰჁ<note n="1">1*</note> ႧႵႳႫႳႪႨ ႩႨႰႨႪႤ ႫႧႠႥႠႰႤႮႨႱႩႭႮႭႱႨႱႠ ႨႤႰႳႱႠႪႤႫႤႪႨႱႠჂ<note n="2">2*</note> ႰႠႯႠႫႱ-ႨႢႨ ႫႭႥႨႣႠ ႼႫႨႣႠႧႠ ႫႭႺႨႵႳႪႧႠ ႦႤႣႠ ႱႳႪႨ ႼႫႨႣႠჂ</hi>
                 </head>
                 
                 <p xml:id="p1" n="1">

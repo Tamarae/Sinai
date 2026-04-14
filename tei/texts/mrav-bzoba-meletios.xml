@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-bzoba-meletios-body">
-        <head>
-          <hi rend="rubric">თქუმული წმიდისა მელეტი ანტიოქიელ ებისკოპოსისაჲ, ბზობისათჳს და შესხმისა ყრმათაჲსა</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႧႵႳႫႳႪႨ ႼႫႨႣႨႱႠ ႫႤႪႤႲႨ ႠႬႲႨႭႵႨႤႪ ႤႡႨႱႩႭႮႭႱႨႱႠჂ, ႡႦႭႡႨႱႠႧჃႱ ႣႠ ႸႤႱႾႫႨႱႠ ႷႰႫႠႧႠჂႱႠ</hi>
         </head>
         
         <p xml:id="p1" n="1">

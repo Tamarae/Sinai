@@ -73,8 +73,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
     <text>
         <body>
             <div type="text" xml:id="mrav-dormition-1-body">
-                <head>
-                    <hi rend="rubric">Ⴇქუმული წმიდისა და ნეტარისა<note n="1">1*</note> მამისა ჩუენისა იოვანე ოქროპირისაჲ<note n="2">2*</note> გარდაცვალებისათჳს წმიდისა ღმრთის-მშობელისა<note n="3">3*</note></hi>
+                <head type="rubric">
+                    <hi rend="rubric">ႧႵႳႫႳႪႨ ႼႫႨႣႨႱႠ ႣႠ ႬႤႲႠႰႨႱႠ ႫႠႫႨႱႠ ႹႳႤႬႨႱႠ ႨႭႥႠႬႤ ႭႵႰႭႮႨႰႨႱႠჂ ႢႠႰႣႠႺႥႠႪႤႡႨႱႠႧჃႱ ႼႫႨႣႨႱႠ ႶႫႰႧႨႱ-ႫႸႭႡႤႪႨႱႠ</hi>
                 </head>
                 
                 <p xml:id="p1" n="1">

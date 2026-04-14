@@ -167,16 +167,31 @@ class TextParser:
                 chunks.append(self._render_head(head_el))
             for p_el in div.findall("tei:p", NS):
                 chunks.append(self._render_paragraph(p_el))
+            # ── CHANGE 1: render <trailer> if present ──────────────────────
+            trailer_el = div.find("tei:trailer", NS)
+            if trailer_el is not None:
+                chunks.append(self._render_trailer(trailer_el))
         return "\n".join(chunks)
 
     def _render_head(self, head_el: ET.Element) -> str:
         head_type = head_el.get("type", "")
-        inner = "".join(self._render_children(head_el, "", ""))
+        # lb_as_br=True: <lb> elements inside rubric/dateline become <br>
+        inner = "".join(self._render_children(head_el, "", "", lb_as_br=True))
         if head_type == "rubric":
             return f'<div class="ms-rubric">{inner}</div>'
         if head_type == "dateline":
             return f'<div class="ms-dateline">{inner}</div>'
         return f'<div class="ms-head">{inner}</div>'
+
+    # ── CHANGE 2: new _render_trailer method ───────────────────────────────
+    def _render_trailer(self, trailer_el: ET.Element) -> str:
+        # lb_as_br=True so manuscript line structure is visible in the explicit
+        inner = "".join(self._render_children(trailer_el, "", "", lb_as_br=True))
+        return (
+            '<div class="ms-trailer font-serif-geo text-center mt-8 pt-4 '
+            'border-t border-gray-200 text-sm italic text-gray-500">'
+            f'{inner}</div>'
+        )
 
     def _render_paragraph(self, p_el: ET.Element) -> str:
         par_id = _xml_id_attr(p_el) or f"p{id(p_el)}"
@@ -188,8 +203,14 @@ class TextParser:
         inner = "".join(parts)
         return f'<p id="{par_id}">{inner}</p>'
 
-    def _render_children(self, el: ET.Element, par_id: str, par_n: str) -> list:
-        """Recursively render children of an element to HTML strings."""
+    def _render_children(self, el: ET.Element, par_id: str, par_n: str,
+                          lb_as_br: bool = False) -> list:
+        """Recursively render children of an element to HTML strings.
+
+        lb_as_br: when True, <lb> elements emit <br> instead of being dropped.
+                  Pass True for head and trailer contexts; leave False (default)
+                  for paragraph body so text reflows as prose.
+        """
         parts = []
 
         # Text before first child
@@ -215,7 +236,8 @@ class TextParser:
 
             elif tag == "hi":
                 rend  = child.get("rend", "")
-                inner = "".join(self._render_children(child, par_id, par_n))
+                # ── propagate lb_as_br into nested hi elements ──────────────
+                inner = "".join(self._render_children(child, par_id, par_n, lb_as_br))
                 if rend == "initial":
                     parts.append(
                         f'<span class="geo-initial" style="color:var(--crimson);'
@@ -230,7 +252,10 @@ class TextParser:
                     parts.append(f'<em>{inner}</em>')
 
             elif tag == "lb":
-                pass  # line break — reflow in CSS
+                # ── CHANGE 3: emit <br> in head/trailer; drop in paragraphs ─
+                if lb_as_br:
+                    parts.append("<br>")
+                # else: pass — reflow in CSS
 
             elif tag == "w":
                 lemma_ref = child.get("lemma", "")
@@ -243,12 +268,14 @@ class TextParser:
 
             elif tag == "quote":
                 source = child.get("source", "").lstrip("#")
-                inner = "".join(self._render_children(child, par_id, par_n))
+                # ── propagate lb_as_br into quotes ──────────────────────────
+                inner = "".join(self._render_children(child, par_id, par_n, lb_as_br))
                 source_attr = f' data-source="{html_lib.escape(source)}"' if source else ""
                 parts.append(f'<span class="geo-quote"{source_attr}>{inner}</span>')
 
             else:
-                inner = "".join(self._render_children(child, par_id, par_n))
+                # ── propagate lb_as_br into any other inline element ────────
+                inner = "".join(self._render_children(child, par_id, par_n, lb_as_br))
                 parts.append(inner)
 
             if child.tail:

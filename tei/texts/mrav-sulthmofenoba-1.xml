@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
     <text>
         <body>
             <div type="text" xml:id="mrav-sulthmofenoba-1-body">
-                <head>
-                    <hi rend="rubric">საკითხავნი მარტჳლიისანი: თქუმული იოვანე მთავარეპისკოპოსისაჲ დღისა მისთჳს რომელსა მოევლინა სული წმიდაჲ</hi>
+                <head type="rubric">
+                    <hi rend="rubric">ႱႠႩႨႧႾႠႥႬႨ ႫႠႰႲჃႪႨႨႱႠႬႨ: ႧႵႳႫႳႪႨ ႨႭႥႠႬႤ ႫႧႠႥႠႰႤႮႨႱႩႭႮႭႱႨႱႠჂ ႣႶႨႱႠ ႫႨႱႧჃႱ ႰႭႫႤႪႱႠ ႫႭႤႥႪႨႬႠ ႱႳႪႨ ႼႫႨႣႠჂ</hi>
                 </head>
                 
                 <p xml:id="p1" n="1">

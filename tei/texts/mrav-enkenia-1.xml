@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-enkenia-1-body">
-        <head>
-          <hi rend="rubric">Ⴑაკითხავნი, თქუმული წმიდისა და ნეტარისა მამისა ჩუენისა იოვანე ოქროპირისაჲ სატფურებისათჳს</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႱႠႩႨႧႾႠႥႬႨ ႧႵႳႫႳႪႨ ႼႫႨႣႨႱႠ ႣႠ ႬႤႲႠႰႨႱႠ ႫႠႫႨႱႠ ႹႳႤႬႨႱႠ ႨႭႥႠႬႤ ႭႵႰႭႮႨႰႨႱႠჂ ႱႠႲႴႳႰႤႡႨႱႠႧჃႱ</hi>
         </head>
         
         <p xml:id="p1" n="1">

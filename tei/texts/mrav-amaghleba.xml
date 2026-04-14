@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-amaghleba-body">
-        <head>
-          <hi rend="rubric">საკითხავნი ამაღლებისანი, თქუმული იოვანე ოქროპირისაჲ</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႱႠႩႨႧႾႠႥႬႨ ႠႫႠႶႪႤႡႨႱႠႬႨ, ႧႵႳႫႳႪႨ ႨႭႥႠႬႤ ႭႵႰႭႮႨႰႨႱႠჂ</hi>
         </head>
         
         <p xml:id="p1" n="1">

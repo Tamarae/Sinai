@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-new-sunday-body">
-        <head>
-          <hi rend="rubric">თქუმული იოვანე მთავარეპისკოპოსისაჲ ახალკჳრიაკისათჳს</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႧႵႳႫႳႪႨ ႨႭႥႠႬႤ ႫႧႠႥႠႰႤႮႨႱႩႭႮႭႱႨႱႠჂ ႠႾႠႪႩჃႰႨႠႩႨႱႠႧჃႱ</hi>
         </head>
         
         <p xml:id="p1" n="1">

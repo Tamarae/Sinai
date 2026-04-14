@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
     <text>
         <body>
             <div type="text" xml:id="mrav-dormition-2-body">
-                <head>
-                    <hi rend="rubric">Ⴇქუმული მისივე გარდაცვალებისათჳს წმიდისა ღმრთის-მშობელისა</hi>
+                <head type="rubric">
+                    <hi rend="rubric">ႧႵႳႫႳႪႨ ႫႨႱႨႥႤ ႢႠႰႣႠႺႥႠႪႤႡႨႱႠႧჃႱ ႼႫႨႣႨႱႠ ႶႫႰႧႨႱ-ႫႸႭႡႤႪႨႱႠ</hi>
                 </head>
                 
                 <p xml:id="p1" n="1">

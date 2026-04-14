@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-toma-chrysostom-body">
-        <head>
-          <hi rend="rubric">საკითხავნი ახალკჳრიაკისანი: თქუმული წმიდისა იოვანე ოქროპირისაჲ, აღსაარებისათჳს თომა მოციქულისა</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႱႠႩႨႧႾႠႥႬႨ ႠႾႠႪႩჃႰႨႠႩႨႱႠႬႨ: ႧႵႳႫႳႪႨ ႼႫႨႣႨႱႠ ႨႭႥႠႬႤ ႭႵႰႭႮႨႰႨႱႠჂ, ႠႶႱႠႠႰႤႡႨႱႠႧჃႱ ႧႭႫႠ ႫႭႺႨႵႳႪႨႱႠ</hi>
         </head>
         
         <p xml:id="p1" n="1">

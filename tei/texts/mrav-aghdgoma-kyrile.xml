@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-aghdgoma-kyrile-body">
-        <head>
-      <hi rend="rubric">თქუმული წმიდისა და ნეტარისა მამისა ჩუენისა კჳრილე მთავარეპისკოპოსისაჲ იერუსალემელისაჲ<note n="1">1*</note> აღდგომისათჳს მკუდრეთით უფლისა ჩუენისა იესუ ქრისტჱსა</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႧႵႳႫႳႪႨ ႼႫႨႣႨႱႠ ႣႠ ႬႤႲႠႰႨႱႠ ႫႠႫႨႱႠ ႹႳႤႬႨႱႠ ႩჃႰႨႪႤ ႫႧႠႥႠႰႤႮႨႱႩႭႮႭႱႨႱႠჂ ႨႤႰႳႱႠႪႤႫႤႪႨႱႠჂ ႠႶႣႢႭႫႨႱႠႧჃႱ ႫႩႳႣႰႤႧႨႧ ႳႴႪႨႱႠ ႹႳႤႬႨႱႠ ႨႤႱႳ ႵႰႨႱႲჁႱႠ</hi>
     </head>
 
     <p xml:id="p1" n="1">

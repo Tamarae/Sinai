@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
     <text>
         <body>
             <div type="text" xml:id="mrav-john-baptist-decollatio-body">
-                <head>
-                    <hi rend="rubric">Ⴈოვანჱს თავის კუეთისა საკითხავნი: თქუმული წმიდისა და ნეტარისა იოვანე მთავარეპისკოპოსისაჲ კოსტანტინელ ეპისკოპოსისაჲ</hi>
+                <head type="rubric">
+                    <hi rend="rubric">ႨႭႥႠႬჁႱ ႧႠႥႨႱ ႩႳႤႧႨႱႠ ႱႠႩႨႧႾႠႥႬႨ: ႧႵႳႫႳႪႨ ႼႫႨႣႨႱႠ ႣႠ ႬႤႲႠႰႨႱႠ ႨႭႥႠႬႤ ႫႧႠႥႠႰႤႮႨႱႩႭႮႭႱႨႱႠჂ ႩႭႱႲႠႬႲႨႬႤႪ ႤႮႨႱႩႭႮႭႱႨႱႠჂ</hi>
                 </head>
                 
                 <p xml:id="p1" n="1">

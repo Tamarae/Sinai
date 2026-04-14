@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
     <text>
         <body>
             <div type="text" xml:id="mrav-feristsvaleba-body">
-                <head>
-                    <hi rend="rubric">Ⴑაკითხავნი ფერის-ცვალებისანი, თქუმული იოვანე ოქროპირისაჲ დღისა მისთვის, რომელსა იცვალა ხატი მაცხოვარმან<note n="1">1*</note> მან წმიდასა მთასა თაბარსა</hi>
+                <head type="rubric">
+                    <hi rend="rubric">ႱႠႩႨႧႾႠႥႬႨ ႴႤႰႨႱ-ႺႥႠႪႤႡႨႱႠႬႨ, ႧႵႳႫႳႪႨ ႨႭႥႠႬႤ ႭႵႰႭႮႨႰႨႱႠჂ ႣႶႨႱႠ ႫႨႱႧႥႨႱ, ႰႭႫႤႪႱႠ ႨႺႥႠႪႠ ႾႠႲႨ ႫႠႺႾႭႥႠႰႫႠႬ ႫႠႬ ႼႫႨႣႠႱႠ ႫႧႠႱႠ ႧႠႡႠႰႱႠ</hi>
                 </head>
                 
                 <p xml:id="p1" n="1">

@@ -75,8 +75,8 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
   <text>
     <body>
       <div type="text" xml:id="mrav-holymonday-body">
-        <head>
-          <hi rend="rubric">დიდსა ორშაბათსა: თქუმული იოვანე ეპისკოპოსისაჲ კოსტანტინეპოვლელისაჲ</hi>
+        <head type="rubric">
+          <hi rend="rubric">ႣႨႣႱႠ ႭႰႸႠႡႠႧႱႠ: ႧႵႳႫႳႪႨ ႨႭႥႠႬႤ ႤႮႨႱႩႭႮႭႱႨႱႠჂ ႩႭႱႲႠႬႲႨႬႤႮႭႥႪႤႪႨႱႠჂ</hi>
         </head>
         
         <p xml:id="p1" n="1">
