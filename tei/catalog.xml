@@ -307,11 +307,19 @@
             
           </person>
           
-          <person xml:id="aut-anon">
-            <persName xml:lang="ka">ანონიმი</persName>
-            <persName xml:lang="la">Anonymus</persName>
+          <person xml:id="aut-amphilochios-ikonieli">
+            <persName xml:lang="ka">ამფილოქე იკონიელი</persName>
+            <persName xml:lang="la">Amphilochius Iconiensis</persName>
+            <birth when="0340"/>
+            <death when="0394"/>
+            <idno type="VIAF">100183189</idno>
+            <!-- CPG range: 3230–3247 -->
+            <idno type="CPG">3230</idno>
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=F90D168872B94833A5224F4B2B95AF81</idno>
+            <idno type="TM">52</idno>
           </person>
           
+       
           <person xml:id="aut-amonios">
             <persName xml:lang="ka">ამონიოსი</persName>
             <persName xml:lang="la">Amonios</persName>
@@ -691,8 +699,8 @@
                  corresp="#feast-basil"
                  type="#genre-homily">
             <label xml:lang="ka">სიტყვა ბასილი ეპ-სათჳს I (1 იანვ.)</label>
-            <desc xml:lang="ka">სიტყuად ბასილი ეპისკოპოსისათჳს</desc>
-            <note type="author" corresp="#aut-anon"/>
+            <desc xml:lang="ka">სიტყუაჲ ბასილი ეპისკოპოსისათჳს</desc>
+            <note type="author" corresp="#aut-amphilochios-ikonieli"/>
             <date type="feast" when="--01-01"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
@@ -706,8 +714,8 @@
                  corresp="#feast-basil"
                  type="#genre-homily">
             <label xml:lang="ka">სიტყვა ბასილი ეპ-სათჳს II</label>
-            <desc xml:lang="ka">სიტყuად ბასილისთჳსვე</desc>
-            <note type="author" corresp="#aut-anon"/>
+            <desc xml:lang="ka">სიტყუაჲ ბასილისთჳსვე</desc>
+            <note type="author" corresp="#aut-amphilochios-ikonieli"/>
             <date type="feast" when="--01-01"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>

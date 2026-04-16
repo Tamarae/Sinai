@@ -70,13 +70,24 @@
 
 {% block main %}
 
+{#
+  Full Old Georgian alphabet in traditional order, including all 5 archaic letters:
+    ჱ (Hae,  pos  8) → Ⴡ
+    ჲ (Jani, pos 15) → Ⴢ
+    ჳ (Wine, pos 22) → Ⴣ
+    ჴ (Xhar, pos 34) → Ⴤ
+    ჵ (Hoe,  pos 38) → Ⴥ
+  Without these, every Asomtavruli corner glyph after ზ is shifted by 1-3 positions.
+#}
+
 {% set asomtavruli = {
-    'Ა': 'Ⴀ', 'ბ': 'Ⴁ', 'გ': 'Ⴂ', 'დ': 'Ⴃ', 'ე': 'Ⴄ', 'ვ': 'Ⴅ',
-    'ზ': 'Ⴆ', 'თ': 'Ⴡ', 'ი': 'Ⴇ', 'კ': 'Ⴈ', 'ლ': 'Ⴉ', 'მ': 'Ⴊ',
-    'ნ': 'Ⴋ', 'ო': 'Ⴌ', 'პ': 'Ⴢ', 'ჟ': 'Ⴍ', 'რ': 'Ⴎ', 'ს': 'Ⴏ',
-    'ტ': 'Ⴐ', 'უ': 'Ⴑ', 'ფ': 'Ⴒ', 'ქ': 'Ⴣ', 'ღ': 'Ⴓ', 'ყ': 'Ⴔ',
-    'შ': 'Ⴕ', 'ჩ': 'Ⴖ', 'ც': 'Ⴗ', 'ძ': 'Ⴘ', 'წ': 'Ⴙ', 'ჭ': 'Ⴚ',
-    'ხ': 'Ⴛ', 'ჯ': 'Ⴜ', 'ჰ': 'Ⴝ'
+    'ა': 'Ⴀ', 'ბ': 'Ⴁ', 'გ': 'Ⴂ', 'დ': 'Ⴃ', 'ე': 'Ⴄ', 'ვ': 'Ⴅ',
+    'ზ': 'Ⴆ', 'ჱ': 'Ⴡ', 'თ': 'Ⴇ', 'ი': 'Ⴈ', 'კ': 'Ⴉ', 'ლ': 'Ⴊ',
+    'მ': 'Ⴋ', 'ნ': 'Ⴌ', 'ჲ': 'Ⴢ', 'ო': 'Ⴍ', 'პ': 'Ⴎ', 'ჟ': 'Ⴏ',
+    'რ': 'Ⴐ', 'ს': 'Ⴑ', 'ტ': 'Ⴒ', 'ჳ': 'Ⴣ', 'უ': 'Ⴓ', 'ფ': 'Ⴔ',
+    'ქ': 'Ⴕ', 'ღ': 'Ⴖ', 'ყ': 'Ⴗ', 'შ': 'Ⴘ', 'ჩ': 'Ⴙ', 'ც': 'Ⴚ',
+    'ძ': 'Ⴛ', 'წ': 'Ⴜ', 'ჭ': 'Ⴝ', 'ჴ': 'Ⴤ', 'ხ': 'Ⴞ', 'ჯ': 'Ⴟ',
+    'ჰ': 'Ⴠ', 'ჵ': 'Ⴥ'
 } %}
 
 <!-- PAGE HEADER -->
@@ -103,7 +114,7 @@
     <p class="text-xs tracking-widest text-gray-400 font-medium mb-6">აირჩიეთ ასო</p>
 
     <div class="flex flex-wrap gap-3">
-        {% for letter in "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ" %}
+        {% for letter in "აბგდევზჱთიკლმნჲოპჟრსტჳუფქღყშჩცძწჭჴხჯჰჵ" %}
         {% if letter in alphabet %}
         <a href="{{ geo_slug[letter] }}.html" class="letter-tile">
             <span class="asomtavruli-corner">{{ asomtavruli[letter] }}</span>
