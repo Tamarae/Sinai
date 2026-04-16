@@ -105,7 +105,13 @@ def build_popup_lookup(data: LexiconData, geo_slug: dict) -> dict:
 
 
 # ── Georgian alphabet order ────────────────────────────
-GEO_ALPHA = list("აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ")
+# Full traditional order including all 5 archaic letters:
+#   ჱ (Hae,  pos  8) — between ზ and თ
+#   ჲ (Jani, pos 15) — between ნ and ო
+#   ჳ (Wine, pos 22) — between ტ and უ
+#   ჴ (Xhar, pos 34) — between ჭ and ხ
+#   ჵ (Hoe,  pos 38) — after ჰ
+GEO_ALPHA = list("აბგდევზჱთიკლმნჲოპჟრსტჳუფქღყშჩცძწჭჴხჯჰჵ")
 
 def geo_sort_key(entry: EntryData) -> list:
     return [GEO_ALPHA.index(c) if c in GEO_ALPHA else 999 for c in entry.lemma]

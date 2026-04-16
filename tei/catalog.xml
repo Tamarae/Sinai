@@ -417,12 +417,12 @@
             </category>
 
             <category xml:id="feast-dormition" n="--08-15">
-              <catDesc xml:lang="ka">ღ-მშობლის გარდაცვლება (15 აგვისტო)</catDesc>
+              <catDesc xml:lang="ka">ღ-მშობლის მიცვლება (15 აგვისტო)</catDesc>
               <catDesc xml:lang="la">Dormitio / Assumptio BMV</catDesc>
             </category>
 
             <category xml:id="feast-john-baptist" n="--08-29">
-              <catDesc xml:lang="ka">იოვ. ნათლ-სა თავის კვეთა (29 აგვისტო)</catDesc>
+              <catDesc xml:lang="ka">ნათლისმცემლის თავის კვეთა (29 აგვისტო)</catDesc>
               <catDesc xml:lang="la">Decollatio S. Iohannis Baptistae</catDesc>
             </category>
 
@@ -455,7 +455,7 @@
 
           <taxonomy xml:id="genres">
             <category xml:id="genre-homily">
-              <catDesc xml:lang="ka">ჰომილია / თქმული</catDesc>
+              <catDesc xml:lang="ka">ჰომილია / თქუმული</catDesc>
               <catDesc xml:lang="la">Homilia</catDesc>
             </category>
             <category xml:id="genre-life">
@@ -582,7 +582,7 @@
                  corresp="#feast-annunciation"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული ანთიპატრ ბოსტრელისაი — ხარება</label>
-            <desc xml:lang="ka">თქuმული წმ. ანთიპატროს ბოსტრელ ეპისკოპოსისაი, წმ. ღმრთის-მშობელისათჳს და ზაქარიაის დადუმებისათჳს</desc>
+            <desc xml:lang="ka">თქუმული წმ. ანთიპატროს ბოსტრელ ეპისკოპოსისაი, წმ. ღმრთის-მშობელისათჳს და ზაქარიაის დადუმებისათჳს</desc>
             <note type="author" corresp="#aut-antipater-bostra"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
@@ -618,7 +618,7 @@
                  corresp="#feast-nativity"
                  type="#genre-homily">
             <label xml:lang="ka">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</label>
-            <desc xml:lang="ka">ნეტარისა პროკლესი კოსტანტინელ ეპისკოპოსისაი, ღმრთის-მშობელისათჳს თქuმული</desc>
+            <desc xml:lang="ka">ნეტარისა პროკლესი კოსტანტინელ ეპისკოპოსისაი, ღმრთის-მშობელისათჳს თქუმული</desc>
             <note type="author" corresp="#aut-proklos-cpl"/>
             <date type="feast" when="--12-25"/>
             <msDesc>
@@ -733,8 +733,8 @@
           <event xml:id="mrav-natlisgheba-1"
                  corresp="#feast-epiphany"
                  type="#genre-homily">
-            <label xml:lang="ka">თქმული იოვ. ოქროპ-სა — ნათლ-ბა I</label>
-            <desc xml:lang="ka">თქuმული იოვანე ოქროპირისაი, ნათლის-ღებისათჳს (პირველი)</desc>
+            <label xml:lang="ka">თქმული იოანე ოქროპირისა — ნათლ-ბა I</label>
+            <desc xml:lang="ka">თქუმული იოვანე ოქროპირისაი, ნათლის-ღებისათჳს (პირველი)</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
@@ -750,7 +750,7 @@
                  corresp="#feast-epiphany"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — ნათლ-ბა II</label>
-            <desc xml:lang="ka">თქuმული მისივე, ნათლის-ღებისათჳს (მეორე)</desc>
+            <desc xml:lang="ka">თქუმული მისივე, ნათლის-ღებისათჳს (მეორე)</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
@@ -766,7 +766,7 @@
                  corresp="#feast-epiphany"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — ნათლ-ბა III</label>
-            <desc xml:lang="ka">თქuმული მისივე, ნათლის-ღებისათჳს (მესამე)</desc>
+            <desc xml:lang="ka">თქუმული მისივე, ნათლის-ღებისათჳს (მესამე)</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
@@ -836,7 +836,7 @@
           <event xml:id="mrav-markhva-chrysostom"
                  corresp="#feast-lent"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — მარხვა და იონა</label>
+            <label xml:lang="ka">იოანე ოქროპირი — მარხვა და იონა</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, მარხვისათჳს და იონაისთჳს</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
@@ -882,7 +882,7 @@
           <event xml:id="mrav-lazare"
                  corresp="#feast-lent"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — ლაზარე, მარია, მართა</label>
+            <label xml:lang="ka">იოანე ოქროპირი — ლაზარე, მარია, მართა</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, ლაზარესთჳს, მარიამისთჳს და მართასთჳს</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
@@ -902,7 +902,7 @@
           <event xml:id="mrav-bzoba-severian"
                  corresp="#feast-palmsunday"
                  type="#genre-homily">
-            <label xml:lang="ka">სებ. გაბ. — შესხმა ყრმათა (ბზობა)</label>
+            <label xml:lang="ka">სებერიანოს გაბალონელი — შესხმა ყრმათა (ბზობა)</label>
             <desc xml:lang="ka">თქუმული სებერიანოს გაბალონელისა, შესხმისათჳს ყრმათაისა</desc>
             <note type="author" corresp="#aut-severian-gabala"/>
             <date type="moveable">true</date>
@@ -1002,7 +1002,7 @@
           <event xml:id="mrav-toma-chrysostom"
                  corresp="#feast-easter"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — თომა მოც.</label>
+            <label xml:lang="ka">იოანე ოქროპირი — თომა მოც.</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, აღსაარებისათჳს თომა მოციქულისა</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
@@ -1017,8 +1017,8 @@
           <event xml:id="mrav-new-sunday"
                  corresp="#feast-easter"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. მთ-ეპ-სი — ახალი კვირიაკე</label>
-            <desc xml:lang="ka">თქუმული იოვანე მთავარეპისკოპოსისაი, ახალკუირიაკისათჳს</desc>
+            <label xml:lang="ka">იოვანე მთავარ-ეპსკოპოსი — ახალი კვირიაკე</label>
+            <desc xml:lang="ka">თქუმული იოვანე მთავარეპისკოპოსისაჲ, ახალკუირიაკისათჳს</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="moveable">true</date>
             <msDesc>
@@ -1037,7 +1037,7 @@
           <event xml:id="mrav-amaghleba"
                  corresp="#feast-ascension"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — ამაღლება</label>
+            <label xml:lang="ka">იოანე ოქროპირი — ამაღლება</label>
             <desc xml:lang="ka">ამაღლებისათჳს: თქუმული იოვანე ოქროპირისაი</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="moveable">true</date>
@@ -1057,7 +1057,7 @@
           <event xml:id="mrav-sulthmofenoba-1"
                  corresp="#feast-pentecost"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. მთ-ეპ-სი — სულ. წმ. I</label>
+            <label xml:lang="ka">იოვანე მთავარ-ეპსკოპოსი — სულ. წმ. I</label>
             <desc xml:lang="ka">თქუმული იოვანე მთავარეპისკოპოსისა, სული წმიდის მოფენისათჳს</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="moveable">true</date>
@@ -1097,7 +1097,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-feristsvaleba"
                  corresp="#feast-transfiguration"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — ფერისცვლება (6 აგვ.)</label>
+            <label xml:lang="ka">იოანე ოქროპირი — ფერისცვლება (6 აგვ.)</label>
             <desc xml:lang="ka">საკითხავნი ფერის-ცუალებისანი: თქუმული იოვანე ოქროპირისა</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--08-06"/>
@@ -1112,7 +1112,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-dormition-1"
                  corresp="#feast-dormition"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — გარდ. ი. I (15 აგვ.)</label>
+            <label xml:lang="ka">იოანე ოქროპირი — გარდ. ი. I (15 აგვ.)</label>
             <desc xml:lang="ka">თქუმული იოვანე ოქროპირისა, გარდაცუალებისათჳს წმ. ღმრთის-მშობელისა</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--08-15"/>
@@ -1142,7 +1142,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-john-baptist-decollatio"
                  corresp="#feast-john-baptist"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
+            <label xml:lang="ka">იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
             <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: თქუმული იოვანე მთავარეპისკოპოსისა</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--08-29"/>
@@ -1157,7 +1157,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-john-baptist-decollatio-2"
             corresp="#feast-john-baptist"
             type="#genre-homily">
-            <label xml:lang="ka">იოვ. მთ-ეპ-სი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
+            <label xml:lang="ka">იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
             <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: მეორე</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--08-29"/>
@@ -1194,7 +1194,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-enkenia-1"
                  corresp="#feast-enkenia"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — სატფ-ბა (13 სექ.)</label>
+            <label xml:lang="ka">იოანე ოქროპირი — სატფ-ბა (13 სექ.)</label>
             <desc xml:lang="ka">ენკენია (13 სექტემბერი): თქუმული იოვანე ოქროპირისა, სტფურებისათჳს</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--09-13"/>
@@ -1224,7 +1224,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-exaltation-cross"
                  corresp="#feast-exaltation-cross"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. მთ-ეპ-სი — ჯვართა (14 სექ.)</label>
+            <label xml:lang="ka">იოვანე მთავარ-ეპსკოპოსი — ჯვართა (14 სექ.)</label>
             <desc xml:lang="ka">ჯუართა აღპყრობა (14 სექტემბერი): თქუმული იოვანე მთავარეპისკოპოსისა</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--09-14"/>
@@ -1300,7 +1300,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-martyrs-chrysostom"
                  corresp="#feast-misc"
                  type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — მოწამეთათჳს</label>
+            <label xml:lang="ka">იოანე ოქროპირი — მოწამეთათჳს</label>
             <desc xml:lang="ka">თქმულნი იოვანე ოქროპირისა მოწამეთათჳს</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <msDesc>
@@ -1314,7 +1314,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-martyrs-chrysostom-2"
             corresp="#feast-misc"
             type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — მოწამეთათჳს II</label>
+            <label xml:lang="ka">იოანე ოქროპირი — მოწამეთათჳს II</label>
             <desc xml:lang="ka">თქმულნი იოვანე ოქროპირისა მოწამეთათჳს</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <msDesc>
@@ -1328,7 +1328,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
           <event xml:id="mrav-martyrs-chrysostom-3"
             corresp="#feast-misc"
             type="#genre-homily">
-            <label xml:lang="ka">იოვ. ოქროპ. — მოწამეთათჳს III</label>
+            <label xml:lang="ka">იოანე ოქროპირი — მოწამეთათჳს III</label>
             <desc xml:lang="ka">თქმულნი იოვანე ოქროპირისა მოწამეთათჳს</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <msDesc>

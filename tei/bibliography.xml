@@ -145,6 +145,7 @@
               <biblScope unit="issue">II</biblScope>
               <biblScope unit="pp">გვ. 50 (მრავალთავის შესახებ)</biblScope>
             </monogr>
+            <ref target="https://dspace.nplg.gov.ge/bitstream/1234/402757/1/Predvaritelnii_Otchiot_O_Rabotax_Na_Sina_1903.pdf"/>
           </biblStruct>
 
           <biblStruct xml:id="bib-marr1940">
@@ -184,7 +185,7 @@
                 <date when="1952">1952</date>
               </imprint>
             </monogr>
-            <note>1950 წლის ექსპედიციის მიკროფილმთა სარჩევი, კენეთ კლარქის რედაქციით.</note>
+            <note>1950 წლის ექსპედიციის მიკროფილმთა სარჩევი, კენეთ კლარკის რედაქციით.</note>
           </biblStruct>
 
           <biblStruct xml:id="bib-abula1973">
