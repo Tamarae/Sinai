@@ -543,7 +543,7 @@
           
             <note type="CPG">1763</note>
             <note type="file">tei/texts/mrav-kharbeba-1.xml</note>
-            <note type="status">encoding-in-progress</note>
+            <note type="status">done</note>
           </event>
 
           <event xml:id="mrav-kharbeba-2"
@@ -581,7 +581,7 @@
           <event xml:id="mrav-antipater"
                  corresp="#feast-annunciation"
                  type="#genre-homily">
-            <label xml:lang="ka">თქმული ანთიპატრ ბოსტრელისაი — ხარება</label>
+            <label xml:lang="ka">თქმული ანთიპატრ ბოსტრელისა — ხარება</label>
             <desc xml:lang="ka">თქუმული წმ. ანთიპატროს ბოსტრელ ეპისკოპოსისაი, წმ. ღმრთის-მშობელისათჳს და ზაქარიაის დადუმებისათჳს</desc>
             <note type="author" corresp="#aut-antipater-bostra"/>
             <date type="feast" when="--03-25"/>
@@ -617,7 +617,7 @@
           <event xml:id="mrav-shoba-prokle"
                  corresp="#feast-nativity"
                  type="#genre-homily">
-            <label xml:lang="ka">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</label>
+            <label xml:lang="ka">ნეტ. პროკლე კ-პოლელისა — ღ-მშობ.</label>
             <desc xml:lang="ka">ნეტარისა პროკლესი კოსტანტინელ ეპისკოპოსისაი, ღმრთის-მშობელისათჳს თქუმული</desc>
             <note type="author" corresp="#aut-proklos-cpl"/>
             <date type="feast" when="--12-25"/>

@@ -95,6 +95,13 @@
               f.3r=0007, f.3v=0008, f.4r=0009, f.4v=0010,
               f.5r=0011, f.5v=0012, f.6r=0013, f.6v=0014.
 
+          NOTE ON FOLIOS 4 AND 5: In S, folios 4 and 5 are physically
+          bound in reversed order (ff. 5r–5v precede ff. 4r–4v in the
+          codex). The @facs pointers for ff. 4r–5v therefore point to
+          non-sequential IIIF images and require verification against the
+          LoC digitization. See <note type="codicological"> at <pb n="5r">
+          in the text body.
+
           APPARATUS
           ══════════
           Location-referenced apparatus using <app>/<lem>/<rdg>.
@@ -121,6 +128,7 @@
       <change when="2026-02" who="#ed-TK">პირველადი კოდირება.</change>
       <change when="2026-02" who="#ed-TK">@facs დამატება ყველა &lt;pb&gt;-ზე (LoC IIIF, offset=2).</change>
       <change when="2026-03" who="#ed-TK">apparatus შესწორება: lem resp=#shanidze; rdg wit=#S. pb ed=#S. locus to=6r.</change>
+      <change when="2026-04" who="#ed-TK">ციტატები გადამოწმდა ნაბეჭდი გამოცემის მიხედვით. კოდიკოლოგიური შენიშვნა დაემატა ფოლიო 4–5-ის გადაბრუნებული გადაკინძვის თაობაზე.</change>
     </revisionDesc>
 
   </teiHeader>
@@ -281,7 +289,7 @@
         
         <!-- ¶ 20 -->
         <p xml:id="p20" n="20">
-          <hi rend="initial">Ⴐ</hi>ომლისათჳსცა ანგელოზმან მან პირველად ღაღატ-ყო მისა მიმართ და ჰრქუა: „გიხაროდენ, მიმადლებულო! უფალი შენ თანა“! და არა ქუეყანისა სიძჱ, არამედ იგი თავადი სიწმიდისა უფალი შენ თანა, სიწმიდისა იგი მამაჲ და უჴრწნელებისა შემოქმედი და უკუდავებისა მომცემელი, აზნაურებისა იგი მოღუაწჱ <app xml:id="app-1"><lem resp="#shanidze">ჭეშმარიტი</lem><rdg wit="#S" type="orthographic">გადამწერს ჭეშმარიტებისა დაუწერია, მაგრამ გადაუსწორებია</rdg></app>, მშჳდობისა საუნჯისა მომცემელი, რომელმან ქალწულისაგან ქუეყანისა დაჰბადა კაცი იგი და გუერდისაგან მისისა ევაჲ გამოიყვანა. იგი თავადი უფალი შენ თანა და მერმე კუალდ შენგან.          
+          <hi rend="initial">Ⴐ</hi>ომლისათჳსცა ანგელოზმან მან პირველად ღაღატ-ყო მისა მიმართ და ჰრქუა: „გიხაროდენ, მიმადლებულო! უფალი შენ თანა"! და არა ქუეყანისა სიძჱ, არამედ იგი თავადი სიწმიდისა უფალი შენ თანა, სიწმიდისა იგი მამაჲ და უჴრწნელებისა შემოქმედი და უკუდავებისა მომცემელი, აზნაურებისა იგი მოღუაწჱ <app xml:id="app-1"><lem resp="#shanidze">ჭეშმარიტი</lem><rdg wit="#S" type="orthographic">გადამწერს ჭეშმარიტებისა დაუწერია, მაგრამ გადაუსწორებია</rdg></app>, მშჳდობისა საუნჯისა მომცემელი, რომელმან ქალწულისაგან ქუეყანისა დაჰბადა კაცი იგი და გუერდისაგან მისისა ევაჲ გამოიყვანა. იგი თავადი უფალი შენ თანა და მერმე კუალდ შენგან.          
         </p>
         
         <!-- ¶ 21 -->
@@ -289,7 +297,10 @@
           
           <hi rend="initial">Ⴋ</hi>ოვედით უკუე აწ, საყუარელნო, ანგელოზებრსა ქებასა თანა-შევერთნეთ და მსგავსად ძალისა თანა-ნადები იგი გონიერად შევწიროთ და ვიტყოდით: გიხაროდენ, მიმადლებულო! უფალი შენ თანა! 
           რამეთუ შენი არს <w lemma="#lex-sikharul">სიხარული</w> <w lemma="#lex-cheshmaritad">ჭეშმარიტად</w>, ამისთჳს <w lemma="#lex-rametu">რამეთუ</w> შენ <w lemma="#lex-tana">თანა</w> <w lemma="#lex-madli">მადლმან</w> <w lemma="#lex-ghmrteeba">ღმრთეებისამან</w>, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-utsq">უწყის</w>, დაიმკჳდრა.
-          მჴევლისა <w lemma="#lex-tana">თანა</w> <w lemma="#lex-meupe">მეუფემან</w>, <w lemma="#lex-shuenier1">შუენიერისა</w> <pb n="5r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0006"/> <w lemma="#lex-tana">თანა</w> <w lemma="#lex-shuenier1">შუენიერმან</w> <w lemma="#lex-sikete">სიკეთითა</w> <quote xml:lang="ka" source="#ფს.44,2"><w lemma="#lex-upro">უფროჲს</w> ძეთა <w lemma="#lex-katsi">კაცთასა</w></quote>, <w lemma="#lex-sheuginfebel124">შეუგინებელისა</w> <w lemma="#lex-tana">თანა</w> — რომელი განსწმედს <w lemma="#lex-qovel">ყოველთა</w> <w lemma="#lex-adgili">ადგილთა</w>.
+          მჴევლისა <w lemma="#lex-tana">თანა</w> <w lemma="#lex-meupe">მეუფემან</w>, <w lemma="#lex-shuenier1">შუენიერისა</w>
+          <pb n="5r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0006"/>
+          <note type="codicological" resp="#shanidze" xml:lang="en">ფფ. 4 და 5 ერთიმეორის ადგილას ყოფილა გადასმული ხელნაწერში.</note>
+          <w lemma="#lex-tana">თანა</w> <w lemma="#lex-shuenier1">შუენიერმან</w> <w lemma="#lex-sikete">სიკეთითა</w> <quote xml:lang="ka" source="#ფს.44,2"><w lemma="#lex-upro">უფროჲს</w> ძეთა <w lemma="#lex-katsi">კაცთასა</w></quote>, <w lemma="#lex-sheuginfebel124">შეუგინებელისა</w> <w lemma="#lex-tana">თანა</w> — რომელი განსწმედს <w lemma="#lex-qovel">ყოველთა</w> <w lemma="#lex-adgili">ადგილთა</w>.
           შენ <w lemma="#lex-tana">თანა</w> <w lemma="#lex-ghmert">ღმერთი</w> და შენგან <w lemma="#lex-ghmert">ღმერთი</w>. რომელცა <w lemma="#lex-sruli">სრული</w> <w lemma="#lex-katsi">კაცი</w>, რომელსა <w lemma="#lex-shina">შინა</w> დამკჳდრებულ არს <w lemma="#lex-qovel">ყოველივე</w> სავსებაჲ <w lemma="#lex-ghmrteeba">ღმრთეებისაჲ</w>.
            </p>
         

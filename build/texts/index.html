@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ტექსტები — ციფრული სამეცნიერო გამოცემა</title>
+    <title>ტექსტები — ციფრული სამეცნიერო გამოცემა — ციფრული სამეცნიერო გამოცემა</title>
 
     <!-- Dublin Core -->
     <meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
@@ -11,6 +11,12 @@
     <meta name="DC.rights"    content="CC BY-NC-SA 4.0">
     <meta name="DC.language"  content="ka">
     
+<meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
+<meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+<meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+<meta name="DC.language"  content="ka">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+
     <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
     
 
@@ -150,6 +156,14 @@
     }
     .copy-uri-btn:hover { color:var(--crimson); }
     .copy-uri-btn.copied { color:#2d8a4e; }
+
+    /* ── Genre badge chips ───────────────────── */
+    .badge-homily    { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+    .badge-life      { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+    .badge-martyrdom { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+    .badge-encomium  { background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+    .badge-colophon  { background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+    .badge-other     { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
 </style>
 
 </head>
@@ -230,14 +244,14 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
-                </svg>ავტ. / ჟანრი
+                </svg>ავტორები
             </button>
             <button id="btn-cal" onclick="switchView('cal')"
                     class="tab-btn px-4 py-1.5 rounded-sm text-xs font-medium text-gray-600 flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                </svg>კალენდარი
+                </svg>ჟანრი | კალენდარი
             </button>
         </div>
     </div>
@@ -251,103 +265,148 @@
 
         <!-- Calendar sidebar -->
         <div id="sb-cal" class="sticky top-24 hidden">
-            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ᲗᲕᲔᲔᲑᲘ</p>
-            <nav class="flex flex-col gap-0.5 text-xs">
-                
-                
-                <a href="#feast-feast-annunciation"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ხარება (25 მარტი)</a>
-                
-                
-                
-                <a href="#feast-feast-nativity"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ქრისტეს შობა (25 დეკემბერი)</a>
-                
-                
-                
-                <a href="#feast-feast-stephen"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">წმ. სტეფანე (27 დეკემბერი)</a>
-                
-                
-                
-                <a href="#feast-feast-jacob-apostle"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">წმ. იაკობ მოც. (26 დეკემბერი)</a>
-                
-                
-                
-                <a href="#feast-feast-basil"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ბასილი ეპ-სი (1 იანვარი)</a>
-                
-                
-                
-                <a href="#feast-feast-epiphany"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ნათლისღება (6 იანვარი)</a>
-                
-                
-                
-                <a href="#feast-feast-hypapante"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მიგება (2 თებერვალი)</a>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                <a href="#feast-feast-transfiguration"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ფერისცვლება (6 აგვისტო)</a>
-                
-                
-                
-                <a href="#feast-feast-dormition"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ღ-მშობლის მიცვლება (15 აგვისტო)</a>
-                
-                
-                
-                <a href="#feast-feast-john-baptist"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ნათლისმცემლის თავის კვეთა (29 აგვისტო)</a>
-                
-                
-                
-                <a href="#feast-feast-nativity-theotokos"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ღ-მშობლის შობა (8 სექტემბერი)</a>
-                
-                
-                
-                <a href="#feast-feast-enkenia"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ენკენია (13 სექტემბერი)</a>
-                
-                
-                
-                <a href="#feast-feast-exaltation-cross"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ჯვართა აღაპყრობა (14 სექტემბერი)</a>
-                
-                
-                
-                
-                
-                
-                <a href="#feast-moveable"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მოძრავი</a>
-                <a href="#feast-misc"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა / დამ.</a>
-            </nav>
-            <div class="mt-6 pt-4 border-t border-gray-200">
-                <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
-                <div class="flex flex-col gap-1">
-                    <button onclick="toggleFilter(this,'homily')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
-                    <button onclick="toggleFilter(this,'life')"     class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
-                    <button onclick="toggleFilter(this,'martyrdom')" class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
-                    <button onclick="toggleFilter(this,'other')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
-                </div>
+            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
+            <div class="flex flex-col gap-1 mb-6">
+                <button onclick="toggleFilter(this,'homily')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
+                <button onclick="toggleFilter(this,'life')"     class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
+                <button onclick="toggleFilter(this,'martyrdom')" class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
+                <button onclick="toggleFilter(this,'other')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
+            </div>
+            <div class="pt-4 border-t border-gray-200">
+                <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ᲗᲕᲔᲔᲑᲘ</p>
+                <nav class="flex flex-col gap-0.5 text-xs">
+                    
+                    
+                    
+                    <a href="#feast-feast-nativity-theotokos"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ღ-მშობლის შობა (8 სექტემბერი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-enkenia"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ენკენია (13 სექტემბერი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-exaltation-cross"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ჯვართა აღაპყრობა (14 სექტემბერი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-nativity"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ქრისტეს შობა (25 დეკემბერი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-stephen"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">წმ. სტეფანე (27 დეკემბერი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-jacob-apostle"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">წმ. იაკობ მოც. (26 დეკემბერი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-basil"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ბასილი ეპ-სი (1 იანვარი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-epiphany"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ნათლისღება (6 იანვარი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-hypapante"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მიგება (2 თებერვალი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-annunciation"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ხარება (25 მარტი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-transfiguration"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ფერისცვლება (6 აგვისტო)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-dormition"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ღ-მშობლის მიცვლება (15 აგვისტო)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-john-baptist"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ნათლისმცემლის თავის კვეთა (29 აგვისტო)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-lent"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მარხვანი (მოძრავი)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-palmsunday"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ბზობა (მოძრ.)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-holyweek"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">დიდი კვირა (მოძრ.)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-easter"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">აღდგომა (მოძრ.)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-ascension"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">ამაღლება (მოძრ.)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-pentecost"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სულთმოფენობა (მოძრ.)</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-misc"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა საკითხავები</a>
+                    
+                    
+                    
+                    
+                    <a href="#feast-feast-appendix"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">დამატებები</a>
+                    
+                    
+                    <a href="#feast-moveable"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მოძრავი</a>
+                    <a href="#feast-misc"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა / დამ.</a>
+                </nav>
             </div>
         </div>
 
@@ -470,9 +529,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">შობა ღ-მშობლისა (8 სექ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -521,9 +578,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — სატფ-ბა (13 სექ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -541,9 +596,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — გურიტი და ეკლ.</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -592,9 +645,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოვანე მთავარ-ეპსკოპოსი — ჯვართა (14 სექ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -643,9 +694,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული ათანასი ალექსანდრიელისა — შობა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ათანასი ალექსანდრიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -662,10 +711,8 @@
                                     <span class="dot status-progress" title="მიმდ."></span>
                                 </td>
                                 <td class="px-4 py-3">
-                                    <div class="font-serif-geo text-sm text-gray-800">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</div>
-                                    
+                                    <div class="font-serif-geo text-sm text-gray-800">ნეტ. პროკლე კ-პოლელისა — ღ-მშობ.</div>
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">პროკლე კოსტანტინეპოლელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -683,9 +730,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ეპიფანე კვ-სი — მარადის ქალწულ.</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ეპიფანე კვიპრელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -734,9 +779,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">წამება წმ. სტეფანესი (27 დეკ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -754,9 +797,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">პოვნა წმ. სტეფანესი</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -805,9 +846,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -856,9 +895,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">სიტყვა ბასილი ეპ-სათჳს I (1 იანვ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ამფილოქე იკონიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -876,9 +913,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">სიტყვა ბასილი ეპ-სათჳს II</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ამფილოქე იკონიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -927,9 +962,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული იოანე ოქროპირისა — ნათლ-ბა I</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -947,9 +980,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — ნათლ-ბა II</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -967,9 +998,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — ნათლ-ბა III</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -987,9 +1016,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული კირილე — ნათლ-ბა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">კირილე იერუსალემელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1038,11 +1065,9 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ევსუქი — ტაძრად მიყვანება</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
-                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ევსუქი ხუცი</td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ევსუქი ხუცი იერუსალემელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
                                     <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
                                 </td>
@@ -1058,11 +1083,9 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ტიმოთე — მეორმეოცე დღე</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
-                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ტიმოთე ხუცი</td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ტიმოთე ხუცი იერუსალემელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
                                     <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
                                 </td>
@@ -1105,13 +1128,11 @@
                                 onclick="window.location='mrav-kharbeba-1.html'"
                                 >
                                 <td class="px-4 py-3">
-                                    <span class="dot status-progress" title="მიმდ."></span>
+                                    <span class="dot status-done" title="დასრ."></span>
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს I</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">გრიგოლ ნეოკესარიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1129,9 +1150,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">გრიგოლ ნეოკესარიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1149,9 +1168,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">გრიგოლ ნეოკესარიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1168,10 +1185,8 @@
                                     <span class="dot status-progress" title="მიმდ."></span>
                                 </td>
                                 <td class="px-4 py-3">
-                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ანთიპატრ ბოსტრელისაი — ხარება</div>
-                                    
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ანთიპატრ ბოსტრელისა — ხარება</div>
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ანთიპატრ ბოსტრელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1220,9 +1235,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — ფერისცვლება (6 აგვ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1271,9 +1284,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — გარდ. ი. I (15 აგვ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1291,9 +1302,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">თქმული მისივე — გარდ. ი. II</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1342,9 +1351,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1362,9 +1369,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1413,9 +1418,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — მარხვა და იონა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1433,9 +1436,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ეფრემი — მარხვა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ეფრემ ასური</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1453,9 +1454,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ბასილი — ორმოც მოწამე (9 მარ.)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ბასილი კესარიელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1473,9 +1472,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — ლაზარე, მარია, მართა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1524,9 +1521,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">სებერიანოს გაბალონელი — შესხმა ყრმათა (ბზობა)</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">სებერიანოს გაბალონელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1544,9 +1539,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოვ. კ-პოლელი — შესლვა იერ-მდ</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1564,9 +1557,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">მელეტი ანტ. — ბზობა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">მელეტი ანტიოქელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1615,9 +1606,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">დიდ ორშაბათი — იოვ. ეპ-სი</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1666,9 +1655,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">მელეტი ეპ-სი — მკვდრ. აღდგ.</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">მელეტი ეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1686,9 +1673,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">კირილე იერ. — აღდგომა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">კირილე იერუსალემელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1706,9 +1691,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — თომა მოც.</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1726,9 +1709,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოვანე მთავარ-ეპსკოპოსი — ახალი კვირიაკე</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1777,9 +1758,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — ამაღლება</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1828,9 +1807,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოვანე მთავარ-ეპსკოპოსი — სულ. წმ. I</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე მთავარეპისკოპოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1848,9 +1825,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">კირილე იერ. — სულ. წმ. II</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">კირილე იერუსალემელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1899,9 +1874,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">გამოჩინება ჯვრისა კოსტ. მეფეს</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1919,9 +1892,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">პოვნა წმ. სამსჭვალთა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1939,9 +1910,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">წამება პეტრე მოც.</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1959,9 +1928,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">წამება პავლე მოც.</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1979,9 +1946,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — მოწამეთათჳს</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -1999,9 +1964,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — მოწამეთათჳს II</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2019,9 +1982,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე ოქროპირი — მოწამეთათჳს III</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოვანე ოქროპირი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2039,9 +2000,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ეფრემი — შეს-ბ-თა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ეფრემ ასური</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2059,9 +2018,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ცხოვრება სინელ მამათა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">?</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2079,9 +2036,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">ცხოვრება სინელ მამათა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">ამონიოსი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2130,9 +2085,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">მაკარი ლეთეთელი — ანდერძი</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">მაკარი ლეთეთელი</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2150,9 +2103,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე-ზოსიმე — მესამედ შემოსაჲ წიგნისაჲ</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოანე-ზოსიმე</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2170,9 +2121,7 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">იოანე-ზოსიმე — ქება ქართ. ენისა</div>
-                                    
                                     <div class="text-xs text-gray-400 mt-0.5"></div>
-                                    
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">იოანე-ზოსიმე</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
@@ -2210,8 +2159,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2238,7 +2185,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=9BE212B07BAE48A6B30DD40012714700"
                                    target="_blank" rel="noopener"
@@ -2301,7 +2247,7 @@
                                     <div class="text-xs text-gray-400 mt-0.5">ხარება (25 მარტი) · ff. 1r-12v</div>
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
-                                    <span class="dot status-progress" title="მიმდ."></span>
+                                    <span class="dot status-done" title="დასრ."></span>
                                 </td>
                             </tr>
                             
@@ -2358,8 +2304,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2386,7 +2330,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=7EA8EEF846A9467D852B13C7A53E38AF"
                                    target="_blank" rel="noopener"
@@ -2445,7 +2388,7 @@
                                     <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
                                 </td>
                                 <td class="px-4 py-3">
-                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ანთიპატრ ბოსტრელისაი — ხარება</div>
+                                    <div class="font-serif-geo text-sm text-gray-800">თქმული ანთიპატრ ბოსტრელისა — ხარება</div>
                                     <div class="text-xs text-gray-400 mt-0.5">ხარება (25 მარტი) · ff. 31r-41v</div>
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
@@ -2474,8 +2417,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2502,7 +2443,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=67C4922D844248DC84B2952F2CDAB3B3"
                                    target="_blank" rel="noopener"
@@ -2590,8 +2530,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2618,7 +2556,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=602DCB9DC3CC4F2D825CEBBCAD54EF6F"
                                    target="_blank" rel="noopener"
@@ -2677,7 +2614,7 @@
                                     <span class="badge-homily text-xs px-1.5 py-0.5 rounded-sm font-medium">ჰომ.</span>
                                 </td>
                                 <td class="px-4 py-3">
-                                    <div class="font-serif-geo text-sm text-gray-800">ნეტ. პროკლე კ-პოლელისაი — ღ-მშობ.</div>
+                                    <div class="font-serif-geo text-sm text-gray-800">ნეტ. პროკლე კ-პოლელისა — ღ-მშობ.</div>
                                     <div class="text-xs text-gray-400 mt-0.5">ქრისტეს შობა (25 დეკემბერი) · ff. 57r-68v</div>
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell text-right">
@@ -2706,8 +2643,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2734,7 +2669,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=7FDD8A122698492480FF5F0B18B47555"
                                    target="_blank" rel="noopener"
@@ -2822,8 +2756,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2850,7 +2782,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=F4E7E5A3D24F453C944DA514509B1563"
                                    target="_blank" rel="noopener"
@@ -2938,8 +2869,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -2966,7 +2895,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=F585A204A69B4B1FB39DA341148806F8"
                                    target="_blank" rel="noopener"
@@ -3278,8 +3206,6 @@
                             </p>
 
                             
-                            
-                            
                         </div>
 
                         <!-- Copy URI button: copies the canonical GitHub Pages anchor URL -->
@@ -3432,8 +3358,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -3460,7 +3384,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=3C2FEF548B9A41858BD7DC3F4AAD8C4E"
                                    target="_blank" rel="noopener"
@@ -3580,8 +3503,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -3608,7 +3529,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=E42D147C2150411194093D9BF6B16A33"
                                    target="_blank" rel="noopener"
@@ -3696,8 +3616,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -3724,7 +3642,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=F27E8B643A4D4E828AEE50B327E1F912"
                                    target="_blank" rel="noopener"
@@ -3794,8 +3711,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -3822,7 +3737,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=F81A1A00459346E2A98ACE0865DC77EC"
                                    target="_blank" rel="noopener"
@@ -3901,8 +3815,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -3929,7 +3841,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=596B0908AF924912AB086C88E19C24AA"
                                    target="_blank" rel="noopener"
@@ -4017,8 +3928,6 @@
                             </p>
 
                             
-                            
-                            
                         </div>
 
                         <!-- Copy URI button: copies the canonical GitHub Pages anchor URL -->
@@ -4075,8 +3984,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -4103,7 +4010,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=44152165D71F4C349BA93E6EA75EF17F"
                                    target="_blank" rel="noopener"
@@ -4198,8 +4104,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -4235,7 +4139,6 @@
                                 </a>
                                 
 
-                                
                                 
                                 <a href="https://clavis.brepols.net/clacla/OA/Details.aspx?id=F90D168872B94833A5224F4B2B95AF81"
                                    target="_blank" rel="noopener"
@@ -4321,8 +4224,6 @@
                             </p>
 
                             
-                            
-                            
                         </div>
 
                         <!-- Copy URI button: copies the canonical GitHub Pages anchor URL -->
@@ -4379,8 +4280,6 @@
                             </p>
 
                             
-                            
-                            
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 
@@ -4398,7 +4297,6 @@
 
                                 
 
-                                
                                 
 
                             </div>
@@ -4474,8 +4372,6 @@
                                 
                             </p>
 
-                            
-                            
                             
                         </div>
 
@@ -4568,7 +4464,11 @@ function switchView(mode) {
 }
 
 // ── Genre filter ─────────────────────────────────────────────────
-const activeGenres = new Set(['homily','life','martyrdom','other']);
+// data-genre on rows uses the full value e.g. "genre-homily";
+// filter chip onclick passes the short key e.g. "homily".
+// activeGenres stores short keys; _genreKey strips the "genre-" prefix.
+// colophon and encomium are always visible (appendix texts, no filter chip).
+const activeGenres = new Set(['homily','life','martyrdom','other','colophon','encomium']);
 
 function toggleFilter(btn, genre) {
     btn.classList.toggle('on');
@@ -4577,25 +4477,42 @@ function toggleFilter(btn, genre) {
     applyFilters();
 }
 
+function _genreKey(row) {
+    return (row.dataset.genre || 'genre-other').replace(/^genre-/, '');
+}
+
 function applyFilters() {
     document.querySelectorAll('#panel-cal .text-row').forEach(row => {
-        const g = row.dataset.genre || 'other';
-        row.style.display = activeGenres.has(g) ? '' : 'none';
+        row.style.display = activeGenres.has(_genreKey(row)) ? '' : 'none';
     });
+    _hideEmptyCalSections();
+}
+
+function _hideEmptyCalSections() {
     document.querySelectorAll('#panel-cal section').forEach(sec => {
-        const rows = sec.querySelectorAll('.text-row');
-        const anyVisible = [...rows].some(r => r.style.display !== 'none');
+        const anyVisible = [...sec.querySelectorAll('.text-row')].some(r => r.style.display !== 'none');
         sec.style.display = anyVisible ? '' : 'none';
     });
 }
 
 // ── Search ───────────────────────────────────────────────────────
+// In calendar view: search respects active genre filter.
+// In thematic view: text search only (no genre chips shown there).
 document.getElementById('text-search').addEventListener('input', function() {
-    const q = this.value.toLowerCase();
+    const q = this.value.toLowerCase().trim();
     const panel = document.querySelector('.panel.active');
+    const isCalPanel = panel.id === 'panel-cal';
+
     panel.querySelectorAll('.text-row').forEach(row => {
-        row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+        const matchesSearch = !q || row.textContent.toLowerCase().includes(q);
+        if (isCalPanel) {
+            row.style.display = (matchesSearch && activeGenres.has(_genreKey(row))) ? '' : 'none';
+        } else {
+            row.style.display = matchesSearch ? '' : 'none';
+        }
     });
+
+    if (isCalPanel) _hideEmptyCalSections();
 });
 
 // ── Copy author URI ───────────────────────────────────────────────

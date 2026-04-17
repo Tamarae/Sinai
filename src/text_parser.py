@@ -110,6 +110,16 @@ def _load_facs_map(xml_path: Path) -> dict:
         return {}
 
 
+# ── resp label map ─────────────────────────────────────
+# Maps xml:id values from <respStmt> / <editor> to display labels.
+# Extend when new editors are added.
+
+_RESP_LABELS: dict[str, str] = {
+    "shanidze": "შანიძე",
+    "ed-TK":    "TK",
+}
+
+
 # ── Parser ─────────────────────────────────────────────
 
 class TextParser:
@@ -161,16 +171,34 @@ class TextParser:
     # ── Body rendering ─────────────────────────────────
 
     def _render_body(self, body_el: ET.Element) -> str:
+        """
+        Render the full text body.
+
+        Iterates direct children of each <div type="text"> IN DOCUMENT ORDER
+        (not via separate findall passes) so that <pb> elements sitting directly
+        inside the div — e.g. the very first <pb n="1r"> before the rubric <head>
+        — are visited before any paragraph-level <pb> elements and correctly set
+        self._first_facs / self._first_folio for the IIIF viewer.
+        """
         chunks = []
         for div in body_el.findall(".//tei:div[@type='text']", NS):
-            for head_el in div.findall("tei:head", NS):
-                chunks.append(self._render_head(head_el))
-            for p_el in div.findall("tei:p", NS):
-                chunks.append(self._render_paragraph(p_el))
-            # ── CHANGE 1: render <trailer> if present ──────────────────────
-            trailer_el = div.find("tei:trailer", NS)
-            if trailer_el is not None:
-                chunks.append(self._render_trailer(trailer_el))
+            for child in div:
+                local = child.tag.replace(f"{{{_TEI}}}", "")
+                if local == "head":
+                    chunks.append(self._render_head(child))
+                elif local == "p":
+                    chunks.append(self._render_paragraph(child))
+                elif local == "pb":
+                    # Top-level <pb> (before rubric, between sections, etc.)
+                    # Render as a folio chip and — crucially — set _first_facs
+                    # before any paragraph-internal <pb> can claim that slot.
+                    chunks.append(self._render_pb(child))
+                elif local == "trailer":
+                    chunks.append(self._render_trailer(child))
+                elif local == "note":
+                    # Top-level div notes (unusual but possible):
+                    # render as a standalone editorial-note block.
+                    chunks.append(self._render_div_note(child))
         return "\n".join(chunks)
 
     def _render_head(self, head_el: ET.Element) -> str:
@@ -183,7 +211,6 @@ class TextParser:
             return f'<div class="ms-dateline">{inner}</div>'
         return f'<div class="ms-head">{inner}</div>'
 
-    # ── CHANGE 2: new _render_trailer method ───────────────────────────────
     def _render_trailer(self, trailer_el: ET.Element) -> str:
         # lb_as_br=True so manuscript line structure is visible in the explicit
         inner = "".join(self._render_children(trailer_el, "", "", lb_as_br=True))
@@ -191,6 +218,14 @@ class TextParser:
             '<div class="ms-trailer font-serif-geo text-center mt-8 pt-4 '
             'border-t border-gray-200 text-sm italic text-gray-500">'
             f'{inner}</div>'
+        )
+
+    def _render_div_note(self, note_el: ET.Element) -> str:
+        """Render a <note> that is a direct child of <div> as a block aside."""
+        return (
+            '<div class="editorial-note-block">'
+            + self._render_note_inner(note_el)
+            + '</div>'
         )
 
     def _render_paragraph(self, p_el: ET.Element) -> str:
@@ -227,16 +262,12 @@ class TextParser:
                 parts.append(self._render_app(child, par_id, par_n))
 
             elif tag == "note":
-                n_id = _xml_id_attr(child) or f"note-{id(child)}"
-                note_text = html_lib.escape("".join(child.itertext()))
-                num = child.get("n", "*")
-                parts.append(
-                    f'<span class="note-anchor" title="{note_text}" id="anchor-{n_id}">{num}</span>'
-                )
+                # Inline note inside a paragraph: render as a small bracketed
+                # editorial callout with optional resp attribution.
+                parts.append(self._render_note_inner(child))
 
             elif tag == "hi":
                 rend  = child.get("rend", "")
-                # ── propagate lb_as_br into nested hi elements ──────────────
                 inner = "".join(self._render_children(child, par_id, par_n, lb_as_br))
                 if rend == "initial":
                     parts.append(
@@ -252,7 +283,6 @@ class TextParser:
                     parts.append(f'<em>{inner}</em>')
 
             elif tag == "lb":
-                # ── CHANGE 3: emit <br> in head/trailer; drop in paragraphs ─
                 if lb_as_br:
                     parts.append("<br>")
                 # else: pass — reflow in CSS
@@ -268,13 +298,11 @@ class TextParser:
 
             elif tag == "quote":
                 source = child.get("source", "").lstrip("#")
-                # ── propagate lb_as_br into quotes ──────────────────────────
                 inner = "".join(self._render_children(child, par_id, par_n, lb_as_br))
                 source_attr = f' data-source="{html_lib.escape(source)}"' if source else ""
                 parts.append(f'<span class="geo-quote"{source_attr}>{inner}</span>')
 
             else:
-                # ── propagate lb_as_br into any other inline element ────────
                 inner = "".join(self._render_children(child, par_id, par_n, lb_as_br))
                 parts.append(inner)
 
@@ -283,6 +311,42 @@ class TextParser:
 
         return parts
 
+    # ── Note rendering ─────────────────────────────────
+
+    def _render_note_inner(self, note_el: ET.Element) -> str:
+        """
+        Render a <note> element as an inline editorial callout.
+
+        Attributes read:
+          @type  — "codicological" | "editorial" | other; drives CSS modifier class
+          @resp  — e.g. "#shanidze"; mapped to a display label via _RESP_LABELS
+          @xml:lang — ignored for display (note text is always shown as-is)
+
+        Output example:
+          <span class="editorial-note note-type-codicological"
+                title="In S, folios 4 and 5 are bound ...">
+            [<span class="note-body">In S, folios 4 and 5 …
+              <span class="note-resp"> — შანიძე</span>
+            </span>]
+          </span>
+        """
+        note_type   = note_el.get("type", "")
+        resp_raw    = note_el.get("resp", "").lstrip("#")
+        note_text   = html_lib.escape("".join(note_el.itertext()))
+        resp_label  = _RESP_LABELS.get(resp_raw, "")
+
+        type_class  = f" note-type-{html_lib.escape(note_type)}" if note_type else ""
+        resp_span   = (
+            f' <span class="note-resp">— {html_lib.escape(resp_label)}</span>'
+            if resp_label else ""
+        )
+
+        return (
+            f'<span class="editorial-note{type_class}" title="{note_text}">'
+            f'[<span class="note-body">{note_text}{resp_span}</span>]'
+            f'</span>'
+        )
+
     # ── Page break rendering ───────────────────────────
 
     def _render_pb(self, pb_el: ET.Element) -> str:
@@ -290,6 +354,12 @@ class TextParser:
         Render a <pb> element as a .folio-milestone span.
         If the facs map has an entry for this folio, emit data-facs and data-sp.
         Also stores the first folio facs for viewer initialisation.
+
+        Priority: @facs on the element itself takes precedence over the map.
+        This method is called both from _render_body (for top-level <pb> elements
+        that are direct children of <div type="text">) and from _render_children
+        (for inline <pb> elements inside paragraphs).  Either path correctly sets
+        self._first_facs on the very first call.
         """
         n   = pb_el.get("n", "")
         wit = pb_el.get("wit", "").lstrip("#")
@@ -301,7 +371,10 @@ class TextParser:
         facs_url   = facs_from_attr or facs_entry.get("facs", "")
         sp         = facs_entry.get("sp", 0)
 
-        # Record the first facs-bearing folio for viewer init
+        # Record the first facs-bearing folio for viewer init.
+        # Because _render_body now iterates children in document order,
+        # a top-level <pb n="1r"> is processed before any paragraph-internal
+        # <pb>, so _first_facs is correctly set to the opening folio.
         if facs_url and not self._first_facs:
             self._first_facs  = facs_url
             self._first_folio = n

@@ -1,8 +1,14 @@
 {% extends "base.html" %}
-{% set active = "texts" %}
-{% set root   = "../" %}
 
-{% block title %}ტექსტები{% endblock %}
+{% block title %}ტექსტები — ციფრული სამეცნიერო გამოცემა{% endblock %}
+
+{% block dc_extra %}
+<meta name="DC.title"     content="სინური მრავალთავი 864 წლისა">
+<meta name="DC.publisher" content="ილიას სახელმწიფო უნივერსიტეტი, ლინგვ. კვლ. ინსტ.">
+<meta name="DC.rights"    content="CC BY-NC-SA 4.0">
+<meta name="DC.language"  content="ka">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+{% endblock %}
 
 {% block head_extra %}
 <style>
@@ -46,8 +52,17 @@
     }
     .copy-uri-btn:hover { color:var(--crimson); }
     .copy-uri-btn.copied { color:#2d8a4e; }
+
+    /* ── Genre badge chips ───────────────────── */
+    .badge-homily    { background:#fdf2f2; color:#7a1a1a; border:1px solid #e8c5c5; }
+    .badge-life      { background:#f0f7f0; color:#2d5a2d; border:1px solid #b8d8b8; }
+    .badge-martyrdom { background:#fff7ed; color:#7a4f1a; border:1px solid #e8d5b0; }
+    .badge-encomium  { background:#f5f5ff; color:#3d3d8a; border:1px solid #c5c5e8; }
+    .badge-colophon  { background:#f5f0fa; color:#5a2d7a; border:1px solid #d0b8e8; }
+    .badge-other     { background:#f5f5f5; color:#555;    border:1px solid #ddd; }
 </style>
 {% endblock %}
+
 
 {% block main %}
 
@@ -68,14 +83,14 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
-                </svg>ავტ. / ჟანრი
+                </svg>ავტორები
             </button>
             <button id="btn-cal" onclick="switchView('cal')"
                     class="tab-btn px-4 py-1.5 rounded-sm text-xs font-medium text-gray-600 flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                </svg>კალენდარი
+                </svg>ჟანრი | კალენდარი
             </button>
         </div>
     </div>
@@ -89,27 +104,28 @@
 
         <!-- Calendar sidebar -->
         <div id="sb-cal" class="sticky top-24 hidden">
-            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ᲗᲕᲔᲔᲑᲘ</p>
-            <nav class="flex flex-col gap-0.5 text-xs">
-                {% for feast in feasts %}
-                {% if feast.fixed_month %}
-                <a href="#feast-{{ feast.id }}"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">{{ feast.label_ka }}</a>
-                {% endif %}
-                {% endfor %}
-                <a href="#feast-moveable"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მოძრავი</a>
-                <a href="#feast-misc"
-                   class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა / დამ.</a>
-            </nav>
-            <div class="mt-6 pt-4 border-t border-gray-200">
-                <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
-                <div class="flex flex-col gap-1">
-                    <button onclick="toggleFilter(this,'homily')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
-                    <button onclick="toggleFilter(this,'life')"     class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
-                    <button onclick="toggleFilter(this,'martyrdom')" class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
-                    <button onclick="toggleFilter(this,'other')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
-                </div>
+            <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ჟანრი</p>
+            <div class="flex flex-col gap-1 mb-6">
+                <button onclick="toggleFilter(this,'homily')"   class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ჰომილია</button>
+                <button onclick="toggleFilter(this,'life')"     class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">ცხოვრება</button>
+                <button onclick="toggleFilter(this,'martyrdom')" class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">წამება</button>
+                <button onclick="toggleFilter(this,'other')"    class="filter-chip on text-left px-2 py-1.5 rounded-sm text-xs border border-gray-200 text-gray-600">სხვა</button>
+            </div>
+            <div class="pt-4 border-t border-gray-200">
+                <p class="text-xs tracking-widest text-gray-400 font-medium mb-3">ᲗᲕᲔᲔᲑᲘ</p>
+                <nav class="flex flex-col gap-0.5 text-xs">
+                    {% for feast in feasts_ordered %}
+                    {% set feast_texts = texts | selectattr('feast_id','eq', feast.id) | list %}
+                    {% if feast_texts %}
+                    <a href="#feast-{{ feast.id }}"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">{{ feast.label_ka }}</a>
+                    {% endif %}
+                    {% endfor %}
+                    <a href="#feast-moveable"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">მოძრავი</a>
+                    <a href="#feast-misc"
+                       class="px-2 py-1.5 rounded-sm hover:bg-gray-100 text-gray-600">სხვა / დამ.</a>
+                </nav>
             </div>
         </div>
 
@@ -178,13 +194,11 @@
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">{{ t.label_ka }}</div>
-                                    {% if t.ms_heading %}
-                                    <div class="text-xs text-gray-400 mt-0.5">{{ t.ms_heading_short }}</div>
-                                    {% endif %}
+                                    <div class="text-xs text-gray-400 mt-0.5">{{ t.label_la }}</div>
                                 </td>
-                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">{{ t.author_short }}</td>
+                                <td class="px-4 py-3 text-xs text-gray-500 hidden sm:table-cell">{{ t.author_name_ka }}</td>
                                 <td class="px-4 py-3 hidden md:table-cell">
-                                    <span class="badge-{{ t.genre_class }} text-xs px-1.5 py-0.5 rounded-sm font-medium">{{ t.genre_label }}</span>
+                                    <span class="badge-{{ t.genre | replace("genre-", "") }} text-xs px-1.5 py-0.5 rounded-sm font-medium">{{ t.genre_label }}</span>
                                 </td>
                                 <td class="px-4 py-3 text-xs text-gray-400 hidden sm:table-cell font-serif-geo italic">{{ t.locus_n35 }}</td>
                             </tr>
@@ -214,15 +228,10 @@
                         <div class="min-w-0">
                             <h3 class="font-serif-geo font-semibold text-gray-800">{{ author.name_ka }}</h3>
                             <p class="text-xs text-gray-400 mt-0.5">
-                                {{ author.name_la }}{% if author.dates %} · {{ author.dates }}{% endif %}
+                                {{ author.name_la }}{% if author.name_la and author.dates %} · {% endif %}{{ author.dates }}
                             </p>
 
-                            {# ── Authority links row ────────────────────────────────────────────
-                               Rendered only when at least one identifier is present.
-                               Order: VIAF · CPG · TM · arbitrary URI links (in XML order).
-                            #}
-                            {% set has_links = author.viaf or author.cpg or author.tm or author.uri_links %}
-                            {% if has_links %}
+                            {% if author.viaf or author.cpg or author.tm or author.uri_links %}
                             <div class="flex items-center gap-1.5 mt-2 flex-wrap">
 
                                 {% if author.viaf %}
@@ -258,7 +267,6 @@
                                 </a>
                                 {% endif %}
 
-                                {# Arbitrary URI links — each <idno type="URI" subtype="…"> becomes one pill #}
                                 {% for link in author.uri_links %}
                                 <a href="{{ link.url }}"
                                    target="_blank" rel="noopener"
@@ -292,11 +300,11 @@
                         <tbody class="divide-y divide-gray-100">
                             {% for t in author_texts %}
                             <tr class="text-row"
-                                {% if t.status in ('done','encoding-in-progress') %}
+                                {% if t.status == 'encoding-in-progress' or t.status == 'done' %}
                                 onclick="window.location='{{ t.xml_id }}.html'"
                                 {% endif %}>
                                 <td class="px-4 py-3 w-16">
-                                    <span class="badge-{{ t.genre_class }} text-xs px-1.5 py-0.5 rounded-sm font-medium">{{ t.genre_label }}</span>
+                                    <span class="badge-{{ t.genre | replace("genre-", "") }} text-xs px-1.5 py-0.5 rounded-sm font-medium">{{ t.genre_label }}</span>
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="font-serif-geo text-sm text-gray-800">{{ t.label_ka }}</div>
@@ -345,7 +353,11 @@ function switchView(mode) {
 }
 
 // ── Genre filter ─────────────────────────────────────────────────
-const activeGenres = new Set(['homily','life','martyrdom','other']);
+// data-genre on rows uses the full value e.g. "genre-homily";
+// filter chip onclick passes the short key e.g. "homily".
+// activeGenres stores short keys; _genreKey strips the "genre-" prefix.
+// colophon and encomium are always visible (appendix texts, no filter chip).
+const activeGenres = new Set(['homily','life','martyrdom','other','colophon','encomium']);
 
 function toggleFilter(btn, genre) {
     btn.classList.toggle('on');
@@ -354,25 +366,42 @@ function toggleFilter(btn, genre) {
     applyFilters();
 }
 
+function _genreKey(row) {
+    return (row.dataset.genre || 'genre-other').replace(/^genre-/, '');
+}
+
 function applyFilters() {
     document.querySelectorAll('#panel-cal .text-row').forEach(row => {
-        const g = row.dataset.genre || 'other';
-        row.style.display = activeGenres.has(g) ? '' : 'none';
+        row.style.display = activeGenres.has(_genreKey(row)) ? '' : 'none';
     });
+    _hideEmptyCalSections();
+}
+
+function _hideEmptyCalSections() {
     document.querySelectorAll('#panel-cal section').forEach(sec => {
-        const rows = sec.querySelectorAll('.text-row');
-        const anyVisible = [...rows].some(r => r.style.display !== 'none');
+        const anyVisible = [...sec.querySelectorAll('.text-row')].some(r => r.style.display !== 'none');
         sec.style.display = anyVisible ? '' : 'none';
     });
 }
 
 // ── Search ───────────────────────────────────────────────────────
+// In calendar view: search respects active genre filter.
+// In thematic view: text search only (no genre chips shown there).
 document.getElementById('text-search').addEventListener('input', function() {
-    const q = this.value.toLowerCase();
+    const q = this.value.toLowerCase().trim();
     const panel = document.querySelector('.panel.active');
+    const isCalPanel = panel.id === 'panel-cal';
+
     panel.querySelectorAll('.text-row').forEach(row => {
-        row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+        const matchesSearch = !q || row.textContent.toLowerCase().includes(q);
+        if (isCalPanel) {
+            row.style.display = (matchesSearch && activeGenres.has(_genreKey(row))) ? '' : 'none';
+        } else {
+            row.style.display = matchesSearch ? '' : 'none';
+        }
     });
+
+    if (isCalPanel) _hideEmptyCalSections();
 });
 
 // ── Copy author URI ───────────────────────────────────────────────

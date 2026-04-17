@@ -1938,6 +1938,211 @@
           <sense><def xml:lang="ka">წინ, წინ-მდგომი, წინ-მსრბოლი.</def></sense>
         </entry>
 
+        <!-- ══ mrav-shoba-athanasi entries (Imnaishvili) ══════════════════════ -->
+        <entry xml:id="lex-garna" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">გარნა</orth></form>
+          <gramGrp><pos>კავ.</pos></gramGrp>
+          <sense><def xml:lang="ka">მაგრამ, არამედ, თუმცა.</def></sense>
+        </entry>
+        <entry xml:id="lex-gineba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">გინება</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">გინება; შებილწვა, შეუბილწველობა.</def></sense>
+        </entry>
+        <entry xml:id="lex-davrdomi" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">დავრდომილ</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">დავარდნილი, დაცემული, დარდამხობილი.</def></sense>
+        </entry>
+        <entry xml:id="lex-ertbamad" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ერთბამად</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ერთდროულად, ერთად.</def></sense>
+        </entry>
+        <entry xml:id="lex-vitarmtsa" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ვითარმცა</orth></form>
+          <gramGrp><pos>კავ.</pos></gramGrp>
+          <sense><def xml:lang="ka">რომ, რათა; ვითარ-თუ.</def></sense>
+        </entry>
+        <entry xml:id="lex-modzghuar" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მოძღუარ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">წინამძღოლი, გზის მაჩვენებელი; მასწავლებელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-nepsit" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ნეფსით</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ნებით, საკუთარი ნებით, ნებაყოფლობით.</def></sense>
+        </entry>
+        <entry xml:id="lex-oden" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ოდენ</orth></form>
+          <gramGrp><pos>ნაწ.</pos></gramGrp>
+          <sense><def xml:lang="ka">მხოლოდ, ოდენ; სწორედ, ზუსტად.</def></sense>
+        </entry>
+        <entry xml:id="lex-odes" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ოდეს</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">როდის; მაშინ, როდესაც.</def></sense>
+        </entry>
+        <entry xml:id="lex-patiosan" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">პატიოსან</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">პატივსაცემი, პატივცემული, ღირსეული.</def></sense>
+        </entry>
+        <entry xml:id="lex-sartsuno" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სარწმუნო</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ერთგული, საიმედო, სანდო, სარწმუნო.</def></sense>
+        </entry>
+        <entry xml:id="lex-sasdzlo" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სასძლო</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">სასიძო სახლი, საქორწინო ადგილი; სამყოფელი.</def></sense>
+        </entry>
+        <entry xml:id="lex-uskheulo" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უსხეულო</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">უხორცო, ხორცშეუსხმელი, უსხეულო.</def></sense>
+        </entry>
+        <entry xml:id="lex-ukm" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უქმ</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">უქმი, ამაო, ფუჭი, უუნარო.</def></sense>
+        </entry>
+        <entry xml:id="lex-utsinares" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უწინარჱს</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">უწინარეს, უწინ, უფრო ადრე, უმეტეს.</def></sense>
+        </entry>
+        <entry xml:id="lex-ghatu" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ღათუ</orth></form>
+          <gramGrp><pos>კავ.</pos></gramGrp>
+          <sense><def xml:lang="ka">თუმცა; კიდეც რომ; ერთობ თუ.</def></sense>
+        </entry>
+        <entry xml:id="lex-tsrpel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">წრფელ</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">სწორი, პირდაპირი; გულახდილი.</def></sense>
+        </entry>
+        <entry xml:id="lex-churchel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ჭურჭელ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ჭურჭელი; ნივთი, საგანი; სხეული.</def></sense>
+        </entry>
+        <entry xml:id="lex-he" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ჰე</orth></form>
+          <gramGrp><pos>ნაწ.</pos></gramGrp>
+          <sense><def xml:lang="ka">დიახ; ჰო; დამადასტურებელი ნაწილაკი.</def></sense>
+        </entry>
+        <entry xml:id="lex-khel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ჴელ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ხელი; ჴელითა — ხელით.</def></sense>
+        </entry>
+        <entry xml:id="lex-shida" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">შიდა</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">შიგნით, შიდა, ში.</def></sense>
+        </entry>
+
+        <!-- ══ mrav-shoba-prokle entries (Imnaishvili) ══════════════════════ -->
+
+        <entry xml:id="lex-gankhethqa" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">განხეთქა</orth></form>
+          <gramGrp><pos>ზმნ.</pos></gramGrp>
+          <sense><def xml:lang="ka">დახევა, გაპობა, განხეთქა.</def></sense>
+        </entry>
+        <entry xml:id="lex-datsua" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">დაწუა</orth></form>
+          <gramGrp><pos>ზმნ.</pos></gramGrp>
+          <sense><def xml:lang="ka">დაწვა, ცეცხლით განადგურება.</def></sense>
+        </entry>
+        <entry xml:id="lex-dakhshul" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">დაჴშულ</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">დახშული, მიხშული, დაბრკოლებული.</def></sense>
+        </entry>
+        <entry xml:id="lex-itsro" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">იწრო</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ვიწრო, შეზღუდული.</def></sense>
+        </entry>
+        <entry xml:id="lex-matql" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მატყლ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">მატყლი, ცხვრის შალი.</def></sense>
+        </entry>
+        <entry xml:id="lex-meqsle" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მექსლე</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">მქსოველი, ფეიქარი, მოქსოვი.</def></sense>
+        </entry>
+        <entry xml:id="lex-mqsovel" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">მქსოველ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">მქსოველი, ვინც ქსოვს.</def></sense>
+        </entry>
+        <entry xml:id="lex-otkheba" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ოთხება</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ოთხი ნაწილისგან შემდგარობა, ოთხეული.</def></sense>
+        </entry>
+        <entry xml:id="lex-romelime" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">რომელიმე</orth></form>
+          <gramGrp><pos>ნაც.</pos></gramGrp>
+          <sense><def xml:lang="ka">ზოგი, ზოგიერთი, ვინმე.</def></sense>
+        </entry>
+        <entry xml:id="lex-sagusal" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საგუსალ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">საქსოვი, ქსოვის იარაღი.</def></sense>
+        </entry>
+        <entry xml:id="lex-satstur" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">საცთურ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">შესაცდენი, მახე, მოსაქცევი.</def></sense>
+        </entry>
+        <entry xml:id="lex-sisulele" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">სისულელე</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">სისულელე, გაუგებრობა.</def></sense>
+        </entry>
+        <entry xml:id="lex-udedo" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">უდედო</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">დედის არმქონე, უდედო.</def></sense>
+        </entry>
+        <entry xml:id="lex-umamo" source="corpus" type="common">
+          <form type="lemma"><orth xml:lang="ka">უმამო</orth></form>
+          <gramGrp><pos>ზედ.</pos></gramGrp>
+          <sense><def xml:lang="ka">მამის არმქონე, უმამო.</def></sense>
+        </entry>
+        <entry xml:id="lex-unaklulod" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უნაკლულოდ</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">უნაკლოდ, სრულყოფილად.</def></sense>
+        </entry>
+        <entry xml:id="lex-ujmnelad" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">უჯმნელად</orth></form>
+          <gramGrp><pos>ზმნზ.</pos></gramGrp>
+          <sense><def xml:lang="ka">განუშორებლად, განუყოფლად.</def></sense>
+        </entry>
+        <entry xml:id="lex-qmna" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ქმნა</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">გაკეთება, შექმნა, ქმედება.</def></sense>
+        </entry>
+        <entry xml:id="lex-tskheml" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ცხემლ</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">სამქსელო იარაღი, ძელი ქსოვისათვის.</def></sense>
+        </entry>
+        <entry xml:id="lex-khuro" source="imnaishvili-1975" type="common">
+          <form type="lemma"><orth xml:lang="ka">ხურო</orth></form>
+          <gramGrp><pos>სახ.</pos></gramGrp>
+          <sense><def xml:lang="ka">ხელოსანი, ოსტატი, დურგალი.</def></sense>
+        </entry>
+
       </div>
     </body>
   </text>
