@@ -64,6 +64,20 @@
     .letter-tile-empty .letter-label {
         transform: translateY(-2px);
     }
+
+    /* ── Source pill (index page) ──────────── */
+    .src-pill {
+        display: inline-flex; align-items: center; gap: .35rem;
+        font-size: .65rem; letter-spacing: .05em; font-weight: 500;
+        border: 1px solid #e3caca; border-radius: 2px;
+        padding: .2rem .55rem;
+        color: var(--crimson); background: var(--crimson-pale);
+    }
+    .src-count {
+        font-size: .6rem; font-weight: 400;
+        color: #999;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+    }
 </style>
 {% endblock %}
 
@@ -94,15 +108,33 @@
 <div class="border-b border-gray-200 bg-white px-4 py-6">
     <div class="max-w-5xl mx-auto">
         <h1 class="font-serif-geo text-2xl font-semibold text-gray-800 mb-2">ლექსიკონი</h1>
-        <p class="text-sm text-gray-500 mt-1 mb-3">
+        <p class="text-sm text-gray-500 mt-1 mb-4">
             ძველი ქართული ·
             <span class="font-medium text-gray-600">{{ total_entries }} ლექსიკური ერთეული</span>
             · {{ alphabet | length }} ასო
         </p>
-        <p class="text-xs text-gray-400 font-serif italic leading-snug" style="font-family:'Times New Roman',Georgia,serif; font-style:italic;">
-            საძიებელი ლექსიკა ეფუძნება: ივანე იმნაიშვილი,
-            <em>სინური მრავალთავი, გამოკვლევა და ლექსიკონი</em>,
-            თბილისი, 1975
+
+        <!-- Source pills — dynamic, from available_sources -->
+        {% if available_sources %}
+        <div class="flex flex-wrap gap-2 mb-4">
+            {% for src in available_sources %}
+            <span class="src-pill">
+                {% if src.pdf_url %}
+                <a href="{{ src.pdf_url }}" target="_blank"
+                   class="underline decoration-dotted hover:opacity-80 transition-opacity">{{ src.label_short }}</a>
+                {% else %}
+                {{ src.label_short }}
+                {% endif %}
+                <span class="src-count">{{ src.count }}</span>
+            </span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <p class="text-xs text-gray-400 font-serif italic leading-snug"
+           style="font-family:'Times New Roman',Georgia,serif; font-style:italic;">
+            ლექსიკური ბაზა: ივ. იმნაიშვილი (1975), ილ. აბულაძე (1973), აკ. შანიძე (1971),
+            გ. რუხაძე (2008), კორპუსული ამონარიდები.
         </p>
     </div>
 </div>

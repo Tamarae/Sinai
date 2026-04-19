@@ -87,7 +87,7 @@
     /* ── Attestation count ─────────────────── */
     .attest-count { font-size: .65rem; color: #888; font-family: 'Noto Sans Georgian', sans-serif; letter-spacing: .03em; margin-bottom: .35rem; display: block; }
 
-    /* ── Source badge ──────────────────────── */
+    /* ── Source badge (entry header) ──────── */
     .src-badge { font-size: .55rem; letter-spacing: .07em; font-weight: 600; border-radius: 2px; padding: .15rem .45rem; background: #e3caca; color: white; }
 
     /* ── Source filter chip ─────────────────── */
@@ -148,11 +148,16 @@
         {% endfor %}
         <span class="ml-auto text-xs text-gray-400" id="count-label">{{ entries | length }} ნაჩვ.</span>
     </div>
+    {# Source filter — dynamic from available_sources, same order every build #}
     <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap py-2 border-t border-gray-50">
-        <span class="text-xs text-gray-400 font-medium tracking-widest mr-1">წყარო:</span>
-        <button onclick="toggleSRC(this, 'all')"   class="src-chip on" data-src="all">ყველა</button>
-        <button onclick="toggleSRC(this, 'imnaishvili-1975')" class="src-chip" data-src="imnaishvili-1975">იმნაიშვილი 1975</button>
-        <button onclick="toggleSRC(this, 'corpus')" class="src-chip" data-src="corpus">კორპუსი</button>
+        <span class="text-xs text-gray-400 font-medium tracking-widests mr-1">წყარო:</span>
+        <button onclick="toggleSRC(this, 'all')" class="src-chip on" data-src="all">ყველა</button>
+        {% for src in available_sources %}
+        <button onclick="toggleSRC(this, '{{ src.group }}')"
+                class="src-chip"
+                data-src="{{ src.group }}"
+                title="{{ src.label_full }} ({{ src.count }})">{{ src.label_short }}</button>
+        {% endfor %}
     </div>
 </div>
 
@@ -193,10 +198,11 @@
 
         <div class="flex flex-col gap-3">
             {% for entry in entries %}
+            {# data-source uses source_group so it matches the filter button data-src values #}
             <article class="entry-card p-4 sm:p-5"
                      id="{{ entry.xml_id }}"
                      data-pos="{{ entry.pos }}"
-                     data-source="{{ entry.source }}"
+                     data-source="{{ entry.source_group }}"
                      data-lemma="{{ entry.lemma | lower }}">
 
                 <!-- Entry header -->
@@ -220,8 +226,9 @@
 
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
-                        {% if entry.source == 'imnaishvili-1975' %}
-                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        {# src-badge: show dictionary source label for all sourced entries #}
+                        {% if entry.source_label and entry.source != 'corpus' %}
+                        <span class="src-badge">{{ entry.source_label }}</span>
                         {% endif %}
                         {% if entry.bog_id %}
                         <a href="https://bolis.tsu.ge/word/{{ entry.bog_id }}"
@@ -294,7 +301,7 @@
                 </div>
                 {% endif %}
 
-                <!-- Citation -->
+                <!-- Citation (from Imnaishvili example) -->
                 {% if entry.citation %}
                 <div class="citation-block mt-3">
                     <div class="citation-text">{{ entry.citation.text }}</div>
@@ -306,22 +313,46 @@
                 </div>
                 {% endif %}
 
-                <!-- Footer: sources + see-also -->
-                {% if entry.sources or entry.see_also %}
+                <!-- Footer: corpus text cross-refs + see-also -->
+                {#
+                  entry.sources contains two kinds of SourceRef:
+                    is_dict_source=False → corpus text link (old hand-crafted entries, <xr target="#mrav-...">)
+                    is_dict_source=True  → dictionary attribution (<xr target="abuladze1973">)
+                  Dictionary attributions are already shown via src-badge in the header.
+                  In the footer we only show corpus text links and see-also references.
+                #}
+                {% set corpus_sources = entry.sources | selectattr('is_dict_source', 'eq', false) | list %}
+                {% set dict_sources   = entry.sources | selectattr('is_dict_source', 'eq', true)  | list %}
+
+                {% if corpus_sources or dict_sources or entry.see_also %}
                 <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
 
-                    {% if entry.sources %}
                     <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        {# Corpus text cross-references — link to text pages #}
+                        {% if corpus_sources %}
                         <span class="text-gray-400">წყ.:</span>
-                        {% for src in entry.sources %}
+                        {% for src in corpus_sources %}
                         <a href="{{ root }}texts/{{ src.text_id }}.html"
                            class="underline decoration-dotted hover:text-gray-800 transition-colors">{{ src.label }}</a>
                         {% endfor %}
                         {% if entry.sources_more > 0 %}
                         <span class="text-gray-400">+{{ entry.sources_more }}</span>
                         {% endif %}
+                        {% endif %}
+
+                        {# Dictionary attributions in footer — show label, link to PDF if available #}
+                        {% if dict_sources %}
+                        <span class="text-gray-400">წყ.:</span>
+                        {% for src in dict_sources %}
+                        {% if entry.pdf_url %}
+                        <a href="{{ entry.pdf_url }}" target="_blank"
+                           class="underline decoration-dotted hover:text-gray-800 transition-colors">{{ src.label }}</a>
+                        {% else %}
+                        <span class="text-gray-500">{{ src.label }}</span>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
                     </div>
-                    {% endif %}
 
                     {% if entry.see_also %}
                     <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">

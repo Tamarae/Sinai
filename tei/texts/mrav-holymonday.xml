@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
 type="application/xml"
-schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-  xml:id="mrav-holymonday"
-  xml:lang="ka">
+schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-holymonday" xml:lang="ka">
   
   <teiHeader>
     <fileDesc>
@@ -80,11 +77,11 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴅ</hi>ითარცა გუაუწყა ჩუენ მათე მახარებელმან, რამეთუ თქუა: განთიად ვითარ აღვიდოდა იესუ ქალაქად, შეემშია და იხილა ლეღუი მდგომარჱ და მივიდა, რაჲთამცა პოვა ნაყოფი მას შინა, და, ვითარ არა პოვა, რქუა ლეღუსა მას: ნუღარამცა გაქუს ნაყოფი უკუნისამდე! და მუნქუესვე განჴმა<note n="1">(1)*</note>.
+          <hi rend="initial">Ⴅ</hi><w lemmaRef="#lex-vitartsa">ითარცა</w> გუაუწყა ჩუენ მათე <w lemmaRef="#lex-makharebel">მახარებელმან</w>, <w lemma="#lex-rametu">რამეთუ</w> თქუა: <w lemmaRef="#lex-gantiad">განთიად</w> <w lemma="#lex-vitar">ვითარ</w> აღვიდოდა იესუ <w lemmaRef="#lex-qalaqi">ქალაქად</w>, შეემშია და იხილა ლეღუი მდგომარჱ და მივიდა, რაჲთამცა პოვა <w lemmaRef="#lex-nayop">ნაყოფი</w> მას <w lemma="#lex-shina">შინა</w>, და, <w lemma="#lex-vitar">ვითარ</w> არა პოვა, რქუა ლეღუსა მას: ნუღარამცა გაქუს <w lemmaRef="#lex-nayop">ნაყოფი</w> უკუნისამდე! და <w lemmaRef="#lex-munquesve-muntquesve">მუნქუესვე</w> განჴმა<note n="1">(1)*</note>.
         </p>
         
         <p xml:id="p2" n="2">
-          ამასღა მოგაჴსენებ, საყუარელნო: მნებავს, რაჲთამცა გულის . . . . .
+          ამასღა მოგაჴსენებ, საყუარელნო: მნებავს, რაჲთამცა <w lemmaRef="#lex-gulis-gantsqeba">გულის</w> . . . . .
           <gap reason="lost" unit="folio" quantity="75">
             <desc>აკლია დაახლოებით 75 ფურცლის ტექსტი</desc>
           </gap>

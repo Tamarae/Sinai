@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
 type="application/xml"
-schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-bound-ioane-zosime" xml:lang="ka">
+schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-bound-ioane-zosime" xml:lang="ka">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -63,19 +62,19 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴘ</hi>ეიმოსა მესამედ წმიდაჲ ესე წიგნი მრავალთავი ტყავითა ზროხისაჲთა <note n="1">1*</note> სინა-წმიდას ჴელითა იოვანე <note n="2">2*</note> ფრიად ცოდვილისა <note n="3">3*</note> ზოსიმესითა დღეთა ოდენ ბოროტად მოხუცებულობისა ჩემისათა, ბრძანებითა და ფრიად მოსწრაფედ მოღუაწებითა მიქაელ და მიქაელ პატიოსანთა მღდელთაჲთა, დასაბამითგანთა წელთა ქართულად: ხ̂ფპე-სა და ქრონიკონსა: ს̂ა-სა.
+          <hi rend="initial">Ⴘ</hi>ეიმოსა მესამედ წმიდაჲ ესე წიგნი <w lemmaRef="#lex-mravaltav">მრავალთავი</w> <w lemmaRef="#lex-tqav">ტყავითა</w> ზროხისაჲთა <note n="1">1*</note> <placeName ref="#place-sina">სინა</placeName>-წმიდას <w lemmaRef="#lex-qel">ჴელითა</w> იოვანე <note n="2">2*</note> <w lemma="#lex-priad">ფრიად</w> ცოდვილისა <note n="3">3*</note> ზოსიმესითა დღეთა <w lemma="#lex-oden">ოდენ</w> <w lemmaRef="#lex-boroti">ბოროტად</w> მოხუცებულობისა ჩემისათა, ბრძანებითა და <w lemma="#lex-priad">ფრიად</w> მოსწრაფედ მოღუაწებითა მიქაელ და მიქაელ პატიოსანთა მღდელთაჲთა, დასაბამითგანთა წელთა ქართულად: ხ̂ფპე-სა და <w lemmaRef="#lex-qronikon">ქრონიკონსა</w>: <w lemmaRef="#lex-s">ს</w>̂ა-სა.
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴀ</hi>წ გევედრებით თქუენ, ყოველთა ღმრთის მოყუარეთა მამათა და ძმათა ჩუენთა, გვედიეთ წმიდასა ლოცვასა თქუენსა მე ფრიად ცოდვილი იოვანე <note n="4">4*</note> და მიქაელ <note n="5">5*</note> და მიქაელ <note n="6">5*</note> და მშობელნი და ძმანი ჩუენნი და ყოველნივე ჩუენეულნი, ცოცხალნი და მიცვალებულნი, სულიერნი და ჴორციელნი, რამეთუ ჩუენ ფრიად გურწამს თქუენი ლოცვაჲ და ყოველი დაკლებული ჩუენი შეგჳნდვეთ <note n="7">6*</note> ღმრთისათჳს, და თქუენცა ქრისტემან შეგინდვენ და შეგიწყალენინ ყოველნი. ამენ <note n="8">7*</note>.
+          <hi rend="initial">Ⴀ</hi>წ გევედრებით თქუენ, ყოველთა ღმრთის მოყუარეთა მამათა და ძმათა <w lemmaRef="#lex-chuen">ჩუენთა</w>, გვედიეთ წმიდასა <w lemmaRef="#lex-lotsva">ლოცვასა</w> თქუენსა მე <w lemma="#lex-priad">ფრიად</w> ცოდვილი იოვანე <note n="4">4*</note> და <persName ref="#pers-mikhael"><persName ref="#pers-mikhael">მიქაელ</persName></persName> <note n="5">5*</note> და <persName ref="#pers-mikhael"><persName ref="#pers-mikhael">მიქაელ</persName></persName> <note n="6">5*</note> და მშობელნი და ძმანი ჩუენნი და ყოველნივე ჩუენეულნი, ცოცხალნი და მიცვალებულნი, <w lemmaRef="#lex-sulieri">სულიერნი</w> და <w lemmaRef="#lex-qortsiel">ჴორციელნი</w>, <w lemma="#lex-rametu">რამეთუ</w> ჩუენ <w lemma="#lex-priad">ფრიად</w> გურწამს თქუენი ლოცვაჲ და <w lemmaRef="#lex-qovel">ყოველი</w> <w lemmaRef="#lex-daklebuli">დაკლებული</w> ჩუენი შეგჳნდვეთ <note n="7">6*</note> ღმრთისათჳს, და თქუენცა ქრისტემან შეგინდვენ და შეგიწყალენინ <w lemmaRef="#lex-qovel">ყოველნი</w>. <w lemmaRef="#lex-amen-amen">ამენ</w> <note n="8">7*</note>.
         </p>
         
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴕ</hi>რისტე, შეიწყალე მიქაელ <note n="9">5*</note> და მიქაელ <note n="10">8*</note>, გაბრიელ <note n="11">9*</note>, კჳრიკე <note n="12">10*</note>, გიორგი <note n="13">11*</note>, იოანე-ზოსიმე <note n="14">12*</note> და ყოველნი ძმანი და ყოველნი ქრისტეანენი და უფროჲს ყოველთასა ყოველნი ქართველნი.
+          <hi rend="initial">Ⴕ</hi><persName ref="#pers-iesu-kriste">რისტე</persName>, შეიწყალე <persName ref="#pers-mikhael"><persName ref="#pers-mikhael">მიქაელ</persName></persName> <note n="9">5*</note> და <persName ref="#pers-mikhael"><persName ref="#pers-mikhael">მიქაელ</persName></persName> <note n="10">8*</note>, <persName ref="#pers-gabriel"><persName ref="#pers-gabriel">გაბრიელ</persName></persName> <note n="11">9*</note>, კჳრიკე <note n="12">10*</note>, გიორგი <note n="13">11*</note>, იოანე-ზოსიმე <note n="14">12*</note> და ყოველნი ძმანი და ყოველნი ქრისტეანენი და უფროჲს ყოველთასა <w lemmaRef="#lex-qovel">ყოველნი</w> <w lemmaRef="#lex-qartveli">ქართველნი</w>.
         </p>
         
         <p xml:id="p4" n="4">
-          <hi rend="initial">Ⴊ</hi>ოცვა-ყავთ ჩუენთჳს, წმიდანო (მამანო), ლოცვა-ყავთ! ამენ <note n="15">7*</note>.
+          <hi rend="initial">Ⴊ</hi>ოცვა-ყავთ ჩუენთჳს, წმიდანო (მამანო), <w lemmaRef="#lex-lotsva">ლოცვა</w>-ყავთ! <w lemmaRef="#lex-amen-amen">ამენ</w> <note n="15">7*</note>.
         </p>
         
       </div>

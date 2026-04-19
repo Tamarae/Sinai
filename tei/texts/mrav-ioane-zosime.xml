@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
 type="application/xml"
-schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-ioane-zosime" xml:lang="ka">
+schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-ioane-zosime" xml:lang="ka">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -67,23 +66,23 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴃ</hi>ამარხულ არს ენაჲ ქართული დღედმდე მეორედ მოსლვისა მისისა საწამებელად, რაჲთა ყოველსა ენასა ღმერთმან ამხილოს ამით ენითა. და ესე ენაჲ მძინარე <note n="1">1*</note> არს დღესამომდე, და სახარებასა შინა ამას ენასა ლაზარე ჰრქჳან. და ახალმან ნინო მოაქცია და ჰჱლენე დედოფალმან, ესე არიან ორნი დანი, ვითარცა მარიამ და მართაჲ. და მეგობრობაჲ ამისთჳს თქუა, ვითარმედ ყოველი საიდუმლოჲ <note n="2">2*</note> ამას ენასა შინა დამარხულ არს, და ოთხისა დღისა მკუდარი <note n="3">3*</note> ამისთჳს თქუა დავით წინაწარმეტყუელმან, რამეთუ: წელი ათასი ვითარცა ერთი დღჱ <note n="4">(1)*</note>. და სახარებასა შინა ქართულსა თავსა ხოლო მათჱსსა წილი <note n="5">4*</note> ზის, რომელ ასოჲ არს და იტყჳს ყოვლად ოთხ ათასსა მარაგსა. და ესე არს ოთხი დღჱ და ოთხისა დღისა მკუდარი <note n="6">5*</note>, ამისთჳს მის თანავე დაფლული სიკუდილითა ნათლის-ღებისა მისისაჲთა.
+          <hi rend="initial">Ⴃ</hi>ამარხულ არს <w lemmaRef="#lex-ena">ენაჲ</w> <w lemmaRef="#lex-qartuli">ქართული</w> დღედმდე <w lemma="#lex-meored">მეორედ</w> მოსლვისა <w lemmaRef="#lex-misi">მისისა</w> <w lemmaRef="#lex-satsamebel">საწამებელად</w>, <w lemma="#lex-rayta">რაჲთა</w> ყოველსა ენასა ღმერთმან ამხილოს ამით ენითა. და ესე <w lemmaRef="#lex-ena">ენაჲ</w> <w lemmaRef="#lex-mdzinare-mdzinari">მძინარე</w> <note n="1">1*</note> არს <w lemmaRef="#lex-dghesamomde">დღესამომდე</w>, და <w lemmaRef="#lex-sakhareba">სახარებასა</w> <w lemma="#lex-shina">შინა</w> ამას ენასა ლაზარე ჰრქჳან. და <w lemmaRef="#lex-akhali-akhaltai">ახალმან</w> ნინო მოაქცია და ჰჱლენე <w lemmaRef="#lex-dedopali-dedupali-diopali-deopali">დედოფალმან</w>, ესე არიან ორნი დანი, <w lemma="#lex-vitartsa">ვითარცა</w> <persName ref="#pers-mariami">მარიამ</persName> და მართაჲ. და <w lemmaRef="#lex-megobroba">მეგობრობაჲ</w> ამისთჳს თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w> <w lemmaRef="#lex-qovel">ყოველი</w> საიდუმლოჲ <note n="2">2*</note> ამას <w lemmaRef="#lex-ena">ენასა</w> <w lemma="#lex-shina">შინა</w> დამარხულ არს, და <w lemmaRef="#lex-otkhi">ოთხისა</w> დღისა <w lemmaRef="#lex-mkudari">მკუდარი</w> <note n="3">3*</note> ამისთჳს თქუა <persName ref="#pers-davit">დავით</persName> <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელმან</w>, <w lemma="#lex-rametu">რამეთუ</w>: <w lemmaRef="#lex-tseli">წელი</w> <w lemmaRef="#lex-atasi">ათასი</w> <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-erti">ერთი</w> <w lemmaRef="#lex-khvalisa-dge">დღჱ</w> <note n="4">(1)*</note>. და <w lemmaRef="#lex-sakhareba">სახარებასა</w> <w lemma="#lex-shina">შინა</w> ქართულსა <w lemmaRef="#lex-tav">თავსა</w> ხოლო მათჱსსა <w lemmaRef="#lex-tsil">წილი</w> <note n="5">4*</note> ზის, რომელ ასოჲ არს და იტყჳს <w lemma="#lex-qovlad">ყოვლად</w> ოთხ ათასსა მარაგსა. და ესე არს ოთხი დღჱ და <w lemmaRef="#lex-otkhi">ოთხისა</w> დღისა <w lemmaRef="#lex-mkudari">მკუდარი</w> <note n="6">5*</note>, ამისთჳს მის თანავე დაფლული <w lemmaRef="#lex-sikudil">სიკუდილითა</w> <w lemmaRef="#lex-natlis-gheba-natlis-migheba">ნათლის</w>-ღებისა მისისაჲთა.
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴃ</hi>ა ესე ენაჲ, შემკული და კურთხეული სახელითა უფლისაჲთა, მდაბალი და დაწუნებული, მოელის დღესა მას მეორედ მოსლვასა უფლისასა. და სასწაულად ესე აქუს: ოთხმეოც და ათოთხმეტი წელი უმეტჱს სხუათა ენათა ქრისტჱს <note n="7">6*</note> მოსლვითგან ვიდრე დღესამომდე.
+          <hi rend="initial">Ⴃ</hi>ა ესე ენაჲ, შემკული და კურთხეული სახელითა უფლისაჲთა, <w lemmaRef="#lex-mdabal">მდაბალი</w> და <w lemmaRef="#lex-datsunebul">დაწუნებული</w>, მოელის დღესა მას <w lemma="#lex-meored">მეორედ</w> მოსლვასა უფლისასა. და სასწაულად ესე აქუს: ოთხმეოც და ათოთხმეტი წელი უმეტჱს სხუათა <w lemmaRef="#lex-ena">ენათა</w> <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w> <note n="7">6*</note> მოსლვითგან <w lemma="#lex-vidre">ვიდრე</w> <w lemmaRef="#lex-dghesamomde">დღესამომდე</w>.
         </p>
         
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴃ</hi>ა ესე ყოველი, რომელი წერილ არს, მოწამედ წარმოგითხარ, ასი ესე წილი ანბანისაჲ.
+          <hi rend="initial">Ⴃ</hi>ა ესე ყოველი, რომელი წერილ არს, მოწამედ წარმოგითხარ, <w lemmaRef="#lex-asi">ასი</w> ესე <w lemmaRef="#lex-tsil">წილი</w> ანბანისაჲ.
         </p>
         
         <p xml:id="p4" n="4">
-          <hi rend="initial">Ⴊ</hi>ოცვა-ყავთ, წმიდანო ღმრთისანო, ლოცვა-ყავთ!
+          <hi rend="initial">Ⴊ</hi><w lemmaRef="#lex-lotsva">ოცვა</w>-ყავთ, წმიდანო ღმრთისანო, <w lemmaRef="#lex-lotsva">ლოცვა</w>-ყავთ!
         </p>
         
         <p xml:id="p5" n="5">
-          <hi rend="initial">Ⴕ</hi>რისტე, შეიწყალე მჩხრეკალი <note n="8">7*</note> ამისი იოვანე <note n="9">8*</note>. ამენ <note n="10">9*</note>.
+          <hi rend="initial">Ⴕ</hi><persName ref="#pers-iesu-kriste">რისტე</persName>, შეიწყალე <w lemmaRef="#lex-mchkhrekal">მჩხრეკალი</w> <note n="8">7*</note> <w lemmaRef="#lex-amisi">ამისი</w> იოვანე <note n="9">8*</note>. <w lemmaRef="#lex-amen-amen">ამენ</w> <note n="10">9*</note>.
         </p>
         
       </div>

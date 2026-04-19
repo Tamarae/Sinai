@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
 type="application/xml"
-schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-  xml:id="mrav-nativity-theotokos"
-  xml:lang="ka">
+schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-nativity-theotokos" xml:lang="ka">
   
   <teiHeader>
     <fileDesc>
@@ -79,7 +76,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴘ</hi>ობაჲ, მისისა შობისაჲ წიგნი წაიკითხონ და შესხმაჲ ღმრთისმშობელისაჲ, რომელიცა გინდეს.
+          <hi rend="initial">Ⴘ</hi>ობაჲ, მისისა შობისაჲ <w lemmaRef="#lex-tsign">წიგნი</w> წაიკითხონ და <w lemmaRef="#lex-sheskhma">შესხმაჲ</w> ღმრთისმშობელისაჲ, რომელიცა გინდეს.
         </p>
         
       </div>

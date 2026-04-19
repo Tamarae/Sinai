@@ -1,8 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
 type="application/xml"
-schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-peter-martyrdom" xml:lang="ka">
+schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-peter-martyrdom" xml:lang="ka">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -62,39 +61,39 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴋ</hi>ას ჟამსა, ოდეს-იგი მოვიდა წმიდაჲ პეტრე ჰრომე, განაკჳრვებდა ყოველთა ნიშებითა და სასწაულებითა, რომელსა იქმოდა სახელითა უფლისა ჩუენისა იესუ ქრისტჱსითა. და მრავალნი წარმართთაგანი მოიქცეოდეს სარწმუნოებად. და იყო ვინმე ჰრომეს შინა სიმონ მოგჳ, რომელი-იგი წინა-აღუდგებოდა პეტრეს და აცთუნებდა ერსა მას. ხოლო ნეტარი პეტრე ყოვლითურთ ამხილებდა მას და აჩუენებდა ყოველთა ჭეშმარიტებასა.
+          <hi rend="initial">Ⴋ</hi>ას <w lemmaRef="#lex-zham">ჟამსა</w>, <w lemma="#lex-odes">ოდეს</w>-იგი მოვიდა წმიდაჲ პეტრე ჰრომე, განაკჳრვებდა ყოველთა ნიშებითა და სასწაულებითა, რომელსა იქმოდა სახელითა უფლისა ჩუენისა იესუ ქრისტჱსითა. და <w lemmaRef="#lex-mravali">მრავალნი</w> წარმართთაგანი მოიქცეოდეს სარწმუნოებად. და იყო <w lemmaRef="#lex-vinme">ვინმე</w> ჰრომეს <w lemma="#lex-shina">შინა</w> სიმონ <w lemmaRef="#lex-mogui-mogvi">მოგჳ</w>, რომელი-იგი <w lemma="#lex-tsina">წინა</w>-აღუდგებოდა პეტრეს და აცთუნებდა ერსა მას. ხოლო ნეტარი პეტრე ყოვლითურთ ამხილებდა მას და აჩუენებდა <w lemmaRef="#lex-qovel">ყოველთა</w> <w lemmaRef="#lex-cheshmariteba">ჭეშმარიტებასა</w>.
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴞ</hi>ოლო ოდეს იხილა სიმონ, რამეთუ სირცხჳლეულ იქმნა წინაშე ყოველთა, თქუა: აღვფრინდე ზეცად და თქუენ ყოველთა დაგიტეოთ. და აღ-რა-ფრინდა <pb n="463v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0466/full/pct:100/0/default.jpg"/> ჰაერთა შინა ეშმაკთა შეწევნითა, ილოცა წმიდამან პეტრე და მეყსეულად დაეცა სიმონ და შეიმუსრა. მაშინ უფროჲსად განმრავლდა სარწმუნოებაჲ ქრისტჱსი.
+          <hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-odes">ოდეს</w> იხილა სიმონ, <w lemma="#lex-rametu">რამეთუ</w> სირცხჳლეულ იქმნა წინაშე <w lemmaRef="#lex-qovel">ყოველთა</w>, თქუა: აღვფრინდე ზეცად და თქუენ <w lemmaRef="#lex-qovel">ყოველთა</w> დაგიტეოთ. და აღ-<w lemma="#lex-ra">რა</w>-ფრინდა <pb n="463v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0466/full/pct:100/0/default.jpg"/> <w lemmaRef="#lex-haer">ჰაერთა</w> <w lemma="#lex-shina">შინა</w> <w lemmaRef="#lex-eshmaki">ეშმაკთა</w> შეწევნითა, ილოცა წმიდამან <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName> და <w lemma="#lex-meqseulad">მეყსეულად</w> დაეცა სიმონ და შეიმუსრა. <w lemma="#lex-mashin">მაშინ</w> უფროჲსად განმრავლდა <w lemmaRef="#lex-sartsmunoeba">სარწმუნოებაჲ</w> <persName ref="#pers-iesu-kriste"><persName ref="#pers-iesu-kriste">ქრისტჱსი</persName></persName>.
         </p>
         
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴞ</hi>ოლო ნეტარი პეტრე დაადგრა ჰრომეს შინა და ასწავებდა ერსა მას. და მრავალნი დედანნი მთავართანი და აზნაურთანი მოიქცეოდეს და დაუტევებდნენ ქმართა თჳსთა ბილწებისა გამო და სიწმიდითა იყოფოდეს. ამისთჳსცა აღიძრა რისხუად ნერონ კეისარი, რამეთუ ცოლნიცა მისნი განეშორნეს მას პეტრჱს სწავლითა. და ბრძანა პყრობაჲ პეტრჱსი, რაჲთამცა სიკუდილითა მოაკუდინა იგი.
+          <hi rend="initial">Ⴞ</hi>ოლო <w lemmaRef="#lex-netar">ნეტარი</w> <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName> დაადგრა ჰრომეს <w lemma="#lex-shina">შინა</w> და ასწავებდა ერსა მას. და მრავალნი დედანნი მთავართანი და აზნაურთანი მოიქცეოდეს და დაუტევებდნენ <w lemmaRef="#lex-qmari">ქმართა</w> <w lemmaRef="#lex-tvisi">თჳსთა</w> ბილწებისა <w lemma="#lex-gamo">გამო</w> და <w lemmaRef="#lex-sitsmide">სიწმიდითა</w> იყოფოდეს. ამისთჳსცა აღიძრა რისხუად ნერონ <w lemmaRef="#lex-keisar">კეისარი</w>, <w lemma="#lex-rametu">რამეთუ</w> ცოლნიცა მისნი განეშორნეს მას პეტრჱს სწავლითა. და ბრძანა <w lemmaRef="#lex-pqroba">პყრობაჲ</w> პეტრჱსი, რაჲთამცა <w lemmaRef="#lex-sikudil">სიკუდილითა</w> მოაკუდინა იგი.
         </p>
         
         <p xml:id="p4" n="4">
-          <hi rend="initial">Ⴋ</hi>აშინ ევედრებოდეს მორწმუნენი პეტრეს, რაჲთამცა განერა და განვიდა ქალაქით. და ოდეს განვიდოდა პეტრე ქალაქით, იხილა უფალი, რომელი შევიდოდა ჰრომეს. და ჰრქუა მას პეტრე: <quote>უფალო, ვიდრე ჰხუალ?</quote> ხოლო უფალმან ჰრქუა: <quote>ჰრომედ შევალ კუალად ჯუარ-ცუმად.</quote> მაშინ გულისხმა-ყო პეტრე, რამეთუ მისთჳს იყო სიტყუაჲ იგი. და მოიქცა კუალად ქალაქად და მისცა თავი თჳსი მტანჯველთა.
+          <hi rend="initial">Ⴋ</hi>აშინ ევედრებოდეს მორწმუნენი პეტრეს, რაჲთამცა <w lemmaRef="#lex-ganera">განერა</w> და განვიდა <w lemmaRef="#lex-qalaqi">ქალაქით</w>. და <w lemma="#lex-odes">ოდეს</w> განვიდოდა პეტრე ქალაქით, იხილა <w lemmaRef="#lex-upal">უფალი</w>, რომელი შევიდოდა ჰრომეს. და ჰრქუა მას <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName>: <quote><w lemmaRef="#lex-upal">უფალო</w>, <w lemma="#lex-vidre">ვიდრე</w> ჰხუალ?</quote> ხოლო უფალმან ჰრქუა: <quote>ჰრომედ შევალ კუალად <w lemmaRef="#lex-dzhuar-tsuma">ჯუარ</w>-ცუმად.</quote> <w lemma="#lex-mashin">მაშინ</w> <w lemma="#lex-guliskhma">გულისხმა</w>-ყო <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName>, <w lemma="#lex-rametu">რამეთუ</w> მისთჳს იყო სიტყუაჲ იგი. და მოიქცა კუალად ქალაქად და მისცა <w lemmaRef="#lex-tav">თავი</w> თჳსი <w lemmaRef="#lex-mtanjveli">მტანჯველთა</w>.
         </p>
         
         <p xml:id="p5" n="5">
-          <hi rend="initial">Ⴃ</hi>ა ოდეს მოიყვანეს იგი წინაშე ნერონისა, ჰკითხვიდა მას მრავალსა. ხოლო პეტრე ყოვლითა კადნიერებითა ქადაგებდა ქრისტესა. მაშინ უბრძანა ნერონ ჯუარ-ცუმაჲ მისი. ხოლო პეტრე ევედრებოდა მსახურთა მათ, რაჲთამცა ქუეგან-დამამხობითა <note n="1">1*</note> ჯუარს-აცუეს იგი, რამეთუ თქუა: <quote>არა ვარ ღირს სწორად უფლისა ჩემისა ჯუარ-ცუმად, არამედ თავ-დაღმართ დამდევით მე.</quote>
+          <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-odes">ოდეს</w> მოიყვანეს იგი წინაშე ნერონისა, ჰკითხვიდა მას მრავალსა. ხოლო <persName ref="#pers-petre">პეტრე</persName> ყოვლითა კადნიერებითა ქადაგებდა <persName ref="#pers-iesu-kriste"><persName ref="#pers-iesu-kriste">ქრისტესა</persName></persName>. <w lemma="#lex-mashin">მაშინ</w> უბრძანა ნერონ ჯუარ-ცუმაჲ მისი. ხოლო <persName ref="#pers-petre">პეტრე</persName> ევედრებოდა <w lemmaRef="#lex-msakhuri">მსახურთა</w> მათ, რაჲთამცა ქუეგან-დამამხობითა <note n="1">1*</note> ჯუარს-აცუეს იგი, <w lemma="#lex-rametu">რამეთუ</w> თქუა: <quote>არა ვარ <w lemmaRef="#lex-ghir">ღირს</w> <w lemmaRef="#lex-tsor">სწორად</w> უფლისა <w lemmaRef="#lex-chemi">ჩემისა</w> <w lemmaRef="#lex-dzhuar-tsuma">ჯუარ</w>-ცუმად, არამედ <w lemmaRef="#lex-tav">თავ</w>-<w lemmaRef="#lex-daghmart">დაღმართ</w> დამდევით მე.</quote>
         </p>
         
         <p xml:id="p6" n="6">
-          <hi rend="initial">Ⴄ</hi>სრჱთ აღასრულა წამებაჲ თჳსი ნეტარმან პეტრე და შეჰვედრა სული თჳსი ღმერთსა. ხოლო მორწმუნეთა პატივითა დიდითა დაჰფლეს წმიდაჲ გუამი მისი. და იქმნებოდეს მრავალნი საკჳრველებანი საფლავსა <note n="2">2*</note> მას ზედა წმიდისა პეტრე მოციქულისაჲსა.
+          <hi rend="initial">Ⴄ</hi>სრჱთ აღასრულა წამებაჲ თჳსი <w lemmaRef="#lex-netar">ნეტარმან</w> <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName> და შეჰვედრა <w lemma="#lex-suli">სული</w> თჳსი ღმერთსა. ხოლო მორწმუნეთა პატივითა დიდითა დაჰფლეს წმიდაჲ გუამი მისი. და იქმნებოდეს მრავალნი <w lemmaRef="#lex-sakvirveleba">საკჳრველებანი</w> <w lemmaRef="#lex-saplavi">საფლავსა</w> <note n="2">2*</note> მას <w lemma="#lex-zeda">ზედა</w> წმიდისა <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName> მოციქულისაჲსა.
         </p>
         
         <p xml:id="p7" n="7">
-          <hi rend="initial">Ⴞ</hi>ოლო ნერონ კეისარი უფროჲსად განრისხდა მორწმუნეთა ზედა და იწყო დევნულებაჲ დიდი. არამედ მადლითა <note n="3">3*</note> ღმრთისაჲთა სარწმუნოებაჲ ქრისტჱსი უფროჲსად განმტკიცდებოდა ყოველსა სოფელსა.
+          <hi rend="initial">Ⴞ</hi>ოლო ნერონ <w lemmaRef="#lex-keisar">კეისარი</w> <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲსად</w> განრისხდა მორწმუნეთა <w lemma="#lex-zeda">ზედა</w> და იწყო დევნულებაჲ <w lemmaRef="#lex-didi">დიდი</w>. არამედ <w lemmaRef="#lex-madli">მადლითა</w> <note n="3">3*</note> ღმრთისაჲთა სარწმუნოებაჲ ქრისტჱსი უფროჲსად განმტკიცდებოდა <w lemmaRef="#lex-qovel">ყოველსა</w> <w lemmaRef="#lex-sopel">სოფელსა</w>.
         </p>
         
         <p xml:id="p8" n="8">
-          <hi rend="initial">Ⴂ</hi>ულისხმა-ყავთ უკუე, საყუარელნო, რავდენი ძალი აქუს სიმტკიცესა სარწმუნოებისასა, რამეთუ პეტრე, რომელი პირველ შიშითა უვარ-ჰყოფდა უფალსა, შემდგომად მადლითა სულისა წმიდისაჲთა განძლიერდა და სიკუდილსაცა არა მოერიდა სახელისათჳს ქრისტჱსისა.
+          <hi rend="initial">Ⴂ</hi>ულისხმა-ყავთ უკუე, საყუარელნო, რავდენი <w lemmaRef="#lex-dzal">ძალი</w> <w lemmaRef="#lex-aqus">აქუს</w> სიმტკიცესა სარწმუნოებისასა, <w lemma="#lex-rametu">რამეთუ</w> <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName>, რომელი <w lemma="#lex-pirvel">პირველ</w> შიშითა უვარ-ჰყოფდა უფალსა, შემდგომად მადლითა <w lemmaRef="#lex-suli">სულისა</w> წმიდისაჲთა განძლიერდა და სიკუდილსაცა არა მოერიდა სახელისათჳს <persName ref="#pers-iesu-kriste"><persName ref="#pers-iesu-kriste">ქრისტჱსისა</persName></persName>.
         </p>
         
         <p xml:id="p9" n="9">
-          <hi rend="initial">Ⴀ</hi>მისთჳს ჩუენცა ვევედრნეთ წმიდასა პეტრეს, რაჲთამცა მეოხ-გუექმნა წინაშე ღმრთისა, რაჲთა მოგუეცეს მოტევებაჲ ცოდვათა ჩუენთა და ღირს ვიქმნეთ სასუფეველსა ცათასა <note n="4">1*</note> მადლითა და კაცთ-მოყუარებითა უფლისა ჩუენისა იესუ ქრისტჱსითა, რომლისაჲ არს დიდებაჲ <note n="5">2*</note> და სიმტკიცე მამისა თანა და წმიდისა სულისა აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
+          <hi rend="initial">Ⴀ</hi>მისთჳს ჩუენცა ვევედრნეთ წმიდასა პეტრეს, რაჲთამცა <w lemmaRef="#lex-meokh">მეოხ</w>-გუექმნა <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> ღმრთისა, <w lemma="#lex-rayta">რაჲთა</w> მოგუეცეს მოტევებაჲ ცოდვათა ჩუენთა და <w lemmaRef="#lex-ghir">ღირს</w> ვიქმნეთ <w lemmaRef="#lex-sasupevel">სასუფეველსა</w> ცათასა <note n="4">1*</note> მადლითა და კაცთ-მოყუარებითა უფლისა ჩუენისა იესუ <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName>, რომლისაჲ არს <w lemmaRef="#lex-dideba">დიდებაჲ</w> <note n="5">2*</note> და <w lemmaRef="#lex-simtkitse">სიმტკიცე</w> მამისა <w lemma="#lex-tana">თანა</w> და წმიდისა <w lemmaRef="#lex-suli">სულისა</w> <w lemma="#lex-ats">აწ</w> და <w lemma="#lex-maradis">მარადის</w> და უკუნითი უკუნისამდე. <w lemmaRef="#lex-amen-amen">ამენ</w>.
         </p>
         
       </div>

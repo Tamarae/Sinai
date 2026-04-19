@@ -490,7 +490,7 @@ def collect_attestations(xml_path: Path, text_id: str, title: str) -> dict:
     seen: set = set()   # (lex_id, text_id, para_id)
 
     for w_el in root.findall(f".//{{{_TEI}}}w"):
-        lemma_ref = w_el.get("lemma", "")
+        lemma_ref = w_el.get("lemmaRef", "") or w_el.get("lemma", "")
         if not lemma_ref.startswith("#"):
             continue
         lex_id = lemma_ref[1:]

@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
             type="application/xml"
-            schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-  xml:id="mart-stepane"
-  xml:lang="ka">
+            schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-stepane-martyrdom" xml:lang="ka">
   
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title xml:lang="ka">წამებაჲ წმიდისა სტეფანჱსი</title>
+        <title xml:lang="ka">წამებაჲ <w lemma="#lex-wmida">წმიდისა</w> სტეფანჱსი</title>
         <title xml:lang="la" type="sub">Martyrium Sancti Stephani</title>
         <author>ანონიმური (აპოკრიფული)</author>
         <editor xml:id="ed-TK">რედაქტორი</editor>
@@ -56,218 +53,218 @@
         
         <p xml:id="p1" n="1">
           <pb n="58" ed="edition"/>
-          <lb n="2"/><hi rend="initial">Ⴃ</hi>ღეთა მათ პილატჱსთა, მეოთხისა მის ჴელმწიფებისათა, ანაჲსა და კაიაფაჲსა
-          <lb n="3"/>მღდელთ-მოძღუართაჲსა, წელსა მეათრუამეტესა მასვე ჟამსა<note n="(1)*"/>, განკაცებასა
-          <lb n="4"/>უფლისა ჩუენისა ჲესუ ქრისტჱსსა, მწრაფლ გამოძიებაჲ იყო ფარისეველთაჲ
-          <lb n="5"/>და სადუკეველთაჲ, რომელნი არიან ცასა ქუეშე. ზრახვა-ყვეს და
-          <lb n="6"/>თქუეს, ვითარმედ: არდგა დაფლული იგი და გუეჩუენნეს ჩუენ მკუდარნი,
-          <lb n="7"/>რომელი ჩუენცა უწყოდეთ. ხოლო რომელნიმე იტყოდეს, ვითარმედ: ღმერთი
-          <lb n="8"/>არს, და რომელნიმე იტყოდეს: მწვალებელი არს, და რომელთამე თქუეს:
-          <lb n="9"/>გამოჩნდა მშია, რომელსა ჰრქჳან ქრისტე, მათ ჟამთა, ვითარცა გამოთარგმანებდეს
-          <lb n="10"/>წიგნნი აღტქუმისანი<note n="2*"/> და წინაწარმეტყუელთანი და შემდგომნი
-          <lb n="11"/>წიგნნი. ხოლო ვერვინ თქუა მისთჳს, ვითარმედ დედაკაცისაგან იშვა იგი.
+          <lb n="2"/><hi rend="initial">Ⴃ</hi>ღეთა მათ პილატჱსთა, <w lemmaRef="#lex-meotkhe">მეოთხისა</w> მის ჴელმწიფებისათა, ანაჲსა და კაიაფაჲსა
+          <lb n="3"/><w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუართაჲსა</w>, <w lemmaRef="#lex-tseli">წელსა</w> მეათრუამეტესა მასვე <w lemma="#lex-zham">ჟამსა</w><note n="(1)*"/>, <w lemmaRef="#lex-gankatseba">განკაცებასა</w>
+          <lb n="4"/>უფლისა ჩუენისა <persName ref="#pers-iesu-kriste">ჲესუ</persName> ქრისტჱსსა, <w lemma="#lex-mtsrapl">მწრაფლ</w> <w lemmaRef="#lex-gamodzieba">გამოძიებაჲ</w> იყო ფარისეველთაჲ
+          <lb n="5"/>და სადუკეველთაჲ, რომელნი არიან ცასა <w lemma="#lex-kueshe">ქუეშე</w>. <w lemma="#lex-zrakhva">ზრახვა</w>-ყვეს და
+          <lb n="6"/>თქუეს, <w lemma="#lex-vitarmed">ვითარმედ</w>: არდგა დაფლული იგი და გუეჩუენნეს ჩუენ <w lemmaRef="#lex-mkudari">მკუდარნი</w>,
+          <lb n="7"/>რომელი ჩუენცა უწყოდეთ. ხოლო რომელნიმე იტყოდეს, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-ghmert">ღმერთი</w>
+          <lb n="8"/>არს, და რომელნიმე იტყოდეს: <w lemmaRef="#lex-mtsvalebel">მწვალებელი</w> არს, და რომელთამე თქუეს:
+          <lb n="9"/>გამოჩნდა მშია, რომელსა ჰრქჳან <persName ref="#pers-iesu-kriste">ქრისტე</persName>, მათ <w lemma="#lex-zham">ჟამთა</w>, <w lemma="#lex-vitartsa">ვითარცა</w> გამოთარგმანებდეს
+          <lb n="10"/><w lemmaRef="#lex-tsign">წიგნნი</w> აღტქუმისანი<note n="2*"/> და წინაწარმეტყუელთანი და <w lemmaRef="#lex-shemdgomi">შემდგომნი</w>
+          <lb n="11"/>წიგნნი. ხოლო <w lemmaRef="#lex-vervin">ვერვინ</w> თქუა მისთჳს, <w lemma="#lex-vitarmed">ვითარმედ</w> დედაკაცისაგან იშვა იგი.
         </p>
         
         <p xml:id="p2" n="2">
-          <lb n="12"/><hi rend="initial">Ⴋ</hi>ას ჟამსა აღ-ვინმე-დგა შორის ზრახვასა მას<note n="3*"/> შჯულის მასწავლელი,
-          <lb n="13"/>რომელსა სახელი ერქუა სტეფანე, <pb n="56v" ed="ms"/> მოუწოდა ერსა მას და ჰრქუა: წინაწარმეტყუელთა
-          <lb n="14"/>იკითხავთ და არა გულისხმა-ჰყოფთ. პირველად ესაია ღაღად-ყო
-          <lb n="15"/>და თქუა რომელმან არვლნა შჳდნი ცანი, ვითარ-იგი უთხრობდა<note n="4*"/>
-          <lb n="16"/>მისსა მის განკაცებასა საყუარელისა მისთჳს, იგი წინაწარმეტყელებდა და
-          <lb n="17"/>თქუა: აჰა ესერა ქალწული მიუდგეს და შვეს ძჱ და უწოდიან<note n="5*"/> სახელი მისი
-          <lb n="18"/>ენმანუელ, რომელი ითარგმანების ძედ ღმრთისა<note n="(2)*"/>. მერმე ნათან წინაწარმეტყუელმან
-          <lb n="19"/>თქუა, ვითარმედ: ქალწულისაგან შობილისა განიხაროს ყოველმან
-          <lb n="20"/>ჴორციელმან და სიტყუაჲ უფლისაჲ მას შინა დამტკიცნეს. და მერმე
-          <lb n="21"/>ჲესუ<note n="6*"/> ძჱ ნევეჲსი იტყჳს: ვიხილე დასაბამი იგი — ყრმაჲ წიაღთა ქალწულისათა
-          <lb n="22"/>და შჯული, რომელ თქუენ გაქუს, მისთჳს იტყჳს ნაყოფი იგი, რომელი
-          <lb n="23"/>იშვა ქალწულისა მისგან: განმეშოროს ისრაელი შჯულისაგან მისისა და ნათესავნი
-          <lb n="24"/>რომელ დაშთენ, დაემტკიცნენ იგინი. აწ გგულისხმა-ყავთ, მოხუცებულნო
-          <lb n="25"/>ერისანო, რამეთუ მე თქუენსა მაგას შჯულსა ამიერითგან არღარა ვიდოდი,
-          <lb n="26"/>ხოლო მადლსა დაფლულისა მის და აღდგომილისა ჲესუ ქრისტჱსსა
-          <lb n="27"/>თაყუანის-ვსცე და უგალობდე სახელსა მისსა.
+          <lb n="12"/><hi rend="initial">Ⴋ</hi>ას <w lemma="#lex-zham">ჟამსა</w> აღ-<w lemmaRef="#lex-vinme">ვინმე</w>-დგა <w lemma="#lex-shoris1">შორის</w> <w lemma="#lex-zrakhva">ზრახვასა</w> მას<note n="3*"/> შჯულის <w lemmaRef="#lex-mastsavlebel">მასწავლელი</w>,
+          <lb n="13"/>რომელსა სახელი ერქუა <persName ref="#pers-stepane">სტეფანე</persName>, <pb n="56v" ed="ms"/> მოუწოდა ერსა მას და ჰრქუა: <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელთა</w>
+          <lb n="14"/>იკითხავთ და არა <w lemma="#lex-guliskhma">გულისხმა</w>-ჰყოფთ. <w lemma="#lex-pirvel">პირველად</w> ესაია <w lemmaRef="#lex-ghaghad-qopa">ღაღად</w>-ყო
+          <lb n="15"/>და თქუა რომელმან არვლნა შჳდნი <w lemmaRef="#lex-tsan">ცანი</w>, <w lemma="#lex-vitar">ვითარ</w>-იგი უთხრობდა<note n="4*"/>
+          <lb n="16"/>მისსა მის განკაცებასა <w lemmaRef="#lex-saquareli">საყუარელისა</w> მისთჳს, იგი წინაწარმეტყელებდა და
+          <lb n="17"/>თქუა: აჰა <w lemmaRef="#lex-esera">ესერა</w> <w lemma="#lex-qaltsuli">ქალწული</w> მიუდგეს და შვეს <w lemma="#lex-dze">ძჱ</w> და უწოდიან<note n="5*"/> <w lemmaRef="#lex-sakheli-2">სახელი</w> მისი
+          <lb n="18"/>ენმანუელ, რომელი ითარგმანების <w lemma="#lex-dze">ძედ</w> <w lemma="#lex-ghmert">ღმრთისა</w><note n="(2)*"/>. <w lemma="#lex-merme">მერმე</w> ნათან <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელმან</w>
+          <lb n="19"/>თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-qaltsuli">ქალწულისაგან</w> <w lemmaRef="#lex-shobili">შობილისა</w> განიხაროს <w lemma="#lex-qovel">ყოველმან</w>
+          <lb n="20"/><w lemma="#lex-khortsiel">ჴორციელმან</w> და <w lemma="#lex-sitqua">სიტყუაჲ</w> უფლისაჲ მას <w lemma="#lex-shina">შინა</w> დამტკიცნეს. და <w lemma="#lex-merme">მერმე</w>
+          <lb n="21"/><persName ref="#pers-iesu-kriste">ჲესუ</persName><note n="6*"/> <w lemma="#lex-dze">ძჱ</w> ნევეჲსი იტყჳს: ვიხილე <w lemmaRef="#lex-dasabam">დასაბამი</w> იგი — <w lemma="#lex-qrma">ყრმაჲ</w> <w lemmaRef="#lex-tsiagh1">წიაღთა</w> <w lemma="#lex-qaltsuli">ქალწულისათა</w>
+          <lb n="22"/>და <w lemma="#lex-shjul1">შჯული</w>, რომელ თქუენ გაქუს, მისთჳს იტყჳს <w lemma="#lex-nayop">ნაყოფი</w> იგი, რომელი
+          <lb n="23"/>იშვა <w lemma="#lex-qaltsuli">ქალწულისა</w> მისგან: განმეშოროს <w lemmaRef="#lex-israel">ისრაელი</w> <w lemma="#lex-shjul1">შჯულისაგან</w> მისისა და <w lemmaRef="#lex-natesav">ნათესავნი</w>
+          <lb n="24"/>რომელ დაშთენ, დაემტკიცნენ იგინი. <w lemma="#lex-ats">აწ</w> გგულისხმა-ყავთ, <w lemmaRef="#lex-mokhutsebulni">მოხუცებულნო</w>
+          <lb n="25"/>ერისანო, <w lemma="#lex-rametu">რამეთუ</w> მე თქუენსა მაგას <w lemma="#lex-shjul1">შჯულსა</w> ამიერითგან <w lemmaRef="#lex-arghara">არღარა</w> ვიდოდი,
+          <lb n="26"/>ხოლო <w lemma="#lex-madli">მადლსა</w> დაფლულისა მის და აღდგომილისა <persName ref="#pers-iesu-kriste">ჲესუ</persName> ქრისტჱსსა
+          <lb n="27"/>თაყუანის-ვსცე და უგალობდე <w lemmaRef="#lex-sakheli-2">სახელსა</w> მისსა.
         </p>
         
         <p xml:id="p3" n="3">
-          <lb n="28"/><hi rend="initial">Ⴃ</hi>ა ვითარცა ესე თქუა, განრისხნა ნეტარი სტეფანე და წარვიდოდა
-          <lb n="29"/>კრებულისა მისგან.
+          <lb n="28"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitartsa">ვითარცა</w> ესე თქუა, განრისხნა ნეტარი <persName ref="#pers-stepane">სტეფანე</persName> და წარვიდოდა
+          <lb n="29"/><w lemma="#lex-krebul">კრებულისა</w> მისგან.
         </p>
         
         <pb n="59" ed="edition"/>
         
         <p xml:id="p4" n="4">
-          <lb n="1"/><hi rend="initial">Ⴋ</hi>ას ჟამსა აღდგა კაიაფა მღდელთ-მოძღუარი და უკმოიქცა სტეფანე
-          <lb n="2"/>მუნვე კრებულად. მერმე სირცხჳლეულნი ვერღარა იტყოდეს განკაცებისა
-          <lb n="3"/>მისთჳს ქრისტჱსისა, არამედ ესრე თქუეს, ვითარმედ: მარიამს ღმრთის-მშობელად
+          <lb n="1"/><hi rend="initial">Ⴋ</hi>ას <w lemma="#lex-zham">ჟამსა</w> აღდგა კაიაფა <w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუარი</w> და უკმოიქცა <persName ref="#pers-stepane">სტეფანე</persName>
+          <lb n="2"/>მუნვე <w lemmaRef="#lex-krebul">კრებულად</w>. <w lemma="#lex-merme">მერმე</w> სირცხჳლეულნი <w lemmaRef="#lex-verghara">ვერღარა</w> იტყოდეს განკაცებისა
+          <lb n="3"/>მისთჳს <persName ref="#pers-iesu-kriste">ქრისტჱსისა</persName>, არამედ <w lemma="#lex-esre">ესრე</w> თქუეს, <w lemma="#lex-vitarmed">ვითარმედ</w>: <persName ref="#pers-mariami">მარიამს</persName> <w lemma="#lex-ghmert">ღმრთის</w>-<w lemmaRef="#lex-mshobel">მშობელად</w>
           <lb n="4"/>შენ იტყჳ.
         </p>
         
         <p xml:id="p5" n="5">
-          <lb n="5"/><hi rend="initial">Ⴃ</hi>ა აღადგინეს მწიგნობართა<note n="1*"/> <pb n="57r" ed="ms"/> და მღდელთ-მოძღუართა სტეფანე
-          <lb n="6"/>და წარადგინეს წინაშე პილატე ბჭისა. ვითარცა იხილა პილატე ბჭემან, ჰრქუა
-          <lb n="7"/>მათ: რაჲ უქმნიეს კაცსა ამას, მღდელსა შუენიერსა, რამეთუ წარმოადგინეთ
-          <lb n="8"/>ჩემ წინაშე ვითარცა ძჳრის-მოქმედი? მიუგო პოლატე სტეფანეს და ჰრქუა:
-          <lb n="9"/>მოვედ და დაჯედ მარჯუენით ჩემსა, სტეფანე, რომელი მარადის ჰყუავი
-          <lb n="10"/>ვითარცა გჳრგჳნი. ქვაო პატიოსანო დიდისა სასყიდლისაო, სტეფანე, მწყემსო
-          <lb n="11"/>შემდგომთა მოწამეთაო, სტეფანე, მოძღუარო ღმრთის მსახურებისაო! და
-          <lb n="12"/>ვინ-მე იყოს მსგავს შენდა საუკუნესა მას და მერმესა ცხორებასა და
+          <lb n="5"/><hi rend="initial">Ⴃ</hi>ა აღადგინეს <w lemmaRef="#lex-mtsignobar">მწიგნობართა</w><note n="1*"/> <pb n="57r" ed="ms"/> და <w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუართა</w> <persName ref="#pers-stepane">სტეფანე</persName>
+          <lb n="6"/>და წარადგინეს <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> პილატე ბჭისა. <w lemma="#lex-vitartsa">ვითარცა</w> იხილა პილატე ბჭემან, ჰრქუა
+          <lb n="7"/>მათ: რაჲ უქმნიეს <w lemma="#lex-katsi">კაცსა</w> ამას, მღდელსა <w lemmaRef="#lex-shuenier1">შუენიერსა</w>, <w lemma="#lex-rametu">რამეთუ</w> წარმოადგინეთ
+          <lb n="8"/>ჩემ <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> <w lemma="#lex-vitartsa">ვითარცა</w> ძჳრის-მოქმედი? მიუგო პოლატე <persName ref="#pers-stepane">სტეფანეს</persName> და ჰრქუა:
+          <lb n="9"/>მოვედ და დაჯედ <w lemma="#lex-marjuenit">მარჯუენით</w> ჩემსა, <persName ref="#pers-stepane">სტეფანე</persName>, რომელი <w lemma="#lex-maradis">მარადის</w> ჰყუავი
+          <lb n="10"/><w lemma="#lex-vitartsa">ვითარცა</w> გჳრგჳნი. ქვაო პატიოსანო დიდისა სასყიდლისაო, სტეფანე, <w lemmaRef="#lex-mtsyems">მწყემსო</w>
+          <lb n="11"/><w lemmaRef="#lex-shemdgomi">შემდგომთა</w> <w lemma="#lex-motsame">მოწამეთაო</w>, სტეფანე, <w lemmaRef="#lex-modzghuar">მოძღუარო</w> <w lemma="#lex-ghmert">ღმრთის</w> მსახურებისაო! და
+          <lb n="12"/><w lemma="#lex-vin">ვინ</w>-მე იყოს მსგავს შენდა საუკუნესა მას და მერმესა <w lemmaRef="#lex-tskhoreba-tskhovreba">ცხორებასა</w> და
           <lb n="13"/>განსუენებასა?
         </p>
         
         <p xml:id="p6" n="6">
-          <lb n="14"/><hi rend="initial">Ⴃ</hi>ა ამბორს-უყო პოლატე პირსა სტეფანჱსსა და ჰრქუა: გევედრები შენ,
-          <lb n="15"/>მონაო ღმრთისაო, ილოცე ჩემთჳს უფლისა მიმართ, რაჲთა მეცა რიცხუსა
-          <lb n="16"/>შევერთო, რომელთა ჰრწამს ქრისტჱ.
+          <lb n="14"/><hi rend="initial">Ⴃ</hi>ა ამბორს-უყო პოლატე <w lemmaRef="#lex-pir">პირსა</w> სტეფანჱსსა და ჰრქუა: გევედრები შენ,
+          <lb n="15"/>მონაო <w lemma="#lex-ghmert">ღმრთისაო</w>, ილოცე ჩემთჳს უფლისა <w lemma="#lex-mimart">მიმართ</w>, <w lemma="#lex-rayta">რაჲთა</w> მეცა <w lemmaRef="#lex-ritskhu">რიცხუსა</w>
+          <lb n="16"/>შევერთო, რომელთა ჰრწამს <persName ref="#pers-iesu-kriste">ქრისტჱ</persName>.
         </p>
         
         <p xml:id="p7" n="7">
-          <lb n="17"/><hi rend="initial">Ⴃ</hi>ა ჰრქუა პოლატე მღდელთა მათ და ყოველსა კრებულსა: შემძლებელ
-          <lb n="18"/>ვარ და ჴელ-მეწიფების განტევებად სტეფანჱსა სატანჯველთაგან<note n="2*"/>, ხოლო
-          <lb n="19"/>არა დავაბრკოლო ეგე გზისა მისგან სიმართლისა, არამედ წარიყვანეთ ეგე
-          <lb n="20"/>ჩემგან, ვითარცა<note n="3*"/> გნებავს.
+          <lb n="17"/><hi rend="initial">Ⴃ</hi>ა ჰრქუა პოლატე <w lemmaRef="#lex-mghdel">მღდელთა</w> მათ და <w lemma="#lex-qovel">ყოველსა</w> <w lemma="#lex-krebul">კრებულსა</w>: შემძლებელ
+          <lb n="18"/>ვარ და <w lemma="#lex-khel">ჴელ</w>-მეწიფების განტევებად <persName ref="#pers-stepane">სტეფანჱსა</persName> სატანჯველთაგან<note n="2*"/>, ხოლო
+          <lb n="19"/>არა დავაბრკოლო ეგე გზისა მისგან <w lemma="#lex-simartle">სიმართლისა</w>, არამედ წარიყვანეთ ეგე
+          <lb n="20"/>ჩემგან, <w lemma="#lex-vitartsa">ვითარცა</w><note n="3*"/> გნებავს.
         </p>
         
         <p xml:id="p8" n="8">
-          <lb n="21"/><hi rend="initial">Ⴋ</hi>აშინ წარიყვანეს ნეტარი სტეფანე მღდელთ-მოძღუართა მათ და მწიგნობართა
-          <lb n="22"/>და წარადგინეს იგი წინაშე ათასისთავისა მის კლავდიოსისა. და
-          <lb n="23"/>ვითარ-იგი მიუგებდა სტეფანე და ეტყოდა, მას ჟამსა მოვიდა სავლე ფარისეველი
-          <lb n="24"/>[ტარსონ]<note n="4*"/> კილიკიაჲსაჲთ, რომელსა აქუნდა ჴელმწიფებაჲ შეკრვად და შესხმად
-          <lb n="25"/>საპყრობილესა ყოველთათჳს, რომელნი სახელ-სდებენ ქრისტესა, და
-          <lb n="26"/>დაჯდა ათასისთავისა მის თანა და ჰკითხვიდა <pb n="57v" ed="ms"/> ნათესავსა სტეფანჱსსა და
-          <lb n="27"/>სამკჳდრებელსა. ვითარცა გულისხმა-ყო, ვითარმედ ქრისტესა სახელ-სდებს,
-          <lb n="28"/>და ვითარცა ესმა ესე, მწრაფლ<note n="5*"/> უბრძანა გუემაჲ მისი და შეკრვაჲ და ჰრქუა
-          <lb n="29"/>მას: თქუ, სტეფანე, ვითარ ჯუარ-ცმულსა<note n="6*"/> აღიარებ ღმრთად, რომელ
-          <lb n="30"/>ჩუენ არა დავიჯერეთ, უფროჲსღა ესე, რამეთუ მარიამს ღმრთის-მშობელად
-          <lb n="31"/>ხადით? მიუგო წმიდამან სტეფანე და ჰრქუა: ჵ, ვითარ ორთა ძაღლთა სისხლის
-          <lb n="32"/>მჭამელთა ვჰბრძოდი, რომელთა პური იგი მიიღეს და ჴელნი მისნი შეუკრნეს
-          <lb n="33"/>და დამშჭუალეს ძელსა! და მიუგო სტეფანე და ჰრქუა ათასისტავსა მას:
-          <lb n="34"/>მკჳდრო ჯოჯოხეთისაო და თანა-ზიარო ეშმაკისაო, რაჲ გნებავს, თქუ შენცა,
-          <lb n="35"/>ათასისთაო, დაბრმობილო თუალითა და დარღუეულო ჴორცითა და სულითა
-          <lb n="36"/>და გულითა გარდაგულარძნილო! რომელმან ხურომან შეუძლოს შენდა ხატად
-          <lb n="37"/>აღმართებად, ვითარ სახედ ქრისტჱს ჩუენისაჲ, რომელი გამოუჩინებელ არს და
-          <lb n="38"/>ბრწყინვალე მზითა ბრწყინვალითა და მთოვარჱ და ვარსკულავები<note n="7*"/> და ქუეყანაჲ
+          <lb n="21"/><hi rend="initial">Ⴋ</hi>აშინ წარიყვანეს ნეტარი სტეფანე <w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუართა</w> მათ და <w lemmaRef="#lex-mtsignobar">მწიგნობართა</w>
+          <lb n="22"/>და წარადგინეს იგი წინაშე <w lemmaRef="#lex-atasistavi">ათასისთავისა</w> მის კლავდიოსისა. და
+          <lb n="23"/><w lemma="#lex-vitar">ვითარ</w>-იგი მიუგებდა <persName ref="#pers-stepane">სტეფანე</persName> და ეტყოდა, მას <w lemma="#lex-zham">ჟამსა</w> მოვიდა სავლე <w lemmaRef="#lex-parisevel">ფარისეველი</w>
+          <lb n="24"/>[ტარსონ]<note n="4*"/> კილიკიაჲსაჲთ, რომელსა <w lemmaRef="#lex-aqunda-aqunden-aqundes-aqus">აქუნდა</w> <w lemma="#lex-khelmtsipeba">ჴელმწიფებაჲ</w> შეკრვად და შესხმად
+          <lb n="25"/>საპყრობილესა <w lemma="#lex-qovel">ყოველთათჳს</w>, რომელნი სახელ-სდებენ <persName ref="#pers-iesu-kriste">ქრისტესა</persName>, და
+          <lb n="26"/>დაჯდა <w lemmaRef="#lex-atasistavi">ათასისთავისა</w> მის <w lemma="#lex-tana">თანა</w> და ჰკითხვიდა <pb n="57v" ed="ms"/> <w lemmaRef="#lex-natesav">ნათესავსა</w> სტეფანჱსსა და
+          <lb n="27"/><w lemmaRef="#lex-samkvidrebeli">სამკჳდრებელსა</w>. <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-guliskhma">გულისხმა</w>-ყო, <w lemma="#lex-vitarmed">ვითარმედ</w> <persName ref="#pers-iesu-kriste">ქრისტესა</persName> სახელ-სდებს,
+          <lb n="28"/>და <w lemma="#lex-vitartsa">ვითარცა</w> ესმა ესე, <w lemma="#lex-mtsrapl">მწრაფლ</w><note n="5*"/> უბრძანა გუემაჲ მისი და <w lemmaRef="#lex-shekrva">შეკრვაჲ</w> და ჰრქუა
+          <lb n="29"/>მას: თქუ, <persName ref="#pers-stepane">სტეფანე</persName>, <w lemma="#lex-vitar">ვითარ</w> <w lemmaRef="#lex-dzhuar-tsuma">ჯუარ</w>-ცმულსა<note n="6*"/> აღიარებ <w lemma="#lex-ghmert">ღმრთად</w>, რომელ
+          <lb n="30"/>ჩუენ არა დავიჯერეთ, უფროჲსღა ესე, <w lemma="#lex-rametu">რამეთუ</w> <persName ref="#pers-mariami">მარიამს</persName> <w lemma="#lex-ghmert">ღმრთის</w>-<w lemmaRef="#lex-mshobel">მშობელად</w>
+          <lb n="31"/><w lemmaRef="#lex-khad">ხადით</w>? მიუგო <w lemma="#lex-wmida">წმიდამან</w> სტეფანე და ჰრქუა: <w lemmaRef="#lex-o">ჵ</w>, <w lemma="#lex-vitar">ვითარ</w> ორთა ძაღლთა <w lemmaRef="#lex-siskhlis-mchameli">სისხლის</w>
+          <lb n="32"/>მჭამელთა ვჰბრძოდი, რომელთა <w lemmaRef="#lex-pur">პური</w> იგი მიიღეს და <w lemma="#lex-khel">ჴელნი</w> <w lemmaRef="#lex-misi">მისნი</w> შეუკრნეს
+          <lb n="33"/>და დამშჭუალეს ძელსა! და მიუგო <persName ref="#pers-stepane">სტეფანე</persName> და ჰრქუა ათასისტავსა მას:
+          <lb n="34"/><w lemmaRef="#lex-mkvidri">მკჳდრო</w> ჯოჯოხეთისაო და <w lemma="#lex-tana">თანა</w>-<w lemmaRef="#lex-ziari">ზიარო</w> ეშმაკისაო, რაჲ გნებავს, თქუ შენცა,
+          <lb n="35"/>ათასისთაო, დაბრმობილო თუალითა და <w lemmaRef="#lex-darghueuli">დარღუეულო</w> <w lemma="#lex-khortsiel">ჴორცითა</w> და <w lemma="#lex-suli">სულითა</w>
+          <lb n="36"/>და გულითა გარდაგულარძნილო! რომელმან ხურომან შეუძლოს შენდა <w lemmaRef="#lex-khati">ხატად</w>
+          <lb n="37"/>აღმართებად, <w lemma="#lex-vitar">ვითარ</w> სახედ <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w> ჩუენისაჲ, რომელი გამოუჩინებელ არს და
+          <lb n="38"/><w lemma="#lex-brtsqinvale">ბრწყინვალე</w> მზითა ბრწყინვალითა და <w lemmaRef="#lex-mtovare">მთოვარჱ</w> და ვარსკულავები<note n="7*"/> და <w lemmaRef="#lex-queqana">ქუეყანაჲ</w>
           <pb n="60" ed="edition"/>
-          <lb n="1"/>ყოველი ყოვლითა ნაყოფითა და ყოვლითა შუენიერებითა შეამკო და
-          <lb n="2"/>აერნი ყოველნი ყოველთა მფრინველთა მიერ შეამკვნა და ზღუაჲ ფერად-ფერადითა
-          <lb n="3"/>ქუეწარმავალითა აღავსო, რომელმან ესე ყოველი ქმნა, რომელ არს ძჱ
-          <lb n="4"/>ღმრთისაჲ, ქრისტჱ, ღმრთისაგან<note n="1*"/> შობილი, ძჱ მამისაგან, ძალნი ძალთაგან,
-          <lb n="5"/>რაჲსათჳს ჯუარს-ეცუა? ჵ უგუნურნო! ანუ ვითარ იტყჳთ, ვითარმედ: ვითარ
-          <lb n="6"/>დედაკაცისაგან იშვა იგი? — რაჲთამცა<note n="2*"/> ცთომაჲ იგი, რომელ იყო სამოთხესა
-          <lb n="7"/>მას დედაკაცისა მის<note n="3*"/> განჴრწნილებისაგან, <pb n="58r" ed="ms"/> განწმიდა. ანუ ვითარ
-          <lb n="8"/>იტყჳთ, ვითარმედ: ვითარ ჩჩჳლ იწოდა? — რაჲთა ჩჩჳლნი იგი დაიცვნეს; სამარიტად
-          <lb n="9"/>იწოდა, რაჲთა ყოველნი ნათესავი მისა მოაქცინეს; ცთომილად იწოდა,
-          <lb n="10"/>რაჲთა შეცთომილნი აცხოვნნე; აღდგა, რაჲთა ყოველნივე აღგუადგინნეს. აწ
-          <lb n="11"/>ვითარ ჰგონებთ, ჵ უგუნურნო? დასცხერ, სავლე, მდევარო ღმრთის მსახურებისაო!
-          <lb n="12"/>და შენცა წინა-აღგიდგეს სასუმელი ეგე სუმად<note n="4*"/>, ამას ღამესა დაგადგეს
-          <lb n="13"/>შენცა ანგელოზი უფლისაჲ, რამეთუ მრქუა მე სენთჳსცა.
+          <lb n="1"/><w lemma="#lex-qovel">ყოველი</w> <w lemma="#lex-qovel">ყოვლითა</w> <w lemmaRef="#lex-nayop">ნაყოფითა</w> და <w lemma="#lex-qovel">ყოვლითა</w> შუენიერებითა შეამკო და
+          <lb n="2"/><w lemmaRef="#lex-aeri-haeri">აერნი</w> <w lemma="#lex-qovel">ყოველნი</w> <w lemma="#lex-qovel">ყოველთა</w> <w lemmaRef="#lex-mprinvel">მფრინველთა</w> <w lemma="#lex-mier">მიერ</w> შეამკვნა და ზღუაჲ <w lemmaRef="#lex-perad-perad">ფერად</w>-ფერადითა
+          <lb n="3"/><w lemmaRef="#lex-quewtsarmaval">ქუეწარმავალითა</w> აღავსო, რომელმან ესე <w lemma="#lex-qovel">ყოველი</w> <w lemma="#lex-qmna">ქმნა</w>, რომელ არს <w lemma="#lex-dze">ძჱ</w>
+          <lb n="4"/><w lemma="#lex-ghmert">ღმრთისაჲ</w>, <persName ref="#pers-iesu-kriste">ქრისტჱ</persName>, <w lemma="#lex-ghmert">ღმრთისაგან</w><note n="1*"/> <w lemmaRef="#lex-shobili">შობილი</w>, <w lemma="#lex-dze">ძჱ</w> <w lemma="#lex-mama">მამისაგან</w>, <w lemma="#lex-dzal">ძალნი</w> <w lemma="#lex-dzal">ძალთაგან</w>,
+          <lb n="5"/>რაჲსათჳს ჯუარს-ეცუა? <w lemmaRef="#lex-o">ჵ</w> უგუნურნო! ანუ <w lemma="#lex-vitar">ვითარ</w> იტყჳთ, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-vitar">ვითარ</w>
+          <lb n="6"/>დედაკაცისაგან იშვა იგი? — რაჲთამცა<note n="2*"/> <w lemmaRef="#lex-tsdoma">ცთომაჲ</w> იგი, რომელ იყო <w lemma="#lex-samotkhe">სამოთხესა</w>
+          <lb n="7"/>მას <w lemmaRef="#lex-dedakatsi">დედაკაცისა</w> მის<note n="3*"/> განჴრწნილებისაგან, <pb n="58r" ed="ms"/> განწმიდა. ანუ <w lemma="#lex-vitar">ვითარ</w>
+          <lb n="8"/>იტყჳთ, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-vitar">ვითარ</w> ჩჩჳლ იწოდა? — <w lemma="#lex-rayta">რაჲთა</w> ჩჩჳლნი იგი დაიცვნეს; <w lemmaRef="#lex-samarit">სამარიტად</w>
+          <lb n="9"/>იწოდა, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-qovel">ყოველნი</w> <w lemmaRef="#lex-natesav">ნათესავი</w> მისა მოაქცინეს; ცთომილად იწოდა,
+          <lb n="10"/><w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-shetstomili">შეცთომილნი</w> აცხოვნნე; აღდგა, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-qovel">ყოველნივე</w> აღგუადგინნეს. <w lemma="#lex-ats">აწ</w>
+          <lb n="11"/><w lemma="#lex-vitar">ვითარ</w> ჰგონებთ, ჵ უგუნურნო? დასცხერ, სავლე, <w lemmaRef="#lex-mdevar">მდევარო</w> <w lemma="#lex-ghmert">ღმრთის</w> მსახურებისაო!
+          <lb n="12"/>და შენცა <w lemma="#lex-tsina">წინა</w>-აღგიდგეს <w lemmaRef="#lex-sasumel">სასუმელი</w> ეგე სუმად<note n="4*"/>, ამას ღამესა დაგადგეს
+          <lb n="13"/>შენცა <w lemma="#lex-angelozi">ანგელოზი</w> უფლისაჲ, <w lemma="#lex-rametu">რამეთუ</w> მრქუა მე სენთჳსცა.
         </p>
         
         <p xml:id="p9" n="9">
-          <lb n="14"/><hi rend="initial">Ⴋ</hi>აშინ განრისხნა სავლე და აღაზრზინა ათასისთავი იგი, რაჲთა თავი
-          <lb n="15"/>მოჰკუეთონ ღირსსა მას ღმრთისასა. და სცეს მას მახჳლითა, და არა იპოვა
-          <lb n="16"/>ყოვლადვე წყლულებაჲ ქედსა მისსა. მერმე მოიქცა სავლე და უბრძანა ქვისა
-          <lb n="17"/>დაკრებაჲ ახოვანსა მას ღმრთისასა. და ვითარცა ქვასა დაჰკრებდეს წმიდასა
-          <lb n="18"/>სტეფანეს, და ქვისა მისგანი ეცემოდა ათასისთავსა მას და რომელიმე ეცემოდა
-          <lb n="19"/>ერისაგანთა მათ.
+          <lb n="14"/><hi rend="initial">Ⴋ</hi>აშინ განრისხნა სავლე და აღაზრზინა <w lemmaRef="#lex-atasistavi">ათასისთავი</w> იგი, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-tav">თავი</w>
+          <lb n="15"/>მოჰკუეთონ <w lemmaRef="#lex-ghirsi">ღირსსა</w> მას <w lemma="#lex-ghmert">ღმრთისასა</w>. და სცეს მას <w lemmaRef="#lex-makhvili">მახჳლითა</w>, და არა იპოვა
+          <lb n="16"/><w lemma="#lex-qovel">ყოვლადვე</w> <w lemma="#lex-tsqluleba">წყლულებაჲ</w> <w lemmaRef="#lex-qed">ქედსა</w> მისსა. <w lemma="#lex-merme">მერმე</w> მოიქცა სავლე და უბრძანა ქვისა
+          <lb n="17"/>დაკრებაჲ <w lemmaRef="#lex-akhovani">ახოვანსა</w> მას <w lemma="#lex-ghmert">ღმრთისასა</w>. და <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-qva-qua">ქვასა</w> დაჰკრებდეს <w lemma="#lex-wmida">წმიდასა</w>
+          <lb n="18"/>სტეფანეს, და ქვისა მისგანი ეცემოდა <w lemmaRef="#lex-atasistavi">ათასისთავსა</w> მას და <w lemma="#lex-romelime">რომელიმე</w> ეცემოდა
+          <lb n="19"/><w lemmaRef="#lex-erisagan">ერისაგანთა</w> მათ.
         </p>
         
         <p xml:id="p10" n="10">
-          <lb n="20"/><hi rend="initial">Ⴞ</hi>ოლო წმიდამან სტეფანე ვითარცა იხია გუემულებაჲ იგი ერისაჲ მის,
-          <lb n="21"/>შეეწყალა ერი იგი და დაიდგინა მუჴლნი ქუეყანასა ზედა და აღიხილნა თუალნი
-          <lb n="22"/>ზეცად და აღიპყრნა ჴელნი თჳსნი ზე, ილოცვიდა და თქუა: გმადლობ
-          <lb n="23"/>შენ, ჲესუ ქრისტე, რამეთუ ყოველსა ჟამსა ისმინე ჩემი<note n="(1)*"/>. და აწცა გევედრები
-          <lb n="24"/>შენ, რაჲთა განიკურნნენ გუემულნი ესე, რომელნი იქმან<note n="5*"/> უგუნურებით
-          <lb n="25"/>ჩემ ზედა.
+          <lb n="20"/><hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-wmida">წმიდამან</w> <persName ref="#pers-stepane">სტეფანე</persName> <w lemma="#lex-vitartsa">ვითარცა</w> იხია <w lemmaRef="#lex-guemuleba">გუემულებაჲ</w> იგი ერისაჲ მის,
+          <lb n="21"/>შეეწყალა ერი იგი და დაიდგინა მუჴლნი <w lemmaRef="#lex-queqana">ქუეყანასა</w> <w lemma="#lex-zeda">ზედა</w> და აღიხილნა <w lemmaRef="#lex-tual">თუალნი</w>
+          <lb n="22"/>ზეცად და აღიპყრნა <w lemma="#lex-khel">ჴელნი</w> <w lemmaRef="#lex-tvisi">თჳსნი</w> <w lemma="#lex-ze">ზე</w>, ილოცვიდა და თქუა: გმადლობ
+          <lb n="23"/>შენ, ჲესუ <persName ref="#pers-iesu-kriste">ქრისტე</persName>, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-qovel">ყოველსა</w> <w lemma="#lex-zham">ჟამსა</w> ისმინე ჩემი<note n="(1)*"/>. და <w lemmaRef="#lex-atstsa">აწცა</w> გევედრები
+          <lb n="24"/>შენ, <w lemma="#lex-rayta">რაჲთა</w> განიკურნნენ გუემულნი ესე, რომელნი იქმან<note n="5*"/> უგუნურებით
+          <lb n="25"/>ჩემ <w lemma="#lex-zeda">ზედა</w>.
         </p>
         
         <p xml:id="p11" n="11">
-          <lb n="26"/><hi rend="initial">Ⴃ</hi>ა ვითარ ილოცვიდა ოდენ წმიდაჲ სტეფანე, და მეყსეულად ძრვაჲ
-          <lb n="27"/>იყო დიდ და განეხუნეს სამყარონი ცისანი, და იხილა ცათა შინა მამაჲ,
-          <lb n="28"/><pb n="58v" ed="ms"/> მჯდომარჱ ზედა საყდართა მბრწყინვალეთა, და ძჱ ჲესუ ქრისტე
-          <lb n="29"/>მარჯუენით მამისა, და ტრედი ერთი სპეტაკი გარდამოფრინვიდა და მოაქუანდა<note n="6*"/>
-          <lb n="30"/>გჳრგჳნი მბრწყინვალჱ ვითარცა მზისთუალი.
+          <lb n="26"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitar">ვითარ</w> ილოცვიდა <w lemma="#lex-oden">ოდენ</w> <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName>, და <w lemma="#lex-meqseulad">მეყსეულად</w> <w lemmaRef="#lex-dzvra">ძრვაჲ</w>
+          <lb n="27"/>იყო დიდ და განეხუნეს <w lemmaRef="#lex-samqaro">სამყარონი</w> ცისანი, და იხილა ცათა <w lemma="#lex-shina">შინა</w> <w lemma="#lex-mama">მამაჲ</w>,
+          <lb n="28"/><pb n="58v" ed="ms"/> მჯდომარჱ <w lemma="#lex-zeda">ზედა</w> <w lemmaRef="#lex-saqdar">საყდართა</w> <w lemma="#lex-mbrtsqinvale">მბრწყინვალეთა</w>, და <w lemma="#lex-dze">ძჱ</w> ჲესუ <persName ref="#pers-iesu-kriste">ქრისტე</persName>
+          <lb n="29"/><w lemma="#lex-marjuenit">მარჯუენით</w> <w lemma="#lex-mama">მამისა</w>, და <w lemmaRef="#lex-tred">ტრედი</w> <w lemma="#lex-erti">ერთი</w> <w lemmaRef="#lex-spetak">სპეტაკი</w> გარდამოფრინვიდა და მოაქუანდა<note n="6*"/>
+          <lb n="30"/><w lemmaRef="#lex-gvirgvin">გჳრგჳნი</w> <w lemma="#lex-mbrtsqinvale">მბრწყინვალჱ</w> <w lemma="#lex-vitartsa">ვითარცა</w> მზისთუალი.
         </p>
         
         <p xml:id="p12" n="12">
-          <lb n="31"/><hi rend="initial">Ⴃ</hi>ა ვითარცა იხილა წმიდამან სტეფანე დიდებაჲ იგი რმრთისაჲ, მასინ
-          <lb n="32"/>ჴმაჲ იყო ზეცით გარდამო და თქუა: მჴნე იყავ, სტეფანე, რჩეულო ჩემო, და
-          <lb n="33"/>ნუ გეშინინ, მწყემსო კეთილო, რამეთუ მრავალნი აცხოვნენ შენითა სარწმუნოებითა
-          <lb n="34"/>და მოთმინებითა. აღმოგუალე, ჭეშმარიტო ერისთაო ერისა ჩემისაო,
-          <lb n="35"/>განხმულ<note n="7*"/> არიან ცანი შენთჳს, მხიარულ არს მამაჲ და ძჰ და წმიდაჲ
-          <lb n="36"/>სული შენ ზედა; უხარის ანგელოზთა და კაცთა მართალთასიმჴნჱ ეგე შენი. ჰე,
-          <lb n="37"/>სტეფანე, რჩეულო ჩემო, იყავნ ნებაჲ შენი და განკურნენ ეგენი, რაჲთა ცნან
-          <lb n="38"/>ძალი ჩემი და მოწყალებაჲ. მაშინ მიხედა სტეფანე ერსა მას და იხილნა გუემულნი
+          <lb n="31"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitartsa">ვითარცა</w> იხილა <w lemma="#lex-wmida">წმიდამან</w> <persName ref="#pers-stepane">სტეფანე</persName> <w lemma="#lex-dideba">დიდებაჲ</w> იგი რმრთისაჲ, მასინ
+          <lb n="32"/><w lemmaRef="#lex-qma">ჴმაჲ</w> იყო ზეცით <w lemma="#lex-gardamo">გარდამო</w> და თქუა: <w lemma="#lex-mqne">მჴნე</w> იყავ, სტეფანე, რჩეულო <w lemmaRef="#lex-chemi">ჩემო</w>, და
+          <lb n="33"/>ნუ გეშინინ, მწყემსო <w lemmaRef="#lex-ketili">კეთილო</w>, <w lemma="#lex-rametu">რამეთუ</w> მრავალნი აცხოვნენ <w lemmaRef="#lex-sheni-sheni">შენითა</w> <w lemma="#lex-sartsmunoeba">სარწმუნოებითა</w>
+          <lb n="34"/>და მოთმინებითა. აღმოგუალე, <w lemmaRef="#lex-cheshmariti">ჭეშმარიტო</w> ერისთაო ერისა ჩემისაო,
+          <lb n="35"/>განხმულ<note n="7*"/> არიან <w lemmaRef="#lex-tsan">ცანი</w> შენთჳს, მხიარულ არს <w lemma="#lex-mama">მამაჲ</w> და ძჰ და <w lemma="#lex-wmida">წმიდაჲ</w>
+          <lb n="36"/><w lemma="#lex-suli">სული</w> შენ <w lemma="#lex-zeda">ზედა</w>; <w lemma="#lex-khar1">უხარის</w> <w lemma="#lex-angelozi">ანგელოზთა</w> და <w lemma="#lex-katsi">კაცთა</w> მართალთასიმჴნჱ ეგე შენი. <w lemma="#lex-he">ჰე</w>,
+          <lb n="37"/>სტეფანე, რჩეულო <w lemmaRef="#lex-chemi">ჩემო</w>, იყავნ <w lemma="#lex-neba">ნებაჲ</w> შენი და განკურნენ ეგენი, <w lemma="#lex-rayta">რაჲთა</w> ცნან
+          <lb n="38"/><w lemma="#lex-dzal">ძალი</w> ჩემი და <w lemmaRef="#lex-motsqaleba">მოწყალებაჲ</w>. <w lemma="#lex-mashin">მაშინ</w> მიხედა <persName ref="#pers-stepane">სტეფანე</persName> ერსა მას და იხილნა გუემულნი
           <pb n="61" ed="edition"/>
           <lb n="1"/>იგი ქვისა მისგან, ჯუარი დასწერა ერსა მას და ჰრქუა: მიგეტევენ
-          <lb n="2"/>თქუენ უგუნურებაჲ თქუენი, და სახელითა მამისაჲთა და ძისაჲთა და წმიდისა
-          <lb n="3"/>სულისაჲთა განიკურნენით.
+          <lb n="2"/>თქუენ უგუნურებაჲ თქუენი, და <w lemmaRef="#lex-sakheli-2">სახელითა</w> <w lemma="#lex-mama">მამისაჲთა</w> და <w lemma="#lex-dze">ძისაჲთა</w> და <w lemma="#lex-wmida">წმიდისა</w>
+          <lb n="3"/><w lemma="#lex-suli">სულისაჲთა</w> განიკურნენით.
         </p>
         
         <p xml:id="p13" n="13">
-          <lb n="4"/><hi rend="initial">Ⴞ</hi>ოლო ზაქეოს, მამაჲ იგი სტეფანჱსი, თანა-დგა და არ შეორგულდა<note n="1*"/>
-          <lb n="5"/>და არცაღა დააბრკოლა წმიდაჲ სტეფანე ლოცვასა მას ერისასა, არამედ
-          <lb n="6"/>მანცა აღიპყრნა ჴელნი და თქუა: უფალო, შეივედრე სული მონისა შენისაჲ,
-          <lb n="7"/>რომელი ღირს ჰყავ მადლისა მოღებად და იჩინე სასუფეველსა შენსა.
+          <lb n="4"/><hi rend="initial">Ⴞ</hi>ოლო ზაქეოს, <w lemma="#lex-mama">მამაჲ</w> იგი სტეფანჱსი, <w lemma="#lex-tana">თანა</w>-დგა და არ შეორგულდა<note n="1*"/>
+          <lb n="5"/>და <w lemmaRef="#lex-artsagha">არცაღა</w> დააბრკოლა <w lemma="#lex-wmida">წმიდაჲ</w> სტეფანე <w lemmaRef="#lex-lotsva">ლოცვასა</w> მას ერისასა, არამედ
+          <lb n="6"/>მანცა აღიპყრნა <w lemma="#lex-khel">ჴელნი</w> და თქუა: <w lemmaRef="#lex-upal">უფალო</w>, შეივედრე <w lemma="#lex-suli">სული</w> მონისა შენისაჲ,
+          <lb n="7"/>რომელი <w lemmaRef="#lex-ghir">ღირს</w> ჰყავ <w lemma="#lex-madli">მადლისა</w> მოღებად და იჩინე <w lemma="#lex-sasupevel">სასუფეველსა</w> <w lemmaRef="#lex-sheni-sheni">შენსა</w>.
         </p>
         
         <p xml:id="p14" n="14">
-          <lb n="8"/><hi rend="initial">Ⴋ</hi>ასინ დაიძინა სტეფანე ძილითა სულნელითა, ხოლო ერი იგი განიკურნა
-          <lb n="9"/><pb n="59r" ed="ms"/> გუემისა მისგან და ცოცხალ იქმნეს, ვითარცა პირველ იყვნეს.
+          <lb n="8"/><hi rend="initial">Ⴋ</hi>ასინ დაიძინა სტეფანე ძილითა სულნელითა, ხოლო <w lemmaRef="#lex-eri">ერი</w> იგი განიკურნა
+          <lb n="9"/><pb n="59r" ed="ms"/> გუემისა მისგან და <w lemma="#lex-tsotshal">ცოცხალ</w> იქმნეს, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-pirvel">პირველ</w> იყვნეს.
         </p>
         
         <p xml:id="p15" n="15">
-          <lb n="10"/><hi rend="initial">Ⴋ</hi>აშინ უბრძანა ათასისთავმან კლაჳდიოს და სავლე და მღდელთა მათ
-          <lb n="11"/>და განაგდეს წმიდაჲ სტეფანე ქალაქით გზასა მას კედარით კერძო და
-          <lb n="12"/>შჯული დადვეს, რაჲთა, და-თუ ვინმე-ჰმარხოს იგი, სიკუდილით მოკუედინ
-          <lb n="13"/>და ნაყოფი მისი იავარ იქმენინ, არამედ რაჲთა შეჭამონ იგი მფრინველთა
-          <lb n="14"/>ცისათა და მჴეცთა ქუეყანისათა, რაჲთა სხუანი ხედვიდენ და არა იკადრონ
-          <lb n="15"/>სახელითა მით ჲესუსითა სწავლად ერსა მას. და დაყო დღჱ და ღამჱ, და
-          <lb n="16"/>ანგელოზნი სცვივდეს მას.
+          <lb n="10"/><hi rend="initial">Ⴋ</hi>აშინ უბრძანა ათასისთავმან კლაჳდიოს და სავლე და <w lemmaRef="#lex-mghdel">მღდელთა</w> მათ
+          <lb n="11"/>და განაგდეს <w lemma="#lex-wmida">წმიდაჲ</w> სტეფანე ქალაქით გზასა მას <w lemmaRef="#lex-kedar">კედარით</w> <w lemma="#lex-kerdzo">კერძო</w> და
+          <lb n="12"/><w lemma="#lex-shjul1">შჯული</w> დადვეს, <w lemma="#lex-rayta">რაჲთა</w>, და-თუ <w lemmaRef="#lex-vinme">ვინმე</w>-ჰმარხოს იგი, <w lemma="#lex-sikudil">სიკუდილით</w> მოკუედინ
+          <lb n="13"/>და <w lemma="#lex-nayop">ნაყოფი</w> მისი <w lemma="#lex-iavar">იავარ</w> იქმენინ, არამედ <w lemma="#lex-rayta">რაჲთა</w> შეჭამონ იგი <w lemmaRef="#lex-mprinvel">მფრინველთა</w>
+          <lb n="14"/>ცისათა და მჴეცთა <w lemmaRef="#lex-queqanisa">ქუეყანისათა</w>, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-skhua">სხუანი</w> ხედვიდენ და არა იკადრონ
+          <lb n="15"/>სახელითა მით ჲესუსითა სწავლად ერსა მას. და დაყო <w lemmaRef="#lex-khvalisa-dge">დღჱ</w> და ღამჱ, და
+          <lb n="16"/><w lemma="#lex-angelozi">ანგელოზნი</w> სცვივდეს მას.
         </p>
         
         <p xml:id="p16" n="16">
-          <lb n="17"/><hi rend="initial">Ⴃ</hi>ა მო-ვინმე-ვიდა კაცი მორწმუნჱ ქრისტჱსი, რომელსა სახელი ერქუა
-          <lb n="18"/>გამალიელ, მრავლითა მოყუასებითა და ღამე წარიღო ოგო და დაჰმარხა
-          <lb n="19"/>დიდითა პატივითა და მრავლითა სულნელებითა. მასინ წარიყვანა პილატე
-          <lb n="20"/>ბჭემან ცოლი თჳსი პროკლა, და მივიდეს ადგილსა მას, სადა-იგი ისხნეს
-          <lb n="21"/>ჴორცნი წმიდისა სტეფანჱსნი, რაჲთამცა დამარხეს იგი, და არა პოვეს. ტიროდეს
-          <lb n="22"/>ფრიად პილატე და ცოლი მისი და იტყოდეს: მოგჳჴსენენ ცოდვილნი
-          <lb n="23"/>ესე, ნეტრეულო სტეფანე, მოგჳჴსენენ და ღირს გუყვენ<note n="2*"/> ჩუენ ქრისტჱს
-          <lb n="24"/>ბეჭედსა.
+          <lb n="17"/><hi rend="initial">Ⴃ</hi>ა მო-<w lemmaRef="#lex-vinme">ვინმე</w>-ვიდა <w lemma="#lex-katsi">კაცი</w> მორწმუნჱ ქრისტჱსი, რომელსა <w lemmaRef="#lex-sakheli-2">სახელი</w> ერქუა
+          <lb n="18"/>გამალიელ, მრავლითა მოყუასებითა და <w lemmaRef="#lex-ghame-ghamit">ღამე</w> წარიღო ოგო და დაჰმარხა
+          <lb n="19"/>დიდითა <w lemmaRef="#lex-pativ">პატივითა</w> და მრავლითა სულნელებითა. მასინ წარიყვანა პილატე
+          <lb n="20"/>ბჭემან ცოლი თჳსი პროკლა, და მივიდეს ადგილსა მას, <w lemmaRef="#lex-sada-saddai">სადა</w>-იგი ისხნეს
+          <lb n="21"/><w lemma="#lex-khortsiel">ჴორცნი</w> <w lemma="#lex-wmida">წმიდისა</w> სტეფანჱსნი, რაჲთამცა დამარხეს იგი, და არა პოვეს. ტიროდეს
+          <lb n="22"/><w lemma="#lex-priad">ფრიად</w> პილატე და <w lemmaRef="#lex-tsoli">ცოლი</w> მისი და იტყოდეს: მოგჳჴსენენ ცოდვილნი
+          <lb n="23"/>ესე, ნეტრეულო სტეფანე, მოგჳჴსენენ და <w lemmaRef="#lex-ghir">ღირს</w> გუყვენ<note n="2*"/> ჩუენ <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w>
+          <lb n="24"/><w lemmaRef="#lex-beched">ბეჭედსა</w>.
         </p>
         
         <p xml:id="p17" n="17">
-          <lb n="25"/><hi rend="initial">Ⴄ</hi>სე თქუეს და თაყუანის-სცეს ღმერთსა და წარვიდეს სახიდ თჳსა<note n="3*"/> და
-          <lb n="26"/>ფრიად წუხდეს ორნივე. და მასვე ღამესა გამოეცხადა წმიდაჲ სტეფანე და
-          <lb n="27"/>ჰრქუა პილატეს: ნუ მწუხარე ხართ ჩემთჳს, რამეთუ იყოს რომელთამე ჟამთა
-          <lb n="28"/>გამოცხადებაჲ ესე ჩემი, ვიდრემდე არა გამოჩნდენ <pb n="59v" ed="ms"/> ჩემ თანანი მოწამენი;
-          <lb n="29"/>ხოლო შენ ნუ მწუხარე ხარ, არამედ ნათელი მოიღეთ და ჰყოფდით საჴსენებელსა
-          <lb n="30"/>ჩემსა ყოველსა ჟამსა და ნუ დააკლებთ და ამცენ შვილთა შენთა და
-          <lb n="31"/>ყოველთა, რომელთა იციან სახელი ქრისტჱსი.
+          <lb n="25"/><hi rend="initial">Ⴄ</hi>სე თქუეს და <w lemmaRef="#lex-taqunistsema">თაყუანის</w>-სცეს <w lemma="#lex-ghmert">ღმერთსა</w> და წარვიდეს სახიდ <w lemmaRef="#lex-tvisa">თჳსა</w><note n="3*"/> და
+          <lb n="26"/><w lemma="#lex-priad">ფრიად</w> წუხდეს ორნივე. და მასვე ღამესა გამოეცხადა <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName> და
+          <lb n="27"/>ჰრქუა პილატეს: ნუ <w lemma="#lex-mtsukhare">მწუხარე</w> ხართ ჩემთჳს, <w lemma="#lex-rametu">რამეთუ</w> იყოს რომელთამე <w lemma="#lex-zham">ჟამთა</w>
+          <lb n="28"/><w lemmaRef="#lex-gamotskhadeba">გამოცხადებაჲ</w> ესე ჩემი, <w lemma="#lex-vidremde">ვიდრემდე</w> არა გამოჩნდენ <pb n="59v" ed="ms"/> ჩემ თანანი <w lemma="#lex-motsame">მოწამენი</w>;
+          <lb n="29"/>ხოლო შენ ნუ <w lemma="#lex-mtsukhare">მწუხარე</w> <w lemma="#lex-khar1">ხარ</w>, არამედ <w lemma="#lex-nateli">ნათელი</w> მოიღეთ და ჰყოფდით <w lemmaRef="#lex-saqsenebel">საჴსენებელსა</w>
+          <lb n="30"/><w lemmaRef="#lex-chemi">ჩემსა</w> <w lemma="#lex-qovel">ყოველსა</w> <w lemma="#lex-zham">ჟამსა</w> და ნუ დააკლებთ და ამცენ შვილთა <w lemmaRef="#lex-sheni-sheni">შენთა</w> და
+          <lb n="31"/><w lemma="#lex-qovel">ყოველთა</w>, რომელთა იციან სახელი <persName ref="#pers-iesu-kriste">ქრისტჱსი</persName>.
         </p>
         
         <p xml:id="p18" n="18">
-          <lb n="32"/><hi rend="initial">Ⴋ</hi>ასინ წარიყვანა პილატე ცოლი თჳსი და მივიდა მოციქულისა პეტრჱსა
-          <lb n="33"/>და ნათელი მოიღო პილატე და ცოლმან მისმან და სიმრავლემან ერისამან
-          <lb n="34"/>მას დღესა, ხუთასმან კაცმან, რომელთა ჰრწმენა ქრისტე.
+          <lb n="32"/><hi rend="initial">Ⴋ</hi>ასინ წარიყვანა პილატე ცოლი თჳსი და მივიდა მოციქულისა <persName ref="#pers-petre">პეტრჱსა</persName>
+          <lb n="33"/>და <w lemma="#lex-nateli">ნათელი</w> მოიღო პილატე და ცოლმან <w lemmaRef="#lex-misi">მისმან</w> და სიმრავლემან ერისამან
+          <lb n="34"/>მას დღესა, <w lemmaRef="#lex-khutasi">ხუთასმან</w> <w lemma="#lex-katsi">კაცმან</w>, რომელთა ჰრწმენა <persName ref="#pers-iesu-kriste">ქრისტე</persName>.
         </p>
         
         <p xml:id="p19" n="19">
-          <lb n="35"/><hi rend="initial">Ⴃ</hi>ა აღესრულა წმიდაჲ სტეფანე თთუესა სურწყნისასა<note n="4*"/> მეექუსესა, დღესა
-          <lb n="36"/>პარასკევსა, ჟამსა მეშჳდესა.
+          <lb n="35"/><hi rend="initial">Ⴃ</hi>ა აღესრულა <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName> თთუესა სურწყნისასა<note n="4*"/> მეექუსესა, დღესა
+          <lb n="36"/>პარასკევსა, <w lemma="#lex-zham">ჟამსა</w> მეშჳდესა.
         </p>
         
         <p xml:id="p20" n="20">
-          <lb n="37"/><hi rend="initial">Ⴃ</hi>ა ესრჱთ ვიხილე წმიდაჲ სტეფანე მე, პილატე, ზედა ათორმეტთა
+          <lb n="37"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-esret">ესრჱთ</w> ვიხილე <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName> მე, პილატე, <w lemma="#lex-zeda">ზედა</w> <w lemmaRef="#lex-atormeti">ათორმეტთა</w>
           <pb n="62" ed="edition"/>
-          <lb n="1"/>ვარსკულავთა მჯდომარჱ, ხოლო პირი მისი მბრწყინვალე, ვითარცა ანგელოზისაჲ;
-          <lb n="2"/>და თავსა მისსა ზედა იყო ჯუარი და ფრიად ბრწყინვალებითა მისითა
-          <lb n="3"/>ვერ განვიცდიდ ხატსა მას მისსა. და ამის ყოვლისა შემდგომად ვიხილენ ეტლნი
-          <lb n="4"/>ცეცხლისანი და ვიხილე მათ ზედა მჯდომარჱ წმიდაჲ სტეფანე, და ესრჱთ
-          <lb n="5"/>არიყვანეს იგი უფლისა ჩუენისა იესუ ქრისტჱსა.
+          <lb n="1"/>ვარსკულავთა მჯდომარჱ, ხოლო <w lemmaRef="#lex-pir">პირი</w> მისი <w lemma="#lex-mbrtsqinvale">მბრწყინვალე</w>, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-angelozi">ანგელოზისაჲ</w>;
+          <lb n="2"/>და <w lemmaRef="#lex-tav">თავსა</w> მისსა <w lemma="#lex-zeda">ზედა</w> იყო ჯუარი და <w lemma="#lex-priad">ფრიად</w> <w lemma="#lex-brtsqinvale">ბრწყინვალებითა</w> <w lemmaRef="#lex-misi">მისითა</w>
+          <lb n="3"/>ვერ განვიცდიდ <w lemmaRef="#lex-khati">ხატსა</w> მას მისსა. და ამის <w lemma="#lex-qovel">ყოვლისა</w> შემდგომად ვიხილენ <w lemmaRef="#lex-etl">ეტლნი</w>
+          <lb n="4"/>ცეცხლისანი და ვიხილე მათ <w lemma="#lex-zeda">ზედა</w> მჯდომარჱ <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName>, და <w lemma="#lex-esret">ესრჱთ</w>
+          <lb n="5"/>არიყვანეს იგი უფლისა ჩუენისა იესუ <persName ref="#pers-iesu-kriste">ქრისტჱსა</persName>.
         </p>
         
         <trailer>
-          რომლისაჲ არს დიდებაჲ და პატივი უკუნითი უკუნისამდე. ამენ.
+          რომლისაჲ არს <w lemma="#lex-dideba">დიდებაჲ</w> და პატივი უკუნითი უკუნისამდე. ამენ.
         </trailer>
         
       </div>

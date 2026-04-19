@@ -191,7 +191,7 @@
     /* ── Attestation count ─────────────────── */
     .attest-count { font-size: .65rem; color: #888; font-family: 'Noto Sans Georgian', sans-serif; letter-spacing: .03em; margin-bottom: .35rem; display: block; }
 
-    /* ── Source badge ──────────────────────── */
+    /* ── Source badge (entry header) ──────── */
     .src-badge { font-size: .55rem; letter-spacing: .07em; font-weight: 600; border-radius: 2px; padding: .15rem .45rem; background: #e3caca; color: white; }
 
     /* ── Source filter chip ─────────────────── */
@@ -278,7 +278,7 @@
             <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ხ</h1>
             <p class="text-sm text-gray-500 mt-1">
                 ძველი ქართული ·
-                <span class="font-medium text-gray-600">5 ლექსიკური ერთეული</span>
+                <span class="font-medium text-gray-600">23 ლექსიკური ერთეული</span>
             </p>
         </div>
 
@@ -565,13 +565,38 @@
                 class="pos-chip on"
                 data-pos="other">სხვ.</button>
         
-        <span class="ml-auto text-xs text-gray-400" id="count-label">5 ნაჩვ.</span>
+        <span class="ml-auto text-xs text-gray-400" id="count-label">23 ნაჩვ.</span>
     </div>
+    
     <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap py-2 border-t border-gray-50">
-        <span class="text-xs text-gray-400 font-medium tracking-widest mr-1">წყარო:</span>
-        <button onclick="toggleSRC(this, 'all')"   class="src-chip on" data-src="all">ყველა</button>
-        <button onclick="toggleSRC(this, 'imnaishvili-1975')" class="src-chip" data-src="imnaishvili-1975">იმნაიშვილი 1975</button>
-        <button onclick="toggleSRC(this, 'corpus')" class="src-chip" data-src="corpus">კორპუსი</button>
+        <span class="text-xs text-gray-400 font-medium tracking-widests mr-1">წყარო:</span>
+        <button onclick="toggleSRC(this, 'all')" class="src-chip on" data-src="all">ყველა</button>
+        
+        <button onclick="toggleSRC(this, 'imnaishvili-1975')"
+                class="src-chip"
+                data-src="imnaishvili-1975"
+                title="ივ. იმნაიშვილი 1975 (1551)">იმნაიშვილი 1975</button>
+        
+        <button onclick="toggleSRC(this, 'abuladze1973')"
+                class="src-chip"
+                data-src="abuladze1973"
+                title="ილ. აბულაძე 1973 (894)">აბულაძე 1973</button>
+        
+        <button onclick="toggleSRC(this, 'shanidze1971')"
+                class="src-chip"
+                data-src="shanidze1971"
+                title="აკ. შანიძე 1971 (3)">შანიძე 1971</button>
+        
+        <button onclick="toggleSRC(this, 'sarjveladze1995')"
+                class="src-chip"
+                data-src="sarjveladze1995"
+                title="ზ. სარჯველაძე 1995 (8)">სარჯველაძე 1995</button>
+        
+        <button onclick="toggleSRC(this, 'corpus')"
+                class="src-chip"
+                data-src="corpus"
+                title="სინური მრავალთავი — კორპუსი (71)">კორპუსი</button>
+        
     </div>
 </div>
 
@@ -599,7 +624,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ა
-                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                    <span class="text-gray-400 font-normal ml-1">(145)</span>
                 </a>
                 
                 <a href="b.html"
@@ -607,7 +632,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ბ
-                    <span class="text-gray-400 font-normal ml-1">(6)</span>
+                    <span class="text-gray-400 font-normal ml-1">(43)</span>
                 </a>
                 
                 <a href="g.html"
@@ -615,7 +640,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     გ
-                    <span class="text-gray-400 font-normal ml-1">(14)</span>
+                    <span class="text-gray-400 font-normal ml-1">(205)</span>
                 </a>
                 
                 <a href="d.html"
@@ -623,7 +648,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     დ
-                    <span class="text-gray-400 font-normal ml-1">(11)</span>
+                    <span class="text-gray-400 font-normal ml-1">(138)</span>
                 </a>
                 
                 <a href="e.html"
@@ -631,7 +656,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ე
-                    <span class="text-gray-400 font-normal ml-1">(7)</span>
+                    <span class="text-gray-400 font-normal ml-1">(64)</span>
                 </a>
                 
                 <a href="v.html"
@@ -639,7 +664,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ვ
-                    <span class="text-gray-400 font-normal ml-1">(9)</span>
+                    <span class="text-gray-400 font-normal ml-1">(48)</span>
                 </a>
                 
                 <a href="z.html"
@@ -647,7 +672,15 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ზ
-                    <span class="text-gray-400 font-normal ml-1">(6)</span>
+                    <span class="text-gray-400 font-normal ml-1">(37)</span>
+                </a>
+                
+                <a href="he.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ჱ
+                    <span class="text-gray-400 font-normal ml-1">(1)</span>
                 </a>
                 
                 <a href="t.html"
@@ -655,7 +688,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     თ
-                    <span class="text-gray-400 font-normal ml-1">(4)</span>
+                    <span class="text-gray-400 font-normal ml-1">(46)</span>
                 </a>
                 
                 <a href="i.html"
@@ -663,7 +696,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ი
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(19)</span>
                 </a>
                 
                 <a href="k.html"
@@ -671,7 +704,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     კ
-                    <span class="text-gray-400 font-normal ml-1">(9)</span>
+                    <span class="text-gray-400 font-normal ml-1">(63)</span>
                 </a>
                 
                 <a href="l.html"
@@ -679,7 +712,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ლ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(19)</span>
                 </a>
                 
                 <a href="m.html"
@@ -687,7 +720,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     მ
-                    <span class="text-gray-400 font-normal ml-1">(49)</span>
+                    <span class="text-gray-400 font-normal ml-1">(474)</span>
                 </a>
                 
                 <a href="n.html"
@@ -695,7 +728,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ნ
-                    <span class="text-gray-400 font-normal ml-1">(11)</span>
+                    <span class="text-gray-400 font-normal ml-1">(69)</span>
                 </a>
                 
                 <a href="o.html"
@@ -703,7 +736,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ო
-                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                    <span class="text-gray-400 font-normal ml-1">(25)</span>
                 </a>
                 
                 <a href="p.html"
@@ -711,7 +744,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     პ
-                    <span class="text-gray-400 font-normal ml-1">(8)</span>
+                    <span class="text-gray-400 font-normal ml-1">(21)</span>
                 </a>
                 
                 <a href="zh.html"
@@ -719,7 +752,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჟ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(3)</span>
                 </a>
                 
                 <a href="r.html"
@@ -727,7 +760,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     რ
-                    <span class="text-gray-400 font-normal ml-1">(9)</span>
+                    <span class="text-gray-400 font-normal ml-1">(38)</span>
                 </a>
                 
                 <a href="s.html"
@@ -735,7 +768,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ს
-                    <span class="text-gray-400 font-normal ml-1">(49)</span>
+                    <span class="text-gray-400 font-normal ml-1">(297)</span>
                 </a>
                 
                 <a href="t2.html"
@@ -743,7 +776,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ტ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(25)</span>
                 </a>
                 
                 <a href="u.html"
@@ -751,7 +784,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     უ
-                    <span class="text-gray-400 font-normal ml-1">(20)</span>
+                    <span class="text-gray-400 font-normal ml-1">(197)</span>
                 </a>
                 
                 <a href="f.html"
@@ -759,7 +792,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ფ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(28)</span>
                 </a>
                 
                 <a href="q.html"
@@ -767,7 +800,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ქ
-                    <span class="text-gray-400 font-normal ml-1">(10)</span>
+                    <span class="text-gray-400 font-normal ml-1">(61)</span>
                 </a>
                 
                 <a href="gh.html"
@@ -775,7 +808,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ღ
-                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                    <span class="text-gray-400 font-normal ml-1">(24)</span>
                 </a>
                 
                 <a href="y.html"
@@ -783,7 +816,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ყ
-                    <span class="text-gray-400 font-normal ml-1">(7)</span>
+                    <span class="text-gray-400 font-normal ml-1">(30)</span>
                 </a>
                 
                 <a href="sh.html"
@@ -791,7 +824,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     შ
-                    <span class="text-gray-400 font-normal ml-1">(18)</span>
+                    <span class="text-gray-400 font-normal ml-1">(141)</span>
                 </a>
                 
                 <a href="ch.html"
@@ -799,7 +832,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჩ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(10)</span>
                 </a>
                 
                 <a href="ts.html"
@@ -807,7 +840,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ც
-                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                    <span class="text-gray-400 font-normal ml-1">(42)</span>
                 </a>
                 
                 <a href="dz.html"
@@ -815,7 +848,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ძ
-                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                    <span class="text-gray-400 font-normal ml-1">(39)</span>
                 </a>
                 
                 <a href="w.html"
@@ -823,7 +856,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     წ
-                    <span class="text-gray-400 font-normal ml-1">(11)</span>
+                    <span class="text-gray-400 font-normal ml-1">(83)</span>
                 </a>
                 
                 <a href="chw.html"
@@ -831,7 +864,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჭ
-                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                    <span class="text-gray-400 font-normal ml-1">(17)</span>
                 </a>
                 
                 <a href="kha.html"
@@ -839,7 +872,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჴ
-                    <span class="text-gray-400 font-normal ml-1">(4)</span>
+                    <span class="text-gray-400 font-normal ml-1">(37)</span>
                 </a>
                 
                 <a href="x.html"
@@ -847,7 +880,7 @@
                           bg-gray-100"
                    style="color:var(--crimson);">
                     ხ
-                    <span class="text-gray-400 font-normal ml-1">(5)</span>
+                    <span class="text-gray-400 font-normal ml-1">(23)</span>
                 </a>
                 
                 <a href="j.html"
@@ -855,7 +888,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჯ
-                    <span class="text-gray-400 font-normal ml-1">(2)</span>
+                    <span class="text-gray-400 font-normal ml-1">(13)</span>
                 </a>
                 
                 <a href="h.html"
@@ -863,6 +896,14 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჰ
+                    <span class="text-gray-400 font-normal ml-1">(14)</span>
+                </a>
+                
+                <a href="hoe.html"
+                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
+                          hover:bg-gray-100"
+                   style="color:var(--crimson);">
+                    ჵ
                     <span class="text-gray-400 font-normal ml-1">(1)</span>
                 </a>
                 
@@ -875,6 +916,113 @@
     <div class="flex-1 min-w-0" id="entries-container">
 
         <div class="flex flex-col gap-3">
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khada1"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხადა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხადა</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khada1')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">1. მოწოდება, მოწვევა, მოხმო-ბა, დაპატიჟება. / 2. წოდება, სახელის დარქმევა, დაძახება.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khada1">
+                        
+                        <div>
+                            <div class="citation-text">…ცე)ლსა შინა დაფარუ(ლი) საიდუმლოჲ გამოაც(ხადა). და ვითარცა მოვიდა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-antipater.html#p2"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ანთიპატრ ბოსტრელისა — ხარება §2 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
             
             <article class="entry-card p-4 sm:p-5"
                      id="lex-khar1"
@@ -896,7 +1044,8 @@
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
-                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
                         
                         
                         
@@ -929,15 +1078,25 @@
                 
                 
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">12 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 4 ტექსტში</span></p>
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">53 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 29 ტექსტში</span></p>
                     <div class="flex flex-col gap-2" id="atts-lex-khar1">
+                        
+                        <div>
+                            <div class="citation-text">…მაგას დასაბამი? ზეცით მოსრულ ხარ და კაცისა ხატად აჩუენებ და სანთელ ნათლი…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-1.html#p13"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს I §13 →
+                                </a>
+                            </div>
+                        </div>
                         
                         <div>
                             <div class="citation-text">…რომელი ზეცისა მის სიხარულისა დამტევნელი ხარ; გიხაროდენ, მიმადლებულო, რამეთუ შენ მიე…</div>
                             <div class="citation-ref mt-0.5">
-                                <a href="../texts/mrav-kharbeba-2.html#p9"
+                                <a href="../texts/mrav-kharbeba-2.html#p8"
                                    class="hover:text-gray-700 transition-colors">
-                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II §9 →
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II §8 →
                                 </a>
                             </div>
                         </div>
@@ -972,7 +1131,7 @@
                             </div>
                         </div>
                         
-                        <div>
+                        <div class="att-extra" style="display:none">
                             <div class="citation-text">…ება, ვითარმედ: უფალი შენ თანა, კურთხეულ ხარ შენ დედათა შორის და კურთხეულ არს ნაყოფი…</div>
                             <div class="citation-ref mt-0.5">
                                 <a href="../texts/mrav-kharbeba-3.html#p15"
@@ -1052,24 +1211,429 @@
                             </div>
                         </div>
                         
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ამს, რამეთუ: მიწაჲ ხარ და მიწადცა მიიქცე.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-epiphane.html#p21"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეპიფანე კვ-სი — მარადის ქალწულ. §21 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ჩუენ მოწამე ვართ, ვითარად მართალი კაცი ხარ და თუალთ-ხუმით არა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-iakob-apostle.html#p3"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.) §3 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ა ძჰ და წმიდაჲ სული შენ ზედა; უხარის ანგელოზთა და კაცთა მართალთასიმჴნჱ ეგე შ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-martyrdom.html#p12"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება წმ. სტეფანესი (27 დეკ.) §12 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მოწამენი; ხოლო შენ ნუ მწუხარე ხარ, არამედ ნათელი მოიღეთ და ჰყოფდით საჴსენ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-martyrdom.html#p17"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება წმ. სტეფანესი (27 დეკ.) §17 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მან ლუკიანე, მიუგე და ვარქუ: და სენ ვინ ხარ, უფალო, და ვინ არიან იგი[ნი]3…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p6"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §6 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…რ, და იყოს ეგრე. აწ უკუე შენ ხარ მოძღუარი ქრისტიანეთაჲ და გაქუს სარწმუნო…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-basil-2.html#p3"
+                                   class="hover:text-gray-700 transition-colors">
+                                    სიტყვა ბასილი ეპ-სათჳს II §3 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…თქუა: უფალო იესუ ქრისტე, შენ ხარ ღმერთი დიდებისაჲ და უფალი ძლიერებისაჲ დ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-basil-2.html#p6"
+                                   class="hover:text-gray-700 transition-colors">
+                                    სიტყვა ბასილი ეპ-სათჳს II §6 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ხრის ზღუაჲ, რამეთუ უხარის, და მას შინა მყოფნი ყოველნი მას ადიდებე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-1.html#p16"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული იოანე ოქროპირისა — ნათლ-ბა I §16 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…და მცირჱ იგი გეწყალის; და ღათუ მეზუერჱ ხარ, გინათუ ვინმე მეზავი ხარ, შეინანე და ეს…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-kyrile.html#p22"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული კირილე — ნათლ-ბა §22 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…სახელი წოდებად იესუ და იტყჳს: შემძლებელ ხართა სასუმელისა მის შესუმად, რომელ-იგი მე შე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-kyrile.html#p24"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული კირილე — ნათლ-ბა §24 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ავე &#34;აწყა იქმნა ძე&#34;, რამეთუ არა ბუნებით ხარ ძჱ, არამედ მადლით შვილებასა მას მიიღებ.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-kyrile.html#p33"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული კირილე — ნათლ-ბა §33 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…სი. ჯოჯოხეთა შთა-თუ-ვჴდე, მუნცა ახლოსვე ხარ, მუნცა ჴელი შენი მიძღოდის მე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-markhva-chrysostom.html#p25"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — მარხვა და იონა §25 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ვიდრე ხუალ? ანუ რომლისა სოფლისაჲ ხარ? ანუ რომლისა ერისაჲ ხარ? მას…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-markhva-chrysostom.html#p33"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — მარხვა და იონა §33 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მის მოყუარეთა და არცა მოშიშთა შემთხუეულ ხარ: ღმრთის მსახურებისათჳს და სიყუარულისა თ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-forty-martyrs.html#p14"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ბასილი — ორმოც მოწამე (9 მარ.) §14 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ან და თქუა: ვაჲმე, უფალო, რომელი მოწამე ხარ ქურივისა ამის, რომლისა თანაცა ვდგა. რამ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-lazare.html#p25"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ლაზარე, მარია, მართა §25 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ა უფლისაჲთა!(2)* მაცხოვნენ ჩუენ, რომელი ხარ მაღალთა შინა. და ღატუ მწჳსთა გონებანი რ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-bzoba-severian.html#p18"
+                                   class="hover:text-gray-700 transition-colors">
+                                    სებერიანოს გაბალონელი — შესხმა ყრმათა (ბზობა) §18 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…არა მშობელი იგი მისი განრისხნეს. უკუეთუ ხარ მორწმუნე, მორწმუნედცა6* შეემთხუიე ქრისტ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-bzoba-iohannes.html#p28"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვ. კ-პოლელი — შესლვა იერ-მდ §28 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ი სხუასა არა მივსცეო7*.(2)* აწ შენ კაცი ხარ და ვითარ შეიწყნარებ დიდებასა ღმრთისასა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-bzoba-iohannes.html#p33"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვ. კ-პოლელი — შესლვა იერ-მდ §33 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ასა(6)*. და აწ მუცელსა რაჲმე ვეშაპისასა ხარ; რომელნი მთანი არიან გარემოჲს შენსა? და…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-kyrile.html#p51"
+                                   class="hover:text-gray-700 transition-colors">
+                                    კირილე იერ. — აღდგომა §51 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…, ღმერთო, საუკუნითგან და უკუნისამდე შენ ხარ(3)*.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-kyrile.html#p71"
+                                   class="hover:text-gray-700 transition-colors">
+                                    კირილე იერ. — აღდგომა §71 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…რომლისა ჯერ-არს პატივი. ამიერითგან შენ ხარ უფალი ჩემი და ღმერთი ჩემი; შენ ხარ უწინ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-toma-chrysostom.html#p15"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — თომა მოც. §15 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ვად ჩუენდა, რამეთუ ვითარცა კაცთ-მოყუარჱ ხარ, სათნო-გიჩნდა ყოფაჲ ჩუენ თანა. შენითავე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-toma-chrysostom.html#p21"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — თომა მოც. §21 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ელი-იგი ხატი და1* ბრწყინვალებაჲ მამისაჲ ხარ, ვითარცა სთქუ: რომელმან მიხილა მე, იხილ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p18"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §18 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ძნემან ასწავა მას თქუმად, ვითარმედ: შენ ხარ ქრისტე, ძჱ ღმრთისა5* ცხოველისაჲ(4)*, არ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p19"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §19 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ეტყჳს უფალი მოციქულსა11*, ვითარმედ: შენ ხარ კლდჱ, და ამას კლდესა ზედა აღვაშჱნო ეკლე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p22"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §22 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…განქარდა, და სიხარულით ეტყოდა: კურთხეულ ხარ შენ, ასულო, რამეთუ ჩუენ დაცემულნი7* შენ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-dormition-1.html#p9"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — გარდ. ი. I (15 აგვ.) §9 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…იხაროდენ, რომელი უშრომელად შოვა-მდგომელ ხარ კაცთა მოკუდავთა ღმრთეებისა! გიხაროდენ,…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-dormition-2.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული მისივე — გარდ. ი. II §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…თლემ, სახლი ეგე იუდაჲსი, არაჲთ უმრწემჱს ხარ მთავართა შორის იუდაჲსთა, რამეთუ შენგან…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-dormition-2.html#p14"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული მისივე — გარდ. ი. II §14 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ს და რასა ეტყოდა, ვითარმედ: შენ თუ ელია ხარ და მე იეზაბელ, ძჳრი შემამთხჳედ მე6* ღმე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-john-baptist-decollatio-2.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.) §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ტე მე სიტყუაჲ ესე, რომელი-ეგე მწვალებელ ხარ: ვითარ ანუ რაბამად უწმიდჱს იქმნა მეძავ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-enkenia-1.html#p9"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — სატფ-ბა (13 სექ.) §9 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ებს თქუენ, იგი ძლიერ არს. ვინ-მე უკუე2* ხარ შენ? — მე იგი ვარ, რომელმან ცანი გარდავ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-enkenia-1.html#p14"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — სატფ-ბა (13 სექ.) §14 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მოხუედ დედის მუცლით, შიშუელიცა წარსლვად ხარ.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-enkenia-1.html#p16"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — სატფ-ბა (13 სექ.) §16 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ნი მისნი? რამეთუ ესრე თქუა, რამეთუ: შენ ხარ კლდჱ, და მაგას კლდეს ზედა7* აღვაშჱნო ეკ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-enkenia-1.html#p24"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — სატფ-ბა (13 სექ.) §24 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ჰკითხვიდა: მითხარ მე მწრაფლ, უკუეთუ შენ ხარ ქრისტჱ? მიუგო იოვანე და ჰრქუა: მე არა ვ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-enkenia-2.html#p25"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული მისივე — გურიტი და ეკლ. §25 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ჯელისა მათა საცნობელად, ხოლო მორწმუნეთა უხარის ნათლისა მისთჳს ბნელისაგან მოქცეულისა.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-exaltation-cross.html#p16"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვანე მთავარ-ეპსკოპოსი — ჯვართა (14 სექ.) §16 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მითა მით დაუდუმებელითა და იტყჳან: წმიდა ხარ, წმიდა ხარ, წმიდა ხარ, შენ უფალო, წოდებ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-cross-vision.html#p17"
+                                   class="hover:text-gray-700 transition-colors">
+                                    გამოჩინება ჯვრისა კოსტ. მეფეს §17 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ყუელნა და თქუა: ჭეშმარიტად, ქრისტე, შენ ხარ მაცხოვარი სოფლისაჲ. გმადლობ შენ, ქრისტე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-cross-vision.html#p19"
+                                   class="hover:text-gray-700 transition-colors">
+                                    გამოჩინება ჯვრისა კოსტ. მეფეს §19 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მას: პატროკლე, შენცა ვიდრემე განჩემებულ ხარ მას მეუფესა? ხოლო მან ჰრქუა: ჰე, უფალო,…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-paul-martyrdom.html#p5"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება პავლე მოც. §5 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…უენ და მყვენ ჩუენ ეგრე, ვითარცა-ეგე შენ ხარ, და განგიტეოთ შენ.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-paul-martyrdom.html#p10"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება პავლე მოც. §10 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ეუფეო ყოველთაო და ღმერთო ყოველთაო, შენ ხარ სასოჲ ჩუენი და შემწჱ ჩუენი და ნუ დაივიწ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-sinai-fathers-amonios.html#p40"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ცხოვრება სინელ მამათა §40 →
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                     <button class="att-toggle mt-2 text-xs cursor-pointer"
                             style="color:var(--crimson);background:none;border:none;padding:0;"
-                            onclick="toggleAtts(this, 'lex-khar1', 12)">
-                        ყველა (12) →
+                            onclick="toggleAtts(this, 'lex-khar1', 53)">
+                        ყველა (53) →
                     </button>
                     
                 </div>
                 
 
-                <!-- Citation -->
+                <!-- Citation (from Imnaishvili example) -->
                 
 
-                <!-- Footer: sources + see-also -->
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
                 
 
             </article>
+            
             
             <article class="entry-card p-4 sm:p-5"
                      id="lex-khareba"
@@ -1091,7 +1655,8 @@
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
-                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
                         
                         
                         
@@ -1172,13 +1737,211 @@
                 </div>
                 
 
-                <!-- Citation -->
+                <!-- Citation (from Imnaishvili example) -->
                 
 
-                <!-- Footer: sources + see-also -->
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
                 
 
             </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khareba1"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხარება">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხარება</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khareba1')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">1. კარგი ამბის ცნობება, ხა-რება. / 2. გახარება.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khareba1">
+                        
+                        <div>
+                            <div class="citation-text">…სმენაჲ მწუხარებით იყო, ეგრეცა აღდგომისა ხარებაჲ.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-kyrile.html#p1"
+                                   class="hover:text-gray-700 transition-colors">
+                                    კირილე იერ. — აღდგომა §1 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khark-i"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხარკ">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხარკ</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khark-i')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">183,16 გადასახადი.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
             
             <article class="entry-card p-4 sm:p-5"
                      id="lex-khati"
@@ -1200,7 +1963,8 @@
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
-                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
                         
                         
                         
@@ -1233,7 +1997,7 @@
                 
                 
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">2 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">34 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 18 ტექსტში</span></p>
                     <div class="flex flex-col gap-2" id="atts-lex-khati">
                         
                         <div>
@@ -1256,18 +2020,925 @@
                             </div>
                         </div>
                         
+                        <div>
+                            <div class="citation-text">…ბათა ღაღადებითა უჴრწნელსა მას უგალობდეთ ხატსა? ანუ რომლითა-მე სულიერთა გალობათა სიტყჳ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-2.html#p15"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II §15 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ნ ცხოვრებაჲ საუკუნოჲ მოგუანიჭოს. რამეთუ ხატად ღმრთისა დაჰბადა კაცი და სამოთხესა შინა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-2.html#p27"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II §27 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…დიდად შუენიერი იგი ჴელმწიფებაჲ; რომელი ხატი ღმრთისაჲ იყო, ხატი მონისაჲ შეიმოსა; რომ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p5"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §5 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">Ⴞატი მონებისაჲ შეიმოსა წმიდისაგან ქალწულისა,…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ა გამოჩნდა, ქრისტე ღმერთი ჩუენი, სახითა ხატად კაცისა მოსლვად ნათესავისა ჩუენისა ჯერ-ი…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p10"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §10 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…უნებელი იგი? ზეცით მოსრულ ხარ და კაცისა ხატად აჩუენებ და ლამპარ ნათლის ელვარე ხარ.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p17"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §17 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…. ამისთჳსცა შობილი იგი ძჱ ღმრთისაჲ თანა-ხატი და თანა-არსი და თანა-მსგავსი მამისაჲ, რ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p20"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §20 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…გი აქუს ძლიერებისა ჴელმწიფებაჲ, შეიმოსს ხატსა ჩუენისა შეურაცხებისასა? და რომელი უპირა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p31"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §31 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ლებელმან ღმერთმან ხატი მონებისაჲ შეიმოსა, რაჲთა ურწმუნოთა საგო…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-kharbeba-3.html#p32"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს III §32 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…გაუწყო შენ? რამეთუ ურწმუნოებაჲ გაქუს ხატად მრვალად და წინდსა მ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-antipater.html#p16"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ანთიპატრ ბოსტრელისა — ხარება §16 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ესავ, არცა ადამის ნაშობ! დაკჳრვებულ ვარ ხატსა, უცხო არს მოკითხვაჲ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-antipater.html#p21"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ანთიპატრ ბოსტრელისა — ხარება §21 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…— მისთჳს, რომელმან ხატი მონისაჲ შეიმოსა, რ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-athanasi.html#p6"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ათანასი ალექსანდრიელისა — შობა §6 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…იდრეო ქუეყანისაო აურაცხელო! სიგლახაკისა ხატი მოაქუს და ბაგასა შიდა წევს და სოფელსა ა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-athanasi.html#p25"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ათანასი ალექსანდრიელისა — შობა §25 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მათისა. ამისთჳს სიტყუაჲ ღმრთისაჲ კაცისა ხატად გამოჩნდა, რაჲთა საცთური იგი დაჰჴსნდეს დ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-athanasi.html#p27"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ათანასი ალექსანდრიელისა — შობა §27 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…და უფროჲსღა ჭეშმარიტად სიწმიდისაჲ აქუს ხატი ნათესავისათჳს დედათაჲსა2* სიქადული; რომ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-prokle.html#p1"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ნეტ. პროკლე კ-პოლელისა — ღ-მშობ. §1 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ა ჰრწამს1* ჰურიათა უფალი, ხოლო ღმერთმან ხატი კაცისაჲ შეიმოსა; და ღათუ წარმართნი გუბა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-prokle.html#p10"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ნეტ. პროკლე კ-პოლელისა — ღ-მშობ. §10 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…არძნილო! რომელმან ხურომან შეუძლოს შენდა ხატად აღმართებად, ვითარ სახედ ქრისტ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-martyrdom.html#p8"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება წმ. სტეფანესი (27 დეკ.) §8 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ვალებითა მისითა ვერ განვიცდიდ ხატსა მას მისსა. და ამის ყოვლისა შემდგომად ვი…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-martyrdom.html#p20"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება წმ. სტეფანესი (27 დეკ.) §20 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მ წინაშე იგივე გამალიელ მითვე ხატითა და მრქუა მე: რად უდებ-ჰყავ და არა ახუედ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p13"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §13 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ჴორცნი ასხენედ ძესა მას ადამისსა, ხოლო ხატი სულიერთაჲ შთაუცუამს მათ, რამეთუ ესე ყოვ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-markhva-ephrem.html#p8"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეფრემი — მარხვა §8 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ესე ქურივი რომელ მოვიჴსენეთ, აჩუენებდა ხატსა ეკლესიაჲსასა7*, რომლისა მიივლინა წინაწა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-lazare.html#p21"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ლაზარე, მარია, მართა §21 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ჟამი. მაშინ თქუა ღმერთმან: ვქმნეთ კაცი ხატად ჩუენდა და მსგავსად(4)*. და &#34;ხატებაჲ&#34; იგ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-kyrile.html#p27"
+                                   class="hover:text-gray-700 transition-colors">
+                                    კირილე იერ. — აღდგომა §27 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ებასა იდიდების, რომელი მათ შორის მონისა ხატითა იქცეოდა.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მონისაჲ მიიღო და მსგავს კაცთა იქმნა. და ხატითა იპოვა ვითარცა კაცი, დაიმდაბლა თავი თჳსი…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p16"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §16 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…, ვითარცა ღმრთისა და მამისა, რომელი-იგი ხატი და1* ბრწყინვალებაჲ მამისაჲ ხარ, ვითარცა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p18"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §18 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">Ⴃა რამეთუ ხატ არს და ბჭე ეკლესიაჲ სასუფეველისა ცათაჲს…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p20"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §20 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…შევ უხრწნელად4* მჴევლად; ამისთჳს რამეთუ ხატი მონებისაჲ შენგან შეემოსა, რამეთუ შევიდა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-dormition-2.html#p4"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული მისივე — გარდ. ი. II §4 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ნი შუბლსა დამოეკიდნეს და შჳდისა ნათლისა ხატი მადლითა ეტჳრთა? და არა-მე მჴნე იყოა? ან…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-john-baptist-decollatio-2.html#p16"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.) §16 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ტაძრისა მისისათა და მეყსეულად გამოუქმნა ხატი იგი ჯუარისაჲ, ნიში, რომელი-იგი იხილა და…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-cross-vision.html#p3"
+                                   class="hover:text-gray-700 transition-colors">
+                                    გამოჩინება ჯვრისა კოსტ. მეფეს §3 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ვინაჲცა დაებადნეს. და დაიჴრწნეს ყოველი ხატი მათი, და ბრძანებითა ღმრთისაჲთა და ჴმით…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-departed-ephrem.html#p12"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეფრემი — შეს-ბ-თა §12 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ვინაჲცა დაებადნეს. და დაიჴრწნეს ყოველი ხატი მათი, და ბრძანებითა ღმრთისაჲთა და ჴმით…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-sinai-fathers.html#p12"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ცხოვრება სინელ მამათა §12 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…დ და ჰგონებდა, ნუუკუე ეშმაკი ეჩუენა მას ხატითა მოძღურისა თჳსისაჲთა. და ჰრქუა: ვყოთ ლოც…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-sinai-fathers-amonios.html#p26"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ცხოვრება სინელ მამათა §26 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="att-toggle mt-2 text-xs cursor-pointer"
+                            style="color:var(--crimson);background:none;border:none;padding:0;"
+                            onclick="toggleAtts(this, 'lex-khati', 34)">
+                        ყველა (34) →
+                    </button>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khateba1"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხატება">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხატება</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khateba1')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">159,23 მსგავსება.</div>
+                            
+                        </div>
                     </div>
                     
                 </div>
                 
 
-                <!-- Citation -->
+                <!-- Attestations from encoded texts -->
+                
                 
 
-                <!-- Footer: sources + see-also -->
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
                 
 
             </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khedva1"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხედვა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხედვა</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khedva1')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">1. დანახვა, შეხედვა. / 2. ყურება, ცქერა.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khedva1">
+                        
+                        <div>
+                            <div class="citation-text">…ირველისაებრ სარწმუნოებით და მანცა იგივე ხედვაჲ მოიპოვენ.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-migeba-hesychios.html#p1"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ევსუქი — ტაძრად მიყვანება §1 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khvale"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხვალე">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხვალე</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khvale')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">(და არა: ხ უ ა ლ ე) 213,23 ხვალ.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">2 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 2 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khvale">
+                        
+                        <div>
+                            <div class="citation-text">…მედ: ვსუათ და ვწამოტ, რამეთუ ხვალე სიკუდილდ ვართ. Ⴅითარმედ არცა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-markhva-ephrem.html#p4"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეფრემი — მარხვა §4 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…თა და უძჳრჱსსა შემძინედ; უკუეთუ არა, მე ხვალე დავსთხინე7* ჴორცნი შენნი, ვითარცა ერთი…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-john-baptist-decollatio-2.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.) §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khvalisa-dge"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხვალისა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხვალისა</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khvalisa-dge')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">253,2 მეორე დღეს.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">8 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 7 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khvalisa-dge">
+                        
+                        <div>
+                            <div class="citation-text">…მით ჲესუსითა სწავლად ერსა მას. და დაყო დღჱ და ღამჱ, და ანგელოზნი სცვივდე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-martyrdom.html#p15"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება წმ. სტეფანესი (27 დეკ.) §15 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…-იგი შთადვიან სამსახურებელი ეკლესიისაჲ, დღჱ რომელი განთენებოდა პარასკევად…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p3"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §3 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…გზასა მას კედრით კერძოსა; და დაყო დღჱ და ღამჱ, რამეთუ შჯული დაედვა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p6"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §6 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…და ვთქუათ, ვითარმედ: ესე არს დღჱ, რომელ ქმნა უფალმან. ვიხარებდეთ და ვიშუ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-1.html#p24"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული იოანე ოქროპირისა — ნათლ-ბა I §24 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ბაჲ, ეგრეცა უწინარჱ მცირედთა დღეთა ამათ დღჱ განზოგებისაჲ იყო ჟამი. მაშინ თქუა ღმერთ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-kyrile.html#p27"
+                                   class="hover:text-gray-700 transition-colors">
+                                    კირილე იერ. — აღდგომა §27 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">Ⴃღჱ კჳრიაკჱ დღჱ ნათლისაჲ არს. დღესა ნათლისასა ვიტყოდით…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-new-sunday.html#p1"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვანე მთავარ-ეპსკოპოსი — ახალი კვირიაკე §1 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…ცხოვრებისა მათისათჳს. ჰრქუა მათ პავლე: ხვალისა დღე მო-რაჲ-ხჳდეთ საფლავსა ჩემსა და ჰპოვ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-paul-martyrdom.html#p13"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება პავლე მოც. §13 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…უელმან, რამეთუ: წელი ათასი ვითარცა ერთი დღჱ (1)*. და სახარებასა შინა ქართულსა თავსა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-ioane-zosime.html#p1"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე-ზოსიმე — ქება ქართ. ენისა §1 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="att-toggle mt-2 text-xs cursor-pointer"
+                            style="color:var(--crimson);background:none;border:none;padding:0;"
+                            onclick="toggleAtts(this, 'lex-khvalisa-dge', 8)">
+                        ყველა (8) →
+                    </button>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khvalisagan"
+                     data-pos="adv"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხვალისაგან">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხვალისაგან</span>
+                        
+                        <span class="pos-tag">ზმნზ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khvalisagan')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">მეორე დღეს, ხვალ.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khvalisagan">
+                        
+                        <div>
+                            <div class="citation-text">…ცენ, რაჲთა ყოველნივე ერთბამად ხვალისაგან მსთუად მივკრბეთ თხრად ბორცუსა მას ოდენ.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p23"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §23 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
             
             <article class="entry-card p-4 sm:p-5"
                      id="lex-khilva"
@@ -1289,7 +2960,8 @@
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
-                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
                         
                         
                         
@@ -1322,15 +2994,358 @@
                 
                 
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">6 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 3 ტექსტში</span></p>
                     <div class="flex flex-col gap-2" id="atts-lex-khilva">
                         
                         <div>
                             <div class="citation-text">…ჲ მჴეცთაჲ და თავსა აღმატებულად, ვითარცა ხილვაჲ მყინვრისაჲ საშინელისაჲ და მსგავსებაჲ სა…</div>
                             <div class="citation-ref mt-0.5">
-                                <a href="../texts/mrav-kharbeba-2.html#p13"
+                                <a href="../texts/mrav-kharbeba-2.html#p12"
                                    class="hover:text-gray-700 transition-colors">
-                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II §13 →
+                                    თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II §12 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…სა თანა-შეყოფილნი და შეერთებულნი და ერთ ხილვა! ვითარცა ამისთჳს წამებს წმიდაჲ პავლე მო…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-epiphane.html#p18"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეპიფანე კვ-სი — მარადის ქალწულ. §18 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ბისა შენისაგან მოივლინა ჩემდა ხილვაჲ5* ესე, ჯერ-გიჩნდინ და ბრძანე,…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p12"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §12 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ესე ვიკადრე და ვთქუ: უკუეთუ არს ხილვაჲ ესე ცემდა უფლისა მიერ, ჯერ-ი…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p13"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §13 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ესრჱთ დავდეგ და მიუთხარ ჩუენებაჲ იგი _ ხილვაჲ იგი პირველი და მეორჱ, და კერძ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p21"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §21 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…, ვცან, ვითარმედ ჭეშმარიტ იყო ხილვაჲ იგი მისი. ხოლო პირველად ბორცუსა მასვე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p25"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §25 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="att-toggle mt-2 text-xs cursor-pointer"
+                            style="color:var(--crimson);background:none;border:none;padding:0;"
+                            onclick="toggleAtts(this, 'lex-khilva', 6)">
+                        ყველა (6) →
+                    </button>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khilva1"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხილვა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხილვა</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khilva1')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">ხილვა, ნახვა.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">9 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 5 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khilva1">
+                        
+                        <div>
+                            <div class="citation-text">…კთა ღუწოლაჲ, და ფერჴთა ასწავის სლვაჲ და ხილვაჲ სნეულთაჲ.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-markhva-ephrem.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეფრემი — მარხვა §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ვითა ელია გამოირჩია ღმერთი და დიდსა მას ხილვასა შეემთხჳნეს1* იგინი.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-forty-martyrs.html#p20"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ბასილი — ორმოც მოწამე (9 მარ.) §20 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…Ⴋას ჟამსა ოდენ იხილა ხილვაჲ უცხოჲ: ძალნი რომელნი ზეცით გარდამოვიდეს…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-forty-martyrs.html#p22"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ბასილი — ორმოც მოწამე (9 მარ.) §22 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ნაცილ-ყვეს ძრვაჲ იგი, რომელ იხილეს, და ხილვაჲ ანგელოზისაჲ მის, რომელ ეჩუენა.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-meletios.html#p9"
+                                   class="hover:text-gray-700 transition-colors">
+                                    მელეტი ეპ-სი — მკვდრ. აღდგ. §9 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ზეცისა მეუფემან უჩუენა გამოუთქუმელი იგი ხილვაჲ, რომლისა ქერაბინთაცა შეუძლებელ არს თუალ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p4"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §4 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…არცა ღმერთ არს; და მერმე ამას დიდებულსა ხილვასა, ოდეს-იგი აღვიდოდა მათ თანა ლოცვად მთას…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p7"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §7 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…Ⴀმისთჳს უკუე მოციქული საღმრთოჲსა მის ხილვასა ქადაგებს და იტყჳს: რამეთუ არა მეცნიერებ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p24"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §24 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…რს მცნებაჲ ესე, ვითარმედ &#34;ნუვის უთხრობთ ხილვასა5* ამას&#34;, რომელი ყოვლისა უფროჲს ხილვისა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-feristsvaleba.html#p29"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ფერისცვლება (6 აგვ.) §29 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…მან აღაშჱნოს(2)*; გნებავს თუ მისი კაცად ხილვაჲ, ესრე თქუა: ეგრე ვშურები, არა თუ ვითარც…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-enkenia-1.html#p5"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — სატფ-ბა (13 სექ.) §5 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="att-toggle mt-2 text-xs cursor-pointer"
+                            style="color:var(--crimson);background:none;border:none;padding:0;"
+                            onclick="toggleAtts(this, 'lex-khilva1', 9)">
+                        ყველა (9) →
+                    </button>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khili"
+                     data-pos="other"
+                     data-source="abuladze1973"
+                     data-lemma="ხილი">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხილი</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khili')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">ნაყოფი</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">2 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 2 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khili">
+                        
+                        <div>
+                            <div class="citation-text">…ამსა მას აღდგომისასა: ზაფხულის-მეა, ანუ ხილისა მოკლებასა1* იყოს, ანუ ზამთრისა შემდგომა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-aghdgoma-kyrile.html#p4"
+                                   class="hover:text-gray-700 transition-colors">
+                                    კირილე იერ. — აღდგომა §4 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ცა პურსა, არამედ მცირედ დანაკისკუდსა და ხილსა განჴმელსა საჴმრად ჴორცთა. ხოლო მამასახ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-sinai-fathers-amonios.html#p5"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ცხოვრება სინელ მამათა §5 →
                                 </a>
                             </div>
                         </div>
@@ -1340,13 +3355,640 @@
                 </div>
                 
 
-                <!-- Citation -->
+                <!-- Citation (from Imnaishvili example) -->
                 
 
-                <!-- Footer: sources + see-also -->
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
                 
 
             </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khiluli"
+                     data-pos="other"
+                     data-source="abuladze1973"
+                     data-lemma="ხილული">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხილული</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khiluli')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">6 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 6 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khiluli">
+                        
+                        <div>
+                            <div class="citation-text">…ლო, შემოვიდა ჩუენსა ამას განჴრწნადსა და ხილულსა ჴორცსა! რამეთუ კაცთა ხილული სმენილსა უფ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-athanasi.html#p13"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ათანასი ალექსანდრიელისა — შობა §13 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…Ⴀწ უკუე ვთქუათ მამაჲ ხილულად, ვითარცა ვის ძალ-ედვა სმენად და დატევნა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-epiphane.html#p4"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ეპიფანე კვ-სი — მარადის ქალწულ. §4 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…მაშინ გარდამოჴდა სული წმიდაჲ, ჴორციელად ხილული ვითარცა ტრედი, არა თუ რაჲთა იესუ იხილოს…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-kyrile.html#p32"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული კირილე — ნათლ-ბა §32 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…უენ; არარაჲ სწორ ხილული ესე, რომლისა-იგი სასოებისა ჩუენ გული გჳ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-forty-martyrs.html#p13"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ბასილი — ორმოც მოწამე (9 მარ.) §13 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ელი და გამოჩინებული; შენ ხარ უხილავი და ხილული4*; შენ ხარ გამოუსახველი და გამოსახული;…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-toma-chrysostom.html#p15"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — თომა მოც. §15 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="att-extra" style="display:none">
+                            <div class="citation-text">…სიკუდილისაგან განთავისუფლდების1*; დღეს ხილული იგი უხილავ იქმნების კაცთაგან, არამედ იხ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-dormition-1.html#p12"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — გარდ. ი. I (15 აგვ.) §12 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="att-toggle mt-2 text-xs cursor-pointer"
+                            style="color:var(--crimson);background:none;border:none;padding:0;"
+                            onclick="toggleAtts(this, 'lex-khiluli', 6)">
+                        ყველა (6) →
+                    </button>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khldoma1"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხლდომა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხლდომა</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khldoma1')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">შენძრევა, შეხტომა, შეთამაშება (ჩვეულებრივად ბავშვისა დედის მუცელში); ხტომა, ხტუნვა.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khldoma1">
+                        
+                        <div>
+                            <div class="citation-text">ესე იოვანჱს ხლდომანი უფროჲსღა სიტყუანი, რამეთუ სიტყუანი იყვ(…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-antipater.html#p6"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ანთიპატრ ბოსტრელისა — ხარება §6 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975; ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khvide-khvidodi"
+                     data-pos="other"
+                     data-source="corpus"
+                     data-lemma="ხჳდე">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხჳდე</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khvide-khvidodi')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khvide-khvidodi">
+                        
+                        <div>
+                            <div class="citation-text">…კუალად აღსდგე და განახლებული ცხოვრებითა ხჳდოდი.</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-natlisgheba-kyrile.html#p30"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული კირილე — ნათლ-ბა §30 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khual-khualt"
+                     data-pos="other"
+                     data-source="corpus"
+                     data-lemma="ხუალ">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხუალ</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khual-khualt')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khual-khualt">
+                        
+                        <div>
+                            <div class="citation-text">…ითარმედ: რაჲ არიან საქმენი შენნი? ვინაჲ ხუალ ანუ ვიდრე ხუალ? ანუ რომლისა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-markhva-chrysostom.html#p33"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — მარხვა და იონა §33 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khueta"
+                     data-pos="other"
+                     data-source="abuladze1973"
+                     data-lemma="ხუეტა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხუეტა</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khueta')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">ფხეკა</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khutasi"
+                     data-pos="other"
+                     data-source="abuladze1973"
+                     data-lemma="ხუთასი">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხუთასი</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khutasi')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">500</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">2 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 2 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khutasi">
+                        
+                        <div>
+                            <div class="citation-text">…მრავლემან ერისამან მას დღესა, ხუთასმან კაცმან, რომელთა ჰრწმენა ქრისტე.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-martyrdom.html#p18"
+                                   class="hover:text-gray-700 transition-colors">
+                                    წამება წმ. სტეფანესი (27 დეკ.) §18 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ღო. ერთსა მას მიუტევა ერგასისი და ერთსა ხუთასი. რომელმან უფროჲს შეიყუაროს? მიუგო: რომ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-john-baptist-decollatio.html#p28"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.) §28 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ილ. აბულაძე 1973</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
             
             <article class="entry-card p-4 sm:p-5"
                      id="lex-khuro"
@@ -1368,7 +4010,8 @@
                     <!-- External links + copy URI -->
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
-                        <span class="src-badge">იმნაიშვილი 1975</span>
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
                         
                         
                         
@@ -1401,8 +4044,18 @@
                 
                 
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">1 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">3 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 3 ტექსტში</span></p>
                     <div class="flex flex-col gap-2" id="atts-lex-khuro">
+                        
+                        <div>
+                            <div class="citation-text">…Ⴀწ რაჲ მე ვთქუა, ანუ რასა-მე ვიტყოდი? ხუროსა ვხედავ და ბაგასა და ქალწულსა მშობიერსა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-athanasi.html#p25"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ათანასი ალექსანდრიელისა — შობა §25 →
+                                </a>
+                            </div>
+                        </div>
                         
                         <div>
                             <div class="citation-text">…ლ — განუზომელი იგი შემოსილისა მადლი, და ხურო — რომლითა-იგი მორჩილებითა შევიდა მისა6*…</div>
@@ -1414,15 +4067,270 @@
                             </div>
                         </div>
                         
+                        <div>
+                            <div class="citation-text">…და უკუეთუმცა ქვაჲ იგი საკიდური ჩუენ არა ხურო გუექმნა, დაჴსნილი იგი სახლი ვერ შესაძლე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-migeba-hesychios.html#p11"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ევსუქი — ტაძრად მიყვანება §11 →
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                 </div>
                 
 
-                <!-- Citation -->
+                <!-- Citation (from Imnaishvili example) -->
                 
 
-                <!-- Footer: sources + see-also -->
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khuroth-modzghuar"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხუროთ-მოდღუარ">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხუროთ-მოდღუარ</span>
+                        
+                        <span class="pos-tag">სხვ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khuroth-modzghuar')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">1. 33,28, 41,21; 218,25 ოსტატთა უფროსი. 2. 68,30; 116,21 არქიტექტორი.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">2 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 2 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khuroth-modzghuar">
+                        
+                        <div>
+                            <div class="citation-text">…ნაყოფი მოიღო დიდებისაჲ, რამეთუ სამოსელ ხუროთ-მოძღურისა იქმნა. ვითარცა-იგი პირველ შეუ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-shoba-athanasi.html#p14"
+                                   class="hover:text-gray-700 transition-colors">
+                                    თქმული ათანასი ალექსანდრიელისა — შობა §14 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…გი, რომელ ქალაქი ღმრთისაჲ არს, რომლისაჲ ხუროთ მოძღუარ და შემოქმედ ღმერთი არს?(1)* ქალ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-forty-martyrs.html#p8"
+                                   class="hover:text-gray-700 transition-colors">
+                                    ბასილი — ორმოც მოწამე (9 მარ.) §8 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
+
+                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
+                        
+                        
+
+                        
+                        
+                        <span class="text-gray-400">წყ.:</span>
+                        
+                        
+                        <span class="text-gray-500">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                    </div>
+
+                    
+
+                </div>
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-khutses"
+                     data-pos="noun"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ხუცეს">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="lemma-head">ხუცეს</span>
+                        
+                        <span class="pos-tag">სახ.</span>
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'x', 'lex-khutses')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-2 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div>
+                            <div class="sense-def">მღვდელი, ხუცესი; ეკლესიის მსახური.</div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">5 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 1 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-khutses">
+                        
+                        <div>
+                            <div class="citation-text">…მელნი სიმჴნესა შინა ხართ ეპისკოპოსნი და ხუცესნი და ერთბამად ყოველთა მორწმუნეთ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p1"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §1 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…უკმოიქცა და მრქუა მე: ჩემდა მოიხილე, ხუცეს! მაქუს სხუაჲცა სიტყუაჲ შენდა.…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p14"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §14 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…პირველად მორწმუნეთა და ღირსთა ხუცესთა, რაჲთამცა მასწავეს, ვითარმედ რაჲმე-რაჲ5…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p20"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §20 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ა მეჩუენა იგივე უფალი გამალიელ და თქუა: ხუცეს, ნუ დაშურები თხრად ბორცუსა მა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p23"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §23 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…ამალიელ და ჰრქუა: მივედ და არქუ ლუკიანე ხუცესსა, ვითარმედ: ნუ ცუდად დაშურები…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-stepane-inventio.html#p24"
+                                   class="hover:text-gray-700 transition-colors">
+                                    პოვნა წმ. სტეფანესი §24 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
                 
 
             </article>

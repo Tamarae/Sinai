@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
 type="application/xml"
-schematypens="http://relaxng.org/ns/structure/relaxng"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-  xml:id="mrav-amaghleba"
-  xml:lang="ka">
+schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="mrav-amaghleba" xml:lang="ka">
   
   <teiHeader>
     <fileDesc>
@@ -80,55 +77,54 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?>
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴓ</hi>ფალი ჩუენი და ძჱ ღმრთისაჲ რაჟამს მოვიდოდა, ვერ იხილეს იგი ანგელოზთა; ხოლო ვითარცა აღმაღლდა დღეს, ჰხედვიდეს და იხილვიდეს მას მოწაფენიცა მისნი. არა იხილეს ანგელოზთა მოსლვაჲ იგი მისი ჩუენდა, რამეთუ ძალი თჳნიერ ჴორცთა დაფარულად გარდამოჴდა მაღლით და განისუენა ქალწულსა მას ზედა.
+          <hi rend="initial">Ⴓ</hi><w lemmaRef="#lex-upal">ფალი</w> ჩუენი და <w lemmaRef="#lex-dze">ძჱ</w> ღმრთისაჲ <w lemma="#lex-razhams">რაჟამს</w> მოვიდოდა, ვერ იხილეს იგი <w lemmaRef="#lex-angelozi">ანგელოზთა</w>; ხოლო <w lemma="#lex-vitartsa">ვითარცა</w> აღმაღლდა დღეს, ჰხედვიდეს და იხილვიდეს მას მოწაფენიცა მისნი. არა იხილეს <w lemmaRef="#lex-angelozi">ანგელოზთა</w> <w lemmaRef="#lex-moslva">მოსლვაჲ</w> იგი მისი ჩუენდა, <w lemma="#lex-rametu">რამეთუ</w> ძალი თჳნიერ ჴორცთა <w lemmaRef="#lex-daparulad">დაფარულად</w> გარდამოჴდა მაღლით და განისუენა <w lemmaRef="#lex-qaltsuli">ქალწულსა</w> მას <w lemma="#lex-zeda">ზედა</w>.
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴈ</hi>ხილეს კაცთა აღმაღლებაჲ იგი მაღლად, რამეთუ ჴორცნი ქუეყანისანი აღჴდეს ზეცად, განეფინა ღრუბელი და შეიწყნარა უფალი, ახარა ქალწულსა და შეიწყნარა.
+          <hi rend="initial">Ⴈ</hi>ხილეს <w lemmaRef="#lex-katsi">კაცთა</w> <w lemmaRef="#lex-aghmaghleba-amaghleba">აღმაღლებაჲ</w> იგი მაღლად, <w lemma="#lex-rametu">რამეთუ</w> ჴორცნი ქუეყანისანი აღჴდეს ზეცად, განეფინა ღრუბელი და შეიწყნარა <w lemmaRef="#lex-upal">უფალი</w>, ახარა <w lemmaRef="#lex-qaltsuli">ქალწულსა</w> და შეიწყნარა.
         </p>
         
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴐ</hi>აჟამს ღმრთეებაჲ იგი მისი კაცებასა ჩუენსა შეეზიარებოდა და ქალწულსა მას, რომელი ქუეყანისაჲ იყო, დაადგრა მას შინა; ხოლო რაჟამს კაცებასა ამას ჩუენსა <pb n="171r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173"/> ღმრთეებითა თჳსითა განამდიდრებდა, ღრუბლითა აღამაღლებდა ჴორცთა ჩუენთა და წესცა იყო, რამეთუ ვიდრე ჩუენ თანა იყო, ძლიერებასა თჳსსა დაიმდაბლებდა, რაჲთა უძლურებასა ზედა დაემკჳდროს.
+          <hi rend="initial">Ⴐ</hi>აჟამს ღმრთეებაჲ იგი მისი კაცებასა ჩუენსა შეეზიარებოდა და <w lemmaRef="#lex-qaltsuli">ქალწულსა</w> მას, რომელი <w lemmaRef="#lex-queqanisa">ქუეყანისაჲ</w> იყო, დაადგრა მას <w lemma="#lex-shina">შინა</w>; ხოლო <w lemma="#lex-razhams">რაჟამს</w> <w lemmaRef="#lex-katseba">კაცებასა</w> ამას <w lemmaRef="#lex-chuen">ჩუენსა</w> <pb n="171r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173"/> ღმრთეებითა თჳსითა განამდიდრებდა, ღრუბლითა აღამაღლებდა <w lemmaRef="#lex-qorts">ჴორცთა</w> <w lemmaRef="#lex-chuen">ჩუენთა</w> და წესცა იყო, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-vidre">ვიდრე</w> ჩუენ <w lemma="#lex-tana">თანა</w> იყო, <w lemmaRef="#lex-dzliereba-dzrieleba">ძლიერებასა</w> <w lemmaRef="#lex-tvisi">თჳსსა</w> დაიმდაბლებდა, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-udzlureba">უძლურებასა</w> <w lemma="#lex-zeda">ზედა</w> დაემკჳდროს.
         </p>
         
         <p xml:id="p4" n="4">
-          <hi rend="initial">Ⴄ</hi>გრეცა რაჟამს აღჰქონდეს ჴორცნი ჩუენნი მის თანა, დიდებითა სიმდიდრისა მისისაჲთა აღმაღლდეს. ვითარცა შეიმოსეს ძალი მაღალთა შინა ჴორცთა მათ, რომელნი ქალწულისაგან იყვნეს, მოვიდა და ეჩუენა კაცთა, ეგრეცა შეიმოსს ჴორცთა ქუეყანისათა.
+          <hi rend="initial">Ⴄ</hi>გრეცა <w lemma="#lex-razhams">რაჟამს</w> აღჰქონდეს <w lemmaRef="#lex-qorts">ჴორცნი</w> <w lemmaRef="#lex-chuen">ჩუენნი</w> მის <w lemma="#lex-tana">თანა</w>, დიდებითა <w lemmaRef="#lex-simdidre">სიმდიდრისა</w> მისისაჲთა აღმაღლდეს. <w lemma="#lex-vitartsa">ვითარცა</w> შეიმოსეს <w lemmaRef="#lex-dzal">ძალი</w> <w lemmaRef="#lex-maghali">მაღალთა</w> <w lemma="#lex-shina">შინა</w> ჴორცთა მათ, რომელნი ქალწულისაგან იყვნეს, მოვიდა და ეჩუენა კაცთა, ეგრეცა შეიმოსს <w lemmaRef="#lex-qorts">ჴორცთა</w> <w lemmaRef="#lex-queqanisa">ქუეყანისათა</w>.
         </p>
         
         <p xml:id="p5" n="5">
-          <hi rend="initial">Ⴃ</hi>იდებულებაჲ შორის ღრუბელსა მას აღჴდა და მოიღო თაყუანის-ცემაჲ ანგელოზთაგან მაღალთა შინა, რაჲთა აჩუენოს, რამეთუ ეზიარა კაცებაჲ ჩუენი ღმრთეებასა მისსა და განმდიდრდა ცათა შინა; ღაღატ-ყო და თქუა, ვითარმედ: აღმომიყვანნა ჩუენ მარჯუენითა ცათა შინა. და წინაწარმეტყუელმან თქუა, ვითარმედ: აღმაღლენით ბჭენი თქუენი, მთავარნო. და აღმაღლდედ ბჭენი საუკუნენი და შევიდეს მეუფჱ დიდებისაჲ<note n="1">(1)*</note>. და კულად<note n="2">1*</note>, ვითარმედ: ჰრქუა უფალმან უფალსა ჩემსა: დაჯედ მარჯუენით ჩემსა<note n="3">(2)*</note>. ხოლო მოციქული გამოუთარგმანებს: რომელსა-იგი წინაწარმეტყუელი უფლით ჰხადის, რაჟამს დაჯდების მარჯუენით მშობლისა თჳსისა, იგი არს, რომელსა ჰრქუა გაბრიელ უფალ, რაჟამს შთავიდოდა იგი ყურსა მას ქალწულისასა.
+          <hi rend="initial">Ⴃ</hi>იდებულებაჲ <w lemma="#lex-shoris1">შორის</w> ღრუბელსა მას აღჴდა და მოიღო თაყუანის-<w lemmaRef="#lex-tsema">ცემაჲ</w> ანგელოზთაგან <w lemmaRef="#lex-maghali">მაღალთა</w> <w lemma="#lex-shina">შინა</w>, <w lemma="#lex-rayta">რაჲთა</w> აჩუენოს, <w lemma="#lex-rametu">რამეთუ</w> ეზიარა <w lemmaRef="#lex-katseba">კაცებაჲ</w> ჩუენი <w lemmaRef="#lex-ghmrteeba">ღმრთეებასა</w> მისსა და განმდიდრდა ცათა <w lemma="#lex-shina">შინა</w>; ღაღატ-ყო და თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>: აღმომიყვანნა ჩუენ <w lemmaRef="#lex-marjuene">მარჯუენითა</w> ცათა <w lemma="#lex-shina">შინა</w>. და <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელმან</w> თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>: აღმაღლენით ბჭენი თქუენი, მთავარნო. და აღმაღლდედ ბჭენი საუკუნენი და შევიდეს <w lemmaRef="#lex-meupe">მეუფჱ</w> <w lemmaRef="#lex-didebisa">დიდებისაჲ</w><note n="1">(1)*</note>. და <w lemmaRef="#lex-kualad-kulad">კულად</w><note n="2">1*</note>, <w lemma="#lex-vitarmed">ვითარმედ</w>: ჰრქუა უფალმან <w lemmaRef="#lex-upal">უფალსა</w> <w lemmaRef="#lex-chemi">ჩემსა</w>: დაჯედ <w lemma="#lex-marjuenit">მარჯუენით</w> <w lemmaRef="#lex-chemi">ჩემსა</w><note n="3">(2)*</note>. ხოლო <w lemmaRef="#lex-motsiqul">მოციქული</w> გამოუთარგმანებს: რომელსა-იგი <w lemma="#lex-tsinatsarmetqveli">წინაწარმეტყუელი</w> უფლით ჰხადის, <w lemma="#lex-razhams">რაჟამს</w> დაჯდების <w lemma="#lex-marjuenit">მარჯუენით</w> მშობლისა <w lemmaRef="#lex-tvisi">თჳსისა</w>, იგი არს, რომელსა ჰრქუა <persName ref="#pers-gabriel"><persName ref="#pers-gabriel">გაბრიელ</persName></persName> <w lemma="#lex-upal">უფალ</w>, <w lemma="#lex-razhams">რაჟამს</w> შთავიდოდა იგი <w lemmaRef="#lex-qur">ყურსა</w> მას ქალწულისასა.
         </p>
         
         <p xml:id="p6" n="6">
-          <hi rend="initial">Ⴀ</hi>მისთჳს ვიდოდა უფალი მოწაფეთა თანა ამას ორმეოცსა დღესა და მერმეღა აღმაღლდა <pb n="171v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174"/> ცად, რაჲთა დაამტკიცნეს მოწაფენი აღდგომისათჳს.
+          <hi rend="initial">Ⴀ</hi>მისთჳს ვიდოდა <w lemmaRef="#lex-upal">უფალი</w> მოწაფეთა <w lemma="#lex-tana">თანა</w> ამას <w lemmaRef="#lex-ormeots">ორმეოცსა</w> დღესა და <w lemmaRef="#lex-mermegha">მერმეღა</w> აღმაღლდა <pb n="171v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174"/> ცად, <w lemma="#lex-rayta">რაჲთა</w> დაამტკიცნეს მოწაფენი აღდგომისათჳს.
         </p>
         
         <p xml:id="p7" n="7">
-          <hi rend="initial">Ⴓ</hi>კუეთუმცა შემდგომად აღდგომისა აღ-ხოლო-სრულ იყო ცად და არა ყოფილ იყო მოწაფეთა თანა, ეგონამცა, ვითარმედ საუცარ რაჲმე იყოო და არა ვითარცა ჭეშმარიტად განცხოველებული. რამეთუ ვითარცა უჩუენნა მათ ჴორცნი და გუერდი თჳსი და ბრძჳლნი ლახურისანი, და ჰრქუა მათ: მიხილეთ მე და განმიცადეთ, რამეთუ მე ვარ, და ნუ განიწვალებით გონებითა.
+          <hi rend="initial">Ⴓ</hi>კუეთუმცა შემდგომად აღდგომისა აღ-ხოლო-<w lemmaRef="#lex-srul-qopa">სრულ</w> იყო ცად და არა <w lemmaRef="#lex-qopili">ყოფილ</w> იყო მოწაფეთა <w lemma="#lex-tana">თანა</w>, ეგონამცა, <w lemma="#lex-vitarmed">ვითარმედ</w> <w lemmaRef="#lex-sautsar">საუცარ</w> <w lemmaRef="#lex-raime">რაჲმე</w> იყოო და არა <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-cheshmaritad">ჭეშმარიტად</w> განცხოველებული. <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-vitartsa">ვითარცა</w> უჩუენნა მათ ჴორცნი და <w lemmaRef="#lex-guerd">გუერდი</w> თჳსი და <w lemmaRef="#lex-brdzvili">ბრძჳლნი</w> ლახურისანი, და ჰრქუა მათ: მიხილეთ მე და განმიცადეთ, <w lemma="#lex-rametu">რამეთუ</w> მე ვარ, და ნუ განიწვალებით გონებითა.
         </p>
         
         <p xml:id="p8" n="8">
-          <hi rend="initial">Ⴃ</hi>ა ჯეკმა ღათუ მრავალ იყვნეს მოწამენი აღდგომისანი, ხოლო იგი[ნი]<note n="4">1*</note> გონებითა მათითა, ვითარცა ნავნი ღელვათაგან, შეძრწუნებულ იყვნეს; რავდენმეღა უფროჲს, არა თუ-მცა ყოფილ იყო მათ თანა, მრავალიმცა თესლი ორგულებისაჲ დათესულ იყო მათ თანა!
+          <hi rend="initial">Ⴃ</hi>ა <w lemmaRef="#lex-jekma">ჯეკმა</w> <w lemma="#lex-ghatu">ღათუ</w> <w lemmaRef="#lex-mraval-guemul">მრავალ</w> იყვნეს მოწამენი აღდგომისანი, ხოლო იგი[ნი]<note n="4">1*</note> გონებითა მათითა, <w lemma="#lex-vitartsa">ვითარცა</w> ნავნი ღელვათაგან, შეძრწუნებულ იყვნეს; რავდენმეღა <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲს</w>, არა თუ-მცა <w lemmaRef="#lex-qopili">ყოფილ</w> იყო მათ <w lemma="#lex-tana">თანა</w>, მრავალიმცა <w lemmaRef="#lex-tesl">თესლი</w> ორგულებისაჲ დათესულ იყო მათ <w lemma="#lex-tana">თანა</w>!
         </p>
         
         <p xml:id="p9" n="9">
-          <hi rend="initial">Ⴀ</hi>რამედ დადგა მათ თანა და ჭამა მათ თანა, არა ვითარცა მშიერი, და ნუგეშინისსცა<note n="5">2*</note> მათ მოკითხვითა თჳსითა და ახარა მათ ზიარებითა თჳსითა და უბრძანა მათ ქადაგებად სახარებაჲ მისი ყოველთა დაბადებულთა. წარვიდა მათგან კაცებრ და იყო მათ თანა ღმრთეებითა; და აღმაღლდა მეუფჱ იგი ჩუენი ძლევითა და დაჯდა მარჯუენით<note n="6">3*</note> მამისა თჳსისა, ვითარცა თქუა მოციქულმან: საყდარი შენი, ღმერთო, უკუნითი უკუნისამდე<note n="7">(1)*</note>. და დავით თქუა: უფალი სუფევს, შუენიერებაჲ შეიმოსა<note n="8">(2)*</note>.
+          <hi rend="initial">Ⴀ</hi>რამედ დადგა მათ <w lemma="#lex-tana">თანა</w> და <w lemmaRef="#lex-chama">ჭამა</w> მათ <w lemma="#lex-tana">თანა</w>, არა <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-mshier">მშიერი</w>, და ნუგეშინისსცა<note n="5">2*</note> მათ მოკითხვითა თჳსითა და ახარა მათ ზიარებითა თჳსითა და უბრძანა მათ ქადაგებად სახარებაჲ მისი <w lemmaRef="#lex-qovel">ყოველთა</w> დაბადებულთა. წარვიდა მათგან <w lemmaRef="#lex-katsebr">კაცებრ</w> და იყო მათ <w lemma="#lex-tana">თანა</w> ღმრთეებითა; და აღმაღლდა <w lemmaRef="#lex-meupe">მეუფჱ</w> იგი ჩუენი ძლევითა და დაჯდა <w lemma="#lex-marjuenit">მარჯუენით</w><note n="6">3*</note> მამისა <w lemmaRef="#lex-tvisi">თჳსისა</w>, <w lemma="#lex-vitartsa">ვითარცა</w> თქუა მოციქულმან: <w lemmaRef="#lex-saqdar">საყდარი</w> შენი, <w lemmaRef="#lex-ghmerti">ღმერთო</w>, უკუნითი უკუნისამდე<note n="7">(1)*</note>. და დავით თქუა: <w lemmaRef="#lex-upal">უფალი</w> სუფევს, <w lemmaRef="#lex-shueniiigeba1">შუენიერებაჲ</w> შეიმოსა<note n="8">(2)*</note>.
         </p>
         
         <p xml:id="p10" n="10">
-          <pb n="173r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176"/> <hi rend="initial">Ⴞ</hi>ოლო აწ ამას ორმეოცსა დღესა აღჳრნი მარხვისანი განგუაშორნა ჩუენგან, რამეთუ თავადმან თჳთ თქუა, ვითარმედ: არა ჯერ-არს მარხვაჲ ყრმათა მექორწილეთაჲ და არცა გლოვაჲ, ვიდრე სიძჱ იგი მათ თანა არს. ხოლო მოვიდენ დღენი, რაჟამს აღმაღლდეს მათგან სიძჱ იგი, და მაშინ იმარხვიდენ<note n="9">(3)*</note>.
+          <pb n="173r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176"/> <hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-ats">აწ</w> ამას <w lemmaRef="#lex-ormeots">ორმეოცსა</w> დღესა <w lemmaRef="#lex-aghviri">აღჳრნი</w> მარხვისანი განგუაშორნა ჩუენგან, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-tavad">თავადმან</w> <w lemmaRef="#lex-tvit">თჳთ</w> თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>: არა <w lemma="#lex-jer">ჯერ</w>-არს მარხვაჲ <w lemmaRef="#lex-qhda">ყრმათა</w> მექორწილეთაჲ და არცა <w lemmaRef="#lex-glova">გლოვაჲ</w>, <w lemma="#lex-vidre">ვიდრე</w> <w lemmaRef="#lex-sidze">სიძჱ</w> იგი მათ <w lemma="#lex-tana">თანა</w> არს. ხოლო მოვიდენ დღენი, <w lemma="#lex-razhams">რაჟამს</w> აღმაღლდეს მათგან <w lemmaRef="#lex-sidze">სიძჱ</w> იგი, და <w lemma="#lex-mashin">მაშინ</w> იმარხვიდენ<note n="9">(3)*</note>.
         </p>
         
         <p xml:id="p11" n="11">
-          <hi rend="initial">Ⴀ</hi>ღვიხუნეთ ამიერითგან მარხვანი მოციქულთანი, რამეთუ ნაშობნი ვართ ქადაგებისა მათისანი, და წეს-არს ჩუენდა ნუგეშინის-ცემად მარხვითა, რაჲთა გამოვიზარდნეთ სულნი ჩუენნი ტაბლისაგან ქრისტჱსისა.
+          <hi rend="initial">Ⴀ</hi>ღვიხუნეთ <w lemmaRef="#lex-amieritgan">ამიერითგან</w> <w lemmaRef="#lex-marxva">მარხვანი</w> მოციქულთანი, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-nashob">ნაშობნი</w> ვართ ქადაგებისა მათისანი, და <w lemma="#lex-tses">წეს</w>-არს ჩუენდა <w lemmaRef="#lex-nugeshinis-tsema">ნუგეშინის</w>-ცემად მარხვითა, <w lemma="#lex-rayta">რაჲთა</w> გამოვიზარდნეთ სულნი <w lemmaRef="#lex-chuen">ჩუენნი</w> ტაბლისაგან <persName ref="#pers-iesu-kriste"><persName ref="#pers-iesu-kriste">ქრისტჱსისა</persName></persName>.
         </p>
         
         <p xml:id="p12" n="12">
-          <hi rend="initial">Ⴞ</hi>ოლო ყავნ ჩუენ თანა ამიერითგან უფალმან ჩუენმან მძლემან, რომელი აღმაღლდა დღეს ძლევით და აღმიყვანნა<note n="10">4*</note> ჩუენ მის თანა მაღლად ჴორცითა მით, რომელ შეისხნა ჩუენგან, რაჲთა ღირს ვიყვნეთ აღსრულებად ამის დღესასწაულისა და აღმოვთქუათ მადლი და დიდებაჲ და თაყუანის-ცემაჲ მამისაჲ და ძისაჲ და სულისა წმიდისაჲ აწ და მარადის და უკუნითი უკუნისამდე. ამენ.
+          <hi rend="initial">Ⴞ</hi>ოლო ყავნ ჩუენ <w lemma="#lex-tana">თანა</w> ამიერითგან <w lemmaRef="#lex-upal">უფალმან</w> <w lemmaRef="#lex-chuen">ჩუენმან</w> მძლემან, რომელი აღმაღლდა დღეს ძლევით და აღმიყვანნა<note n="10">4*</note> ჩუენ მის <w lemma="#lex-tana">თანა</w> მაღლად <w lemmaRef="#lex-qorts">ჴორცითა</w> მით, რომელ შეისხნა ჩუენგან, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-ghir">ღირს</w> ვიყვნეთ აღსრულებად ამის <w lemmaRef="#lex-dghesastsauli">დღესასწაულისა</w> და აღმოვთქუათ <w lemma="#lex-madli">მადლი</w> და დიდებაჲ და თაყუანის-<w lemmaRef="#lex-tsema">ცემაჲ</w> მამისაჲ და ძისაჲ და <w lemmaRef="#lex-suli">სულისა</w> წმიდისაჲ <w lemma="#lex-ats">აწ</w> და <w lemma="#lex-maradis">მარადის</w> და უკუნითი უკუნისამდე. <w lemmaRef="#lex-amen-amen">ამენ</w>.
         </p>
         
       </div>
     </body>
   </text>
 </TEI>
-        

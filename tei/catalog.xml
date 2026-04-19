@@ -319,11 +319,36 @@
             <idno type="TM">52</idno>
           </person>
           
+          <person xml:id="aut-eusebius-caesariensis">
+            <persName xml:lang="ka">ევსები კესარიელი</persName>
+            <persName xml:lang="la">Eusebius Caesariensis</persName>
+            <birth when="0263"/>
+            <death when="0339"/>
+            <idno type="VIAF">4929593</idno>
+            <idno type="URI" subtype="CSLA">http://csla.history.ox.ac.uk/results.php?full_text=Eusebius+of+Caesarea</idno>
+            <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=9627A6B8370D418AAD9211ED71594A96</idno>
+           
+            <idno type="TM">300</idno>
+            <idno type="URI" subtype="Syriaca">https://syriaca.org/person/480</idno>
+          </person>
+       
+          <person xml:id="aut-luka"> <!-- []?  ასეა სარჩევში-->
+            <persName xml:lang="ka">ლუკა მახარებელი (?)</persName>
+            <persName xml:lang="la">Luca</persName>
+          </person>
+       
+       
        
           <person xml:id="aut-amonios">
             <persName xml:lang="ka">ამონიოსი</persName>
             <persName xml:lang="la">Amonios</persName>
           </person>
+          
+          <person xml:id="aut-anon">
+            <persName xml:lang="ka">ანონიმი</persName>
+            <persName xml:lang="la">Anonimus</persName>
+          </person>
+          
           
           <!-- Appendix authors -->
           <person xml:id="aut-ioane-zosime">
@@ -533,12 +558,12 @@
                  corresp="#feast-annunciation"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს I</label>
-            <desc xml:lang="ka">თქმული წმ. გრიგოლი ნეოკესარიელ ეპისკოპოსისაი, ხარებისათჳს წმიდისა ღმრთისმშობელისა (პირველი)</desc>
+            <desc xml:lang="ka">თქმული წმ. გრიგოლი ნეოკესარიელ ეპისკოპოსისაჲ, ხარებისათჳს წმიდისა ღმრთისმშობელისა (პირველი)</desc>
             <note type="author" corresp="#aut-gregory-neocaes"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
-              <locus from="1r" to="12v">ff. 1r–6r</locus>
+              <locus from="1r" to="6r">ff. 1r–6r</locus>
             </msDesc>
           
             <note type="CPG">1763</note>
@@ -555,7 +580,7 @@
             <date type="feast" when="--03-25"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
-              <locus from="13r" to="22v">ff. 13r–22v</locus>
+              <locus from="6v" to="15r">ff. 6v-15r</locus>
             </msDesc>
             <note type="CPG">1764</note>
             <note type="file">tei/texts/mrav-kharbeba-2.xml</note>
@@ -633,7 +658,7 @@
                  corresp="#feast-nativity"
                  type="#genre-homily">
             <label xml:lang="ka">ეპიფანე კვ-სი — მარადის ქალწულ.</label>
-            <desc xml:lang="ka">თქუმული წმ. და ნეტარისა მამისა ჩuენისა ეპიფანე კუპრელ მთავარეპისკოპოსისაი, მარადის ქალწულისა მარიამისთჳს</desc>
+            <desc xml:lang="ka">თქუმული წმ. და ნეტარისა მამისა ჩუენისა ეპიფანე კუპრელ მთავარეპისკოპოსისაი, მარადის ქალწულისა მარიამისთჳს</desc>
             <note type="author" corresp="#aut-epiphanius-cypros"/>
             <date type="feast" when="--12-25"/>
             <msDesc>
@@ -655,7 +680,7 @@
                  type="#genre-other">
             <label xml:lang="ka">წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.)</label>
             <desc xml:lang="ka">წმ. იაკობ მოციქულისა და ძმისა უფლისა საკითხავი</desc>
-            <note type="author" corresp="#aut-anon"/>
+            <note type="author" corresp="#aut-eusebius-caesariensis"/>
             <date type="feast" when="--12-26"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
@@ -685,7 +710,7 @@
                  type="#genre-other">
             <label xml:lang="ka">პოვნა წმ. სტეფანესი</label>
             <desc xml:lang="ka">პოვნა წმ. სტეფანესი, რჩეულისა მის მსახურისად და პირველმოწამისად</desc>
-            <note type="author" corresp="#aut-anon"/>
+            <note type="author" corresp="#aut-luka"/>
             <date type="feast" when="--12-27"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
@@ -1321,7 +1346,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="481r" to="492v">ff. 481r–492v</locus>
             </msDesc>
-            <note type="file">tei/texts/mrav-martyrs-chrysostom.xml</note>
+            <note type="file">tei/texts/mrav-martyrs-chrysostom-2.xml</note>
             <note type="status">encoding-in-progress</note>
           </event>
           
@@ -1335,7 +1360,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="481r" to="492v">ff. 481r–492v</locus>
             </msDesc>
-            <note type="file">tei/texts/mrav-martyrs-chrysostom.xml</note>
+            <note type="file">tei/texts/mrav-martyrs-chrysostom-3.xml</note>
             <note type="status">encoding-in-progress</note>
           </event>
           

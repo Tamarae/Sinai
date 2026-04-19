@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="sinai-authority"
+     xml:lang="ka">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="ka">სინური მრავალთავი — საავტორო სია</title>
+        <title xml:lang="en">Sinai Mravaltavi — Authority List</title>
+      </titleStmt>
+      <publicationStmt>
+        <authority>ილიას სახელმწიფო უნივერსიტეტი, ლინგვისტურ კვლევათა ინსტიტუტი</authority>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>პერსონები და ადგილები სინური მრავალთავის (864 წ.) ტექსტებში.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <!--
+    TYPE TAXONOMY
+    ═══════════════════════════════════════════════════════
+    Persons (@type on <person>):
+      divinity      — ღმერთი, ქრისტე, სული წმიდა
+      theotokos     — ღვთისმშობელი მარიამი (special category in Georgian homiletics)
+      archangel     — გაბრიელ, მიქაელ
+      apostle       — 12 მოციქული + პავლე
+      martyr        — მოწამეები
+      prophet       — ძველი აღთქმის წინასწარმეტყველები
+      father        — საეკლესიო მამები
+      biblical      — სხვა ბიბლიური პერსონები
+
+    Places (@type on <place>):
+      city / region / sacred / monastery
+
+    ENCODING IN TEXTS
+    ═══════════════════════════════════════════════════════
+    <persName ref="#pers-stepane">სტეფანე</persName>
+    <placeName ref="#place-ierusalemi">იერუსალემი</placeName>
+
+    VIAF IDs: all marked cert="medium" — verify at https://viaf.org
+  -->
+
+  <text>
+    <body>
+      <div type="authority">
+
+        <listPerson>
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  DIVINITY                                                      -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-iesu-kriste"
+                  type="divinity"
+                  corresp="https://viaf.org/viaf/97044428/">
+            <persName type="main" xml:lang="ka">იესუ ქრისტე</persName>
+            <persName type="main" xml:lang="la">Iesus Christus</persName>
+            <persName type="main" xml:lang="en">Jesus Christ</persName>
+            <persName type="variant" xml:lang="ka">იესუ</persName>
+            <persName type="variant" xml:lang="ka">ქრისტე</persName>
+            <persName type="variant" xml:lang="ka">ქრისტჱ</persName>
+            <persName type="variant" xml:lang="ka">ქრისტჱსი</persName>
+            <persName type="variant" xml:lang="ka">ქრისტჱსა</persName>
+            <persName type="variant" xml:lang="ka">ქრისტესა</persName>
+            <persName type="variant" xml:lang="ka">ქრისტჱსითა</persName>
+            <persName type="variant" xml:lang="ka">ქრისტჱსისა</persName>
+            <persName type="variant" xml:lang="ka">ქრისტჱსიმიერ</persName>
+            <idno type="VIAF" cert="medium">97044428</idno>
+          </person>
+
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  THEOTOKOS                                                     -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-mariami"
+                  type="theotokos"
+                  corresp="https://viaf.org/viaf/34580/">
+            <persName type="main" xml:lang="ka">მარიამი ღვთისმშობელი</persName>
+            <persName type="main" xml:lang="la">Maria Theotokos</persName>
+            <persName type="main" xml:lang="en">Mary, Mother of God</persName>
+            <persName type="variant" xml:lang="ka">მარიამ</persName>
+            <persName type="variant" xml:lang="ka">მარიამი</persName>
+            <persName type="variant" xml:lang="ka">მარიამს</persName>
+            <persName type="variant" xml:lang="ka">მარიამსა</persName>
+            <persName type="variant" xml:lang="ka">მარიამისა</persName>
+            <persName type="variant" xml:lang="ka">მარიამისი</persName>
+            <persName type="variant" xml:lang="ka">მარიამისგან</persName>
+            <persName type="variant" xml:lang="ka">მარიამითა</persName>
+            <idno type="VIAF" cert="medium">34580</idno>
+            <note type="description" xml:lang="en">
+              Virgin Mary, Mother of Jesus. Designated Theotokos (God-bearer) by the
+              Council of Ephesus (431). Central figure in Nativity and Dormition homilies.
+            </note>
+          </person>
+
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  ARCHANGELS                                                    -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-gabriel"
+                  type="archangel"
+                  corresp="https://viaf.org/viaf/84011599/">
+            <persName type="main" xml:lang="ka">გაბრიელ მთავარანგელოზი</persName>
+            <persName type="main" xml:lang="la">Gabriel Archangelus</persName>
+            <persName type="main" xml:lang="en">Gabriel the Archangel</persName>
+            <persName type="variant" xml:lang="ka">გაბრიელ</persName>
+            <persName type="variant" xml:lang="ka">გაბრიელი</persName>
+            <persName type="variant" xml:lang="ka">გაბრიელს</persName>
+            <persName type="variant" xml:lang="ka">გაბრიელსა</persName>
+            <persName type="variant" xml:lang="ka">გაბრიელისა</persName>
+            <persName type="variant" xml:lang="ka">გაბრიელისგან</persName>
+            <idno type="VIAF" cert="medium">84011599</idno>
+            <note type="description" xml:lang="en">
+              Archangel Gabriel. Appears in Annunciation (Khareba) homilies as
+              the messenger who announces the Incarnation to Mary.
+            </note>
+          </person>
+
+          <person xml:id="pers-mikhael"
+                  type="archangel"
+                  corresp="https://viaf.org/viaf/72195287/">
+            <persName type="main" xml:lang="ka">მიქაელ მთავარანგელოზი</persName>
+            <persName type="main" xml:lang="la">Michael Archangelus</persName>
+            <persName type="main" xml:lang="en">Michael the Archangel</persName>
+            <persName type="variant" xml:lang="ka">მიქაელ</persName>
+            <persName type="variant" xml:lang="ka">მიქაელი</persName>
+            <persName type="variant" xml:lang="ka">მიქაელს</persName>
+            <persName type="variant" xml:lang="ka">მიქაელსა</persName>
+            <persName type="variant" xml:lang="ka">მიქაელისა</persName>
+            <idno type="VIAF" cert="medium">72195287</idno>
+          </person>
+
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  APOSTLES                                                      -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-petre"
+                  type="apostle"
+                  corresp="https://viaf.org/viaf/54985430/">
+            <persName type="main" xml:lang="ka">პეტრე მოციქული</persName>
+            <persName type="main" xml:lang="la">Petrus Apostolus</persName>
+            <persName type="main" xml:lang="en">Peter the Apostle</persName>
+            <persName type="variant" xml:lang="ka">პეტრე</persName>
+            <persName type="variant" xml:lang="ka">პეტრეს</persName>
+            <persName type="variant" xml:lang="ka">პეტრესა</persName>
+            <persName type="variant" xml:lang="ka">პეტრემ</persName>
+            <persName type="variant" xml:lang="ka">პეტრეჲ</persName>
+            <idno type="VIAF" cert="medium">54985430</idno>
+            <note type="feast" xml:lang="ka">29 ივნისი — პეტრე-პავლობა</note>
+          </person>
+
+          <person xml:id="pers-pavle"
+                  type="apostle"
+                  corresp="https://viaf.org/viaf/100178828/">
+            <persName type="main" xml:lang="ka">პავლე მოციქული</persName>
+            <persName type="main" xml:lang="la">Paulus Apostolus</persName>
+            <persName type="main" xml:lang="en">Paul the Apostle</persName>
+            <persName type="variant" xml:lang="ka">პავლე</persName>
+            <persName type="variant" xml:lang="ka">პავლეს</persName>
+            <persName type="variant" xml:lang="ka">პავლესა</persName>
+            <persName type="variant" xml:lang="ka">პავლჱ</persName>
+            <persName type="variant" xml:lang="ka">პავლჱს</persName>
+            <persName type="variant" xml:lang="ka">პავლჱსა</persName>
+            <persName type="variant" xml:lang="ka">პავლჱსი</persName>
+            <persName type="variant" xml:lang="ka">პავლჱსგან</persName>
+            <persName type="variant" xml:lang="ka">პავლჱსისა</persName>
+            <idno type="VIAF" cert="medium">100178828</idno>
+            <note type="feast" xml:lang="ka">29 ივნისი — პეტრე-პავლობა</note>
+          </person>
+
+          <person xml:id="pers-iakob"
+                  type="apostle"
+                  corresp="https://viaf.org/viaf/40173885/">
+            <persName type="main" xml:lang="ka">იაკობ მოციქული</persName>
+            <persName type="main" xml:lang="la">Iacobus Apostolus</persName>
+            <persName type="main" xml:lang="en">James the Apostle</persName>
+            <persName type="variant" xml:lang="ka">იაკობ</persName>
+            <persName type="variant" xml:lang="ka">იაკობი</persName>
+            <persName type="variant" xml:lang="ka">იაკობს</persName>
+            <persName type="variant" xml:lang="ka">იაკობსა</persName>
+            <persName type="variant" xml:lang="ka">იაკობისა</persName>
+            <persName type="variant" xml:lang="ka">იაკობისი</persName>
+            <idno type="VIAF" cert="medium">40173885</idno>
+            <note type="description" xml:lang="en">
+              James the Apostle. Could refer to James son of Zebedee or James the
+              brother of the Lord — context determines which in each text.
+            </note>
+          </person>
+
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  MARTYRS                                                       -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-stepane"
+                  type="martyr"
+                  corresp="https://viaf.org/viaf/88342447/">
+            <persName type="main" xml:lang="ka">სტეფანე პირველმოწამე</persName>
+            <persName type="main" xml:lang="la">Stephanus Protomartyr</persName>
+            <persName type="main" xml:lang="en">Stephen the First Martyr</persName>
+            <persName type="variant" xml:lang="ka">სტეფანე</persName>
+            <persName type="variant" xml:lang="ka">სტეფანეს</persName>
+            <persName type="variant" xml:lang="ka">სტეფანესა</persName>
+            <persName type="variant" xml:lang="ka">სტეფანემ</persName>
+            <persName type="variant" xml:lang="ka">სტეფანეჲ</persName>
+            <idno type="VIAF" cert="medium">88342447</idno>
+            <note type="feast" xml:lang="ka">3 აგვისტო — სტეფანეს ეძიება;
+              26 დეკემბერი — სტეფანეს მოწამეობა</note>
+          </person>
+
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  PROPHETS                                                      -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-mose"
+                  type="prophet"
+                  corresp="https://viaf.org/viaf/97926052/">
+            <persName type="main" xml:lang="ka">მოსე წინასწარმეტყველი</persName>
+            <persName type="main" xml:lang="la">Moses Propheta</persName>
+            <persName type="main" xml:lang="en">Moses the Prophet</persName>
+            <persName type="variant" xml:lang="ka">მოსე</persName>
+            <persName type="variant" xml:lang="ka">მოსეს</persName>
+            <persName type="variant" xml:lang="ka">მოსესა</persName>
+            <persName type="variant" xml:lang="ka">მოსემ</persName>
+            <persName type="variant" xml:lang="ka">მოსჱ</persName>
+            <persName type="variant" xml:lang="ka">მოსჱს</persName>
+            <persName type="variant" xml:lang="ka">მოსჱსი</persName>
+            <persName type="variant" xml:lang="ka">მოსჱსა</persName>
+            <idno type="VIAF" cert="medium">97926052</idno>
+          </person>
+
+          <person xml:id="pers-elia"
+                  type="prophet"
+                  corresp="https://viaf.org/viaf/56629871/">
+            <persName type="main" xml:lang="ka">ელია წინასწარმეტყველი</persName>
+            <persName type="main" xml:lang="la">Elias Propheta</persName>
+            <persName type="main" xml:lang="en">Elijah the Prophet</persName>
+            <persName type="variant" xml:lang="ka">ელია</persName>
+            <persName type="variant" xml:lang="ka">ელიას</persName>
+            <persName type="variant" xml:lang="ka">ელიასა</persName>
+            <persName type="variant" xml:lang="ka">ელიამ</persName>
+            <persName type="variant" xml:lang="ka">ელიაჲ</persName>
+            <idno type="VIAF" cert="medium">56629871</idno>
+          </person>
+
+          <person xml:id="pers-ezekiel"
+                  type="prophet"
+                  corresp="https://viaf.org/viaf/61549745/">
+            <persName type="main" xml:lang="ka">ეზეკიელ წინასწარმეტყველი</persName>
+            <persName type="main" xml:lang="la">Ezechiel Propheta</persName>
+            <persName type="main" xml:lang="en">Ezekiel the Prophet</persName>
+            <persName type="variant" xml:lang="ka">ეზეკიელ</persName>
+            <persName type="variant" xml:lang="ka">ეზეკიელი</persName>
+            <persName type="variant" xml:lang="ka">ეზეკიელს</persName>
+            <persName type="variant" xml:lang="ka">ეზეკიელსა</persName>
+            <persName type="variant" xml:lang="ka">ეზეკიელისა</persName>
+            <idno type="VIAF" cert="medium">61549745</idno>
+          </person>
+
+          <person xml:id="pers-ieremia"
+                  type="prophet"
+                  corresp="https://viaf.org/viaf/71437568/">
+            <persName type="main" xml:lang="ka">იერემია წინასწარმეტყველი</persName>
+            <persName type="main" xml:lang="la">Hieremias Propheta</persName>
+            <persName type="main" xml:lang="en">Jeremiah the Prophet</persName>
+            <persName type="variant" xml:lang="ka">იერემია</persName>
+            <persName type="variant" xml:lang="ka">იერემიას</persName>
+            <persName type="variant" xml:lang="ka">იერემიასა</persName>
+            <persName type="variant" xml:lang="ka">იერემიამ</persName>
+            <idno type="VIAF" cert="medium">71437568</idno>
+          </person>
+
+
+          <!-- ══════════════════════════════════════════════════════════════ -->
+          <!--  BIBLICAL PERSONS                                              -->
+          <!-- ══════════════════════════════════════════════════════════════ -->
+
+          <person xml:id="pers-davit"
+                  type="biblical"
+                  corresp="https://viaf.org/viaf/18230846/">
+            <persName type="main" xml:lang="ka">დავით მეფე-წინასწარმეტყველი</persName>
+            <persName type="main" xml:lang="la">David Rex et Propheta</persName>
+            <persName type="main" xml:lang="en">David, King and Prophet</persName>
+            <persName type="variant" xml:lang="ka">დავით</persName>
+            <persName type="variant" xml:lang="ka">დავითი</persName>
+            <persName type="variant" xml:lang="ka">დავითს</persName>
+            <persName type="variant" xml:lang="ka">დავითსა</persName>
+            <persName type="variant" xml:lang="ka">დავითისა</persName>
+            <persName type="variant" xml:lang="ka">დავითისი</persName>
+            <persName type="variant" xml:lang="ka">დავითისგან</persName>
+            <persName type="variant" xml:lang="ka">დავითისო</persName>
+            <idno type="VIAF" cert="medium">18230846</idno>
+            <note type="description" xml:lang="en">
+              David, King of Israel and traditional author of the Psalms.
+              Cited as prophet in patristic homilies as type of Christ.
+            </note>
+          </person>
+          
+          <person xml:id="pers-solomoni"
+            type="biblical"
+            corresp="https://viaf.org/viaf/89599270/">
+            <persName type="main" xml:lang="ka">სოლომონ მეფე</persName>
+            <persName type="main" xml:lang="la">Salomon Rex</persName>
+            <persName type="main" xml:lang="en">Solomon, King of Israel</persName>
+            <persName type="variant" xml:lang="ka">სოლომონ</persName>
+            <persName type="variant" xml:lang="ka">სოლომონი</persName>
+            <persName type="variant" xml:lang="ka">სოლომონს</persName>
+            <persName type="variant" xml:lang="ka">სოლომონსა</persName>
+            <persName type="variant" xml:lang="ka">სოლომონისა</persName>
+            <persName type="variant" xml:lang="ka">სოლომონისი</persName>
+            <persName type="variant" xml:lang="ka">სოლომონისგან</persName>
+            <idno type="VIAF" cert="medium">89599270</idno>
+            <note type="description" xml:lang="en">
+              Solomon, son of David, King of Israel. Traditional author of Proverbs,
+              Ecclesiastes, and Song of Songs. Cited in patristic homilies as a
+              type of wisdom and as builder of the first Temple.
+            </note>
+          </person>
+          
+          <person xml:id="pers-lazare"
+                  type="biblical"
+                  corresp="https://viaf.org/viaf/267746530/">
+            <persName type="main" xml:lang="ka">ლაზარე</persName>
+            <persName type="main" xml:lang="la">Lazarus</persName>
+            <persName type="main" xml:lang="en">Lazarus of Bethany</persName>
+            <persName type="variant" xml:lang="ka">ლაზარე</persName>
+            <persName type="variant" xml:lang="ka">ლაზარეს</persName>
+            <persName type="variant" xml:lang="ka">ლაზარესა</persName>
+            <persName type="variant" xml:lang="ka">ლაზარემ</persName>
+            <persName type="variant" xml:lang="ka">ლაზარეჲ</persName>
+            <idno type="VIAF" cert="medium">267746530</idno>
+            <note type="description" xml:lang="en">
+              Lazarus of Bethany, raised from the dead by Jesus (John 11).
+              Featured in Lazarus Saturday homilies.
+            </note>
+          </person>
+
+          <person xml:id="pers-zakaria"
+                  type="biblical"
+                  corresp="https://viaf.org/viaf/305409508/">
+            <persName type="main" xml:lang="ka">ზაქარია მღვდელი</persName>
+            <persName type="main" xml:lang="la">Zacharias Sacerdos</persName>
+            <persName type="main" xml:lang="en">Zechariah the Priest</persName>
+            <persName type="variant" xml:lang="ka">ზაქარია</persName>
+            <persName type="variant" xml:lang="ka">ზაქარიას</persName>
+            <persName type="variant" xml:lang="ka">ზაქარიასა</persName>
+            <persName type="variant" xml:lang="ka">ზაქარიამ</persName>
+            <persName type="variant" xml:lang="ka">ზაქარიაჲსსა</persName>
+            <idno type="VIAF" cert="medium">305409508</idno>
+            <note type="description" xml:lang="en">
+              Zechariah, father of John the Baptist (Luke 1). Could also refer to
+              Zechariah the prophet (OT) — context determines which.
+            </note>
+          </person>
+
+          <person xml:id="pers-ioseb"
+                  type="biblical"
+                  corresp="https://viaf.org/viaf/8194433/">
+            <persName type="main" xml:lang="ka">იოსებ პატრიარქი</persName>
+            <persName type="main" xml:lang="la">Ioseph Patriarcha</persName>
+            <persName type="main" xml:lang="en">Joseph the Patriarch</persName>
+            <persName type="variant" xml:lang="ka">იოსებ</persName>
+            <persName type="variant" xml:lang="ka">იოსები</persName>
+            <persName type="variant" xml:lang="ka">იოსებს</persName>
+            <persName type="variant" xml:lang="ka">იოსებსა</persName>
+            <persName type="variant" xml:lang="ka">იოსებისა</persName>
+            <idno type="VIAF" cert="medium">8194433</idno>
+            <note type="description" xml:lang="en">
+              Joseph son of Jacob (OT), or Joseph the betrothed of Mary (NT).
+              Context determines which in each homily.
+            </note>
+          </person>
+
+        </listPerson>
+
+
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!--  PLACES  (populate as placeName tags are encoded in texts)     -->
+        <!-- ═══════════════════════════════════════════════════════════════ -->
+
+        <listPlace>
+   
+            
+            <!-- ── SACRED CITIES ─────────────────────────────────────────── -->
+            
+            <place xml:id="place-ierusalemi"
+              type="city"
+              corresp="https://viaf.org/viaf/150948596/">
+              <placeName type="main" xml:lang="ka">იერუსალემი</placeName>
+              <placeName type="main" xml:lang="la">Hierusalem</placeName>
+              <placeName type="main" xml:lang="en">Jerusalem</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემი</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემ</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემს</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემსა</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემდ</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემისა</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემისანო</placeName>
+              <placeName type="variant" xml:lang="ka">იერუსალემელნო</placeName>
+              <idno type="VIAF" cert="medium">150948596</idno>
+              <note type="description" xml:lang="en">
+                Jerusalem. Holy city, site of the Crucifixion, Resurrection, and
+                Pentecost. Central toponym in homilies on the Cross, Encaenia,
+                and martyrdom texts.
+              </note>
+            </place>
+            
+            <place xml:id="place-betlemi"
+              type="city"
+              corresp="https://viaf.org/viaf/158822987/">
+              <placeName type="main" xml:lang="ka">ბეთლემი</placeName>
+              <placeName type="main" xml:lang="la">Bethleem</placeName>
+              <placeName type="main" xml:lang="en">Bethlehem</placeName>
+              <placeName type="variant" xml:lang="ka">ბეთლემი</placeName>
+              <placeName type="variant" xml:lang="ka">ბეთლემ</placeName>
+              <placeName type="variant" xml:lang="ka">ბეთლემს</placeName>
+              <placeName type="variant" xml:lang="ka">ბეთლემსა</placeName>
+              <placeName type="variant" xml:lang="ka">ბეთლემისა</placeName>
+              <idno type="VIAF" cert="medium">158822987</idno>
+              <note type="description" xml:lang="en">
+                Bethlehem, birthplace of Jesus. Featured in Nativity homilies.
+              </note>
+            </place>
+            
+            <place xml:id="place-nazareti"
+              type="city"
+              corresp="https://viaf.org/viaf/234790020/">
+              <placeName type="main" xml:lang="ka">ნაზარეთი</placeName>
+              <placeName type="main" xml:lang="la">Nazareth</placeName>
+              <placeName type="main" xml:lang="en">Nazareth</placeName>
+              <placeName type="variant" xml:lang="ka">ნაზარეთი</placeName>
+              <placeName type="variant" xml:lang="ka">ნაზარეთ</placeName>
+              <placeName type="variant" xml:lang="ka">ნაზარეთა</placeName>
+              <placeName type="variant" xml:lang="ka">ნაზარეთს</placeName>
+              <placeName type="variant" xml:lang="ka">ნაზარეთსა</placeName>
+              <idno type="VIAF" cert="medium">234790020</idno>
+            </place>
+            
+            <place xml:id="place-kesaria"
+              type="city"
+              corresp="https://viaf.org/viaf/315549888/">
+              <placeName type="main" xml:lang="ka">კესარია</placeName>
+              <placeName type="main" xml:lang="la">Caesarea</placeName>
+              <placeName type="main" xml:lang="en">Caesarea</placeName>
+              <placeName type="variant" xml:lang="ka">კესარია</placeName>
+              <placeName type="variant" xml:lang="ka">კესარიას</placeName>
+              <placeName type="variant" xml:lang="ka">კესარიასა</placeName>
+              <placeName type="variant" xml:lang="ka">კესარიისა</placeName>
+              <idno type="VIAF" cert="medium">315549888</idno>
+              <note type="description" xml:lang="en">
+                Caesarea — likely Caesarea Maritima or Caesarea Cappadociae
+                depending on context. Seat of Basil the Great.
+              </note>
+            </place>
+            
+            
+            <!-- ── SACRED SITES ──────────────────────────────────────────── -->
+            
+            <place xml:id="place-golgota"
+              type="sacred"
+              corresp="https://viaf.org/viaf/248272831/">
+              <placeName type="main" xml:lang="ka">გოლგოთა</placeName>
+              <placeName type="main" xml:lang="la">Golgotha</placeName>
+              <placeName type="main" xml:lang="en">Golgotha</placeName>
+              <placeName type="variant" xml:lang="ka">გოლგოთა</placeName>
+              <placeName type="variant" xml:lang="ka">გოლგოთას</placeName>
+              <placeName type="variant" xml:lang="ka">გოლგოთასა</placeName>
+              <placeName type="variant" xml:lang="ka">გოლგოთაჲ</placeName>
+              <idno type="VIAF" cert="medium">248272831</idno>
+              <note type="description" xml:lang="en">
+                Golgotha (Place of the Skull), site of the Crucifixion.
+                Featured in Cross and Passion homilies.
+              </note>
+            </place>
+            
+            <place xml:id="place-sioni"
+              type="sacred"
+              corresp="https://viaf.org/viaf/234145542/">
+              <placeName type="main" xml:lang="ka">სიონი</placeName>
+              <placeName type="main" xml:lang="la">Sion</placeName>
+              <placeName type="main" xml:lang="en">Zion</placeName>
+              <placeName type="variant" xml:lang="ka">სიონი</placeName>
+              <placeName type="variant" xml:lang="ka">სიონ</placeName>
+              <placeName type="variant" xml:lang="ka">სიონს</placeName>
+              <placeName type="variant" xml:lang="ka">სიონსა</placeName>
+              <placeName type="variant" xml:lang="ka">სიონისა</placeName>
+              <placeName type="variant" xml:lang="ka">სიონისაო</placeName>
+              <idno type="VIAF" cert="medium">234145542</idno>
+            </place>
+            
+            <place xml:id="place-sina"
+              type="sacred"
+              corresp="https://viaf.org/viaf/315138395/">
+              <placeName type="main" xml:lang="ka">სინა მთა</placeName>
+              <placeName type="main" xml:lang="la">Mons Sinai</placeName>
+              <placeName type="main" xml:lang="en">Mount Sinai</placeName>
+              <placeName type="variant" xml:lang="ka">სინა</placeName>
+              <placeName type="variant" xml:lang="ka">სინასა</placeName>
+              <placeName type="variant" xml:lang="ka">სინას</placeName>
+              <placeName type="variant" xml:lang="ka">სინაჲ</placeName>
+              <idno type="VIAF" cert="medium">315138395</idno>
+              <note type="description" xml:lang="en">
+                Mount Sinai, where Moses received the Law. Also the location of
+                St. Catherine's Monastery where this manuscript was produced.
+              </note>
+            </place>
+            
+            
+            <!-- ── RIVERS ────────────────────────────────────────────────── -->
+            
+            <place xml:id="place-iordane"
+              type="sacred"
+              corresp="https://viaf.org/viaf/315140027/">
+              <placeName type="main" xml:lang="ka">იორდანე მდინარე</placeName>
+              <placeName type="main" xml:lang="la">Iordanis Fluvius</placeName>
+              <placeName type="main" xml:lang="en">River Jordan</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანე</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანჱ</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანეს</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანესა</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანედ</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანით</placeName>
+              <placeName type="variant" xml:lang="ka">იორდანეჲ</placeName>
+              <idno type="VIAF" cert="medium">315140027</idno>
+              <note type="description" xml:lang="en">
+                River Jordan, site of Jesus's baptism. Featured prominently in
+                Epiphany (Natlisgheba) homilies.
+              </note>
+            </place>
+            
+            
+            <!-- ── MYTHIC / THEOLOGICAL PLACES ──────────────────────────── -->
+            
+            <place xml:id="place-samotke"
+              type="sacred"
+              corresp="https://viaf.org/viaf/315141000/">
+              <placeName type="main" xml:lang="ka">სამოთხე</placeName>
+              <placeName type="main" xml:lang="la">Paradisus</placeName>
+              <placeName type="main" xml:lang="en">Paradise / Garden of Eden</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხე</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხჱ</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხესა</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხით</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხედ</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხემან</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხისა</placeName>
+              <placeName type="variant" xml:lang="ka">სამოთხეჲ</placeName>
+              <note type="description" xml:lang="en">
+                Paradise / Garden of Eden. Theological topos in homilies on
+                salvation, the Fall, and Christ as the new Adam.
+              </note>
+              <note type="encoding" xml:lang="en">
+                No single VIAF entry for Paradise as a place concept —
+                VIAF corresp attribute intentionally omitted.
+              </note>
+            </place>
+            
+        </listPlace>
+
+      </div>
+    </body>
+  </text>
+
+</TEI>

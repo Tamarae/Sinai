@@ -44,12 +44,6 @@ import urllib.parse
 env.filters["urlencode"] = urllib.parse.quote
 
 # ── Georgian letter → ASCII slug ──────────────────────
-# Full traditional alphabet including all 5 archaic letters:
-#   ჱ (Hae,  pos  8) → 'he'
-#   ჲ (Jani, pos 15) → 'ji'
-#   ჳ (Wine, pos 22) → 'we'
-#   ჴ (Xhar, pos 34) → 'kha'
-#   ჵ (Hoe,  pos 38) → 'hoe'
 GEO_SLUG = {
     'ა': 'a',   'ბ': 'b',   'გ': 'g',   'დ': 'd',   'ე': 'e',   'ვ': 'v',
     'ზ': 'z',   'ჱ': 'he',  'თ': 't',   'ი': 'i',   'კ': 'k',   'ლ': 'l',
@@ -178,9 +172,10 @@ def build_lexicon(catalog=None):
         entries_by_letter=data.entries_by_letter,
         alphabet=data.alphabet,
         geo_slug=GEO_SLUG,
+        available_sources=data.available_sources,   # ← NEW
     )
 
-    # Per-letter pages  (e.g. build/lexicon/a.html, b.html …)
+    # Per-letter pages
     for letter in data.alphabet:
         slug = GEO_SLUG[letter]
         render(
@@ -195,6 +190,7 @@ def build_lexicon(catalog=None):
             pos_list=data.pos_list,
             geo_slug=GEO_SLUG,
             attestations=attestations,
+            available_sources=data.available_sources,   # ← NEW
         )
 
 
@@ -209,7 +205,6 @@ def build_research():
     print("\n[research]")
     from src.research_parser import ResearchIndexParser, ArticleParser
 
-    # Index page
     index_parser = ResearchIndexParser(RESEARCH_DIR)
     data = index_parser.parse()
     render(
@@ -220,7 +215,6 @@ def build_research():
         articles=data.articles,
     )
 
-    # Individual article pages
     for meta in data.articles:
         article_parser = ArticleParser(meta.file_path)
         article = article_parser.parse()
@@ -271,7 +265,7 @@ def copy_static():
 
 
 # ─────────────────────────────────────────────────────
-# 8.  SYNC build/ → docs/  (GitHub Pages source)
+# 8.  SYNC build/ → docs/
 # ─────────────────────────────────────────────────────
 def copy_docs():
     import shutil
