@@ -52,7 +52,7 @@
         </head>
         
         <p xml:id="p1" n="1">
-          <pb n="58" ed="edition"/>
+          <pb n="58" ed="#shanidze"/>
           <lb n="2"/><hi rend="initial">Ⴃ</hi>ღეთა მათ პილატჱსთა, <w lemmaRef="#lex-meotkhe">მეოთხისა</w> მის ჴელმწიფებისათა, ანაჲსა და კაიაფაჲსა
           <lb n="3"/><w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუართაჲსა</w>, <w lemmaRef="#lex-tseli">წელსა</w> მეათრუამეტესა მასვე <w lemma="#lex-zham">ჟამსა</w><note n="(1)*"/>, <w lemmaRef="#lex-gankatseba">განკაცებასა</w>
           <lb n="4"/>უფლისა ჩუენისა <persName ref="#pers-iesu-kriste">ჲესუ</persName> ქრისტჱსსა, <w lemma="#lex-mtsrapl">მწრაფლ</w> <w lemmaRef="#lex-gamodzieba">გამოძიებაჲ</w> იყო ფარისეველთაჲ
@@ -67,7 +67,7 @@
         
         <p xml:id="p2" n="2">
           <lb n="12"/><hi rend="initial">Ⴋ</hi>ას <w lemma="#lex-zham">ჟამსა</w> აღ-<w lemmaRef="#lex-vinme">ვინმე</w>-დგა <w lemma="#lex-shoris1">შორის</w> <w lemma="#lex-zrakhva">ზრახვასა</w> მას<note n="3*"/> შჯულის <w lemmaRef="#lex-mastsavlebel">მასწავლელი</w>,
-          <lb n="13"/>რომელსა სახელი ერქუა <persName ref="#pers-stepane">სტეფანე</persName>, <pb n="56v" ed="ms"/> მოუწოდა ერსა მას და ჰრქუა: <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელთა</w>
+          <lb n="13"/>რომელსა სახელი ერქუა <persName ref="#pers-stepane">სტეფანე</persName>, <pb n="56v" ed="#S"/> მოუწოდა ერსა მას და ჰრქუა: <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელთა</w>
           <lb n="14"/>იკითხავთ და არა <w lemma="#lex-guliskhma">გულისხმა</w>-ჰყოფთ. <w lemma="#lex-pirvel">პირველად</w> ესაია <w lemmaRef="#lex-ghaghad-qopa">ღაღად</w>-ყო
           <lb n="15"/>და თქუა რომელმან არვლნა შჳდნი <w lemmaRef="#lex-tsan">ცანი</w>, <w lemma="#lex-vitar">ვითარ</w>-იგი უთხრობდა<note n="4*"/>
           <lb n="16"/>მისსა მის განკაცებასა <w lemmaRef="#lex-saquareli">საყუარელისა</w> მისთჳს, იგი წინაწარმეტყელებდა და
@@ -89,7 +89,7 @@
           <lb n="29"/><w lemma="#lex-krebul">კრებულისა</w> მისგან.
         </p>
         
-        <pb n="59" ed="edition"/>
+        <pb n="59" ed="#shanidze"/>
         
         <p xml:id="p4" n="4">
           <lb n="1"/><hi rend="initial">Ⴋ</hi>ას <w lemma="#lex-zham">ჟამსა</w> აღდგა კაიაფა <w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუარი</w> და უკმოიქცა <persName ref="#pers-stepane">სტეფანე</persName>
@@ -99,7 +99,7 @@
         </p>
         
         <p xml:id="p5" n="5">
-          <lb n="5"/><hi rend="initial">Ⴃ</hi>ა აღადგინეს <w lemmaRef="#lex-mtsignobar">მწიგნობართა</w><note n="1*"/> <pb n="57r" ed="ms"/> და <w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუართა</w> <persName ref="#pers-stepane">სტეფანე</persName>
+          <lb n="5"/><hi rend="initial">Ⴃ</hi>ა აღადგინეს <w lemmaRef="#lex-mtsignobar">მწიგნობართა</w><note n="1*"/> <pb n="57r" ed="#S"/> და <w lemmaRef="#lex-mghdelt-modzghuar">მღდელთ</w>-<w lemma="#lex-modzghuar">მოძღუართა</w> <persName ref="#pers-stepane">სტეფანე</persName>
           <lb n="6"/>და წარადგინეს <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> პილატე ბჭისა. <w lemma="#lex-vitartsa">ვითარცა</w> იხილა პილატე ბჭემან, ჰრქუა
           <lb n="7"/>მათ: რაჲ უქმნიეს <w lemma="#lex-katsi">კაცსა</w> ამას, მღდელსა <w lemmaRef="#lex-shuenier1">შუენიერსა</w>, <w lemma="#lex-rametu">რამეთუ</w> წარმოადგინეთ
           <lb n="8"/>ჩემ <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> <w lemma="#lex-vitartsa">ვითარცა</w> ძჳრის-მოქმედი? მიუგო პოლატე <persName ref="#pers-stepane">სტეფანეს</persName> და ჰრქუა:
@@ -129,7 +129,7 @@
           <lb n="23"/><w lemma="#lex-vitar">ვითარ</w>-იგი მიუგებდა <persName ref="#pers-stepane">სტეფანე</persName> და ეტყოდა, მას <w lemma="#lex-zham">ჟამსა</w> მოვიდა სავლე <w lemmaRef="#lex-parisevel">ფარისეველი</w>
           <lb n="24"/>[ტარსონ]<note n="4*"/> კილიკიაჲსაჲთ, რომელსა <w lemmaRef="#lex-aqunda-aqunden-aqundes-aqus">აქუნდა</w> <w lemma="#lex-khelmtsipeba">ჴელმწიფებაჲ</w> შეკრვად და შესხმად
           <lb n="25"/>საპყრობილესა <w lemma="#lex-qovel">ყოველთათჳს</w>, რომელნი სახელ-სდებენ <persName ref="#pers-iesu-kriste">ქრისტესა</persName>, და
-          <lb n="26"/>დაჯდა <w lemmaRef="#lex-atasistavi">ათასისთავისა</w> მის <w lemma="#lex-tana">თანა</w> და ჰკითხვიდა <pb n="57v" ed="ms"/> <w lemmaRef="#lex-natesav">ნათესავსა</w> სტეფანჱსსა და
+          <lb n="26"/>დაჯდა <w lemmaRef="#lex-atasistavi">ათასისთავისა</w> მის <w lemma="#lex-tana">თანა</w> და ჰკითხვიდა <pb n="57v" ed="#S"/> <w lemmaRef="#lex-natesav">ნათესავსა</w> სტეფანჱსსა და
           <lb n="27"/><w lemmaRef="#lex-samkvidrebeli">სამკჳდრებელსა</w>. <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-guliskhma">გულისხმა</w>-ყო, <w lemma="#lex-vitarmed">ვითარმედ</w> <persName ref="#pers-iesu-kriste">ქრისტესა</persName> სახელ-სდებს,
           <lb n="28"/>და <w lemma="#lex-vitartsa">ვითარცა</w> ესმა ესე, <w lemma="#lex-mtsrapl">მწრაფლ</w><note n="5*"/> უბრძანა გუემაჲ მისი და <w lemmaRef="#lex-shekrva">შეკრვაჲ</w> და ჰრქუა
           <lb n="29"/>მას: თქუ, <persName ref="#pers-stepane">სტეფანე</persName>, <w lemma="#lex-vitar">ვითარ</w> <w lemmaRef="#lex-dzhuar-tsuma">ჯუარ</w>-ცმულსა<note n="6*"/> აღიარებ <w lemma="#lex-ghmert">ღმრთად</w>, რომელ
@@ -142,14 +142,14 @@
           <lb n="36"/>და გულითა გარდაგულარძნილო! რომელმან ხურომან შეუძლოს შენდა <w lemmaRef="#lex-khati">ხატად</w>
           <lb n="37"/>აღმართებად, <w lemma="#lex-vitar">ვითარ</w> სახედ <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w> ჩუენისაჲ, რომელი გამოუჩინებელ არს და
           <lb n="38"/><w lemma="#lex-brtsqinvale">ბრწყინვალე</w> მზითა ბრწყინვალითა და <w lemmaRef="#lex-mtovare">მთოვარჱ</w> და ვარსკულავები<note n="7*"/> და <w lemmaRef="#lex-queqana">ქუეყანაჲ</w>
-          <pb n="60" ed="edition"/>
+          <pb n="60" ed="#shanidze"/>
           <lb n="1"/><w lemma="#lex-qovel">ყოველი</w> <w lemma="#lex-qovel">ყოვლითა</w> <w lemmaRef="#lex-nayop">ნაყოფითა</w> და <w lemma="#lex-qovel">ყოვლითა</w> შუენიერებითა შეამკო და
           <lb n="2"/><w lemmaRef="#lex-aeri-haeri">აერნი</w> <w lemma="#lex-qovel">ყოველნი</w> <w lemma="#lex-qovel">ყოველთა</w> <w lemmaRef="#lex-mprinvel">მფრინველთა</w> <w lemma="#lex-mier">მიერ</w> შეამკვნა და ზღუაჲ <w lemmaRef="#lex-perad-perad">ფერად</w>-ფერადითა
           <lb n="3"/><w lemmaRef="#lex-quewtsarmaval">ქუეწარმავალითა</w> აღავსო, რომელმან ესე <w lemma="#lex-qovel">ყოველი</w> <w lemma="#lex-qmna">ქმნა</w>, რომელ არს <w lemma="#lex-dze">ძჱ</w>
           <lb n="4"/><w lemma="#lex-ghmert">ღმრთისაჲ</w>, <persName ref="#pers-iesu-kriste">ქრისტჱ</persName>, <w lemma="#lex-ghmert">ღმრთისაგან</w><note n="1*"/> <w lemmaRef="#lex-shobili">შობილი</w>, <w lemma="#lex-dze">ძჱ</w> <w lemma="#lex-mama">მამისაგან</w>, <w lemma="#lex-dzal">ძალნი</w> <w lemma="#lex-dzal">ძალთაგან</w>,
           <lb n="5"/>რაჲსათჳს ჯუარს-ეცუა? <w lemmaRef="#lex-o">ჵ</w> უგუნურნო! ანუ <w lemma="#lex-vitar">ვითარ</w> იტყჳთ, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-vitar">ვითარ</w>
           <lb n="6"/>დედაკაცისაგან იშვა იგი? — რაჲთამცა<note n="2*"/> <w lemmaRef="#lex-tsdoma">ცთომაჲ</w> იგი, რომელ იყო <w lemma="#lex-samotkhe">სამოთხესა</w>
-          <lb n="7"/>მას <w lemmaRef="#lex-dedakatsi">დედაკაცისა</w> მის<note n="3*"/> განჴრწნილებისაგან, <pb n="58r" ed="ms"/> განწმიდა. ანუ <w lemma="#lex-vitar">ვითარ</w>
+          <lb n="7"/>მას <w lemmaRef="#lex-dedakatsi">დედაკაცისა</w> მის<note n="3*"/> განჴრწნილებისაგან, <pb n="58r" ed="#S"/> განწმიდა. ანუ <w lemma="#lex-vitar">ვითარ</w>
           <lb n="8"/>იტყჳთ, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-vitar">ვითარ</w> ჩჩჳლ იწოდა? — <w lemma="#lex-rayta">რაჲთა</w> ჩჩჳლნი იგი დაიცვნეს; <w lemmaRef="#lex-samarit">სამარიტად</w>
           <lb n="9"/>იწოდა, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-qovel">ყოველნი</w> <w lemmaRef="#lex-natesav">ნათესავი</w> მისა მოაქცინეს; ცთომილად იწოდა,
           <lb n="10"/><w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-shetstomili">შეცთომილნი</w> აცხოვნნე; აღდგა, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-qovel">ყოველნივე</w> აღგუადგინნეს. <w lemma="#lex-ats">აწ</w>
@@ -179,7 +179,7 @@
         <p xml:id="p11" n="11">
           <lb n="26"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitar">ვითარ</w> ილოცვიდა <w lemma="#lex-oden">ოდენ</w> <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName>, და <w lemma="#lex-meqseulad">მეყსეულად</w> <w lemmaRef="#lex-dzvra">ძრვაჲ</w>
           <lb n="27"/>იყო დიდ და განეხუნეს <w lemmaRef="#lex-samqaro">სამყარონი</w> ცისანი, და იხილა ცათა <w lemma="#lex-shina">შინა</w> <w lemma="#lex-mama">მამაჲ</w>,
-          <lb n="28"/><pb n="58v" ed="ms"/> მჯდომარჱ <w lemma="#lex-zeda">ზედა</w> <w lemmaRef="#lex-saqdar">საყდართა</w> <w lemma="#lex-mbrtsqinvale">მბრწყინვალეთა</w>, და <w lemma="#lex-dze">ძჱ</w> ჲესუ <persName ref="#pers-iesu-kriste">ქრისტე</persName>
+          <lb n="28"/><pb n="58v" ed="#S"/> მჯდომარჱ <w lemma="#lex-zeda">ზედა</w> <w lemmaRef="#lex-saqdar">საყდართა</w> <w lemma="#lex-mbrtsqinvale">მბრწყინვალეთა</w>, და <w lemma="#lex-dze">ძჱ</w> ჲესუ <persName ref="#pers-iesu-kriste">ქრისტე</persName>
           <lb n="29"/><w lemma="#lex-marjuenit">მარჯუენით</w> <w lemma="#lex-mama">მამისა</w>, და <w lemmaRef="#lex-tred">ტრედი</w> <w lemma="#lex-erti">ერთი</w> <w lemmaRef="#lex-spetak">სპეტაკი</w> გარდამოფრინვიდა და მოაქუანდა<note n="6*"/>
           <lb n="30"/><w lemmaRef="#lex-gvirgvin">გჳრგჳნი</w> <w lemma="#lex-mbrtsqinvale">მბრწყინვალჱ</w> <w lemma="#lex-vitartsa">ვითარცა</w> მზისთუალი.
         </p>
@@ -193,7 +193,7 @@
           <lb n="36"/><w lemma="#lex-suli">სული</w> შენ <w lemma="#lex-zeda">ზედა</w>; <w lemma="#lex-khar1">უხარის</w> <w lemma="#lex-angelozi">ანგელოზთა</w> და <w lemma="#lex-katsi">კაცთა</w> მართალთასიმჴნჱ ეგე შენი. <w lemma="#lex-he">ჰე</w>,
           <lb n="37"/>სტეფანე, რჩეულო <w lemmaRef="#lex-chemi">ჩემო</w>, იყავნ <w lemma="#lex-neba">ნებაჲ</w> შენი და განკურნენ ეგენი, <w lemma="#lex-rayta">რაჲთა</w> ცნან
           <lb n="38"/><w lemma="#lex-dzal">ძალი</w> ჩემი და <w lemmaRef="#lex-motsqaleba">მოწყალებაჲ</w>. <w lemma="#lex-mashin">მაშინ</w> მიხედა <persName ref="#pers-stepane">სტეფანე</persName> ერსა მას და იხილნა გუემულნი
-          <pb n="61" ed="edition"/>
+          <pb n="61" ed="#shanidze"/>
           <lb n="1"/>იგი ქვისა მისგან, ჯუარი დასწერა ერსა მას და ჰრქუა: მიგეტევენ
           <lb n="2"/>თქუენ უგუნურებაჲ თქუენი, და <w lemmaRef="#lex-sakheli-2">სახელითა</w> <w lemma="#lex-mama">მამისაჲთა</w> და <w lemma="#lex-dze">ძისაჲთა</w> და <w lemma="#lex-wmida">წმიდისა</w>
           <lb n="3"/><w lemma="#lex-suli">სულისაჲთა</w> განიკურნენით.
@@ -208,7 +208,7 @@
         
         <p xml:id="p14" n="14">
           <lb n="8"/><hi rend="initial">Ⴋ</hi>ასინ დაიძინა სტეფანე ძილითა სულნელითა, ხოლო <w lemmaRef="#lex-eri">ერი</w> იგი განიკურნა
-          <lb n="9"/><pb n="59r" ed="ms"/> გუემისა მისგან და <w lemma="#lex-tsotshal">ცოცხალ</w> იქმნეს, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-pirvel">პირველ</w> იყვნეს.
+          <lb n="9"/><pb n="59r" ed="#S"/> გუემისა მისგან და <w lemma="#lex-tsotshal">ცოცხალ</w> იქმნეს, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-pirvel">პირველ</w> იყვნეს.
         </p>
         
         <p xml:id="p15" n="15">
@@ -236,7 +236,7 @@
           <lb n="25"/><hi rend="initial">Ⴄ</hi>სე თქუეს და <w lemmaRef="#lex-taqunistsema">თაყუანის</w>-სცეს <w lemma="#lex-ghmert">ღმერთსა</w> და წარვიდეს სახიდ <w lemmaRef="#lex-tvisa">თჳსა</w><note n="3*"/> და
           <lb n="26"/><w lemma="#lex-priad">ფრიად</w> წუხდეს ორნივე. და მასვე ღამესა გამოეცხადა <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName> და
           <lb n="27"/>ჰრქუა პილატეს: ნუ <w lemma="#lex-mtsukhare">მწუხარე</w> ხართ ჩემთჳს, <w lemma="#lex-rametu">რამეთუ</w> იყოს რომელთამე <w lemma="#lex-zham">ჟამთა</w>
-          <lb n="28"/><w lemmaRef="#lex-gamotskhadeba">გამოცხადებაჲ</w> ესე ჩემი, <w lemma="#lex-vidremde">ვიდრემდე</w> არა გამოჩნდენ <pb n="59v" ed="ms"/> ჩემ თანანი <w lemma="#lex-motsame">მოწამენი</w>;
+          <lb n="28"/><w lemmaRef="#lex-gamotskhadeba">გამოცხადებაჲ</w> ესე ჩემი, <w lemma="#lex-vidremde">ვიდრემდე</w> არა გამოჩნდენ <pb n="59v" ed="#S"/> ჩემ თანანი <w lemma="#lex-motsame">მოწამენი</w>;
           <lb n="29"/>ხოლო შენ ნუ <w lemma="#lex-mtsukhare">მწუხარე</w> <w lemma="#lex-khar1">ხარ</w>, არამედ <w lemma="#lex-nateli">ნათელი</w> მოიღეთ და ჰყოფდით <w lemmaRef="#lex-saqsenebel">საჴსენებელსა</w>
           <lb n="30"/><w lemmaRef="#lex-chemi">ჩემსა</w> <w lemma="#lex-qovel">ყოველსა</w> <w lemma="#lex-zham">ჟამსა</w> და ნუ დააკლებთ და ამცენ შვილთა <w lemmaRef="#lex-sheni-sheni">შენთა</w> და
           <lb n="31"/><w lemma="#lex-qovel">ყოველთა</w>, რომელთა იციან სახელი <persName ref="#pers-iesu-kriste">ქრისტჱსი</persName>.
@@ -255,7 +255,7 @@
         
         <p xml:id="p20" n="20">
           <lb n="37"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-esret">ესრჱთ</w> ვიხილე <w lemma="#lex-wmida">წმიდაჲ</w> <persName ref="#pers-stepane">სტეფანე</persName> მე, პილატე, <w lemma="#lex-zeda">ზედა</w> <w lemmaRef="#lex-atormeti">ათორმეტთა</w>
-          <pb n="62" ed="edition"/>
+          <pb n="62" ed="#shanidze"/>
           <lb n="1"/>ვარსკულავთა მჯდომარჱ, ხოლო <w lemmaRef="#lex-pir">პირი</w> მისი <w lemma="#lex-mbrtsqinvale">მბრწყინვალე</w>, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-angelozi">ანგელოზისაჲ</w>;
           <lb n="2"/>და <w lemmaRef="#lex-tav">თავსა</w> მისსა <w lemma="#lex-zeda">ზედა</w> იყო ჯუარი და <w lemma="#lex-priad">ფრიად</w> <w lemma="#lex-brtsqinvale">ბრწყინვალებითა</w> <w lemmaRef="#lex-misi">მისითა</w>
           <lb n="3"/>ვერ განვიცდიდ <w lemmaRef="#lex-khati">ხატსა</w> მას მისსა. და ამის <w lemma="#lex-qovel">ყოვლისა</w> შემდგომად ვიხილენ <w lemmaRef="#lex-etl">ეტლნი</w>

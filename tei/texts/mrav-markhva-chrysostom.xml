@@ -83,7 +83,7 @@
         <p xml:id="p3" n="3">
           <lb n="17"/> <hi rend="initial">Ⴞ</hi>ოლო მარხვაჲ და სიწმიდჱ ნუვის უჩნ <w lemmaRef="#lex-sashinel">საშინელ</w> და საზარელ. არამედ
           <lb n="18"/> არა თქუენდა საშინელ არს, არამედ <w lemmaRef="#lex-buneba">ბუნებასა</w> დევთასა. და თუ ესმაკეულ
-          <lb n="19"/> <w lemmaRef="#lex-vinme">ვინმე</w> <pb n="94r" ed="#ms-source"/> იყოს, უჩუენე მას <w lemmaRef="#lex-sakhe">სახჱ</w> მარხვისაჲ. იპოოს <w lemma="#lex-vitartsa">ვითარცა</w> ლოდი <w lemmaRef="#lex-sheudzravi-sheudzrveli">შეუძრავი</w>
+          <lb n="19"/> <w lemmaRef="#lex-vinme">ვინმე</w> <pb n="94r" ed="#S"/> იყოს, უჩუენე მას <w lemmaRef="#lex-sakhe">სახჱ</w> მარხვისაჲ. იპოოს <w lemma="#lex-vitartsa">ვითარცა</w> ლოდი <w lemmaRef="#lex-sheudzravi-sheudzrveli">შეუძრავი</w>
           <lb n="20"/> და შეურვებულ შიშითა მით და <w lemmaRef="#lex-danabul">დანაბულ</w> და <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-sakrvel">საკრველითა</w>
           <lb n="21"/> რკინისაჲთა შეკრულ და <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲს</w>, <w lemma="#lex-razhams">რაჟამს</w> იხილოს <w lemma="#lex-tana">თანა</w>-<w lemmaRef="#lex-moghuatse">მოღუაწჱ</w> იგი მარხვისაჲ
           <lb n="22"/> — ლოცვაჲ. რომლისათჳსცა <persName ref="#pers-iesu-kriste">ქრისტჱ</persName> იტყჳს, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
@@ -97,7 +97,7 @@
           <lb n="26"/> და მიახლებად მისა და არა მორიდებად მისგან. ხოლო <w lemmaRef="#lex-morideba">მორიდებაჲ</w> <w lemma="#lex-tses">წეს</w> არს
           <lb n="27"/> ნაყროვანებისაგან და მთრვალობისაგან და არა მარხვისაგან. <w lemma="#lex-rametu">რამეთუ</w> იგ
           <lb n="28"/> არს, რომელმან შეგუკრნა ჩუენ <w lemmaRef="#lex-sakrvel">საკრველითა</w> ნაყროვანებისაჲთა და მიგუცნა
-          <pb n="94v" ed="#ms-source"/>
+          <pb n="94v" ed="#S"/>
           <lb n="1"/> ჩუენ ჴელთა ბუნებასა <w lemmaRef="#lex-salmobier">სალმობიერსა</w>, გუეუფლა და დაგჳმორჩილნა ჩუენ <w lemma="#lex-vitartsa">ვითარცა</w>
           <lb n="2"/> ტყუენი <w lemmaRef="#lex-damonebuli">დამონებულნი</w>.
         </p>
@@ -127,7 +127,7 @@
           <lb n="19"/> დიდებისასა <w lemmaRef="#lex-akhilva">ახილვასა</w> <w lemma="#lex-gvirgvinosan">გჳრგჳნოსან</w> იქმნენ, <w lemma="#lex-vitartsa">ვითარცა</w>-იგი მოსე და <persName ref="#pers-elia">ელია</persName>,
           <lb n="20"/> თავნი იგი და მოწაფენი ძუელისა მის <w lemmaRef="#lex-shjulisagani-rchulisagani">შჯულისაგანნი</w>, რომელნი რომლითა
           <lb n="21"/> სახითა იქმნნე წარმოჩინებულ და ძლიერ, რომელთა აქუნდა <w lemmaRef="#lex-kadniereba">კადნიერებაჲ</w>
-          <lb n="22"/> <w lemmaRef="#lex-siquaruli">სიყუარულისა</w> <pb n="95r" ed="#ms-source"/> მის <w lemma="#lex-mimart">მიმართ</w> ღმრტისა, <w lemma="#lex-rametu">რამეთუ</w>, <w lemma="#lex-razhams">რაჟამს</w> უნებნ მიახლებად
+          <lb n="22"/> <w lemmaRef="#lex-siquaruli">სიყუარულისა</w> <pb n="95r" ed="#S"/> მის <w lemma="#lex-mimart">მიმართ</w> ღმრტისა, <w lemma="#lex-rametu">რამეთუ</w>, <w lemma="#lex-razhams">რაჟამს</w> უნებნ მიახლებად
           <lb n="23"/> მისა და სიტყუად მისა, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-katsi">კაცმან</w> მიიახლნის და შეივედრნის
           <lb n="24"/> იგინი.
         </p>
@@ -156,10 +156,10 @@
 
         <!-- ¶ 9 -->
         <p xml:id="p9" n="9">
-          <lb n="38"/> <hi rend="initial">Ⴓ</hi><w lemmaRef="#lex-ukuetu">კუეთუ</w> ამის ჴმისა <pb n="95v" ed="#ms-source"/> მორჩილ იყო ადამი, არღარამცა ესმა <w lemmaRef="#lex-qma">ჴმაჲ</w>
+          <lb n="38"/> <hi rend="initial">Ⴓ</hi><w lemmaRef="#lex-ukuetu">კუეთუ</w> ამის ჴმისა <pb n="95v" ed="#S"/> მორჩილ იყო ადამი, არღარამცა ესმა <w lemmaRef="#lex-qma">ჴმაჲ</w>
           <lb n="39"/> იგი <w lemma="#lex-meored">მეორედ</w>, რომელი ისმა მისა <w lemma="#lex-mimart">მიმართ</w>, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
           <quote source="#Gen3-19"><w lemmaRef="#lex-mitsa">მიწაჲ</w> იყავ და მიწადვე
-          <pb n="102" ed="#ms-source"/>
+          <pb n="102" ed="#S"/>
           <lb n="1"/> მიიქცე</quote>, ხოლო, ვინაჲთგან-იგი არა ისმინა, ამისთჳს შრომაჲ, ჭირი, მწუხარებაჲ,
           <lb n="2"/> სიკუდილი და ცხოვრებაჲ უმძიმჱს <w lemmaRef="#lex-sikudil">სიკუდილისა</w> განეწესა მის <w lemma="#lex-zeda">ზედა</w>,
           <lb n="3"/> ამისთჳსცა ეკალი და კუროჲსთავი; ამისთჳს სალმობანი სალმობაჲ <w lemmaRef="#lex-shoba">შობასა</w> და
@@ -186,7 +186,7 @@
         <!-- ¶ 12 -->
         <p xml:id="p12" n="12">
           <lb n="14"/> <hi rend="initial">Ⴃ</hi>ა ესე არა თუ ორითა და სამითა, გინა ოცითა კაცითა, არამედ <w lemmaRef="#lex-didi">დიდი</w>
-          <lb n="15"/> იგი სიმრავლჱ აღმურვილი <w lemmaRef="#lex-didi">დიდისა</w> მის და <pb n="96r" ed="#ms-source"/> საკჳრველისა <w lemmaRef="#lex-qalaqi">ქალაქისა</w>
+          <lb n="15"/> იგი სიმრავლჱ აღმურვილი <w lemmaRef="#lex-didi">დიდისა</w> მის და <pb n="96r" ed="#S"/> საკჳრველისა <w lemmaRef="#lex-qalaqi">ქალაქისა</w>
           <lb n="16"/> ნინველთაჲსა, რომელნი <w lemma="#lex-mukhl">მუჴლ</w>-დადგმით <w lemma="#lex-davrdomi">დავრდომილ</w> იყვნეს და <w lemmaRef="#lex-tav">თავ</w>-მოდრეკილ
           <lb n="17"/> <w lemma="#lex-retsa">რეცა</w> მღჳმესა <w lemmaRef="#lex-shtavrdomili">შთავრდომილნი</w> ისხნეს და მოელოდეს <w lemma="#lex-zegardamo">ზეგარდამო</w> <w lemmaRef="#lex-guema">გუემასა</w>
           <lb n="18"/> მას რისხვისასა, <w lemma="#lex-mashin">მაშინ</w> ადრე-<w lemmaRef="#lex-adre">ადრე</w> შეუდგა <w lemma="#lex-mtsrapl">მწრაფლ</w> და მიიწია <w lemmaRef="#lex-prte-male">ფრთე</w>-ალედ
@@ -216,7 +216,7 @@
           <lb n="28"/> <w lemmaRef="#lex-same">სამისა</w> დღისა ნინევჱ დაემჴუას.</quote> <w lemma="#lex-ats">აწ</w> რაჲსა-მე <w lemmaRef="#lex-tsinaistsar-tsinatsar">წინაჲსწარ</w> უთხრობს, რომელსა
           <lb n="29"/> <w lemma="#lex-zeda">ზედა</w> ჰნებავს რისხვაჲ? — <w lemmaRef="#lex-tsinaistsar-tsinatsar">წინაჲსწარ</w> უთხრობს, <w lemma="#lex-rayta">რაჲთა</w> არა <w lemmaRef="#lex-qels-qel">ჴელს</w>-<w lemma="#lex-khel">ჴელ</w> გუემნეს
           <lb n="30"/> ამისთჳს გეჰენიაჲთა მით; უთქუმიდა, <w lemma="#lex-rayta">რაჲთა</w> არა <w lemmaRef="#lex-gehenia-gehenia">გეჰენიასა</w> მას
-          <lb n="31"/> დაითქნენ; <w lemmaRef="#lex-zari">ზარსა</w> განგუჴდის ჩუენ <pb n="96v" ed="#ms-source"/> სიტყჳთა, <w lemma="#lex-rayta">რაჲთა</w> არა <w lemmaRef="#lex-saqme">საქმითა</w> გუსაჯნეს.
+          <lb n="31"/> დაითქნენ; <w lemmaRef="#lex-zari">ზარსა</w> განგუჴდის ჩუენ <pb n="96v" ed="#S"/> სიტყჳთა, <w lemma="#lex-rayta">რაჲთა</w> არა <w lemmaRef="#lex-saqme">საქმითა</w> გუსაჯნეს.
           <lb n="32"/> ანუ რაჲსა ჟამი იგი ბრძანებისაჲ მის <w lemmaRef="#lex-itsrod">იწროდ</w> და მოკლედ განაჩინა
           <lb n="33"/> — <w lemma="#lex-rayta">რაჲთა</w> უსმთაჲ მათ ნათესვთაჲ ისწაოს <w lemmaRef="#lex-saqme">საქმჱ</w>, რომელთა-იგი ორსა მას დღესა
           <lb n="34"/> შეუძლეს ეგოდენთაჲ მათ შეცოდებათა აჴოცაჲ და <w lemmaRef="#lex-tsartsmeda">წარწყმედაჲ</w> და ღმრთისა
@@ -226,7 +226,7 @@
         <!-- ¶ 16 -->
         <p xml:id="p16" n="16">
           <lb n="36"/> <hi rend="initial">Ⴀ</hi>წ ღმრთისა <w lemmaRef="#lex-katstmoquare">კაცთ</w>-მოყუარებისა მისთჳს დაგიკჳრდინ, <w lemma="#lex-vitar">ვითარ</w> მესამესა
-          <pb n="103" ed="#ms-source"/>
+          <pb n="103" ed="#S"/>
           <lb n="1"/> დღესა შემძლებელ იქმნეს მოუგონებელთა მათ <w lemmaRef="#lex-qveli">ქველი</w> საქმეტა მოღებად, და
           <lb n="2"/> შენ ნუ დაჰბრკოლდები და იჯმნი, და თუ <w lemmaRef="#lex-bevr">ბევრ</w> <w lemma="#lex-tsil">წილ</w> შეცოდებულ იყო, <w lemma="#lex-rametu">რამეთუ</w>,
           <lb n="3"/> რომელ-იგი <w lemma="#lex-ususur">უსუსურ</w> და <w lemma="#lex-dakhsnil">დაჴსნილ</w> არნ გონებითა და <w lemma="#lex-ghatu">ღათუ</w> <w lemmaRef="#lex-mravali">მრავალი</w>
@@ -245,7 +245,7 @@
         <!-- ¶ 18 -->
         <p xml:id="p18" n="18">
           <lb n="10"/> <hi rend="initial">Ⴀ</hi><w lemma="#lex-ra">რა</w> პეტრე ფიცით <w lemmaRef="#lex-sam-qored">სამ</w> <w lemma="#lex-gzis">გზის</w> უვარ-ყოა? არა ერთისა <w lemmaRef="#lex-qali">ქალისა</w> მჴევლისა
-          <lb n="11"/> სიტყჳსა შეშინდა <pb n="97r" ed="#ms-source"/> და სებრკოლდა? და <w lemma="#lex-merme">მერმე</w> რაჲ ნუთუ მრავალი <w lemmaRef="#lex-tseli">წელი</w>
+          <lb n="11"/> სიტყჳსა შეშინდა <pb n="97r" ed="#S"/> და სებრკოლდა? და <w lemma="#lex-merme">მერმე</w> რაჲ ნუთუ მრავალი <w lemmaRef="#lex-tseli">წელი</w>
           <lb n="12"/> დაშურაა სინანულსა? — არასადა, არამედ <w lemmaRef="#lex-munquesve-muntquesve">მუნთქუესვე</w> და მასვე ღამესა დაეცა
           <lb n="13"/> და აღემართა, იწყლა და დასნეულდა და <w lemma="#lex-merme">მერმე</w> განიკურნა და განცოცხლდა.
           <lb n="14"/> და თუ სთქუა, <w lemma="#lex-vitar">ვითარ</w> ანუ <w lemma="#lex-vitar">ვითარ</w> სახედ? — იტყჳს <quote source="#Matt26-75">ტიროდა <w lemmaRef="#lex-mtsared">მწარედ</w>.</quote>
@@ -262,7 +262,7 @@
           <lb n="22"/> ჴელმწიფედ ეკლესიათა <w lemma="#lex-zeda">ზედა</w> და <w lemmaRef="#lex-qovel">ყოველთა</w> ცისკიდეთა <w lemma="#lex-zeda">ზედა</w> დაადგინა,
           <lb n="23"/> <w lemma="#lex-tavad">თავად</w> <w lemmaRef="#lex-qovel">ყოველთა</w> <w lemma="#lex-zeda">ზედა</w> გჳჩუენა ჩუენ იგი, უმეტჱს <w lemmaRef="#lex-qovel">ყოველთა</w> მოციქულთასა ყო
           <lb n="24"/> იგი. <w lemma="#lex-rametu">რამეთუ</w> სიყუარული იგი მისი <w lemmaRef="#lex-akhilva">ახილვა</w> იქმნების მისა უფლისა <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-misi">მისისა</w>,
-          <lb n="25"/> <w lemma="#lex-vitartsa">ვითარცა</w> იტყჳს: <quote source="#John21-15"><persName ref="#pers-petre">პეტრე</persName>, გიყუარ-მეა <pb n="97v" ed="#ms-source"/> შენ <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲს</w> ამათსა</quote> ანუ
+          <lb n="25"/> <w lemma="#lex-vitartsa">ვითარცა</w> იტყჳს: <quote source="#John21-15"><persName ref="#pers-petre">პეტრე</persName>, გიყუარ-მეა <pb n="97v" ed="#S"/> შენ <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲს</w> ამათსა</quote> ანუ
           <lb n="26"/> მსგავს ამათსა? რაჲ-მე უფროჲს არს წადიერებისა და <w lemmaRef="#lex-guls-deba">გულს</w>-მოდგინებისა და
           <lb n="27"/> <w lemmaRef="#lex-mqne">მჴნისა</w> გონებისა?
         </p>
@@ -291,7 +291,7 @@
         <!-- ¶ 23 -->
         <p xml:id="p23" n="23">
           <lb n="1"/> <hi rend="initial">Ⴐ</hi>ომელი ბრჭყჳვარ ოქროჲ, <w lemma="#lex-vin">ვინ</w> შეიძლებს ვნებად, <w lemma="#lex-nuukue">ნუუკუე</w> <w lemmaRef="#lex-zham">ჟამი</w>
-          <lb n="6"/> ამის <pb n="98r" ed="#ms-source"/> ჟამისა, რომელ არს <w lemmaRef="#lex-marxva">მარხვაჲ</w>?
+          <lb n="6"/> ამის <pb n="98r" ed="#S"/> ჟამისა, რომელ არს <w lemmaRef="#lex-marxva">მარხვაჲ</w>?
         </p>
 
         <!-- ¶ 24 -->
@@ -319,7 +319,7 @@
         <p xml:id="p26" n="26">
           <lb n="20"/> <hi rend="initial">Ⴄ</hi><w lemmaRef="#lex-esre">სრე</w> სახედცა რომელნი ცოდვითა შეპყრობილ არიან, <w lemma="#lex-vitartsa">ვითარცა</w>
           <lb n="21"/> მთრვალობითა უწესოებისაჲთა და საქმითა <w lemmaRef="#lex-gulis-gantsqeba">გულის</w> თქუმისაჲთა, შეკრულ
-          <lb n="22"/> არიან და <w lemmaRef="#lex-motchimul">მოჭიმულ</w> <pb n="98v" ed="#ms-source"/> და შეპყრობილ არიედ და არა უწყიედ, რასა იქმედ;
+          <lb n="22"/> არიან და <w lemmaRef="#lex-motchimul">მოჭიმულ</w> <pb n="98v" ed="#S"/> და შეპყრობილ არიედ და არა უწყიედ, რასა იქმედ;
           <lb n="23"/> არცა მახლობელი უწყიედ, რაჲ არნ, არცა <w lemmaRef="#lex-shoriel1">შორიელი</w> უცნობიენ, რაჲ ყოფად
           <lb n="24"/> არნ, და არცა <w lemmaRef="#lex-upal">უფალი</w> თჳსი მოიჴსენიან.
         </p>
@@ -336,8 +336,8 @@
         <p xml:id="p28" n="28">
           <lb n="30"/> <hi rend="initial">Ⴄ</hi>სე უყო ზრუამან მან: <w lemma="#lex-vitartsa">ვითარცა</w> პოვა <w lemmaRef="#lex-moquas">მოყუასი</w> იგი ტჳსი და იცნა იგი,
           <lb n="31"/> ათასითა ფერითა დააშრო იგი ამბოხი და ღაღადებაჲ, და <w lemmaRef="#lex-riskhva">რისხვაჲ</w> აღადგინა,
-          <pb n="105" ed="#ms-source"/>
-          <lb n="1"/> არა <w lemmaRef="#lex-sashjel">საშჯელად</w> მიზიდა და მიიყვანა, <pb n="99r" ed="#ms-source"/> არამედ თჳთ <w lemmaRef="#lex-tavad">თავადი</w> უთქუმიდა
+          <pb n="105" ed="#S"/>
+          <lb n="1"/> არა <w lemmaRef="#lex-sashjel">საშჯელად</w> მიზიდა და მიიყვანა, <pb n="99r" ed="#S"/> არამედ თჳთ <w lemmaRef="#lex-tavad">თავადი</w> უთქუმიდა
           <lb n="2"/> და სასტოოდა, რაჲთამცა დაათქა იგი, და არა თუ <w lemmaRef="#lex-moquas">მოყუასსა</w> მას
           <lb n="3"/> თჳსსა <w lemmaRef="#lex-ganmart-gamart">განმართ</w> გაუტევებდა, <w lemma="#lex-vitartsa">ვითარცა</w> ესე <w lemmaRef="#lex-qovel">ყოველი</w> იქმნებოდა.
         </p>
@@ -359,7 +359,7 @@
           <lb n="31"/> <hi rend="initial">Ⴋ</hi>ერმე რაჲ მენავეთ-<w lemmaRef="#lex-modzghuar">მოძღუარი</w> იგი აღდგომილი ეტყჳს მას: 
           <quote source="#Jonah1-6">აღდეგ და ხადოდე <w lemmaRef="#lex-upal">უფალსა</w> <w lemmaRef="#lex-ghmerti">ღმერთსა</w> <w lemmaRef="#lex-sheni-sheni">შენსა</w></quote>, <w lemma="#lex-rametu">რამეთუ</w> მიერითგანცა <w lemma="#lex-guliskhma">გულისხმა</w>-ყო
           <lb n="33"/> <w lemmaRef="#lex-zedamitsevnit">ზედამიწევნით</w>, <w lemma="#lex-vitarmed">ვითარმედ</w> არა არს <w lemmaRef="#lex-aghdrzva">აღძრვაჲ</w> ესე ზღჳსაჲ ამის ჩუეულებათაებრ
-          <lb n="34"/> და აღძრვათა <w lemmaRef="#lex-pirvel">პირველთა</w>, <pb n="100r" ed="#ms-source"/> არამედ ღმრთისა მიერი <w lemmaRef="#lex-brdzaneba">ბრძანებაჲ</w>
+          <lb n="34"/> და აღძრვათა <w lemmaRef="#lex-pirvel">პირველთა</w>, <pb n="100r" ed="#S"/> არამედ ღმრთისა მიერი <w lemmaRef="#lex-brdzaneba">ბრძანებაჲ</w>
           <lb n="35"/> არს და უზეშთაეს და <w lemmaRef="#lex-udzliere">უძლიერჱს</w> ჴელოვნებისა კაცთაჲსა.
         </p>
 
@@ -376,7 +376,7 @@
           <lb n="7"/> <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitar">ვითარ</w> <w lemmaRef="#lex-verara">ვერარაჲ</w> სარგებელ ექმნებოდა, <w lemma="#lex-mashingha">მაშინღა</w> <w lemma="#lex-tsil">წილ</w>-იგდეს. <w lemmaRef="#lex-amieritgan">ამიერითგან</w>
           <lb n="8"/> მიეცემის <w lemmaRef="#lex-tsil">წილსა</w> მას <w lemma="#lex-tana">თანა</w>-მდები იგი <w lemmaRef="#lex-qel">ჴელთა</w> პატიჟისათა, ხოლო მათ
           <lb n="9"/> მითცა არავე შთააგდეს ზღუასა მას, ხოლო <w lemmaRef="#lex-egdeni">ეგდენსა</w> მას <w lemma="#lex-shina">შინა</w> ჭირსა და <w lemmaRef="#lex-aghdrzva">აღძრვასა</w>
-          <lb n="10"/> ზღჳსასა, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-shoris1">შორის</w> მრავალსა <w lemmaRef="#lex-mshvidoba">მშჳდობასა</w>, <w lemma="#lex-gul">გულ</w>-განურინებელად <pb n="100v" ed="#ms-source"/> 
+          <lb n="10"/> ზღჳსასა, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-shoris1">შორის</w> მრავალსა <w lemmaRef="#lex-mshvidoba">მშჳდობასა</w>, <w lemma="#lex-gul">გულ</w>-განურინებელად <pb n="100v" ed="#S"/> 
           <lb n="11"/> ნუგეშინის-ცემულ იქმნებოდა და საშჯელსა და <w lemmaRef="#lex-gankitkhva">განკითხვასა</w> იქმოდეს
           <lb n="12"/> <w lemmaRef="#lex-navi">ნავსა</w> მას <w lemma="#lex-shina">შინა</w>.
         </p>
@@ -399,7 +399,7 @@
 
         <p xml:id="p35" n="35">
           <lb n="26"/> <hi rend="initial">Ⴃ</hi>ა რავდენი შიში და ზარი ღელვათაჲ მათ აღმაღლებულთაჲ, და <w lemmaRef="#lex-egdeni">ეგდენსა</w>
-          <lb n="27"/> რისხვასა შეცულ და შეყენებულ იყვნეს და <w lemmaRef="#lex-zghua">ზღუაჲ</w> <pb n="101r" ed="#ms-source"/> იგი <w lemmaRef="#lex-sashinel">საშინელად</w> აღძრულ
+          <lb n="27"/> რისხვასა შეცულ და შეყენებულ იყვნეს და <w lemmaRef="#lex-zghua">ზღუაჲ</w> <pb n="101r" ed="#S"/> იგი <w lemmaRef="#lex-sashinel">საშინელად</w> აღძრულ
           <lb n="28"/> იყო! და მისა ვინაჲ-მე იქმნებოდა ეგოდენი მხილებაჲ და <w lemmaRef="#lex-ghutsola-ghtsola">ღუწოლაჲ</w>,
           <lb n="29"/> არა თუ ღმრთისა მოღუაწებათაგან? <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-ghmerti">ღმერთი</w> არს, რომელი განჰმზადებდა
           <lb n="30"/> და შეტყუებით ამხილებდა ამით სახითა და <w lemmaRef="#lex-saqme">საქმითა</w> განსწავლიდა
@@ -429,7 +429,7 @@
         <p xml:id="p38" n="38">
           <lb n="19"/> <hi rend="initial">Ⴈ</hi>სმინე აღსაარებაჲცა იგი შიგან მუცლით მჴეც-<w lemmaRef="#lex-tevz">თევზისა</w> მისგან, <w lemma="#lex-rametu">რამეთუ</w>
           <lb n="20"/> <w lemmaRef="#lex-sivltola">სივლტოლაჲ</w> მისი <w lemma="#lex-vitartsa">ვითარცა</w> კაცისაჲ ხოლო იქმნებოდა; ხოლო <w lemmaRef="#lex-aghsareba">აღსარებაჲ</w> მისი
-          <lb n="21"/> <pb n="102r" ed="#ms-source"/> — <w lemma="#lex-vitartsa">ვითარცა</w> წინაწარმეტყუელისაჲ, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-amieritgan">ამიერითგან</w> მიიღო და დაათქა
+          <lb n="21"/> <pb n="102r" ed="#S"/> — <w lemma="#lex-vitartsa">ვითარცა</w> წინაწარმეტყუელისაჲ, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-amieritgan">ამიერითგან</w> მიიღო და დაათქა
           <lb n="22"/> იგი <w lemmaRef="#lex-zghua">ზღუამან</w> და, <w lemma="#lex-vitartsa">ვითარცა</w> საპყრობილესა <w lemma="#lex-shina">შინა</w>, <w lemma="#lex-retsa">რეცა</w> თუ <w lemmaRef="#lex-sakrvel">საკრველითა</w>
           <lb n="23"/> რკინისაჲთა შეჰკრვიდა და დასდებდა მას <w lemmaRef="#lex-mutsel">მუცელსა</w> <w lemma="#lex-shina">შინა</w> თევზისასა და დაუმარხვიდა
           <lb n="24"/> მას უფალსა მას <w lemmaRef="#lex-tvisi">თჳსსა</w>, <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-meot">მეოტსა</w> მონასა. <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-ghelva">ღელვათა</w>
@@ -445,7 +445,7 @@
           <lb n="32"/> მოსასრველსა მს <w lemmaRef="#lex-brdzaneba">ბრძანებასა</w>, ღაღადებდა და იტყოდა, <w lemma="#lex-vitarmed">ვითარმედ</w>: <quote source="#Jonah3-4"><w lemmaRef="#lex-shemdgomi">შემდგომად</w>
           <lb n="33"/> <w lemmaRef="#lex-same">სამისა</w> დღისა ნინევჱ დაქცევად არს.</quote> და მათ <w lemma="#lex-vitartsa">ვითარცა</w> ესმა <w lemmaRef="#lex-brdzaneba">ბრძანებაჲ</w> იგი,
           <lb n="34"/> არას ორგულებდეს <w lemmaRef="#lex-d">დ</w> არცა <w lemma="#lex-udeb">უდებ</w>-იქმნნეს, არამედ ყოველნი ადრე-ადრე <w lemmaRef="#lex-mirbiodes">მირბიოდეს</w>,
-          <lb n="35"/> თაყუანის-<w lemmaRef="#lex-tsema">ცემასა</w> <pb n="102v" ed="#ms-source"/> . და მარხვასა შეევედრებოდეს: მამანი და <w lemmaRef="#lex-deda">დედანი</w>,
+          <lb n="35"/> თაყუანის-<w lemmaRef="#lex-tsema">ცემასა</w> <pb n="102v" ed="#S"/> . და მარხვასა შეევედრებოდეს: მამანი და <w lemmaRef="#lex-deda">დედანი</w>,
           <lb n="36"/> ჴელმწიფენი და მფლობელნი, მოხუცებულნი და ნინველნი <w lemmaRef="#lex-qhda">ყრმანი</w> და
           <lb n="37"/> ჭაბუკნი და <w lemmaRef="#lex-satshkovar">საცხოვართა</w> ბუნებაჲცა დამორჩილებულ იუზმებოდეს.
         </p>
@@ -460,7 +460,7 @@
         <p xml:id="p41" n="41">
           <lb n="9"/> <hi rend="initial">Ⴀ</hi>წ ჰხედავა, <w lemma="#lex-vitar">ვითარ</w> არა უდებად ვთქუთ პირველსა მას <w lemmaRef="#lex-tqumuli">თქუმულსა</w>, <w lemma="#lex-vitarmed">ვითარმედ</w>
           <lb n="10"/> არა <w lemma="#lex-jer">ჯერ</w>-არს შესინებაჲ და <w lemmaRef="#lex-morideba">მორიდებაჲ</w> მარხვისა და თაყუანისცემისაგან,
-          <lb n="11"/> <pb n="103r" ed="#ms-source"/> არამედ ნაყროვანებისაგან და მთრვალობისაგან <w lemma="#lex-jer">ჯერ</w> არს
+          <lb n="11"/> <pb n="103r" ed="#S"/> არამედ ნაყროვანებისაგან და მთრვალობისაგან <w lemma="#lex-jer">ჯერ</w> არს
           <lb n="12"/> შიში და <w lemmaRef="#lex-morideba">მორიდებაჲ</w>: <w lemma="#lex-rametu">რამეთუ</w> მთრვალობამან და <w lemmaRef="#lex-nayrovaneba">ნაყროვანებამან</w> <w lemma="#lex-qalaqi">ქალაქი</w> იგი
           <lb n="13"/> აღმართებული და მტკიცჱ შეძრა და სეარყია და უნდა <w lemmaRef="#lex-damkhoba-damkhueba">დამჴობაჲ</w> მისი, ხოლო
           <lb n="14"/> მარხვამან და თაყუანის-<w lemmaRef="#lex-tsema">ცემამან</w> დაამტკიცეს და აღჰმართეს.

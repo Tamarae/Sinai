@@ -56,7 +56,7 @@
         <!-- ¶ 1 -->
         <p xml:id="p1" n="1">
           <hi rend="initial">Ⴃ</hi>ა ვითარცაღა ველნი შუენიერნი და სავსენი, <w lemmaRef="#lex-quavil">ყუავილითა</w> <w lemma="#lex-oqro">ოქრო</w>-ფერითა <w lemmaRef="#lex-shemkuli">შემკულნი</w>, და <w lemma="#lex-vitartsa">ვითარცა</w> ხენი, შუენიერად შემოსილნი ფურცლითა, და სადგურნი მფრინველთა სულნელ-მჴმობარეთანი, რომელთა-იგი სმენითა <w lemmaRef="#lex-qur">ყურნი</w> კაცთანი განაცხვრნიან და ტუალნი, <w lemma="#lex-odes">ოდეს</w>-იგი გამოეფინის მზჱ <w lemmaRef="#lex-adgili">ადგილთა</w> მათ; და <w lemma="#lex-vitartsa">ვითარცა</w> წყარონი გულის-სათქუემელნი, რომელნი დაუცხრომელად დიედ, ეგრეცა <w lemmaRef="#lex-aqa">აქა</w> ეკლესიათა <w lemma="#lex-shina">შინა</w> <w lemmaRef="#lex-sitqua">სიტყუათა</w> ღმრთისათა 
-          <pb n="75r" ed="#ms-75"/>
+          <pb n="75r" ed="#S"/>
           <w lemmaRef="#lex-tsurta1">წურთანი</w> და ღმრთისა <w lemma="#lex-mier">მიერ</w> სწავლანი განანათლებენ <w lemmaRef="#lex-natesav">ნათესავსა</w> კაცთასა.
         </p>
         
@@ -79,7 +79,7 @@
         
         <!-- ¶ 5 -->
         <p xml:id="p5" n="5">
-          <pb n="75v" ed="#ms-75"/>
+          <pb n="75v" ed="#S"/>
           <hi rend="initial">Ⴀ</hi>წ <w lemma="#lex-vitar">ვითარ</w> გჳთხრობს, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
           <quote xml:lang="ka" source="#Mt3-5-6">გამოვიდოდა <placeName ref="#place-ierusalemi">იერუსალემი</placeName> და <w lemmaRef="#lex-qovel">ყოველი</w> ჰურიასტანი და <w lemmaRef="#lex-qovel">ყოველნი</w> <w lemmaRef="#lex-garemois-garemos">გარემოჲს</w> იორდანისანი და ნანათელს-იღებდეს იოვანჱსგან და აუვარებდეს <w lemmaRef="#lex-tsodva1">ცოდვათა</w> მათთა.</quote>
           და სიმრავლესა მას ერისასა თავადიცა <persName ref="#pers-iesu-kriste">იესუ</persName> შეერთო.
@@ -107,7 +107,7 @@
         <!-- ¶ 9 -->
         <p xml:id="p9" n="9">
           <hi rend="initial">Ⴃ</hi>ა ეტყოდა იოვანე: ნუ მაიძულებ, 
-          <pb n="76r" ed="#ms-75"/>
+          <pb n="76r" ed="#S"/>
           <w lemmaRef="#lex-upal">უფალო</w>, <w lemma="#lex-rametu">რამეთუ</w> მე შენგან მიჴმს ნათლის-ღებაჲ და მარჯუენჱ ჩემი სხუათაცა ნათლის-ცემად არს. ვინაჲთგან შენ გიხილე, არასადა ვიცი ბანაჲ მზისა მბრწყინვალისაჲ, არცაღა განბანის <w lemmaRef="#lex-tikha">თიჴამან</w> წყაროჲ. და რომელნი-იგი <w lemma="#lex-mun">მუნ</w> დგეს და იგინიცა, რომელნი შორი მორბიოდეს ხილვად იოვანჱსა, დაცადებასა მას <w lemmaRef="#lex-natlis-gheba-natlis-migheba">ნათლის</w>-ცემისასა ჰხედვიდეს და ესმოდა იოვანჱსი, <w lemma="#lex-vitar">ვითარ</w>-იგი სიმდაბლით <w lemmaRef="#lex-esevitar">ესევითარსა</w> ევედრებოდა იესუს და ეტყოდა.
         </p>
         
@@ -119,7 +119,7 @@
         <!-- ¶ 11 -->
         <p xml:id="p11" n="11">
           <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vin">ვინ</w> მე არს ესე, რომელმან ესოდენი <w lemmaRef="#lex-eri">ერი</w> შეაძრწუნა და, <w lemma="#lex-odes">ოდეს</w>-იგი სადუკეველთა და ფარისეველთა მთავართა ნათელ-სცემდა, ესოდენ არა შეეშინა? ეგრჱთ ვის-მე განკჳრვებით ხედავს, ვითარღამცა შჯულისმდებელი ვინმე იყო, <w lemmaRef="#lex-egre-egere">ეგრე</w> დაემორჩილების? და <w lemma="#lex-vin">ვინ</w>-მემცა უფროჲს იოვანჱსა იყო, რომელი <w lemmaRef="#lex-udabno">უდაბნოსა</w> <w lemma="#lex-gare">გარე</w> იყოფოდა და მწუერვალსა მდელოჲსასა ჭამდა? და არცა მიხედვაჲ ამისი ხატი — <w lemmaRef="#lex-perovan">ფეროვან</w> და <w lemma="#lex-shuenier1">შუენიერ</w>, ხოლო იოვანჱსი <w lemmaRef="#lex-peri-2">ფერი</w> — ყჳთელ და ჰმოსიეს მას ძაძაყ.
-          <pb n="76v" ed="#ms-75"/>
+          <pb n="76v" ed="#S"/>
           ანუ ვინაჲ-მე არს ამისი <w lemmaRef="#lex-moslva">მოსლვაჲ</w>?
         </p>
         
@@ -133,7 +133,7 @@
           <hi rend="initial">Ⴀ</hi><w lemma="#lex-ra">რა</w> თუ <w lemmaRef="#lex-tsqali">წყალმან</w> რაჲ განწმიდა იგი, — <w lemma="#lex-rametu">რამეთუ</w> იგი იყო განმწმედელი წყალთაჲ, — ამას ყოველსა <w lemmaRef="#lex-chuen">ჩუენისა</w> ცხოვრებისათჳს აღასრულებდა და <w lemma="#lex-esret">ესრჱთ</w> ასწავებდა ნათლის-მცემელსა მას <w lemmaRef="#lex-upal">უფალი</w> და ეტყოდა: 
           <quote xml:lang="ka" source="#Mt3-15">აცადე <w lemma="#lex-ats">აწ</w>, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-esre">ესრე</w> <w lemma="#lex-tses">წეს</w>-არს აღსრულებად <w lemmaRef="#lex-qovel">ყოველი</w> სიმართლჱ,</quote>
           <w lemma="#lex-rametu">რამეთუ</w> საწუტროსა მომცემ მე დიდებასა და არღა არს ჟამი გამოჩინებად დიდებისა მის ჩემისაჲ; და ნუ გამოუჩინებ საიდუმლოსა ღმრთეებისა ჩემისასა ეშმაკსა, რომელი <w lemmaRef="#lex-argha">არღა</w> მნებავს: <w lemma="#lex-nuukue">ნუუკუე</w> მიცნას მე ეშმაკმან და <w lemmaRef="#lex-verghara">ვერღარა</w> მკადროს მე განცდად <w lemma="#lex-vitartsa">ვითარცა</w> ადამსა, ამისთჳს <w lemma="#lex-rametu">რამეთუ</w> დაეცეს იგი ღმრთეებისა ჩემისაგან და სიბძნისა, და <w lemma="#lex-ats">აწ</w> ნუ აოტებ ნადირსა მას. მოვიდენ ჟამნი, რომელსა ვიდიდო მე და სიტყუანი <w lemmaRef="#lex-chemi">ჩემნი</w>. <w lemma="#lex-garna">გარნა</w> <w lemma="#lex-ats">აწ</w> <w lemma="#lex-esre">ესრე</w> შუენის აღსრულებად <w lemmaRef="#lex-qovel">ყოველი</w> სიმართლჱ, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-mskhovrad">მსხოვრად</w> ნათესავისათჳს 
-          <pb n="77r" ed="#ms-75"/>
+          <pb n="77r" ed="#S"/>
           კაცთაჲსა მოსრულ ვარ, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-tana">თანა</w>-<w lemmaRef="#lex-nadebi">ნადები</w> იგი მათი მე გარდავიჴადო; <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-krav">კრავი</w> ნათესავისათჳს კაცთაჲსა მოვედი დაკლვად. <w lemma="#lex-ats">აწ</w> <w lemma="#lex-jer">ჯერ</w>-არს ჩემდა, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-katsi">კაცთა</w> <w lemma="#lex-tana">თანა</w> ვიქცეოდი, და ნუღა მადიდებ მე, არამედ <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-katsi">კაცსა</w>. აცადე <w lemma="#lex-ats">აწ</w>, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-esre">ესრე</w> შუენის აღსრულებად <w lemmaRef="#lex-qovel">ყოველი</w> სიმართლჱ.
         </p>
         
@@ -151,7 +151,7 @@
         <!-- ¶ 16 -->
         <p xml:id="p16" n="16">
           <hi rend="initial">Ⴀ</hi>წ, საყუარელნო, <w lemma="#lex-jer">ჯერ</w>-არს ჩუენდა, <w lemma="#lex-rayta">რაჲთა</w> ვცნათ და <w lemma="#lex-guliskhma">გულისხმა</w>-ვყოთ <w lemmaRef="#lex-sakhiereba">სახიერებაჲ</w> იგი კაცთმოყუარისა ღმრთისაჲ, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-esret">ესრჱთ</w> შეიყუარა ღმერთმან <w lemmaRef="#lex-sopel">სოფელი</w> ესე, <w lemma="#lex-vidremde">ვიდრემდე</w> ძჱცა თჳსი მხოლოდ-შობილი მოსცა მონათათჳს უკეთურთა, მოძულებულთათჳს საყუარელი იგი, ცოდვილთათჳს <w lemmaRef="#lex-utsodveli">უცოდველი</w> იგი. <w lemma="#lex-ats">აწ</w> <w lemmaRef="#lex-qorts">ჴორცთა</w> იგი სიმდაბლჱ ჩუენთჳს და არა ღმრთეებისა ბუნებისათჳს, <w lemma="#lex-rametu">რამეთუ</w> ღმრთეებაჲ არასადა დამცირდების და <w lemmaRef="#lex-qorts">ჴორცნი</w> იგი, რომელ განუშორებელად არიან ღმრთეებისა მას <w lemma="#lex-tana">თანა</w>, ჴორცთა მათ მისთა <w lemmaRef="#lex-gardamatebuli">გარდამატებული</w> 
-          <pb n="77v" ed="#ms-75"/>
+          <pb n="77v" ed="#S"/>
           დიდებაჲ <w lemmaRef="#lex-aqus">აქუს</w>.
         </p>
         

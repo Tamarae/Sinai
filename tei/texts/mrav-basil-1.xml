@@ -75,11 +75,11 @@
         <p xml:id="p2" n="2">
           <hi rend="initial">Ⴃ</hi>ა მათ <w lemma="#lex-vitartsa">ვითარცა</w> იხილნეს თავნი თჳსნი უძლურად <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> მისსა, განიზრახვიდეს, <w lemma="#lex-vitarmed">ვითარმედ</w>: მივაწიოთ 
           <app xml:id="app-1">
-            <lem wit="#Ms">სასჯელი</lem>
-            <rdg type="variant">საჯელი</rdg>
+            <lem wit="#Ms" resp="#shanidze">სასჯელი</lem>
+            <rdg type="orthographic" wit="#S">საჯელი</rdg>
           </app>
           ჩუენი წინაშე მეფისა. და ჰრქუეს მას, <w lemma="#lex-vitarmed">ვითარმედ</w>: ეკლესიაჲ ჩუენი უპყრიეს <w lemmaRef="#lex-tvinier">თჳნიერ</w> სამართლისა. ხოლო მეფემან ჰკითხა მას: <w lemma="#lex-ukuetu">უკუეთუ</w> <w lemma="#lex-esret">ესრჱთ</w> არს?
-          <pb n="67v" ed="#Ms"/>
+          <pb n="67v" ed="#S"/>
           <w lemma="#lex-mashin">მაშინ</w> ჰრქუა წმიდამან ეპისკოპოსმან მეფესა: უფალო <w lemmaRef="#lex-mepe">მეფე</w>, <w lemma="#lex-jer">ჯერ</w>-არს სახლისათჳს ღმრთისა თჳთ თავადმან ყოს <w lemmaRef="#lex-sasjel">სასჯელი</w>. და ჰრქუა მეფემან: <w lemma="#lex-cheshmaritad">ჭეშმარიტად</w> ეგრე იყავნ! აჰა ესერა უბრძანო დაკრძალვად კარი ეკლესიისაჲ <w lemmaRef="#lex-klite">კლიტითა</w> და ბეჭდითა თქუენითა და ჩუენითაცა. და იყოს, რომელსაცა განეღოს ღმრთისა <w lemma="#lex-mier">მიერ</w>, მანცა დაიმკჳდროს ეკლესიაჲ.
         </p>
         
@@ -90,13 +90,13 @@
         
         <!-- ¶ 4 -->
         <p xml:id="p4" n="4">
-          <pb n="71" ed="edition"/>
+          <pb n="71" ed="#shanidze"/>
           <hi rend="initial">Ⴠ</hi>ბასრობდა მათ წმიდაჲ <w lemmaRef="#lex-episkoposi">ეპისკოპოსი</w>, <w lemma="#lex-vitartsa">ვითარცა</w> ელია <w lemmaRef="#lex-qurum">ქურუმთა</w> მათ. და <w lemma="#lex-vitartsa">ვითარცა</w> ვერ მიიღეს <w lemmaRef="#lex-tkhova">თხოვაჲ</w> იგი, ჰრქუა მათ: განდეგით <w lemma="#lex-ats">აწ</w> თქუენ თჳსგან. და უკუნდგეს იგინი სირცხჳლეულნი <w lemmaRef="#lex-ertgzaoba">ერთ</w> <w lemma="#lex-kerdzo">კერძო</w> და ჰხედვიდეს მას, <w lemma="#lex-vitarmed">ვითარმედ</w> რაჲ-<w lemmaRef="#lex-dzi">ძი</w> ყოს მანცა.
         </p>
         
         <!-- ¶ 5 -->
         <p xml:id="p5" n="5">
-          <pb n="68r" ed="#Ms"/>
+          <pb n="68r" ed="#S"/>
           <hi rend="initial">Ⴋ</hi>აშინ წარმოჴდა წმიდაჲ ეპისკოპოსი ხუცესთა და დიაკონთა <w lemmaRef="#lex-tvisi">თჳსთა</w> <w lemma="#lex-tana">თანა</w> და უბრძანა კუერექსისა თქუმაჲ. და შეწირა ლოცვაჲ და უბრძანა ფსალმუნისა <w lemmaRef="#lex-tkuma">თქუმაჲ</w> რიზ; 
           <quote source="#Ps117-19">განმეხუენით მე, ბჭენო სიმართლისანო, შევიდე მათ და <w lemmaRef="#lex-auarebdit-auvaro">აუვარო</w> <w lemmaRef="#lex-upal">უფალსა</w>.</quote>
         </p>
@@ -130,7 +130,7 @@
         
         <!-- ¶ 10 -->
         <p xml:id="p10" n="10">
-          <pb n="68v" ed="#Ms"/>
+          <pb n="68v" ed="#S"/>
           <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-meqseulad">მეყსეულად</w> დაირღუეს კლიტენი იგი, და ბეჭედნი იგი დასცჳვეს კართა მათგან, და განეხუნეს კარნი. და შევიდა წმიდაჲ ეპისკოპოსი და <w lemmaRef="#lex-qovel">ყოველნი</w> მოწესენი მის <w lemma="#lex-tana">თანა</w> და აღასრულა საღმრთოჲ საიდუმლოჲ.
         </p>
         

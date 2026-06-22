@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Sinai Mravaltavi 864 — TEI Customization (ODD)</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Ilia State University, Linguistic Research Institute</p>
+      </publicationStmt>
+      <sourceDesc><p>Born digital</p></sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Sinai Mravaltavi 864 — Encoding Specification</head>
+
+        <p>This ODD defines a TEI P5 customization for the digital edition of the Sinai
+          Mravaltavi (Sin. geo. Σ №32-57-33, 864 CE), a Georgian manuscript homiliary held
+          at Saint Catherine's Monastery, Sinai. The edition is produced at the Linguistic
+          Research Institute of Ilia State University, Tbilisi. The project encodes a single
+          manuscript witness (siglum S) using a location-referenced critical apparatus
+          (<gi>app</gi>/<gi>lem</gi>/<gi>rdg</gi>), folio-level facsimile links to the
+          Library of Congress IIIF image service, and a project lexicon of Old Georgian
+          vocabulary attested in the corpus. The customization removes the <gi>gen</gi>
+          element (inapplicable to Georgian, which has no grammatical gender), restricts
+          the <att>source</att> attribute on dictionary <gi>entry</gi> elements, and
+          enforces project-specific attribute constraints via Schematron rules.</p>
+
+        <schemaSpec ident="sinai-mravaltavi" start="TEI"
+          xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+
+          <!-- ============================================================
+               MODULE REFERENCES
+               ============================================================ -->
+
+          <moduleRef key="tei"/>
+          <moduleRef key="core"/>
+          <moduleRef key="header"/>
+          <moduleRef key="textstructure"/>
+
+          <!-- transcr: pb, lb, facsimile -->
+          <moduleRef key="transcr"
+            include="pb lb surface surfaceGrp facsimile zone line"/>
+
+          <!-- textcrit: app, lem, rdg -->
+          <moduleRef key="textcrit"
+            include="app lem rdg listWit witness variantEncoding"/>
+
+          <!-- dictionaries -->
+          <moduleRef key="dictionaries"
+            include="entry form gramGrp orth pos sense def cit quote xr ref"/>
+
+          <!-- namesdates: declared but not yet heavily used -->
+          <moduleRef key="namesdates"
+            include="persName placeName roleName"/>
+
+          <!-- figures -->
+          <moduleRef key="figures"
+            include="figure figDesc"/>
+
+          <!-- msdescription: msDesc, msIdentifier, msContents, msItem, locus,
+               institution, idno, abbr used in witness descriptions -->
+          <moduleRef key="msdescription"/>
+
+          <!-- linking: supplies att.global.linking (@corresp, @synch, etc.)
+               used on entry/@corresp in lexicon.xml -->
+          <moduleRef key="linking"/>
+
+          <!-- tagdocs: gi, att used in editorialDecl prose -->
+          <moduleRef key="tagdocs" include="gi att tag"/>
+
+          <!-- analysis: w element used for lemma-tagged tokens throughout texts -->
+          <moduleRef key="analysis" include="w"/>
+
+          <!-- ============================================================
+               ELEMENT SPEC — rdg
+               constraintSpec MUST precede attList (TEI content model order)
+               ============================================================ -->
+
+          <elementSpec ident="rdg" module="textcrit" mode="change">
+
+            <!-- constraintSpec before attList — required by elementSpec content model -->
+            <constraintSpec ident="no-w-in-rdg" scheme="schematron">
+              <constraint>
+                <sch:rule context="tei:rdg">
+                  <sch:assert test="not(.//tei:w)"
+                    >Element &lt;w&gt; must not appear inside &lt;rdg&gt;. Lexicon
+                    tagging is restricted to &lt;lem&gt; content only.</sch:assert>
+                </sch:rule>
+              </constraint>
+            </constraintSpec>
+
+            <attList>
+              <attDef ident="type" mode="change" usage="req">
+                <desc>Classifies the nature of the manuscript reading relative to the
+                  editor's lemma.</desc>
+                <valList type="closed">
+                  <valItem ident="orthographic">
+                    <desc>Spelling or orthographic variant with no semantic difference.</desc>
+                  </valItem>
+                  <valItem ident="correction">
+                    <desc>The manuscript reading that the editor corrects in the lemma.</desc>
+                  </valItem>
+                  <valItem ident="omission">
+                    <desc>Text present in the lemma but absent from the manuscript.</desc>
+                  </valItem>
+                  <valItem ident="addition">
+                    <desc>Text in the manuscript not adopted into the lemma.</desc>
+                  </valItem>
+                  <valItem ident="lacuna">
+                    <desc>Physical damage or loss in the manuscript at this point.</desc>
+                  </valItem>
+                  <valItem ident="abbreviation">
+                    <desc>Abbreviated form in the manuscript expanded in the lemma.</desc>
+                  </valItem>
+                  <valItem ident="confirmation">
+                    <desc>Manuscript reading confirms the lemma without variation.</desc>
+                  </valItem>
+                </valList>
+              </attDef>
+              <attDef ident="wit" mode="change" usage="req">
+                <desc>One or more witness sigla (space-separated idrefs). In this
+                  edition always <val>#S</val>.</desc>
+                <datatype><dataRef key="teidata.text"/></datatype>
+              </attDef>
+            </attList>
+          </elementSpec>
+
+          <!-- ============================================================
+               ELEMENT SPEC — lem
+               @resp required
+               ============================================================ -->
+
+          <elementSpec ident="lem" module="textcrit" mode="change">
+            <attList>
+              <attDef ident="resp" mode="change" usage="req">
+                <desc>Pointer to the editor responsible for this reading. In this
+                  edition always <val>#shanidze</val>.</desc>
+                <datatype><dataRef key="teidata.pointer"/></datatype>
+              </attDef>
+            </attList>
+          </elementSpec>
+
+          <!-- ============================================================
+               ELEMENT SPEC — pb
+               @facs optional in RelaxNG; required by Schematron when ed="#S".
+               @ed and @n required.
+               ============================================================ -->
+
+          <elementSpec ident="pb" module="transcr" mode="change">
+            <attList>
+              <attDef ident="facs" mode="change" usage="opt">
+                <desc>URI of the IIIF image for this folio (Library of Congress).
+                  Required for manuscript folio breaks (ed="#S"); not applicable
+                  for print-edition page breaks (ed="#shanidze").</desc>
+                <datatype><dataRef key="teidata.pointer"/></datatype>
+              </attDef>
+              <attDef ident="ed" mode="change" usage="req">
+                <desc>Pointer to the source whose pagination this break records:
+                  <val>#S</val> for manuscript folios,
+                  <val>#shanidze</val> for Shanidze print-edition pages.</desc>
+                <datatype><dataRef key="teidata.pointer"/></datatype>
+              </attDef>
+              <attDef ident="n" mode="change" usage="req">
+                <desc>Folio or page identifier, e.g. <val>3r</val>, <val>3v</val>,
+                  or a print page number.</desc>
+                <datatype><dataRef key="teidata.text"/></datatype>
+              </attDef>
+            </attList>
+          </elementSpec>
+
+          <!-- ============================================================
+               ELEMENT SPEC — entry (dictionaries)
+               @source: mode="change" — att.source already supplies this
+               attribute in the base schema; we restrict it here.
+               ============================================================ -->
+
+          <elementSpec ident="entry" module="dictionaries" mode="change">
+            <attList>
+              <attDef ident="source" mode="change" usage="req">
+                <desc>Primary source for this lexical entry:
+                  <val>imnaishvili-1975</val> for Imnaishvili's Old Georgian dictionary;
+                  <val>corpus</val> for items attested in the corpus only.</desc>
+                <datatype><dataRef key="teidata.text"/></datatype>
+              </attDef>
+            </attList>
+          </elementSpec>
+
+          <!-- ============================================================
+               ELEMENT SPEC — gen
+               Deleted — Georgian has no grammatical gender
+               ============================================================ -->
+
+          <elementSpec ident="gen" module="dictionaries" mode="delete"/>
+
+          <!-- ============================================================
+               PROJECT-LEVEL SCHEMATRON CONSTRAINTS
+               ============================================================ -->
+
+          <constraintSpec ident="rdg-wit-S" scheme="schematron">
+            <constraint>
+              <sch:rule context="tei:rdg">
+                <sch:assert test="@wit = '#S'"
+                  >Every &lt;rdg&gt; must have wit="#S". Found: <sch:value-of
+                    select="@wit"/>.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+
+          <constraintSpec ident="pb-ed-S" scheme="schematron">
+            <constraint>
+              <sch:rule context="tei:pb">
+                <sch:assert test="@ed = '#S' or @ed = '#shanidze'"
+                  >Every &lt;pb&gt; must have @ed="#S" (manuscript folio) or
+                  @ed="#shanidze" (print edition page). Found: <sch:value-of
+                  select="@ed"/>.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+
+          <constraintSpec ident="pb-facs-when-S" scheme="schematron">
+            <constraint>
+              <sch:rule context="tei:pb[@ed='#S']">
+                <sch:assert test="@facs"
+                  >Manuscript folio breaks (ed="#S") must have a @facs
+                  IIIF URL.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+
+          <constraintSpec ident="lem-resp-shanidze" scheme="schematron">
+            <constraint>
+              <sch:rule context="tei:lem">
+                <sch:assert test="@resp = '#shanidze'"
+                  >Every &lt;lem&gt; must have resp="#shanidze". Found: <sch:value-of
+                    select="@resp"/>.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+
+        </schemaSpec>
+      </div>
+    </body>
+  </text>
+</TEI>

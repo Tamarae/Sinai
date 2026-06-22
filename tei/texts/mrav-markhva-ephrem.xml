@@ -58,12 +58,12 @@
         <p xml:id="p1" n="1">
           <hi rend="initial">Ⴛ</hi><w lemmaRef="#lex-man">მანო</w>, არა 
           <app xml:id="app-1">
-            <lem wit="#MS">ვითარმცა</lem>
+            <lem wit="#MS" resp="#shanidze">ვითარმცა</lem>
             <note>1* Editorial mark in original text</note>
           </app> 
           ვგუემენ ჴორცნი ეგე თქუენნი მახჳლითა, არამედ გაწუევ 
           <app xml:id="app-2">
-            <lem wit="#MS">თქუენ</lem>
+            <lem wit="#MS" resp="#shanidze">თქუენ</lem>
             <note>2* Editorial mark in original text</note>
           </app>, 
           საყუარელნო, <w lemma="#lex-rayta">რაჲთა</w> ვახარო სულთა თქუენთა მოძრურებითა <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName>. 
@@ -72,7 +72,7 @@
         
         <!-- ¶ 2 -->
         <p xml:id="p2" n="2">
-          <pb n="107r" ed="#MS"/>
+          <pb n="107r" ed="#S"/>
           <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitar">ვითარ</w> სახედ მოგუეახლნიან ჩუენ მარხვანი, მოგუეცნიან ჩუენ <w lemmaRef="#lex-goneba">გონებანი</w> ანგელოზთანი, <w lemma="#lex-rametu">რამეთუ</w> ამით მიზეზითა ვჰმსახურებდით უფალსა <w lemmaRef="#lex-queqana">ქუეყანასა</w> <w lemma="#lex-zeda">ზედა</w>, <w lemma="#lex-vitartsa">ვითარცა</w>-იგი ცათა <w lemma="#lex-shina">შინა</w>. 
           <hi rend="initial">Ⴑ</hi>აჭმელმან და <w lemmaRef="#lex-sasumel">სასუმელმან</w> დამდაბლიან <w lemma="#lex-katsi">კაცი</w> და მიაწიიან სახესა პირუტყუთასა, რომელნი დაკლებულ არიან სასოებისაგან აღდგომისაჲსა.
         </p>
@@ -91,7 +91,7 @@
           <hi rend="initial">Ⴓ</hi>კუეთუმცა არა გუაუწყა ჩუენ <w lemmaRef="#lex-saukune">საუკუნისა</w> ცეცხლისათჳს, <w lemma="#lex-vin">ვინ</w> <w lemmaRef="#lex-utsq">უწყის</w>, ვჰგონებდითმცა, <w lemma="#lex-vitarmed">ვითარმედ</w> ყვიან მათ, რომელთა არა დაიდვიან <w lemmaRef="#lex-ughel">უღელი</w> მარხვისაჲ სიტყჳსა მისებრ, <w lemma="#lex-vitartsa">ვითარცა</w> წერილ არს, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
           <quote source="#1Cor15-32">ვსუათ და ვწამოტ, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-khvale">ხვალე</w> სიკუდილდ ვართ</quote>. 
           <hi rend="initial">Ⴅ</hi>ითარმედ არცა ამას სოფელსა სარგებელ არს ნაყროვანებაჲ და <w lemmaRef="#lex-simtrvale">სიმთრვალჱ</w>, რომელთა მოიპოვიან იგი, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-nayrovaneba">ნაყროვანებამან</w> 
-          <pb n="107v" ed="#MS"/> 
+          <pb n="107v" ed="#S"/> 
           შეამძიმნის ჴორცნი და აურვებნ ასოთა, აჭირებნ სტომაქსა და აღაგზნის <w lemmaRef="#lex-aghdrzva">აღძრვანი</w> გონებათანი.
         </p>
         
@@ -110,7 +110,7 @@
         <!-- ¶ 7 -->
         <p xml:id="p7" n="7">
           <hi rend="initial">Ⴞ</hi>ოლო სიმტკიცჱ მარხვათაჲ განმტკიცებულ არს მათა <w lemma="#lex-mimart">მიმართ</w>, რომელთა მოიგნეს იგი, <w lemma="#lex-rametu">რამეთუ</w> წარჰმართის სტუანვაჲ სახიერთა თუალთაჲ, და აღჳრ-ასხნის წამ-<w lemmaRef="#lex-tsam-tsam">წამ</w> 
-          <pb n="108r" ed="#MS"/> 
+          <pb n="108r" ed="#S"/> 
           სიდაშნისათჳს, და აღუხუნის ყურნი მოძრურებისა ქრისტჱსსა, და განწმიდის ენაჲცა სალხინებელი ცოდვათაჲ, და განაღჳძის გონებაჲ ლოცვისათჳს, და ასწავის სულთა სიყუარულისათჳს ღმრთისაჲსა, ჴელთა ასწავის გლახაკთა ღუწოლაჲ, და ფერჴთა ასწავის სლვაჲ და <w lemmaRef="#lex-khilva1">ხილვაჲ</w> სნეულთაჲ.
         </p>
         
@@ -125,7 +125,7 @@
           <hi rend="initial">Ⴞ</hi>ოლო არიან ჰურიანიცა, რომელნი იმარხვენ პურისათჳსცა დ ღჳნისა და მთრვალ არიან შურითა გონებანი მათნი და <w lemmaRef="#lex-silaghe">სილაღითა</w>. 
           <hi rend="initial">Ⴃ</hi>ა არიან რომელნიმე, არა ჭამედ ჭამადთა, ხოლო შეშჭამენ კბილითა ანგაჰრებისა მათისაჲთა ობოლთა და <w lemmaRef="#lex-quriv">ქურივთა</w>. 
           <hi rend="initial">Ⴃ</hi>ა რომელნი ესემლევან არიედ, 
-          <pb n="108v" ed="#MS"/> 
+          <pb n="108v" ed="#S"/> 
           ისმინედ მათ, <w lemma="#lex-rametu">რამეთუ</w> არა <w lemmaRef="#lex-sasqidel">სასყიდელი</w> ხოლო მარხვისაჲ არა მიიღონ მათ, არამედ <w lemma="#lex-tana">თანა</w>-მდებცა არიან იგინი <w lemmaRef="#lex-dasasruli">დასასრულსა</w> ჯოჯოხეთისასა, <w lemma="#lex-rametu">რამეთუ</w> მარხვანი რომელ არიან <w lemmaRef="#lex-shesadzineli">შესაძინელნი</w> კეტილთანი, მის <w lemma="#lex-gamo">გამო</w> აღიკიდიან ტჳრთი <w lemmaRef="#lex-boroti">ბოროტი</w>. 
           <hi rend="initial">Ⴞ</hi>ოლო გლოცავ თქუენ, საყუარელნო, ვიმარხოთ საჭმლისაგან, <w lemma="#lex-rayta">რაჲთა</w> არა შთაჴდენ მუცელთა ჩუენთა <w lemmaRef="#lex-savnebel">სავნებელად</w>, და ვეკრძალნეთ ბოროტისაგანცა, <w lemma="#lex-rayta">რაჲთა</w> არა გამოჴდენ გულისა ჩუენისაგან მრავალთა <w lemmaRef="#lex-savnebel">სავნებელნი</w>.
         </p>
@@ -139,7 +139,7 @@
         
         <!-- ¶ 11 - Continuation -->
         <p xml:id="p11" n="11">
-          <pb n="109r" ed="#MS"/>
+          <pb n="109r" ed="#S"/>
           <hi rend="initial">Ⴋ</hi>არხვანი განცხადებულნი ფარულითა მარხვითა აღესრულებიან, <w lemmaRef="#lex-daqeneba">დაყენებაჲ</w> ჭამადთაჲ დაყენებითა ჴორცთაჲთა აღესრულების, <w lemma="#lex-rametu">რამეთუ</w> არა ერთსა ასოსა შეუმოსიეს ყოველი ჴორცი, არცა ერთითა ქვითა აღეშჱნის <w lemmaRef="#lex-qovel">ყოველი</w> ნაშჱნები. 
           <hi rend="initial">Ⴞ</hi>ოლო რომელთა-იგი კეთილად იმარხიან, ყოვლისაგან ბოროტისა შემოკლდიან, კეთილსა მიეახლნიან; და რომელნი ბოროტსა განეშორიან, ღმერთსა მიეახლნიან, ეზიარნიან და <w lemmaRef="#lex-mshvidobit">მშჳდობით</w> ამაღლდიან.
         </p>

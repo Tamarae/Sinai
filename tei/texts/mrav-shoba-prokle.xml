@@ -75,7 +75,7 @@
         <!-- ¶ 2 -->
         <p xml:id="p2" n="2">
           <hi rend="initial">Ⴓ</hi>ხაროდენ <w lemma="#lex-buneba">ბუნებასა</w> კაცთასა, <w lemma="#lex-rametu">რამეთუ</w> დედანი პატიოსან იქმნებიან. მხიარულ იყვნედ <w lemmaRef="#lex-mama">მამანი</w>, <w lemma="#lex-rametu">რამეთუ</w>... <w lemmaRef="#lex-sada-saddai">სადა</w> გარდაერია <w lemma="#lex-tsodva">ცოდვაჲ</w>, <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲსად</w> აღემატა <w lemma="#lex-madli">მადლი</w><note type="source">Rom. 5:20</note>. <w lemma="#lex-rametu">რამეთუ</w> მომიწოდა ჩუენ წმიდამან მარიამ, შეუგინებელმან ქალწულმან, ჭურჭელმან სიწმიდისამან, მეტყუელისა მის მეორისა ადამისა <placeName ref="#place-samotke">სამოთხემან</placeName>, 
-          <pb n="16r" ed="#ms"/> 
+          <pb n="16r" ed="#S"/> 
           <w lemmaRef="#lex-saqmar">საქმარმან</w> ერთობისა ორთა <w lemma="#lex-buneba">ბუნება</w>[თა]მან<note type="editor">3*</note>, კრებამან მაცხოვრისამან, <w lemmaRef="#lex-motsvaleba">მოცვალებამან</w> სასძლოჲსამან, რომელსა <w lemma="#lex-shina">შინა</w> სიტყუამან <w lemmaRef="#lex-sidze">სიძე</w> <w lemma="#lex-qmna">ქმნა</w> <w lemma="#lex-khortsiel">ჴორცნი</w>, <w lemmaRef="#lex-sulieri">სულიერმან</w> მან <w lemma="#lex-buneba">ბუნებისა</w> ჩუენისა მაყუალმან, რომელ-იგი საღმრთომან მიდგომილებისა <w lemmaRef="#lex-tsetskhl">ცეცხლმან</w> არა <w lemma="#lex-datsua">დაწუა</w>.
         </p>
         
@@ -85,10 +85,10 @@
         </p>
         
         <!-- ¶ 4 -->
-        <pb n="41" ed="#edition"/>
+        <pb n="41" ed="#shanidze"/>
         <p xml:id="p4" n="4">
           <hi rend="initial">Ⴅ</hi>ის ესმა, ანუ <w lemma="#lex-vin">ვინ</w> იხილა, <w lemma="#lex-vitarmed">ვითარმედ</w> <w lemma="#lex-ghmert">ღმერთი</w> მუცელსა და საშოსა დაემკჳდროს? რომელსა ცანი ვერ იტევენ, <w lemmaRef="#lex-mutsel">მუცელი</w> ქალწულისაჲ არა <w lemma="#lex-itsro">იწრო</w> უჩნდა, არამედ იშვა დედაკაცისაგან <w lemma="#lex-ghmert">ღმერთი</w>, <w lemma="#lex-ghmert">ღმერთი</w> არა <w lemmaRef="#lex-shishueli-shishuveli">შიშუველი</w> და <w lemma="#lex-katsi">კაცი</w> არა <w lemmaRef="#lex-liton">ლიტონი</w>. <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-bke">ბჭჱ</w> 
-          <pb n="41r" ed="#ms"/> 
+          <pb n="41r" ed="#S"/> 
           იყო ცხოვრებისაჲ, რომელი იშვა, და პირველი იგი აჩუენა კარი. სადა-იგი გუელმან ურჩებითა დასტხია გესლი, <w lemmaRef="#lex-mierve">მიერვე</w> <w lemma="#lex-sitqua">სიტყუაჲ</w> იგი მორჩილებითა შევიდა მისა და ტაძარი იგი <w lemmaRef="#lex-tskhtel">ცხოველი</w> დაჰბადა მას <w lemma="#lex-shina">შინა</w>; <w lemmaRef="#lex-vina-vinai">ვინაჲ</w>-იგი <w lemma="#lex-tsodva">ცოდვისა</w> კარი გამოჩნდა, მიერვე ნათესავისა ჩუენისა მჴსნელი <persName ref="#pers-iesu-kriste">ქრისტჱ</persName> უთესლოდ აღმოსცჱნდა.
         </p>
         
@@ -111,7 +111,7 @@
         <!-- ¶ 8 -->
         <p xml:id="p8" n="8">
           <hi rend="initial">Ⴀ</hi><w lemma="#lex-ra">რა</w> <w lemma="#lex-gineba">გინება</w> არს ხუროთ-მოძღურისა <w lemmaRef="#lex-qopa">ყოფაჲ</w> მას <w lemma="#lex-shina">შინა</w>, რომელი იგი მან აღაშჱნა. არა შეაგინის მეკეცჱ <w lemmaRef="#lex-tikha">თიჴამან</w>, <w lemma="#lex-razhams">რაჟამს</w> განაახლებნ <w lemmaRef="#lex-tvisi">თჳსსა</w> მას სექმნულსა.
-          <pb n="41v" ed="#ms"/> 
+          <pb n="41v" ed="#S"/> 
           ეგრევე უჴრწნელი იგი საშოჲსაგან ქალწულისაჲსა <w lemmaRef="#lex-moslva">მოსლვაჲ</w>, რომელ-იგი შესაქმესა არა შეაგინა.
         </p>
         
@@ -136,10 +136,10 @@
         </p>
         
         <!-- ¶ 13 -->
-        <pb n="42" ed="#edition"/>
+        <pb n="42" ed="#shanidze"/>
         <p xml:id="p13" n="13">
           <hi rend="initial">Ⴀ</hi><w lemma="#lex-ra">რა</w> თუ წარმოჩინებით <persName ref="#pers-iesu-kriste">ქრისტე</persName> იქმნს <w lemma="#lex-ghmert">ღმერთ</w> — ნუ იყოფინ! — არამედ მოწყალებით იქმნა <w lemma="#lex-katsi">კაც</w>, <w lemma="#lex-vitartsa">ვითარცა</w>-ესე გურწამს. არა კაცსა <w lemmaRef="#lex-liton">ლიტონსა</w> <w lemma="#lex-ghmert">ღმერთ</w> ყოფად ვქადაგებთ, 
-          <pb n="42r" ed="#ms"/> 
+          <pb n="42r" ed="#S"/> 
           არამედ <w lemmaRef="#lex-ghmerti">ღმერთსა</w> <w lemma="#lex-khortsiel">ჴორციელ</w> ყოფად<note type="editor">1*</note> აღვიარებთ. და თჳსი <w lemmaRef="#lex-mkhevali">მჴევალი</w> იჩემა დედად, რომელი იყო არსებით <w lemma="#lex-udedo">უდედო</w> და მოღუაწებით - <w lemma="#lex-umamo">უმამო</w>, <w lemma="#lex-ukuetu">უკუეთუ</w> არა მსგავსად <w lemmaRef="#lex-motsiqul">მოციქულისა</w> მის <w lemma="#lex-sitqua">სიტყჳსა</w> <w lemma="#lex-umamo">უმამო</w> და იგივე <w lemma="#lex-udedo">უდედო</w>. <w lemma="#lex-ukuetu">უკუეთუ</w> <w lemmaRef="#lex-liton">ლიტონი</w> <w lemma="#lex-katsi">კაცი</w> არა <w lemma="#lex-udedo">უდედო</w>, არამედ უვის დედაჲ, და თუ <w lemmaRef="#lex-shishueli-shishuveli">შიშუველი</w> <w lemma="#lex-ghmert">ღმერთი</w> არა <w lemma="#lex-umamo">უმამო</w>, არამედ უვის <w lemma="#lex-mama">მამაჲ</w>, ხოლო <w lemma="#lex-ats">აწ</w> იგივე <w lemma="#lex-udedo">უდედო</w> ამისთჳს — <w lemma="#lex-vitartsa">ვითარცა</w> <w lemmaRef="#lex-dambadebeli">დამბადებელი</w><note type="editor">2*</note>, და <w lemma="#lex-umamo">უმამო</w> — <w lemma="#lex-vitartsa">ვითარცა</w> დაბადებული; <w lemma="#lex-umamo">უმამო</w><note type="editor">3*</note> — <w lemmaRef="#lex-queqana">ქუეყანასა</w> <w lemma="#lex-zeda">ზედა</w> და <w lemma="#lex-udedo">უდედო</w> — ცათა <w lemma="#lex-shina">შინა</w>.
         </p>
         
@@ -151,7 +151,7 @@
         <!-- ¶ 15 -->
         <p xml:id="p15" n="15">
           <hi rend="initial">Ⴈ</hi>სწავეთ მიზეზი იგი მოსლვისაჲ და ადიდებდით ძალსა მას ჴორცთ შესხმისასა. <w lemmaRef="#lex-priad">ფრიად</w> <w lemma="#lex-tana">თანა</w>-ედვა <w lemma="#lex-katsi">კაცთა</w> <w lemma="#lex-buneba">ბუნებასა</w>, და <w lemma="#lex-tana">თანა</w>-<w lemmaRef="#lex-nadebi">ნადებსა</w> მას მიცემად ვერ ჰპოვებდა. ადამის <w lemma="#lex-mier">მიერ</w> <w lemma="#lex-tsodva">ცოდვასა</w> მას ყოველთა ჴელითა ჴელი დაგუეწერა და მონა ვეპყრენით ჩუენ ეშმაკსა. ჴელით-<w lemmaRef="#lex-tserili">წერილი</w> იგი <w lemma="#lex-tsina">წინა</w>-დაგჳპყრის ჩუენ, <w lemma="#lex-rametu">რამეთუ</w> ქარტისა <w lemma="#lex-tsil">წილ</w> იმსახურებდა მრავალ-ვნებულთა ამათ ჴორცთაგან. დადგა ბოროტი იგი ვნებათაჲ მათ ცილის მწერალი და აღმიდგინებდა ჩუენ აღნადგინებისა მის ვახშსა და მიმჴდიდა ჩუენ <w lemmaRef="#lex-sarchel">სარჩელსა</w>.
-          <pb n="42v" ed="#ms"/> 
+          <pb n="42v" ed="#S"/> 
         </p>
         
         <!-- ¶ 16 -->
@@ -170,10 +170,10 @@
         </p>
         
         <!-- ¶ 19 -->
-        <pb n="43" ed="#edition"/>
+        <pb n="43" ed="#shanidze"/>
         <p xml:id="p19" n="19">
           <hi rend="initial">Ⴥ</hi> საკჳრველებათაჲ ამათ! <w lemma="#lex-rametu">რამეთუ</w> სხუათა განუმზადა უკუდავებაჲ, ხოლო იგი იყოვე უკუდავ. ესევითარი სხუაჲ მოწყალებისათჳს <w lemmaRef="#lex-aravin">არავინ</w> არესრულა, არცა იყო, არცა არს, არცა ყოფად არს, 
-          <pb n="43r" ed="#ms"/> 
+          <pb n="43r" ed="#S"/> 
           <w lemma="#lex-garna">გარნა</w> მხოლოჲ ქალწულისაგან <w lemma="#lex-shoba">შობილი</w> <w lemma="#lex-ghmert">ღმერთი</w> და <w lemma="#lex-katsi">კაცი</w>. არა <w lemma="#lex-tana">თანა</w>-შეასწორებს, <w lemma="#lex-rametu">რამეთუ</w> აკლს <w lemma="#lex-pativ">პატივი</w> სიმართლესა მას დარჩილთასა, არამედ ყოველსავე რიცხუსა ჰმატს შვილად ყოფითა, უცვალებელად აცუენებს თავსა <w lemmaRef="#lex-tvisi">თჳსსა</w> <w lemma="#lex-mama">მამისა</w> მიმართ, ხოლო შემოქმედებითა <w lemmaRef="#lex-dzliereba-dzrieleba">ძლიერებაჲ</w> იგი <w lemma="#lex-unaklulod">უნაკლულოდ</w> აქუს და მოწყალების მოყუარებაჲ წყალობისათჳს გარდაუქცეველად მრავალთათჳს განაგო. ხოლო მღდელთ-<w lemmaRef="#lex-modzghureba-modzghuroba">მოძღურებაჲ</w> <w lemma="#lex-ujmnelad">უჯმნელად</w> ღირს, სარწმუნოდ მოაქუს, რომელ-იგი არავინ პოვოს სხუამან <w lemmaRef="#lex-arara">არარასა</w> <w lemma="#lex-zeda">ზედა</w> სიტყუად მსგავსი <w lemmaRef="#lex-amisi">ამისი</w>.
         </p>
         
@@ -185,7 +185,7 @@
         <!-- ¶ 21 -->
         <p xml:id="p21" n="21">
           <hi rend="initial">Ⴅ</hi>ერვინაჲ მოსაპოვნელ იყო <w lemma="#lex-dakhsna">გამოჴსნაჲ</w> ჩუენთჳს. მოივლინნეს 
-          <pb n="43v" ed="#ms"/> 
+          <pb n="43v" ed="#S"/> 
           <w lemmaRef="#lex-mkurnal">მკურნალნი</w> და სეასმენდეს. <w lemma="#lex-ats">აწ</w> <w lemmaRef="#lex-ukue">უკუე</w> <w lemma="#lex-ra">რაჲ</w> <w lemma="#lex-jer">ჯერ</w>-იყო სიტყუად?
         </p>
         
@@ -214,8 +214,8 @@
         <!-- ¶ 23 -->
         <p xml:id="p23" n="23">
           <hi rend="initial">Ⴀ</hi>მისთჳს არა უგულებელს-ყო გონებაჲ ჩუენი მიმძლავრებისაგან, რომელი-იგი არს ბუნებით <w lemmaRef="#lex-meupe">მეუფე</w> და <w lemma="#lex-ghmert">ღმერთ</w>, არამედ მოვიდა, რომელი-იგი <w lemma="#lex-maradis">მარადის</w> <w lemmaRef="#lex-qovel">ყოველსა</w> <w lemma="#lex-adgili">ადგილსა</w> არს, და მოგუცნა საჴსრად თჳსნი სისხლნი, და მისცა ნათესავისა ჩუენისათჳს ჴელით-<w lemmaRef="#lex-tserili">წერილი</w> იგი სიკუდილისაჲ, 
-          <pb n="44r" ed="#ms"/> 
-          <pb n="44" ed="#edition"/> 
+          <pb n="44r" ed="#S"/> 
+          <pb n="44" ed="#shanidze"/> 
           რომელ-იგი ქალწულისაგან შეისხნა <w lemma="#lex-khortsiel">ჴორცნი</w>, და მოიყიდა სოფელი წყევისა მისგან <w lemmaRef="#lex-shjul1">შჯულისა</w>.
         </p>
         
@@ -243,7 +243,7 @@
         <!-- ¶ 28 -->
         <p xml:id="p28" n="28">
           <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vin">ვინ</w> არს 
-          <pb n="44v" ed="#ms"/> 
+          <pb n="44v" ed="#S"/> 
           მომავალი იგი? თქუ განცხადებულად, ჵ <persName ref="#pers-davit">დავით</persName>! და იგი იტყჳს: 
           <quote source="#Ps117-27"><w lemma="#lex-ghmert">ღმერთი</w> <w lemmaRef="#lex-upal">უფალი</w>, და გამოგჳჩნდა ჩუენ.</quote>
           შეერთო <w lemma="#lex-buneba">ბუნებაჲ</w> იგი და შეურწყუმელად ჰგიეს ერთობაჲ იგი. მოვიდა <w lemmaRef="#lex-tskhoreba-tskhovreba">ცხორებაჲ</w> იგი, არამედ <w lemma="#lex-tana">თანა</w>-ედვა სიკუდილიცა. <w lemma="#lex-vitar">ვითარ</w> შესაზლებელ იყო ორივე ესე? <w lemma="#lex-katsi">კაცი</w> <w lemmaRef="#lex-liton">ლიტონი</w> ვერ შემძლებელ იყო ჴსნად, <w lemma="#lex-ghmert">ღმრთისა</w> შეუძლებელ იყო <w lemmaRef="#lex-tvinier">თჳნიერ</w> <w lemma="#lex-khortsiel">ჴორცთა</w> ვნებისა, რომელ-იგი ყო, <w lemmaRef="#lex-bunebit">ბუნებით</w> და <w lemma="#lex-katsi">კაცთ</w>-მოყუარებით იქმნა <w lemma="#lex-katsi">კაც</w>; რომელი-იგი <w lemmaRef="#lex-arsi">არსი</w> იყო, მან აცხოვნა, და <w lemma="#lex-merme">მერმე</w> რომელი-იგი <w lemma="#lex-katsi">კაც</w> იქმნა, მან ივნო.
@@ -255,12 +255,12 @@
           <quote source="#Cant3-11">ასულნო <placeName ref="#place-ierusalemi">იერუსალემისანო</placeName><note type="editor">1*</note>, გამოვედით და იხილეთ გჳრგჳნი, რომლითა გჳრგჳნოსან ყო დედამან <w lemmaRef="#lex-misi">მისმან</w>.</quote>
           <w lemma="#lex-rametu">რამეთუ</w> ეკლისა გჳრგჳნი დაიდგა და ეკალთაჲ იგი დაჰჴსნა პატიჟი. იგივე წიაღთა მამისათა იყო და წიაღთა ქალწულისათა და ქალწულებისა <w lemmaRef="#lex-klite">კლიტჱ</w> არა <w lemma="#lex-gankhethqa">განხეთქა</w>; <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-ghmert">ღმერთი</w> იყო და <w lemma="#lex-esret">ესრჱთ</w> საშოჲსაგან გამოვიდა და <w lemmaRef="#lex-egreve">ეგრევე</w> იშვა, <w lemma="#lex-vitartsa">ვითარცა</w> მუცელსა შევიდა; უვნებელად შევიდა და <w lemmaRef="#lex-ukhrtsneli-ukhrtsneli">უჴრწნელად</w> გამოვიდა <w lemma="#lex-sitqua">სიტყჳსა</w> მისებრ ეზეკიელ <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელისა</w>, <w lemma="#lex-vitartsa">ვითარცა</w> იტყჳს: 
           <quote source="#Ezek44-1">და მომაქცია მე <w lemmaRef="#lex-upal">უფალმან</w> <w lemmaRef="#lex-gza">გზასა</w> მას ბჭისა მის წმიდათაჲსა არმოსავალად. და იყო ოგო <w lemma="#lex-dakhshul">დაჴშულ</w>. და მრქუა მე უფალმან; ძეო კაცისაო, <w lemmaRef="#lex-bke">ბჭჱ</w> ესე იყოს <w lemma="#lex-dakhshul">დაჴშულ</w> და არა განეღოს 
-            <pb n="45r" ed="#ms"/> 
+            <pb n="45r" ed="#S"/> 
             ესე, არცა <w lemmaRef="#lex-gan">გან</w>-<w lemma="#lex-vin">ვინ</w>-ვიდეს <w lemma="#lex-mier">მიერ</w>, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-ghmert">ღმერთი</w> მხოლოჲ შევიდეს და იგი თავადი გამოვიდეს. და იყო <w lemmaRef="#lex-bke">ბჭჱ</w> იგი <w lemma="#lex-dakhshul">დაჴშულ</w>.</quote>
         </p>
         
         <!-- ¶ 30 — Conclusion/Doxology -->
-        <pb n="45" ed="#edition"/>
+        <pb n="45" ed="#shanidze"/>
         <p xml:id="p30" n="30">
           <hi rend="initial">Ⴀ</hi>ჰა ესერა განჩინებაჲ <w lemmaRef="#lex-qmnuli">ქმნული</w> <w lemma="#lex-wmida">წმიდისა</w> <w lemma="#lex-ghmert">ღმრთის</w>-მშობელისა მარიამოსო. დასცხერინ ამიერითგან ყოველი <w lemmaRef="#lex-tsilobs">ცილობაჲ</w> და ჩუენ წმიდათა <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-tsign">წიგნთა</w> მოძღურებისათა განვნათლდებოდით, <w lemma="#lex-rayta">რაჲთა</w> სასუფეველსა ცათასა მიწევნად ღირს ვიქმნეთ <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w> იესუს <w lemma="#lex-mier">მიერ</w>, უფლისა ჩუენისა, რომლისაჲ არს <w lemmaRef="#lex-dideba">დიდებაჲ</w> და <w lemma="#lex-dzal">ძალი</w> მამისაჲ და ძისაჲ და <w lemma="#lex-suli">სულისა</w> წმიდისაჲ <w lemma="#lex-ats">აწ</w> და <w lemma="#lex-maradis">მარადის</w> და უკუნითი უკუნისამდე. <w lemmaRef="#lex-amen-amen">ამენ</w>.
         </p>

@@ -85,7 +85,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴐ</hi>აჟამს ღმრთეებაჲ იგი მისი კაცებასა ჩუენსა შეეზიარებოდა და <w lemmaRef="#lex-qaltsuli">ქალწულსა</w> მას, რომელი <w lemmaRef="#lex-queqanisa">ქუეყანისაჲ</w> იყო, დაადგრა მას <w lemma="#lex-shina">შინა</w>; ხოლო <w lemma="#lex-razhams">რაჟამს</w> <w lemmaRef="#lex-katseba">კაცებასა</w> ამას <w lemmaRef="#lex-chuen">ჩუენსა</w> <pb n="171r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173"/> ღმრთეებითა თჳსითა განამდიდრებდა, ღრუბლითა აღამაღლებდა <w lemmaRef="#lex-qorts">ჴორცთა</w> <w lemmaRef="#lex-chuen">ჩუენთა</w> და წესცა იყო, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-vidre">ვიდრე</w> ჩუენ <w lemma="#lex-tana">თანა</w> იყო, <w lemmaRef="#lex-dzliereba-dzrieleba">ძლიერებასა</w> <w lemmaRef="#lex-tvisi">თჳსსა</w> დაიმდაბლებდა, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-udzlureba">უძლურებასა</w> <w lemma="#lex-zeda">ზედა</w> დაემკჳდროს.
+          <hi rend="initial">Ⴐ</hi>აჟამს ღმრთეებაჲ იგი მისი კაცებასა ჩუენსა შეეზიარებოდა და <w lemmaRef="#lex-qaltsuli">ქალწულსა</w> მას, რომელი <w lemmaRef="#lex-queqanisa">ქუეყანისაჲ</w> იყო, დაადგრა მას <w lemma="#lex-shina">შინა</w>; ხოლო <w lemma="#lex-razhams">რაჟამს</w> <w lemmaRef="#lex-katseba">კაცებასა</w> ამას <w lemmaRef="#lex-chuen">ჩუენსა</w> <pb n="171r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0173"/> ღმრთეებითა თჳსითა განამდიდრებდა, ღრუბლითა აღამაღლებდა <w lemmaRef="#lex-qorts">ჴორცთა</w> <w lemmaRef="#lex-chuen">ჩუენთა</w> და წესცა იყო, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-vidre">ვიდრე</w> ჩუენ <w lemma="#lex-tana">თანა</w> იყო, <w lemmaRef="#lex-dzliereba-dzrieleba">ძლიერებასა</w> <w lemmaRef="#lex-tvisi">თჳსსა</w> დაიმდაბლებდა, <w lemma="#lex-rayta">რაჲთა</w> <w lemmaRef="#lex-udzlureba">უძლურებასა</w> <w lemma="#lex-zeda">ზედა</w> დაემკჳდროს.
         </p>
         
         <p xml:id="p4" n="4">
@@ -97,7 +97,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p6" n="6">
-          <hi rend="initial">Ⴀ</hi>მისთჳს ვიდოდა <w lemmaRef="#lex-upal">უფალი</w> მოწაფეთა <w lemma="#lex-tana">თანა</w> ამას <w lemmaRef="#lex-ormeots">ორმეოცსა</w> დღესა და <w lemmaRef="#lex-mermegha">მერმეღა</w> აღმაღლდა <pb n="171v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174"/> ცად, <w lemma="#lex-rayta">რაჲთა</w> დაამტკიცნეს მოწაფენი აღდგომისათჳს.
+          <hi rend="initial">Ⴀ</hi>მისთჳს ვიდოდა <w lemmaRef="#lex-upal">უფალი</w> მოწაფეთა <w lemma="#lex-tana">თანა</w> ამას <w lemmaRef="#lex-ormeots">ორმეოცსა</w> დღესა და <w lemmaRef="#lex-mermegha">მერმეღა</w> აღმაღლდა <pb n="171v" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0174"/> ცად, <w lemma="#lex-rayta">რაჲთა</w> დაამტკიცნეს მოწაფენი აღდგომისათჳს.
         </p>
         
         <p xml:id="p7" n="7">
@@ -113,7 +113,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p10" n="10">
-          <pb n="173r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176"/> <hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-ats">აწ</w> ამას <w lemmaRef="#lex-ormeots">ორმეოცსა</w> დღესა <w lemmaRef="#lex-aghviri">აღჳრნი</w> მარხვისანი განგუაშორნა ჩუენგან, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-tavad">თავადმან</w> <w lemmaRef="#lex-tvit">თჳთ</w> თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>: არა <w lemma="#lex-jer">ჯერ</w>-არს მარხვაჲ <w lemmaRef="#lex-qhda">ყრმათა</w> მექორწილეთაჲ და არცა <w lemmaRef="#lex-glova">გლოვაჲ</w>, <w lemma="#lex-vidre">ვიდრე</w> <w lemmaRef="#lex-sidze">სიძჱ</w> იგი მათ <w lemma="#lex-tana">თანა</w> არს. ხოლო მოვიდენ დღენი, <w lemma="#lex-razhams">რაჟამს</w> აღმაღლდეს მათგან <w lemmaRef="#lex-sidze">სიძჱ</w> იგი, და <w lemma="#lex-mashin">მაშინ</w> იმარხვიდენ<note n="9">(3)*</note>.
+          <pb n="173r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0176"/> <hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-ats">აწ</w> ამას <w lemmaRef="#lex-ormeots">ორმეოცსა</w> დღესა <w lemmaRef="#lex-aghviri">აღჳრნი</w> მარხვისანი განგუაშორნა ჩუენგან, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-tavad">თავადმან</w> <w lemmaRef="#lex-tvit">თჳთ</w> თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>: არა <w lemma="#lex-jer">ჯერ</w>-არს მარხვაჲ <w lemmaRef="#lex-qhda">ყრმათა</w> მექორწილეთაჲ და არცა <w lemmaRef="#lex-glova">გლოვაჲ</w>, <w lemma="#lex-vidre">ვიდრე</w> <w lemmaRef="#lex-sidze">სიძჱ</w> იგი მათ <w lemma="#lex-tana">თანა</w> არს. ხოლო მოვიდენ დღენი, <w lemma="#lex-razhams">რაჟამს</w> აღმაღლდეს მათგან <w lemmaRef="#lex-sidze">სიძჱ</w> იგი, და <w lemma="#lex-mashin">მაშინ</w> იმარხვიდენ<note n="9">(3)*</note>.
         </p>
         
         <p xml:id="p11" n="11">

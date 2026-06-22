@@ -71,7 +71,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
     <body>
       <div type="text" xml:id="mrav-nativity-theotokos-body">
         <head type="rubric">
-          <pb n="407r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0409"/>
+          <pb n="407r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0409"/>
           <hi rend="rubric">Ⴇ̃ა სეკტენბერსა ჱ̂. შობაჲ წმიდისა ღმრთის-მშობელისაჲ</hi>
         </head>
         

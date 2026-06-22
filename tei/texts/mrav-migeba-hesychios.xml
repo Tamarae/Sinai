@@ -75,7 +75,7 @@
         
         <!-- ¶ 1 -->
         <p xml:id="p1" n="1">
-          <pb n="85r" ed="#ms-cod"/>
+          <pb n="85r" ed="#S"/>
           <hi rend="initial">Ⴀ</hi>მად მის პირველისაებრ სარწმუნოებით და მანცა იგივე <w lemmaRef="#lex-khedva1">ხედვაჲ</w> მოიპოვენ.
         </p>
         
@@ -93,21 +93,21 @@
         <p xml:id="p4" n="4">
           <hi rend="initial">Ⴓ</hi><w lemmaRef="#lex-ukuetu">კუეთუ</w> ამის ცხოვრებისაგან
           <app xml:id="app-1">
-            <lem>მაძღარი</lem>
+            <lem resp="#shanidze">მაძღარი</lem>
             <note type="editorial">1*</note>
           </app>
           იყოს,
           <app xml:id="app-2">
-            <lem>ემსგავსენ</lem>
+            <lem resp="#shanidze">ემსგავსენ</lem>
             <note type="editorial">2*</note>
           </app>
           იგი წმიდასა სჳმეონს და ჰბაზევდინ იგი
           <app xml:id="app-3">
-            <lem>მისსა</lem>
+            <lem resp="#shanidze">მისსა</lem>
             <note type="editorial">3*</note>
           </app>
           მას ღირსებით ცხოვრებასა და იგიცა იქმენინ ტაძარ და სადგურ სულისა წმიდისა; და შენცა მიისწრაფე, <w lemma="#lex-vitartsa">ვითარცა</w> მან <w lemmaRef="#lex-tadzari">ტაძარსა</w> მას. <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-mun">მუნ</w> ორნი გურიტნი ანუ ორნი მართუენი ტრედისანი შეიწირვოდეს, ხოლო აქა <w lemmaRef="#lex-gurit">გურიტისა</w> <w lemma="#lex-tsil">წილ</w> წმიდაჲ იგი წმიდათაჲ შეიწირვის,
-          <pb n="91" ed="edition"/>
+          <pb n="91" ed="#shanidze"/>
           <w lemma="#lex-rametu">რამეთუ</w> სულისაჲ იყო <w lemmaRef="#lex-shesatsiravi">შესაწირავი</w> და ჴორცთაჲ <w lemma="#lex-mun">მუნ</w> მხოლოდ-შობილი ყრმად <w lemmaRef="#lex-chchvili-chvili">ჩჩჳლად</w> აცუენებდა.
         </p>
         
@@ -115,11 +115,11 @@
         <p xml:id="p5" n="5">
           <hi rend="initial">Ⴞ</hi>ოლო იორდანეს ჰხედევდ მას განშიშუვლებულად და დაგიკჳრდებოდა გარდამოსლვაჲ იგი სულისა წმიდისაჲ სახედ <w lemmaRef="#lex-tred">ტრედისა</w> მას <w lemma="#lex-zeda">ზედა</w> და გესმოდა ზეცით გარდამოჲ იგი <w lemmaRef="#lex-tsameba">წამებაჲ</w> მამისაჲ და
           <app xml:id="app-4">
-            <lem>აღიარებდ</lem>
+            <lem resp="#shanidze">აღიარებდ</lem>
             <note type="editorial">1*</note>
           </app>
           მას ღმრთად; ჰხედევდ მას ჯუარსა <w lemma="#lex-zeda">ზედა</w> დამოკიდებულსა და მიეგებვოდე კურთხევად
-          <pb n="85v" ed="#ms-cod"/>
+          <pb n="85v" ed="#S"/>
           <w lemmaRef="#lex-mkudret">მკუდრეთით</w> აღდგომილსა.
         </p>
         
@@ -137,7 +137,7 @@
           <w lemma="#lex-ats">აწ</w> არა თუ ძალნი ცატანი რაჲ საშინელებით მოავლინნა, არცა <w lemmaRef="#lex-angelozi">ანგელოზნი</w> იგი ცეცხლებრ მოტყინარენი განსადევნელად მისთჳს, რომელმან-იგი თქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>:
           <quote xml:lang="ka" source="#Is14-13">აღვიდე სიმაღლესა ცისასა და <w lemma="#lex-mun">მუნ</w> დავიდგნე საყდარნი <w lemmaRef="#lex-chemi">ჩემნი</w>,</quote>
           არამედ თჳთ თავადმან ქუაბითა მით და ბაგასა
-          <pb n="86r" ed="#ms-cod"/>
+          <pb n="86r" ed="#S"/>
           <w lemma="#lex-shina">შინა</w> შეხუეულამან სახუეველითა მოუღო სამოსელი იგი <w lemmaRef="#lex-didebisa">დიდებისაჲ</w>, რომელ-იგი ზაკუვით მიეპარა ადამისგან. და ამის ყოვლისათჳს დასძინა სჳმეონ და თქუა:
           <quote xml:lang="ka" source="#Lk2-30"><w lemma="#lex-rametu">რამეთუ</w> იხილეს თუალთა <w lemmaRef="#lex-chemi">ჩემთა</w> მაცხოვრებაჲ შენი.</quote>
         </p>
@@ -156,13 +156,13 @@
         <p xml:id="p10" n="10">
           <hi rend="initial">Ⴀ</hi>წ <w lemma="#lex-vitar">ვითარ</w> <w lemma="#lex-qovlad">ყოვლად</w> განკრძალულად თქუა სულიერად <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელმან</w> შემდგომიცა ესე:
           <quote xml:lang="ka" source="#Lk2-32"><w lemma="#lex-nateli">ნათელი</w> გამობრწყინებად <w lemmaRef="#lex-tsarmart">წარმართთა</w> <w lemma="#lex-zeda">ზედა</w> და დიდებად ერისა შენისა <w lemmaRef="#lex-israel">ისრაელისა</w>?</quote>
-          <pb n="92" ed="edition"/>
+          <pb n="92" ed="#shanidze"/>
         </p>
         
         <!-- ¶ 11 -->
         <p xml:id="p11" n="11">
           <hi rend="initial">Ⴓ</hi>კუეთუმცა არა მოვიდა მაცხოვარი ყოველთაჲ, წარმართნიმცა არა ცხომდეს; და <w lemmaRef="#lex-ukuetumtsa">უკუეთუმცა</w> ნატესავი აბრაჰამისი არა შოვამდგომელ იქმნა,
-          <pb n="87v" ed="#ms-cod"/>
+          <pb n="87v" ed="#S"/>
           განბნეულნი ისრაელისანი არამცა შეკრებულ იყვნეს; და უკუეთუმცა ბუნებისა იგი შემოქმედი და მუშაკი სარწმუნოებისაჲ არა მოსრულ იყო ზეცით, წინადაცუეთილებისა იგი ზღუდჱ არამცა დაცემულ იყო; და უკუეთუმცა ქვაჲ იგი <w lemmaRef="#lex-sakidur">საკიდური</w> ჩუენ არა <w lemma="#lex-khuro">ხურო</w> გუექმნა, <w lemmaRef="#lex-dakhsnil">დაჴსნილი</w> იგი სახლი ვერ შესაძლებელ იყო აღშჱნებად.
         </p>
         
@@ -180,7 +180,7 @@
         
         <!-- ¶ 14 -->
         <p xml:id="p14" n="14">
-          <pb n="87r" ed="#ms-cod"/>
+          <pb n="87r" ed="#S"/>
           <hi rend="initial">Ⴃ</hi>ა <persName ref="#pers-mariami">მარიამს</persName> ჰრქუა, <w lemma="#lex-vitarmed">ვითარმედ</w>:
           <quote xml:lang="ka" source="#Lk2-35">შენსაცა <w lemmaRef="#lex-suli">სულსა</w> განვიდეს <w lemmaRef="#lex-makhvili">მახჳლი</w>.</quote>
           <w lemma="#lex-odes">ოდეს</w> იხილო იგი ჯუარსა <w lemma="#lex-zeda">ზედა</w> განკუართული, რომელსა-იგი ჰმოსიეს <w lemmaRef="#lex-dideba">დიდებაჲ</w> მამისაჲ; <w lemma="#lex-odes">ოდეს</w>-იგი იხილო, რომელ-იგი შენ ჰშევ, <w lemma="#lex-razhams">რაჟამს</w> აგინებდენ მას, ჰურიანი და ყოველნი დაბადებულნი მატსა მას <w lemmaRef="#lex-kadreba">კადრებასა</w> მის <w lemma="#lex-zeda">ზედა</w> განკრთენ და შეიშალნენ; <w lemma="#lex-odes">ოდეს</w> იძრვოდის ქუეყანაჲ და კლდენი განსთქდენ და ქვანი აღცჳვოდიან, და ენებოს, რაჲთამცა დაჰკრბეს ღმრთის <w lemmaRef="#lex-mbrdzol">მბრძოლთა</w> მათ; <w lemma="#lex-odes">ოდეს</w> იხილო ტაძარსა მას სინა თჳნიერ ჴელისა <w lemmaRef="#lex-ganpeba">განპებაჲ</w> იგი კრეთსაბმელისაჲ მის, და <w lemma="#lex-mashin">მაშინ</w> გამოჩნდენ მრავალთაგან <w lemmaRef="#lex-gul">გულთა</w> ზრახვანი.
@@ -190,8 +190,8 @@
         <p xml:id="p15" n="15">
           <hi rend="initial">Ⴅ</hi>ითარ, ჵ, წინაწარმეტყუელო? გულთა ზრახვანიცა იგი გუაუწყენ ჩუენ. რომელთა მრავალთანი? — <w lemmaRef="#lex-tsan">ცან</w>, <w lemma="#lex-rametu">რამეთუ</w> პილატჱსი იგი დაბანაჲ ჴელთაჲ, განზრახვაჲ და <w lemmaRef="#lex-tsnoba1">ცნობაჲ</w> გულისაჲ ძისა ღმრთისაჲ იყო და გამოჩინებით თქუა:
           <quote xml:lang="ka" source="#Mt27-24"><w lemmaRef="#lex-ubralo">უბრალო</w> ვარ მე სისხლისაგან ამის <w lemmaRef="#lex-martl">მართლისა</w>.</quote>
-          <pb n="87v" ed="#ms-cod"/>
-          <pb n="93" ed="edition"/>
+          <pb n="87v" ed="#S"/>
+          <pb n="93" ed="#shanidze"/>
           და <w lemma="#lex-rayta">რაჲთა</w> კაიფაჲსი იგი სიბოროტჱ და ანნაჲს კადნიერებაჲ გამოჩნდეს და მღდელთა ცილობაჲ გამოცხადნეს და ასისთავისა იგი <w lemmaRef="#lex-tsameba">წამებაჲ</w> <w lemma="#lex-gvirgvinosan">გჳრგჳნოსან</w> იქმნეს და ავაზაკისაჲ მის აღსაარებაჲ ყოველსა ქუეყანასა განეფინოს და დედათაჲ იგი მოწრაფებაჲ ყოველთა უფროს გამოჩნდეს და ცნან ყოველთა <w lemmaRef="#lex-tsarmart">წარმართთა</w>, <w lemma="#lex-rametu">რამეთუ</w> ჯუარ-<w lemmaRef="#lex-tsuma">ცუმასა</w> მას <w lemma="#lex-tana">თანა</w> იყვნეს და საფლავისაგან არა განეშოვრნეს და მჴსნელსა მას და <w lemmaRef="#lex-mtsqalobel">მწყალობელსა</w> სასოებით მოელოდეს მესამესა დღესა აღდგომად.
         </p>
         

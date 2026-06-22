@@ -34,7 +34,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
               <msContents>
                 <msItem>
                   <locus from="463r" to="471v">ff. 463r–471v</locus>
-                </msItem>
+                <note>ძირ. სია. ლემა ამ გამოცემაში.</note></msItem>
               </msContents>
             </msDesc>
           </witness>
@@ -55,7 +55,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
   <text>
     <body>
       <div type="text" xml:id="mrav-peter-martyrdom-body">
-        <pb n="463r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0465/full/pct:100/0/default.jpg"/>
+        <pb n="463r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0465/full/pct:100/0/default.jpg"/>
         <head type="rubric">
           <hi rend="rubric"><hi rend="initial">Ⴜ</hi>ႠႫႤႡႠჂ ႼႫႨႣႨႱႠ ႮႤႲႰႤ ႫႭႺႨႵႳႪႨႱႠჂ</hi>
         </head>
@@ -65,7 +65,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-odes">ოდეს</w> იხილა სიმონ, <w lemma="#lex-rametu">რამეთუ</w> სირცხჳლეულ იქმნა წინაშე <w lemmaRef="#lex-qovel">ყოველთა</w>, თქუა: აღვფრინდე ზეცად და თქუენ <w lemmaRef="#lex-qovel">ყოველთა</w> დაგიტეოთ. და აღ-<w lemma="#lex-ra">რა</w>-ფრინდა <pb n="463v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0466/full/pct:100/0/default.jpg"/> <w lemmaRef="#lex-haer">ჰაერთა</w> <w lemma="#lex-shina">შინა</w> <w lemmaRef="#lex-eshmaki">ეშმაკთა</w> შეწევნითა, ილოცა წმიდამან <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName> და <w lemma="#lex-meqseulad">მეყსეულად</w> დაეცა სიმონ და შეიმუსრა. <w lemma="#lex-mashin">მაშინ</w> უფროჲსად განმრავლდა <w lemmaRef="#lex-sartsmunoeba">სარწმუნოებაჲ</w> <persName ref="#pers-iesu-kriste"><persName ref="#pers-iesu-kriste">ქრისტჱსი</persName></persName>.
+          <hi rend="initial">Ⴞ</hi>ოლო <w lemma="#lex-odes">ოდეს</w> იხილა სიმონ, <w lemma="#lex-rametu">რამეთუ</w> სირცხჳლეულ იქმნა წინაშე <w lemmaRef="#lex-qovel">ყოველთა</w>, თქუა: აღვფრინდე ზეცად და თქუენ <w lemmaRef="#lex-qovel">ყოველთა</w> დაგიტეოთ. და აღ-<w lemma="#lex-ra">რა</w>-ფრინდა <pb n="463v" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0466/full/pct:100/0/default.jpg"/> <w lemmaRef="#lex-haer">ჰაერთა</w> <w lemma="#lex-shina">შინა</w> <w lemmaRef="#lex-eshmaki">ეშმაკთა</w> შეწევნითა, ილოცა წმიდამან <persName ref="#pers-petre"><persName ref="#pers-petre">პეტრე</persName></persName> და <w lemma="#lex-meqseulad">მეყსეულად</w> დაეცა სიმონ და შეიმუსრა. <w lemma="#lex-mashin">მაშინ</w> უფროჲსად განმრავლდა <w lemmaRef="#lex-sartsmunoeba">სარწმუნოებაჲ</w> <persName ref="#pers-iesu-kriste"><persName ref="#pers-iesu-kriste">ქრისტჱსი</persName></persName>.
         </p>
         
         <p xml:id="p3" n="3">

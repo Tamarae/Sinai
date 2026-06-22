@@ -125,8 +125,8 @@
             <persName xml:lang="en">Gregory the Wonderworker of Neocaesarea</persName>
             <floruit notBefore="0213" notAfter="0270"/>
             <idno type="VIAF">88726043</idno>
-            <!-- CPG range: 1763–1783
-            <idno type="CPG">1763</idno> -->
+            <!-- CPG range: 1775-76
+            <idno type="CPG">1775</idno> -->
             <idno type="URI" subtype="ClavisClavium">https://clavis.brepols.net/clacla/OA/Details.aspx?id=9BE212B07BAE48A6B30DD40012714700</idno>
             <idno type="TM">347</idno>
             <idno type="URI" subtype="Syriaca">http://syriaca.org/person/513</idno>
@@ -566,7 +566,7 @@
               <locus from="1r" to="6r">ff. 1r–6r</locus>
             </msDesc>
           
-            <note type="CPG">1763</note>
+            <note type="CPG">1775</note>
             <note type="file">tei/texts/mrav-kharbeba-1.xml</note>
             <note type="status">done</note>
           </event>
@@ -575,14 +575,14 @@
                  corresp="#feast-annunciation"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული გრიგოლ ნეოკესარიელისა — ხარებისათჳს II</label>
-            <desc xml:lang="ka">თქმული მისივე, ხარებისათჳს, მეორე</desc>
+            <desc xml:lang="ka">თქმული მისივე, ხარებისათჳს, მეორჱ</desc>
             <note type="author" corresp="#aut-gregory-neocaes"/>
             <date type="feast" when="--03-25"/>
             <msDesc>
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="6v" to="15r">ff. 6v-15r</locus>
             </msDesc>
-            <note type="CPG">1764</note>
+            <note type="CPG">1776</note>
             <note type="file">tei/texts/mrav-kharbeba-2.xml</note>
             <note type="status">encoding-in-progress</note>
           </event>
@@ -598,7 +598,7 @@
               <msIdentifier><idno type="witness">N35</idno></msIdentifier>
               <locus from="23r" to="30v">ff. 23r–30v</locus>
             </msDesc>
-            <note type="CPG">1765</note>
+            <note type="CPG">1775</note>
             <note type="file">tei/texts/mrav-kharbeba-3.xml</note>
             <note type="status">encoding-in-progress</note>
           </event>
@@ -775,7 +775,7 @@
                  corresp="#feast-epiphany"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — ნათლ-ბა II</label>
-            <desc xml:lang="ka">თქუმული მისივე, ნათლის-ღებისათჳს (მეორე)</desc>
+            <desc xml:lang="ka">თქუმული მისივე, ნათლის-ღებისათჳს მეორჱ</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--01-06"/>
             <msDesc>
@@ -1153,7 +1153,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
                  corresp="#feast-dormition"
                  type="#genre-homily">
             <label xml:lang="ka">თქმული მისივე — გარდ. ი. II</label>
-            <desc xml:lang="ka">თქუმული მისივე, მეორე</desc>
+            <desc xml:lang="ka">თქუმული მისივე, მეორჱ</desc>
             <note type="author" corresp="#aut-chrysostom"/>
             <date type="feast" when="--08-15"/>
             <msDesc>
@@ -1183,7 +1183,7 @@ Line of edition: 10        ჰპოო ქრისტის შობასა
             corresp="#feast-john-baptist"
             type="#genre-homily">
             <label xml:lang="ka">იოვანე მთავარ-ეპსკოპოსი — იოვ. ნათ-სა თავ. (29 აგვ.)</label>
-            <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: მეორე</desc>
+            <desc xml:lang="ka">იოვანესი თავისა კუეთისათვის: მეორჱ</desc>
             <note type="author" corresp="#aut-iohannes-cpl"/>
             <date type="feast" when="--08-29"/>
             <msDesc>

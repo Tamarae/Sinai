@@ -74,7 +74,7 @@
                 <p xml:id="p1" n="1">
                     <hi rend="initial">Ⴑ</hi>აიდუმლოსა უცხოსა და დიდებულსა ვხედავ: მწყემსნი <w lemmaRef="#lex-sasmenel">სასმენელთა</w> <w lemmaRef="#lex-chemi">ჩემთა</w> ოხრიან; 
                     <app>
-                        <lem wit="#ms">არა</lem>
+                        <lem wit="#ms" resp="#shanidze">არა</lem>
                         <note type="editorial">2* in source</note>
                     </app> 
                     უდაბნოსა ქადაგებენ სახარებასა, არამედ ზეცისასა აქებენ გალობასა, <w lemma="#lex-angelozi">ანგელოზნი</w> ღაღადებენ, მთავარანგელოზნი გალობენ, აქებენ ქერობინნი, ადიდებენ <w lemmaRef="#lex-serabin">სერაბინნი</w>. <w lemmaRef="#lex-qovel">ყოველი</w> დაბადებული დღესასწაულობს, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-ghmerti">ღმერთსა</w> ხედვენ <w lemmaRef="#lex-queqana">ქუეყანასა</w> <w lemma="#lex-zeda">ზედა</w> და <w lemmaRef="#lex-katsi">კაცსა</w> ცათა <w lemma="#lex-shina">შინა</w>, ქუესკნელსა ზესკნელად განგებულებით და <w lemmaRef="#lex-zesknel">ზესკნელსა</w> <w lemmaRef="#lex-quesknel">ქუესკნელად</w> <w lemma="#lex-katsi">კაცთ</w>-მოყუარებით.
@@ -89,7 +89,7 @@
                 <p xml:id="p3" n="3">
                     <hi rend="initial">Ⴃ</hi>ღეს ძლიერი იგი <w lemmaRef="#lex-arsi">არსი</w> იშვების და <w lemmaRef="#lex-dambadebeli">დამბადებელი</w> დაებადების, <w lemma="#lex-rametu">რამეთუ</w> რომელი-იგი არს იყო, იქმნა <w lemma="#lex-katsi">კაც</w>; არა თუ 
                     <app>
-                        <lem wit="#ms">წარმოჩინებით</lem>
+                        <lem wit="#ms" resp="#shanidze">წარმოჩინებით</lem>
                         <note type="editorial">3* in source</note>
                     </app>
                     <pb n="31r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0063"/> 
@@ -100,7 +100,7 @@
                 <p xml:id="p4" n="4">
                     <hi rend="initial">Ⴀ</hi>რამედ <w lemma="#lex-odes">ოდეს</w> იშვა, ჰურიანი <w lemmaRef="#lex-uvar-qopa">უვარ</w>-ჰყოფდეს უცხოსა მას <w lemma="#lex-shoba">შობასა</w>, ფარისეველნი სხუად თარგმანებდეს საღმრთოთა წიგნთა, მწიგნობარნი წინააღმდგომ <w lemmaRef="#lex-shjul1">შჯულისა</w> იტყოდეს, ჰეროდე <w lemmaRef="#lex-shobili">შობილსა</w> მას ეძიებდა, არა რაჲთამცა 
                     <app>
-                        <lem wit="#ms">თაყუანის-სცა</lem>
+                        <lem wit="#ms" resp="#shanidze">თაყუანის-სცა</lem>
                         <note type="editorial">4* in source</note>
                     </app>, არამედ რაჲთამცა მოკლა.
                 </p>

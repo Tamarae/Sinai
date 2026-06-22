@@ -34,7 +34,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
               <msContents>
                 <msItem>
                   <locus from="456r" to="462v">ff. 456r–462v</locus>
-                </msItem>
+                <note>ძირ. სია. ლემა ამ გამოცემაში.</note></msItem>
               </msContents>
             </msDesc>
           </witness>
@@ -64,7 +64,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴞ</hi>ოლო წმიდაჲ კჳრიაკოს ეპისკოპოსი მივიდა <w lemmaRef="#lex-tkhem">თხემისა</w> <w lemmaRef="#lex-adgili">ადგილსა</w> და <w lemma="#lex-ertbamad">ერთბამად</w> მის <w lemma="#lex-tana">თანა</w> ძმანი მრავალნი, რომელნი-იგი უფალსა ჩუენსა იესუ <persName ref="#pers-iesu-kriste">ქრისტესა</persName> ესვიდეს ჯუარისა პოვნისათჳს, და <w lemmaRef="#lex-mkudari">მკუდარსა</w> მას <w lemma="#lex-zeda">ზედა</w> რომელ სასწაული იქმნა, აღიხილნა <w lemmaRef="#lex-tual">თუალნი</w> ზეცად და <w lemmaRef="#lex-qel">ჴელნი</w>, <w lemma="#lex-ertbamad">ერთბამად</w> იცემდა <w lemmaRef="#lex-mkerd">მკერდსა</w>, ღაღადებდა <w lemmaRef="#lex-guls-deba">გულს</w>-მოდგინედ უფლისა <w lemma="#lex-mimart">მიმართ</w> და აღიარებდა პირველთა მათ <w lemmaRef="#lex-umetseba">უმეცრებათა</w> <w lemmaRef="#lex-tvisi">თჳსთა</w> და ჰნატრიდა <pb n="233r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0235/full/pct:100/0/default.jpg"/> <w lemmaRef="#lex-qovel">ყოველთა</w> მორწმუნეთა ქრისტჱსთა.
+          <hi rend="initial">Ⴞ</hi>ოლო წმიდაჲ კჳრიაკოს ეპისკოპოსი მივიდა <w lemmaRef="#lex-tkhem">თხემისა</w> <w lemmaRef="#lex-adgili">ადგილსა</w> და <w lemma="#lex-ertbamad">ერთბამად</w> მის <w lemma="#lex-tana">თანა</w> ძმანი მრავალნი, რომელნი-იგი უფალსა ჩუენსა იესუ <persName ref="#pers-iesu-kriste">ქრისტესა</persName> ესვიდეს ჯუარისა პოვნისათჳს, და <w lemmaRef="#lex-mkudari">მკუდარსა</w> მას <w lemma="#lex-zeda">ზედა</w> რომელ სასწაული იქმნა, აღიხილნა <w lemmaRef="#lex-tual">თუალნი</w> ზეცად და <w lemmaRef="#lex-qel">ჴელნი</w>, <w lemma="#lex-ertbamad">ერთბამად</w> იცემდა <w lemmaRef="#lex-mkerd">მკერდსა</w>, ღაღადებდა <w lemmaRef="#lex-guls-deba">გულს</w>-მოდგინედ უფლისა <w lemma="#lex-mimart">მიმართ</w> და აღიარებდა პირველთა მათ <w lemmaRef="#lex-umetseba">უმეცრებათა</w> <w lemmaRef="#lex-tvisi">თჳსთა</w> და ჰნატრიდა <pb n="233r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0235/full/pct:100/0/default.jpg"/> <w lemmaRef="#lex-qovel">ყოველთა</w> მორწმუნეთა ქრისტჱსთა.
         </p>
         
         <p xml:id="p3" n="3">
@@ -76,7 +76,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p5" n="5">
-          <hi rend="initial">Ⴋ</hi>აშინ <w lemmaRef="#lex-muqlt-modrekit">მუჴლთ</w>-მოდრეკით <w lemmaRef="#lex-taqunistsema">თაყუანის</w>-სცა <note n="2">4*</note> მათ დედოფალმან. აღივსო სიბრძნითა ღმრთისაჲთა დედოფალი იგი და გულს-მოდგინედ სამსჭუალთა მათთჳს განიზრახვიდა, რაჲთამცა რაჲ ყვნა სამსჭუალნი იგი. ხოლო შევეღასძინა სიმართლისა გზაჲ გამოკულევად, და <w lemmaRef="#lex-madli">მადლმან</w> <w lemmaRef="#lex-suli">სულისა</w> წმიდისამან <w lemma="#lex-guliskhma">გულისხმა</w>-უყო <w lemmaRef="#lex-goneba">გონებასა</w> მისსა <note n="3">1*</note> წინაჲწარცა მრავლით <pb n="233v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236/full/pct:100/0/default.jpg"/> ჟამით უწყებული იგი. მოუწოდა კაცსა ერთსა სარწმუნოსა და გონიერთა, რომელი წინაჲთვე მრავალთაგან მართლად წოდებულ იყო, და ჰრქუა მას: დაჯედ აქა წინაშე თუალთა ჩემთა და შექმნენ სამსჭუალნი ესე შუად <w lemmaRef="#lex-aghviri">აღჳრისა</w> ჰუნისათჳს <w lemmaRef="#lex-mepe">მეფისა</w>, <w lemma="#lex-rayta">რაჲთა</w> იყოს ისრის <w lemmaRef="#lex-tchur1">ჭურ</w> ყოველთათჳს, <w lemmaRef="#lex-mter">მტერთა</w> ძლევად მის <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-mepe">მეფჱ</w>, დასამშჳდებელად ბრძოლისა, <w lemma="#lex-rayta">რაჲთა</w> აღესრულოს <w lemmaRef="#lex-tqumuli">თქუმული</w> იგი <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელისა</w> <w lemma="#lex-mier">მიერ</w>: და იყოს მას დღესა <w lemma="#lex-shina">შინა</w> რომელი <w lemmaRef="#lex-aghviri">აღჳრთა</w> მათ ცხენისათა იყოს, <w lemma="#lex-wmida">წმიდა</w> უფლისა წოდებულ იყოს <note n="4">(1)*</note>.
+          <hi rend="initial">Ⴋ</hi>აშინ <w lemmaRef="#lex-muqlt-modrekit">მუჴლთ</w>-მოდრეკით <w lemmaRef="#lex-taqunistsema">თაყუანის</w>-სცა <note n="2">4*</note> მათ დედოფალმან. აღივსო სიბრძნითა ღმრთისაჲთა დედოფალი იგი და გულს-მოდგინედ სამსჭუალთა მათთჳს განიზრახვიდა, რაჲთამცა რაჲ ყვნა სამსჭუალნი იგი. ხოლო შევეღასძინა სიმართლისა გზაჲ გამოკულევად, და <w lemmaRef="#lex-madli">მადლმან</w> <w lemmaRef="#lex-suli">სულისა</w> წმიდისამან <w lemma="#lex-guliskhma">გულისხმა</w>-უყო <w lemmaRef="#lex-goneba">გონებასა</w> მისსა <note n="3">1*</note> წინაჲწარცა მრავლით <pb n="233v" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0236/full/pct:100/0/default.jpg"/> ჟამით უწყებული იგი. მოუწოდა კაცსა ერთსა სარწმუნოსა და გონიერთა, რომელი წინაჲთვე მრავალთაგან მართლად წოდებულ იყო, და ჰრქუა მას: დაჯედ აქა წინაშე თუალთა ჩემთა და შექმნენ სამსჭუალნი ესე შუად <w lemmaRef="#lex-aghviri">აღჳრისა</w> ჰუნისათჳს <w lemmaRef="#lex-mepe">მეფისა</w>, <w lemma="#lex-rayta">რაჲთა</w> იყოს ისრის <w lemmaRef="#lex-tchur1">ჭურ</w> ყოველთათჳს, <w lemmaRef="#lex-mter">მტერთა</w> ძლევად მის <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-mepe">მეფჱ</w>, დასამშჳდებელად ბრძოლისა, <w lemma="#lex-rayta">რაჲთა</w> აღესრულოს <w lemmaRef="#lex-tqumuli">თქუმული</w> იგი <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელისა</w> <w lemma="#lex-mier">მიერ</w>: და იყოს მას დღესა <w lemma="#lex-shina">შინა</w> რომელი <w lemmaRef="#lex-aghviri">აღჳრთა</w> მათ ცხენისათა იყოს, <w lemma="#lex-wmida">წმიდა</w> უფლისა წოდებულ იყოს <note n="4">(1)*</note>.
         </p>
         
         <p xml:id="p6" n="6">
@@ -84,7 +84,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </p>
         
         <p xml:id="p7" n="7">
-          <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-madli">მადლი</w> <w lemmaRef="#lex-didi">დიდი</w> მოეცა წმიდასა მას <w lemmaRef="#lex-episkoposi">ეპისკოპოსსა</w> და ლოცვითა გუნდები <pb n="234r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0237/full/pct:100/0/default.jpg"/> ეშმაკთაჲ განასხა და <w lemmaRef="#lex-sneul">სნეულთა</w> ჰკურნებდა.
+          <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-madli">მადლი</w> <w lemmaRef="#lex-didi">დიდი</w> მოეცა წმიდასა მას <w lemmaRef="#lex-episkoposi">ეპისკოპოსსა</w> და ლოცვითა გუნდები <pb n="234r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0237/full/pct:100/0/default.jpg"/> ეშმაკთაჲ განასხა და <w lemmaRef="#lex-sneul">სნეულთა</w> ჰკურნებდა.
         </p>
         
         <p xml:id="p8" n="8">

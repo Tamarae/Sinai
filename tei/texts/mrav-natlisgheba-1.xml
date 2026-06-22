@@ -105,14 +105,14 @@
         
         <!-- ¶ 10 -->
         <p xml:id="p10" n="10">
-          <pb n="71r" ed="#ms"/>
+          <pb n="71r" ed="#S"/>
           <hi rend="initial">Ⴀ</hi>მას დღესა ცხორებაჲ სიკუდილსა დაამჴობს და უკუდავებაჲ გამოჩნდების, შჯული დასცხრების და მოსე მოჰრიდებს; <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელნი</w> დადუმნეს, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-madli">მადლი</w> გამობრწყინდების.
         </p>
         
         <!-- ¶ 11 -->
         <p xml:id="p11" n="11">
           <hi rend="initial">Ⴀ</hi>მას დღესა ეშმაკი იწყლა, ვეშაპი განსქთდა და <w lemmaRef="#lex-qovelive">ყოველივე</w> მისი დაეცა, ამისთჳს <w lemma="#lex-rametu">რამეთუ</w> ღმერთი გამოჩნდა. და მრავალნი მოწამენი გუასწავებენ, უფროჲს ხოლო ესე, ოთხმეოცდამეათჱ <w lemmaRef="#lex-psalmun">ფსალმუნი</w> რომელსა გჳთხრობს, <w lemma="#lex-vitarmed">ვითარმედ</w>:
-          <pb n="75" ed="#edition"/>
+          <pb n="75" ed="#shanidze"/>
           <quote xml:lang="ka" source="#Ps90-7">დაეცნენ <w lemma="#lex-martsxenit">მარცხენით</w> შენსა ათასნი და <w lemmaRef="#lex-bevr">ბევრნი</w> - <w lemma="#lex-marjuenit">მარჯუენით</w> <w lemmaRef="#lex-sheni-sheni">შენსა</w> და შენ არა მიგეახლნენ.</quote>
           <w lemma="#lex-jer">ჯერ</w>-არს, რაჲთამცა ყოველი წარმოვთქუთ და გამოვაჩინეთ <w lemmaRef="#lex-dideba">დიდებაჲ</w> ღმრთისაჲ და, <w lemma="#lex-vitar">ვითარ</w>-იგი წერილ არს, ძლევაჲ ეშმაკისაჲ და რომელ-ესე სიხარებისაგან გუესმა <placeName ref="#place-iordane">იორდანესა</placeName> <w lemma="#lex-zeda">ზედა</w> მოსლვისათჳს მხოლოდშობილისა.
         </p>
@@ -140,7 +140,7 @@
         <!-- ¶ 16 -->
         <p xml:id="p16" n="16">
           <hi rend="initial">Ⴀ</hi>მას დღესა ყოველნი ზეცისანი იხარებენ; იხარებს დღეს <w lemmaRef="#lex-qovel">ყოველი</w> დაბადებული მას <w lemma="#lex-zeda">ზედა</w>, ოხრის <w lemmaRef="#lex-zghua">ზღუაჲ</w>,
-          <pb n="71v" ed="#ms"/>
+          <pb n="71v" ed="#S"/>
           <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-khar1">უხარის</w>, და მას <w lemma="#lex-shina">შინა</w> მყოფნი <w lemmaRef="#lex-qovel">ყოველნი</w> მას ადიდებენ, <w lemma="#lex-rametu">რამეთუ</w> <placeName ref="#place-iordane">იორდანჱ</placeName> მიიწია და ახარა.
         </p>
         
@@ -164,9 +164,9 @@
           <hi rend="initial">Ⴄ</hi>ჰა, რავდენითა სიხარულითა სავსე არს მარიამ! რომელი-იგი არა იცოდა, არცა ეგონა, <w lemmaRef="#lex-suli">სულისა</w> წმიდისა <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-ghir">ღირს</w> იქმნა შობად; და ესე <w lemma="#lex-merme">მერმე</w> მდინარეს <w lemma="#lex-zeda">ზედა</w> ჴელმწიფებით შთასლვასა მას და განკჳრვებასა წყალთასა იდიდა, განხუამსა ცათასა და გარდამოსლვასა სულისა წმიდისასა სახედ <w lemmaRef="#lex-tred">ტრედის</w> მის <w lemma="#lex-zeda">ზედა</w> და <w lemmaRef="#lex-qma">ჴმასა</w> მამისა <w lemma="#lex-mier">მიერ</w> <w lemma="#lex-zegardamo">ზეგარდამო</w> <w lemmaRef="#lex-metqueli">მეტყუელსა</w> წამებით, <w lemma="#lex-vitarmed">ვითარმედ</w>:
           <quote xml:lang="ka" source="#Mt3-17">ეგე არს <w lemmaRef="#lex-dze">ძჱ</w> ჩემი <w lemmaRef="#lex-saquareli">საყუარელი</w>, რომელი მე <w lemma="#lex-satno">სათნო</w>-ვიყავ</quote>,
           და ჰხედვიდა
-          <pb n="76" ed="#edition"/>
+          <pb n="76" ed="#shanidze"/>
           იოვანჱს დგომასა მას და ანგელოზთა <w lemmaRef="#lex-krebul">კრებულსა</w>,
-          <pb n="72r" ed="#ms"/>
+          <pb n="72r" ed="#S"/>
           ჰურიათა განლიგებულთა და ეშმაკისა მწუხარებით <w lemmaRef="#lex-sivltola">სივლტოლასა</w>.
         </p>
         
@@ -190,7 +190,7 @@
         <!-- ¶ 24 -->
         <p xml:id="p24" n="24">
           <hi rend="initial">Ⴐ</hi>ომელ-იგი ბეთლემს იშვა და აღვასრულეთ <w lemmaRef="#lex-dghesastsauli">დღესასწაული</w> შობისა მისისაჲ <w lemma="#lex-utsinares">უწინარჱს</w> მცირედთა ამათ დღეთა, ესე დღეს იორდანედ მოვიდა და ნათელ-იღო იოვანჱსგან და განანათლნა ყოველნი დაბადებულნი მისნი. <w lemmaRef="#lex-amieritgan">ამიერითგან</w> ჩუენცა მათ ქერობინთა <w lemma="#lex-tana">თანა</w> ვიხარებდეთ <w lemmaRef="#lex-dghendel">დღენდელსა</w>
-          <pb n="72v" ed="#ms"/>
+          <pb n="72v" ed="#S"/>
           ამას დღესა და ვიტყოდით <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელისა</w> მის <w lemma="#lex-tana">თანა</w> და ვთქუათ, <w lemma="#lex-vitarmed">ვითარმედ</w>:
           <quote xml:lang="ka" source="#Ps117-24">ესე არს <w lemmaRef="#lex-khvalisa-dge">დღჱ</w>, რომელ <w lemma="#lex-qmna">ქმნა</w> <w lemmaRef="#lex-upal">უფალმან</w>. ვიხარებდეთ და ვიშუებდეთ ამას <w lemma="#lex-shina">შინა</w></quote>,
           <w lemma="#lex-rayta">რაჲთა</w> ყოველსა ჟამსა მტკიცედ დადგენ ფერჴნი <w lemmaRef="#lex-chuen">ჩუენნი</w> სიწრფელესა ეკლესიასა <w lemma="#lex-shina">შინა</w> <w lemma="#lex-maradis">მარადის</w>.

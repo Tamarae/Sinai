@@ -34,7 +34,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
               <msContents>
                 <msItem>
                   <locus from="312v" to="312v">f. 312v</locus>
-                </msItem>
+                <note>ძირ. სია. ლემა ამ გამოცემაში.</note></msItem>
               </msContents>
             </msDesc>
           </witness>
@@ -55,14 +55,14 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
   <text>
     <body>
       <div type="text" xml:id="mrav-colophon-makari-body">
-        <pb n="312v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
+        <pb n="312v" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
         
         <p xml:id="p1" n="1">
           <hi rend="initial">Ⴜ</hi>ყალობითა მამისაჲთა და ძისაჲთა და სულისა წმიდისაჲთა, ამის თაყუანის-საცემელისა სამებისა წმიდისა, ღმრთისა ჩუენისა მომადლებითა და მეოხებითა წმიდისა <w lemmaRef="#lex-ghmrtis-mbrdzol">ღმრთის</w>-<w lemmaRef="#lex-mshobel">მშობელისა</w> <w lemma="#lex-maradis">მარადის</w> ქალწულისა მარიამისითა, ძალითა პატიოსნისა და ცხოველს-მყოფელის საუფლოჲსა ჯუარისაჲთა და მადლითა წმიდისა ადგომისა საფლავისა უფლისა ჩუენისა იესუ ქრისტჱსისაჲთა და მეოხებითა ყოველთა წინაწარმეტყუელთა, მოციქულთა, მახარებელთა, მარტჳლთა მართალთა და მოწამეთაჲთა და ყოველთა წმიდათა მისთაჲთა და მადლითა წმიდისა <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელისა</w> და დიდებულისა მოსჱსითა მე, მაკარი ლეთეთელი, <w lemmaRef="#lex-dze">ძჱ</w> გიორგი <note n="1">1*</note> გრძელისაჲ, ცოდვილი <w lemma="#lex-priad">ფრიად</w>, ღირს მყო ღმერთმან შესაქმედ წმიდისა ამის <w lemmaRef="#lex-tsign">წიგნისა</w> <w lemmaRef="#lex-mravaltav">მრავალთავისა</w> <w lemma="#lex-tana">თანა</w>-შეწევნითა ძმისა ჩუენისა სულიერად პიმენ კახისაჲთა და ჴელთ-წერითა დედის ძმისწულისა ჩემისა ამონა ვახთანგ მოძარღულისა ძისაჲთა, საჴსენებელად სულთა ჩუენთათჳს და სულთა მშობელთა ჩუენთათჳს და <w lemmaRef="#lex-qovel">ყოველთა</w> გარდაცვალებულთა <w lemmaRef="#lex-tvisi">თჳსთა</w> ჩუენთათჳს.
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴀ</hi>წ, ღმერთმან დაგაჯეროს, <w lemmaRef="#lex-mamani">მამანო</w> და ძმანო, რომელნი აღმოიკითხვიდეთ წმიდათა ამათ <w lemmaRef="#lex-sitqua">სიტყუათა</w> ამათ <w lemma="#lex-mier">მიერ</w>, ჩუენ <w lemma="#lex-pirvel">პირველ</w> მოჴსენებულნი ესე ცოცხალნი და <w lemmaRef="#lex-mitsvalebuli">მიცვალებულნი</w> მოგჳჴსენენით ღმრთისათჳს წმიდათა <w lemmaRef="#lex-lotsva">ლოცვათა</w> თქუენთა <note n="2">2*</note> <w lemma="#lex-shina">შინა</w>, <w lemma="#lex-rayta">რაჲთა</w> თქუენ <w lemma="#lex-mier">მიერ</w> განვერნეთ ჩუენ დღესა მას <w lemmaRef="#lex-sashinel">საშინელსა</w> განკითხვისა <note n="3">3*</note> <pb n="274r" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/pct:100/0/default.jpg"/> ჩუენისასა ტირილისაგან თუალთაჲსა და ღრჭენისაგან კბილთაჲსა. და თქუენცა <w lemmaRef="#lex-upal">უფალმან</w> მოგიჴსენენინ <w lemmaRef="#lex-sasupevel">სასუფეველსა</w> მისსა <note n="4">4*</note>. <w lemmaRef="#lex-amen-amen">ამენ</w> <note n="5">5*</note>.
+          <hi rend="initial">Ⴀ</hi>წ, ღმერთმან დაგაჯეროს, <w lemmaRef="#lex-mamani">მამანო</w> და ძმანო, რომელნი აღმოიკითხვიდეთ წმიდათა ამათ <w lemmaRef="#lex-sitqua">სიტყუათა</w> ამათ <w lemma="#lex-mier">მიერ</w>, ჩუენ <w lemma="#lex-pirvel">პირველ</w> მოჴსენებულნი ესე ცოცხალნი და <w lemmaRef="#lex-mitsvalebuli">მიცვალებულნი</w> მოგჳჴსენენით ღმრთისათჳს წმიდათა <w lemmaRef="#lex-lotsva">ლოცვათა</w> თქუენთა <note n="2">2*</note> <w lemma="#lex-shina">შინა</w>, <w lemma="#lex-rayta">რაჲთა</w> თქუენ <w lemma="#lex-mier">მიერ</w> განვერნეთ ჩუენ დღესა მას <w lemmaRef="#lex-sashinel">საშინელსა</w> განკითხვისა <note n="3">3*</note> <pb n="274r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/pct:100/0/default.jpg"/> ჩუენისასა ტირილისაგან თუალთაჲსა და ღრჭენისაგან კბილთაჲსა. და თქუენცა <w lemmaRef="#lex-upal">უფალმან</w> მოგიჴსენენინ <w lemmaRef="#lex-sasupevel">სასუფეველსა</w> მისსა <note n="4">4*</note>. <w lemmaRef="#lex-amen-amen">ამენ</w> <note n="5">5*</note>.
         </p>
         
         <p xml:id="p3" n="3">

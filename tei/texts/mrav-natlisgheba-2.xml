@@ -63,7 +63,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         <!-- ¶ 2 -->
         <p xml:id="p2" n="2">
           <hi rend="initial">Ⴓ</hi>კუეთუ ქრისტემან მას დედაკაცსა მარტოსა მერწყულსა მაღალი იგი <w lemmaRef="#lex-sartsmunoeba">სარწმუნოებაჲ</w> <w lemma="#lex-tsina">წინა</w>-დაუდვა კიბედ და ასწავებდა და <w lemma="#lex-merme">მერმე</w> სხუათა მათ სამარიტელთა ქუე მყოფთა მაღალსა <w lemmaRef="#lex-tsavla">სწავლასა</w> ეკლესიისასა <w lemma="#lex-tsina">წინა</w>-უძღოდა. <w lemma="#lex-ravden">რავდენ</w> უფროჲს ჩუენ, რომელ-ესე დღეს <w lemmaRef="#lex-aqa">აქა</w> შეკრებულვართ! და <w lemma="#lex-ghatu">ღათუ</w> რაჲმე <w lemmaRef="#lex-mtsired">მცირედ</w> არიან, არამედ მათისა მოსწრაფებისათჳს გჳღირსვე სწავლად, <w lemma="#lex-rametu">რამეთუ</w> იგიცა წყლადვე მოსრულ არიან <w lemma="#lex-vitartsa">ვითარცა</w>-იგი დედაკაცი <w lemmaRef="#lex-samariti-samariteli">სამარიტელი</w>.
-          <pb n="73r" ed="#M"/>
+          <pb n="73r" ed="#S"/>
           არა თუ ჴორცთა ნებისა წყურილი აქუს, რაჲთამცა <w lemmaRef="#lex-qorts">ჴორცნი</w> იგი განიძღნეს, არამედ რაჲთამცა <w lemma="#lex-suli">სული</w> იგი შემწიკულული განბანეს და განწმიდნეს; არა თუ ჴორცთაჲ იგი მწინკული რაჲ ენება განბანად, არამედ რაჲთამცა <w lemmaRef="#lex-urvili">ურვილი</w> იგი <w lemma="#lex-suli">სული</w> განასპეტაკეს, <w lemma="#lex-rametu">რამეთუ</w> წერილსა მას <w lemmaRef="#lex-guls-deba">გულს</w>-ეტყოდეს აღსრულებად, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
           <quote xml:lang="ka" source="#Ps50-9">განმბანო მე და <w lemmaRef="#lex-upro-uprois-uproisad">უფროჲს</w> <w lemmaRef="#lex-tovli">თოვლისა</w> განვსპეტაკნე.</quote>
         </p>
@@ -81,7 +81,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         <!-- ¶ 5 -->
         <p xml:id="p5" n="5">
           <hi rend="initial">Ⴀ</hi>წ დავდუმნე <w lemma="#lex-vitartsa">ვითარცა</w> ძლეული ამას სიტყუასა და <w lemmaRef="#lex-skhua">სხუათა</w> სახეთა 
-          <pb n="73v" ed="#M"/>
+          <pb n="73v" ed="#S"/>
           გამოვეძიებდე. <w lemma="#lex-ukuetu">უკუეთუ</w> იოვანეს და მისთანათა მათ <w lemmaRef="#lex-ghaghadeba">ღაღადებაჲ</w> იგი ესმა, <w lemma="#lex-vitarmed">ვითარმედ</w> ჴმაჲ უფლისაჲ <w lemmaRef="#lex-tsqali">წყალთა</w> <w lemma="#lex-zeda">ზედა</w>, და მირბიოდეს იგინი იორდანედ; და კუალად ესმა ესევითარი <w lemmaRef="#lex-qma">ჴმაჲ</w> ზეცით, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
           <quote xml:lang="ka" source="#Mt3-17">ესე არს <w lemmaRef="#lex-dze">ძჱ</w> ჩემი <w lemmaRef="#lex-saquareli">საყუარელი</w>, რომელი მე <w lemma="#lex-satno">სათნო</w>-ვიყავ;</quote>
           და ესმა მათ, <w lemma="#lex-vitarmed">ვითარმედ</w> <w lemmaRef="#lex-tsqali">წყალთა</w> <w lemma="#lex-zeda">ზედა</w> შესულად არს <persName ref="#pers-iesu-kriste">ქრისტჱ</persName>, არა ხოლო თუ ხილვად მოვიდეს, არამედ რაყთამცა შთაჴდეს მის <w lemma="#lex-tana">თანა</w>. და ცნეს, <w lemma="#lex-rametu">რამეთუ</w> ნათელ-იღებდა უფალი. არა თუ წყალთაგან-რაჲ იგი განწმიდნა, არამედ წყალნი მისგან განწმიდნებოდეს; ცოდვაჲ მისთანა არა იყო, არამედ <w lemmaRef="#lex-tsqali">წყალნი</w> მისგან განწმედილ იქმნნეს.
@@ -95,7 +95,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         <!-- ¶ 7 -->
         <p xml:id="p7" n="7">
           <hi rend="initial">Ⴀ</hi>წ იხილე, <w lemma="#lex-vitar">ვითარ</w> უკუდავ არიან ჴმანი იგი მართალნი! რავდენი ჟამი არს იოვანჱს ქადაგებითგან და აქამომდე ყოველნივე მირბიოდეს ნათლისღებად დღესა მას. იოვანე ბუნებისა იგი შჯული სეუნდო, ხოლო გონიერთათჳს ჴმაჲ იგი იოვანჱსი ყურთა განუხუამს და მორბიან, არა თუ რაჲთამცა <w lemmaRef="#lex-tsodva1">ცოდვანი</w> იგი ხოლო მოეტევნეს, არამედ იოვანე ამას ქადაგებდა, რაჲთამცა სიწმიდჱცა იგი მოიღეს, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-esret">ესრჱთ</w> ღირს, რომელნი <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w> <w lemma="#lex-tana">თანა</w> ნათელ-იღებენ. იოვანჱსსა მას ნათლის-ცემასა შთავიდოდა <w lemmaRef="#lex-tsqali">წყალსა</w> <w lemma="#lex-katsi">კაცი</w> 
-          <pb n="74r" ed="#M"/>
+          <pb n="74r" ed="#S"/>
           ტჳრთოსანი ცოდვითა და აღმოვიდოდა სულმცირჱ, ხოლო ქრისტჱს სახელითა რომელნი ნათელ-იღებენ, შთავლენან <w lemmaRef="#lex-twirthosan">ტჳრთოსანნი</w> ცოდვათაგან, <w lemma="#lex-garna">გარნა</w> აღმოსლვასა არა ხოლო თუ ცოდვაჲ იგი განეყენის, არამედ სულიცა სიწმიდისაჲ შეემოსის; იოვანჱსსა მას ნათლის-ცემასა სინანულისასა სალმობანი განიკურნებოდეს, ხოლო <w lemmaRef="#lex-qristes-shoba">ქრისტჱს</w> <w lemma="#lex-mier">მიერ</w> ნათლის-ცემითა <w lemmaRef="#lex-ushuer">უშუერი</w> იგი <w lemma="#lex-suli">სული</w> <w lemma="#lex-shuenier1">შუენიერ</w> იქმნებოდა და <w lemma="#lex-gvirgvinosan">გჳრგჳნოსან</w>: შთაჴდის მეზუერჱ და აღმოჴდის მახარებელად; შთაჴდის მეძავი და აღმოჴდის, ნელსაცხებელსა შესწირავნ; შთაჴდის მჴეცი და აღმოჴდის <w lemmaRef="#lex-tskhovari">ცხოვარი</w>.
         </p>
         
@@ -111,7 +111,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
           და <w lemma="#lex-ats">აწ</w> ჩუენ ნათლის-ღებადმდე სიბოროტჱ იგი პირველი განვიშოროთ და <w lemmaRef="#lex-gesli">გესლი</w> იქედნისაჲ წარმოვსთხიოთ. <w lemma="#lex-nuukue">ნუუკუე</w> <w lemma="#lex-sadame">სადამე</w> ჩუენცა გურქუას იოვანე: 
           <quote xml:lang="ka" source="#Mt3-7">ნაშობნო იქედნეთანო, <w lemma="#lex-vin">ვინ</w> გიჩუენა თქუენ <w lemmaRef="#lex-sivltola">სივლტოლაჲ</w> მომავალისაგან რისხვისა?</quote>
           <w lemma="#lex-rametu">რამეთუ</w> ხედვიდა იგი სიმწარეს მას — დამკკდრებულსა <w lemmaRef="#lex-gesli">გესლსა</w> ჰურიათასა, 
-          <pb n="74v" ed="#M"/>
+          <pb n="74v" ed="#S"/>
           რომელნი-იგი არა ღირსად მოვიდოდეს მისა, და უწოდა მათ <w lemmaRef="#lex-nashob">ნაშობად</w> იქედნისა. და ეტყოდა მათ: "<w lemma="#lex-vin">ვინ</w> გიცუენა თქუენ სივლტოლაჲ რისხვისაგანა"? და რომელ-იგი იოვანე იქედნედ უწოდდა, მათ ქრისტჱ ძაღლად და <w lemmaRef="#lex-ghor">ღორად</w> ხადოდა და იტყოდა: 
           <quote xml:lang="ka" source="#Mt7-6">ნუ მისცემთ სიწმიდესა <w lemmaRef="#lex-chemi">ჩემსა</w> <w lemmaRef="#lex-dzaghli">ძაღლთა</w> და ნუცა დაუსხამთ <w lemmaRef="#lex-margalit">მარგალიტსა</w> <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> <w lemmaRef="#lex-ghor">ღორთა</w>, <w lemma="#lex-nuukue">ნუუკუე</w> დათრგუნონ.</quote>
           <w lemma="#lex-rametu">რამეთუ</w> ანგაჰრებასა და უძღებებასა მას მათსა ძაღლად ეტყოდა, ხოლო არაწმიდებასა მას ჴორცთასა და შებღალულებასა <w lemmaRef="#lex-ghor">ღორთა</w> ამსგავსებდა.

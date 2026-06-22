@@ -64,16 +64,16 @@
         <!-- ¶ 2 -->
         <p xml:id="p2" n="2">
           <hi rend="initial">Ⴋ</hi><w lemmaRef="#lex-merme">ერმე</w> მოვიდა <w lemma="#lex-odesme">ოდესმე</w> ჩუეულებისაებრ და იტყოდა ცილობით 
-          <pb n="69r" ed="#Ms"/> 
+          <pb n="69r" ed="#S"/> 
           მის <w lemma="#lex-tana">თანა</w>, <w lemma="#lex-vitartsa">ვითარცა</w>-იგი <w lemma="#lex-maradis">მარადის</w>. ხოლო წმიდამან <w lemmaRef="#lex-episkoposi">ეპისკოპოსმან</w> ჰრქუა მას: 
           <app xml:id="app-1">
-            <lem wit="#Ms">რომელი</lem>
-            <rdg type="variant">2*</rdg>
+            <lem wit="#Ms" resp="#shanidze">რომელი</lem>
+            <rdg type="confirmation" wit="#S">2*</rdg>
           </app> 
           ურწმუნოებად განიკითხვის თქუენ <w lemma="#lex-shoris1">შორის</w>: <w lemma="#lex-ukuetu">უკუეთუ</w> სიტყუანი ხოლო წერილთანი ჰქონდენ და სარწმუნოებისაგან და საქმეთაგან ცალიერ იყოს, ანუ რომელსა <w lemmaRef="#lex-sitqua">სიტყუანი</w> 
           <app xml:id="app-2">
-            <lem wit="#Ms">სარწმუნოებითურთ</lem>
-            <rdg type="variant">3*</rdg>
+            <lem wit="#Ms" resp="#shanidze">სარწმუნოებითურთ</lem>
+            <rdg type="confirmation" wit="#S">3*</rdg>
           </app> 
           აქუნდენ და საქმითა ნაყოფიერ იყოს?
         </p>
@@ -88,13 +88,13 @@
         <!-- ¶ 4 -->
         <p xml:id="p4" n="4">
           <hi rend="initial">Ⴞ</hi>ოლო წმიდაჲ იგი, სავსჱ მადლითა და სულითა წმიდითა, სეორგულებულ იყო და უფროჲს განძლიერდებოდა საღმრთოჲთა შეწევნითა და აღუთქუმიდა ყოფად ამას და ჰრქუა მას: შემომიდეგ და გიჩუენო შენ ძალი ქრისტჱსი. ხოლო ჰურიაჲ იგი შეუდგა მას <w lemmaRef="#lex-sitsil">სიცილით</w> და ბასრობით, 
-          <pb n="69v" ed="#Ms"/> 
+          <pb n="69v" ed="#S"/> 
           <w lemma="#lex-rametu">რამეთუ</w> ჰგონებდა მსგავსად ურწმუნოებისა <w lemmaRef="#lex-tvisi">თჳსისა</w> შეუძლებელ ყოფად. 
         </p>
         
         <!-- ¶ 5 -->
         <p xml:id="p5" n="5">
-          <pb n="73" ed="edition"/>
+          <pb n="73" ed="#shanidze"/>
           <hi rend="initial">Ⴂ</hi>ამოვიდეს ქალაქით და მოვიდეს <w lemmaRef="#lex-bortsu">ბორცუსა</w> მას <w lemma="#lex-tana">თანა</w>, და სხუაჲცა სიმრავლჱ ქრისტიანეთაჲ და ჰურიათჲ და წარმართთაჲ, <w lemma="#lex-mashin">მაშინ</w> ჰრქუა მას წმიდამან <w lemmaRef="#lex-episkoposi">ეპისკოპოსმან</w>: გრწამსა, ჰურიაო, <w lemma="#lex-vitarmed">ვითარმედ</w> შემძლებელ არს <persName ref="#pers-iesu-kriste">ქრისტე</persName> მონისა <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-tvisi">თჳსისა</w> ყოფად, <w lemma="#lex-vitartsa">ვითარცა</w> თქუა? უკუეტუ არა გრწამს, შენ ყავ, და მე მრწმენეს შენი. მიუგო ჰურიამან მან და თქუა: მე <w lemmaRef="#lex-arasada">არასადა</w> აღგითქუ შენ ყოფად ესე, არამედ — შენ. <w lemma="#lex-ats">აწ</w> ყავ, <w lemma="#lex-vitartsa">ვითარცა</w> აღმითქუ.
         </p>
         
@@ -107,7 +107,7 @@
         <!-- ¶ 7 -->
         <p xml:id="p7" n="7">
           <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-vitartsa">ვითარცა</w> ესე თქუა, დასწერა ჯუარი ბორცუსა მას და ჰრქუა: სახელითა უფლისა ჩუენისა იესუ ქრისტჱსითა აღიფხუერ და იცვალე ამიერ <w lemmaRef="#lex-iki">იქი</w>! და <w lemma="#lex-meqseulad">მეყსეულად</w> <w lemmaRef="#lex-sitqua">სიტყუასა</w> 
-          <pb n="70r" ed="#Ms"/> 
+          <pb n="70r" ed="#S"/> 
           მას აღიფხურა ბორცჳ იგი და იცვალა იმიერ იქი, <w lemmaRef="#lex-vinaitsaigi">ვინაჲცა</w>-იგი ჰრქუა მას.
           <note type="apparatus">1* იმიერ: შესაძლოა იყოს „იმიერ“ ან „ამიერ“ კონტექსტის მიხედვით.</note>
         </p>

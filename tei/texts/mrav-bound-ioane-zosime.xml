@@ -34,7 +34,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
               <msContents>
                 <msItem>
                   <locus from="312v" to="312v">f. 312v</locus>
-                </msItem>
+                <note>ძირ. სია. ლემა ამ გამოცემაში.</note></msItem>
               </msContents>
             </msDesc>
           </witness>
@@ -55,7 +55,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
   <text>
     <body>
       <div type="text" xml:id="mrav-bound-ioane-zosime-body">
-        <pb n="312v" ed="#N35" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
+        <pb n="312v" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
         
         <head type="invocation">
           <hi rend="initial">Ⴉ</hi>̃სნ სახელითა ღმრთისაჲთა
