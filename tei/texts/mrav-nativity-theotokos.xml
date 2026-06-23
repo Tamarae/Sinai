@@ -18,7 +18,7 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         <pubPlace>თბილისი</pubPlace>
         <date when="2026">2026</date>
         <availability status="free">
-          <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</licence>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
         </availability>
       </publicationStmt>
       
