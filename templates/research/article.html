@@ -44,6 +44,70 @@
         border-left: 2px solid var(--crimson);
         padding-left: .75rem;
     }
+    .subsubsection-head {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-weight: 600;
+        font-size: .92rem;
+        color: var(--ink);
+        margin: 1.35rem 0 .6rem;
+    }
+    .minor-head {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-weight: 600;
+        font-size: .88rem;
+        color: #4a4030;
+        margin: 1.1rem 0 .5rem;
+    }
+    .section-head, .subsection-head, .subsubsection-head, .minor-head { scroll-margin-top: 5rem; }
+
+    /* ── Printed typography ───────────────────────── */
+    .article-body .ls { letter-spacing: .18em; }
+    .article-body strong { font-weight: 700; }
+    .article-body .unclear { border-bottom: 1px dotted #999; }
+    .article-body .gap { color: #999; cursor: help; }
+
+    /* Run-in labels (not sections) */
+    .article-body p.label-p {
+        font-weight: 600;
+        text-align: left;
+        margin: 1.2em 0 .4em;
+    }
+
+    /* ── Block quotations and verse ───────────────── */
+    .block-quote {
+        margin: .3em 0 1.2em 1.5rem;
+        padding-left: 1rem;
+        border-left: 2px solid #e0d8ce;
+        font-size: .96rem;
+    }
+    .block-quote .lg { margin-bottom: .5em; }
+    .block-quote .lg:last-child { margin-bottom: 0; }
+    .block-quote .l { display: block; text-align: left; }
+    .block-quote .l-pb { line-height: 1.2; }
+    .article-body .block-quote p.quote-p { margin-bottom: .5em; }
+    .quote-bibl {
+        display: block;
+        font-size: .82rem;
+        color: #6b7280;
+        margin-top: .15em;
+    }
+
+    /* ── Lists (numbering is part of the printed text) ── */
+    .art-list-wrap { margin: .2em 0 1.2em 1.5rem; }
+    .article-body p.list-head { font-weight: 600; text-align: left; margin: .9em 0 .3em; }
+    .art-list { list-style: none; margin: 0; padding: 0; }
+    .art-list li { margin-bottom: .15em; text-align: left; }
+    .art-list .item-label { font-weight: 600; display: block; }
+    .article-body .art-list p.item-p { margin-bottom: .4em; }
+
+    /* ── Page breaks, section marks, closer ───────── */
+    .pb-block { text-align: right; line-height: 1; margin: -.6em 0 .5em; }
+    .article-body p.asterism {
+        text-align: center;
+        color: #999;
+        margin: 1.6em 0;
+    }
+    .closer { text-align: right; margin: .5em 0 2em; }
 
     /* ── ⎘ URN: hidden, revealed on paragraph hover ──
        No paragraph numbers in research articles.
@@ -77,6 +141,11 @@
 
     /* Room for the button */
     .article-body { padding-left: 3rem; }
+    @media (max-width: 640px) {
+        .article-body { padding-left: 0; }
+        .cts-copy-btn { display: none; }
+        .block-quote, .art-list-wrap { margin-left: .5rem; }
+    }
 
     /* ── Footnote superscripts ────────────────────── */
     .note-ref-wrap { position: relative; display: inline; }
@@ -91,6 +160,7 @@
         cursor: pointer;
     }
     .note-ref:hover { text-decoration: underline; }
+    h2 .note-ref, h3 .note-ref, h4 .note-ref, h5 .note-ref { font-weight: 400; }
 
     /* ── Footnote tooltip ─────────────────────────── */
     .fn-tooltip {
@@ -109,10 +179,12 @@
         padding: .65rem .75rem;
         font-size: .75rem;
         font-family: 'Noto Sans Georgian', sans-serif;
+        font-weight: 400;
         line-height: 1.55;
         color: #4a4030;
         z-index: 100;
         text-align: left;
+        letter-spacing: normal;
     }
     .fn-tooltip::after {
         content: '';
@@ -142,6 +214,7 @@
         font-family: 'Noto Sans Georgian', sans-serif;
         color: #bbb;
         font-style: normal;
+        font-weight: 400;
         letter-spacing: .03em;
         margin: 0 .15em;
     }
@@ -186,10 +259,11 @@
         line-height: 1.6;
         font-family: 'Noto Sans Georgian', sans-serif;
         color: #4a4030;
+        scroll-margin-top: 5rem;
     }
     .footnote-n {
         flex-shrink: 0;
-        width: 1.5rem;
+        width: 1.75rem;
         text-align: right;
         color: var(--crimson);
         font-weight: 600;
@@ -201,6 +275,7 @@
     .footnote-body .bib-title-foreign,
     .footnote-body cite { font-style: italic; }
     .footnote-body .bib-author { font-weight: 600; }
+    .footnote-body .ls { letter-spacing: .15em; }
     .fn-backref {
         color: #bbb;
         text-decoration: none;
@@ -248,8 +323,38 @@
         transition: all .15s;
     }
     .toc-link:hover { color: var(--crimson); border-left-color: var(--crimson); }
+    .toc-scroll { max-height: calc(100vh - 7rem); overflow-y: auto; }
 </style>
 {% endblock %}
+
+{% macro render_section(section) %}
+  {% if section.head_html %}
+    {% if section.level == 0 %}
+    <h2 class="section-head" id="{{ section.xml_id }}">{{ section.head_html | safe }}</h2>
+    {% elif section.level == 1 %}
+    <h3 class="subsection-head" id="{{ section.xml_id }}">{{ section.head_html | safe }}</h3>
+    {% elif section.level == 2 %}
+    <h4 class="subsubsection-head" id="{{ section.xml_id }}">{{ section.head_html | safe }}</h4>
+    {% else %}
+    <h5 class="minor-head" id="{{ section.xml_id }}">{{ section.head_html | safe }}</h5>
+    {% endif %}
+  {% endif %}
+  {% for b in section.blocks %}
+    {% if b.kind == "p" %}
+      {% if b.xml_id %}
+    <p id="{{ b.xml_id }}"><button class="cts-copy-btn"
+            data-urn="urn:cts:georgiansin:{{ article.meta.xml_id }}.geo1:{{ b.xml_id }}"
+            title="CTS URN კოპირება"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN</button>{{ b.html | safe }}</p>
+      {% else %}
+    <p>{{ b.html | safe }}</p>
+      {% endif %}
+    {% elif b.kind == "section" %}
+    {{ render_section(b.section) }}
+    {% else %}
+    {{ b.html | safe }}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
 
 {% block main %}
 
@@ -277,7 +382,7 @@
 <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
   <div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-12">
 
-    <div>
+    <div class="min-w-0">
       {% if article.meta.abstract %}
       <div class="mb-8 p-4 rounded-sm border text-sm font-serif-geo leading-relaxed text-gray-600"
            style="border-color:#e0d8ce; background:var(--gold-pale);">
@@ -288,28 +393,7 @@
 
       <div class="article-body">
         {% for section in article.sections %}
-
-          {% if section.head %}
-          <h2 class="section-head" id="{{ section.xml_id }}">{{ section.head }}</h2>
-          {% endif %}
-
-          {% for p in section.paragraphs %}
-          <p id="{{ p.xml_id }}"><button class="cts-copy-btn"
-                  data-urn="urn:cts:georgiansin:{{ article.meta.xml_id }}.geo1:{{ p.xml_id }}"
-                  title="CTS URN კოპირება"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN</button>{{ p.html | safe }}</p>
-          {% endfor %}
-
-          {% for sub in section.subsections %}
-            {% if sub.head %}
-            <h3 class="subsection-head" id="{{ sub.xml_id }}">{{ sub.head }}</h3>
-            {% endif %}
-            {% for p in sub.paragraphs %}
-            <p id="{{ p.xml_id }}"><button class="cts-copy-btn"
-                    data-urn="urn:cts:georgiansin:{{ article.meta.xml_id }}.geo1:{{ p.xml_id }}"
-                    title="CTS URN კოპირება"><svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg> URN</button>{{ p.html | safe }}</p>
-            {% endfor %}
-          {% endfor %}
-
+        {{ render_section(section) }}
         {% endfor %}
       </div>
 
@@ -329,12 +413,12 @@
       {% endif %}
 
       <div class="mt-8 pt-4 border-t text-xs text-gray-400" style="border-color:#e0d8ce;">
-        TEI-XML: <code class="font-mono">tei/research/{{ article.meta.xml_id }}.xml</code>
+        TEI-XML: <code class="font-mono">tei/research/{{ article.meta.file_path.name }}</code>
       </div>
     </div>
 
     <aside class="hidden lg:block">
-      <div class="sticky top-20">
+      <div class="sticky top-20 toc-scroll">
         <p class="text-xs font-medium text-gray-400 tracking-widest mb-3">შინაარსი</p>
         {% for section in article.sections %}
           {% if section.head %}
