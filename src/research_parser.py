@@ -7,16 +7,25 @@ Rendering model
 ---------------
 Each <div> becomes an ArticleSection whose `blocks` list keeps the document
 order of everything inside it: paragraphs, run-in labels, block quotations and
-verse, lists, page breaks between blocks, section milestones, closers and
-nested sub-sections (any depth). The template walks `blocks` recursively.
+verse, lists, tables, page breaks between blocks, section milestones, closers
+and nested sub-sections (any depth). The template walks `blocks` recursively.
 
 `paragraphs` and `subsections` are still filled for backward compatibility.
 
-Inline content (in paragraphs, heads, list items, verse lines, quotations and
-notes) goes through one renderer, so a <note> or <pb> is handled wherever it
-occurs, and typography (<hi rend="bold|letterspaced|spaced|italic|sup|sub">),
-<foreign>, <unclear>, <gap> and <lb> are kept. Elements without a dedicated rule
-render their content as plain text, so no text is ever dropped.
+A <head rend="run-in"> (numbered § opening a paragraph, as printed) is merged
+into the start of the division's first paragraph; the section keeps its id and
+still appears in the table of contents.
+
+Divisions in <back> are rendered only when their @type is in RENDER_BACK_TYPES
+(e.g. errata); colophons, series lists etc. stay in the XML only.
+
+Inline content (in paragraphs, heads, list items, verse lines, table cells,
+quotations and notes) goes through one renderer, so a <note> or <pb> is handled
+wherever it occurs, and typography (<hi rend="bold|letterspaced|spaced|italic|
+sup|sub">), <foreign>, <unclear>, <gap>, <supplied> and <lb> are kept. A second
+call to an existing footnote (<ref type="noteAnchor" target="#note-id">) renders
+as a link to that footnote. Elements without a dedicated rule render their
+content as plain text, so no text is ever dropped.
 """
 
 from __future__ import annotations
@@ -30,6 +39,9 @@ NS = {
 }
 XML_ID   = "{http://www.w3.org/XML/1998/namespace}id"
 XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
+
+# <back> divisions shown on the article page (others stay in the XML only)
+RENDER_BACK_TYPES = {"errata", "corrigenda", "appendix"}
 
 
 # ── Dataclasses ───────────────────────────────────────
@@ -49,7 +61,7 @@ class Paragraph:
 
 @dataclass
 class Block:
-    kind:    str                              # p | label | quote | list | pb | milestone | closer | section
+    kind:    str                              # p | label | quote | list | table | gap | pb | milestone | closer | section
     html:    str = ""
     xml_id:  str = ""
     section: "ArticleSection | None" = None   # only for kind == "section"
@@ -66,6 +78,7 @@ class ArticleSection:
     level:       int = 0                      # 0 = top-level division
     head_html:   str = ""                     # heading with formatting + note refs
     blocks:      list[Block] = field(default_factory=list)
+    run_in:      bool = False                 # head merged into first paragraph
 
 
 @dataclass
@@ -122,6 +135,8 @@ def _plain(el) -> str:
                 tag = _local(c)
                 if tag == "lb":
                     out.append(" ")
+                elif tag == "supplied":
+                    out.append("[" + _plain(c) + "]")
                 elif tag == "gap":
                     out.append("[…]")
                 elif tag not in ("note", "desc"):
@@ -281,14 +296,18 @@ class ArticleParser:
         sections: list[ArticleSection] = []
         all_notes: list[NoteContent] = []
 
+        divs: list[etree._Element] = []
         if body is not None:
-            for div in body:
-                if not _is_element(div):
-                    continue
-                if _local(div) == "div":
-                    sec, notes = self._parse_div(div, level=0)
-                    sections.append(sec)
-                    all_notes.extend(notes)
+            divs += [d for d in body if _is_element(d) and _local(d) == "div"]
+        back = self._root.find(".//tei:text/tei:back", NS)
+        if back is not None:
+            divs += [d for d in back if _is_element(d) and _local(d) == "div"
+                     and d.get("type") in RENDER_BACK_TYPES]
+
+        for div in divs:
+            sec, notes = self._parse_div(div, level=0)
+            sections.append(sec)
+            all_notes.extend(notes)
 
         return Article(meta=meta, sections=sections, all_notes=all_notes)
 
@@ -345,6 +364,9 @@ class ArticleParser:
             elif tag == "list":
                 blocks.append(Block("list", self._render_list(child, section_notes)))
 
+            elif tag == "table":
+                blocks.append(Block("table", self._render_table(child, section_notes)))
+
             elif tag == "pb":
                 blocks.append(Block("pb",
                     f'<div class="pb-block">{self._render_pb(child)}</div>'))
@@ -358,12 +380,38 @@ class ArticleParser:
                 blocks.append(Block("closer",
                     f'<div class="closer">{self._inline(child, section_notes)}</div>'))
 
+            elif tag == "gap":
+                blocks.append(Block("gap",
+                    f'<p class="gap-block">{self._inline_el(child, section_notes)}</p>'))
+
             else:
                 # note at division level, ab, etc. — render inline content as a paragraph
                 html = (self._inline_el(child, section_notes)
-                        if tag == "note" else self._inline(child, section_notes))
+                        if tag in ("note", "ref", "supplied") else self._inline(child, section_notes))
                 if html.strip():
                     blocks.append(Block("p", html))
+
+        # Run-in head: print it at the start of the first paragraph, as in the book.
+        # Only when the paragraph is the first thing after the head (page breaks
+        # in between are moved after the head text).
+        run_in = False
+        if head_el is not None and head_el.get("rend") == "run-in" and head_html:
+            lead = 0
+            while lead < len(blocks) and blocks[lead].kind == "pb":
+                lead += 1
+            if lead < len(blocks) and blocks[lead].kind == "p":
+                first = blocks[lead]
+                pbs = "".join(
+                    b.html.replace('<div class="pb-block">', "").replace("</div>", "")
+                    for b in blocks[:lead])
+                first.html = (f'<strong class="run-in-head" id="{_escape(xml_id)}">'
+                              f'{head_html}</strong> {pbs}{first.html}')
+                for p in paragraphs:
+                    if p.xml_id == first.xml_id:
+                        p.html = first.html
+                        break
+                blocks = blocks[lead:]
+                run_in = True
 
         sec = ArticleSection(
             n=n, xml_id=xml_id, head=head,
@@ -373,6 +421,7 @@ class ArticleParser:
             level=level,
             head_html=head_html,
             blocks=blocks,
+            run_in=run_in,
         )
         return sec, section_notes
 
@@ -473,6 +522,34 @@ class ArticleParser:
                 parts.append(_escape(child.tail))
         return "".join(parts)
 
+    def _render_table(self, table: etree._Element, notes: list[NoteContent]) -> str:
+        parts: list[str] = ['<div class="table-wrap"><table class="art-table">']
+        head = table.find("tei:head", NS)
+        if head is not None:
+            parts.append(f'<caption>{self._inline(head, notes)}</caption>')
+        for row in table:
+            if not _is_element(row):
+                continue
+            if _local(row) == "pb":
+                continue
+            if _local(row) != "row":
+                continue
+            is_label = row.get("role") == "label"
+            cells: list[str] = []
+            for cell in row:
+                if not _is_element(cell) or _local(cell) != "cell":
+                    continue
+                tag = "th" if is_label or cell.get("role") == "label" else "td"
+                span = ""
+                if cell.get("cols"):
+                    span += f' colspan="{_escape(cell.get("cols"))}"'
+                if cell.get("rows"):
+                    span += f' rowspan="{_escape(cell.get("rows"))}"'
+                cells.append(f'<{tag}{span}>{self._inline(cell, notes)}</{tag}>')
+            parts.append("<tr>" + "".join(cells) + "</tr>")
+        parts.append("</table></div>")
+        return "".join(parts)
+
     @staticmethod
     def _render_pb(pb: etree._Element) -> str:
         pb_n = pb.get("n", "")
@@ -524,8 +601,27 @@ class ArticleParser:
         if tag == "pb":
             return self._render_pb(child)
 
+        if tag == "ref" and child.get("type") == "noteAnchor":
+            # second call to a footnote that is printed once
+            target = child.get("target", "").lstrip("#")
+            n = child.get("n", "")
+            if not n:
+                hit = self._root.xpath("//tei:note[@xml:id=$i]", namespaces=NS, i=target)
+                n = hit[0].get("n", "") if hit else ""
+            return (
+                f'<span class="note-ref-wrap" data-note-id="{_escape(target)}">'
+                f'<a href="#fn-{_escape(target)}" class="note-ref">{_escape(n)}</a>'
+                f'</span>'
+            )
+
         if tag == "ref":
             return _render_ref(child)
+
+        if tag == "supplied":
+            return f'<span class="supplied" title="ედიტორის დამატება">[{self._inline(child, notes, ctx)}]</span>'
+
+        if tag == "table":
+            return self._render_table(child, notes)
 
         if tag == "persName":
             return f'<span class="persname">{self._inline(child, notes, ctx)}</span>'

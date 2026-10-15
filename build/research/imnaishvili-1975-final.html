@@ -163,11 +163,41 @@
     }
     .section-head, .subsection-head, .subsubsection-head, .minor-head { scroll-margin-top: 5rem; }
 
+    /* Numbered § opening a paragraph (head rend="run-in"), as printed */
+    .run-in-head { font-weight: 700; scroll-margin-top: 5rem; }
+    .run-in-head .note-ref { font-weight: 400; }
+
+    /* Editorial supplement, e.g. a heading lost in the scan */
+    .article-body .supplied { color: #6b7280; }
+
+    /* ── Tables (e.g. errata) ─────────────────────── */
+    .table-wrap { overflow-x: auto; margin: .3em 0 1.3em; }
+    .art-table {
+        border-collapse: collapse;
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+    .art-table caption { text-align: left; font-weight: 600; padding-bottom: .4em; }
+    .art-table th, .art-table td {
+        border-bottom: 1px solid #e0d8ce;
+        padding: .3em .9em .3em 0;
+        text-align: left;
+        vertical-align: top;
+    }
+    .art-table th {
+        font-family: 'Noto Sans Georgian', sans-serif;
+        font-size: .75rem;
+        font-weight: 600;
+        color: #6b7280;
+        border-bottom-color: #c9bfb2;
+    }
+
     /* ── Printed typography ───────────────────────── */
     .article-body .ls { letter-spacing: .18em; }
     .article-body strong { font-weight: 700; }
     .article-body .unclear { border-bottom: 1px dotted #999; }
     .article-body .gap { color: #999; cursor: help; }
+    .article-body p.gap-block { text-align: center; margin: .6em 0 1.1em; }
 
     /* Run-in labels (not sections) */
     .article-body p.label-p {
