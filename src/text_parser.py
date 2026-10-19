@@ -535,3 +535,70 @@ def collect_attestations(xml_path: Path, text_id: str, title: str) -> dict:
         })
 
     return result
+
+def collect_name_attestations(xml_path: Path, text_id: str, title: str) -> dict:
+    """
+    Scan xml_path for <persName ref="#id"> and <placeName ref="#id">.
+    Returns {authority_id: [{text_id, title, para_id, para_n, quote}]},
+    mirroring collect_attestations() so build_authority() can render corpus
+    attestations (clickable links to the text paragraph) exactly like the
+    lexicon does. Deduplicates per (id, text_id, para_id).
+    """
+    tree = ET.parse(xml_path)
+    root = tree.getroot()
+
+    parent_map: dict = {}
+    for parent in root.iter():
+        for child in parent:
+            parent_map[child] = parent
+
+    _P_TAGS = {f"{{{_TEI}}}p", f"{{{_TEI}}}ab"}
+    result: dict = {}
+    seen: set = set()
+
+    tags = (f"{{{_TEI}}}persName", f"{{{_TEI}}}placeName")
+    for name_el in root.iter():
+        if name_el.tag not in tags:
+            continue
+        ref = name_el.get("ref", "")
+        if not ref.startswith("#"):
+            continue
+        auth_id = ref[1:]
+
+        para_el = None
+        node = name_el
+        while node in parent_map:
+            node = parent_map[node]
+            if node.tag in _P_TAGS:
+                para_el = node
+                break
+        if para_el is None:
+            continue
+
+        para_id = para_el.get(f"{{{_XML}}}id", "")
+        para_n  = para_el.get("n", para_id.lstrip("p") if para_id else "")
+
+        key = (auth_id, text_id, para_id)
+        if key in seen:
+            continue
+        seen.add(key)
+
+        full_text, wstart, wlen = _get_context(para_el, name_el)
+        HALF = 40
+        cs = max(0, wstart - HALF)
+        ce = min(len(full_text), wstart + wlen + HALF)
+        quote = " ".join(full_text[cs:ce].split())
+        if cs > 0:
+            quote = "…" + quote
+        if ce < len(full_text):
+            quote += "…"
+
+        result.setdefault(auth_id, []).append({
+            "text_id": text_id,
+            "title":   title,
+            "para_id": para_id,
+            "para_n":  para_n,
+            "quote":   quote,
+        })
+
+    return result

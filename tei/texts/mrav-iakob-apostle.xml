@@ -62,125 +62,125 @@
         
         <!-- ¶ 1 -->
         <p xml:id="p1" n="1">
-          <lb n="3"/><hi rend="initial">Ⴃ</hi>ა იყო <w lemma="#lex-razhams">რაჟამს</w> <w lemma="#lex-neba">ნებითა</w> უფლისა ჩუენისა იესუ <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName> სცვალებდა
+          <lb n="3"/><hi rend="initial">Ⴃ</hi>ა იყო რაჟამს <w lemma="#lex-neba">ნებითა</w> უფლისა ჩუენისა <persName ref="#pers-iesu-kriste">იესუ</persName> <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName> <w lemma="#lex-tsvaleba">სცვალებდა</w>
           <lb n="4"/>ტაძარსა მას, რომელი იყო ისრაელისაჲ, კათოლიკედ ეკლესიად, <persName ref="#pers-iakob">იაკობ</persName>,
-          <lb n="5"/>რომელსა წოდებულ იყო <w lemma="#lex-dzma">ძმად</w> უფლისა. და ესე იყო <w lemma="#lex-pirvel">პირველ</w> ეპისკოპოს <placeName ref="#place-ierusalemi">იერუსალემს</placeName>
-          <lb n="6"/>და წოდებულ იყო <w lemma="#lex-qovel">ყოვლისაგან</w> ერისა "იაკობ <w lemmaRef="#lex-martali">მართალი</w>", <w lemma="#lex-rametu">რამეთუ</w>
+          <lb n="5"/>რომელსა წოდებულ იყო <w lemma="#lex-dzma">ძმად</w> უფლისა. და ესე იყო პირველ ეპისკოპოს <placeName ref="#place-ierusalemi">იერუსალემს</placeName>
+          <lb n="6"/>და წოდებულ იყო ყოვლისაგან ერისა "<persName ref="#pers-iakob">იაკობ</persName> მართალი", <w lemma="#lex-rametu">რამეთუ</w>
           <lb n="7"/>მრავალთა მოწაფეთა უფლისათა ერქუა <persName ref="#pers-iakob">იაკობ</persName>, ხოლო ესე იყო <w lemma="#lex-dzma">ძმაჲ</w> უფლისაჲ.
-          <lb n="8"/>და საშოჲთგან დედისა თჳსისაჲთ წმიდაჲ იყო, ღჳნოჲ და <w lemmaRef="#lex-tapluch">თაფლუჭი</w>
-          <lb n="9"/>არა ესუა და მშუმინვაერისაგანი არა ეჭამა და <w lemmaRef="#lex-makhvili">მახჳლი</w> არა აღსრულ იყო
-          <lb n="10"/><w lemmaRef="#lex-tav">თავსა</w> მისსა და ზეტი არა ეცხო და აბანოდ არა მივიდის. და ესე მარტოჲ
-          <lb n="11"/>შევიდოდა ტაძრად <w lemma="#lex-sitsmide">სიწმიდესა</w> მას და არა სეიმოსის მან <w lemmaRef="#lex-matql">მატყლისა</w> <w lemma="#lex-samosel">სამოსელი</w>,
-          <lb n="12"/>არამედ ჰმოსიედ მას <w lemmaRef="#lex-sel">სელისა</w> <w lemma="#lex-samosel">სამოსელი</w> და <w lemma="#lex-esret">ესრჱთ</w> შევიდის ტაძრად.
-          <lb n="13"/><w lemma="#lex-maradis">მარადის</w> <w lemma="#lex-mukhl">მუჴლ</w>-დადგმით დგან და ილოცავნ ღმრთისა <w lemma="#lex-mimart">მიმართ</w> მოტევებისათჳს
-          <lb n="14"/><w lemma="#lex-qovel">ყოვლისა</w> ერისა. და <w lemma="#lex-maradis">მარადის</w> ლოცვითა მისითა იქმნა <w lemmaRef="#lex-tqav">ტყავი</w> <w lemma="#lex-mukhl">მუჴლთა</w>
-          <lb n="15"/>მისთაჲ <w lemma="#lex-dakanebul">დაკანებულ</w> <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-mukhl">მუჴლნი</w> აქლემისანი. და <w lemma="#lex-maradis">მარადის</w> <w lemma="#lex-simartle">სიმართლისა</w>
-          <lb n="16"/>მისისაგან წოდებულ იყო <w lemma="#lex-qovel">ყოვლისაგან</w> ერისა "იაკობ <w lemmaRef="#lex-martali">მართალი</w>". და თქუეს
+          <lb n="8"/>და საშოჲთგან <w lemma="#lex-deda">დედისა</w> თჳსისაჲთ წმიდაჲ იყო, <w lemma="#lex-ghwno">ღჳნოჲ</w> და <w lemma="#lex-tapluchi">თაფლუჭი</w>
+          <lb n="9"/>არა ესუა და მშუმინვაერისაგანი არა ეჭამა და <w lemma="#lex-makhwli">მახჳლი</w> არა აღსრულ იყო
+          <lb n="10"/>თავსა მისსა და ზეტი არა ეცხო და აბანოდ არა მივიდის. და ესე მარტოჲ
+          <lb n="11"/>შევიდოდა ტაძრად სიწმიდესა მას და არა სეიმოსის მან <w lemma="#lex-matqli">მატყლისა</w> <w lemma="#lex-samoseli">სამოსელი</w>,
+          <lb n="12"/>არამედ <w lemma="#lex-mosa">ჰმოსიედ</w> მას <w lemma="#lex-seli">სელისა</w> <w lemma="#lex-samoseli">სამოსელი</w> და <w lemma="#lex-esret">ესრჱთ</w> შევიდის ტაძრად.
+          <lb n="13"/><w lemma="#lex-maradis">მარადის</w> <w lemma="#lex-muqhli">მუჴლ</w>-დადგმით <w lemma="#lex-dgoma">დგან</w> და <w lemma="#lex-lotsva">ილოცავნ</w> ღმრთისა მიმართ მოტევებისათჳს
+          <lb n="14"/>ყოვლისა ერისა. და <w lemma="#lex-maradis">მარადის</w> ლოცვითა მისითა იქმნა ტყავი <w lemma="#lex-muqhli">მუჴლთა</w>
+          <lb n="15"/>მისთაჲ <w lemma="#lex-dakanebuli">დაკანებულ</w> <w lemma="#lex-vitartsa">ვითარცა</w> <w lemma="#lex-muqhli">მუჴლნი</w> აქლემისანი. და <w lemma="#lex-maradis">მარადის</w> სიმართლისა
+          <lb n="16"/>მისისაგან წოდებულ იყო ყოვლისაგან ერისა "<persName ref="#pers-iakob">იაკობ</persName> მართალი". და თქუეს
           <lb n="17"/><w lemma="#lex-ebraelebr">ებრაელებრ</w> ობე, რომელ არს "სიმტკიცჱ ერისაჲ და განმართლებაჲ".
         </p>
         
         <!-- ¶ 2 -->
         <p xml:id="p2" n="2">
           <pb n="54v" ed="#S"/>
-          <lb n="18"/><hi rend="initial">Ⴃ</hi>ა რომელნიმე <w lemmaRef="#lex-shvidi">შჳდისა</w> მის წვალებისაგანნი ჰკითხვიდეს და ეტყოდეს,
-          <lb n="19"/><w lemma="#lex-vitarmed">ვითარმედ</w>: რომელი არს <w lemmaRef="#lex-kari">კარი</w> ღმრთისაჲ? და იგი მოასწავებდა მათ
+          <lb n="18"/><hi rend="initial">Ⴃ</hi>ა რომელნიმე შჳდისა მის წვალებისაგანნი ჰკითხვიდეს და ეტყოდეს,
+          <lb n="19"/><w lemma="#lex-vitarmed">ვითარმედ</w>: რომელი არს კარი ღმრთისაჲ? და იგი მოასწავებდა მათ
           <lb n="20"/>მაცხოვრისასა. და რომელთამე მათგანთა ჰრწმენა უფლისა ჩუენისა <persName ref="#pers-iesu-kriste">იესუ</persName>
-          <lb n="21"/>ქრისტჱსთჳს. ხოლო <w lemma="#lex-pirvel">პირველთა</w> მათ განდგომილთა <w lemmaRef="#lex-mtsvalebel">მწვალებელთა</w> არა ჰრწმენა
-          <lb n="22"/>აღდგომაჲ და <w lemmaRef="#lex-artsagha">არცაღა</w> <w lemma="#lex-moslva">მოსლვისა</w> მისისაჲ და <w lemmaRef="#lex-migeb">მიგებად</w> <w lemma="#lex-katsi">კაცად</w>-<w lemma="#lex-katsi">კაცადსა</w> საქმეთა
-          <lb n="23"/>მათთაებრ. ხოლო იაკობის <w lemma="#lex-gamo">გამო</w> ჰრწმეა <w lemmaRef="#lex-mravali">მრავალთა</w>
+          <lb n="21"/>ქრისტჱსთჳს. ხოლო პირველთა მათ განდგომილთა მწვალებელთა არა ჰრწმენა
+          <lb n="22"/><w lemma="#lex-aghdgoma">აღდგომაჲ</w> და არცაღა <w lemma="#lex-moslva">მოსლვისა</w> მისისაჲ და <w lemma="#lex-migeba">მიგებად</w> კაცად-კაცადსა საქმეთა
+          <lb n="23"/>მათთაებრ. ხოლო <persName ref="#pers-iakob">იაკობის</persName> <w lemma="#lex-gamo">გამო</w> ჰრწმეა მრავალთა
           <lb n="24"/>მთავართაგანთაცა.
         </p>
         
         <!-- ¶ 3 -->
         <p xml:id="p3" n="3">
-          <lb n="25"/><hi rend="initial">Ⴃ</hi>ა იყო შფოთი <w lemmaRef="#lex-didi">დიდი</w> <w lemma="#lex-shoris1">შორის</w> მწიგნობართა მათ ჰურიათასა და <w lemmaRef="#lex-parisevel">ფარისეველთა</w>
-          <lb n="26"/>და იტყოდეს: განგუადგების ჩუენგან <w lemma="#lex-qovel">ყოველი</w> <w lemmaRef="#lex-eri">ერი</w> მოლოდებითა
-          <lb n="27"/>იესუ ქრისტჱსითა. და ეტყოდეს შემოკრებულნი <persName ref="#pers-iakob">იაკობს</persName>; გევედრებით შენ, დააყენე
-          <lb n="28"/><w lemmaRef="#lex-eri">ერი</w> ესე, <w lemma="#lex-rayta">რაჲთა</w> არა სეუდგენ ქრისტესა; შეგივრდებით, დააყენე <w lemmaRef="#lex-eri">ერი</w> ესე
-          <lb n="29"/>მოსრული <w lemmaRef="#lex-dghesastsauli">დღესასწაულსა</w> ამას <w lemma="#lex-vneba">ვნებისასა</w>, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-qovel">ყოველნივე</w> გერჩიან შენ,
-          <lb n="30"/>და ჩუენ <w lemma="#lex-motsame">მოწამე</w> ვართ, ვითარად <w lemmaRef="#lex-martali">მართალი</w> <w lemma="#lex-katsi">კაცი</w> <w lemma="#lex-khar1">ხარ</w> და თუალთ-ხუმით
+          <lb n="25"/><hi rend="initial">Ⴃ</hi>ა იყო შფოთი დიდი შორის მწიგნობართა მათ ჰურიათასა და ფარისეველთა
+          <lb n="26"/>და იტყოდეს: <w lemma="#lex-gandgoma">განგუადგების</w> ჩუენგან ყოველი <w lemma="#lex-eri">ერი</w> მოლოდებითა
+          <lb n="27"/><persName ref="#pers-iesu-kriste">იესუ</persName> <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName>. და ეტყოდეს <w lemma="#lex-shemokreba">შემოკრებულნი</w> <persName ref="#pers-iakob">იაკობს</persName>; გევედრებით შენ, <w lemma="#lex-daqeneba">დააყენე</w>
+          <lb n="28"/><w lemma="#lex-eri">ერი</w> ესე, <w lemma="#lex-rayta">რაჲთა</w> არა სეუდგენ <persName ref="#pers-iesu-kriste">ქრისტესა</persName>; <w lemma="#lex-shevrdoma">შეგივრდებით</w>, <w lemma="#lex-daqeneba">დააყენე</w> <w lemma="#lex-eri">ერი</w> ესე
+          <lb n="29"/><w lemma="#lex-moslva">მოსრული</w> დღესასწაულსა ამას <w lemma="#lex-vneba">ვნებისასა</w>, <w lemma="#lex-rametu">რამეთუ</w> ყოველნივე <w lemma="#lex-rch">გერჩიან</w> შენ,
+          <lb n="30"/>და ჩუენ <w lemma="#lex-motsame">მოწამე</w> ვართ, ვითარად მართალი კაცი <w lemma="#lex-khar">ხარ</w> და თუალთ-ხუმით
           <pb n="56" ed="#shanidze"/>
-          <lb n="1"/><w lemmaRef="#lex-arara">არარას</w> ჰყოფ. <w lemma="#lex-ats">აწ</w> დაარწმუნე სიმრავლესა ამას ერისასა, <w lemma="#lex-rayta">რაჲთა</w> არა
-          <lb n="2"/>სცთებოდიან შემდგომითა <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName>, და <w lemma="#lex-qovel">ყოველი</w> ესე <w lemmaRef="#lex-eri">ერი</w> და ჩუენ გერჩით
-          <lb n="3"/>სიტყუათა <w lemmaRef="#lex-sheni-sheni">შენთა</w>. <w lemma="#lex-ats">აწ</w> აღჴედ <w lemmaRef="#lex-godol">გოდოლსა</w> ამას ტაძრისასა, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-uaghres">უაღრჱს</w>
-          <lb n="4"/>შჩნდე <w lemma="#lex-qovel">ყოველთასა</w> და <w lemmaRef="#lex-advil-advilad">ადვილად</w> ისმინონ <w lemma="#lex-khma">ჴმაჲ</w> შენი სიმრავრემან <pb n="55r" ed="#S"/> <w lemmaRef="#lex-ama">ამან</w>
-          <lb n="5"/>ერისამან, რომელნი <w lemmaRef="#lex-paseq">პასექისა</w> ამისთჳს მოსრულ არიან ჰურიანი და
-          <lb n="6"/><w lemmaRef="#lex-tsarmart">წარმართნი</w>.
+          <lb n="1"/>არარას <w lemma="#lex-qopa">ჰყოფ</w>. <w lemma="#lex-ats">აწ</w> <w lemma="#lex-dartsmuneba">დაარწმუნე</w> სიმრავლესა ამას ერისასა, <w lemma="#lex-rayta">რაჲთა</w> არა
+          <lb n="2"/><w lemma="#lex-tstoma">სცთებოდიან</w> შემდგომითა <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName>, და ყოველი ესე <w lemma="#lex-eri">ერი</w> და ჩუენ <w lemma="#lex-rch">გერჩით</w>
+          <lb n="3"/><w lemma="#lex-sitqua">სიტყუათა</w> შენთა. <w lemma="#lex-ats">აწ</w> <w lemma="#lex-aghqhdoma">აღჴედ</w> <w lemma="#lex-godoli">გოდოლსა</w> ამას ტაძრისასა, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-uaghres">უაღრჱს</w>
+          <lb n="4"/><w lemma="#lex-cha">შჩნდე</w> ყოველთასა და ადვილად ისმინონ <w lemma="#lex-qhma">ჴმაჲ</w> შენი სიმრავრემან <pb n="55r" ed="#S"/> ამან
+          <lb n="5"/>ერისამან, რომელნი პასექისა ამისთჳს მოსრულ არიან ჰურიანი და
+          <lb n="6"/><w lemma="#lex-tsarmarti">წარმართნი</w>.
         </p>
         
         <!-- ¶ 4 -->
         <p xml:id="p4" n="4">
-          <lb n="7"/><hi rend="initial">Ⴃ</hi>ა დაადგინეს წმიდაჲ იაკობ ფარისეველთა მათ და <w lemmaRef="#lex-mtsignobar">მწიგნობართა</w> <w lemma="#lex-zeda">ზედა</w>
-          <lb n="8"/><w lemmaRef="#lex-godol">გოდოლსა</w> მას და <w lemma="#lex-khma">ჴმა</w>-ყვეს მისა <w lemma="#lex-mimart">მიმართ</w> და თქუეს <w lemma="#lex-ertbamad">ერთბამად</w>: <w lemmaRef="#lex-martl">მართლისა</w> მაგის
-          <lb n="9"/>რომლისა ჩუენ <w lemma="#lex-qovel">ყოველნი</w> დამორჩილებულ ვართ, ხოლო <w lemmaRef="#lex-eri">ერი</w> ესე სცთების
-          <lb n="10"/>შემდგომითა იესუ <w lemmaRef="#lex-dzhuar-tsuma">ჯუარ</w>-ცუმულისათჳს, <w lemma="#lex-ats">აწ</w> გჳთხარ ჩუენ <w lemmaRef="#lex-gantskhadebulad">განცხადებულად</w>
-          <lb n="11"/>იესუჲსთჳს, <w lemma="#lex-dze">ძისა</w> <w lemma="#lex-katsi">კაცისაჲსა</w>? <w lemma="#lex-rametu">რამეთუ</w> იგი თავადი არს <persName ref="#pers-iesu-kriste">იესუ</persName>, <w lemma="#lex-dze">ძჱ</w> ღმრთისა
-          <lb n="12"/>ცხოველისაჲ, და იგი ზის <w lemma="#lex-marjuenit">მარჯუენით</w> ღმრთისა და განმზადებულ არს <w lemma="#lex-moslva">მოსლვად</w>
-          <lb n="13"/>ღრუბლითა და მიგებად თითოეულსა საქმეთა მათთაებრ. და <w lemmaRef="#lex-mravali">მრავალნი</w>
-          <lb n="14"/>მორწმუნენი ეწამებოდეს იაკობს, ღაღადებდეს და იტყოდეს: <w lemmaRef="#lex-osana-osana">ჵსანა</w> <w lemma="#lex-dze">ძესა</w>
+          <lb n="7"/><hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-dadgineba">დაადგინეს</w> წმიდაჲ <persName ref="#pers-iakob">იაკობ</persName> ფარისეველთა მათ და მწიგნობართა <w lemma="#lex-zeda">ზედა</w>
+          <lb n="8"/><w lemma="#lex-godoli">გოდოლსა</w> მას და <w lemma="#lex-qhma">ჴმა</w>-ყვეს მისა მიმართ და თქუეს <w lemma="#lex-ertbamad">ერთბამად</w>: <w lemma="#lex-martl">მართლისა</w> მაგის
+          <lb n="9"/>რომლისა ჩუენ ყოველნი დამორჩილებულ ვართ, ხოლო <w lemma="#lex-eri">ერი</w> ესე <w lemma="#lex-tstoma">სცთების</w>
+          <lb n="10"/>შემდგომითა <persName ref="#pers-iesu-kriste">იესუ</persName> <w lemma="#lex-juartsuma">ჯუარ</w>-ცუმულისათჳს, <w lemma="#lex-ats">აწ</w> გჳთხარ ჩუენ განცხადებულად
+          <lb n="11"/>იესუჲსთჳს, <w lemma="#lex-dze">ძისა</w> კაცისაჲსა? <w lemma="#lex-rametu">რამეთუ</w> იგი თავადი არს <persName ref="#pers-iesu-kriste">იესუ</persName>, <w lemma="#lex-dze">ძჱ</w> ღმრთისა
+          <lb n="12"/>ცხოველისაჲ, და იგი ზის მარჯუენით ღმრთისა და განმზადებულ არს <w lemma="#lex-moslva">მოსლვად</w>
+          <lb n="13"/>ღრუბლითა და <w lemma="#lex-migeba">მიგებად</w> თითოეულსა საქმეთა მათთაებრ. და მრავალნი
+          <lb n="14"/>მორწმუნენი <w lemma="#lex-tsameba">ეწამებოდეს</w> <persName ref="#pers-iakob">იაკობს</persName>, ღაღადებდეს და იტყოდეს: <w lemma="#lex-osana-2">ჵსანა</w> <w lemma="#lex-dze">ძესა</w>
           <lb n="15"/>დავითისსა!
         </p>
         
         <!-- ¶ 5 -->
         <p xml:id="p5" n="5">
-          <lb n="16"/><hi rend="initial">Ⴋ</hi>აშინ მწიგნობართა მათ და <w lemmaRef="#lex-parisevel">ფარისეველთა</w> თქუეს <w lemma="#lex-urtiertas">ურთიერთას</w>: <w lemmaRef="#lex-boroti">ბოროტად</w>
-          <lb n="17"/>ვყავთ <w lemmaRef="#lex-saqme">საქმჱ</w> ესე, რომელ ვქმენით, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-ama">ამან</w> წამა იესუჲსთჳს. <w lemma="#lex-ats">აწ</w>
-          <lb n="18"/>მოვედით და აღვჴდეთ და გარდამოვაგდოთ იგი, <w lemma="#lex-rayta">რაჲთა</w> შეშინდეს <w lemmaRef="#lex-eri">ერი</w> ესე
-          <lb n="19"/>და არა ჰრწმენეს მისი. და <w lemma="#lex-khma">ჴმა</w>-ყვეს <w lemma="#lex-khma">ჴმითა</w> დიდითა და თქუეს: ჵჵ, <w lemmaRef="#lex-martali">მართალი</w>
-          <lb n="20"/>ესე სცთა! და აღესრულა <w lemmaRef="#lex-tserili">წერილი</w> იგი ესაია <w lemma="#lex-tsinatsarmetqveli">წინაწარმეტყუელისაჲ</w>, რომელ
-          <lb n="21"/>თქუა: <quote>მოვედით და მოვკლათ <w lemmaRef="#lex-martali">მართალი</w> იგი, <w lemma="#lex-rametu">რამეთუ</w> განმაძნებელ ჩუენდა
-            <lb n="22"/>არს.</quote> ამიერითგან <pb n="55v" ed="#S"/> <w lemmaRef="#lex-nashrom">ნაშრომსა</w> <w lemma="#lex-khel">ჴელთა</w> მათთასა ჭამდენ.
+          <lb n="16"/><hi rend="initial">Ⴋ</hi><w lemma="#lex-mashin">აშინ</w> მწიგნობართა მათ და ფარისეველთა თქუეს ურთიერთას: ბოროტად
+          <lb n="17"/>ვყავთ საქმჱ ესე, რომელ ვქმენით, <w lemma="#lex-rametu">რამეთუ</w> ამან წამა იესუჲსთჳს. <w lemma="#lex-ats">აწ</w>
+          <lb n="18"/><w lemma="#lex-moslva">მოვედით</w> და <w lemma="#lex-aghqhdoma">აღვჴდეთ</w> და <w lemma="#lex-gardamogdeba">გარდამოვაგდოთ</w> იგი, <w lemma="#lex-rayta">რაჲთა</w> შეშინდეს <w lemma="#lex-eri">ერი</w> ესე
+          <lb n="19"/>და არა ჰრწმენეს მისი. და <w lemma="#lex-qhma">ჴმა</w>-ყვეს <w lemma="#lex-qhma">ჴმითა</w> დიდითა და თქუეს: ჵჵ, მართალი
+          <lb n="20"/>ესე <w lemma="#lex-tstoma">სცთა</w>! და აღესრულა წერილი იგი <persName ref="#pers-esaia">ესაია</persName> წინაწარმეტყუელისაჲ, რომელ
+          <lb n="21"/>თქუა: <quote><w lemma="#lex-moslva">მოვედით</w> და მოვკლათ მართალი იგი, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-gandzneba">განმაძნებელ</w> ჩუენდა
+            <lb n="22"/>არს.</quote> <w lemma="#lex-amieritgan">ამიერითგან</w> <pb n="55v" ed="#S"/> <w lemma="#lex-nashromi">ნაშრომსა</w> ჴელთა მათთასა ჭამდენ.
         </p>
         
         <!-- ¶ 6 -->
         <p xml:id="p6" n="6">
-          <lb n="23"/><hi rend="initial">Ⴋ</hi>აშინ აღჴდეს და გარდამოაგდეს <w lemmaRef="#lex-martali">მართალი</w> იგი გოდლისა მისგან და
-          <lb n="24"/>იტყოდეს <w lemma="#lex-urtiertas">ურთიერთას</w>: <w lemmaRef="#lex-qvai">ქვაჲ</w> დაჰკრიბეთ <w lemma="#lex-qovel">ყოველთა</w> იაკობს მართალსა! და <w lemmaRef="#lex-qva-qua">ქვასა</w>
-          <lb n="25"/>დაჰკრებდეს მას. ხოლო იგი გარდავარდა <w lemmaRef="#lex-simaghle">სიმაღლისა</w> მისგან და არა მოკუდა,
-          <lb n="26"/>არამედ დაიდგინა <w lemma="#lex-mukhl">მუჴლნი</w>, ღაღადებდა და იტყოდა: გევედრები, შენ, <w lemmaRef="#lex-upal">უფალო</w> <w lemma="#lex-qovel">ყოვლისა</w>
-          <lb n="27"/><w lemmaRef="#lex-mpqrobeli">მპყრობელო</w>, მიუტევე ამათ, <w lemma="#lex-rametu">რამეთუ</w> არა უწყიან, რასა იქმან. და <w lemma="#lex-vidre">ვიდრე</w>-იგი
-          <lb n="28"/>ქვსა დაჰკრებდეს მას, <w lemma="#lex-erti">ერთი</w> <w lemmaRef="#lex-vinme">ვინმე</w> მღდელთაგანი რომელი იყო ძეთაგანი
-          <lb n="29"/>რექაბისთა, <w lemma="#lex-dze">ძისა</w> რექაბინისი, რომელი მოიჴსენა <persName ref="#pers-ieremia">იერემია</persName> <w lemma="#lex-tsinatsarmetqveli">წინაწარმეტყუელმან</w>,
-          <lb n="30"/><w lemma="#lex-khma">ჴმა</w>-ყო <w lemma="#lex-khma">ჴმითა</w> <w lemmaRef="#lex-didi">დიდითა</w> და თქუა: დასცხერით! რასა-ეგე იქმთ? <w lemma="#lex-rametu">რამეთუ</w>
-          <lb n="31"/>ილოცავს თქუენთჳს <w lemmaRef="#lex-martali">მართალი</w> ესე.
+          <lb n="23"/><hi rend="initial">Ⴋ</hi><w lemma="#lex-mashin">აშინ</w> <w lemma="#lex-aghqhdoma">აღჴდეს</w> და <w lemma="#lex-gardamogdeba">გარდამოაგდეს</w> მართალი იგი გოდლისა მისგან და
+          <lb n="24"/>იტყოდეს ურთიერთას: ქვაჲ დაჰკრიბეთ ყოველთა <persName ref="#pers-iakob">იაკობს</persName> მართალსა! და <w lemma="#lex-kva">ქვასა</w>
+          <lb n="25"/>დაჰკრებდეს მას. ხოლო იგი <w lemma="#lex-gardavrdoma">გარდავარდა</w> სიმაღლისა მისგან და არა მოკუდა,
+          <lb n="26"/>არამედ დაიდგინა <w lemma="#lex-muqhli">მუჴლნი</w>, ღაღადებდა და იტყოდა: გევედრები, შენ, უფალო ყოვლისა
+          <lb n="27"/>მპყრობელო, <w lemma="#lex-miteveba">მიუტევე</w> ამათ, <w lemma="#lex-rametu">რამეთუ</w> არა უწყიან, რასა იქმან. და <w lemma="#lex-vidre">ვიდრე</w>-იგი
+          <lb n="28"/>ქვსა დაჰკრებდეს მას, ერთი <w lemma="#lex-vin">ვინმე</w> მღდელთაგანი რომელი იყო ძეთაგანი
+          <lb n="29"/>რექაბისთა, <w lemma="#lex-dze">ძისა</w> რექაბინისი, რომელი მოიჴსენა <persName ref="#pers-ieremia">იერემია</persName> წინაწარმეტყუელმან,
+          <lb n="30"/><w lemma="#lex-qhma">ჴმა</w>-ყო <w lemma="#lex-qhma">ჴმითა</w> დიდითა და თქუა: <w lemma="#lex-datskhroma">დასცხერით</w>! რასა-ეგე იქმთ? <w lemma="#lex-rametu">რამეთუ</w>
+          <lb n="31"/>ილოცავს თქუენთჳს მართალი ესე.
         </p>
         
         <!-- ¶ 7 -->
         <p xml:id="p7" n="7">
-          <lb n="32"/><hi rend="initial">Ⴃ</hi>ა აღდგა <w lemma="#lex-erti">ერთი</w> მათგანი, რომელი იყო <w lemma="#lex-samosel">სამოსლისა</w> <w lemmaRef="#lex-mrtskhel">მრცხელი</w>, აღიღო
-          <lb n="33"/><w lemmaRef="#lex-dzel">ძელი</w>, რომლითა გარდაართხიან <w lemma="#lex-samosel">სამოსელი</w>, და უხეთქნა <w lemmaRef="#lex-tav">თავსა</w> მის მართლისასა.
+          <lb n="32"/><hi rend="initial">Ⴃ</hi>ა აღდგა ერთი მათგანი, რომელი იყო სამოსლისა <w lemma="#lex-mrtskheli">მრცხელი</w>, <w lemma="#lex-aghgheba">აღიღო</w>
+          <lb n="33"/><w lemma="#lex-dzeli">ძელი</w>, რომლითა <w lemma="#lex-gardartkhma">გარდაართხიან</w> <w lemma="#lex-samoseli">სამოსელი</w>, და <w lemma="#lex-khetkneba">უხეთქნა</w> თავსა მის მართლისასა.
           <lb n="34"/>და <w lemma="#lex-esret">ესრჱთ</w> აღესრულა წამებითა <persName ref="#pers-iesu-kriste">ქრისტჱსითა</persName>. და დაჰფლეს იგი <w lemma="#lex-adgili">ადგილსა</w>
-          <lb n="35"/>მას <w lemmaRef="#lex-makhlobel-makhlobelad">მახლობელად</w> ტაძრისა მის. და მან წამა <w lemma="#lex-cheshmaritad">ჭეშმარიტად</w> ჰურიათა <w lemma="#lex-mimart">მიმართ</w>
-          <lb n="36"/>და წარმართთა ჲესუსთჳს, რომელ არს <persName ref="#pers-iesu-kriste">ქრისტჱ</persName>.
+          <lb n="35"/>მას მახლობელად ტაძრისა მის. და მან წამა ჭეშმარიტად ჰურიათა მიმართ
+          <lb n="36"/>და <w lemma="#lex-tsarmarti">წარმართთა</w> ჲესუსთჳს, რომელ არს <persName ref="#pers-iesu-kriste">ქრისტჱ</persName>.
         </p>
         
         <!-- ¶ 8 -->
         <p xml:id="p8" n="8">
-          <lb n="37"/><hi rend="initial">Ⴃ</hi>ა <w lemmaRef="#lex-makhlobel-makhlobelad">მახლობელად</w> მათვე დღეთა <w lemma="#lex-shina">შინა</w> სპასიონი ვინმე, <w lemmaRef="#lex-gansakvirvebeli">განსაკჳრვებელი</w>
-          <lb n="38"/><w lemma="#lex-katsi">კაცი</w>, მოვიდა და მოიცვნა ჰურიანი. და <w lemma="#lex-esret">ესრჱთ</w> განუცხადებდა <w lemma="#lex-simartle">სიმართლესა</w>
+          <lb n="37"/><hi rend="initial">Ⴃ</hi>ა მახლობელად მათვე დღეთა შინა სპასიონი <w lemma="#lex-vin">ვინმე</w>, განსაკჳრვებელი
+          <lb n="38"/>კაცი, მოვიდა და <w lemma="#lex-motsva">მოიცვნა</w> ჰურიანი. და <w lemma="#lex-esret">ესრჱთ</w> განუცხადებდა სიმართლესა
           <pb n="57" ed="#shanidze"/>
-          <lb n="1"/>ნეტარისა იაკობისსა. და ჰურიათაგანნიცა <w lemmaRef="#lex-brdzeni">ბრძენნი</w> ადიდებდეს მას და იტყოდეს,
-          <lb n="2"/><w lemma="#lex-vitarmed">ვითარმედ</w>: ამისთჳს <w lemma="#lex-mtsrapl">მწრაფლ</w> მოიცვა <placeName ref="#place-ierusalemi">იერუსალემი</placeName> ვესპასიონისა <w lemma="#lex-mier">მიერ</w>,
-          <lb n="3"/>და არა თუ სხჳთ რაჲმე იყო მათ <w lemmaRef="#lex-shemthkhueva">შემთხუევაჲ</w> ესე, არამედ ამისთჳს <w lemma="#lex-rametu">რამეთუ</w>
-          <lb n="4"/>მიყვნეს <w lemma="#lex-khel">ჴელნი</w> მათნი <w lemmaRef="#lex-martl">მართლისა</w> მის <w lemma="#lex-zeda">ზედა</w> წარმდებებით. <pb n="56r" ed="#S"/> რომლისა
-          <lb n="5"/>იოსებცა <w lemma="#lex-tsadier">წადიერ</w> იქმნა დაწერად: ესევითარიმცა <w lemmaRef="#lex-shemthkhueva">შემთხუევაჲ</w> შეემთხუევის
-          <lb n="6"/>ჰურიათა შურის საძიებელად იაკობის <w lemmaRef="#lex-martl">მართლისა</w>, რომელი იყო <w lemma="#lex-dzma">ძმაჲ</w> ჲესუსი,
-          <lb n="7"/>რომელ არს <persName ref="#pers-iesu-kriste">ქრისტე</persName>, <w lemma="#lex-rametu">რამეთუ</w> <w lemmaRef="#lex-martali">მართალი</w> იგი და <w lemma="#lex-martl">მართლ</w>-<w lemmaRef="#lex-madidebeli">მადიდებელი</w> მოკლეს
+          <lb n="1"/>ნეტარისა იაკობისსა. და ჰურიათაგანნიცა ბრძენნი ადიდებდეს მას და იტყოდეს,
+          <lb n="2"/><w lemma="#lex-vitarmed">ვითარმედ</w>: ამისთჳს <w lemma="#lex-mtsrapl">მწრაფლ</w> <w lemma="#lex-motsva">მოიცვა</w> <placeName ref="#place-ierusalemi">იერუსალემი</placeName> ვესპასიონისა <w lemma="#lex-mier">მიერ</w>,
+          <lb n="3"/>და არა თუ სხჳთ რაჲმე იყო მათ <w lemma="#lex-shemtkhueva">შემთხუევაჲ</w> ესე, არამედ ამისთჳს <w lemma="#lex-rametu">რამეთუ</w>
+          <lb n="4"/><w lemma="#lex-miqopa">მიყვნეს</w> <w lemma="#lex-miqopa">ჴელნი</w> მათნი <w lemma="#lex-martl">მართლისა</w> მის <w lemma="#lex-zeda">ზედა</w> წარმდებებით. <pb n="56r" ed="#S"/> რომლისა
+          <lb n="5"/>იოსებცა <w lemma="#lex-tsadieri">წადიერ</w> იქმნა დაწერად: ესევითარიმცა <w lemma="#lex-shemtkhueva">შემთხუევაჲ</w> <w lemma="#lex-shemtkhueva">შეემთხუევის</w>
+          <lb n="6"/>ჰურიათა შურის საძიებელად <persName ref="#pers-iakob">იაკობის</persName> <w lemma="#lex-martl">მართლისა</w>, რომელი იყო <w lemma="#lex-dzma">ძმაჲ</w> ჲესუსი,
+          <lb n="7"/>რომელ არს <persName ref="#pers-iesu-kriste">ქრისტე</persName>, <w lemma="#lex-rametu">რამეთუ</w> მართალი იგი და <w lemma="#lex-martl">მართლ</w>-მადიდებელი მოკლეს
           <lb n="8"/>ჰურიათა.
         </p>
         
         <!-- ¶ 9 -->
         <p xml:id="p9" n="9">
-          <lb n="9"/><hi rend="initial">Ⴃ</hi>ა ესევითარი ესე შემთხუევაჲ ნეტარისა მისთჳს და <w lemmaRef="#lex-martl">მართლისა</w> იაკობისთჳს
-          <lb n="10"/>შეემთხჳა ჰურიათა, რომელიცა <w lemma="#lex-utsinares">უწინარჱს</w> კათოლიკეთა ებისტოლეთა
-          <lb n="11"/>დაიწერა. და ესე არს წამებაჲ წმიდისა იაკობისი, რომელი იქმნა <w lemmaRef="#lex-tsinait">წინაჲთ</w>
-          <lb n="12"/>ებისკოპოს და დაჯდა საყდართა წმიდისა <w lemmaRef="#lex-qalaqi">ქალაქისა</w> იერუსალემისათა, რომელი
-          <lb n="13"/>წოდებულ იყო <w lemma="#lex-dzma">ძმად</w> უფლისა და მართალ საქმითა <w lemmaRef="#lex-tvisi">თჳსითა</w>.
+          <lb n="9"/><hi rend="initial">Ⴃ</hi>ა ესევითარი ესე <w lemma="#lex-shemtkhueva">შემთხუევაჲ</w> ნეტარისა მისთჳს და <w lemma="#lex-martl">მართლისა</w> იაკობისთჳს
+          <lb n="10"/><w lemma="#lex-shemtkhueva">შეემთხჳა</w> ჰურიათა, რომელიცა <w lemma="#lex-utsinares">უწინარჱს</w> კათოლიკეთა ებისტოლეთა
+          <lb n="11"/><w lemma="#lex-datsera">დაიწერა</w>. და ესე არს <w lemma="#lex-tsameba">წამებაჲ</w> წმიდისა <persName ref="#pers-iakob">იაკობისი</persName>, რომელი იქმნა წინაჲთ
+          <lb n="12"/>ებისკოპოს და დაჯდა საყდართა წმიდისა ქალაქისა იერუსალემისათა, რომელი
+          <lb n="13"/>წოდებულ იყო <w lemma="#lex-dzma">ძმად</w> უფლისა და მართალ საქმითა თჳსითა.
         </p>
         
         <trailer>
-          <lb n="14"/><hi rend="initial">Ⴐ</hi>ომლისაჲ არს დიდებაჲ მამისაჲ და ძისაჲ და სულისა წმიდისაჲ <w lemma="#lex-ats">აწ</w> და
-          <lb n="15"/><w lemma="#lex-maradis">მარადის</w> და უკუნითი უკუნისამდე. ამენ.
+          <lb n="14"/><hi rend="initial">Ⴐ</hi>ომლისაჲ არს <w lemma="#lex-dideba">დიდებაჲ</w> <w lemma="#lex-mama">მამისაჲ</w> და <w lemma="#lex-dze">ძისაჲ</w> და სულისა წმიდისაჲ <w lemma="#lex-ats">აწ</w> და
+          <lb n="15"/><w lemma="#lex-maradis">მარადის</w> და უკუნითი უკუნისამდე. <w lemma="#lex-amen">ამენ</w>.
         </trailer>
         
       </div>

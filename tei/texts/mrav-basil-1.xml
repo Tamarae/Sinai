@@ -6,7 +6,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title xml:lang="ka">სიტყუაჲ წმიდისა ბასილი <w lemma="#lex-mtavar">მთავარ</w>-ეპისკოპოსისათჳს</title>
+        <title xml:lang="ka">სიტყუაჲ წმიდისა ბასილი მთავარ-ეპისკოპოსისათჳს</title>
         <title xml:lang="la" type="sub">Sermo de Sancto Basilio Caesariensi</title>
         <author>
           <name xml:lang="ka">[ამფილოქე იკონიელი]</name>
@@ -68,80 +68,80 @@
         
         <!-- ¶ 1 -->
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴃ</hi>ა იყო მათ დღეთა <w lemma="#lex-shina">შინა</w> აღძვრაჲ მწვალებელთაჲ <w lemma="#lex-martl">მართლ</w>-მორწმუნეთა <w lemma="#lex-zeda">ზედა</w>, <w lemma="#lex-rametu">რამეთუ</w> იტყოდეს მეფისათჳსცა, <w lemma="#lex-vitarmed">ვითარმედ</w>: არიანოს არს. და მოვიდეს არიანოსნი სარჩელად წმიდისა ბასილი ეპისკოპოსისა და ეტყოდეს მას კათოლიკე ეკლესიისათჳს <placeName ref="#place-kesaria">კესარია</placeName> კაბადუკიისა, <w lemma="#lex-vitarmed">ვითარმედ</w>: ჩუენი არსო და შენ რაჲსთჳს გიპყრია? ხოლო იგი მიუგებდა <w lemmaRef="#lex-sitqua">სიტყუათა</w> მათთაებრ. და ვერ უძლეს მათ <w lemma="#lex-tsina">წინა</w>-დადგომად სიტყუათა მისთა სიბრძნისა მისგან და <w lemmaRef="#lex-suli">სულისა</w> წმიდისა, რომლითა იტყოდა.
+          <hi rend="initial">Ⴃ</hi>ა იყო მათ დღეთა შინა აღძვრაჲ მწვალებელთაჲ <w lemma="#lex-martl">მართლ</w>-მორწმუნეთა <w lemma="#lex-zeda">ზედა</w>, <w lemma="#lex-rametu">რამეთუ</w> იტყოდეს მეფისათჳსცა, <w lemma="#lex-vitarmed">ვითარმედ</w>: არიანოს არს. და მოვიდეს არიანოსნი სარჩელად წმიდისა <persName ref="#pers-basili">ბასილი</persName> ეპისკოპოსისა და ეტყოდეს მას კათოლიკე ეკლესიისათჳს <placeName ref="#place-kesaria">კესარია</placeName> კაბადუკიისა, <w lemma="#lex-vitarmed">ვითარმედ</w>: ჩუენი <w lemma="#lex-arsi">არსო</w> და შენ რაჲსთჳს <w lemma="#lex-pqroba">გიპყრია</w>? ხოლო იგი მიუგებდა <w lemma="#lex-sitqua">სიტყუათა</w> მათთაებრ. და ვერ უძლეს მათ <w lemma="#lex-tsinadadgoma">წინა</w>-დადგომად <w lemma="#lex-sitqua">სიტყუათა</w> მისთა სიბრძნისა მისგან და სულისა წმიდისა, რომლითა იტყოდა.
         </p>
         
         <!-- ¶ 2 -->
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴃ</hi>ა მათ <w lemma="#lex-vitartsa">ვითარცა</w> იხილნეს თავნი თჳსნი უძლურად <w lemmaRef="#lex-tsinashe-mdgomel">წინაშე</w> მისსა, განიზრახვიდეს, <w lemma="#lex-vitarmed">ვითარმედ</w>: მივაწიოთ 
+          <hi rend="initial">Ⴃ</hi>ა მათ <w lemma="#lex-vitartsa">ვითარცა</w> იხილნეს თავნი თჳსნი უძლურად წინაშე მისსა, განიზრახვიდეს, <w lemma="#lex-vitarmed">ვითარმედ</w>: <w lemma="#lex-mitsevna">მივაწიოთ</w> 
           <app xml:id="app-1">
-            <lem wit="#Ms" resp="#shanidze">სასჯელი</lem>
+            <lem wit="#Ms" resp="#shanidze"><w lemma="#lex-sasjeli">სასჯელი</w></lem>
             <rdg type="orthographic" wit="#S">საჯელი</rdg>
           </app>
-          ჩუენი წინაშე მეფისა. და ჰრქუეს მას, <w lemma="#lex-vitarmed">ვითარმედ</w>: ეკლესიაჲ ჩუენი უპყრიეს <w lemmaRef="#lex-tvinier">თჳნიერ</w> სამართლისა. ხოლო მეფემან ჰკითხა მას: <w lemma="#lex-ukuetu">უკუეთუ</w> <w lemma="#lex-esret">ესრჱთ</w> არს?
+          ჩუენი წინაშე <w lemma="#lex-mepe">მეფისა</w>. და <w lemma="#lex-rkuma">ჰრქუეს</w> მას, <w lemma="#lex-vitarmed">ვითარმედ</w>: ეკლესიაჲ ჩუენი <w lemma="#lex-pqroba">უპყრიეს</w> თჳნიერ სამართლისა. ხოლო მეფემან ჰკითხა მას: <w lemma="#lex-ukuetu">უკუეთუ</w> <w lemma="#lex-esret">ესრჱთ</w> არს?
           <pb n="67v" ed="#S"/>
-          <w lemma="#lex-mashin">მაშინ</w> ჰრქუა წმიდამან ეპისკოპოსმან მეფესა: უფალო <w lemmaRef="#lex-mepe">მეფე</w>, <w lemma="#lex-jer">ჯერ</w>-არს სახლისათჳს ღმრთისა თჳთ თავადმან ყოს <w lemmaRef="#lex-sasjel">სასჯელი</w>. და ჰრქუა მეფემან: <w lemma="#lex-cheshmaritad">ჭეშმარიტად</w> ეგრე იყავნ! აჰა ესერა უბრძანო დაკრძალვად კარი ეკლესიისაჲ <w lemmaRef="#lex-klite">კლიტითა</w> და ბეჭდითა თქუენითა და ჩუენითაცა. და იყოს, რომელსაცა განეღოს ღმრთისა <w lemma="#lex-mier">მიერ</w>, მანცა დაიმკჳდროს ეკლესიაჲ.
+          <w lemma="#lex-mashin">მაშინ</w> <w lemma="#lex-rkuma">ჰრქუა</w> წმიდამან ეპისკოპოსმან მეფესა: უფალო <w lemma="#lex-mepe">მეფე</w>, <w lemma="#lex-jerqopa">ჯერ</w>-არს სახლისათჳს ღმრთისა თჳთ თავადმან ყოს <w lemma="#lex-sasjeli">სასჯელი</w>. და <w lemma="#lex-rkuma">ჰრქუა</w> მეფემან: ჭეშმარიტად ეგრე იყავნ! აჰა ესერა უბრძანო <w lemma="#lex-dakrdzalva">დაკრძალვად</w> კარი ეკლესიისაჲ <w lemma="#lex-klite">კლიტითა</w> და <w lemma="#lex-bechedi">ბეჭდითა</w> თქუენითა და ჩუენითაცა. და იყოს, რომელსაცა <w lemma="#lex-gangheba">განეღოს</w> ღმრთისა <w lemma="#lex-mier">მიერ</w>, მანცა დაიმკჳდროს ეკლესიაჲ.
         </p>
         
         <!-- ¶ 3 -->
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴃ</hi>ა დაჰკრძალეს კარი ეკლესიისაჲ ბრძანებითა მეფისაჲთა და დაჰბეჭდეს <w lemmaRef="#lex-qovel">ყოველთა</w> <w lemma="#lex-ertbamad">ერთბამად</w>. და ჰრქუა წმიდამან ეპისკოპოსმან <w lemmaRef="#lex-arianosi">არიანოსთა</w> მათ: <w lemma="#lex-ukuetu">უკუეთუ</w> <w lemma="#lex-jer">ჯერ</w>-გიჩს თქუენ, დავადგრეთ <w lemmaRef="#lex-sam-qored">სამ</w> <w lemma="#lex-dghe">დღე</w> ლოცვასა და შემდგომად სამისა დღისა მოვიდეთ ეკლესიად. და ყვეს ეგრჱთ. და დაადგრეს <w lemmaRef="#lex-sam-qored">სამ</w> <w lemma="#lex-dghe">დღე</w> ლოცვასა და შემდგომად სამისა დღისა მოვიდეს ეკლესიად. ჰრქუა წმიდამან ეპისკოპოსმან არიანოზთა მათ: მივედით თქუენ პირველად <w lemmaRef="#lex-kari">კარად</w> ეკლესიისა და ილოცეთ, <w lemma="#lex-rayta">რაჲთა</w> განგეხუნენ, <w lemma="#lex-rametu">რამეთუ</w> უმრავლე ხართ თქუენ. ხოლო იგინი მივიდეს განთიადითგან და ილოცვიდეს შოვა-სამხრამდე კართა მათ ეკლესიისათა, და არა იყო <w lemmaRef="#lex-qma">ჴმაჲ</w>, არცა სმენია, <w lemma="#lex-vitartsa">ვითარცა</w> წერილ არს ქურუმათა მათთჳს ბაალისთა.
+          <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-dakrdzalva">დაჰკრძალეს</w> კარი ეკლესიისაჲ ბრძანებითა მეფისაჲთა და <w lemma="#lex-dabechdva">დაჰბეჭდეს</w> ყოველთა <w lemma="#lex-ertbamad">ერთბამად</w>. და <w lemma="#lex-rkuma">ჰრქუა</w> წმიდამან ეპისკოპოსმან არიანოსთა მათ: <w lemma="#lex-ukuetu">უკუეთუ</w> <w lemma="#lex-jerqopa">ჯერ</w>-გიჩს თქუენ, დავადგრეთ სამ დღე <w lemma="#lex-lotsva">ლოცვასა</w> და შემდგომად სამისა დღისა მოვიდეთ ეკლესიად. და ყვეს ეგრჱთ. და დაადგრეს სამ დღე <w lemma="#lex-lotsva">ლოცვასა</w> და შემდგომად სამისა დღისა მოვიდეს ეკლესიად. <w lemma="#lex-rkuma">ჰრქუა</w> წმიდამან ეპისკოპოსმან არიანოზთა მათ: <w lemma="#lex-mislva">მივედით</w> თქუენ პირველად კარად ეკლესიისა და ილოცეთ, <w lemma="#lex-rayta">რაჲთა</w> <w lemma="#lex-gankhuma">განგეხუნენ</w>, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-umravle">უმრავლე</w> ხართ თქუენ. ხოლო იგინი მივიდეს განთიადითგან და ილოცვიდეს <w lemma="#lex-shova">შოვა</w>-სამხრამდე კართა მათ ეკლესიისათა, და არა იყო <w lemma="#lex-qhma">ჴმაჲ</w>, არცა სმენია, <w lemma="#lex-vitartsa">ვითარცა</w> წერილ არს ქურუმათა მათთჳს ბაალისთა.
         </p>
         
         <!-- ¶ 4 -->
         <p xml:id="p4" n="4">
           <pb n="71" ed="#shanidze"/>
-          <hi rend="initial">Ⴠ</hi>ბასრობდა მათ წმიდაჲ <w lemmaRef="#lex-episkoposi">ეპისკოპოსი</w>, <w lemma="#lex-vitartsa">ვითარცა</w> ელია <w lemmaRef="#lex-qurum">ქურუმთა</w> მათ. და <w lemma="#lex-vitartsa">ვითარცა</w> ვერ მიიღეს <w lemmaRef="#lex-tkhova">თხოვაჲ</w> იგი, ჰრქუა მათ: განდეგით <w lemma="#lex-ats">აწ</w> თქუენ თჳსგან. და უკუნდგეს იგინი სირცხჳლეულნი <w lemmaRef="#lex-ertgzaoba">ერთ</w> <w lemma="#lex-kerdzo">კერძო</w> და ჰხედვიდეს მას, <w lemma="#lex-vitarmed">ვითარმედ</w> რაჲ-<w lemmaRef="#lex-dzi">ძი</w> ყოს მანცა.
+          <hi rend="initial">Ⴠ</hi>ბასრობდა მათ წმიდაჲ ეპისკოპოსი, <w lemma="#lex-vitartsa">ვითარცა</w> <persName ref="#pers-elia">ელია</persName> <w lemma="#lex-kurumi">ქურუმთა</w> მათ. და <w lemma="#lex-vitartsa">ვითარცა</w> ვერ მიიღეს <w lemma="#lex-tkhova">თხოვაჲ</w> იგი, <w lemma="#lex-rkuma">ჰრქუა</w> მათ: <w lemma="#lex-gandgoma">განდეგით</w> <w lemma="#lex-ats">აწ</w> თქუენ თჳსგან. და უკუნდგეს იგინი <w lemma="#lex-sirtskhwleuli">სირცხჳლეულნი</w> <w lemma="#lex-ertgzaoba">ერთ</w> <w lemma="#lex-kerdzo">კერძო</w> და <w lemma="#lex-khedva">ჰხედვიდეს</w> მას, <w lemma="#lex-vitarmed">ვითარმედ</w> <w lemma="#lex-ra">რაჲ</w>-<w lemma="#lex-dzi">ძი</w> ყოს მანცა.
         </p>
         
         <!-- ¶ 5 -->
         <p xml:id="p5" n="5">
           <pb n="68r" ed="#S"/>
-          <hi rend="initial">Ⴋ</hi>აშინ წარმოჴდა წმიდაჲ ეპისკოპოსი ხუცესთა და დიაკონთა <w lemmaRef="#lex-tvisi">თჳსთა</w> <w lemma="#lex-tana">თანა</w> და უბრძანა კუერექსისა თქუმაჲ. და შეწირა ლოცვაჲ და უბრძანა ფსალმუნისა <w lemmaRef="#lex-tkuma">თქუმაჲ</w> რიზ; 
-          <quote source="#Ps117-19">განმეხუენით მე, ბჭენო სიმართლისანო, შევიდე მათ და <w lemmaRef="#lex-auarebdit-auvaro">აუვარო</w> <w lemmaRef="#lex-upal">უფალსა</w>.</quote>
+          <hi rend="initial">Ⴋ</hi><w lemma="#lex-mashin">აშინ</w> <w lemma="#lex-tsarmoqhdoma">წარმოჴდა</w> წმიდაჲ ეპისკოპოსი ხუცესთა და <w lemma="#lex-diakoni">დიაკონთა</w> თჳსთა თანა და უბრძანა <w lemma="#lex-kuereksi">კუერექსისა</w> <w lemma="#lex-tkuma">თქუმაჲ</w>. და შეწირა <w lemma="#lex-lotsva">ლოცვაჲ</w> და უბრძანა <w lemma="#lex-psalmuni">ფსალმუნისა</w> <w lemma="#lex-tkuma">თქუმაჲ</w> რიზ; 
+          <quote source="#Ps117-19">განმეხუენით მე, ბჭენო სიმართლისანო, შევიდე მათ და <w lemma="#lex-aghsaareba">აუვარო</w> უფალსა.</quote>
         </p>
         
         <!-- ¶ 6 -->
         <p xml:id="p6" n="6">
-          <hi rend="initial">Ⴀ</hi>მისა შემდგომად უბრძანა პავლეს <w lemmaRef="#lex-motsiqul">მოციქულისა</w> მიწერილი ტიმოთჱსა <w lemma="#lex-mimart">მიმართ</w> პირველისა თავისა <w lemmaRef="#lex-sakitkhav">საკითხავი</w>: 
-          <quote source="#1Tim3-14">ამას მივსწერ შენდა და <w lemmaRef="#lex-vesav">ვესავ</w> ჩემსაცა <w lemmaRef="#lex-adre">ადრე</w> <w lemmaRef="#lex-moslva">მოსლვასა</w>,</quote> 
-          რომელსა <w lemma="#lex-shina">შინა</w> არს სარმრთოჲსა ჴორცთ შესხმისა განგებულებაჲ. და იტყჳს ეკლესიისათჳს სახლად ღმრთისა და სუეტად <w lemmaRef="#lex-simtkitse">სიმტკიცისა</w> და ჭეშმარიტებისა.
+          <hi rend="initial">Ⴀ</hi>მისა შემდგომად უბრძანა <persName ref="#pers-pavle">პავლეს</persName> მოციქულისა მიწერილი ტიმოთჱსა მიმართ პირველისა თავისა <w lemma="#lex-sakitkhavi">საკითხავი</w>: 
+          <quote source="#1Tim3-14">ამას <w lemma="#lex-mitsera">მივსწერ</w> შენდა და <w lemma="#lex-vesav">ვესავ</w> ჩემსაცა <w lemma="#lex-adre">ადრე</w> <w lemma="#lex-moslva">მოსლვასა</w>,</quote> 
+          რომელსა შინა არს სარმრთოჲსა <w lemma="#lex-qhortstsheskhma">ჴორცთ</w> შესხმისა <w lemma="#lex-gangebuleba">განგებულებაჲ</w>. და იტყჳს ეკლესიისათჳს სახლად ღმრთისა და სუეტად სიმტკიცისა და ჭეშმარიტებისა.
         </p>
         
         <!-- ¶ 7 -->
         <p xml:id="p7" n="7">
-          <hi rend="initial">Ⴃ</hi>ა შემდგომად საკიტხავისა ასწავა თქუმად ალელუაჲ, <w lemmaRef="#lex-psalmun">ფსალმუნი</w> ჲე: 
-          <quote source="#Ps65-13">შევიდე სახლსა <w lemmaRef="#lex-sheni-sheni">შენსა</w> <w lemmaRef="#lex-mskhuerpli">მსხუერპლითა</w> და მიგცნე შენ <w lemmaRef="#lex-aghnatquemi">აღნათქუემნი</w> <w lemmaRef="#lex-chemi">ჩემნი</w>, რომელ აღთქუნეს ბაგეთა <w lemmaRef="#lex-chemi">ჩემთა</w>.</quote>
+          <hi rend="initial">Ⴃ</hi>ა შემდგომად საკიტხავისა ასწავა <w lemma="#lex-tkuma">თქუმად</w> <w lemma="#lex-alelua">ალელუაჲ</w>, <w lemma="#lex-psalmuni">ფსალმუნი</w> ჲე: 
+          <quote source="#Ps65-13">შევიდე <w lemma="#lex-sakhe">სახლსა</w> შენსა მსხუერპლითა და <w lemma="#lex-mitsema">მიგცნე</w> შენ აღნათქუემნი ჩემნი, რომელ <w lemma="#lex-aghtkuma">აღთქუნეს</w> ბაგეთა ჩემთა.</quote>
         </p>
         
         <!-- ¶ 8 -->
         <p xml:id="p8" n="8">
-          <hi rend="initial">Ⴞ</hi>ოლო შემდგომად ალელუაჲსა მისცა მათ სახარებაჲ მათჱს თავისაჲ <w lemmaRef="#lex-sakitkhav">საკითხავად</w>: 
-          <quote source="#Mt16-13">და <w lemmaRef="#lex-mo">მო</w>-რაჲ-ვიდა <persName ref="#pers-iesu-kriste">იესუ</persName> <w lemmaRef="#lex-sazghvar">საზღვართა</w> <placeName ref="#place-kesaria">კესარია</placeName> ფილიპჱსათა,</quote> 
-          რომელ არს <w lemmaRef="#lex-aghtquma-aghtqma">აღთქუმაჲ</w> ეკლესიისათჳს უფლისა <w lemma="#lex-mier">მიერ</w>, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
-          <quote source="#Mt16-18">ბჭენი ჯოჯოხეთისანი არა ერეოდიან მას.</quote>
+          <hi rend="initial">Ⴞ</hi>ოლო შემდგომად ალელუაჲსა მისცა მათ <w lemma="#lex-sakhareba">სახარებაჲ</w> მათჱს თავისაჲ <w lemma="#lex-sakitkhavi">საკითხავად</w>: 
+          <quote source="#Mt16-13">და <w lemma="#lex-mo">მო</w>-<w lemma="#lex-ra">რაჲ</w>-ვიდა <persName ref="#pers-iesu-kriste">იესუ</persName> საზღვართა <placeName ref="#place-kesaria">კესარია</placeName> ფილიპჱსათა,</quote> 
+          რომელ არს <w lemma="#lex-aghtkuma">აღთქუმაჲ</w> ეკლესიისათჳს უფლისა <w lemma="#lex-mier">მიერ</w>, <w lemma="#lex-vitarmed">ვითარმედ</w>: 
+          <quote source="#Mt16-18">ბჭენი ჯოჯოხეთისანი არა <w lemma="#lex-reva">ერეოდიან</w> მას.</quote>
         </p>
         
         <!-- ¶ 9 -->
         <p xml:id="p9" n="9">
-          <hi rend="initial">Ⴃ</hi>ა შემდგომად წარკითხვისა სახარებისა დასწერა ჯუარი <w lemmaRef="#lex-kari">კარსა</w> ეკლესიისა, ღაღატ-ყო და თქუა: 
-          <quote source="#Ps23-7">განმიხუენით მე ბჭენი თქუენი, მთავარნო, და განეხუნენ ბჭენი საუკუნენი და შევიდეს <w lemmaRef="#lex-meupe">მეუფჱ</w> <w lemmaRef="#lex-didebisa">დიდებისაჲ</w>.</quote>
+          <hi rend="initial">Ⴃ</hi>ა შემდგომად წარკითხვისა სახარებისა დასწერა ჯუარი კარსა ეკლესიისა, ღაღატ-ყო და <w lemma="#lex-tkuma">თქუა</w>: 
+          <quote source="#Ps23-7"><w lemma="#lex-gankhuma">განმიხუენით</w> მე ბჭენი თქუენი, მთავარნო, და განეხუნენ ბჭენი საუკუნენი და შევიდეს <w lemma="#lex-meupe">მეუფჱ</w> დიდებისაჲ.</quote>
         </p>
         
         <!-- ¶ 10 -->
         <p xml:id="p10" n="10">
           <pb n="68v" ed="#S"/>
-          <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-meqseulad">მეყსეულად</w> დაირღუეს კლიტენი იგი, და ბეჭედნი იგი დასცჳვეს კართა მათგან, და განეხუნეს კარნი. და შევიდა წმიდაჲ ეპისკოპოსი და <w lemmaRef="#lex-qovel">ყოველნი</w> მოწესენი მის <w lemma="#lex-tana">თანა</w> და აღასრულა საღმრთოჲ საიდუმლოჲ.
+          <hi rend="initial">Ⴃ</hi>ა <w lemma="#lex-meqseulad">მეყსეულად</w> <w lemma="#lex-darghueva">დაირღუეს</w> <w lemma="#lex-klite">კლიტენი</w> იგი, და <w lemma="#lex-bechedi">ბეჭედნი</w> იგი <w lemma="#lex-datswvneba">დასცჳვეს</w> კართა მათგან, და <w lemma="#lex-gankhuma">განეხუნეს</w> კარნი. და შევიდა წმიდაჲ ეპისკოპოსი და ყოველნი <w lemma="#lex-motsese">მოწესენი</w> მის თანა და აღასრულა საღმრთოჲ <w lemma="#lex-saidumlo">საიდუმლოჲ</w>.
         </p>
         
         <!-- ¶ 11 -->
         <p xml:id="p11" n="11">
-          <hi rend="initial">Ⴋ</hi>აშინ სირცხჳლეულ იქმნა არიოს და ყოველნი მოწაფენი მისნი, და ვერღავინ იკადრა <w lemmaRef="#lex-sitquis-geba">სიტყჳს</w>-გებად წმიდისა ბასილისა მაცილობელთაგანმან, <w lemma="#lex-rametu">რამეთუ</w> <w lemma="#lex-suli">სული</w> წმიდაჲ დამკჳდრებულ იყო მის <w lemma="#lex-tana">თანა</w> <w lemma="#lex-maradis">მარადის</w>.
+          <hi rend="initial">Ⴋ</hi><w lemma="#lex-mashin">აშინ</w> <w lemma="#lex-sirtskhwleuli">სირცხჳლეულ</w> იქმნა <persName ref="#pers-arios">არიოს</persName> და ყოველნი მოწაფენი მისნი, და <w lemma="#lex-verghavin">ვერღავინ</w> იკადრა <w lemma="#lex-sitqwsgeba">სიტყჳს</w>-გებად წმიდისა <persName ref="#pers-basili">ბასილისა</persName> მაცილობელთაგანმან, <w lemma="#lex-rametu">რამეთუ</w> სული წმიდაჲ დამკჳდრებულ იყო მის თანა <w lemma="#lex-maradis">მარადის</w>.
         </p>
         
         <!-- Explicit -->
         <trailer>
-          <hi rend="initial">Ⴐ</hi>ომელსა ჰშუენის დიდებაჲ უკუნითი უკუნისამდე. ამენ.
+          <hi rend="initial">Ⴐ</hi>ომელსა <w lemma="#lex-shuen">ჰშუენის</w> <w lemma="#lex-dideba">დიდებაჲ</w> უკუნითი უკუნისამდე. <w lemma="#lex-amen">ამენ</w>.
         </trailer>
         
       </div>

@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+{% set active = "authority" %}
+
+{% block title %}საძიებლები — სინური მრავალთავი 864{% endblock %}
+{% block dc_title %}სინური მრავალთავი — საძიებლები (პირები, ადგილები, ხალხები, ცხოველები, მცენარეები){% endblock %}
+
+{% block head_extra %}
+<style>
+    /* sticky section switcher */
+    .auth-tabs {
+        position: sticky; z-index: 40; top: 56px;
+        background: var(--parchment); border-bottom: 1px solid #e0d8ce;
+        display: flex; gap: .4rem; overflow-x: auto; padding: .6rem 0; margin-bottom: 1.5rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    .auth-tab {
+        white-space: nowrap; flex-shrink: 0;
+        padding: .3rem .7rem; border: 1px solid #e0d8ce; border-radius: 3px;
+        background: white; color: #6b5b4a; cursor: pointer;
+        font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .75rem; font-weight: 600;
+        transition: background .12s, color .12s, border-color .12s;
+    }
+    .auth-tab .c { font-size: .62rem; color: #b0a594; margin-left: .3rem; }
+    .auth-tab:hover { border-color: #c8bfb6; }
+    .auth-tab.active { background: var(--crimson); color: white; border-color: var(--crimson); }
+    .auth-tab.active .c { color: rgba(255,255,255,.75); }
+
+    .auth-panel { display: none; }
+    .auth-panel.active { display: block; }
+
+    .type-group { border-bottom: 1px solid #efe8dd; }
+    .grp-head {
+        font-family: 'Noto Serif Georgian', Georgia, serif;
+        font-size: 1.02rem; font-weight: 600; color: #6b5b4a;
+        letter-spacing: .03em; padding: .7rem .2rem; margin: 0; cursor: pointer;
+        list-style: none; display: flex; align-items: baseline; gap: .5rem;
+        scroll-margin-top: 7rem;
+    }
+    .grp-head::-webkit-details-marker { display: none; }
+    .grp-head::before { content: "▸"; font-size: .75rem; color: #c0b4a6; transition: transform .15s; }
+    .type-group[open] > .grp-head::before { transform: rotate(90deg); }
+    .grp-head:hover { color: var(--crimson); }
+    .grp-head .gc { font-size: .8rem; font-weight: 400; color: #b0a594; }
+    .type-group > .auth-grid { padding: .2rem 0 1.1rem; }
+    .auth-grid { display: grid; grid-template-columns: 1fr; gap: .55rem; align-items: start; }
+    @media (min-width: 640px)  { .auth-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .auth-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .auth-entry {
+        border: 1px solid #ece5da; border-radius: 3px; background: white;
+        padding: .55rem .7rem; font-size: .9rem; line-height: 1.5; scroll-margin-top: 7rem;
+    }
+    .auth-entry:target { border-color: var(--crimson); box-shadow: 0 0 0 2px rgba(140,30,40,.12); }
+    .auth-head { display: flex; align-items: baseline; gap: .35rem; flex-wrap: wrap; }
+    .auth-name { font-family: 'Noto Serif Georgian', Georgia, serif; font-weight: 600; color: #2b2320; }
+    .auth-var  { color: #8a7d6f; font-size: .82rem; }
+    .auth-copy {
+        margin-left: auto; font-size: .62rem; color: #b3a899; cursor: pointer;
+        border: 1px solid #e3dccf; border-radius: 2px; padding: .05rem .4rem; background: white;
+        flex-shrink: 0; transition: color .12s, border-color .12s;
+    }
+    .auth-copy:hover { color: var(--crimson); border-color: var(--crimson); }
+    .auth-desc { display: block; color: #6b5b4a; font-size: .78rem; font-style: italic; margin-top: .1rem; }
+    .auth-lexlink { display: inline-block; margin-top: .2rem; font-size: .72rem; color: var(--crimson);
+        text-decoration: none; border-bottom: 1px dotted #d8b8b8; }
+    .auth-lexlink:hover { border-color: var(--crimson); }
+
+    .auth-corpus { display: block; margin-top: .35rem; }
+    .auth-corpus-h { font-size: .66rem; letter-spacing: .04em; color: var(--crimson); font-weight: 600;
+        font-family: 'Noto Sans Georgian', sans-serif; display: block; margin-bottom: .2rem; }
+    .auth-corpus ul { list-style: none; margin: 0; padding: 0; }
+    .auth-corpus li { font-size: .78rem; line-height: 1.55; margin-bottom: .25rem;
+        font-family: 'Noto Serif Georgian', Georgia, serif; }
+    .att-title { color: #3a3028; font-weight: 600; }
+    .auth-corpus a { color: var(--crimson); text-decoration: none; border-bottom: 1px dotted #d8b8b8;
+        padding: 0 .05rem; white-space: nowrap; }
+    .auth-corpus a:hover { border-color: var(--crimson); }
+    .att-sep { color: #b3a899; }
+    .att-toggle { margin-top: .25rem; font-size: .66rem; color: var(--crimson); background: none;
+        border: none; cursor: pointer; padding: 0; font-family: 'Noto Sans Georgian', sans-serif; }
+
+    .imn-refs { margin-top: .35rem; }
+    .imn-refs > summary { list-style: none; cursor: pointer; font-size: .66rem; letter-spacing: .03em;
+        color: #b3a899; font-family: 'Noto Sans Georgian', sans-serif; display: inline-flex; align-items: center; gap: .25rem; }
+    .imn-refs > summary::-webkit-details-marker { display: none; }
+    .imn-refs > summary::before { content: "▸"; font-size: .6rem; transition: transform .15s; }
+    .imn-refs[open] > summary::before { transform: rotate(90deg); }
+    .imn-refs > summary:hover { color: var(--crimson); }
+    .auth-att  { display: block; color: #9a8d7e; font-size: .68rem; margin-top: .25rem;
+        font-family: 'Noto Sans Georgian', sans-serif; word-break: break-word; line-height: 1.5; }
+    .auth-see  { display: block; color: var(--crimson); font-size: .75rem; margin-top: .2rem; }
+    .auth-viaf { font-size: .62rem; letter-spacing: .05em; color: #8a7d6f;
+        border: 1px solid #ddd5c8; border-radius: 2px; padding: 0 .25rem; text-decoration: none; }
+    .auth-viaf:hover { color: var(--crimson); border-color: var(--crimson); }
+</style>
+{% endblock %}
+
+{% block main %}
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+
+    <header class="mb-2">
+        <h1 class="font-serif-geo text-2xl font-semibold text-gray-800 mb-2">საძიებლები</h1>
+        <p class="text-sm text-gray-500 mt-1 mb-4 max-w-3xl">
+            პირთა, გეოგრაფიულ, ხალხთა, ცხოველთა და მცენარეთა სახელების საძიებელი,
+            ი. იმნაიშვილის გამოცემის მიხედვით (1975). „ტექსტებში“ ბმულები მიუთითებს
+            კორპუსის მონაკვეთებზე; „იმნ.“ მითითებები — შანიძის გამოცემის (1959) გვერდ-სტრიქონზე.
+            სულ <b>{{ data.total }}</b> ერთეული.
+        </p>
+    </header>
+
+    <!-- sticky section switcher -->
+    <div class="auth-tabs" id="sec-tabs">
+        {% for s in data.sections %}
+        <button class="auth-tab" data-key="{{ s.key }}" onclick="showSec('{{ s.key }}')">{{ s.label }}<span class="c">{{ s.count }}</span></button>
+        {% endfor %}
+    </div>
+
+    {% for s in data.sections %}
+    <section class="auth-panel" data-key="{{ s.key }}" aria-label="{{ s.label }}">
+        {% if s.groups %}
+            {% for g in s.groups %}
+            <details class="type-group">
+                <summary class="grp-head">{{ g.label }}<span class="gc">{{ g.entries|length }}</span></summary>
+                <div class="auth-grid">
+                    {% for e in g.entries %}{% include "_auth_entry.html" %}{% endfor %}
+                </div>
+            </details>
+            {% endfor %}
+        {% else %}
+            <div class="auth-grid">
+                {% for e in s.entries %}{% include "_auth_entry.html" %}{% endfor %}
+            </div>
+        {% endif %}
+    </section>
+    {% endfor %}
+
+</div>
+{% endblock %}
+
+{% block body_scripts %}
+<script>
+function showSec(key) {
+    document.querySelectorAll('.auth-tab').forEach(function (t) {
+        t.classList.toggle('active', t.dataset.key === key);
+    });
+    document.querySelectorAll('.auth-panel').forEach(function (p) {
+        p.classList.toggle('active', p.dataset.key === key);
+    });
+}
+function copyAuthURI(btn, id) {
+    var url = 'https://tamarae.github.io/Sinai/authority.html#' + id;
+    navigator.clipboard.writeText(url).then(function () {
+        var prev = btn.textContent;
+        btn.textContent = '✓';
+        setTimeout(function () { btn.textContent = prev; }, 1400);
+    });
+}
+function toggleAtts(btn, id, total) {
+    var extras = document.querySelectorAll('#atts-' + CSS.escape(id) + ' .att-extra');
+    var expanded = extras[0] && extras[0].style.display !== 'none';
+    extras.forEach(function (el) { el.style.display = expanded ? 'none' : ''; });
+    btn.textContent = expanded ? ('ყველა (' + total + ') →') : '← დამალვა';
+}
+function activateFromHash() {
+    var h = location.hash ? decodeURIComponent(location.hash.slice(1)) : '';
+    if (!h) { showSec('persons'); return; }
+    var panel = document.querySelector('.auth-panel[data-key="' + (window.CSS && CSS.escape ? CSS.escape(h) : h) + '"]');
+    if (panel) { showSec(h); return; }
+    var el = document.getElementById(h);
+    if (el) {
+        var p = el.closest('.auth-panel');
+        if (p) {
+            showSec(p.dataset.key);
+            var d = el.closest('details');
+            while (d) { d.open = true; d = d.parentElement ? d.parentElement.closest('details') : null; }
+            el.scrollIntoView(); return;
+        }
+    }
+    showSec('persons');
+}
+function setTabTop() {
+    var nav = document.querySelector('nav.sticky') || document.querySelector('nav');
+    var tabs = document.getElementById('sec-tabs');
+    if (nav && tabs) tabs.style.top = nav.offsetHeight + 'px';
+}
+window.addEventListener('DOMContentLoaded', function () { setTabTop(); activateFromHash(); });
+window.addEventListener('resize', setTabTop);
+window.addEventListener('hashchange', activateFromHash);
+</script>
+{% endblock %}

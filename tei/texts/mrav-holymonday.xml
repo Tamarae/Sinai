@@ -77,11 +77,11 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         </head>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴅ</hi><w lemmaRef="#lex-vitartsa">ითარცა</w> გუაუწყა ჩუენ მათე <w lemmaRef="#lex-makharebel">მახარებელმან</w>, <w lemma="#lex-rametu">რამეთუ</w> თქუა: <w lemmaRef="#lex-gantiad">განთიად</w> <w lemma="#lex-vitar">ვითარ</w> აღვიდოდა იესუ <w lemmaRef="#lex-qalaqi">ქალაქად</w>, შეემშია და იხილა ლეღუი მდგომარჱ და მივიდა, რაჲთამცა პოვა <w lemmaRef="#lex-nayop">ნაყოფი</w> მას <w lemma="#lex-shina">შინა</w>, და, <w lemma="#lex-vitar">ვითარ</w> არა პოვა, რქუა ლეღუსა მას: ნუღარამცა გაქუს <w lemmaRef="#lex-nayop">ნაყოფი</w> უკუნისამდე! და <w lemmaRef="#lex-munquesve-muntquesve">მუნქუესვე</w> განჴმა<note n="1">(1)*</note>.
+          <hi rend="initial">Ⴅ</hi><w lemma="#lex-vitartsa">ითარცა</w> გუაუწყა ჩუენ <persName ref="#pers-mate">მათე</persName> მახარებელმან, <w lemma="#lex-rametu">რამეთუ</w> თქუა: <w lemma="#lex-gantiad">განთიად</w> <w lemma="#lex-vitar">ვითარ</w> აღვიდოდა <persName ref="#pers-iesu-kriste">იესუ</persName> ქალაქად, შეემშია და იხილა ლეღუი მდგომარჱ და მივიდა, რაჲთამცა პოვა ნაყოფი მას შინა, და, <w lemma="#lex-vitar">ვითარ</w> არა პოვა, რქუა ლეღუსა მას: ნუღარამცა გაქუს ნაყოფი უკუნისამდე! და <w lemma="#lex-munkues">მუნქუესვე</w> განჴმა<note n="1">(1)*</note>.
         </p>
         
         <p xml:id="p2" n="2">
-          ამასღა მოგაჴსენებ, საყუარელნო: მნებავს, რაჲთამცა <w lemmaRef="#lex-gulis-gantsqeba">გულის</w> . . . . .
+          ამასღა მოგაჴსენებ, საყუარელნო: მნებავს, რაჲთამცა <w lemma="#lex-gulisgantsqeba">გულის</w> . . . . .
           <gap reason="lost" unit="folio" quantity="75">
             <desc>აკლია დაახლოებით 75 ფურცლის ტექსტი</desc>
           </gap>

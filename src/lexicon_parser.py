@@ -9,8 +9,11 @@ from pathlib     import Path
 from typing      import List, Dict, Optional
 import xml.etree.ElementTree as ET
 from collections import defaultdict
+import html as _html
+import re as _re
 
-NS = {"tei": "http://www.tei-c.org/ns/1.0",
+TEI = "http://www.tei-c.org/ns/1.0"
+NS = {"tei": TEI,
       "xml": "http://www.w3.org/XML/1998/namespace",
       }
 
@@ -26,6 +29,50 @@ def _xml_id(el) -> str:
 
 def _xml_lang(el) -> str:
     return el.get("{http://www.w3.org/XML/1998/namespace}lang", "")
+
+def _ln(el) -> str:
+    return el.tag.split("}", 1)[-1] if isinstance(el.tag, str) else ""
+
+def _inline_html(el) -> str:
+    """Serialize mixed content to safe HTML: <hi>→<em>/<strong>,
+    <xr>/<ref target> → cross-reference link, text escaped. Children
+    like nested <cit> (translations) are skipped — handled separately."""
+    out = [_html.escape(el.text or "")]
+    for ch in el:
+        name = _ln(ch)
+        if name == "hi":
+            tag = "strong" if ch.get("rend") == "bold" else "em"
+            out.append(f"<{tag}>{_inline_html(ch)}</{tag}>")
+        elif name == "ref":
+            tgt = ch.get("target", "")
+            txt = _inline_html(ch)
+            out.append(f'<a class="xref" href="{_html.escape(tgt)}">{txt}</a>' if tgt else txt)
+        elif name == "xr":
+            out.append(_inline_html(ch))            # unwrap (keeps lbl + ref)
+        elif name in ("lbl", "seg", "orth", "gloss", "pc"):
+            out.append(_inline_html(ch))
+        elif name == "cit":
+            pass                                    # translations handled elsewhere
+        else:
+            out.append(_inline_html(ch))
+        out.append(_html.escape(ch.tail or ""))
+    return _re.sub(r"\s+", " ", "".join(out)).strip()
+
+def _shanidze_ref(bibl_el) -> str:
+    """Format <bibl><citedRange unit=page>N</citedRange>,<citedRange unit=line>M</citedRange>…
+    as 'N, M; N, M'."""
+    if bibl_el is None:
+        return ""
+    parts, cur = [], []
+    for cr in bibl_el.findall("tei:citedRange", NS):
+        unit = cr.get("unit"); val = (cr.text or "").strip()
+        if unit == "page":
+            if cur: parts.append(", ".join(cur)); cur = []
+            cur.append(val)
+        else:
+            cur.append(val)
+    if cur: parts.append(", ".join(cur))
+    return "; ".join(parts)
 
 
 @dataclass
@@ -43,9 +90,19 @@ class CitationData:
     locus:  str
 
 @dataclass
+class ExampleData:
+    quote_html:  str = ""   # the Old-Georgian quotation (HTML, hi→em)
+    ref:         str = ""   # Shanidze 1959 page/line, e.g. "140, 17"
+    translation: str = ""   # modern Georgian rendering
+
+@dataclass
 class SenseData:
-    def_ka: str
-    note:   str = ""
+    def_ka:       str
+    note:         str = ""
+    def_html:     str = ""   # def with inline cross-reference links
+    construction: str = ""   # Imnaishvili gram[@type='construction'] formula
+    examples:     List["ExampleData"] = field(default_factory=list)
+    refs:         List[str] = field(default_factory=list)   # bare Shanidze attestations
 
 @dataclass
 class SeeAlso:
@@ -89,6 +146,7 @@ class EntryData:
     source_label:  str = ""         # human-readable label for src-badge
     source_group:  str = "corpus"   # filter group id for data-source attribute
     pdf_url:       str = ""         # PDF link for the dictionary (may be empty)
+    variants:      List[str] = field(default_factory=list)
 
 
 @dataclass
@@ -136,6 +194,7 @@ class LexiconParser:
         POS("conj",    "კავ.",  "კავ.",  "კავშირი"),
         POS("prep",    "თანდ.","თანდ.","თანდებული"),
         POS("part",    "ნაწ.", "ნაწ.", "ნაწილაკი"),
+        POS("vnoun",   "სახ-ზმ.","სახ-ზმ.","სახელზმნა"),
         POS("other",   "სხვ.", "სხვ.", "სხვა"),
     ]
 
@@ -149,6 +208,7 @@ class LexiconParser:
         "preposition": "prep",
         "postposition": "other",
         "particle": "part",
+        "vnoun": "vnoun", "masdar": "vnoun", "სახელზმნა": "vnoun",
         "სახ.": "noun",  "ზმნ.": "verb",  "ზედ.": "adj",
         "ზმნზ.": "adv",  "რცხ.": "num",   "ნაც.": "pron",
         "კავ.": "conj",  "თანდ.": "other", "ნაწ.": "part",
@@ -296,55 +356,38 @@ class LexiconParser:
         if not lemma:
             return None
 
-        # POS + gender
-        gram_el = el.find("tei:gramGrp", NS)
+        # Variant forms (shown after the headword)
+        variants = [(o.text or "").strip()
+                    for o in el.findall("tei:form[@type='variant']/tei:orth", NS)
+                    if o.text and o.text.strip()]
+
+        # POS — only label it when a real POS value is present (Imnaishvili has none)
+        gram_el = el.find("tei:gramGrp[tei:pos]", NS)
         pos_raw = _t(gram_el, "tei:pos") if gram_el is not None else ""
         gender  = _t(gram_el, "tei:gen") if gram_el is not None else ""
-        pos_id  = self.POS_NORM.get(pos_raw.lower(), "other")
+        pos_id  = self.POS_NORM.get(pos_raw.lower(), "other") if pos_raw else "other"
         pos_rec = next((p for p in self.POS_TABLE if p.id == pos_id), self.POS_TABLE[-1])
+        pos_label = pos_rec.abbr if pos_raw else ""
 
-        # Greek equivalents
+        # Greek equivalents — ONLY actual grc translations (not Imnaishvili's ka renderings)
         greek = greek_alt = greek_logeion = ""
-        for i, cit_el in enumerate(el.findall(".//tei:cit[@type='translation']", NS)):
+        for i, cit_el in enumerate(
+                el.findall(".//tei:cit[@type='translation'][@xml:lang='grc']", NS)):
             q = _t(cit_el, "tei:quote")
             if i == 0:
                 greek = greek_logeion = q
-            else:
+            elif not greek_alt:
                 greek_alt = q
 
         # OLiA
         olia_el  = el.find(".//tei:xr[@type='lod']/tei:ref", NS)
         olia_uri = _attr(olia_el, "target") if olia_el is not None else ""
 
-        # Senses
-        senses: List[SenseData] = []
-        for sense_el in el.findall("tei:sense", NS):
-            def_ka = _t(sense_el, "tei:def[@xml:lang='ka']") or _t(sense_el, "tei:def")
-            note   = _t(sense_el, "tei:note")
-            if def_ka:
-                senses.append(SenseData(def_ka=def_ka, note=note))
+        # Senses (recursive — Imnaishvili nests senses) with examples
+        senses: List[SenseData] = self._collect_senses(el)
 
-        # Citation
-        citation = None
-        ex_el = el.find(".//tei:cit[@type='example']", NS)
-        if ex_el is not None:
-            q_text    = _t(ex_el, "tei:quote")
-            bibl_el   = ex_el.find("tei:bibl", NS)
-            cit_author= _t(bibl_el, "tei:author") if bibl_el is not None else ""
-            cit_title = _t(bibl_el, "tei:title")  if bibl_el is not None else ""
-            cit_locus = _t(bibl_el, "tei:ref")    if bibl_el is not None else ""
-            if q_text:
-                citation = CitationData(text=q_text, author=cit_author,
-                                        title=cit_title, locus=cit_locus)
-
-        # See also
-        see_also: List[SeeAlso] = []
-        for xr_el in el.findall("tei:xr[@type='cf']", NS):
-            ref_el = xr_el.find("tei:ref", NS)
-            if ref_el is not None:
-                target = _attr(ref_el, "target", "").lstrip("#")
-                label  = (ref_el.text or target).strip()
-                see_also.append(SeeAlso(xml_id=target, lemma=label))
+        citation = None          # superseded by per-sense examples
+        see_also: List[SeeAlso] = []   # cross-refs are inlined in def_html
 
         # Source references — distinguish corpus text links from dictionary attributions
         # Corpus text refs use a # prefix: target="#mrav-kharbeba-1"
@@ -367,7 +410,7 @@ class LexiconParser:
         sources      = sources[:MAX_DISPLAYED]
 
         return EntryData(
-            xml_id=xml_id, lemma=lemma, pos=pos_id, pos_label=pos_rec.abbr,
+            xml_id=xml_id, lemma=lemma, pos=pos_id, pos_label=pos_label,
             gender=self.GENDER_MAP.get(gender, gender),
             greek=greek, greek_alt=greek_alt, greek_logeion=greek_logeion,
             senses=senses, citation=citation, see_also=see_also,
@@ -377,4 +420,40 @@ class LexiconParser:
             source_label=source_label,
             source_group=source_group,
             pdf_url=pdf_url,
+            variants=variants,
         )
+
+    def _collect_senses(self, el) -> List["SenseData"]:
+        """Recursively gather senses. Each yields def (with inline xref links),
+        construction formula, illustrative examples (quote + Shanidze ref +
+        translation) and bare attestation refs."""
+        out: List[SenseData] = []
+        for sense_el in el.findall("tei:sense", NS):
+            def_el = sense_el.find("tei:def", NS)
+            def_html = _inline_html(def_el) if def_el is not None else ""
+            def_ka   = "".join(def_el.itertext()).strip() if def_el is not None else ""
+            note     = _t(sense_el, "tei:note")
+            constr   = _t(sense_el, "tei:gramGrp/tei:gram")
+            examples: List[ExampleData] = []
+            refs: List[str] = []
+            for cit_el in sense_el.findall("tei:cit[@type='example']", NS):
+                q_el   = cit_el.find("tei:quote", NS)
+                bibl   = cit_el.find("tei:bibl", NS)
+                ref    = _shanidze_ref(bibl)
+                tr_el  = cit_el.find("tei:cit[@type='translation']/tei:quote", NS)
+                if q_el is not None:
+                    examples.append(ExampleData(
+                        quote_html=_inline_html(q_el),
+                        ref=ref,
+                        translation=_inline_html(tr_el) if tr_el is not None else "",
+                    ))
+                elif ref:
+                    refs.append(ref)
+            if def_html or examples or refs or constr:
+                sd = SenseData(def_ka=def_ka, note=note, def_html=def_html,
+                               construction=constr, examples=examples)
+                sd.refs = refs
+                out.append(sd)
+            # nested senses
+            out.extend(self._collect_senses(sense_el))
+        return out

@@ -172,6 +172,18 @@
     }
     .sense-def { font-size: .85rem; color: #3a3028; line-height: 1.55; font-family: 'Noto Serif Georgian', Georgia, serif; }
     .sense-note { font-size: .75rem; color: #888; font-style: italic; margin-top: .2rem; }
+    .variant-forms { font-size: .82rem; color: #8a7d6f; font-family: 'Noto Serif Georgian', Georgia, serif; }
+    .constr { font-size: .72rem; color: var(--crimson); font-family: 'Noto Sans Georgian', sans-serif;
+        background: var(--parchment); border: 1px solid #e8dccd; border-radius: 2px;
+        padding: 0 .3rem; margin-right: .4rem; white-space: nowrap; }
+    .xref { color: var(--crimson); text-decoration: none; border-bottom: 1px dotted #d8b8b8; }
+    .xref:hover { border-color: var(--crimson); }
+    .ex-block { margin-top: .4rem; padding-left: .7rem; border-left: 2px solid #e8dccd; }
+    .ex-quote { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; color: #4a4030; line-height: 1.6; }
+    .ex-quote em { font-style: normal; letter-spacing: .04em; color: var(--crimson); }
+    .ex-ref { font-size: .66rem; color: #a99; font-family: 'Noto Sans Georgian', sans-serif; white-space: nowrap; }
+    .ex-transl { font-size: .78rem; color: #6b5b4a; font-style: italic; margin-top: .15rem; line-height: 1.5; }
+    .sense-refs { font-size: .74rem; color: #9a8d7e; margin-top: .3rem; }
 
     .citation-block {
         background: var(--parchment); border-left: 2px solid var(--crimson);
@@ -267,6 +279,8 @@
 <main class="flex-1">
     
 
+
+
 <!-- PAGE HEADER -->
 <div class="border-b border-gray-200 bg-white px-4 py-6">
     <div class="max-w-5xl mx-auto flex items-end justify-between gap-4 flex-wrap">
@@ -275,10 +289,10 @@
                 <a href="../lexicon/" class="hover:text-gray-600 transition-colors">ლექსიკონი</a>
                 &rsaquo; ჵ
             </p>
-            <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">ჵ</h1>
+            <h1 class="asomtavruli text-3xl font-semibold text-gray-800" style="line-height:1;">Ⴥ</h1>
             <p class="text-sm text-gray-500 mt-1">
                 ძველი ქართული ·
-                <span class="font-medium text-gray-600">1 ლექსიკური ერთეული</span>
+                <span class="font-medium text-gray-600">2 ლექსიკური ერთეული</span>
             </p>
         </div>
 
@@ -561,11 +575,15 @@
                 class="pos-chip on"
                 data-pos="part">ნაწ.</button>
         
+        <button onclick="togglePOS(this, 'vnoun')"
+                class="pos-chip on"
+                data-pos="vnoun">სახ-ზმ.</button>
+        
         <button onclick="togglePOS(this, 'other')"
                 class="pos-chip on"
                 data-pos="other">სხვ.</button>
         
-        <span class="ml-auto text-xs text-gray-400" id="count-label">1 ნაჩვ.</span>
+        <span class="ml-auto text-xs text-gray-400" id="count-label">2 ნაჩვ.</span>
     </div>
     
     <div class="max-w-5xl mx-auto flex items-center gap-2 flex-wrap py-2 border-t border-gray-50">
@@ -575,27 +593,7 @@
         <button onclick="toggleSRC(this, 'imnaishvili-1975')"
                 class="src-chip"
                 data-src="imnaishvili-1975"
-                title="ივ. იმნაიშვილი 1975 (1551)">იმნაიშვილი 1975</button>
-        
-        <button onclick="toggleSRC(this, 'abuladze1973')"
-                class="src-chip"
-                data-src="abuladze1973"
-                title="ილ. აბულაძე 1973 (894)">აბულაძე 1973</button>
-        
-        <button onclick="toggleSRC(this, 'shanidze1971')"
-                class="src-chip"
-                data-src="shanidze1971"
-                title="აკ. შანიძე 1971 (3)">შანიძე 1971</button>
-        
-        <button onclick="toggleSRC(this, 'sarjveladze1995')"
-                class="src-chip"
-                data-src="sarjveladze1995"
-                title="ზ. სარჯველაძე 1995 (8)">სარჯველაძე 1995</button>
-        
-        <button onclick="toggleSRC(this, 'corpus')"
-                class="src-chip"
-                data-src="corpus"
-                title="სინური მრავალთავი — კორპუსი (71)">კორპუსი</button>
+                title="ივ. იმნაიშვილი 1975 (3002)">იმნაიშვილი 1975</button>
         
     </div>
 </div>
@@ -624,7 +622,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ა
-                    <span class="text-gray-400 font-normal ml-1">(145)</span>
+                    <span class="text-gray-400 font-normal ml-1">(167)</span>
                 </a>
                 
                 <a href="b.html"
@@ -632,7 +630,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ბ
-                    <span class="text-gray-400 font-normal ml-1">(43)</span>
+                    <span class="text-gray-400 font-normal ml-1">(52)</span>
                 </a>
                 
                 <a href="g.html"
@@ -640,7 +638,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     გ
-                    <span class="text-gray-400 font-normal ml-1">(205)</span>
+                    <span class="text-gray-400 font-normal ml-1">(306)</span>
                 </a>
                 
                 <a href="d.html"
@@ -648,7 +646,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     დ
-                    <span class="text-gray-400 font-normal ml-1">(138)</span>
+                    <span class="text-gray-400 font-normal ml-1">(192)</span>
                 </a>
                 
                 <a href="e.html"
@@ -656,7 +654,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ე
-                    <span class="text-gray-400 font-normal ml-1">(64)</span>
+                    <span class="text-gray-400 font-normal ml-1">(61)</span>
                 </a>
                 
                 <a href="v.html"
@@ -664,7 +662,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ვ
-                    <span class="text-gray-400 font-normal ml-1">(48)</span>
+                    <span class="text-gray-400 font-normal ml-1">(39)</span>
                 </a>
                 
                 <a href="z.html"
@@ -672,15 +670,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ზ
-                    <span class="text-gray-400 font-normal ml-1">(37)</span>
-                </a>
-                
-                <a href="he.html"
-                   class="text-left px-2 py-1 rounded-sm text-xs transition-colors font-serif-geo font-semibold
-                          hover:bg-gray-100"
-                   style="color:var(--crimson);">
-                    ჱ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(50)</span>
                 </a>
                 
                 <a href="t.html"
@@ -688,7 +678,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     თ
-                    <span class="text-gray-400 font-normal ml-1">(46)</span>
+                    <span class="text-gray-400 font-normal ml-1">(69)</span>
                 </a>
                 
                 <a href="i.html"
@@ -696,7 +686,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ი
-                    <span class="text-gray-400 font-normal ml-1">(19)</span>
+                    <span class="text-gray-400 font-normal ml-1">(24)</span>
                 </a>
                 
                 <a href="k.html"
@@ -704,7 +694,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     კ
-                    <span class="text-gray-400 font-normal ml-1">(63)</span>
+                    <span class="text-gray-400 font-normal ml-1">(75)</span>
                 </a>
                 
                 <a href="l.html"
@@ -712,7 +702,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ლ
-                    <span class="text-gray-400 font-normal ml-1">(19)</span>
+                    <span class="text-gray-400 font-normal ml-1">(26)</span>
                 </a>
                 
                 <a href="m.html"
@@ -720,7 +710,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     მ
-                    <span class="text-gray-400 font-normal ml-1">(474)</span>
+                    <span class="text-gray-400 font-normal ml-1">(528)</span>
                 </a>
                 
                 <a href="n.html"
@@ -728,7 +718,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ნ
-                    <span class="text-gray-400 font-normal ml-1">(69)</span>
+                    <span class="text-gray-400 font-normal ml-1">(66)</span>
                 </a>
                 
                 <a href="o.html"
@@ -736,7 +726,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ო
-                    <span class="text-gray-400 font-normal ml-1">(25)</span>
+                    <span class="text-gray-400 font-normal ml-1">(39)</span>
                 </a>
                 
                 <a href="p.html"
@@ -744,7 +734,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     პ
-                    <span class="text-gray-400 font-normal ml-1">(21)</span>
+                    <span class="text-gray-400 font-normal ml-1">(25)</span>
                 </a>
                 
                 <a href="zh.html"
@@ -752,7 +742,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჟ
-                    <span class="text-gray-400 font-normal ml-1">(3)</span>
+                    <span class="text-gray-400 font-normal ml-1">(5)</span>
                 </a>
                 
                 <a href="r.html"
@@ -760,7 +750,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     რ
-                    <span class="text-gray-400 font-normal ml-1">(38)</span>
+                    <span class="text-gray-400 font-normal ml-1">(37)</span>
                 </a>
                 
                 <a href="s.html"
@@ -768,7 +758,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ს
-                    <span class="text-gray-400 font-normal ml-1">(297)</span>
+                    <span class="text-gray-400 font-normal ml-1">(301)</span>
                 </a>
                 
                 <a href="t2.html"
@@ -776,7 +766,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ტ
-                    <span class="text-gray-400 font-normal ml-1">(25)</span>
+                    <span class="text-gray-400 font-normal ml-1">(34)</span>
                 </a>
                 
                 <a href="u.html"
@@ -784,7 +774,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     უ
-                    <span class="text-gray-400 font-normal ml-1">(197)</span>
+                    <span class="text-gray-400 font-normal ml-1">(195)</span>
                 </a>
                 
                 <a href="f.html"
@@ -792,7 +782,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ფ
-                    <span class="text-gray-400 font-normal ml-1">(28)</span>
+                    <span class="text-gray-400 font-normal ml-1">(35)</span>
                 </a>
                 
                 <a href="q.html"
@@ -800,7 +790,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ქ
-                    <span class="text-gray-400 font-normal ml-1">(61)</span>
+                    <span class="text-gray-400 font-normal ml-1">(55)</span>
                 </a>
                 
                 <a href="gh.html"
@@ -808,7 +798,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ღ
-                    <span class="text-gray-400 font-normal ml-1">(24)</span>
+                    <span class="text-gray-400 font-normal ml-1">(25)</span>
                 </a>
                 
                 <a href="y.html"
@@ -816,7 +806,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ყ
-                    <span class="text-gray-400 font-normal ml-1">(30)</span>
+                    <span class="text-gray-400 font-normal ml-1">(28)</span>
                 </a>
                 
                 <a href="sh.html"
@@ -824,7 +814,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     შ
-                    <span class="text-gray-400 font-normal ml-1">(141)</span>
+                    <span class="text-gray-400 font-normal ml-1">(227)</span>
                 </a>
                 
                 <a href="ch.html"
@@ -840,7 +830,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ც
-                    <span class="text-gray-400 font-normal ml-1">(42)</span>
+                    <span class="text-gray-400 font-normal ml-1">(38)</span>
                 </a>
                 
                 <a href="dz.html"
@@ -848,7 +838,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ძ
-                    <span class="text-gray-400 font-normal ml-1">(39)</span>
+                    <span class="text-gray-400 font-normal ml-1">(50)</span>
                 </a>
                 
                 <a href="w.html"
@@ -856,7 +846,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     წ
-                    <span class="text-gray-400 font-normal ml-1">(83)</span>
+                    <span class="text-gray-400 font-normal ml-1">(120)</span>
                 </a>
                 
                 <a href="chw.html"
@@ -864,7 +854,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჭ
-                    <span class="text-gray-400 font-normal ml-1">(17)</span>
+                    <span class="text-gray-400 font-normal ml-1">(12)</span>
                 </a>
                 
                 <a href="kha.html"
@@ -872,7 +862,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჴ
-                    <span class="text-gray-400 font-normal ml-1">(37)</span>
+                    <span class="text-gray-400 font-normal ml-1">(49)</span>
                 </a>
                 
                 <a href="x.html"
@@ -888,7 +878,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჯ
-                    <span class="text-gray-400 font-normal ml-1">(13)</span>
+                    <span class="text-gray-400 font-normal ml-1">(14)</span>
                 </a>
                 
                 <a href="h.html"
@@ -896,7 +886,7 @@
                           hover:bg-gray-100"
                    style="color:var(--crimson);">
                     ჰ
-                    <span class="text-gray-400 font-normal ml-1">(14)</span>
+                    <span class="text-gray-400 font-normal ml-1">(21)</span>
                 </a>
                 
                 <a href="hoe.html"
@@ -904,7 +894,7 @@
                           bg-gray-100"
                    style="color:var(--crimson);">
                     ჵ
-                    <span class="text-gray-400 font-normal ml-1">(1)</span>
+                    <span class="text-gray-400 font-normal ml-1">(2)</span>
                 </a>
                 
             </nav>
@@ -919,17 +909,16 @@
             
             
             <article class="entry-card p-4 sm:p-5"
-                     id="lex-osana-osana"
+                     id="lex-o-2"
                      data-pos="other"
-                     data-source="abuladze1973"
-                     data-lemma="ჵსანა">
+                     data-source="imnaishvili-1975"
+                     data-lemma="ჵ">
 
                 <!-- Entry header -->
-                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
-                    <div class="flex items-baseline gap-2 flex-wrap">
-                        <span class="lemma-head">ჵსანა</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap min-w-0">
+                        <span class="lemma-head">ჵ</span>
                         
-                        <span class="pos-tag">სხვ.</span>
                         
                         
                         
@@ -939,13 +928,13 @@
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         
                         
-                        <span class="src-badge">ილ. აბულაძე 1973</span>
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
                         
                         
                         
                         
                         <button class="entry-copy"
-                                onclick="copyEntryURI(this, 'hoe', 'lex-osana-osana')">
+                                onclick="copyEntryURI(this, 'hoe', 'lex-o-2')">
                             <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
                             URI
                         </button>
@@ -954,12 +943,15 @@
 
                 <!-- Senses -->
                 
-                <div class="flex flex-col gap-2 mb-3">
+                <div class="flex flex-col gap-3 mb-3">
                     
                     <div class="flex gap-2">
                         
-                        <div>
-                            <div class="sense-def">დიდება</div>
+                        <div class="min-w-0 flex-1">
+                            
+                            <span class="sense-def">შორისდებული <strong>ო</strong>!</span>
+                            
+                            <div class="sense-refs"><span class="ex-ref">შან. 1959:</span> 127, 7, 11; 144, 14, 15</div>
                             
                         </div>
                     </div>
@@ -972,8 +964,122 @@
                 
                 
                 <div class="mt-3 pt-3 border-t border-gray-100">
-                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">3 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 3 ტექსტში</span></p>
-                    <div class="flex flex-col gap-2" id="atts-lex-osana-osana">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">3 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 2 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-o-2">
+                        
+                        <div>
+                            <div class="citation-text">…ს: აქა მკუდარი არავინ აღადგინაო, ვითარ, ჵ ჰურიაო? არა აღადგინა ელია წინაწარმეტყუე…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-lazare.html#p14"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ლაზარე, მარია, მართა §14 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…რთ ჰყოფთ მოძღუარსა თქუენსა? რასა იტყჳს? ჵ ჰურიაო, თანა-ეწამები ელიას, რომელმან-იგ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-lazare.html#p15"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ლაზარე, მარია, მართა §15 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…რწმუნოებაჲ და უჯერობლობაჲ მოხუცებულთაჲ! ჵ თესლო ქანანისო ურცხჳნოო, და არა იუდაჲსო…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-bzoba-iohannes.html#p18"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვ. კ-პოლელი — შესლვა იერ-მდ §18 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Citation (from Imnaishvili example) -->
+                
+
+                <!-- Footer: corpus text cross-refs + see-also -->
+                
+                
+                
+
+                
+
+            </article>
+            
+            
+            <article class="entry-card p-4 sm:p-5"
+                     id="lex-osana-2"
+                     data-pos="other"
+                     data-source="imnaishvili-1975"
+                     data-lemma="ჵსანა">
+
+                <!-- Entry header -->
+                <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap min-w-0">
+                        <span class="lemma-head">ჵსანა</span>
+                        
+                        <span class="variant-forms">(ოსანა)</span>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <!-- External links + copy URI -->
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        
+                        
+                        <span class="src-badge">ივ. იმნაიშვილი 1975</span>
+                        
+                        
+                        
+                        
+                        <button class="entry-copy"
+                                onclick="copyEntryURI(this, 'hoe', 'lex-osana-2')">
+                            <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M11 5V3a1 1 0 00-1-1H3a1 1 0 00-1 1v7a1 1 0 001 1h2"/></svg>
+                            URI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Senses -->
+                
+                <div class="flex flex-col gap-3 mb-3">
+                    
+                    <div class="flex gap-2">
+                        
+                        <div class="min-w-0 flex-1">
+                            
+                            <span class="sense-def">არამეულ-ებრაული სიტყვაა. პირველ ხანებში ის ამას ნიშნავდა: <em>გვიშველე</em>! (<em>გვიხსენი</em>!).</span>
+                            
+                            <div class="sense-refs"><span class="ex-ref">შან. 1959:</span> 126, 30; 135, 26</div>
+                            
+                            <div class="ex-block">
+                                <span class="ex-quote">შემდეგ და შემდეგ დაკარგა ეს მნიშვნელობა და იქცა უბრალო შორისდებულად ისეთივე შინაარსით, როგორსაც შეიცავს ჩვენი <em>ვაშა</em>! უგალობდეთ და ვიტყოდით: <em>ოსანა</em> — რომელ არს „მაცხოვნენ ჩუენ“ — მაღალთა შინა</span> <span class="ex-ref">შან. 140, 17</span>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+                <!-- Attestations from encoded texts -->
+                
+                
+                
+                <div class="mt-3 pt-3 border-t border-gray-100">
+                    <p class="text-xs tracking-widests text-gray-400 font-medium mb-2"><span style="font-weight:400; color:#aaa; font-size:.85em;">5 · </span>დადასტურება<span style="font-weight:400; color:#aaa; font-size:.85em;"> · 4 ტექსტში</span></p>
+                    <div class="flex flex-col gap-2" id="atts-lex-osana-2">
                         
                         <div>
                             <div class="citation-text">…ამებოდეს იაკობს, ღაღადებდეს და იტყოდეს: ჵსანა ძესა დავითისსა!</div>
@@ -981,6 +1087,16 @@
                                 <a href="../texts/mrav-iakob-apostle.html#p4"
                                    class="hover:text-gray-700 transition-colors">
                                     წმ. იაკობ მოც. და ძმ. უფლ. (26 დეკ.) §4 →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="citation-text">…აღატ-ვყოთ მორწმუნეთა ძმათა ჩუენთა თანა: ჵსანა! კურთხეულ არს მომავალი სახელითა უფლისაჲ…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-lazare.html#p12"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოანე ოქროპირი — ლაზარე, მარია, მართა §12 →
                                 </a>
                             </div>
                         </div>
@@ -1005,6 +1121,16 @@
                             </div>
                         </div>
                         
+                        <div>
+                            <div class="citation-text">…რესა ვითარცა ქერობინთა ზედა და იტყჳან: &#34;ჵსანა, ძეო დავითისო! კურთხეულ არს მომავალი სა…</div>
+                            <div class="citation-ref mt-0.5">
+                                <a href="../texts/mrav-bzoba-iohannes.html#p24"
+                                   class="hover:text-gray-700 transition-colors">
+                                    იოვ. კ-პოლელი — შესლვა იერ-მდ §24 →
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                 </div>
@@ -1018,27 +1144,6 @@
                 
                 
 
-                
-                <div class="flex items-center justify-between flex-wrap gap-2 mt-3 pt-3 border-t border-gray-100">
-
-                    <div class="flex items-center gap-1.5 flex-wrap text-xs text-gray-500">
-                        
-                        
-
-                        
-                        
-                        <span class="text-gray-400">წყ.:</span>
-                        
-                        
-                        <span class="text-gray-500">ილ. აბულაძე 1973</span>
-                        
-                        
-                        
-                    </div>
-
-                    
-
-                </div>
                 
 
             </article>
@@ -1077,7 +1182,7 @@
 
 
 <script>
-const activePOS = new Set(["noun", "verb", "adj", "adv", "num", "pron", "conj", "prep", "part", "other"]);
+const activePOS = new Set(["noun", "verb", "adj", "adv", "num", "pron", "conj", "prep", "part", "vnoun", "other"]);
 var activeSRC = 'all';
 
 function togglePOS(btn, pos) {

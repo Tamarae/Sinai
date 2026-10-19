@@ -68,6 +68,18 @@
     }
     .sense-def { font-size: .85rem; color: #3a3028; line-height: 1.55; font-family: 'Noto Serif Georgian', Georgia, serif; }
     .sense-note { font-size: .75rem; color: #888; font-style: italic; margin-top: .2rem; }
+    .variant-forms { font-size: .82rem; color: #8a7d6f; font-family: 'Noto Serif Georgian', Georgia, serif; }
+    .constr { font-size: .72rem; color: var(--crimson); font-family: 'Noto Sans Georgian', sans-serif;
+        background: var(--parchment); border: 1px solid #e8dccd; border-radius: 2px;
+        padding: 0 .3rem; margin-right: .4rem; white-space: nowrap; }
+    .xref { color: var(--crimson); text-decoration: none; border-bottom: 1px dotted #d8b8b8; }
+    .xref:hover { border-color: var(--crimson); }
+    .ex-block { margin-top: .4rem; padding-left: .7rem; border-left: 2px solid #e8dccd; }
+    .ex-quote { font-family: 'Noto Serif Georgian', Georgia, serif; font-size: .82rem; color: #4a4030; line-height: 1.6; }
+    .ex-quote em { font-style: normal; letter-spacing: .04em; color: var(--crimson); }
+    .ex-ref { font-size: .66rem; color: #a99; font-family: 'Noto Sans Georgian', sans-serif; white-space: nowrap; }
+    .ex-transl { font-size: .78rem; color: #6b5b4a; font-style: italic; margin-top: .15rem; line-height: 1.5; }
+    .sense-refs { font-size: .74rem; color: #9a8d7e; margin-top: .3rem; }
 
     .citation-block {
         background: var(--parchment); border-left: 2px solid var(--crimson);
@@ -106,6 +118,16 @@
 
 {% block main %}
 
+{% set asomtavruli = {
+    'ა': 'Ⴀ', 'ბ': 'Ⴁ', 'გ': 'Ⴂ', 'დ': 'Ⴃ', 'ე': 'Ⴄ', 'ვ': 'Ⴅ',
+    'ზ': 'Ⴆ', 'ჱ': 'Ⴡ', 'თ': 'Ⴇ', 'ი': 'Ⴈ', 'კ': 'Ⴉ', 'ლ': 'Ⴊ',
+    'მ': 'Ⴋ', 'ნ': 'Ⴌ', 'ჲ': 'Ⴢ', 'ო': 'Ⴍ', 'პ': 'Ⴎ', 'ჟ': 'Ⴏ',
+    'რ': 'Ⴐ', 'ს': 'Ⴑ', 'ტ': 'Ⴒ', 'ჳ': 'Ⴣ', 'უ': 'Ⴓ', 'ფ': 'Ⴔ',
+    'ქ': 'Ⴕ', 'ღ': 'Ⴖ', 'ყ': 'Ⴗ', 'შ': 'Ⴘ', 'ჩ': 'Ⴙ', 'ც': 'Ⴚ',
+    'ძ': 'Ⴛ', 'წ': 'Ⴜ', 'ჭ': 'Ⴝ', 'ჴ': 'Ⴤ', 'ხ': 'Ⴞ', 'ჯ': 'Ⴟ',
+    'ჰ': 'Ⴠ', 'ჵ': 'Ⴥ'
+} %}
+
 <!-- PAGE HEADER -->
 <div class="border-b border-gray-200 bg-white px-4 py-6">
     <div class="max-w-5xl mx-auto flex items-end justify-between gap-4 flex-wrap">
@@ -114,7 +136,7 @@
                 <a href="{{ root }}lexicon/" class="hover:text-gray-600 transition-colors">ლექსიკონი</a>
                 &rsaquo; {{ letter }}
             </p>
-            <h1 class="font-serif-geo text-2xl font-semibold text-gray-800">{{ letter }}</h1>
+            <h1 class="asomtavruli text-3xl font-semibold text-gray-800" style="line-height:1;">{{ asomtavruli[letter] }}</h1>
             <p class="text-sm text-gray-500 mt-1">
                 ძველი ქართული ·
                 <span class="font-medium text-gray-600">{{ entries | length }} ლექსიკური ერთეული</span>
@@ -206,9 +228,12 @@
                      data-lemma="{{ entry.lemma | lower }}">
 
                 <!-- Entry header -->
-                <div class="flex items-start justify-between gap-3 flex-wrap mb-3">
-                    <div class="flex items-baseline gap-2 flex-wrap">
+                <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-baseline gap-2 flex-wrap min-w-0">
                         <span class="lemma-head">{{ entry.lemma }}</span>
+                        {% if entry.variants %}
+                        <span class="variant-forms">({{ entry.variants | join(', ') }})</span>
+                        {% endif %}
                         {% if entry.pos_label %}
                         <span class="pos-tag">{{ entry.pos_label }}</span>
                         {% endif %}
@@ -255,17 +280,23 @@
 
                 <!-- Senses -->
                 {% if entry.senses %}
-                <div class="flex flex-col gap-2 mb-3">
+                <div class="flex flex-col gap-3 mb-3">
                     {% for sense in entry.senses %}
                     <div class="flex gap-2">
                         {% if entry.senses | length > 1 %}
                         <span class="sense-num">{{ loop.index }}.</span>
                         {% endif %}
-                        <div>
-                            <div class="sense-def">{{ sense.def_ka }}</div>
-                            {% if sense.note %}
-                            <div class="sense-note">{{ sense.note }}</div>
-                            {% endif %}
+                        <div class="min-w-0 flex-1">
+                            {% if sense.construction %}<span class="constr">{{ sense.construction }}</span>{% endif %}
+                            {% if sense.def_html %}<span class="sense-def">{{ sense.def_html | safe }}</span>{% endif %}
+                            {% if sense.note %}<div class="sense-note">{{ sense.note }}</div>{% endif %}
+                            {% if sense.refs %}<div class="sense-refs"><span class="ex-ref">შან. 1959:</span> {{ sense.refs | join('; ') }}</div>{% endif %}
+                            {% for ex in sense.examples %}
+                            <div class="ex-block">
+                                <span class="ex-quote">{{ ex.quote_html | safe }}</span>{% if ex.ref %} <span class="ex-ref">შან. {{ ex.ref }}</span>{% endif %}
+                                {% if ex.translation %}<div class="ex-transl">{{ ex.translation | safe }}</div>{% endif %}
+                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                     {% endfor %}

@@ -19,8 +19,9 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from src.catalog_parser import CatalogParser
-from src.text_parser    import TextParser, collect_attestations
+from src.text_parser    import TextParser, collect_attestations, collect_name_attestations
 from src.lexicon_parser import LexiconParser, build_popup_lookup
+from src.authority_parser import AuthorityParser
 
 # ── Paths ─────────────────────────────────────────────
 ROOT             = Path(__file__).parent
@@ -30,6 +31,7 @@ TMPL_DIR         = ROOT / "templates"
 
 CATALOG_XML      = TEI_DIR / "catalog.xml"
 LEXICON_XML      = TEI_DIR / "lexicon.xml"
+AUTHORITY_XML    = TEI_DIR / "authority.xml"
 BIBLIOGRAPHY_XML = TEI_DIR / "bibliography.xml"
 RESEARCH_DIR     = TEI_DIR / "research"
 TEXTS_DIR        = TEI_DIR / "texts"
@@ -162,6 +164,22 @@ def build_lexicon(catalog=None):
     parser = LexiconParser(LEXICON_XML)
     data   = parser.parse()
 
+    # Resolve cross-reference links (#lex-id) to their letter page: {slug}.html#lex-id
+    import re as _re
+    id2slug = {e.xml_id: GEO_SLUG.get(letter, "a")
+               for letter, es in data.entries_by_letter.items() for e in es}
+    def _qualify(html: str) -> str:
+        return _re.sub(r'href="#(lex-[^"]+)"',
+                       lambda m: f'href="{id2slug.get(m.group(1), "")}.html#{m.group(1)}"'
+                                 if m.group(1) in id2slug else m.group(0),
+                       html or "")
+    for e in data.entries:
+        for s in e.senses:
+            s.def_html = _qualify(s.def_html)
+            for ex in s.examples:
+                ex.quote_html  = _qualify(ex.quote_html)
+                ex.translation = _qualify(ex.translation)
+
     # Hub / index page
     render(
         "lexicon/index.html",
@@ -192,6 +210,67 @@ def build_lexicon(catalog=None):
             attestations=attestations,
             available_sources=data.available_sources,   # ← NEW
         )
+
+
+# ─────────────────────────────────────────────────────
+# 4b.  AUTHORITY / INDEXES (საძიებლები)
+# ─────────────────────────────────────────────────────
+def build_authority(catalog=None):
+    print("\n[authority]")
+    if not AUTHORITY_XML.exists():
+        print("  — skipped (tei/authority.xml not found)")
+        return
+
+    # Corpus attestations — clickable links from <persName/placeName ref> in texts,
+    # collected the same way the lexicon collects <w lemma> attestations.
+    attestations: dict = {}
+    if catalog is not None:
+        for meta in catalog.texts:
+            if not meta.file_path:
+                continue
+            xml_path = ROOT / meta.file_path
+            if not xml_path.exists():
+                continue
+            for aid, refs in collect_name_attestations(
+                    xml_path, meta.xml_id, meta.label_ka).items():
+                attestations.setdefault(aid, []).extend(refs)
+        print(f"  corpus attestations: {sum(len(v) for v in attestations.values())} "
+              f"across {len(attestations)} entries")
+
+    data = AuthorityParser(AUTHORITY_XML).parse()
+
+    # fauna/flora/ethnonym items are common nouns linked to a lexicon entry:
+    # reuse that entry's <w lemma> corpus attestations, and build a lexicon href.
+    lex_slug: dict = {}
+    word_atts: dict = {}
+    if catalog is not None and LEXICON_XML.exists():
+        import xml.etree.ElementTree as _ET
+        _ns = {"tei": "http://www.tei-c.org/ns/1.0"}
+        for e in _ET.parse(LEXICON_XML).findall(".//tei:entry", _ns):
+            xid = e.get("{http://www.w3.org/XML/1998/namespace}id")
+            orth = e.find("tei:form[@type='lemma']/tei:orth", _ns)
+            if xid and orth is not None and orth.text:
+                lex_slug[xid] = GEO_SLUG.get(orth.text.strip()[:1], "a")
+        for meta in catalog.texts:
+            xml_path = ROOT / meta.file_path if meta.file_path else None
+            if xml_path and xml_path.exists():
+                for lid, refs in collect_attestations(xml_path, meta.xml_id, meta.label_ka).items():
+                    word_atts.setdefault(lid, []).extend(refs)
+        for sec in data.sections:
+            for e in sec.entries:
+                if e.lex_id and e.lex_id in word_atts and e.xml_id not in attestations:
+                    attestations[e.xml_id] = word_atts[e.lex_id]
+
+    print(f"  {data.total} entries across {len(data.sections)} sections")
+    render(
+        "authority.html",
+        BUILD_DIR / "authority.html",
+        root="",
+        active="authority",
+        data=data,
+        attestations=attestations,
+        lex_slug=lex_slug,
+    )
 
 
 # ─────────────────────────────────────────────────────
@@ -287,13 +366,14 @@ def main():
     parser = argparse.ArgumentParser(description="Build Mravaltavi edition")
     parser.add_argument("--texts",        action="store_true")
     parser.add_argument("--lexicon",      action="store_true")
+    parser.add_argument("--authority",    action="store_true")
     parser.add_argument("--bibliography", action="store_true")
     parser.add_argument("--research",     action="store_true")
     parser.add_argument("--index",        action="store_true")
     args = parser.parse_args()
 
     full_build = not any([
-        args.texts, args.lexicon, args.bibliography,
+        args.texts, args.lexicon, args.authority, args.bibliography,
         args.research, args.index,
     ])
 
@@ -312,6 +392,9 @@ def main():
 
     if full_build or args.lexicon:
         build_lexicon(catalog)
+
+    if full_build or args.authority:
+        build_authority(catalog)
 
     if full_build or args.bibliography:
         build_bibliography()

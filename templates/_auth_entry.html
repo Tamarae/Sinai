@@ -1,0 +1,23 @@
+{% set atts = (attestations.get(e.xml_id, []) if attestations else []) %}
+<div class="auth-entry" id="{{ e.xml_id }}">
+    <div class="auth-head">
+        <span class="auth-name">{{ e.name }}</span>{% if e.variants %} <span class="auth-var">({{ e.variants|join(', ') }})</span>{% endif %}{% if e.viaf %} <a class="auth-viaf" href="https://viaf.org/viaf/{{ e.viaf }}/" target="_blank" rel="noopener">VIAF</a>{% endif %}{% if e.name_en or e.name_la %} <span class="auth-var">— {{ e.name_en or e.name_la }}</span>{% endif %}
+        <button class="auth-copy" title="URI-ის კოპირება" onclick="copyAuthURI(this, '{{ e.xml_id }}')">⧉ URI</button>
+    </div>
+    {% if e.desc %}<span class="auth-desc">{{ e.desc }}</span>{% endif %}
+    {% if e.lex_id and lex_slug %}<a class="auth-lexlink" href="{{ root }}lexicon/{{ lex_slug.get(e.lex_id, 'a') }}.html#{{ e.lex_id }}">ლექსიკონში →</a>{% endif %}
+    {% if atts %}
+    {% set groups = atts|groupby('text_id')|list %}
+    <div class="auth-corpus" id="atts-{{ e.xml_id }}">
+        <span class="auth-corpus-h">{{ atts|length }} შემთხვევა{% if groups|length != atts|length %} ({{ groups|length }} ტექსტი){% endif %}</span>
+        <ul>
+            {% for text_id, items in groups %}
+            <li{% if loop.index > 8 %} class="att-extra" style="display:none"{% endif %}><span class="att-title">{{ items[0].title }}</span> {% for a in items %}<a href="{{ root }}texts/{{ text_id }}.html{% if a.para_id %}#{{ a.para_id }}{% endif %}">§{{ a.para_n or '·' }}</a>{% if not loop.last %}<span class="att-sep">, </span>{% endif %}{% endfor %}</li>
+            {% endfor %}
+        </ul>
+        {% if groups|length > 8 %}<button class="att-toggle" onclick="toggleAtts(this, '{{ e.xml_id }}', {{ groups|length }})">ყველა ({{ groups|length }} ტექსტი) →</button>{% endif %}
+    </div>
+    {% endif %}
+    {% if e.attestation %}<details class="imn-refs"><summary>იმნ. 1975 · შან. 1959</summary><span class="auth-att">{{ e.attestation }}</span></details>{% endif %}
+    {% if e.seealso %}<span class="auth-see">იხ. {{ e.seealso }}</span>{% endif %}
+</div>

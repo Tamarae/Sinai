@@ -58,43 +58,43 @@ schematypens="http://relaxng.org/ns/structure/relaxng"?><TEI xmlns="http://www.t
         <pb n="312v" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0314/full/pct:100/0/default.jpg"/>
         
         <p xml:id="p1" n="1">
-          <hi rend="initial">Ⴜ</hi>ყალობითა მამისაჲთა და ძისაჲთა და სულისა წმიდისაჲთა, ამის თაყუანის-საცემელისა სამებისა წმიდისა, ღმრთისა ჩუენისა მომადლებითა და მეოხებითა წმიდისა <w lemmaRef="#lex-ghmrtis-mbrdzol">ღმრთის</w>-<w lemmaRef="#lex-mshobel">მშობელისა</w> <w lemma="#lex-maradis">მარადის</w> ქალწულისა მარიამისითა, ძალითა პატიოსნისა და ცხოველს-მყოფელის საუფლოჲსა ჯუარისაჲთა და მადლითა წმიდისა ადგომისა საფლავისა უფლისა ჩუენისა იესუ ქრისტჱსისაჲთა და მეოხებითა ყოველთა წინაწარმეტყუელთა, მოციქულთა, მახარებელთა, მარტჳლთა მართალთა და მოწამეთაჲთა და ყოველთა წმიდათა მისთაჲთა და მადლითა წმიდისა <w lemmaRef="#lex-tsinatsarmetqueli-tsinaistsarmetqueli-tsinarmetqueli">წინაწარმეტყუელისა</w> და დიდებულისა მოსჱსითა მე, მაკარი ლეთეთელი, <w lemmaRef="#lex-dze">ძჱ</w> გიორგი <note n="1">1*</note> გრძელისაჲ, ცოდვილი <w lemma="#lex-priad">ფრიად</w>, ღირს მყო ღმერთმან შესაქმედ წმიდისა ამის <w lemmaRef="#lex-tsign">წიგნისა</w> <w lemmaRef="#lex-mravaltav">მრავალთავისა</w> <w lemma="#lex-tana">თანა</w>-შეწევნითა ძმისა ჩუენისა სულიერად პიმენ კახისაჲთა და ჴელთ-წერითა დედის ძმისწულისა ჩემისა ამონა ვახთანგ მოძარღულისა ძისაჲთა, საჴსენებელად სულთა ჩუენთათჳს და სულთა მშობელთა ჩუენთათჳს და <w lemmaRef="#lex-qovel">ყოველთა</w> გარდაცვალებულთა <w lemmaRef="#lex-tvisi">თჳსთა</w> ჩუენთათჳს.
+          <hi rend="initial">Ⴜ</hi>ყალობითა <w lemma="#lex-mama">მამისაჲთა</w> და <w lemma="#lex-dze">ძისაჲთა</w> და სულისა წმიდისაჲთა, ამის <w lemma="#lex-taquanistsema">თაყუანის</w>-საცემელისა <w lemma="#lex-sameba">სამებისა</w> წმიდისა, ღმრთისა ჩუენისა <w lemma="#lex-momadleba">მომადლებითა</w> და მეოხებითა წმიდისა ღმრთის-მშობელისა <w lemma="#lex-maradis">მარადის</w> ქალწულისა მარიამისითა, ძალითა პატიოსნისა და ცხოველს-მყოფელის საუფლოჲსა ჯუარისაჲთა და მადლითა წმიდისა ადგომისა საფლავისა უფლისა ჩუენისა <persName ref="#pers-iesu-kriste">იესუ</persName> ქრისტჱსისაჲთა და მეოხებითა ყოველთა წინაწარმეტყუელთა, მოციქულთა, მახარებელთა, <w lemma="#lex-martwli">მარტჳლთა</w> მართალთა და მოწამეთაჲთა და ყოველთა წმიდათა მისთაჲთა და მადლითა წმიდისა წინაწარმეტყუელისა და დიდებულისა მოსჱსითა მე, <persName ref="#pers-makari">მაკარი</persName> ლეთეთელი, <w lemma="#lex-dze">ძჱ</w> გიორგი <note n="1">1*</note> გრძელისაჲ, ცოდვილი <w lemma="#lex-priad">ფრიად</w>, <w lemma="#lex-ghir">ღირს</w> მყო ღმერთმან შესაქმედ წმიდისა ამის წიგნისა <w lemma="#lex-mravaltavi">მრავალთავისა</w> თანა-შეწევნითა ძმისა ჩუენისა სულიერად <persName ref="#pers-pimen">პიმენ</persName> კახისაჲთა და ჴელთ-წერითა დედის <w lemma="#lex-dzmistsuli">ძმისწულისა</w> ჩემისა <persName ref="#pers-amona">ამონა</persName> <persName ref="#pers-vakhtang">ვახთანგ</persName> მოძარღულისა <w lemma="#lex-dze">ძისაჲთა</w>, საჴსენებელად სულთა ჩუენთათჳს და სულთა მშობელთა ჩუენთათჳს და ყოველთა გარდაცვალებულთა თჳსთა ჩუენთათჳს.
         </p>
         
         <p xml:id="p2" n="2">
-          <hi rend="initial">Ⴀ</hi>წ, ღმერთმან დაგაჯეროს, <w lemmaRef="#lex-mamani">მამანო</w> და ძმანო, რომელნი აღმოიკითხვიდეთ წმიდათა ამათ <w lemmaRef="#lex-sitqua">სიტყუათა</w> ამათ <w lemma="#lex-mier">მიერ</w>, ჩუენ <w lemma="#lex-pirvel">პირველ</w> მოჴსენებულნი ესე ცოცხალნი და <w lemmaRef="#lex-mitsvalebuli">მიცვალებულნი</w> მოგჳჴსენენით ღმრთისათჳს წმიდათა <w lemmaRef="#lex-lotsva">ლოცვათა</w> თქუენთა <note n="2">2*</note> <w lemma="#lex-shina">შინა</w>, <w lemma="#lex-rayta">რაჲთა</w> თქუენ <w lemma="#lex-mier">მიერ</w> განვერნეთ ჩუენ დღესა მას <w lemmaRef="#lex-sashinel">საშინელსა</w> განკითხვისა <note n="3">3*</note> <pb n="274r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/pct:100/0/default.jpg"/> ჩუენისასა ტირილისაგან თუალთაჲსა და ღრჭენისაგან კბილთაჲსა. და თქუენცა <w lemmaRef="#lex-upal">უფალმან</w> მოგიჴსენენინ <w lemmaRef="#lex-sasupevel">სასუფეველსა</w> მისსა <note n="4">4*</note>. <w lemmaRef="#lex-amen-amen">ამენ</w> <note n="5">5*</note>.
+          <hi rend="initial">Ⴀ</hi>წ, ღმერთმან დაგაჯეროს, მამანო და ძმანო, რომელნი <w lemma="#lex-aghmokitkhva">აღმოიკითხვიდეთ</w> წმიდათა ამათ <w lemma="#lex-sitqua">სიტყუათა</w> ამათ <w lemma="#lex-mier">მიერ</w>, ჩუენ პირველ <w lemma="#lex-moqhseneba">მოჴსენებულნი</w> ესე ცოცხალნი და მიცვალებულნი <w lemma="#lex-moqhseneba">მოგჳჴსენენით</w> ღმრთისათჳს წმიდათა <w lemma="#lex-lotsva">ლოცვათა</w> თქუენთა <note n="2">2*</note> შინა, <w lemma="#lex-rayta">რაჲთა</w> თქუენ <w lemma="#lex-mier">მიერ</w> განვერნეთ ჩუენ დღესა მას <w lemma="#lex-sashineli">საშინელსა</w> <w lemma="#lex-gankitkhva">განკითხვისა</w> <note n="3">3*</note> <pb n="274r" ed="#S" facs="https://tile.loc.gov/image-services/iiif/service:amed:amedmonastery:00279386887-ms:0276/full/pct:100/0/default.jpg"/> ჩუენისასა ტირილისაგან თუალთაჲსა და ღრჭენისაგან კბილთაჲსა. და თქუენცა უფალმან <w lemma="#lex-moqhseneba">მოგიჴსენენინ</w> სასუფეველსა მისსა <note n="4">4*</note>. <w lemma="#lex-amen">ამენ</w> <note n="5">5*</note>.
         </p>
         
         <p xml:id="p3" n="3">
-          <hi rend="initial">Ⴃ</hi>ა მოიჴსენენინ <note n="6">6*</note> უფალმან ყოველნი, რომელთა ყვეს <w lemmaRef="#lex-shewwevna1">შეწევნაჲ</w> წიგნისაჲ ამის <w lemmaRef="#lex-suli">სულთა</w> მათთათჳს.
+          <hi rend="initial">Ⴃ</hi>ა მოიჴსენენინ <note n="6">6*</note> უფალმან ყოველნი, რომელთა ყვეს <w lemma="#lex-shetsevna">შეწევნაჲ</w> წიგნისაჲ ამის სულთა მათთათჳს.
         </p>
         
         <p xml:id="p4" n="4">
-          <hi rend="initial">Ⴃ</hi>აიწერა ესე <w lemmaRef="#lex-tsign">წიგნი</w> <placeName ref="#place-ierusalemi"><placeName ref="#place-ierusalemi">იერუსალემს</placeName></placeName> <note n="7">7*</note>, <w lemmaRef="#lex-lavra">ლავრასა</w> <note n="8">8*</note> <w lemmaRef="#lex-didi">დიდსა</w> წმიდისა <note n="9">9*</note> და <w lemmaRef="#lex-netar">ნეტარისა</w> მამისა <w lemmaRef="#lex-chuen">ჩუენისა</w> საბაჲსსა <note n="10">10*</note> დღეთა ღმრთის მოყუარისა თევდოსი პატრეაქისათა და საბა-წმიდას პატიოსნისა და <w lemmaRef="#lex-sanatrel">სანატრელისა</w> <persName ref="#pers-solomoni"><persName ref="#pers-solomoni">სოლომონ</persName></persName> მამასახლისისათა.
+          <hi rend="initial">Ⴃ</hi>აიწერა ესე წიგნი <placeName ref="#place-ierusalemi">იერუსალემს</placeName> <note n="7">7*</note>, <w lemma="#lex-lavra">ლავრასა</w> <note n="8">8*</note> დიდსა წმიდისა <note n="9">9*</note> და ნეტარისა <w lemma="#lex-mama">მამისა</w> ჩუენისა საბაჲსსა <note n="10">10*</note> დღეთა ღმრთის მოყუარისა <persName ref="#pers-tevdosi">თევდოსი</persName> პატრეაქისათა და <persName ref="#pers-saba-mamasakhlisi">საბა</persName>-წმიდას პატიოსნისა და სანატრელისა <persName ref="#pers-solomoni">სოლომონ</persName> მამასახლისისათა.
         </p>
         
         <p xml:id="p5" n="5">
-          <hi rend="initial">Ⴃ</hi>ა დაიწერა წმიდაჲ ესე წიგნი <w lemmaRef="#lex-dasabamitgan">დასაბამითგან</w> <w lemmaRef="#lex-tseli">წელთა</w> <note n="11">11*</note>: ხ̂ჳჲჱ <w lemmaRef="#lex-qronikon">ქრონიკონი</w> იყო: პ̂<w lemmaRef="#lex-d">დ</w>:
+          <hi rend="initial">Ⴃ</hi>ა დაიწერა წმიდაჲ ესე წიგნი <w lemma="#lex-kronikoni">დასაბამითგან</w> წელთა <note n="11">11*</note>: ხ̂ჳჲჱ <w lemma="#lex-kronikoni">ქრონიკონი</w> იყო: პ̂დ:
         </p>
         
         <p xml:id="p6" n="6">
-          <hi rend="initial">Ⴃ</hi>ა მე, <w lemmaRef="#lex-glakhak">გლახაკმან</w> მაკარი, შევწირე წმიდაჲ ესე <w lemmaRef="#lex-mravaltav">მრავალთავი</w> წმიდათ-წმიდასა <note n="12">1*</note> მთასა სინას საჴსენებელად და სარგებელად თავთა <w lemmaRef="#lex-chuen">ჩუენთა</w> და <w lemmaRef="#lex-suli">სულთა</w> ჩუენთათჳს.
+          <hi rend="initial">Ⴃ</hi>ა მე, <w lemma="#lex-glakhaki">გლახაკმან</w> <persName ref="#pers-makari">მაკარი</persName>, შევწირე წმიდაჲ ესე <w lemma="#lex-mravaltavi">მრავალთავი</w> წმიდათ-წმიდასა <note n="12">1*</note> მთასა <placeName ref="#place-sina">სინას</placeName> საჴსენებელად და სარგებელად თავთა ჩუენთა და სულთა ჩუენთათჳს.
         </p>
         
         <p xml:id="p7" n="7">
-          <hi rend="initial">Ⴃ</hi>ა ამას <w lemma="#lex-shina">შინა</w> არს შემკობაჲ წელიწდისა <w lemmaRef="#lex-dghesastsauli">დღესასწაულთა</w> ყოველთაჲ, <w lemmaRef="#lex-tqumuli">თქუმული</w> წმიდათა მოძღუართაჲ.
+          <hi rend="initial">Ⴃ</hi>ა ამას შინა არს შემკობაჲ წელიწდისა დღესასწაულთა ყოველთაჲ, თქუმული წმიდათა მოძღუართაჲ.
         </p>
         
         <p xml:id="p8" n="8">
-          <hi rend="initial">Ⴋ</hi>ოეც, <w lemmaRef="#lex-upal">უფალო</w>, პოვნად <w lemmaRef="#lex-tsualeba1">წყალობაჲ</w> შენი მას დღესა <w lemma="#lex-shina">შინა</w> სულთა <w lemmaRef="#lex-chuen">ჩუენთა</w> ცოდვილთა და უწყალოდ გუემულთა <w lemmaRef="#lex-boroti">ბოროტის</w> მოძღურისა <w lemma="#lex-mier">მიერ</w> <w lemmaRef="#lex-eshmaki">ეშმაკისა</w>.
+          <hi rend="initial">Ⴋ</hi>ოეც, უფალო, პოვნად <w lemma="#lex-tsqaloba">წყალობაჲ</w> შენი მას დღესა შინა სულთა ჩუენთა ცოდვილთა და უწყალოდ გუემულთა ბოროტის მოძღურისა <w lemma="#lex-mier">მიერ</w> ეშმაკისა.
         </p>
         
         <p xml:id="p9" n="9">
-          <hi rend="initial">Ⴓ</hi><w lemmaRef="#lex-upal">ფალო</w>, იჴსენ <w lemma="#lex-suli">სული</w> ჩუენი სიკუდილისაგან <note n="13">2*</note>, თუალნი ჩუენნი _ ცრემლთაგან და <w lemmaRef="#lex-perkh">ფერჴნი</w> <w lemmaRef="#lex-chuen">ჩუენნი</w> _ ბრკომისაგან <note n="14">(1)*</note>. <w lemmaRef="#lex-amen-amen">ამენ</w>.
+          <hi rend="initial">Ⴓ</hi>ფალო, იჴსენ სული ჩუენი სიკუდილისაგან <note n="13">2*</note>, თუალნი ჩუენნი _ ცრემლთაგან და ფერჴნი ჩუენნი _ <w lemma="#lex-brkoma">ბრკომისაგან</w> <note n="14">(1)*</note>. <w lemma="#lex-amen">ამენ</w>.
         </p>
         
         <p xml:id="p10" n="10">
-          <hi rend="initial">Ⴃ</hi>იდებაჲ შენდა, უფალო, რომელმან ღირს მყავ მე, <w lemmaRef="#lex-ughirsi">უღირსი</w> ესე, აღსრულებად <w lemmaRef="#lex-saqme">საქმისა</w> ამის.
+          <hi rend="initial">Ⴃ</hi>იდებაჲ შენდა, უფალო, რომელმან <w lemma="#lex-ghir">ღირს</w> მყავ მე, უღირსი ესე, აღსრულებად საქმისა ამის.
         </p>
         
       </div>
